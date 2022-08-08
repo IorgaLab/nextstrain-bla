@@ -1,2 +1,2 @@
-# bla
-Molecula epidemiology of beta-lactamases
+# nextstrain-bla
+Genomic epidemiology of beta-lactamases
