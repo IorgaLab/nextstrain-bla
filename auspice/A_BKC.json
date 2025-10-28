@@ -1,0 +1,649 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A BKC beta-lactamases",
+    "updated": "2025-01-20",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 942,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "H4B97_25175": {
+        "end": 942,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Brazil",
+            "#56A0AF"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1998.95,
+        "confidence": [
+          1992.68,
+          2003.86
+        ]
+      },
+      "country": {
+        "value": "Brazil"
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000008",
+        "node_attrs": {
+          "div": 0.0118,
+          "num_date": {
+            "value": 2014.012,
+            "confidence": [
+              2013.012,
+              2014.012
+            ]
+          },
+          "country": {
+            "value": "Brazil"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C65T",
+              "C87G",
+              "T90G",
+              "C91G",
+              "T92C",
+              "C94A",
+              "T95C",
+              "T96G",
+              "C98G",
+              "T101G",
+              "T102C",
+              "C104T",
+              "C105G",
+              "G106C",
+              "C107T",
+              "C108G",
+              "T110A",
+              "G111A",
+              "T112A",
+              "C113A",
+              "C114G",
+              "C116G",
+              "C152T"
+            ],
+            "H4B97_25175": [
+              "S22F",
+              "L31A",
+              "L32T",
+              "A33G",
+              "V34G",
+              "P35L",
+              "A36L",
+              "V37E",
+              "S38K",
+              "T39R",
+              "P51L"
+            ]
+          },
+          "labels": {
+            "aa": "H4B97_25175: S22F, L31A, L32T, A33G, V34G, P35L, A36L, V37E, S38K, T39R, P51L"
+          }
+        },
+        "children": [
+          {
+            "name": "BKC-2_QJR96167-MT427610-1",
+            "node_attrs": {
+              "div": 0.0118,
+              "num_date": {
+                "value": 2020.34,
+                "confidence": [
+                  2020.34,
+                  2020.34
+                ]
+              },
+              "organism": {
+                "value": "Enterobacter_hormaechei_subsp._xiangfangensis"
+              },
+              "country": {
+                "value": "Brazil"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "BKC-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BKC-2_QOR53625-CP053106-3498",
+            "node_attrs": {
+              "div": 0.0118,
+              "num_date": {
+                "value": 2014.012,
+                "confidence": [
+                  2014.012,
+                  2014.012
+                ]
+              },
+              "organism": {
+                "value": "Enterobacter_hormaechei_subsp._xiangfangensis"
+              },
+              "country": {
+                "value": "Brazil"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "BKC-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.0128,
+          "num_date": {
+            "value": 2012.731,
+            "confidence": [
+              2011.712,
+              2012.731
+            ]
+          },
+          "country": {
+            "value": "Brazil"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "JACGCZ010000082.1",
+            "node_attrs": {
+              "div": 0.0128,
+              "num_date": {
+                "value": 2012.731,
+                "confidence": [
+                  2002.694,
+                  2038.765
+                ]
+              },
+              "country": {
+                "value": "Brazil"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BKC-1_MBA6145724-JACGCZ010000082-2638",
+            "node_attrs": {
+              "div": 0.0128,
+              "num_date": {
+                "value": 2012.731,
+                "confidence": [
+                  2012.731,
+                  2012.731
+                ]
+              },
+              "organism": {
+                "value": "Pseudomonas_juntendi"
+              },
+              "country": {
+                "value": "Brazil"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "BKC-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.0128,
+              "num_date": {
+                "value": 2015.051,
+                "confidence": [
+                  2013.361,
+                  2015.051
+                ]
+              },
+              "country": {
+                "value": "Brazil"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "BKC-1_AKD43328-KP689347-8603",
+                "node_attrs": {
+                  "div": 0.0128,
+                  "num_date": {
+                    "value": 2015.051,
+                    "confidence": [
+                      2015.051,
+                      2015.051
+                    ]
+                  },
+                  "organism": {
+                    "value": "Klebsiella_pneumoniae"
+                  },
+                  "country": {
+                    "value": "Brazil"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "BKC-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.0128,
+                  "num_date": {
+                    "value": 2020.954,
+                    "confidence": [
+                      2017.643,
+                      2021.059
+                    ]
+                  },
+                  "country": {
+                    "value": "Brazil"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.0128,
+                      "num_date": {
+                        "value": 2020.954,
+                        "confidence": [
+                          2019.908,
+                          2021.402
+                        ]
+                      },
+                      "country": {
+                        "value": "Brazil"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BKC-1_URZ94166-ON107494-7636",
+                        "node_attrs": {
+                          "div": 0.0128,
+                          "num_date": {
+                            "value": 2022.24,
+                            "confidence": [
+                              2022.24,
+                              2022.24
+                            ]
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae"
+                          },
+                          "country": {
+                            "value": "Brazil"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "allele": {
+                            "value": "BKC-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000006",
+                        "node_attrs": {
+                          "div": 0.0128,
+                          "num_date": {
+                            "value": 2021.413,
+                            "confidence": [
+                              2020.952,
+                              2021.415
+                            ]
+                          },
+                          "country": {
+                            "value": "Brazil"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BKC-1_MCZ9641137-JAJNEE010000009-31074",
+                            "node_attrs": {
+                              "div": 0.0128,
+                              "num_date": {
+                                "value": 2021.415,
+                                "confidence": [
+                                  2021.415,
+                                  2021.486
+                                ]
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_putida"
+                              },
+                              "country": {
+                                "value": "Brazil"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "BKC-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "BKC-1_MCZ9641064-JAJNEE010000008-24131",
+                            "node_attrs": {
+                              "div": 0.0128,
+                              "num_date": {
+                                "value": 2021.415,
+                                "confidence": [
+                                  2021.415,
+                                  2021.486
+                                ]
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_putida"
+                              },
+                              "country": {
+                                "value": "Brazil"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "BKC-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.0128,
+                      "num_date": {
+                        "value": 2020.978,
+                        "confidence": [
+                          2019.661,
+                          2021.33
+                        ]
+                      },
+                      "country": {
+                        "value": "Brazil"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BKC-1_MDE9141571-JAREQL010000052-3672",
+                        "node_attrs": {
+                          "div": 0.0128,
+                          "num_date": {
+                            "value": 2021.069,
+                            "confidence": [
+                              2021.001,
+                              2021.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae"
+                          },
+                          "country": {
+                            "value": "Brazil"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "BKC-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.0128,
+                          "num_date": {
+                            "value": 2021.108,
+                            "confidence": [
+                              2020.706,
+                              2021.508
+                            ]
+                          },
+                          "country": {
+                            "value": "Brazil"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BKC-1_MDE9132287-JAREQM010000032-6701",
+                            "node_attrs": {
+                              "div": 0.0128,
+                              "num_date": {
+                                "value": 2021.103,
+                                "confidence": [
+                                  2021.001,
+                                  2021.999
+                                ]
+                              },
+                              "organism": {
+                                "value": "Klebsiella_pneumoniae"
+                              },
+                              "country": {
+                                "value": "Brazil"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "BKC-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "BKC-1_MDE9097984-JAREPW010000062-5493",
+                            "node_attrs": {
+                              "div": 0.0128,
+                              "num_date": {
+                                "value": 2021.103,
+                                "confidence": [
+                                  2021.001,
+                                  2021.999
+                                ]
+                              },
+                              "organism": {
+                                "value": "Klebsiella_pneumoniae"
+                              },
+                              "country": {
+                                "value": "Brazil"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "BKC-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

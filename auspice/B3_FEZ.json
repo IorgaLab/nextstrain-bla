@@ -1,0 +1,1526 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 FEZ beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 861,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC11368_02413": {
+        "end": 861,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "ITALY",
+            "#5098B9"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Netherlands": {
+            "latitude": 52.1326,
+            "longitude": 5.2913
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Austria": {
+            "latitude": 47.5162,
+            "longitude": 14.5501
+          },
+          "Croatia": {
+            "latitude": 45.1,
+            "longitude": 15.2
+          },
+          "ITALY": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1851.205,
+        "confidence": [
+          1839.776,
+          1865.604
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.969,
+          "United Kingdom": 0.00658,
+          "ITALY": 0.00557,
+          "Netherlands": 0.00553,
+          "Germany": 0.00337,
+          "France": 0.00316,
+          "Croatia": 0.00315,
+          "Austria": 0.00315
+        },
+        "entropy": 0.194
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000007",
+        "node_attrs": {
+          "div": 0.105,
+          "num_date": {
+            "value": 1975.001,
+            "confidence": [
+              1973.844,
+              1975.918
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 9.13e-05
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T16A",
+              "G23C",
+              "C28T",
+              "T45C",
+              "T54C",
+              "T57C",
+              "C60A",
+              "T76C",
+              "T84C",
+              "T87A",
+              "T90C",
+              "A92G",
+              "G93T",
+              "C99T",
+              "T105C",
+              "T111C",
+              "G117A",
+              "T120C",
+              "T138C",
+              "T141C",
+              "G153A",
+              "T156G",
+              "A158G",
+              "A162G",
+              "C183T",
+              "A192T",
+              "A201C",
+              "C213A",
+              "G220A",
+              "C243T",
+              "T288G",
+              "A291C",
+              "G303A",
+              "G312A",
+              "T321A",
+              "T342C",
+              "A345G",
+              "A351T",
+              "C352T",
+              "T354G",
+              "T355G",
+              "G358A",
+              "T360C",
+              "T361C",
+              "A363G",
+              "T369C",
+              "A393T",
+              "C399T",
+              "A420G",
+              "G438T",
+              "T444C",
+              "T453A",
+              "A454C",
+              "A455G",
+              "A471G",
+              "T474C",
+              "T504C",
+              "A509G",
+              "T513C",
+              "T519C",
+              "T522C",
+              "A531G",
+              "C579T",
+              "T597G",
+              "C621T",
+              "T627A",
+              "T630A",
+              "T636C",
+              "C637G",
+              "T651C",
+              "C666T",
+              "T673A",
+              "C678T",
+              "T681C",
+              "G693A",
+              "G696A",
+              "G697T",
+              "T699G",
+              "T705C",
+              "C720G",
+              "A723G",
+              "C726T",
+              "T733G",
+              "T736C",
+              "C737T",
+              "G741A",
+              "G747A",
+              "A751C",
+              "G752A",
+              "G753A",
+              "G756C",
+              "A766G",
+              "G774C",
+              "G775A",
+              "A776C",
+              "T780C",
+              "C783T",
+              "A789T",
+              "C808A",
+              "G810C",
+              "T819C",
+              "A858C"
+            ],
+            "NCTC11368_02413": [
+              "C6S",
+              "S8T",
+              "S26P",
+              "Q31R",
+              "K53R",
+              "E74K",
+              "N107K",
+              "P118S",
+              "L119V",
+              "V120I",
+              "D151E",
+              "K152R",
+              "K170R",
+              "I177M",
+              "N210K",
+              "Q213E",
+              "L225M",
+              "A233S",
+              "L245V",
+              "S246L",
+              "R251Q",
+              "K252N",
+              "I256V",
+              "E259T",
+              "K263N",
+              "Q270N"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC11368_02413: C6S, S8T, S26P, Q31R, K53R, E74K, N107K, P118S, L119V, V120I, D151E, K152R, K170R, I177M, N210K, Q213E, L225M, A233S, L245V, S246L, R251Q, K252N, I256V, E259T, K263N, Q270N"
+          }
+        },
+        "children": [
+          {
+            "name": "FEZ-1_STO25497-UGGV01000001-2678482",
+            "node_attrs": {
+              "div": 0.105,
+              "num_date": {
+                "value": 1975.994,
+                "confidence": [
+                  1975.001,
+                  1975.999
+                ]
+              },
+              "organism": {
+                "value": "Fluoribacter_gormanii"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "FEZ-1"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.105,
+              "num_date": {
+                "value": 1977.899,
+                "confidence": [
+                  1976.003,
+                  1978.826
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.000522
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "FEZ-1_KTD01017-LNYD01000037-22074",
+                "node_attrs": {
+                  "div": 0.105,
+                  "num_date": {
+                    "value": 1978.628,
+                    "confidence": [
+                      1978.001,
+                      1978.999
+                    ]
+                  },
+                  "organism": {
+                    "value": "Fluoribacter_gormanii"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "FEZ-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.105,
+                  "num_date": {
+                    "value": 1998.361,
+                    "confidence": [
+                      1995.518,
+                      1998.599
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.76,
+                      "ITALY": 0.239
+                    },
+                    "entropy": 0.556
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "FEZ-1_SIR77919-FTNL01000024-25556",
+                    "node_attrs": {
+                      "div": 0.105,
+                      "num_date": {
+                        "value": 2017.026,
+                        "confidence": [
+                          2017.026,
+                          2017.026
+                        ]
+                      },
+                      "organism": {
+                        "value": "Fluoribacter_gormanii"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "FEZ-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FEZ-1_CAB96921-Y17896-1",
+                    "node_attrs": {
+                      "div": 0.105,
+                      "num_date": {
+                        "value": 1998.599,
+                        "confidence": [
+                          1998.599,
+                          1998.599
+                        ]
+                      },
+                      "organism": {
+                        "value": "Fluoribacter_gormanii"
+                      },
+                      "country": {
+                        "value": "ITALY",
+                        "confidence": {
+                          "ITALY": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "FEZ-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000006",
+        "node_attrs": {
+          "div": 0.0393,
+          "num_date": {
+            "value": 1901.311,
+            "confidence": [
+              1894.372,
+              1909.805
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.997,
+              "United Kingdom": 0.00149
+            },
+            "entropy": 0.0254
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "FEZ-4_KTD74188-LNZA01000001-2324541",
+            "node_attrs": {
+              "div": 0.076,
+              "num_date": {
+                "value": 1984.001,
+                "confidence": [
+                  1984.001,
+                  1984.899
+                ]
+              },
+              "organism": {
+                "value": "Legionella_tucsonensis"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "FEZ-4"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C26T",
+                  "A27T",
+                  "A34G",
+                  "T48C",
+                  "C154T",
+                  "T156A",
+                  "C165T",
+                  "T195C",
+                  "C240T",
+                  "T249A",
+                  "T256G",
+                  "G258T",
+                  "T264C",
+                  "T273A",
+                  "A304G",
+                  "A311G",
+                  "G438A",
+                  "T478C",
+                  "A480C",
+                  "T491C",
+                  "T513G",
+                  "T522A",
+                  "A532C",
+                  "T624C",
+                  "A672G",
+                  "T673C",
+                  "G675A",
+                  "C691T",
+                  "T740C",
+                  "C762T",
+                  "A820G",
+                  "A822G",
+                  "G834A"
+                ],
+                "NCTC11368_02413": [
+                  "A9V",
+                  "M12V",
+                  "P52S",
+                  "L86V",
+                  "I102V",
+                  "Q104R",
+                  "L164S",
+                  "K178Q",
+                  "L247S",
+                  "T274A"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC11368_02413: A9V, M12V, P52S, L86V, I102V, Q104R, L164S, K178Q, L247S, T274A"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000005",
+            "node_attrs": {
+              "div": 0.056,
+              "num_date": {
+                "value": 1915.677,
+                "confidence": [
+                  1909.741,
+                  1923.176
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.996,
+                  "United Kingdom": 0.00226,
+                  "France": 0.00111
+                },
+                "entropy": 0.0288
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A222G",
+                  "A450G",
+                  "T498C",
+                  "C549T",
+                  "A571G",
+                  "G669A",
+                  "T750C",
+                  "A825G",
+                  "G831A",
+                  "A837G",
+                  "A853T"
+                ],
+                "NCTC11368_02413": [
+                  "I191V",
+                  "T285S"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC11368_02413: I191V, T285S"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.0681,
+                  "num_date": {
+                    "value": 1923.933,
+                    "confidence": [
+                      1918.465,
+                      1930.776
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.981,
+                      "United Kingdom": 0.01,
+                      "France": 0.00711
+                    },
+                    "entropy": 0.112
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G25A",
+                      "A34C",
+                      "C297T",
+                      "T321C",
+                      "A510G",
+                      "T597C"
+                    ],
+                    "NCTC11368_02413": [
+                      "A9T",
+                      "M12L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC11368_02413: A9T, M12L"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.115,
+                      "num_date": {
+                        "value": 1957.001,
+                        "confidence": [
+                          1955.717,
+                          1957.922
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.954,
+                          "United Kingdom": 0.0462
+                        },
+                        "entropy": 0.189
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G10T",
+                          "A15C",
+                          "G17A",
+                          "C24T",
+                          "C26T",
+                          "T49C",
+                          "A52G",
+                          "G58T",
+                          "A66C",
+                          "A72C",
+                          "G117A",
+                          "C132T",
+                          "C142T",
+                          "A145C",
+                          "C174T",
+                          "C183T",
+                          "T279C",
+                          "T282C",
+                          "A300G",
+                          "G309A",
+                          "G357A",
+                          "T376G",
+                          "C402T",
+                          "T423C",
+                          "G429A",
+                          "T491G",
+                          "A532C",
+                          "A533C",
+                          "A555C",
+                          "T591C",
+                          "T615C",
+                          "C620T",
+                          "C621T",
+                          "A639G",
+                          "C666T",
+                          "T673A",
+                          "T681C",
+                          "A738G",
+                          "C849T"
+                        ],
+                        "NCTC11368_02413": [
+                          "V4L",
+                          "L5F",
+                          "C6Y",
+                          "T9I",
+                          "S17P",
+                          "S18G",
+                          "A20S",
+                          "I49L",
+                          "S126A",
+                          "L164W",
+                          "K178P",
+                          "Q185H",
+                          "T207I",
+                          "L225M"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC11368_02413: V4L, L5F, C6Y, T9I, S17P, S18G, A20S, I49L, S126A, L164W, K178P, Q185H, T207I, L225M"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "UGGY01000001.1",
+                        "node_attrs": {
+                          "div": 0.115,
+                          "num_date": {
+                            "value": 1957.777,
+                            "confidence": [
+                              1955.542,
+                              1961.362
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.949,
+                              "United Kingdom": 0.0468
+                            },
+                            "entropy": 0.226
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "FEZ-3_STO34729-UGGY01000001-2738409",
+                        "node_attrs": {
+                          "div": 0.115,
+                          "num_date": {
+                            "value": 1957.777,
+                            "confidence": [
+                              1955.542,
+                              1961.362
+                            ]
+                          },
+                          "organism": {
+                            "value": "Legionella_bozemanae"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "FEZ-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "FEZ-3_KTC70999-LNXU01000032-179820",
+                        "node_attrs": {
+                          "div": 0.115,
+                          "num_date": {
+                            "value": 1957.994,
+                            "confidence": [
+                              1957.001,
+                              1957.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Legionella_bozemanae"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FEZ-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000003",
+                    "node_attrs": {
+                      "div": 0.126,
+                      "num_date": {
+                        "value": 1981.001,
+                        "confidence": [
+                          1980.301,
+                          1981.683
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": 1.68e-07
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G33C",
+                          "T63C",
+                          "C99T",
+                          "C150T",
+                          "A162G",
+                          "C165T",
+                          "G211A",
+                          "C212A",
+                          "T216C",
+                          "C243A",
+                          "C267T",
+                          "A291G",
+                          "T294G",
+                          "T330C",
+                          "A345G",
+                          "T369A",
+                          "T400A",
+                          "T405C",
+                          "T414C",
+                          "T516C",
+                          "A531G",
+                          "C535A",
+                          "G547A",
+                          "C564T",
+                          "A567G",
+                          "A611G",
+                          "T624C",
+                          "C654T",
+                          "G660A",
+                          "C666A",
+                          "A685T",
+                          "G693T",
+                          "G696T",
+                          "T699A",
+                          "C718T",
+                          "C720A",
+                          "G753A",
+                          "T768C",
+                          "G774A",
+                          "A793C",
+                          "A798C",
+                          "T845C",
+                          "C857T",
+                          "A860G"
+                        ],
+                        "NCTC11368_02413": [
+                          "M11I",
+                          "A71N",
+                          "S81R",
+                          "S134T",
+                          "I177M",
+                          "L179I",
+                          "G183S",
+                          "D204G",
+                          "I229F",
+                          "I265L",
+                          "E266D",
+                          "V282A",
+                          "A286V"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC11368_02413: M11I, A71N, S81R, S134T, I177M, L179I, G183S, D204G, I229F, I265L, E266D, V282A, A286V"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "FEZ-2_STX77122-UGOH01000001-2886061",
+                        "node_attrs": {
+                          "div": 0.126,
+                          "num_date": {
+                            "value": 1981.655,
+                            "confidence": [
+                              1981.001,
+                              1981.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Legionella_parisiensis"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FEZ-2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "FEZ-2_OEH48546-LSOG01000013-9532",
+                        "node_attrs": {
+                          "div": 0.126,
+                          "num_date": {
+                            "value": 1981.689,
+                            "confidence": [
+                              1981.689,
+                              1981.689
+                            ]
+                          },
+                          "organism": {
+                            "value": "Legionella_parisiensis"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FEZ-2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "FEZ-2_KTD40443-LNYQ01000013-628143",
+                        "node_attrs": {
+                          "div": 0.126,
+                          "num_date": {
+                            "value": 1981.655,
+                            "confidence": [
+                              1981.001,
+                              1981.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Legionella_parisiensis"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FEZ-2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000010",
+                "node_attrs": {
+                  "div": 0.0965,
+                  "num_date": {
+                    "value": 1980.001,
+                    "confidence": [
+                      1979.044,
+                      1980.758
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 5.13e-06
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A27G",
+                      "C28T",
+                      "A51G",
+                      "T84A",
+                      "T105C",
+                      "G137A",
+                      "C142T",
+                      "G153A",
+                      "A201T",
+                      "A228T",
+                      "T231C",
+                      "T249A",
+                      "T264C",
+                      "T288C",
+                      "A318C",
+                      "T378C",
+                      "T400C",
+                      "G404C",
+                      "T423C",
+                      "T426G",
+                      "T444C",
+                      "T490G",
+                      "A555C",
+                      "C564G",
+                      "A588C",
+                      "A639G",
+                      "A657G",
+                      "A672G",
+                      "T705C",
+                      "T732C",
+                      "C762T",
+                      "A777T",
+                      "A807T",
+                      "T819C",
+                      "A820G",
+                      "A822G",
+                      "G841C",
+                      "A842G",
+                      "T843C"
+                    ],
+                    "NCTC11368_02413": [
+                      "S46N",
+                      "S134P",
+                      "S135T",
+                      "L164V",
+                      "Q185H",
+                      "I219M",
+                      "E259D",
+                      "T274A",
+                      "D281R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC11368_02413: S46N, S134P, S135T, L164V, Q185H, I219M, E259D, T274A, D281R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "FEZ-5_KTC67359-LNXS01000054-511324",
+                    "node_attrs": {
+                      "div": 0.0965,
+                      "num_date": {
+                        "value": 1980.691,
+                        "confidence": [
+                          1980.001,
+                          1980.999
+                        ]
+                      },
+                      "organism": {
+                        "value": "Legionella_anisa"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FEZ-5"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FEZ-5_PNL61028-NBTX02000004-1230045",
+                    "node_attrs": {
+                      "div": 0.0965,
+                      "num_date": {
+                        "value": 1980.691,
+                        "confidence": [
+                          1980.001,
+                          1980.999
+                        ]
+                      },
+                      "organism": {
+                        "value": "Legionella_anisa"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FEZ-5"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000015",
+                    "node_attrs": {
+                      "div": 0.0965,
+                      "num_date": {
+                        "value": 2017.001,
+                        "confidence": [
+                          2013.98,
+                          2017.475
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.901,
+                          "Netherlands": 0.0929,
+                          "Germany": 0.00363,
+                          "Austria": 0.00117,
+                          "Croatia": 0.00117
+                        },
+                        "entropy": 0.352
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "FEZ-5_AWN75017-CP029563-3379725",
+                        "node_attrs": {
+                          "div": 0.0965,
+                          "num_date": {
+                            "value": 2017.475,
+                            "confidence": [
+                              2017.475,
+                              2017.475
+                            ]
+                          },
+                          "organism": {
+                            "value": "Legionella_anisa"
+                          },
+                          "country": {
+                            "value": "Netherlands",
+                            "confidence": {
+                              "Netherlands": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FEZ-5"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000016",
+                        "node_attrs": {
+                          "div": 0.0965,
+                          "num_date": {
+                            "value": 2018.899,
+                            "confidence": [
+                              2016.684,
+                              2019.753
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.952,
+                              "Netherlands": 0.0295,
+                              "Germany": 0.0111,
+                              "Austria": 0.00366,
+                              "Croatia": 0.00366
+                            },
+                            "entropy": 0.243
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "FEZ-5_MBN5933972-JAFJGH010000001-17746",
+                            "node_attrs": {
+                              "div": 0.0965,
+                              "num_date": {
+                                "value": 2019.001,
+                                "confidence": [
+                                  2019.001,
+                                  2019.894
+                                ]
+                              },
+                              "organism": {
+                                "value": "Legionella_anisa"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "FEZ-5"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000017",
+                            "node_attrs": {
+                              "div": 0.0965,
+                              "num_date": {
+                                "value": 2021.667,
+                                "confidence": [
+                                  2019.114,
+                                  2021.667
+                                ]
+                              },
+                              "country": {
+                                "value": "Germany",
+                                "confidence": {
+                                  "Germany": 0.48,
+                                  "USA": 0.192,
+                                  "Austria": 0.161,
+                                  "Croatia": 0.161,
+                                  "Netherlands": 0.00569
+                                },
+                                "entropy": 1.293
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FEZ-5_UAK80222-CP082852-859844",
+                                "node_attrs": {
+                                  "div": 0.0965,
+                                  "num_date": {
+                                    "value": 2021.667,
+                                    "confidence": [
+                                      2021.667,
+                                      2021.667
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Legionella_anisa"
+                                  },
+                                  "country": {
+                                    "value": "Germany",
+                                    "confidence": {
+                                      "Germany": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FEZ-5"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000018",
+                                "node_attrs": {
+                                  "div": 0.0965,
+                                  "num_date": {
+                                    "value": 2022.622,
+                                    "confidence": [
+                                      2021.15,
+                                      2022.859
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Austria",
+                                    "confidence": {
+                                      "Austria": 0.402,
+                                      "Croatia": 0.402,
+                                      "Germany": 0.14,
+                                      "USA": 0.0542,
+                                      "Netherlands": 0.00162
+                                    },
+                                    "entropy": 1.181
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "FEZ-5_MCW8424780-JAPHOY010000001-2040245",
+                                    "node_attrs": {
+                                      "div": 0.0965,
+                                      "num_date": {
+                                        "value": 2022.859,
+                                        "confidence": [
+                                          2022.859,
+                                          2022.859
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Legionella_anisa"
+                                      },
+                                      "country": {
+                                        "value": "Austria",
+                                        "confidence": {
+                                          "Austria": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "FEZ-5"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "FEZ-5_MCW8446101-JAPHPC010000001-426793",
+                                    "node_attrs": {
+                                      "div": 0.0965,
+                                      "num_date": {
+                                        "value": 2022.859,
+                                        "confidence": [
+                                          2022.859,
+                                          2022.859
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Legionella_anisa"
+                                      },
+                                      "country": {
+                                        "value": "Croatia",
+                                        "confidence": {
+                                          "Croatia": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "FEZ-5"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

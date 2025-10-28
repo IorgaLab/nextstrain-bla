@@ -1,0 +1,414 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A BES beta-lactamases",
+    "updated": "2025-01-20",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 879,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaBES-1": {
+        "end": 879,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1988.983,
+        "confidence": [
+          1983.583,
+          1991.793
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.602,
+          "USA": 0.227,
+          "Germany": 0.171
+        },
+        "entropy": 0.944
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "BES-3_RWT89212-QKPM01000165-538",
+        "node_attrs": {
+          "div": 0.0149,
+          "num_date": {
+            "value": 2017.001,
+            "confidence": [
+              2017.001,
+              2017.896
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "allele": {
+            "value": "BES-3"
+          },
+          "organism": {
+            "value": "Raoultella_ornithinolytica"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G6A",
+              "T126C",
+              "G186A",
+              "G242A",
+              "A243G",
+              "T262C",
+              "T270C",
+              "G275A",
+              "G444C",
+              "T531C",
+              "C558T",
+              "C570A",
+              "T576C",
+              "T654G",
+              "T756G",
+              "G799A",
+              "T801C"
+            ],
+            "blaBES-1": [
+              "R81Q",
+              "R92Q",
+              "S218R",
+              "D267N"
+            ]
+          },
+          "labels": {
+            "aa": "blaBES-1: R81Q, R92Q, S218R, D267N"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.00572,
+          "num_date": {
+            "value": 1990.588,
+            "confidence": [
+              1986.147,
+              1993.573
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.637,
+              "USA": 0.183,
+              "Germany": 0.18
+            },
+            "entropy": 0.907
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "BES-2_MBP8172728-JAGMYV010000021-202",
+            "node_attrs": {
+              "div": 0.0137,
+              "num_date": {
+                "value": 2021.171,
+                "confidence": [
+                  2021.171,
+                  2021.171
+                ]
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "BES-2"
+              },
+              "organism": {
+                "value": "Aeromonadaceae_bacterium"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C303T",
+                  "C351T",
+                  "C613T",
+                  "A703G",
+                  "A705G",
+                  "T708C",
+                  "T861C",
+                  "C864A"
+                ],
+                "blaBES-1": [
+                  "T235A"
+                ]
+              },
+              "labels": {
+                "aa": "blaBES-1: T235A"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.023,
+              "num_date": {
+                "value": 2000.127,
+                "confidence": [
+                  1999.318,
+                  2000.127
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.999
+                },
+                "entropy": 0.00521
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A4T",
+                  "G45A",
+                  "A324G",
+                  "G357A",
+                  "G414A",
+                  "T423C",
+                  "C495T",
+                  "A540G",
+                  "C588G",
+                  "A652C",
+                  "T795A",
+                  "C805G",
+                  "A860G",
+                  "A876G"
+                ],
+                "blaBES-1": [
+                  "R2W",
+                  "M15I",
+                  "S218R",
+                  "Q269E",
+                  "N287S"
+                ]
+              },
+              "labels": {
+                "aa": "blaBES-1: R2W, M15I, S218R, Q269E, N287S"
+              }
+            },
+            "children": [
+              {
+                "name": "AF234999.1",
+                "node_attrs": {
+                  "div": 0.023,
+                  "num_date": {
+                    "value": 2000.127,
+                    "confidence": [
+                      1992.985,
+                      2026.289
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.997,
+                      "Germany": 0.00153,
+                      "USA": 0.00149
+                    },
+                    "entropy": 0.0226
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BES-1_AAF61147-AF234999-190",
+                "node_attrs": {
+                  "div": 0.023,
+                  "num_date": {
+                    "value": 2000.127,
+                    "confidence": [
+                      2000.127,
+                      2000.127
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "BES-1"
+                  },
+                  "organism": {
+                    "value": "Serratia_marcescens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BES-1_AEZ35972-JF785550-9400",
+                "node_attrs": {
+                  "div": 0.023,
+                  "num_date": {
+                    "value": 2011.264,
+                    "confidence": [
+                      2011.264,
+                      2011.264
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "BES-1"
+                  },
+                  "organism": {
+                    "value": "Serratia_marcescens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

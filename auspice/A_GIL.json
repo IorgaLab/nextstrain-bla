@@ -1,0 +1,2855 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A GIL beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 861,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC9094_02306": {
+        "end": 861,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Netherlands": {
+            "latitude": 52.1326,
+            "longitude": 5.2913
+          },
+          "Poland": {
+            "latitude": 52.0977181,
+            "longitude": 19.0258159
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1948.718,
+        "confidence": [
+          1920.118,
+          1958.549
+        ]
+      },
+      "country": {
+        "value": "United Kingdom",
+        "confidence": {
+          "United Kingdom": 0.318,
+          "Poland": 0.202,
+          "USA": 0.2,
+          "Australia": 0.136,
+          "Netherlands": 0.0727,
+          "France": 0.071
+        },
+        "entropy": 1.659
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.0142,
+          "num_date": {
+            "value": 2010.848,
+            "confidence": [
+              2004.404,
+              2013.675
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.619,
+              "Australia": 0.338,
+              "United Kingdom": 0.0255,
+              "Poland": 0.00969,
+              "Netherlands": 0.00378,
+              "France": 0.00373
+            },
+            "entropy": 0.844
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A33G",
+              "T48C",
+              "A96T",
+              "C103G",
+              "A104T",
+              "G105A",
+              "C108T",
+              "A109C",
+              "T123C",
+              "C129G",
+              "C141T",
+              "C143T",
+              "C150T",
+              "T186C",
+              "A300G",
+              "G306A",
+              "T312C",
+              "A492G",
+              "A684C",
+              "C699T",
+              "G775A",
+              "C796A",
+              "A803C"
+            ],
+            "NCTC9094_02306": [
+              "Q35V",
+              "T37P",
+              "T48I",
+              "V259I",
+              "L266M",
+              "E268A"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC9094_02306: Q35V, T37P, T48I, V259I, L266M, E268A"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000005",
+            "node_attrs": {
+              "div": 0.0153,
+              "num_date": {
+                "value": 2017.885,
+                "confidence": [
+                  2015.414,
+                  2018.344
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 0.987,
+                  "USA": 0.0119
+                },
+                "entropy": 0.0745
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C849T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "GIL-3_HEE0104581-DAQPPX010000001-595044",
+                "node_attrs": {
+                  "div": 0.0153,
+                  "num_date": {
+                    "value": 2018.286,
+                    "confidence": [
+                      2018.001,
+                      2018.999
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "GIL-3"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_gillenii"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "GIL-3_HEE0108616-DAQPPX010000046-23778",
+                "node_attrs": {
+                  "div": 0.0153,
+                  "num_date": {
+                    "value": 2018.286,
+                    "confidence": [
+                      2018.001,
+                      2018.999
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "GIL-3"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_gillenii"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.0153,
+              "num_date": {
+                "value": 2014.541,
+                "confidence": [
+                  2012.531,
+                  2014.541
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.981,
+                  "Australia": 0.013,
+                  "United Kingdom": 0.0055
+                },
+                "entropy": 0.106
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G555A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "GIL-8_EJB8474574-ABFUBM010000067-1791",
+                "node_attrs": {
+                  "div": 0.0165,
+                  "num_date": {
+                    "value": 2019.001,
+                    "confidence": [
+                      2019.001,
+                      2019.895
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "GIL-8"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_freundii"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A88C"
+                    ],
+                    "NCTC9094_02306": [
+                      "K30Q"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC9094_02306: K30Q"
+                  }
+                }
+              },
+              {
+                "name": "GIL-3_ATF52064-CP023504-1950946",
+                "node_attrs": {
+                  "div": 0.0153,
+                  "num_date": {
+                    "value": 2014.541,
+                    "confidence": [
+                      2014.541,
+                      2014.541
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "GIL-3"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_werkmanii"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.0153,
+                  "num_date": {
+                    "value": 2015.038,
+                    "confidence": [
+                      2014.092,
+                      2016.817
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.791,
+                      "United Kingdom": 0.158,
+                      "Australia": 0.0384,
+                      "Poland": 0.0117
+                    },
+                    "entropy": 0.661
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.0153,
+                      "num_date": {
+                        "value": 2016.885,
+                        "confidence": [
+                          2015.595,
+                          2017.531
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.947,
+                          "USA": 0.0484,
+                          "Poland": 0.00244,
+                          "Australia": 0.00138
+                        },
+                        "entropy": 0.225
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "GIL-3_MBA8033975-JABXRD010000001-3732130",
+                        "node_attrs": {
+                          "div": 0.0153,
+                          "num_date": {
+                            "value": 2017.372,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-3"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "GIL-3_WFZ87183-CP099084-2572946",
+                        "node_attrs": {
+                          "div": 0.0153,
+                          "num_date": {
+                            "value": 2017.372,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-3"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000009",
+                    "node_attrs": {
+                      "div": 0.0153,
+                      "num_date": {
+                        "value": 2016.892,
+                        "confidence": [
+                          2015.046,
+                          2017.193
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.751,
+                          "Australia": 0.134,
+                          "United Kingdom": 0.0775,
+                          "Poland": 0.0366
+                        },
+                        "entropy": 0.813
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "div": 0.0153,
+                          "num_date": {
+                            "value": 2017.332,
+                            "confidence": [
+                              2016.322,
+                              2018.223
+                            ]
+                          },
+                          "country": {
+                            "value": "Australia",
+                            "confidence": {
+                              "Australia": 0.97,
+                              "USA": 0.0273,
+                              "United Kingdom": 0.00203
+                            },
+                            "entropy": 0.149
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "GIL-3_HEE0119668-DAQPPV010000006-33466",
+                            "node_attrs": {
+                              "div": 0.0153,
+                              "num_date": {
+                                "value": 2018.267,
+                                "confidence": [
+                                  2018.001,
+                                  2018.999
+                                ]
+                              },
+                              "country": {
+                                "value": "Australia",
+                                "confidence": {
+                                  "Australia": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "GIL-3"
+                              },
+                              "organism": {
+                                "value": "Citrobacter_gillenii"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "GIL-3_HEE0121754-DAQPPV010000032-25785",
+                            "node_attrs": {
+                              "div": 0.0153,
+                              "num_date": {
+                                "value": 2018.267,
+                                "confidence": [
+                                  2018.001,
+                                  2018.999
+                                ]
+                              },
+                              "country": {
+                                "value": "Australia",
+                                "confidence": {
+                                  "Australia": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "GIL-3"
+                              },
+                              "organism": {
+                                "value": "Citrobacter_gillenii"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "div": 0.0153,
+                          "num_date": {
+                            "value": 2016.913,
+                            "confidence": [
+                              2015.934,
+                              2017.822
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.803,
+                              "Poland": 0.105,
+                              "United Kingdom": 0.0469,
+                              "Australia": 0.0435
+                            },
+                            "entropy": 0.702
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "GIL-3_TKU61188-SZXC01000027-189333",
+                            "node_attrs": {
+                              "div": 0.0153,
+                              "num_date": {
+                                "value": 2019.267,
+                                "confidence": [
+                                  2019.267,
+                                  2019.267
+                                ]
+                              },
+                              "country": {
+                                "value": "Poland",
+                                "confidence": {
+                                  "Poland": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "GIL-3"
+                              },
+                              "organism": {
+                                "value": "Citrobacter_sp._wls711"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.0153,
+                              "num_date": {
+                                "value": 2016.913,
+                                "confidence": [
+                                  2016.529,
+                                  2018.167
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.991,
+                                  "United Kingdom": 0.00342,
+                                  "Poland": 0.0031,
+                                  "Australia": 0.0021
+                                },
+                                "entropy": 0.0598
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000013",
+                                "node_attrs": {
+                                  "div": 0.0153,
+                                  "num_date": {
+                                    "value": 2017.74,
+                                    "confidence": [
+                                      2017.198,
+                                      2019.091
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.999
+                                    },
+                                    "entropy": 0.00593
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "GIL-3_EJB8470544-ABFUBM010000002-23737",
+                                    "node_attrs": {
+                                      "div": 0.0153,
+                                      "num_date": {
+                                        "value": 2019.198,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "GIL-3"
+                                      },
+                                      "organism": {
+                                        "value": "Citrobacter_freundii"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "GIL-3_EJB8562042-ABFUCG010000238-1",
+                                    "node_attrs": {
+                                      "div": 0.0153,
+                                      "num_date": {
+                                        "value": 2019.198,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "GIL-3"
+                                      },
+                                      "organism": {
+                                        "value": "Citrobacter_freundii"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000014",
+                                "node_attrs": {
+                                  "div": 0.0153,
+                                  "num_date": {
+                                    "value": 2017.74,
+                                    "confidence": [
+                                      2017.198,
+                                      2019.091
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.999
+                                    },
+                                    "entropy": 0.00593
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "GIL-3_EJB8559819-ABFUCG010000042-38201",
+                                    "node_attrs": {
+                                      "div": 0.0153,
+                                      "num_date": {
+                                        "value": 2019.198,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "GIL-3"
+                                      },
+                                      "organism": {
+                                        "value": "Citrobacter_freundii"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "GIL-3_EJB8474572-ABFUBM010000066-1791",
+                                    "node_attrs": {
+                                      "div": 0.0153,
+                                      "num_date": {
+                                        "value": 2019.198,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "GIL-3"
+                                      },
+                                      "organism": {
+                                        "value": "Citrobacter_freundii"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 0.00821,
+          "num_date": {
+            "value": 1972.43,
+            "confidence": [
+              1950.084,
+              1976.692
+            ]
+          },
+          "country": {
+            "value": "United Kingdom",
+            "confidence": {
+              "United Kingdom": 0.598,
+              "Poland": 0.175,
+              "USA": 0.128,
+              "Australia": 0.0412,
+              "Netherlands": 0.0295,
+              "France": 0.0281
+            },
+            "entropy": 1.211
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0117,
+              "num_date": {
+                "value": 2014.912,
+                "confidence": [
+                  2004.591,
+                  2016.799
+                ]
+              },
+              "country": {
+                "value": "United Kingdom",
+                "confidence": {
+                  "United Kingdom": 0.932,
+                  "Poland": 0.0598,
+                  "USA": 0.00539
+                },
+                "entropy": 0.28
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C117T",
+                  "T123C",
+                  "C129A",
+                  "C141T",
+                  "C143T",
+                  "C150T",
+                  "A669T"
+                ],
+                "NCTC9094_02306": [
+                  "T48I"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC9094_02306: T48I"
+              }
+            },
+            "children": [
+              {
+                "name": "GIL-17_QLO16406-CP055538-2678785",
+                "node_attrs": {
+                  "div": 0.0117,
+                  "num_date": {
+                    "value": 2017.001,
+                    "confidence": [
+                      2017.001,
+                      2017.881
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "GIL-17"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_freundii"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000000",
+                "node_attrs": {
+                  "div": 0.0141,
+                  "num_date": {
+                    "value": 2016.856,
+                    "confidence": [
+                      2015.497,
+                      2018.014
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.878,
+                      "Poland": 0.118,
+                      "USA": 0.00297
+                    },
+                    "entropy": 0.391
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G387C",
+                      "C587G"
+                    ],
+                    "NCTC9094_02306": [
+                      "T196R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC9094_02306: T196R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "UFZE01000001.1",
+                    "node_attrs": {
+                      "div": 0.0141,
+                      "num_date": {
+                        "value": 2018.187,
+                        "confidence": [
+                          2000.66,
+                          2084.223
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.753,
+                          "Poland": 0.149,
+                          "USA": 0.0439,
+                          "Australia": 0.0188,
+                          "Netherlands": 0.018,
+                          "France": 0.0175
+                        },
+                        "entropy": 0.852
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "GIL-2_STE16758-UFZE01000001-2330366",
+                    "node_attrs": {
+                      "div": 0.0141,
+                      "num_date": {
+                        "value": 2018.187,
+                        "confidence": [
+                          2000.66,
+                          2084.223
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "GIL-2"
+                      },
+                      "organism": {
+                        "value": "Escherichia_coli"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "GIL-9_TKU25571-SZWV01000097-9061",
+                    "node_attrs": {
+                      "div": 0.0152,
+                      "num_date": {
+                        "value": 2019.267,
+                        "confidence": [
+                          2019.267,
+                          2019.267
+                        ]
+                      },
+                      "country": {
+                        "value": "Poland",
+                        "confidence": {
+                          "Poland": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "GIL-9"
+                      },
+                      "organism": {
+                        "value": "Citrobacter_sp._wls718"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T26C"
+                        ],
+                        "NCTC9094_02306": [
+                          "I9T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC9094_02306: I9T"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000016",
+            "node_attrs": {
+              "div": 0.0129,
+              "num_date": {
+                "value": 1972.023,
+                "confidence": [
+                  1962.29,
+                  1984.541
+                ]
+              },
+              "country": {
+                "value": "United Kingdom",
+                "confidence": {
+                  "United Kingdom": 0.646,
+                  "Poland": 0.164,
+                  "USA": 0.114,
+                  "Australia": 0.0313,
+                  "Netherlands": 0.0235,
+                  "France": 0.0223
+                },
+                "entropy": 1.108
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000021",
+                "node_attrs": {
+                  "div": 0.0199,
+                  "num_date": {
+                    "value": 1981.11,
+                    "confidence": [
+                      1972.68,
+                      1991.138
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.648,
+                      "Poland": 0.158,
+                      "USA": 0.113,
+                      "Australia": 0.0309,
+                      "Netherlands": 0.0252,
+                      "France": 0.0239
+                    },
+                    "entropy": 1.109
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T312A",
+                      "A315G",
+                      "A321G",
+                      "G327T",
+                      "A328G",
+                      "C329A"
+                    ],
+                    "NCTC9094_02306": [
+                      "T110D"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC9094_02306: T110D"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000022",
+                    "node_attrs": {
+                      "div": 0.0246,
+                      "num_date": {
+                        "value": 2016.885,
+                        "confidence": [
+                          2014.686,
+                          2017.695
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.993,
+                          "Poland": 0.00347,
+                          "USA": 0.00276
+                        },
+                        "entropy": 0.0526
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C342A",
+                          "C345T",
+                          "A669T",
+                          "C780A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "GIL-16_QMJ05754-CP057506-2486288",
+                        "node_attrs": {
+                          "div": 0.0246,
+                          "num_date": {
+                            "value": 2017.351,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-16"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "GIL-16_QMJ14819-CP057509-2486288",
+                        "node_attrs": {
+                          "div": 0.0246,
+                          "num_date": {
+                            "value": 2017.351,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-16"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000023",
+                    "node_attrs": {
+                      "div": 0.0569,
+                      "num_date": {
+                        "value": 2014.937,
+                        "confidence": [
+                          2010.215,
+                          2016.066
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.993,
+                          "Poland": 0.00344,
+                          "USA": 0.00273
+                        },
+                        "entropy": 0.0521
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A33G",
+                          "C110T",
+                          "C117A",
+                          "G284A",
+                          "A300G",
+                          "C303T",
+                          "C363T",
+                          "C384T",
+                          "T396C",
+                          "G409A",
+                          "G462A",
+                          "G463A",
+                          "A471G",
+                          "A492G",
+                          "T493C",
+                          "G504C",
+                          "A507G",
+                          "A517G",
+                          "T543C",
+                          "C550A",
+                          "C573T",
+                          "A576C",
+                          "G591A",
+                          "G642A",
+                          "A645G",
+                          "A684C",
+                          "G720T",
+                          "C723T",
+                          "G775A",
+                          "C796A",
+                          "A803C"
+                        ],
+                        "NCTC9094_02306": [
+                          "T37I",
+                          "R95Q",
+                          "A137T",
+                          "V155M",
+                          "K173E",
+                          "Q184K",
+                          "V259I",
+                          "L266M",
+                          "E268A"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC9094_02306: T37I, R95Q, A137T, V155M, K173E, Q184K, V259I, L266M, E268A"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "GIL-7_WP_220470440-NZ_CP057136-2652469",
+                        "node_attrs": {
+                          "div": 0.0592,
+                          "num_date": {
+                            "value": 2017.999,
+                            "confidence": [
+                              2017.116,
+                              2017.999
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-7"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C342A",
+                              "C345T",
+                              "T363A"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "GIL-6_WFW15414-CP099254-2283093",
+                        "node_attrs": {
+                          "div": 0.0616,
+                          "num_date": {
+                            "value": 2017.999,
+                            "confidence": [
+                              2017.115,
+                              2017.999
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-6"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G91A",
+                              "C133T",
+                              "T166C"
+                            ],
+                            "NCTC9094_02306": [
+                              "E31K",
+                              "Y56H"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC9094_02306: E31K, Y56H"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000028",
+                "node_attrs": {
+                  "div": 0.0129,
+                  "num_date": {
+                    "value": 1995.369,
+                    "confidence": [
+                      1982.121,
+                      1997.998
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.875,
+                      "Poland": 0.0868,
+                      "USA": 0.0265,
+                      "France": 0.00397,
+                      "Australia": 0.00396,
+                      "Netherlands": 0.00376
+                    },
+                    "entropy": 0.49
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000030",
+                    "node_attrs": {
+                      "div": 0.014,
+                      "num_date": {
+                        "value": 2011.054,
+                        "confidence": [
+                          2002.756,
+                          2015.212
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.99,
+                          "Poland": 0.00469,
+                          "USA": 0.0043
+                        },
+                        "entropy": 0.0656
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A669T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "GIL-21_WP_220469472-NZ_JABXQC010000001-3038509",
+                        "node_attrs": {
+                          "div": 0.0164,
+                          "num_date": {
+                            "value": 2017.001,
+                            "confidence": [
+                              2017.001,
+                              2017.891
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-21"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_freundii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G284A",
+                              "G387C"
+                            ],
+                            "NCTC9094_02306": [
+                              "R95Q"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC9094_02306: R95Q"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000033",
+                        "node_attrs": {
+                          "div": 0.014,
+                          "num_date": {
+                            "value": 2015.034,
+                            "confidence": [
+                              2007.804,
+                              2016.698
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.994,
+                              "USA": 0.00502
+                            },
+                            "entropy": 0.0414
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "GIL-18_WP_217438991-NZ_CP056229-2215760",
+                            "node_attrs": {
+                              "div": 0.014,
+                              "num_date": {
+                                "value": 2017.001,
+                                "confidence": [
+                                  2017.001,
+                                  2017.879
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "GIL-18"
+                              },
+                              "organism": {
+                                "value": "Citrobacter_freundii"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000020",
+                            "node_attrs": {
+                              "div": 0.0164,
+                              "num_date": {
+                                "value": 2016.885,
+                                "confidence": [
+                                  2015.914,
+                                  2017.919
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.951,
+                                  "USA": 0.0452,
+                                  "Poland": 0.00234
+                                },
+                                "entropy": 0.209
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C796A",
+                                  "C849T"
+                                ],
+                                "NCTC9094_02306": [
+                                  "L266M"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC9094_02306: L266M"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "GIL-23_MCS3464441-JANUFB010000005-108253",
+                                "node_attrs": {
+                                  "div": 0.0164,
+                                  "num_date": {
+                                    "value": 2022.64,
+                                    "confidence": [
+                                      2022.64,
+                                      2022.64
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "GIL-23"
+                                  },
+                                  "organism": {
+                                    "value": "Citrobacter_sp._JUb117"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "GIL-23_WP_345943523-NZ_CP057258-2173803",
+                                "node_attrs": {
+                                  "div": 0.0164,
+                                  "num_date": {
+                                    "value": 2017.983,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "GIL-23"
+                                  },
+                                  "organism": {
+                                    "value": "Citrobacter_freundii"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000024",
+                    "node_attrs": {
+                      "div": 0.0129,
+                      "num_date": {
+                        "value": 1995.369,
+                        "confidence": [
+                          1987.07,
+                          1999.938
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.878,
+                          "Poland": 0.0947,
+                          "USA": 0.0188,
+                          "France": 0.00299,
+                          "Australia": 0.00252,
+                          "Netherlands": 0.00246
+                        },
+                        "entropy": 0.459
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "GIL-15_TKV24839-SZXN01000004-14529",
+                        "node_attrs": {
+                          "div": 0.014,
+                          "num_date": {
+                            "value": 2019.273,
+                            "confidence": [
+                              2019.273,
+                              2019.273
+                            ]
+                          },
+                          "country": {
+                            "value": "Poland",
+                            "confidence": {
+                              "Poland": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "GIL-15"
+                          },
+                          "organism": {
+                            "value": "Citrobacter_sp._wls613"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G257T"
+                            ],
+                            "NCTC9094_02306": [
+                              "R86L"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC9094_02306: R86L"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000025",
+                        "node_attrs": {
+                          "div": 0.0164,
+                          "num_date": {
+                            "value": 2002.0,
+                            "confidence": [
+                              1995.842,
+                              2003.554
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.984,
+                              "Poland": 0.0106,
+                              "USA": 0.00339,
+                              "France": 0.00198
+                            },
+                            "entropy": 0.1
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A684C",
+                              "C796A",
+                              "G813A"
+                            ],
+                            "NCTC9094_02306": [
+                              "L266M"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC9094_02306: L266M"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000026",
+                            "node_attrs": {
+                              "div": 0.0175,
+                              "num_date": {
+                                "value": 2004.528,
+                                "confidence": [
+                                  2000.955,
+                                  2009.573
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.986,
+                                  "Poland": 0.00853,
+                                  "USA": 0.00357
+                                },
+                                "entropy": 0.0855
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G393A"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "GIL-20_QLS08325-CP056244-2211683",
+                                "node_attrs": {
+                                  "div": 0.021,
+                                  "num_date": {
+                                    "value": 2017.001,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.894
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "GIL-20"
+                                  },
+                                  "organism": {
+                                    "value": "Citrobacter_freundii"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C117A",
+                                      "C342T",
+                                      "A800C"
+                                    ],
+                                    "NCTC9094_02306": [
+                                      "E267A"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "NCTC9094_02306: E267A"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "NODE_0000027",
+                                "node_attrs": {
+                                  "div": 0.021,
+                                  "num_date": {
+                                    "value": 2014.756,
+                                    "confidence": [
+                                      2011.168,
+                                      2015.791
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 0.986,
+                                      "Poland": 0.0135
+                                    },
+                                    "entropy": 0.0756
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G284A",
+                                      "G309A",
+                                      "C372A"
+                                    ],
+                                    "NCTC9094_02306": [
+                                      "R95Q"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "NCTC9094_02306: R95Q"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "GIL-22_QCA18291-CP038856-2225708",
+                                    "node_attrs": {
+                                      "div": 0.0222,
+                                      "num_date": {
+                                        "value": 2016.352,
+                                        "confidence": [
+                                          2016.001,
+                                          2016.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "GIL-22"
+                                      },
+                                      "organism": {
+                                        "value": "Citrobacter_freundii"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G738A"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "GIL-22_TKV22413-SZWM01000164-522142",
+                                    "node_attrs": {
+                                      "div": 0.021,
+                                      "num_date": {
+                                        "value": 2019.267,
+                                        "confidence": [
+                                          2019.267,
+                                          2019.267
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Poland",
+                                        "confidence": {
+                                          "Poland": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "GIL-22"
+                                      },
+                                      "organism": {
+                                        "value": "Citrobacter_sp._TBCS-14"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000029",
+                                    "node_attrs": {
+                                      "div": 0.0222,
+                                      "num_date": {
+                                        "value": 2015.596,
+                                        "confidence": [
+                                          2013.258,
+                                          2016.539
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 0.999,
+                                          "Poland": 0.00125
+                                        },
+                                        "entropy": 0.01
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A300G"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "GIL-19_QLW76974-CP056644-2253690",
+                                        "node_attrs": {
+                                          "div": 0.0245,
+                                          "num_date": {
+                                            "value": 2017.999,
+                                            "confidence": [
+                                              2017.132,
+                                              2017.999
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "GIL-19"
+                                          },
+                                          "organism": {
+                                            "value": "Citrobacter_freundii"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "A800C",
+                                              "G858A"
+                                            ],
+                                            "NCTC9094_02306": [
+                                              "E267A"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "NCTC9094_02306: E267A"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "GIL-4_WP_223240224-NZ_CP055466-2295541",
+                                        "node_attrs": {
+                                          "div": 0.0245,
+                                          "num_date": {
+                                            "value": 2017.999,
+                                            "confidence": [
+                                              2017.132,
+                                              2017.999
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "GIL-4"
+                                          },
+                                          "organism": {
+                                            "value": "Citrobacter_freundii"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C684A",
+                                              "G775A"
+                                            ],
+                                            "NCTC9094_02306": [
+                                              "V259I"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "NCTC9094_02306: V259I"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000031",
+                                        "node_attrs": {
+                                          "div": 0.0234,
+                                          "num_date": {
+                                            "value": 2016.885,
+                                            "confidence": [
+                                              2015.764,
+                                              2017.732
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 0.934,
+                                              "Poland": 0.064,
+                                              "USA": 0.00164
+                                            },
+                                            "entropy": 0.256
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C849T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GIL-22_QMG43256-CP057353-2181223",
+                                            "node_attrs": {
+                                              "div": 0.0234,
+                                              "num_date": {
+                                                "value": 2017.433,
+                                                "confidence": [
+                                                  2017.001,
+                                                  2017.999
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "GIL-22"
+                                              },
+                                              "organism": {
+                                                "value": "Citrobacter_freundii"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "GIL-22_TKU14459-SZWP01000047-64753",
+                                            "node_attrs": {
+                                              "div": 0.0257,
+                                              "num_date": {
+                                                "value": 2019.267,
+                                                "confidence": [
+                                                  2019.267,
+                                                  2019.267
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Poland",
+                                                "confidence": {
+                                                  "Poland": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "GIL-22"
+                                              },
+                                              "organism": {
+                                                "value": "Citrobacter_sp._wls829"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "G69A",
+                                                  "G180A"
+                                                ]
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000032",
+                            "node_attrs": {
+                              "div": 0.0175,
+                              "num_date": {
+                                "value": 2002.077,
+                                "confidence": [
+                                  1999.754,
+                                  2005.413
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.981,
+                                  "France": 0.01,
+                                  "Poland": 0.00423,
+                                  "USA": 0.00371
+                                },
+                                "entropy": 0.113
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G775A"
+                                ],
+                                "NCTC9094_02306": [
+                                  "V259I"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC9094_02306: V259I"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "GIL-1_ABL74511-DQ991234-1473",
+                                "node_attrs": {
+                                  "div": 0.021,
+                                  "num_date": {
+                                    "value": 2006.697,
+                                    "confidence": [
+                                      2006.697,
+                                      2006.697
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "GIL-1"
+                                  },
+                                  "organism": {
+                                    "value": "Citrobacter_gillenii"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G189T",
+                                      "G276A",
+                                      "A800C"
+                                    ],
+                                    "NCTC9094_02306": [
+                                      "E267A"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "NCTC9094_02306: E267A"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "GIL-10_QMB08354-CP056967-2194983",
+                                "node_attrs": {
+                                  "div": 0.0257,
+                                  "num_date": {
+                                    "value": 2017.982,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "GIL-10"
+                                  },
+                                  "organism": {
+                                    "value": "Citrobacter_freundii"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G69A",
+                                      "C150T",
+                                      "C345T",
+                                      "T481A",
+                                      "A492G",
+                                      "G729A",
+                                      "A813G"
+                                    ],
+                                    "NCTC9094_02306": [
+                                      "W161R"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "NCTC9094_02306: W161R"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "NODE_0000034",
+                                "node_attrs": {
+                                  "div": 0.0187,
+                                  "num_date": {
+                                    "value": 2006.57,
+                                    "confidence": [
+                                      2003.738,
+                                      2011.043
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 0.979,
+                                      "USA": 0.0117,
+                                      "Poland": 0.00395,
+                                      "Netherlands": 0.00263,
+                                      "France": 0.00219
+                                    },
+                                    "entropy": 0.127
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "A775C"
+                                    ],
+                                    "NCTC9094_02306": [
+                                      "I259L"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "NCTC9094_02306: I259L"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000035",
+                                    "node_attrs": {
+                                      "div": 0.0199,
+                                      "num_date": {
+                                        "value": 2016.885,
+                                        "confidence": [
+                                          2015.855,
+                                          2017.454
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": 0.00132
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A796C"
+                                        ],
+                                        "NCTC9094_02306": [
+                                          "M266L"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "NCTC9094_02306: M266L"
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "GIL-11_QLY39218-CP056597-2189302",
+                                        "node_attrs": {
+                                          "div": 0.0199,
+                                          "num_date": {
+                                            "value": 2017.328,
+                                            "confidence": [
+                                              2017.001,
+                                              2017.999
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "GIL-11"
+                                          },
+                                          "organism": {
+                                            "value": "Citrobacter_freundii"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "GIL-11_QMA49732-CP056910-2367474",
+                                        "node_attrs": {
+                                          "div": 0.0199,
+                                          "num_date": {
+                                            "value": 2017.328,
+                                            "confidence": [
+                                              2017.001,
+                                              2017.999
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "GIL-11"
+                                          },
+                                          "organism": {
+                                            "value": "Citrobacter_freundii"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "GIL-11_QLX27692-CP056333-2317271",
+                                        "node_attrs": {
+                                          "div": 0.0199,
+                                          "num_date": {
+                                            "value": 2017.328,
+                                            "confidence": [
+                                              2017.001,
+                                              2017.999
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "GIL-11"
+                                          },
+                                          "organism": {
+                                            "value": "Citrobacter_freundii"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000037",
+                                    "node_attrs": {
+                                      "div": 0.0199,
+                                      "num_date": {
+                                        "value": 2011.168,
+                                        "confidence": [
+                                          2007.689,
+                                          2013.386
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 0.915,
+                                          "USA": 0.0533,
+                                          "Netherlands": 0.0211,
+                                          "Poland": 0.00725,
+                                          "Australia": 0.00173,
+                                          "France": 0.00151
+                                        },
+                                        "entropy": 0.375
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C117A"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "GIL-13_ENF8881692-ABSYFT010000160-4038",
+                                        "node_attrs": {
+                                          "div": 0.0199,
+                                          "num_date": {
+                                            "value": 2024.012,
+                                            "confidence": [
+                                              2024.012,
+                                              2024.012
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "GIL-13"
+                                          },
+                                          "organism": {
+                                            "value": "Escherichia_coli"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000038",
+                                        "node_attrs": {
+                                          "div": 0.021,
+                                          "num_date": {
+                                            "value": 2013.989,
+                                            "confidence": [
+                                              2010.873,
+                                              2014.01
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 0.907,
+                                              "Netherlands": 0.0648,
+                                              "USA": 0.0201,
+                                              "Poland": 0.00553,
+                                              "Australia": 0.00116
+                                            },
+                                            "entropy": 0.388
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "A300G"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GIL-13_WP_153879633-NZ_PHGV01000002-416300",
+                                            "node_attrs": {
+                                              "div": 0.021,
+                                              "num_date": {
+                                                "value": 2014.01,
+                                                "confidence": [
+                                                  2014.01,
+                                                  2014.01
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Netherlands",
+                                                "confidence": {
+                                                  "Netherlands": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "GIL-13"
+                                              },
+                                              "organism": {
+                                                "value": "Citrobacter_freundii"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "GIL-12_MBA8063862-JABXRI010000001-3265759",
+                                            "node_attrs": {
+                                              "div": 0.0257,
+                                              "num_date": {
+                                                "value": 2017.999,
+                                                "confidence": [
+                                                  2017.121,
+                                                  2017.999
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "GIL-12"
+                                              },
+                                              "organism": {
+                                                "value": "Citrobacter_freundii"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "A117T",
+                                                  "T123C",
+                                                  "C129G",
+                                                  "G284A"
+                                                ],
+                                                "NCTC9094_02306": [
+                                                  "R95Q"
+                                                ]
+                                              },
+                                              "labels": {
+                                                "aa": "NCTC9094_02306: R95Q"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

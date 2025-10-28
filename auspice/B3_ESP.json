@@ -1,0 +1,2160 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 ESP beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 873,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "F564_RS0115030": {
+        "end": 873,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Israel": {
+            "latitude": 31.217736,
+            "longitude": 34.903129
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "South Africa": {
+            "latitude": -28.8166235,
+            "longitude": 24.991639
+          },
+          "Denmark": {
+            "latitude": 56.2639,
+            "longitude": 9.5018
+          },
+          "Chile": {
+            "latitude": -31.7613364,
+            "longitude": -71.3187696
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 589.303,
+        "confidence": [
+          495.273,
+          706.966
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.954,
+          "Chile": 0.0096,
+          "United Kingdom": 0.00692,
+          "Denamark": 0.00658,
+          "Denmark": 0.00658,
+          "Germany": 0.00556,
+          "South Africa": 0.00495,
+          "Israel": 0.00391,
+          "China": 0.00158
+        },
+        "entropy": 0.277
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000009",
+        "node_attrs": {
+          "div": 0.0407,
+          "num_date": {
+            "value": 1057.645,
+            "confidence": [
+              998.768,
+              1153.952
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.989,
+              "Germany": 0.00499,
+              "South Africa": 0.00397
+            },
+            "entropy": 0.0743
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A19T",
+              "T25C",
+              "A99G",
+              "T141C",
+              "A444G",
+              "G537C",
+              "A568G",
+              "A575C",
+              "A576T",
+              "T621C",
+              "A637C",
+              "A639C",
+              "A745G",
+              "A747G",
+              "A753T",
+              "A758C",
+              "A811T",
+              "A865T"
+            ],
+            "F564_RS0115030": [
+              "I7L",
+              "N190D",
+              "K192T",
+              "K213H",
+              "K249E",
+              "*253S",
+              "K271*",
+              "K289*"
+            ]
+          },
+          "labels": {
+            "aa": "F564_RS0115030: I7L, N190D, K192T, K213H, K249E, *253S, K271*, K289*"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000010",
+            "node_attrs": {
+              "div": 0.0487,
+              "num_date": {
+                "value": 1139.72,
+                "confidence": [
+                  1074.55,
+                  1226.459
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.979,
+                  "Germany": 0.0103,
+                  "South Africa": 0.00817
+                },
+                "entropy": 0.124
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C150T",
+                  "G237T",
+                  "G297T",
+                  "C378A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "ESP-3_SHK56228-FRAM01000003-334819",
+                "node_attrs": {
+                  "div": 0.169,
+                  "num_date": {
+                    "value": 2016.914,
+                    "confidence": [
+                      2016.914,
+                      2016.914
+                    ]
+                  },
+                  "country": {
+                    "value": "Germany",
+                    "confidence": {
+                      "Germany": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "ESP-3"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Epilithonimonas_mollis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C10A",
+                      "C16T",
+                      "A18T",
+                      "T19C",
+                      "A27C",
+                      "C28A",
+                      "A31G",
+                      "C39G",
+                      "C53G",
+                      "C60A",
+                      "A69G",
+                      "T81C",
+                      "A90C",
+                      "C100T",
+                      "G108A",
+                      "G111T",
+                      "A117G",
+                      "G126T",
+                      "T130C",
+                      "T135C",
+                      "T148A",
+                      "T153C",
+                      "T154C",
+                      "G159A",
+                      "C168T",
+                      "A169G",
+                      "A188G",
+                      "T189C",
+                      "T207A",
+                      "G210A",
+                      "T225G",
+                      "G249A",
+                      "A255T",
+                      "A263T",
+                      "G282C",
+                      "C306T",
+                      "T324A",
+                      "T327C",
+                      "T342C",
+                      "C345T",
+                      "C363T",
+                      "G364C",
+                      "A366G",
+                      "C368A",
+                      "A372G",
+                      "T373C",
+                      "A375G",
+                      "C382A",
+                      "G384A",
+                      "T393A",
+                      "T405C",
+                      "G414A",
+                      "G417A",
+                      "A426T",
+                      "T432G",
+                      "C435T",
+                      "A441G",
+                      "T442C",
+                      "G444T",
+                      "A483G",
+                      "G495A",
+                      "T519C",
+                      "C525T",
+                      "A528G",
+                      "C537T",
+                      "T546C",
+                      "A547C",
+                      "A561G",
+                      "T564C",
+                      "A573G",
+                      "T585A",
+                      "T603G",
+                      "C609T",
+                      "C618T",
+                      "C639T",
+                      "T645C",
+                      "A648C",
+                      "A649G",
+                      "C669A",
+                      "A671T",
+                      "T678C",
+                      "G714C",
+                      "T720A",
+                      "C744T",
+                      "T757C",
+                      "A759G",
+                      "T765C",
+                      "A773G",
+                      "T792C",
+                      "A813T",
+                      "G840T",
+                      "A851G",
+                      "G853C"
+                    ],
+                    "F564_RS0115030": [
+                      "L4I",
+                      "L6F",
+                      "L10I",
+                      "I11V",
+                      "A18G",
+                      "K30N",
+                      "P34S",
+                      "Y50N",
+                      "I57V",
+                      "N63S",
+                      "Y88F",
+                      "E122Q",
+                      "A123E",
+                      "L128I",
+                      "I183L",
+                      "N217D",
+                      "Y224F",
+                      "S253P",
+                      "N258S",
+                      "*271Y",
+                      "L280F",
+                      "K284R",
+                      "E285Q"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: L4I, L6F, L10I, I11V, A18G, K30N, P34S, Y50N, I57V, N63S, Y88F, E122Q, A123E, L128I, I183L, N217D, Y224F, S253P, N258S, *271Y, L280F, K284R, E285Q"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000011",
+                "node_attrs": {
+                  "div": 0.0683,
+                  "num_date": {
+                    "value": 1339.703,
+                    "confidence": [
+                      1263.993,
+                      1426.386
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.966,
+                      "South Africa": 0.0243,
+                      "Germany": 0.00644
+                    },
+                    "entropy": 0.177
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T12C",
+                      "C16A",
+                      "T78C",
+                      "G96A",
+                      "A213C",
+                      "A339T",
+                      "A396G",
+                      "A522T",
+                      "C579T",
+                      "C615T",
+                      "C669T",
+                      "T672C",
+                      "A693G",
+                      "C729T",
+                      "G841A",
+                      "G849A",
+                      "G855A"
+                    ],
+                    "F564_RS0115030": [
+                      "L6I",
+                      "E113D",
+                      "E281K"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: L6I, E113D, E281K"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "ESP-10_SEH74196-FNWX01000025-4451",
+                    "node_attrs": {
+                      "div": 0.148,
+                      "num_date": {
+                        "value": 2016.775,
+                        "confidence": [
+                          2016.775,
+                          2016.775
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "ESP-10"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Epilithonimonas_hominis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T24C",
+                          "C25T",
+                          "C33A",
+                          "A54G",
+                          "A63T",
+                          "G99A",
+                          "C100T",
+                          "C114T",
+                          "C123T",
+                          "A144G",
+                          "C168T",
+                          "G177C",
+                          "T180C",
+                          "C198T",
+                          "G210A",
+                          "T243A",
+                          "C280T",
+                          "T286A",
+                          "G294A",
+                          "C315A",
+                          "A334G",
+                          "A335C",
+                          "A336C",
+                          "T342A",
+                          "G364C",
+                          "G376A",
+                          "C390A",
+                          "T402C",
+                          "C408T",
+                          "G415T",
+                          "A441T",
+                          "C446A",
+                          "G447T",
+                          "C474T",
+                          "G507A",
+                          "T519C",
+                          "C537T",
+                          "C575T",
+                          "C594G",
+                          "C612T",
+                          "G640T",
+                          "T642A",
+                          "A657G",
+                          "T678G",
+                          "G714A",
+                          "C735T",
+                          "G741A",
+                          "G747A",
+                          "A759T",
+                          "T765C",
+                          "G766A",
+                          "G777A",
+                          "T781G",
+                          "G783A",
+                          "T811G",
+                          "T838C",
+                          "T839A",
+                          "T847G",
+                          "A852C"
+                        ],
+                        "F564_RS0115030": [
+                          "P34S",
+                          "L96M",
+                          "K112A",
+                          "E122Q",
+                          "A126T",
+                          "G139W",
+                          "T149N",
+                          "T192I",
+                          "A214S",
+                          "F226L",
+                          "A256T",
+                          "L261V",
+                          "*271E",
+                          "L280Q",
+                          "L283V",
+                          "K284N"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "F564_RS0115030: P34S, L96M, K112A, E122Q, A126T, G139W, T149N, T192I, A214S, F226L, A256T, L261V, *271E, L280Q, L283V, K284N"
+                      }
+                    }
+                  },
+                  {
+                    "name": "ESP-6_OJX31894-MKVE01000018-6139",
+                    "node_attrs": {
+                      "div": 0.128,
+                      "num_date": {
+                        "value": 2014.078,
+                        "confidence": [
+                          2014.078,
+                          2014.078
+                        ]
+                      },
+                      "country": {
+                        "value": "South Africa",
+                        "confidence": {
+                          "South Africa": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "ESP-6"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Chryseobacterium_sp._36-9"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A8G",
+                          "C28T",
+                          "C60G",
+                          "A66C",
+                          "G111A",
+                          "T130C",
+                          "T154C",
+                          "T207A",
+                          "T208C",
+                          "T222C",
+                          "T225A",
+                          "T237A",
+                          "G246A",
+                          "C345G",
+                          "A369T",
+                          "T402G",
+                          "A411G",
+                          "A426G",
+                          "C435T",
+                          "A438G",
+                          "G444A",
+                          "G447A",
+                          "T450G",
+                          "T459C",
+                          "T468C",
+                          "A573G",
+                          "T603G",
+                          "G640A",
+                          "A648T",
+                          "A649G",
+                          "T651G",
+                          "G654T",
+                          "C694T",
+                          "T720G",
+                          "T757C",
+                          "A762C",
+                          "A795G",
+                          "A800T",
+                          "C807T",
+                          "A810G",
+                          "A813T",
+                          "A828G",
+                          "G840A",
+                          "A842C",
+                          "A843C",
+                          "T859A",
+                          "C860A",
+                          "A861T",
+                          "A862T",
+                          "A863G"
+                        ],
+                        "F564_RS0115030": [
+                          "K3R",
+                          "A214T",
+                          "N217E",
+                          "M218I",
+                          "S253P",
+                          "N267I",
+                          "*271Y",
+                          "K281T",
+                          "S287N",
+                          "K288*"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "F564_RS0115030: K3R, A214T, N217E, M218I, S253P, N267I, *271Y, K281T, S287N, K288*"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000012",
+            "node_attrs": {
+              "div": 0.0678,
+              "num_date": {
+                "value": 1484.586,
+                "confidence": [
+                  1370.151,
+                  1552.749
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.998
+                },
+                "entropy": 0.0183
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C28T",
+                  "G96T",
+                  "G159C",
+                  "T162A",
+                  "G177A",
+                  "A183G",
+                  "G294A",
+                  "A369C",
+                  "T405C",
+                  "G414A",
+                  "A420G",
+                  "A438G",
+                  "C446A",
+                  "G447T",
+                  "T450A",
+                  "C594T",
+                  "T627C",
+                  "G714T",
+                  "C726A",
+                  "A732G",
+                  "A759T",
+                  "G777A",
+                  "A798G",
+                  "T804C",
+                  "T811C",
+                  "G819A",
+                  "A843G"
+                ],
+                "F564_RS0115030": [
+                  "T149N",
+                  "*271Q"
+                ]
+              },
+              "labels": {
+                "aa": "F564_RS0115030: T149N, *271Q"
+              }
+            },
+            "children": [
+              {
+                "name": "ESP-4_SDF17054-FNBH01000001-1238435",
+                "node_attrs": {
+                  "div": 0.119,
+                  "num_date": {
+                    "value": 2016.777,
+                    "confidence": [
+                      2016.777,
+                      2016.777
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "ESP-4"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Epilithonimonas_hungarica"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A9C",
+                      "A18T",
+                      "T19A",
+                      "A34C",
+                      "C45T",
+                      "A54G",
+                      "A66C",
+                      "T78C",
+                      "C100T",
+                      "T171C",
+                      "T174C",
+                      "A179G",
+                      "G210A",
+                      "G237A",
+                      "T240C",
+                      "G246A",
+                      "T285C",
+                      "T286C",
+                      "T291C",
+                      "G297A",
+                      "T303C",
+                      "C315A",
+                      "C330T",
+                      "T342G",
+                      "T354C",
+                      "A386G",
+                      "C552T",
+                      "A567C",
+                      "A574G",
+                      "T603G",
+                      "G640A",
+                      "A648C",
+                      "G684A",
+                      "G712A",
+                      "T720C",
+                      "C735T",
+                      "A750G",
+                      "T757A",
+                      "C771T",
+                      "T865G"
+                    ],
+                    "F564_RS0115030": [
+                      "K3N",
+                      "L7I",
+                      "I12L",
+                      "P34S",
+                      "N60S",
+                      "K129R",
+                      "K189N",
+                      "T192A",
+                      "A214T",
+                      "V238I",
+                      "S253T",
+                      "*289E"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: K3N, L7I, I12L, P34S, N60S, K129R, K189N, T192A, A214T, V238I, S253T, *289E"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000013",
+                "node_attrs": {
+                  "div": 0.109,
+                  "num_date": {
+                    "value": 2010.709,
+                    "confidence": [
+                      1995.174,
+                      2016.01
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.971,
+                      "China": 0.0284
+                    },
+                    "entropy": 0.131
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A8G",
+                      "T12C",
+                      "C16A",
+                      "T24C",
+                      "G99A",
+                      "A144G",
+                      "A204T",
+                      "T208C",
+                      "T220G",
+                      "G249A",
+                      "G268A",
+                      "C270T",
+                      "C273T",
+                      "C279T",
+                      "G282A",
+                      "T309C",
+                      "A348C",
+                      "G384C",
+                      "T393C",
+                      "T447C",
+                      "G501A",
+                      "C579T",
+                      "G588A",
+                      "T594G",
+                      "C609T",
+                      "C612T",
+                      "C615T",
+                      "C639A",
+                      "T678G",
+                      "C694T",
+                      "T714C",
+                      "T720G",
+                      "A755G",
+                      "C767T",
+                      "A795G",
+                      "G829A"
+                    ],
+                    "F564_RS0115030": [
+                      "K3R",
+                      "L6I",
+                      "Y74D",
+                      "D90N",
+                      "H213Q",
+                      "F226L",
+                      "K252R",
+                      "A256V",
+                      "D277N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: K3R, L6I, Y74D, D90N, H213Q, F226L, K252R, A256V, D277N"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "ESP-7_SIO13374-FSRK01000001-2276310",
+                    "node_attrs": {
+                      "div": 0.109,
+                      "num_date": {
+                        "value": 2016.914,
+                        "confidence": [
+                          2016.914,
+                          2016.914
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "ESP-7"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Epilithonimonas_zeae"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000014",
+                    "node_attrs": {
+                      "div": 0.109,
+                      "num_date": {
+                        "value": 2014.686,
+                        "confidence": [
+                          2006.885,
+                          2019.475
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": 0.0035
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "ESP-7_MFC4164081-JBHSCA010000001-2276320",
+                        "node_attrs": {
+                          "div": 0.109,
+                          "num_date": {
+                            "value": 2022.001,
+                            "confidence": [
+                              2022.001,
+                              2022.895
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ESP-7"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Epilithonimonas_zeae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "ESP-7_MFD2477019-JBHUKZ010000001-2276320",
+                        "node_attrs": {
+                          "div": 0.109,
+                          "num_date": {
+                            "value": 2020.001,
+                            "confidence": [
+                              2020.001,
+                              2020.896
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ESP-7"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Epilithonimonas_zeae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000006",
+        "node_attrs": {
+          "div": 0.0476,
+          "num_date": {
+            "value": 1059.237,
+            "confidence": [
+              997.698,
+              1168.457
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.934,
+              "Chile": 0.0183,
+              "United Kingdom": 0.0126,
+              "Denamark": 0.0118,
+              "Denmark": 0.0118,
+              "Israel": 0.00447,
+              "Germany": 0.00316,
+              "South Africa": 0.00293,
+              "China": 0.00108
+            },
+            "entropy": 0.364
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A15C",
+              "T22C",
+              "A74C",
+              "A75C",
+              "A79C",
+              "A86C",
+              "A88G",
+              "T138C",
+              "G159T",
+              "T162G",
+              "T174G",
+              "T180C",
+              "T201C",
+              "T243C",
+              "T250C",
+              "A252C",
+              "T272C",
+              "T291C",
+              "T324C",
+              "T360G",
+              "A375T",
+              "T393C",
+              "T402G",
+              "A426C",
+              "T432C",
+              "A473G",
+              "T492C",
+              "A565G",
+              "T585C",
+              "T636G",
+              "A650C",
+              "T739C",
+              "G741T",
+              "T757G",
+              "A762C",
+              "T781C",
+              "A812G",
+              "A822T",
+              "T847G",
+              "A861T",
+              "A862C"
+            ],
+            "F564_RS0115030": [
+              "F8L",
+              "K25T",
+              "N27H",
+              "E29A",
+              "K30E",
+              "I91T",
+              "L125F",
+              "D158G",
+              "K189E",
+              "N217T",
+              "*253E",
+              "K271R",
+              "E274D",
+              "L283V",
+              "K288Q"
+            ]
+          },
+          "labels": {
+            "aa": "F564_RS0115030: F8L, K25T, N27H, E29A, K30E, I91T, L125F, D158G, K189E, N217T, *253E, K271R, E274D, L283V, K288Q"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000007",
+            "node_attrs": {
+              "div": 0.0832,
+              "num_date": {
+                "value": 1538.719,
+                "confidence": [
+                  1444.965,
+                  1601.111
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.991,
+                  "Israel": 0.00557
+                },
+                "entropy": 0.0628
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T84G",
+                  "G108A",
+                  "C123G",
+                  "T171C",
+                  "A204C",
+                  "A267G",
+                  "C273G",
+                  "G297A",
+                  "T303C",
+                  "A372T",
+                  "T373G",
+                  "C390T",
+                  "G417A",
+                  "A441G",
+                  "A445T",
+                  "T456C",
+                  "T484C",
+                  "T534C",
+                  "C558G",
+                  "C570T",
+                  "A571G",
+                  "C594G",
+                  "T651C",
+                  "G654T",
+                  "T675A",
+                  "T676C",
+                  "G684A",
+                  "C726A",
+                  "T738C",
+                  "T768C",
+                  "A795G"
+                ],
+                "F564_RS0115030": [
+                  "E124D",
+                  "F125V",
+                  "T149S",
+                  "R191G",
+                  "M218I",
+                  "F226L"
+                ]
+              },
+              "labels": {
+                "aa": "F564_RS0115030: E124D, F125V, T149S, R191G, M218I, F226L"
+              }
+            },
+            "children": [
+              {
+                "name": "ESP-11_KFC23006-JPLZ01000003-205617",
+                "node_attrs": {
+                  "div": 0.125,
+                  "num_date": {
+                    "value": 2012.165,
+                    "confidence": [
+                      2012.165,
+                      2012.239
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "allele": {
+                    "value": "ESP-11"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Chryseobacterium_sp._FH1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C10A",
+                      "C15A",
+                      "A18C",
+                      "C28T",
+                      "T32C",
+                      "C59T",
+                      "C60T",
+                      "C82T",
+                      "G84A",
+                      "A90C",
+                      "T135C",
+                      "G174T",
+                      "G177T",
+                      "C180T",
+                      "T195G",
+                      "T219C",
+                      "A260G",
+                      "A318G",
+                      "C330T",
+                      "T342A",
+                      "C408T",
+                      "T442C",
+                      "C525T",
+                      "T603A",
+                      "C606T",
+                      "C641T",
+                      "A660G",
+                      "A689G",
+                      "C744T",
+                      "G777A",
+                      "A846G",
+                      "A870G",
+                      "A872G"
+                    ],
+                    "F564_RS0115030": [
+                      "L4I",
+                      "I11T",
+                      "T20I",
+                      "P28S",
+                      "E30D",
+                      "K87R",
+                      "A214V",
+                      "K230R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: L4I, I11T, T20I, P28S, E30D, K87R, A214V, K230R"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.128,
+                  "num_date": {
+                    "value": 2010.001,
+                    "confidence": [
+                      1996.669,
+                      2010.929
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.959,
+                      "Israel": 0.0406
+                    },
+                    "entropy": 0.171
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T25C",
+                      "A27G",
+                      "T36C",
+                      "T43A",
+                      "T44C",
+                      "A69G",
+                      "C74A",
+                      "C75A",
+                      "T78C",
+                      "C79A",
+                      "T81C",
+                      "G85A",
+                      "C86A",
+                      "T105C",
+                      "G111T",
+                      "T159G",
+                      "A186G",
+                      "C204T",
+                      "A213G",
+                      "A332G",
+                      "A348C",
+                      "A369T",
+                      "C393T",
+                      "G473A",
+                      "A486G",
+                      "T519A",
+                      "A522T",
+                      "G565A",
+                      "T621C",
+                      "T642G",
+                      "T654C",
+                      "C669T",
+                      "T672C",
+                      "T702C",
+                      "C781T",
+                      "A821G",
+                      "T837C",
+                      "T838C",
+                      "A866C"
+                    ],
+                    "F564_RS0115030": [
+                      "F15T",
+                      "T25K",
+                      "H27N",
+                      "A29K",
+                      "K111R",
+                      "G158D",
+                      "E189K",
+                      "D274G",
+                      "K289T"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: F15T, T25K, H27N, A29K, K111R, G158D, E189K, D274G, K289T"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "ESP-12_SEP84176-FOFI01000001-813450",
+                    "node_attrs": {
+                      "div": 0.128,
+                      "num_date": {
+                        "value": 2016.821,
+                        "confidence": [
+                          2016.821,
+                          2016.821
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "ESP-12"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Epilithonimonas_lactis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "ESP-12_KFC21405-JPLY01000004-769947",
+                    "node_attrs": {
+                      "div": 0.128,
+                      "num_date": {
+                        "value": 2010.749,
+                        "confidence": [
+                          2010.001,
+                          2010.999
+                        ]
+                      },
+                      "country": {
+                        "value": "Israel",
+                        "confidence": {
+                          "Israel": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "ESP-12"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Epilithonimonas_lactis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.0665,
+              "num_date": {
+                "value": 1239.528,
+                "confidence": [
+                  1156.275,
+                  1333.334
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.608,
+                  "Chile": 0.123,
+                  "United Kingdom": 0.0839,
+                  "Denamark": 0.0783,
+                  "Denmark": 0.0783,
+                  "Israel": 0.00879,
+                  "Germany": 0.00804,
+                  "South Africa": 0.00785,
+                  "China": 0.00464
+                },
+                "entropy": 1.31
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G111A",
+                  "A334G",
+                  "A335C",
+                  "A336G",
+                  "C378G",
+                  "C474T",
+                  "T591C",
+                  "C618T",
+                  "G640A",
+                  "T651G",
+                  "A657G",
+                  "T678A",
+                  "G783A",
+                  "G819A"
+                ],
+                "F564_RS0115030": [
+                  "K112A",
+                  "A214T",
+                  "F226L"
+                ]
+              },
+              "labels": {
+                "aa": "F564_RS0115030: K112A, A214T, F226L"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.14,
+                  "num_date": {
+                    "value": 2010.711,
+                    "confidence": [
+                      1992.832,
+                      2014.848
+                    ]
+                  },
+                  "country": {
+                    "value": "Denamark",
+                    "confidence": {
+                      "Denamark": 0.498,
+                      "Denmark": 0.498,
+                      "USA": 0.00279
+                    },
+                    "entropy": 0.726
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T26C",
+                      "A30G",
+                      "T37G",
+                      "A49T",
+                      "C82T",
+                      "T105C",
+                      "C150T",
+                      "A178G",
+                      "C180A",
+                      "A183G",
+                      "A213G",
+                      "C231A",
+                      "G249A",
+                      "T264C",
+                      "C291A",
+                      "G294A",
+                      "T342C",
+                      "G360A",
+                      "A372T",
+                      "T373G",
+                      "T374C",
+                      "C390A",
+                      "T412C",
+                      "G417A",
+                      "C426T",
+                      "C432T",
+                      "A441C",
+                      "T450G",
+                      "T460C",
+                      "C480A",
+                      "C492T",
+                      "G495C",
+                      "T498C",
+                      "T504C",
+                      "A522T",
+                      "C570T",
+                      "A571C",
+                      "C579T",
+                      "C585T",
+                      "T586G",
+                      "T603A",
+                      "A648T",
+                      "A649T",
+                      "G651A",
+                      "G654T",
+                      "C669T",
+                      "T672C",
+                      "A678G",
+                      "T681G",
+                      "T702C",
+                      "G714A",
+                      "T720G",
+                      "C744T",
+                      "C751A",
+                      "T774C",
+                      "A798G",
+                      "C807T",
+                      "T838C",
+                      "A843G",
+                      "G855A",
+                      "T859A",
+                      "C860A",
+                      "C862A",
+                      "A865C",
+                      "A866C",
+                      "A868G"
+                    ],
+                    "F564_RS0115030": [
+                      "L9S",
+                      "S13A",
+                      "N17Y",
+                      "P28S",
+                      "N60E",
+                      "E124D",
+                      "F125A",
+                      "L196V",
+                      "T217S",
+                      "M218I",
+                      "D227E",
+                      "S287N",
+                      "Q288K",
+                      "K289P",
+                      "K290E"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: L9S, S13A, N17Y, P28S, N60E, E124D, F125A, L196V, T217S, M218I, D227E, S287N, Q288K, K289P, K290E"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "ESP-2_APR64490-KU167040-1",
+                    "node_attrs": {
+                      "div": 0.141,
+                      "num_date": {
+                        "value": 2015.881,
+                        "confidence": [
+                          2015.881,
+                          2015.881
+                        ]
+                      },
+                      "country": {
+                        "value": "Denamark",
+                        "confidence": {
+                          "Denamark": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "ESP-2"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "uncultured_bacterium"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A566G"
+                        ],
+                        "F564_RS0115030": [
+                          "E189G"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "F564_RS0115030: E189G"
+                      }
+                    }
+                  },
+                  {
+                    "name": "ESP-1_AJP77085-KP109681-1643",
+                    "node_attrs": {
+                      "div": 0.14,
+                      "num_date": {
+                        "value": 2014.848,
+                        "confidence": [
+                          2014.848,
+                          2014.848
+                        ]
+                      },
+                      "country": {
+                        "value": "Denmark",
+                        "confidence": {
+                          "Denmark": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "ESP-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Chryseobacterium_sp._Stok-2"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "div": 0.108,
+                  "num_date": {
+                    "value": 1564.857,
+                    "confidence": [
+                      1477.278,
+                      1678.181
+                    ]
+                  },
+                  "country": {
+                    "value": "Chile",
+                    "confidence": {
+                      "Chile": 0.371,
+                      "USA": 0.266,
+                      "United Kingdom": 0.252,
+                      "Denamark": 0.0381,
+                      "Denmark": 0.0381,
+                      "Israel": 0.00955,
+                      "Germany": 0.00932,
+                      "South Africa": 0.0092,
+                      "China": 0.00617
+                    },
+                    "entropy": 1.479
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T24C",
+                      "C28A",
+                      "T36C",
+                      "T42C",
+                      "A69G",
+                      "T154C",
+                      "C243A",
+                      "C273A",
+                      "C279A",
+                      "G282C",
+                      "T327C",
+                      "C345T",
+                      "T354G",
+                      "A369G",
+                      "T375G",
+                      "T442C",
+                      "A486G",
+                      "T519C",
+                      "A598T",
+                      "T642C",
+                      "A648G",
+                      "A658C",
+                      "A660G",
+                      "G684T",
+                      "A693G",
+                      "C729T"
+                    ],
+                    "F564_RS0115030": [
+                      "L10I",
+                      "F125L",
+                      "M200L",
+                      "K220Q"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "F564_RS0115030: L10I, F125L, M200L, K220Q"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.163,
+                      "num_date": {
+                        "value": 2191.832,
+                        "confidence": [
+                          2004.344,
+                          2367.112
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.986,
+                          "Chile": 0.00604,
+                          "USA": 0.00438
+                        },
+                        "entropy": 0.0954
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T32A",
+                          "T40G",
+                          "C82T",
+                          "T84G",
+                          "A99G",
+                          "T105C",
+                          "C123G",
+                          "T130C",
+                          "G132T",
+                          "T135C",
+                          "G174C",
+                          "A181C",
+                          "A186T",
+                          "A204T",
+                          "C252G",
+                          "T285G",
+                          "G297T",
+                          "C324T",
+                          "T373C",
+                          "G384A",
+                          "A385C",
+                          "C390T",
+                          "C408T",
+                          "T450G",
+                          "T459A",
+                          "T471A",
+                          "C525T",
+                          "A528C",
+                          "A561G",
+                          "A568G",
+                          "A575C",
+                          "C579T",
+                          "T586C",
+                          "C594T",
+                          "T597C",
+                          "C612A",
+                          "A622C",
+                          "T666C",
+                          "C726T",
+                          "T738C",
+                          "C762T",
+                          "A809G",
+                          "A843T",
+                          "G847A",
+                          "G849A",
+                          "A852G",
+                          "A864G",
+                          "A865G"
+                        ],
+                        "F564_RS0115030": [
+                          "I11N",
+                          "F14V",
+                          "P28S",
+                          "K61Q",
+                          "K129Q",
+                          "N157K",
+                          "N190D",
+                          "K192T",
+                          "K208Q",
+                          "K270R",
+                          "E281D",
+                          "V283I",
+                          "K289E"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "F564_RS0115030: I11N, F14V, P28S, K61Q, K129Q, N157K, N190D, K192T, K208Q, K270R, E281D, V283I, K289E"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NZ_AUAA01000046.1",
+                        "node_attrs": {
+                          "div": 0.163,
+                          "num_date": {
+                            "value": 2202.079,
+                            "confidence": [
+                              2015.904,
+                              2380.823
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.983,
+                              "Chile": 0.00642,
+                              "USA": 0.00489,
+                              "Denmark": 0.0013,
+                              "Denamark": 0.0013
+                            },
+                            "entropy": 0.117
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "ESP-9_WP_028123354-NZ_AUAA01000046-4821",
+                        "node_attrs": {
+                          "div": 0.163,
+                          "num_date": {
+                            "value": 2202.079,
+                            "confidence": [
+                              2015.904,
+                              2380.823
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ESP-9"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Epilithonimonas_tenax_DSM_16811"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000002",
+                    "node_attrs": {
+                      "div": 0.189,
+                      "num_date": {
+                        "value": 2010.001,
+                        "confidence": [
+                          2002.348,
+                          2010.763
+                        ]
+                      },
+                      "country": {
+                        "value": "Chile",
+                        "confidence": {
+                          "Chile": 1.0
+                        },
+                        "entropy": 5.93e-08
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A73G",
+                          "T81C",
+                          "A90C",
+                          "C100A",
+                          "C101A",
+                          "T102G",
+                          "G106A",
+                          "G108A",
+                          "C114T",
+                          "C123T",
+                          "C138T",
+                          "T141C",
+                          "A144G",
+                          "A183G",
+                          "C201T",
+                          "T207A",
+                          "T219C",
+                          "G235A",
+                          "G246A",
+                          "G249A",
+                          "C252T",
+                          "A267G",
+                          "G294A",
+                          "T302A",
+                          "T303C",
+                          "C306T",
+                          "G334T",
+                          "T342A",
+                          "A386G",
+                          "A396T",
+                          "G402C",
+                          "T412A",
+                          "G429C",
+                          "C432G",
+                          "C435T",
+                          "G473A",
+                          "C558G",
+                          "G600T",
+                          "C606G",
+                          "C609T",
+                          "C612T",
+                          "G706A",
+                          "A732G",
+                          "C735T",
+                          "C739A",
+                          "C744T",
+                          "C762A",
+                          "T765C",
+                          "C771T",
+                          "A772G",
+                          "A780G",
+                          "A795G",
+                          "A798G",
+                          "A800G",
+                          "A809T",
+                          "G816T",
+                          "G820A",
+                          "T823C",
+                          "A830C",
+                          "T831C",
+                          "A833C",
+                          "T839C",
+                          "G840T",
+                          "A868T"
+                        ],
+                        "F564_RS0115030": [
+                          "T25A",
+                          "E30D",
+                          "P34K",
+                          "E36K",
+                          "A79T",
+                          "F101Y",
+                          "A112S",
+                          "K129R",
+                          "L138M",
+                          "G158D",
+                          "L200F",
+                          "V236I",
+                          "L247I",
+                          "N258D",
+                          "N267S",
+                          "K270I",
+                          "D274N",
+                          "D277A",
+                          "D278A",
+                          "L280S",
+                          "K290*"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "F564_RS0115030: T25A, E30D, P34K, E36K, A79T, F101Y, A112S, K129R, L138M, G158D, L200F, V236I, L247I, N258D, N267S, K270I, D274N, D277A, D278A, L280S, K290*"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "ESP-8_MDW8550483-JAMXLT020000033-3532",
+                        "node_attrs": {
+                          "div": 0.189,
+                          "num_date": {
+                            "value": 2010.971,
+                            "confidence": [
+                              2010.001,
+                              2010.999
+                            ]
+                          },
+                          "country": {
+                            "value": "Chile",
+                            "confidence": {
+                              "Chile": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ESP-8"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Epilithonimonas_ginsengisoli"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "ESP-8_MBV6881570-JAHTWS010000031-35129",
+                        "node_attrs": {
+                          "div": 0.189,
+                          "num_date": {
+                            "value": 2010.763,
+                            "confidence": [
+                              2010.763,
+                              2010.763
+                            ]
+                          },
+                          "country": {
+                            "value": "Chile",
+                            "confidence": {
+                              "Chile": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ESP-8"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Epilithonimonas_sp._FP105"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "ESP-8_OAH72767-LSHB01000026-3554",
+                        "node_attrs": {
+                          "div": 0.189,
+                          "num_date": {
+                            "value": 2010.971,
+                            "confidence": [
+                              2010.001,
+                              2010.999
+                            ]
+                          },
+                          "country": {
+                            "value": "Chile",
+                            "confidence": {
+                              "Chile": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ESP-8"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_sp._FP211-J200"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 AIM beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 912,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaAIM-1": {
+        "end": 912,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "South Africa": {
+            "latitude": -28.8166235,
+            "longitude": 24.991639
+          },
+          "UNITED KINGDOM": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2001.727,
+        "confidence": [
+          1994.978,
+          2006.187
+        ]
+      },
+      "country": {
+        "value": "Australia",
+        "confidence": {
+          "Australia": 0.98,
+          "UNITED KINGDOM": 0.00814,
+          "South Africa": 0.00787,
+          "Germany": 0.00443
+        },
+        "entropy": 0.122
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "AIM-2_UBK05373-OK067203-246",
+        "node_attrs": {
+          "div": 0.00775,
+          "num_date": {
+            "value": 2021.67,
+            "confidence": [
+              2021.67,
+              2021.67
+            ]
+          },
+          "allele": {
+            "value": "AIM-2"
+          },
+          "country": {
+            "value": "Australia",
+            "confidence": {
+              "Australia": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "organism": {
+            "value": "uncultured_bacterium"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A243G",
+              "G291A",
+              "C294G",
+              "C342A",
+              "T363C",
+              "C375T",
+              "A391G",
+              "C400T",
+              "A545C",
+              "T909G"
+            ],
+            "blaAIM-1": [
+              "I131V",
+              "H182P"
+            ]
+          },
+          "labels": {
+            "aa": "blaAIM-1: I131V, H182P"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 0.00331,
+          "num_date": {
+            "value": 2007.027,
+            "confidence": [
+              2006.409,
+              2008.198
+            ]
+          },
+          "country": {
+            "value": "Australia",
+            "confidence": {
+              "Australia": 0.974,
+              "UNITED KINGDOM": 0.0102,
+              "South Africa": 0.00989,
+              "Germany": 0.00553
+            },
+            "entropy": 0.147
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "AIM-1_MBP9535883-JAGOYS010000180-3350",
+            "node_attrs": {
+              "div": 0.00331,
+              "num_date": {
+                "value": 2021.193,
+                "confidence": [
+                  2021.193,
+                  2021.193
+                ]
+              },
+              "allele": {
+                "value": "AIM-1"
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Pseudoxanthomonas_sp."
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AIM-1_MES4688662-JALGAM010000343-168",
+            "node_attrs": {
+              "div": 0.00772,
+              "num_date": {
+                "value": 2014.999,
+                "confidence": [
+                  2014.105,
+                  2014.999
+                ]
+              },
+              "allele": {
+                "value": "AIM-1"
+              },
+              "country": {
+                "value": "South Africa",
+                "confidence": {
+                  "South Africa": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C141T",
+                  "A144C",
+                  "C156T",
+                  "T159C"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00441,
+              "num_date": {
+                "value": 2008.348,
+                "confidence": [
+                  2007.632,
+                  2008.348
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 0.977,
+                  "UNITED KINGDOM": 0.0175,
+                  "South Africa": 0.00326,
+                  "Germany": 0.00183
+                },
+                "entropy": 0.123
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C456T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "AM998375.1",
+                "node_attrs": {
+                  "div": 0.00441,
+                  "num_date": {
+                    "value": 2008.348,
+                    "confidence": [
+                      2000.878,
+                      2056.66
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 0.973,
+                      "UNITED KINGDOM": 0.019,
+                      "South Africa": 0.00477,
+                      "Germany": 0.00334
+                    },
+                    "entropy": 0.146
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AIM-1_CAQ53840-AM998375-1173",
+                "node_attrs": {
+                  "div": 0.00441,
+                  "num_date": {
+                    "value": 2008.348,
+                    "confidence": [
+                      2008.348,
+                      2008.348
+                    ]
+                  },
+                  "allele": {
+                    "value": "AIM-1"
+                  },
+                  "country": {
+                    "value": "UNITED KINGDOM",
+                    "confidence": {
+                      "UNITED KINGDOM": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_aeruginosa"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.00441,
+                  "num_date": {
+                    "value": 2011.995,
+                    "confidence": [
+                      2009.13,
+                      2012.782
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": 0.000631
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "AIM-1_MBU5807578-JADNRD010000139-115",
+                    "node_attrs": {
+                      "div": 0.00441,
+                      "num_date": {
+                        "value": 2012.881,
+                        "confidence": [
+                          2012.001,
+                          2012.999
+                        ]
+                      },
+                      "allele": {
+                        "value": "AIM-1"
+                      },
+                      "country": {
+                        "value": "Australia",
+                        "confidence": {
+                          "Australia": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_aeruginosa"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AIM-1_MBU5718907-JACVNU010000177-3844",
+                    "node_attrs": {
+                      "div": 0.00441,
+                      "num_date": {
+                        "value": 2017.56,
+                        "confidence": [
+                          2017.56,
+                          2017.56
+                        ]
+                      },
+                      "allele": {
+                        "value": "AIM-1"
+                      },
+                      "country": {
+                        "value": "Australia",
+                        "confidence": {
+                          "Australia": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_aeruginosa"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 LMB beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 915,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaLMB": {
+        "end": 915,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2013.076,
+        "confidence": [
+          2009.246,
+          2014.91
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.495,
+          "Germany": 0.314,
+          "France": 0.113,
+          "Francia": 0.0771
+        },
+        "entropy": 1.156
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "LMB-2_SEI10464-FNXF01000019-81592",
+        "node_attrs": {
+          "div": 0.00328,
+          "num_date": {
+            "value": 2016.786,
+            "confidence": [
+              2016.786,
+              2016.786
+            ]
+          },
+          "allele": {
+            "value": "LMB-2"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "organism": {
+            "value": "Rheinheimera_pacifica"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C86T",
+              "A99G",
+              "T294C",
+              "G617C",
+              "G810A",
+              "G813A",
+              "A843G"
+            ],
+            "blaLMB": [
+              "A29V",
+              "S206T"
+            ]
+          },
+          "labels": {
+            "aa": "blaLMB: A29V, S206T"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00438,
+          "num_date": {
+            "value": 2016.078,
+            "confidence": [
+              2015.227,
+              2016.078
+            ]
+          },
+          "country": {
+            "value": "Germany",
+            "confidence": {
+              "Germany": 0.569,
+              "France": 0.204,
+              "Francia": 0.138,
+              "USA": 0.0887
+            },
+            "entropy": 1.133
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "KU646836.1",
+            "node_attrs": {
+              "div": 0.00438,
+              "num_date": {
+                "value": 2016.078,
+                "confidence": [
+                  2008.25,
+                  2039.118
+                ]
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 0.568,
+                  "France": 0.204,
+                  "Francia": 0.139,
+                  "USA": 0.0895
+                },
+                "entropy": 1.135
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "LMB-1_AMK49163-KU646836-1",
+            "node_attrs": {
+              "div": 0.00438,
+              "num_date": {
+                "value": 2016.078,
+                "confidence": [
+                  2016.078,
+                  2016.078
+                ]
+              },
+              "allele": {
+                "value": "LMB-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Enterobacter_cloacae"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.00438,
+              "num_date": {
+                "value": 2016.759,
+                "confidence": [
+                  2016.074,
+                  2017.515
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.464,
+                  "Francia": 0.317,
+                  "Germany": 0.191,
+                  "USA": 0.0282
+                },
+                "entropy": 1.137
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "LMB-1_AYD68552-MH475146-158349",
+                "node_attrs": {
+                  "div": 0.00438,
+                  "num_date": {
+                    "value": 2018.445,
+                    "confidence": [
+                      2018.445,
+                      2018.445
+                    ]
+                  },
+                  "allele": {
+                    "value": "LMB-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "country": {
+                    "value": "Francia",
+                    "confidence": {
+                      "Francia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_freundii"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "LMB-1_PUU63711-QCWX01000059-1615",
+                "node_attrs": {
+                  "div": 0.00438,
+                  "num_date": {
+                    "value": 2017.011,
+                    "confidence": [
+                      2017.001,
+                      2017.999
+                    ]
+                  },
+                  "allele": {
+                    "value": "LMB-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "organism": {
+                    "value": "Citrobacter_freundii"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

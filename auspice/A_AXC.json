@@ -1,0 +1,1461 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A AXC beta-lactamases",
+    "updated": "2025-01-18",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 897,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "LMG3328_00490": {
+        "end": 897,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Argentina": {
+            "latitude": -37.052315,
+            "longitude": -64.869142
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "Canada": {
+            "latitude": 61.0666922,
+            "longitude": -107.991707
+          },
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "DENMARK": {
+            "latitude": 56.2639,
+            "longitude": 9.5018
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": -1326.716,
+        "confidence": [
+          -1712.309,
+          -876.022
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.888,
+          "Argentina": 0.0705,
+          "USA": 0.024,
+          "Japan": 0.0079,
+          "Russia": 0.00259,
+          "Canada": 0.00248,
+          "DENMARK": 0.00237,
+          "The Netherlands": 0.0023
+        },
+        "entropy": 0.479
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000011",
+        "node_attrs": {
+          "div": 0.0464,
+          "num_date": {
+            "value": 1916.327,
+            "confidence": [
+              1749.886,
+              1960.532
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.91,
+              "USA": 0.0884
+            },
+            "entropy": 0.31
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G9C",
+              "A10C",
+              "C24T",
+              "C45T",
+              "G46T",
+              "G51T",
+              "C54T",
+              "G60T",
+              "G63A",
+              "G65A",
+              "A70C",
+              "G72C",
+              "C102A",
+              "A112G",
+              "A114G",
+              "G123A",
+              "C125G",
+              "G129T",
+              "A133C",
+              "G135A",
+              "C136G",
+              "G144C",
+              "T153C",
+              "C156A",
+              "C165A",
+              "C177G",
+              "C189T",
+              "G195A",
+              "T222C",
+              "T225C",
+              "T226C",
+              "G255C",
+              "T264C",
+              "T294C",
+              "T324C",
+              "G333C",
+              "A335G",
+              "A375G",
+              "C384G",
+              "T385C",
+              "G468A",
+              "G490A",
+              "T513C",
+              "T516C",
+              "T522C",
+              "T525C",
+              "C535T",
+              "T549C",
+              "G558A",
+              "A564G",
+              "G581A",
+              "C603T",
+              "T610C",
+              "A720G",
+              "C735A",
+              "T774C",
+              "G780A",
+              "G786C"
+            ],
+            "LMG3328_00490": [
+              "G16W",
+              "M17I",
+              "R22H",
+              "D34E",
+              "T38A",
+              "A42G",
+              "K45Q",
+              "L46V",
+              "Q112R",
+              "G164S",
+              "R194Q"
+            ]
+          },
+          "labels": {
+            "aa": "LMG3328_00490: G16W, M17I, R22H, D34E, T38A, A42G, K45Q, L46V, Q112R, G164S, R194Q"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000012",
+            "node_attrs": {
+              "div": 0.0486,
+              "num_date": {
+                "value": 2011.635,
+                "confidence": [
+                  1972.292,
+                  2013.643
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.999
+                },
+                "entropy": 0.00441
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T87G",
+                  "C126T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "AXC-1_CUJ74548-CYTM01000019-66706",
+                "node_attrs": {
+                  "div": 0.0486,
+                  "num_date": {
+                    "value": 2013.001,
+                    "confidence": [
+                      2013.001,
+                      2013.898
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Achromobacter_xylosoxidans"
+                  },
+                  "allele": {
+                    "value": "AXC-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AXC-1_CUJ47684-CYTF01000070-2404",
+                "node_attrs": {
+                  "div": 0.0486,
+                  "num_date": {
+                    "value": 2013.001,
+                    "confidence": [
+                      2013.001,
+                      2013.898
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Achromobacter_xylosoxidans"
+                  },
+                  "allele": {
+                    "value": "AXC-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000013",
+            "node_attrs": {
+              "div": 0.0475,
+              "num_date": {
+                "value": 1964.883,
+                "confidence": [
+                  1962.699,
+                  1992.033
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.996,
+                  "USA": 0.00439
+                },
+                "entropy": 0.0282
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T237C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "AXC-7_UGN25768-OL516042-1",
+                "node_attrs": {
+                  "div": 0.0486,
+                  "num_date": {
+                    "value": 2021.875,
+                    "confidence": [
+                      2021.875,
+                      2021.875
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Achromobacter_xylosoxidans"
+                  },
+                  "allele": {
+                    "value": "AXC-7"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C110T"
+                    ],
+                    "LMG3328_00490": [
+                      "A37V"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "LMG3328_00490: A37V"
+                  }
+                }
+              },
+              {
+                "name": "AXC-4_QEJ74006-MN339509-1",
+                "node_attrs": {
+                  "div": 0.0486,
+                  "num_date": {
+                    "value": 2019.637,
+                    "confidence": [
+                      2019.637,
+                      2019.637
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Achromobacter_xylosoxidans"
+                  },
+                  "allele": {
+                    "value": "AXC-4"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T889A"
+                    ],
+                    "LMG3328_00490": [
+                      "L297M"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "LMG3328_00490: L297M"
+                  }
+                }
+              },
+              {
+                "name": "AXC-5_QEJ80833-MN370453-1",
+                "node_attrs": {
+                  "div": 0.0498,
+                  "num_date": {
+                    "value": 2019.642,
+                    "confidence": [
+                      2019.642,
+                      2019.642
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Achromobacter_xylosoxidans"
+                  },
+                  "allele": {
+                    "value": "AXC-5"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G221T",
+                      "A338G"
+                    ],
+                    "LMG3328_00490": [
+                      "R74L",
+                      "E113G"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "LMG3328_00490: R74L, E113G"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000019",
+                "node_attrs": {
+                  "div": 0.0486,
+                  "num_date": {
+                    "value": 2011.635,
+                    "confidence": [
+                      1991.185,
+                      2013.736
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.343,
+                      "Canada": 0.343,
+                      "France": 0.313
+                    },
+                    "entropy": 1.106
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C132T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "AXC-1_CUJ83943-CYTX01000001-523243",
+                    "node_attrs": {
+                      "div": 0.0486,
+                      "num_date": {
+                        "value": 2013.001,
+                        "confidence": [
+                          2013.001,
+                          2013.898
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_xylosoxidans"
+                      },
+                      "allele": {
+                        "value": "AXC-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AXC-1_OMG87322-MJMP01000002-648829",
+                    "node_attrs": {
+                      "div": 0.0486,
+                      "num_date": {
+                        "value": 2014.938,
+                        "confidence": [
+                          2014.938,
+                          2014.938
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_xylosoxidans"
+                      },
+                      "allele": {
+                        "value": "AXC-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.0475,
+                  "num_date": {
+                    "value": 1988.045,
+                    "confidence": [
+                      1974.864,
+                      2011.693
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.384,
+                      "DENMARK": 0.368,
+                      "USA": 0.132,
+                      "The Netherlands": 0.116
+                    },
+                    "entropy": 1.26
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "AXC-1_CCH04630-HE798385-683120",
+                    "node_attrs": {
+                      "div": 0.0475,
+                      "num_date": {
+                        "value": 2012.236,
+                        "confidence": [
+                          2012.236,
+                          2012.236
+                        ]
+                      },
+                      "country": {
+                        "value": "DENMARK",
+                        "confidence": {
+                          "DENMARK": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_xylosoxidans_NH44784-1996"
+                      },
+                      "allele": {
+                        "value": "AXC-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.0475,
+                      "num_date": {
+                        "value": 2012.136,
+                        "confidence": [
+                          1993.188,
+                          2013.736
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.402,
+                          "The Netherlands": 0.373,
+                          "France": 0.116,
+                          "DENMARK": 0.108
+                        },
+                        "entropy": 1.231
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "AXC-1_CUI61494-CYTS01000003-64708",
+                        "node_attrs": {
+                          "div": 0.0475,
+                          "num_date": {
+                            "value": 2013.001,
+                            "confidence": [
+                              2013.001,
+                              2013.894
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Achromobacter_xylosoxidans"
+                          },
+                          "allele": {
+                            "value": "AXC-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "AXC-1_ATG32091-MF767301-987",
+                        "node_attrs": {
+                          "div": 0.0475,
+                          "num_date": {
+                            "value": 2017.645,
+                            "confidence": [
+                              2017.645,
+                              2017.645
+                            ]
+                          },
+                          "country": {
+                            "value": "The Netherlands",
+                            "confidence": {
+                              "The Netherlands": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Achromobacter_xylosoxidans"
+                          },
+                          "allele": {
+                            "value": "AXC-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.0204,
+          "num_date": {
+            "value": -91.827,
+            "confidence": [
+              -309.913,
+              -51.112
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.89,
+              "Argentina": 0.101,
+              "Japan": 0.00726,
+              "USA": 0.00146
+            },
+            "entropy": 0.388
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.0216,
+              "num_date": {
+                "value": -70.543,
+                "confidence": [
+                  -214.663,
+                  -28.172
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.894,
+                  "Argentina": 0.0976,
+                  "Japan": 0.00743
+                },
+                "entropy": 0.375
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "AXC-8_BFR50331-LC834166-1",
+                "node_attrs": {
+                  "div": 0.0306,
+                  "num_date": {
+                    "value": 2024.638,
+                    "confidence": [
+                      2024.638,
+                      2024.638
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Achromobacter_ruhlandii"
+                  },
+                  "allele": {
+                    "value": "AXC-8"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T1A",
+                      "G9A",
+                      "G65A",
+                      "G96T",
+                      "G104A",
+                      "T105C",
+                      "T513C",
+                      "G897A"
+                    ],
+                    "LMG3328_00490": [
+                      "L1M",
+                      "R22H",
+                      "S35N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "LMG3328_00490: L1M, R22H, S35N"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000000",
+                "node_attrs": {
+                  "div": 0.026,
+                  "num_date": {
+                    "value": 1.001,
+                    "confidence": [
+                      -32.394,
+                      1.736
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.9,
+                      "Argentina": 0.0955,
+                      "Japan": 0.00352
+                    },
+                    "entropy": 0.345
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C18T",
+                      "C649T",
+                      "A719G",
+                      "G747A"
+                    ],
+                    "LMG3328_00490": [
+                      "K240R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "LMG3328_00490: K240R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CADILE010000001.1",
+                    "node_attrs": {
+                      "div": 0.026,
+                      "num_date": {
+                        "value": 1.001,
+                        "confidence": [
+                          -236.54,
+                          1217.823
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.895,
+                          "Argentina": 0.0956,
+                          "Japan": 0.00451,
+                          "USA": 0.00119
+                        },
+                        "entropy": 0.379
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AXC-3_CAB3825438-CADILE010000001-526520",
+                    "node_attrs": {
+                      "div": 0.026,
+                      "num_date": {
+                        "value": 1.736,
+                        "confidence": [
+                          1.001,
+                          1.999
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_ruhlandii"
+                      },
+                      "allele": {
+                        "value": "AXC-3"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000014",
+                    "node_attrs": {
+                      "div": 0.026,
+                      "num_date": {
+                        "value": 1994.609,
+                        "confidence": [
+                          1921.065,
+                          1996.499
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 1.0
+                        },
+                        "entropy": 0.000267
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "AXC-3_AXM44139-MH742745-1",
+                        "node_attrs": {
+                          "div": 0.026,
+                          "num_date": {
+                            "value": 2018.607,
+                            "confidence": [
+                              2018.607,
+                              2018.607
+                            ]
+                          },
+                          "country": {
+                            "value": "Argentina",
+                            "confidence": {
+                              "Argentina": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Achromobacter_ruhlandii"
+                          },
+                          "allele": {
+                            "value": "AXC-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "AXC-3_PJM71834-PHIH01000001-411742",
+                        "node_attrs": {
+                          "div": 0.026,
+                          "num_date": {
+                            "value": 1996.499,
+                            "confidence": [
+                              1996.499,
+                              1996.499
+                            ]
+                          },
+                          "country": {
+                            "value": "Argentina",
+                            "confidence": {
+                              "Argentina": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Achromobacter_ruhlandii"
+                          },
+                          "allele": {
+                            "value": "AXC-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000005",
+            "node_attrs": {
+              "div": 0.0283,
+              "num_date": {
+                "value": 1914.256,
+                "confidence": [
+                  1678.809,
+                  1970.938
+                ]
+              },
+              "country": {
+                "value": "Argentina",
+                "confidence": {
+                  "Argentina": 1.0
+                },
+                "entropy": 0.000528
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T225C",
+                  "T226C",
+                  "G255A",
+                  "C576T",
+                  "G581A",
+                  "A609G",
+                  "C681T",
+                  "G867A"
+                ],
+                "LMG3328_00490": [
+                  "R194Q"
+                ]
+              },
+              "labels": {
+                "aa": "LMG3328_00490: R194Q"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000016",
+                "node_attrs": {
+                  "div": 0.0283,
+                  "num_date": {
+                    "value": 2007.752,
+                    "confidence": [
+                      1943.321,
+                      2007.752
+                    ]
+                  },
+                  "country": {
+                    "value": "Argentina",
+                    "confidence": {
+                      "Argentina": 1.0
+                    },
+                    "entropy": 4.94e-07
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "AXC-2_PJM85996-PHIK01000028-44673",
+                    "node_attrs": {
+                      "div": 0.0283,
+                      "num_date": {
+                        "value": 2007.752,
+                        "confidence": [
+                          2007.752,
+                          2007.752
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_ruhlandii"
+                      },
+                      "allele": {
+                        "value": "AXC-2"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AXC-2_AXM44138-MH742744-1",
+                    "node_attrs": {
+                      "div": 0.0283,
+                      "num_date": {
+                        "value": 2018.607,
+                        "confidence": [
+                          2018.607,
+                          2018.607
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_ruhlandii"
+                      },
+                      "allele": {
+                        "value": "AXC-2"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.0317,
+                  "num_date": {
+                    "value": 2011.795,
+                    "confidence": [
+                      1988.502,
+                      2013.774
+                    ]
+                  },
+                  "country": {
+                    "value": "Argentina",
+                    "confidence": {
+                      "Argentina": 1.0
+                    },
+                    "entropy": 6.33e-11
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G9A",
+                      "C29T",
+                      "G71C"
+                    ],
+                    "LMG3328_00490": [
+                      "S10L",
+                      "R24T"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "LMG3328_00490: S10L, R24T"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "AXC-6_MCV6817838-JAOYMB010000004-161588",
+                    "node_attrs": {
+                      "div": 0.0317,
+                      "num_date": {
+                        "value": 2013.774,
+                        "confidence": [
+                          2013.774,
+                          2013.774
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_ruhlandii"
+                      },
+                      "allele": {
+                        "value": "AXC-6"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AXC-6_MCV6807904-JAOYLZ010000005-39438",
+                    "node_attrs": {
+                      "div": 0.0317,
+                      "num_date": {
+                        "value": 2013.968,
+                        "confidence": [
+                          2013.968,
+                          2013.968
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_ruhlandii"
+                      },
+                      "allele": {
+                        "value": "AXC-6"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AXC-6_MCV6800230-JAOYLY010000076-16",
+                    "node_attrs": {
+                      "div": 0.0317,
+                      "num_date": {
+                        "value": 2014.59,
+                        "confidence": [
+                          2014.59,
+                          2014.59
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Achromobacter_ruhlandii"
+                      },
+                      "allele": {
+                        "value": "AXC-6"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000018",
+                    "node_attrs": {
+                      "div": 0.0317,
+                      "num_date": {
+                        "value": 2012.158,
+                        "confidence": [
+                          2001.652,
+                          2018.916
+                        ]
+                      },
+                      "country": {
+                        "value": "Argentina",
+                        "confidence": {
+                          "Argentina": 0.999
+                        },
+                        "entropy": 0.0076
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "AXC-6_MCZ8399773-JAPZVH010000081-113",
+                        "node_attrs": {
+                          "div": 0.0317,
+                          "num_date": {
+                            "value": 2022.703,
+                            "confidence": [
+                              2022.703,
+                              2022.703
+                            ]
+                          },
+                          "country": {
+                            "value": "Russia",
+                            "confidence": {
+                              "Russia": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Achromobacter_ruhlandii"
+                          },
+                          "allele": {
+                            "value": "AXC-6"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "AXC-6_QUR41148-MZ025964-1",
+                        "node_attrs": {
+                          "div": 0.0317,
+                          "num_date": {
+                            "value": 2021.289,
+                            "confidence": [
+                              2021.289,
+                              2021.289
+                            ]
+                          },
+                          "country": {
+                            "value": "Argentina",
+                            "confidence": {
+                              "Argentina": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Achromobacter_ruhlandii"
+                          },
+                          "allele": {
+                            "value": "AXC-6"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

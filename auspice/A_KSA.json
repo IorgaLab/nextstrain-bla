@@ -1,0 +1,961 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A KSA beta-lactamases",
+    "updated": "2025-10-28",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 870,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "BBB57_03855": {
+        "end": 870,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Singapore",
+            "#4334BF"
+          ],
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "Italy",
+            "#5098B9"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "Italy": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Singapore": {
+            "latitude": 1.2904527,
+            "longitude": 103.852038
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1982.934,
+        "confidence": [
+          1979.234,
+          1986.367
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.947,
+          "Japan": 0.0264,
+          "": 0.0118,
+          "Singapore": 0.00917,
+          "Italy": 0.00386,
+          "USA": 0.00223
+        },
+        "entropy": 0.278
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "div": 0.0437,
+          "num_date": {
+            "value": 2008.417,
+            "confidence": [
+              2007.77,
+              2008.488
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.991,
+              "": 0.00843
+            },
+            "entropy": 0.0544
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G15A",
+              "T69C",
+              "G84T",
+              "C85T",
+              "T99C",
+              "A116G",
+              "T118C",
+              "A120G",
+              "C123T",
+              "G126C",
+              "A255G",
+              "C279T",
+              "G318A",
+              "T456C",
+              "G552T",
+              "T555C",
+              "G576A",
+              "C585G",
+              "G589A",
+              "A590G",
+              "G591T",
+              "T593C",
+              "A594G",
+              "T595C",
+              "A597G",
+              "G600T",
+              "G603C",
+              "C604G",
+              "G605C",
+              "A618G",
+              "C648T",
+              "A653G",
+              "G688A",
+              "G708A",
+              "G711A",
+              "T717C",
+              "T729C",
+              "T774C",
+              "A787G",
+              "T831C",
+              "C837T",
+              "C858T",
+              "G864C",
+              "G867A"
+            ],
+            "BBB57_03855": [
+              "H39R",
+              "E197S",
+              "V198A",
+              "R202A",
+              "D218G",
+              "V230M",
+              "I263V"
+            ]
+          },
+          "labels": {
+            "aa": "BBB57_03855: H39R, E197S, V198A, R202A, D218G, V230M, I263V"
+          }
+        },
+        "children": [
+          {
+            "name": "KSA-7_PDO85528-NITV01000007-79848",
+            "node_attrs": {
+              "div": 0.0437,
+              "num_date": {
+                "value": 2008.494,
+                "confidence": [
+                  2008.417,
+                  2008.496
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Kosakonia_pseudosacchari"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "KSA-7"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "KSA-7_WP_097400935-NZ_CP158850-2557847",
+            "node_attrs": {
+              "div": 0.0437,
+              "num_date": {
+                "value": 2021.495,
+                "confidence": [
+                  2021.495,
+                  2021.495
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Kosakonia_pseudosacchari"
+              },
+              "allele": {
+                "value": "KSA-7"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.00926,
+          "num_date": {
+            "value": 1987.379,
+            "confidence": [
+              1984.807,
+              1990.381
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.944,
+              "Japan": 0.0308,
+              "": 0.0104,
+              "Singapore": 0.00964,
+              "Italy": 0.00397,
+              "USA": 0.00142
+            },
+            "entropy": 0.285
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.0267,
+              "num_date": {
+                "value": 2004.424,
+                "confidence": [
+                  2002.577,
+                  2005.968
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.938,
+                  "Singapore": 0.0392,
+                  "Italy": 0.0178,
+                  "Japan": 0.00304,
+                  "": 0.00184
+                },
+                "entropy": 0.292
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G39A",
+                  "G144A",
+                  "A145G",
+                  "C147G",
+                  "G180C",
+                  "C282T",
+                  "A465C",
+                  "A495C",
+                  "G498A",
+                  "G501T",
+                  "G507C",
+                  "G529T",
+                  "T534C",
+                  "A627G",
+                  "A672G",
+                  "G716A",
+                  "T843C"
+                ],
+                "BBB57_03855": [
+                  "I49V",
+                  "V177L",
+                  "G239D"
+                ]
+              },
+              "labels": {
+                "aa": "BBB57_03855: I49V, V177L, G239D"
+              }
+            },
+            "children": [
+              {
+                "name": "KSA-3_AGN84227-CP005991-543954",
+                "node_attrs": {
+                  "div": 0.0336,
+                  "num_date": {
+                    "value": 2013.382,
+                    "confidence": [
+                      2013.382,
+                      2013.382
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Enterobacter_sp._R4-368"
+                  },
+                  "country": {
+                    "value": "Singapore",
+                    "confidence": {
+                      "Singapore": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "KSA-3"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T37C",
+                      "G126A",
+                      "A166G",
+                      "T450C",
+                      "G615A"
+                    ],
+                    "BBB57_03855": [
+                      "T56A"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "BBB57_03855: T56A"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.0302,
+                  "num_date": {
+                    "value": 2005.886,
+                    "confidence": [
+                      2004.603,
+                      2007.012
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.951,
+                      "Italy": 0.0228,
+                      "Singapore": 0.0226,
+                      "Japan": 0.00174,
+                      "": 0.00121
+                    },
+                    "entropy": 0.242
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C494G",
+                      "G592C",
+                      "T654C"
+                    ],
+                    "BBB57_03855": [
+                      "A165G",
+                      "V198L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "BBB57_03855: A165G, V198L"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "KSA-5_PDO85948-NITW01000006-204251",
+                    "node_attrs": {
+                      "div": 0.0429,
+                      "num_date": {
+                        "value": 2008.496,
+                        "confidence": [
+                          2008.425,
+                          2008.496
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Kosakonia_sacchari"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "KSA-5"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A116G",
+                          "C117T",
+                          "T201A",
+                          "T342G",
+                          "G385C",
+                          "T456C",
+                          "A483G",
+                          "C516T",
+                          "G519A",
+                          "G804A"
+                        ],
+                        "BBB57_03855": [
+                          "H39R",
+                          "E129Q"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "BBB57_03855: H39R, E129Q"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.0325,
+                      "num_date": {
+                        "value": 2012.113,
+                        "confidence": [
+                          2011.378,
+                          2012.915
+                        ]
+                      },
+                      "country": {
+                        "value": "Italy",
+                        "confidence": {
+                          "Italy": 0.999,
+                          "China": 0.00116
+                        },
+                        "entropy": 0.0101
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T99C",
+                          "C465A",
+                          "A801C"
+                        ],
+                        "BBB57_03855": [
+                          "K267N"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "BBB57_03855: K267N"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "KSA-4_RCX04327-QPJR01000002-369440",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2018.544,
+                            "confidence": [
+                              2018.544,
+                              2018.544
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Kosakonia_sp._AG348"
+                          },
+                          "country": {
+                            "value": "Italy",
+                            "confidence": {
+                              "Italy": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "KSA-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "KSA-4_WP_045508472-NZ_JZLI01000003-306384",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2012.997,
+                            "confidence": [
+                              2012.001,
+                              2012.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Kosakonia_oryzae"
+                          },
+                          "country": {
+                            "value": "Italy",
+                            "confidence": {
+                              "Italy": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "KSA-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.041,
+              "num_date": {
+                "value": 1997.312,
+                "confidence": [
+                  1995.877,
+                  1998.286
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.788,
+                  "Japan": 0.176,
+                  "": 0.0291,
+                  "Singapore": 0.00306,
+                  "USA": 0.00249,
+                  "Italy": 0.00125
+                },
+                "entropy": 0.637
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A114G",
+                  "C210T",
+                  "C258T",
+                  "G289T",
+                  "G291C",
+                  "C297T",
+                  "G300A",
+                  "G306T",
+                  "A307G",
+                  "G311A",
+                  "G312T",
+                  "G321A",
+                  "G343T",
+                  "T345A",
+                  "A363G",
+                  "G366C",
+                  "C458T",
+                  "T459C",
+                  "C486T",
+                  "G519A",
+                  "G580A",
+                  "C612T",
+                  "C651T",
+                  "T717A",
+                  "G732C",
+                  "T798A",
+                  "G810C"
+                ],
+                "BBB57_03855": [
+                  "A97S",
+                  "T103A",
+                  "W104Y",
+                  "A115S",
+                  "A153V",
+                  "A194T",
+                  "M270I"
+                ]
+              },
+              "labels": {
+                "aa": "BBB57_03855: A97S, T103A, W104Y, A115S, A153V, A194T, M270I"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000000",
+                "node_attrs": {
+                  "div": 0.0526,
+                  "num_date": {
+                    "value": 1999.667,
+                    "confidence": [
+                      1999.185,
+                      1999.667
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.849,
+                      "China": 0.141,
+                      "": 0.00631,
+                      "Singapore": 0.00129,
+                      "USA": 0.00117
+                    },
+                    "entropy": 0.468
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C63T",
+                      "C231G",
+                      "C233T",
+                      "A418C",
+                      "G426C",
+                      "C429T",
+                      "A432T",
+                      "A438T",
+                      "G447A"
+                    ],
+                    "BBB57_03855": [
+                      "A78V",
+                      "K140Q"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "BBB57_03855: A78V, K140Q"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CP016337.1",
+                    "node_attrs": {
+                      "div": 0.0526,
+                      "num_date": {
+                        "value": 1999.667,
+                        "confidence": [
+                          1997.099,
+                          2007.264
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.846,
+                          "China": 0.141,
+                          "": 0.0073,
+                          "Singapore": 0.00214,
+                          "USA": 0.00202,
+                          "Italy": 0.00137
+                        },
+                        "entropy": 0.488
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "KSA-2_ANR77466-CP016337-787744",
+                    "node_attrs": {
+                      "div": 0.0526,
+                      "num_date": {
+                        "value": 1999.667,
+                        "confidence": [
+                          1999.667,
+                          1999.667
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Kosakonia_sacchari"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "KSA-2"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.0433,
+                  "num_date": {
+                    "value": 2011.415,
+                    "confidence": [
+                      2010.808,
+                      2011.47
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.864,
+                      "": 0.127,
+                      "USA": 0.00763,
+                      "Japan": 0.00126
+                    },
+                    "entropy": 0.436
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G529T",
+                      "G531A",
+                      "G690T"
+                    ],
+                    "BBB57_03855": [
+                      "V177L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "BBB57_03855: V177L"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "KSA-1_AHJ73969-CP007215-2528705",
+                    "node_attrs": {
+                      "div": 0.0433,
+                      "num_date": {
+                        "value": 2011.451,
+                        "confidence": [
+                          2011.415,
+                          2011.495
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Kosakonia_sacchari_SP1"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "KSA-1"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "KSA-1_SCX37653-FMUI01000002-77721",
+                    "node_attrs": {
+                      "div": 0.0433,
+                      "num_date": {
+                        "value": 2016.783,
+                        "confidence": [
+                          2016.783,
+                          2016.783
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Kosakonia_sacchari"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "KSA-1"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "KSA-1_WP_017456759-NZ_CP007215-2528705",
+                    "node_attrs": {
+                      "div": 0.0433,
+                      "num_date": {
+                        "value": 2011.451,
+                        "confidence": [
+                          2011.415,
+                          2011.495
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Kosakonia_sacchari_SP1"
+                      },
+                      "allele": {
+                        "value": "KSA-1"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

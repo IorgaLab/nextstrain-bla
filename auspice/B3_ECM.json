@@ -1,0 +1,407 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 ECM beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 912,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "J121_2207": {
+        "end": 912,
+        "seqid": "config/ref.gb",
+        "start": 905,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "J121_2208": {
+        "end": 912,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "J121_2209": {
+        "end": 11,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "panels": [
+      "tree",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2009.375,
+        "confidence": [
+          2007.914,
+          2010.313
+        ]
+      },
+      "country": {
+        "value": "Pacific Ocean",
+        "confidence": {
+          "Pacific Ocean": 0.978,
+          "Atlantic Ocean": 0.0223
+        },
+        "entropy": 0.107
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "ECM-4_KZY01045-LWES01000592-8254",
+        "node_attrs": {
+          "div": 0.00662,
+          "num_date": {
+            "value": 2014.223,
+            "confidence": [
+              2014.223,
+              2014.223
+            ]
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "organism": {
+            "value": "Erythrobacter_sp._HI0028"
+          },
+          "allele": {
+            "value": "ECM-4"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          },
+          "country": {
+            "value": "Pacific Ocean",
+            "confidence": {
+              "Pacific Ocean": 1.0
+            },
+            "entropy": -1e-12
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A138G",
+              "A147T",
+              "A214T",
+              "C318G",
+              "C345T",
+              "C450G",
+              "A507T",
+              "C528T"
+            ],
+            "J121_2208": [
+              "E49D",
+              "T72S"
+            ]
+          },
+          "labels": {
+            "aa": "J121_2208: E49D, T72S"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0022,
+          "num_date": {
+            "value": 2009.887,
+            "confidence": [
+              2008.886,
+              2010.723
+            ]
+          },
+          "country": {
+            "value": "Pacific Ocean",
+            "confidence": {
+              "Pacific Ocean": 0.975,
+              "Atlantic Ocean": 0.025
+            },
+            "entropy": 0.117
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00995,
+              "num_date": {
+                "value": 2011.779,
+                "confidence": [
+                  2011.295,
+                  2011.779
+                ]
+              },
+              "country": {
+                "value": "Atlantic Ocean",
+                "confidence": {
+                  "Atlantic Ocean": 0.772,
+                  "Pacific Ocean": 0.228
+                },
+                "entropy": 0.537
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C5T",
+                  "C107T",
+                  "C125G",
+                  "A409G",
+                  "T417C",
+                  "T468C",
+                  "T552C"
+                ],
+                "J121_2208": [
+                  "S2F",
+                  "T36M",
+                  "A42G",
+                  "I137V"
+                ],
+                "J121_2209": [
+                  "S2F"
+                ]
+              },
+              "labels": {
+                "aa": "J121_2208: S2F, T36M, A42G, I137V; J121_2209: S2F"
+              }
+            },
+            "children": [
+              {
+                "name": "JYNE01000027.1",
+                "node_attrs": {
+                  "div": 0.00995,
+                  "num_date": {
+                    "value": 2011.779,
+                    "confidence": [
+                      2008.904,
+                      2020.45
+                    ]
+                  },
+                  "country": {
+                    "value": "Atlantic Ocean",
+                    "confidence": {
+                      "Atlantic Ocean": 0.771,
+                      "Pacific Ocean": 0.229
+                    },
+                    "entropy": 0.538
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "ECM-2_KNH01192-JYNE01000027-135796",
+                "node_attrs": {
+                  "div": 0.00995,
+                  "num_date": {
+                    "value": 2011.779,
+                    "confidence": [
+                      2011.779,
+                      2011.779
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "organism": {
+                    "value": "Qipengyuania_citrea_LAMA_915"
+                  },
+                  "allele": {
+                    "value": "ECM-2"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Atlantic Ocean",
+                    "confidence": {
+                      "Atlantic Ocean": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.00662,
+              "num_date": {
+                "value": 2014.12,
+                "confidence": [
+                  2013.403,
+                  2014.223
+                ]
+              },
+              "country": {
+                "value": "Pacific Ocean",
+                "confidence": {
+                  "Pacific Ocean": 1.0
+                },
+                "entropy": 7.13e-05
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G17C",
+                  "C178G",
+                  "T375C",
+                  "C434T"
+                ],
+                "J121_2208": [
+                  "G6A",
+                  "H60D",
+                  "P145L"
+                ]
+              },
+              "labels": {
+                "aa": "J121_2208: G6A, H60D, P145L"
+              }
+            },
+            "children": [
+              {
+                "name": "ECM-3_KZZ09169-LWFR01000015-534",
+                "node_attrs": {
+                  "div": 0.00662,
+                  "num_date": {
+                    "value": 2014.223,
+                    "confidence": [
+                      2014.223,
+                      2014.223
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "organism": {
+                    "value": "Erythrobacter_sp._HI0077"
+                  },
+                  "allele": {
+                    "value": "ECM-3"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Pacific Ocean",
+                    "confidence": {
+                      "Pacific Ocean": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "ECM-3_KZY93242-LWFO01000193-3568",
+                "node_attrs": {
+                  "div": 0.00662,
+                  "num_date": {
+                    "value": 2014.223,
+                    "confidence": [
+                      2014.223,
+                      2014.223
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "organism": {
+                    "value": "Erythrobacter_sp._HI0074"
+                  },
+                  "allele": {
+                    "value": "ECM-3"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Pacific Ocean",
+                    "confidence": {
+                      "Pacific Ocean": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

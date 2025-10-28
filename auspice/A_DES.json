@@ -1,0 +1,1925 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A DES beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 975,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "DES-1": {
+        "end": 975,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Thailand",
+            "#511EA8"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Ireland": {
+            "latitude": 52.865,
+            "longitude": -7.979
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "Thailand": {
+            "latitude": 14.8971921,
+            "longitude": 100.83273
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000012",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1986.613,
+        "confidence": [
+          1984.101,
+          1989.507
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.194,
+          "USA": 0.178,
+          "Russia": 0.169,
+          "Ireland": 0.159,
+          "Thailand": 0.151,
+          "South Korea": 0.15
+        },
+        "entropy": 1.787
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.105,
+          "num_date": {
+            "value": 2001.741,
+            "confidence": [
+              2001.349,
+              2001.741
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.923,
+              "USA": 0.0316,
+              "Russia": 0.0118,
+              "South Korea": 0.0112,
+              "Thailand": 0.0112,
+              "Ireland": 0.0109
+            },
+            "entropy": 0.385
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "AF426161.1",
+            "node_attrs": {
+              "div": 0.105,
+              "num_date": {
+                "value": 2001.741,
+                "confidence": [
+                  2001.183,
+                  2002.517
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.854,
+                  "USA": 0.0584,
+                  "Russia": 0.0229,
+                  "South Korea": 0.0217,
+                  "Thailand": 0.0216,
+                  "Ireland": 0.0211
+                },
+                "entropy": 0.634
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "DES-1_AAM45855-AF426161-119",
+            "node_attrs": {
+              "div": 0.105,
+              "num_date": {
+                "value": 2001.741,
+                "confidence": [
+                  2001.741,
+                  2001.741
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Desulfovibrio_desulfuricans"
+              },
+              "allele": {
+                "value": "DES-1"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0658,
+          "num_date": {
+            "value": 2006.393,
+            "confidence": [
+              2005.199,
+              2008.13
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.196,
+              "USA": 0.184,
+              "Russia": 0.163,
+              "South Korea": 0.153,
+              "Thailand": 0.151,
+              "Ireland": 0.151
+            },
+            "entropy": 1.786
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C4T",
+              "C9A",
+              "T12C",
+              "A16C",
+              "T18C",
+              "T21C",
+              "A25C",
+              "G27C",
+              "A32C",
+              "G36T",
+              "C39G",
+              "G42T",
+              "G48T",
+              "T60C",
+              "T61G",
+              "T67A",
+              "C68T",
+              "C70T",
+              "G72T",
+              "A73G",
+              "C75G",
+              "A78G",
+              "C82G",
+              "T83C",
+              "T84G",
+              "A85C",
+              "T86C",
+              "T88G",
+              "A92T",
+              "C96T",
+              "T97A",
+              "C98G",
+              "T99C",
+              "T102A",
+              "G103C",
+              "A104T",
+              "T105G",
+              "C111T",
+              "T112G",
+              "T114C",
+              "C115A",
+              "T116G",
+              "T117C",
+              "G118C",
+              "T120C",
+              "C122A",
+              "A123C",
+              "T126C",
+              "A128G",
+              "G131C",
+              "A136G",
+              "A149T",
+              "C168G",
+              "G169T",
+              "T195A",
+              "C199A",
+              "G201T",
+              "T202G",
+              "C203T",
+              "A204C",
+              "G221T",
+              "C222T",
+              "C223T",
+              "T228A",
+              "G238A",
+              "C240T",
+              "T249C",
+              "A279G",
+              "T281C",
+              "T282G",
+              "G285A",
+              "C288T",
+              "C289G",
+              "C330T",
+              "C337A",
+              "T341G",
+              "C378T",
+              "T381G",
+              "G399A",
+              "G400T",
+              "C414A",
+              "C438T",
+              "A463C",
+              "A465G",
+              "C466T",
+              "G477T",
+              "C478G",
+              "A479C",
+              "A480G",
+              "C484T",
+              "C493A",
+              "T504C",
+              "A516C",
+              "A546G",
+              "T552C",
+              "C561T",
+              "C579T",
+              "G594T",
+              "A604C",
+              "A605G",
+              "A618C",
+              "T619C",
+              "G624T",
+              "T627C",
+              "A651C",
+              "C652A",
+              "C654A",
+              "G655A",
+              "G659A",
+              "A660G",
+              "G668A",
+              "C705T",
+              "A711T",
+              "A715G",
+              "T716C",
+              "T717G",
+              "T735G",
+              "T774C",
+              "A780G",
+              "A783C",
+              "T787C",
+              "C790T",
+              "C804T",
+              "T807C",
+              "G809A",
+              "C810G",
+              "A811C",
+              "C816A",
+              "A817G",
+              "A819C",
+              "C823A",
+              "G826C",
+              "A832G",
+              "A833G",
+              "G838A",
+              "G839A",
+              "G843A",
+              "A913C",
+              "G914A",
+              "T915G",
+              "C921T",
+              "T953C",
+              "C960T"
+            ],
+            "DES-1": [
+              "H2Y",
+              "S6R",
+              "Y11S",
+              "F21V",
+              "S23M",
+              "L24F",
+              "S25G",
+              "L28A",
+              "I29P",
+              "F30V",
+              "N31I",
+              "D35L",
+              "S38A",
+              "L39S",
+              "A40P",
+              "A41D",
+              "N43S",
+              "G44A",
+              "T46A",
+              "K50M",
+              "A57S",
+              "R67S",
+              "S68V",
+              "S74I",
+              "D80N",
+              "V94A",
+              "L97V",
+              "Q113K",
+              "I114S",
+              "A134S",
+              "K155Q",
+              "Q160A",
+              "L165I",
+              "N202R",
+              "E219K",
+              "R220Q",
+              "G223D",
+              "I239A",
+              "G270E",
+              "K271Q",
+              "T273A",
+              "P275T",
+              "G276R",
+              "N278G",
+              "G280N",
+              "S305Q",
+              "M318T"
+            ]
+          },
+          "labels": {
+            "aa": "DES-1: H2Y, S6R, Y11S, F21V, S23M, L24F, S25G, L28A, I29P, F30V, N31I, D35L, S38A, L39S, A40P, A41D, N43S, G44A, T46A, K50M, A57S, R67S, S68V, S74I, D80N, V94A, L97V, Q113K, I114S, A134S, K155Q, Q160A, L165I, N202R, E219K, R220Q, G223D, I239A, G270E, K271Q, T273A, P275T, G276R, N278G, G280N, S305Q, M318T"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0846,
+              "num_date": {
+                "value": 2011.153,
+                "confidence": [
+                  2010.29,
+                  2012.654
+                ]
+              },
+              "country": {
+                "value": "South Korea",
+                "confidence": {
+                  "South Korea": 0.204,
+                  "Thailand": 0.193,
+                  "France": 0.171,
+                  "USA": 0.159,
+                  "Russia": 0.141,
+                  "Ireland": 0.132
+                },
+                "entropy": 1.78
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G283T",
+                  "C345T",
+                  "T396G",
+                  "A414G",
+                  "C618T",
+                  "A687T",
+                  "C696A",
+                  "G699A",
+                  "T704C",
+                  "A714T",
+                  "A816G",
+                  "A821C",
+                  "A850G",
+                  "C851T",
+                  "G876A",
+                  "C877A",
+                  "G878A"
+                ],
+                "DES-1": [
+                  "A95S",
+                  "I235T",
+                  "K274T",
+                  "T284V",
+                  "R293K"
+                ]
+              },
+              "labels": {
+                "aa": "DES-1: A95S, I235T, K274T, T284V, R293K"
+              }
+            },
+            "children": [
+              {
+                "name": "DES-13_MCH5145152-JAETXJ010000004-185061",
+                "node_attrs": {
+                  "div": 0.123,
+                  "num_date": {
+                    "value": 2019.601,
+                    "confidence": [
+                      2019.601,
+                      2019.601
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Desulfovibrio_sp._UIB00"
+                  },
+                  "allele": {
+                    "value": "DES-13"
+                  },
+                  "country": {
+                    "value": "Thailand",
+                    "confidence": {
+                      "Thailand": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T13C",
+                      "T87A",
+                      "G136T",
+                      "T140A",
+                      "A159G",
+                      "A195G",
+                      "C213G",
+                      "A219C",
+                      "A220G",
+                      "T222G",
+                      "A228G",
+                      "T240C",
+                      "C264A",
+                      "T267C",
+                      "G351A",
+                      "C354A",
+                      "T378C",
+                      "G381T",
+                      "T528C",
+                      "A540G",
+                      "C547T",
+                      "G555T",
+                      "A559G",
+                      "T561C",
+                      "C603T",
+                      "C648T",
+                      "A657G",
+                      "G663C",
+                      "G810A",
+                      "A830G",
+                      "A843G",
+                      "G870A",
+                      "A918G"
+                    ],
+                    "DES-1": [
+                      "S5P",
+                      "A46S",
+                      "L47Q",
+                      "K73N",
+                      "I74V",
+                      "I187V",
+                      "K277R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "DES-1: S5P, A46S, L47Q, K73N, I74V, I187V, K277R"
+                  }
+                }
+              },
+              {
+                "name": "DES-14_WP_291442262-NZ_JAHZCJ010000001-218168",
+                "node_attrs": {
+                  "div": 0.12,
+                  "num_date": {
+                    "value": 2019.001,
+                    "confidence": [
+                      2019.001,
+                      2019.886
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Desulfovibrio_sp."
+                  },
+                  "allele": {
+                    "value": "DES-14"
+                  },
+                  "country": {
+                    "value": "South Korea",
+                    "confidence": {
+                      "South Korea": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C65T",
+                      "C83T",
+                      "C137G",
+                      "A145G",
+                      "G215A",
+                      "A217G",
+                      "G225A",
+                      "T234G",
+                      "G237A",
+                      "G289A",
+                      "C379T",
+                      "G396A",
+                      "A399G",
+                      "T400G",
+                      "T406C",
+                      "G441C",
+                      "G456A",
+                      "C479A",
+                      "C492T",
+                      "G573A",
+                      "C604A",
+                      "C606T",
+                      "C648A",
+                      "A696G",
+                      "T705G",
+                      "T711C",
+                      "C721G",
+                      "G735T",
+                      "C765T",
+                      "C770T",
+                      "G795A",
+                      "G800A",
+                      "G827A",
+                      "G831A",
+                      "C906T"
+                    ],
+                    "DES-1": [
+                      "A22V",
+                      "A28V",
+                      "A46G",
+                      "K49E",
+                      "G72D",
+                      "K73E",
+                      "V97I",
+                      "S134A",
+                      "A160E",
+                      "R202S",
+                      "Q241E",
+                      "A257V",
+                      "S267N",
+                      "R276H"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "DES-1: A22V, A28V, A46G, K49E, G72D, K73E, V97I, S134A, A160E, R202S, Q241E, A257V, S267N, R276H"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.0789,
+              "num_date": {
+                "value": 2010.772,
+                "confidence": [
+                  2009.031,
+                  2011.541
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.268,
+                  "France": 0.213,
+                  "Russia": 0.157,
+                  "Ireland": 0.137,
+                  "South Korea": 0.113,
+                  "Thailand": 0.112
+                },
+                "entropy": 1.737
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C137A",
+                  "T234C",
+                  "G308A",
+                  "C309T",
+                  "A369G",
+                  "G555A",
+                  "C633T",
+                  "T635A",
+                  "A666G",
+                  "A823G",
+                  "G831T",
+                  "A879C",
+                  "G888A"
+                ],
+                "DES-1": [
+                  "A46D",
+                  "G103D",
+                  "L212Q",
+                  "T275A",
+                  "K277N"
+                ]
+              },
+              "labels": {
+                "aa": "DES-1: A46D, G103D, L212Q, T275A, K277N"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.115,
+                  "num_date": {
+                    "value": 2019.116,
+                    "confidence": [
+                      2018.862,
+                      2019.116
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.76,
+                      "Russia": 0.198,
+                      "France": 0.0177,
+                      "Ireland": 0.0126,
+                      "South Korea": 0.00598,
+                      "Thailand": 0.00589
+                    },
+                    "entropy": 0.717
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T4C",
+                      "C60G",
+                      "G75A",
+                      "A91T",
+                      "G95A",
+                      "A97T",
+                      "A143C",
+                      "A144C",
+                      "A159G",
+                      "A219C",
+                      "A220G",
+                      "T222A",
+                      "A228G",
+                      "C234A",
+                      "A238G",
+                      "T267C",
+                      "G341A",
+                      "A367T",
+                      "A405G",
+                      "T406C",
+                      "T490A",
+                      "C516T",
+                      "C592A",
+                      "C648A",
+                      "A652C",
+                      "G653A",
+                      "T705C",
+                      "T733C",
+                      "A799G",
+                      "A809G",
+                      "T848G",
+                      "A893G",
+                      "C924T"
+                    ],
+                    "DES-1": [
+                      "Y2H",
+                      "I31F",
+                      "S32N",
+                      "S33C",
+                      "Q48P",
+                      "K73N",
+                      "I74V",
+                      "N80D",
+                      "S114N",
+                      "T123S",
+                      "S164T",
+                      "L198I",
+                      "R218Q",
+                      "S245P",
+                      "S267G",
+                      "E270G",
+                      "L283R",
+                      "E298G"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "DES-1: Y2H, I31F, S32N, S33C, Q48P, K73N, I74V, N80D, S114N, T123S, S164T, L198I, R218Q, S245P, S267G, E270G, L283R, E298G"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "DES-5_QTO39456-CP072608-2311718",
+                    "node_attrs": {
+                      "div": 0.115,
+                      "num_date": {
+                        "value": 2020.001,
+                        "confidence": [
+                          2020.001,
+                          2020.74
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Desulfovibrio_desulfuricans"
+                      },
+                      "allele": {
+                        "value": "DES-5"
+                      },
+                      "country": {
+                        "value": "Russia",
+                        "confidence": {
+                          "Russia": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "DES-5_MDD3683076-JAQVGJ010000030-13648",
+                    "node_attrs": {
+                      "div": 0.115,
+                      "num_date": {
+                        "value": 2019.116,
+                        "confidence": [
+                          2019.116,
+                          2019.116
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Desulfovibrio_desulfuricans"
+                      },
+                      "allele": {
+                        "value": "DES-5"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.0993,
+                  "num_date": {
+                    "value": 2014.83,
+                    "confidence": [
+                      2014.405,
+                      2014.985
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.913,
+                      "France": 0.0689,
+                      "Russia": 0.00641,
+                      "Ireland": 0.00551,
+                      "South Korea": 0.00338,
+                      "Thailand": 0.00331
+                    },
+                    "entropy": 0.367
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C65T",
+                      "G136A",
+                      "T162C",
+                      "G215A",
+                      "G225A",
+                      "C264A",
+                      "T288A",
+                      "C304A",
+                      "G307A",
+                      "C363T",
+                      "C413A",
+                      "G543A",
+                      "A585G",
+                      "T601C",
+                      "A654G",
+                      "G663A",
+                      "T711A",
+                      "C768T",
+                      "A835C"
+                    ],
+                    "DES-1": [
+                      "A22V",
+                      "D46N",
+                      "G72D",
+                      "P102T",
+                      "D103N",
+                      "A138E",
+                      "C201R",
+                      "K279Q"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "DES-1: A22V, D46N, G72D, P102T, D103N, A138E, C201R, K279Q"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "DES-6_WP_297891522-NZ_CALHHP010000005-54948",
+                    "node_attrs": {
+                      "div": 0.1,
+                      "num_date": {
+                        "value": 2015.001,
+                        "confidence": [
+                          2015.001,
+                          2015.001
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "uncultured_Desulfovibrio_sp."
+                      },
+                      "allele": {
+                        "value": "DES-6"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C867T"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.102,
+                      "num_date": {
+                        "value": 2015.886,
+                        "confidence": [
+                          2015.364,
+                          2016.074
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.618,
+                          "France": 0.361,
+                          "Russia": 0.00719,
+                          "Ireland": 0.00697,
+                          "South Korea": 0.00316,
+                          "Thailand": 0.00307
+                        },
+                        "entropy": 0.771
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C10T",
+                          "G282A",
+                          "A799G"
+                        ],
+                        "DES-1": [
+                          "R4C",
+                          "S267G"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "DES-1: R4C, S267G"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "DES-8_UIA99034-CP077745-1994480",
+                        "node_attrs": {
+                          "div": 0.102,
+                          "num_date": {
+                            "value": 2019.379,
+                            "confidence": [
+                              2019.379,
+                              2019.379
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Desulfovibrio_desulfuricans"
+                          },
+                          "allele": {
+                            "value": "DES-8"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.103,
+                          "num_date": {
+                            "value": 2016.028,
+                            "confidence": [
+                              2015.694,
+                              2016.191
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.529,
+                              "France": 0.459,
+                              "Ireland": 0.00492,
+                              "Russia": 0.00424,
+                              "South Korea": 0.00147,
+                              "Thailand": 0.00142
+                            },
+                            "entropy": 0.762
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C234G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000008",
+                            "node_attrs": {
+                              "div": 0.104,
+                              "num_date": {
+                                "value": 2016.672,
+                                "confidence": [
+                                  2016.171,
+                                  2017.253
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.737,
+                                  "France": 0.215,
+                                  "Ireland": 0.0234,
+                                  "Russia": 0.0148,
+                                  "South Korea": 0.00478,
+                                  "Thailand": 0.00467
+                                },
+                                "entropy": 0.757
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T705C"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "DES-7_WP_297145719-NZ_CAKSVL010000005-99634",
+                                "node_attrs": {
+                                  "div": 0.107,
+                                  "num_date": {
+                                    "value": 2017.454,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "uncultured_Desulfovibrio_sp."
+                                  },
+                                  "allele": {
+                                    "value": "DES-7"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G306A",
+                                      "C354A",
+                                      "C796A"
+                                    ],
+                                    "DES-1": [
+                                      "P266T"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "DES-1: P266T"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "NODE_0000009",
+                                "node_attrs": {
+                                  "div": 0.108,
+                                  "num_date": {
+                                    "value": 2018.917,
+                                    "confidence": [
+                                      2018.211,
+                                      2019.356
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Ireland",
+                                    "confidence": {
+                                      "Ireland": 0.375,
+                                      "USA": 0.355,
+                                      "Russia": 0.135,
+                                      "France": 0.0963,
+                                      "South Korea": 0.0195,
+                                      "Thailand": 0.0192
+                                    },
+                                    "entropy": 1.383
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G784A",
+                                      "G799A",
+                                      "C826T",
+                                      "C835A"
+                                    ],
+                                    "DES-1": [
+                                      "V262I",
+                                      "G267S",
+                                      "R276C",
+                                      "Q279K"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "DES-1: V262I, G267S, R276C, Q279K"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "DES-9_WP_300554106-NZ_JARKQS010000317-17480",
+                                    "node_attrs": {
+                                      "div": 0.108,
+                                      "num_date": {
+                                        "value": 2022.001,
+                                        "confidence": [
+                                          2022.001,
+                                          2022.527
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "organism": {
+                                        "value": "Desulfovibrio_sp."
+                                      },
+                                      "allele": {
+                                        "value": "DES-9"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000010",
+                                    "node_attrs": {
+                                      "div": 0.115,
+                                      "num_date": {
+                                        "value": 2019.9,
+                                        "confidence": [
+                                          2019.652,
+                                          2019.9
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Ireland",
+                                        "confidence": {
+                                          "Ireland": 0.72,
+                                          "Russia": 0.194,
+                                          "USA": 0.0633,
+                                          "France": 0.014,
+                                          "South Korea": 0.00408,
+                                          "Thailand": 0.00403
+                                        },
+                                        "entropy": 0.834
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "T10C",
+                                          "A67G",
+                                          "G351A",
+                                          "G412A",
+                                          "C601G",
+                                          "G667A"
+                                        ],
+                                        "DES-1": [
+                                          "C4R",
+                                          "M23V",
+                                          "E138K",
+                                          "R201G",
+                                          "D223N"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "DES-1: C4R, M23V, E138K, R201G, D223N"
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "DES-12_MBD8894519-JACYXG010000001-186394",
+                                        "node_attrs": {
+                                          "div": 0.116,
+                                          "num_date": {
+                                            "value": 2020.745,
+                                            "confidence": [
+                                              2020.745,
+                                              2020.745
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Desulfovibrio_desulfuricans"
+                                          },
+                                          "allele": {
+                                            "value": "DES-12"
+                                          },
+                                          "country": {
+                                            "value": "Russia",
+                                            "confidence": {
+                                              "Russia": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G397A"
+                                            ],
+                                            "DES-1": [
+                                              "V133I"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "DES-1: V133I"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "DES-11_MBT9748004-WQPD01000003-32054",
+                                        "node_attrs": {
+                                          "div": 0.115,
+                                          "num_date": {
+                                            "value": 2019.9,
+                                            "confidence": [
+                                              2019.9,
+                                              2019.9
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Desulfovibrio_desulfuricans"
+                                          },
+                                          "allele": {
+                                            "value": "DES-11"
+                                          },
+                                          "country": {
+                                            "value": "Ireland",
+                                            "confidence": {
+                                              "Ireland": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.106,
+                              "num_date": {
+                                "value": 2016.296,
+                                "confidence": [
+                                  2016.19,
+                                  2016.296
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 0.981,
+                                  "USA": 0.0185
+                                },
+                                "entropy": 0.0953
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G351A",
+                                  "G412A",
+                                  "A873G"
+                                ],
+                                "DES-1": [
+                                  "E138K"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "DES-1: E138K"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "DES-3_SBV93748-LT598928-458580",
+                                "node_attrs": {
+                                  "div": 0.106,
+                                  "num_date": {
+                                    "value": 2016.296,
+                                    "confidence": [
+                                      2016.296,
+                                      2016.296
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "organism": {
+                                    "value": "uncultured_Desulfovibrio_sp."
+                                  },
+                                  "allele": {
+                                    "value": "DES-3"
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "DES-3_SBV93748-FLUP01000001-458580",
+                                "node_attrs": {
+                                  "div": 0.106,
+                                  "num_date": {
+                                    "value": 2016.296,
+                                    "confidence": [
+                                      2016.296,
+                                      2016.296
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "organism": {
+                                    "value": "uncultured_Desulfovibrio_sp."
+                                  },
+                                  "allele": {
+                                    "value": "DES-3"
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000013",
+                                "node_attrs": {
+                                  "div": 0.106,
+                                  "num_date": {
+                                    "value": 2021.741,
+                                    "confidence": [
+                                      2020.945,
+                                      2021.757
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.997,
+                                      "France": 0.00192
+                                    },
+                                    "entropy": 0.0253
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000014",
+                                    "node_attrs": {
+                                      "div": 0.106,
+                                      "num_date": {
+                                        "value": 2021.741,
+                                        "confidence": [
+                                          2021.572,
+                                          2021.779
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00189
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "DES-3_MCB6551798-JAJCNQ010000001-250034",
+                                        "node_attrs": {
+                                          "div": 0.106,
+                                          "num_date": {
+                                            "value": 2021.779,
+                                            "confidence": [
+                                              2021.779,
+                                              2021.779
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Desulfovibrio_desulfuricans"
+                                          },
+                                          "allele": {
+                                            "value": "DES-3"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "DES-3_MCB7344770-JAJCIJ010000001-145266",
+                                        "node_attrs": {
+                                          "div": 0.106,
+                                          "num_date": {
+                                            "value": 2021.779,
+                                            "confidence": [
+                                              2021.779,
+                                              2021.779
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Desulfovibrio_desulfuricans"
+                                          },
+                                          "allele": {
+                                            "value": "DES-3"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000015",
+                                    "node_attrs": {
+                                      "div": 0.106,
+                                      "num_date": {
+                                        "value": 2021.741,
+                                        "confidence": [
+                                          2021.442,
+                                          2021.776
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00196
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "DES-3_MCB6540716-JAJCNP010000001-250034",
+                                        "node_attrs": {
+                                          "div": 0.106,
+                                          "num_date": {
+                                            "value": 2021.779,
+                                            "confidence": [
+                                              2021.779,
+                                              2021.779
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Desulfovibrio_desulfuricans"
+                                          },
+                                          "allele": {
+                                            "value": "DES-3"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000016",
+                                        "node_attrs": {
+                                          "div": 0.106,
+                                          "num_date": {
+                                            "value": 2021.741,
+                                            "confidence": [
+                                              2021.659,
+                                              2021.779
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": 0.00123
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "DES-3_MCB6563640-JAJCNO010000001-250034",
+                                            "node_attrs": {
+                                              "div": 0.106,
+                                              "num_date": {
+                                                "value": 2021.779,
+                                                "confidence": [
+                                                  2021.779,
+                                                  2021.779
+                                                ]
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "organism": {
+                                                "value": "Desulfovibrio_desulfuricans"
+                                              },
+                                              "allele": {
+                                                "value": "DES-3"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000017",
+                                            "node_attrs": {
+                                              "div": 0.106,
+                                              "num_date": {
+                                                "value": 2021.778,
+                                                "confidence": [
+                                                  2021.741,
+                                                  2022.384
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 0.999
+                                                },
+                                                "entropy": 0.0069
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "DES-3_MCQ5216739-JANGDL010000001-250106",
+                                                "node_attrs": {
+                                                  "div": 0.106,
+                                                  "num_date": {
+                                                    "value": 2022.437,
+                                                    "confidence": [
+                                                      2022.437,
+                                                      2022.437
+                                                    ]
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Desulfovibrio_desulfuricans"
+                                                  },
+                                                  "allele": {
+                                                    "value": "DES-3"
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Submission date"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000018",
+                                                "node_attrs": {
+                                                  "div": 0.106,
+                                                  "num_date": {
+                                                    "value": 2022.411,
+                                                    "confidence": [
+                                                      2022.1,
+                                                      2022.437
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": 0.00252
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "DES-3_MDE8728227-JARFIO010000001-145338",
+                                                    "node_attrs": {
+                                                      "div": 0.106,
+                                                      "num_date": {
+                                                        "value": 2022.489,
+                                                        "confidence": [
+                                                          2022.489,
+                                                          2022.489
+                                                        ]
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location from metadata"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Desulfovibrio_desulfuricans"
+                                                      },
+                                                      "allele": {
+                                                        "value": "DES-3"
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "DES-3_MCQ4860248-JANFYZ010000002-214831",
+                                                    "node_attrs": {
+                                                      "div": 0.106,
+                                                      "num_date": {
+                                                        "value": 2022.437,
+                                                        "confidence": [
+                                                          2022.437,
+                                                          2022.437
+                                                        ]
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location from metadata"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Desulfovibrio_desulfuricans"
+                                                      },
+                                                      "allele": {
+                                                        "value": "DES-3"
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Submission date"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

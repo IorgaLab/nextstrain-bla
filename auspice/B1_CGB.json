@@ -1,0 +1,653 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 CGB beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 729,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC11432_00854": {
+        "end": 729,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Spain": {
+            "latitude": 40.4637,
+            "longitude": -3.7492
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1828.949,
+        "confidence": [
+          1798.659,
+          1862.784
+        ]
+      },
+      "country": {
+        "value": "Spain",
+        "confidence": {
+          "Spain": 0.423,
+          "Korea": 0.234,
+          "France": 0.142,
+          "United Kingdom": 0.142,
+          "USA": 0.034,
+          "Germany": 0.0249
+        },
+        "entropy": 1.466
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "CGB-2_UVT37980-MZ063804-8282",
+        "node_attrs": {
+          "div": 0.075,
+          "num_date": {
+            "value": 2021.322,
+            "confidence": [
+              2021.322,
+              2021.322
+            ]
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "allele": {
+            "value": "CGB-2"
+          },
+          "country": {
+            "value": "Spain",
+            "confidence": {
+              "Spain": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "organism": {
+            "value": "uncultured_bacterium"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C45T",
+              "A56C",
+              "C57G",
+              "C60T",
+              "G64A",
+              "A65C",
+              "A69T",
+              "A87C",
+              "G93A",
+              "T96A",
+              "A99G",
+              "A105G",
+              "C111T",
+              "C123T",
+              "C168G",
+              "G171T",
+              "A180G",
+              "T183C",
+              "C199T",
+              "G201A",
+              "T204C",
+              "A213G",
+              "C225A",
+              "A228G",
+              "C231T",
+              "G240T",
+              "A241T",
+              "G243A",
+              "C249T",
+              "A255G",
+              "C259A",
+              "T261A",
+              "C265A",
+              "G273A",
+              "C294T",
+              "T300G",
+              "G315C",
+              "A345G",
+              "A366G",
+              "A378G",
+              "A379C",
+              "A384G",
+              "A393T",
+              "A411T",
+              "A415C",
+              "A420C",
+              "C426A",
+              "T429A",
+              "T441C",
+              "A456G",
+              "G460A",
+              "C468T",
+              "T477G",
+              "T483G",
+              "G489A",
+              "G492T",
+              "T507A",
+              "T513C",
+              "C516G",
+              "G525A",
+              "A528C",
+              "C540T",
+              "T555C",
+              "C567T",
+              "C576G",
+              "C582G",
+              "C585A",
+              "C594T",
+              "C601G",
+              "A609G",
+              "A615C",
+              "G619A",
+              "A620C",
+              "G624A",
+              "T625C",
+              "A627T",
+              "T631G",
+              "C632A",
+              "C639T",
+              "G640T",
+              "T642A",
+              "C651T",
+              "C652T",
+              "T660C",
+              "T669C",
+              "C684A",
+              "C690A",
+              "T693C",
+              "G699A",
+              "C702T",
+              "T715C",
+              "A717G"
+            ],
+            "NCTC11432_00854": [
+              "N19T",
+              "D22T",
+              "M81L",
+              "H89N",
+              "I127L",
+              "E131D",
+              "I139L",
+              "V154I",
+              "Q201E",
+              "E207T",
+              "S211D",
+              "A214S"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC11432_00854: N19T, D22T, M81L, H89N, I127L, E131D, I139L, V154I, Q201E, E207T, S211D, A214S"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "div": 0.0666,
+          "num_date": {
+            "value": 1982.385,
+            "confidence": [
+              1972.601,
+              1991.277
+            ]
+          },
+          "country": {
+            "value": "Korea",
+            "confidence": {
+              "Korea": 0.431,
+              "France": 0.249,
+              "United Kingdom": 0.249,
+              "USA": 0.0344,
+              "Spain": 0.0268,
+              "Germany": 0.00992
+            },
+            "entropy": 1.313
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "CGB-1_ABS29619-EF672680-1",
+            "node_attrs": {
+              "div": 0.0763,
+              "num_date": {
+                "value": 2007.448,
+                "confidence": [
+                  2007.448,
+                  2007.448
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "CGB-1"
+              },
+              "country": {
+                "value": "Korea",
+                "confidence": {
+                  "Korea": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Chryseobacterium_gleum"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C108T",
+                  "C267T",
+                  "T270G",
+                  "T447C",
+                  "A450T",
+                  "T543C",
+                  "T657C"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0749,
+              "num_date": {
+                "value": 2001.062,
+                "confidence": [
+                  1999.484,
+                  2001.062
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.452,
+                  "United Kingdom": 0.452,
+                  "USA": 0.0605,
+                  "Korea": 0.0204,
+                  "Germany": 0.0142,
+                  "Spain": 0.00134
+                },
+                "entropy": 1.036
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C66T",
+                  "T129A",
+                  "C249A",
+                  "T279A",
+                  "G282T",
+                  "C291T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "LR134289.1",
+                "node_attrs": {
+                  "div": 0.0749,
+                  "num_date": {
+                    "value": 2001.062,
+                    "confidence": [
+                      1984.616,
+                      2051.767
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.451,
+                      "United Kingdom": 0.451,
+                      "USA": 0.0608,
+                      "Korea": 0.021,
+                      "Germany": 0.0148,
+                      "Spain": 0.00212
+                    },
+                    "entropy": 1.045
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CGB-1_VEE05275-LR134289-900872",
+                "node_attrs": {
+                  "div": 0.0749,
+                  "num_date": {
+                    "value": 2001.062,
+                    "confidence": [
+                      1984.616,
+                      2051.767
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "allele": {
+                    "value": "CGB-1"
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Chryseobacterium_gleum"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CGB-1_AAL55263-AF339734-461",
+                "node_attrs": {
+                  "div": 0.0749,
+                  "num_date": {
+                    "value": 2001.062,
+                    "confidence": [
+                      2001.062,
+                      2001.062
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "allele": {
+                    "value": "CGB-1"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Chryseobacterium_gleum"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.0749,
+                  "num_date": {
+                    "value": 2009.901,
+                    "confidence": [
+                      2002.979,
+                      2010.255
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.696,
+                      "Germany": 0.161,
+                      "France": 0.0696,
+                      "United Kingdom": 0.0696,
+                      "Korea": 0.00337
+                    },
+                    "entropy": 0.94
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CGB-1_QQY30398-CP068486-3527789",
+                    "node_attrs": {
+                      "div": 0.0749,
+                      "num_date": {
+                        "value": 2021.04,
+                        "confidence": [
+                          2021.04,
+                          2021.04
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "CGB-1"
+                      },
+                      "country": {
+                        "value": "Germany",
+                        "confidence": {
+                          "Germany": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Chryseobacterium_gleum"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 0.0749,
+                      "num_date": {
+                        "value": 2009.901,
+                        "confidence": [
+                          2006.762,
+                          2010.473
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.00205
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CGB-1_EFK34554-GL379781-2201034",
+                        "node_attrs": {
+                          "div": 0.0749,
+                          "num_date": {
+                            "value": 2010.473,
+                            "confidence": [
+                              2010.473,
+                              2010.473
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "CGB-1"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_gleum_ATCC_35910"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CGB-1_EFK34554-ACKQ02000007-1733174",
+                        "node_attrs": {
+                          "div": 0.0749,
+                          "num_date": {
+                            "value": 2010.473,
+                            "confidence": [
+                              2010.473,
+                              2010.473
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "CGB-1"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_gleum_ATCC_35910"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

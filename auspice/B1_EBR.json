@@ -1,0 +1,1270 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 EBR beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 708,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "EBR-1": {
+        "end": 708,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Hong Kong": {
+            "latitude": 22.3964,
+            "longitude": 114.1095
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "Nigeria": {
+            "latitude": 10.0,
+            "longitude": 8.0
+          },
+          "Belgium": {
+            "latitude": 50.707735,
+            "longitude": 4.677726
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1982.535,
+        "confidence": [
+          1979.907,
+          1987.071
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.248,
+          "France": 0.239,
+          "USA": 0.202,
+          "Belgium": 0.183,
+          "Pakistan": 0.0832,
+          "Hong Kong": 0.0236,
+          "Nigeria": 0.0217
+        },
+        "entropy": 1.7
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "EBR-5_UWX67704-CP104209-786783",
+        "node_attrs": {
+          "div": 0.107,
+          "num_date": {
+            "value": 2019.818,
+            "confidence": [
+              2019.818,
+              2019.818
+            ]
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "organism": {
+            "value": "Empedobacter_stercoris"
+          },
+          "allele": {
+            "value": "EBR-5"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G6A",
+              "T10G",
+              "A18T",
+              "C19T",
+              "A22G",
+              "T24C",
+              "G25A",
+              "A33T",
+              "G38C",
+              "T39G",
+              "A63G",
+              "T72A",
+              "C76T",
+              "G78T",
+              "A85T",
+              "A86C",
+              "C87T",
+              "A88C",
+              "A93T",
+              "T95A",
+              "T96C",
+              "C111T",
+              "G117A",
+              "A121C",
+              "T123A",
+              "T126C",
+              "G127A",
+              "G132T",
+              "A141G",
+              "A152T",
+              "G157A",
+              "A159C",
+              "G162T",
+              "A163G",
+              "G175A",
+              "T186C",
+              "T189G",
+              "G198A",
+              "G204T",
+              "G214A",
+              "A215C",
+              "T217A",
+              "A219G",
+              "A226C",
+              "G228T",
+              "T229G",
+              "G231A",
+              "C232T",
+              "A233T",
+              "A237G",
+              "G240A",
+              "A244C",
+              "G249A",
+              "C258T",
+              "C264T",
+              "C269T",
+              "A270C",
+              "G279A",
+              "T282C",
+              "T285A",
+              "A297G",
+              "T306C",
+              "T312C",
+              "T318A",
+              "G321A",
+              "T327C",
+              "T330A",
+              "T333A",
+              "T336C",
+              "A339T",
+              "A340T",
+              "T342A",
+              "A348C",
+              "C351T",
+              "A359T",
+              "A360T",
+              "A369G",
+              "G381A",
+              "G396A",
+              "T399A",
+              "A414C",
+              "C417T",
+              "A419G",
+              "C429A",
+              "T441C",
+              "G442A",
+              "T444C",
+              "G457C",
+              "A462T",
+              "T468A",
+              "T469G",
+              "T471G",
+              "G478C",
+              "A504G",
+              "G507T",
+              "A528C",
+              "T534A",
+              "T537A",
+              "T543A",
+              "G544A",
+              "T545A",
+              "C558T",
+              "C560T",
+              "A561T",
+              "A597T",
+              "T609A",
+              "A612G",
+              "A630C",
+              "T663A",
+              "C665A",
+              "A669G",
+              "C675A",
+              "G702A",
+              "A703T"
+            ],
+            "EBR-1": [
+              "L4V",
+              "L7F",
+              "I8V",
+              "A9T",
+              "S13T",
+              "P26S",
+              "N29S",
+              "N30H",
+              "F32Y",
+              "N41Q",
+              "V43I",
+              "E44D",
+              "Y51F",
+              "V53I",
+              "N55D",
+              "V59I",
+              "E72T",
+              "L73M",
+              "M76L",
+              "L77V",
+              "Q78L",
+              "N82H",
+              "A90V",
+              "D95E",
+              "D106E",
+              "T114S",
+              "L116F",
+              "K120I",
+              "K140R",
+              "N143K",
+              "V148I",
+              "E153Q",
+              "S157A",
+              "V160L",
+              "V182K",
+              "T187I",
+              "K210N",
+              "T222N",
+              "K235*"
+            ]
+          },
+          "labels": {
+            "aa": "EBR-1: L4V, L7F, I8V, A9T, S13T, P26S, N29S, N30H, F32Y, N41Q, V43I, E44D, Y51F, V53I, N55D, V59I, E72T, L73M, M76L, L77V, Q78L, N82H, A90V, D95E, D106E, T114S, L116F, K120I, K140R, N143K, V148I, E153Q, S157A, V160L, V182K, T187I, K210N, T222N, K235*"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "div": 0.08,
+          "num_date": {
+            "value": 1996.092,
+            "confidence": [
+              1994.74,
+              1997.39
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.33,
+              "USA": 0.276,
+              "Belgium": 0.248,
+              "Pakistan": 0.1,
+              "China": 0.0341,
+              "Hong Kong": 0.00621,
+              "Nigeria": 0.00484
+            },
+            "entropy": 1.47
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0947,
+              "num_date": {
+                "value": 1998.968,
+                "confidence": [
+                  1998.128,
+                  1999.876
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.504,
+                  "USA": 0.429,
+                  "Belgium": 0.0399,
+                  "Pakistan": 0.016,
+                  "China": 0.00613,
+                  "Hong Kong": 0.00393,
+                  "Nigeria": 0.00129
+                },
+                "entropy": 0.965
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A216G",
+                  "A303G",
+                  "G387T",
+                  "T513C",
+                  "T564C",
+                  "A577G",
+                  "G600C",
+                  "A610G",
+                  "A623C",
+                  "A624G"
+                ],
+                "EBR-1": [
+                  "T193A",
+                  "Q200H",
+                  "T204A",
+                  "K208T"
+                ]
+              },
+              "labels": {
+                "aa": "EBR-1: T193A, Q200H, T204A, K208T"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "div": 0.102,
+                  "num_date": {
+                    "value": 2000.007,
+                    "confidence": [
+                      1999.316,
+                      2000.606
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.539,
+                      "USA": 0.423,
+                      "Belgium": 0.0227,
+                      "Pakistan": 0.00906,
+                      "China": 0.00364,
+                      "Hong Kong": 0.0024
+                    },
+                    "entropy": 0.867
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T318G",
+                      "A420G",
+                      "A531G",
+                      "C578T",
+                      "T604C"
+                    ],
+                    "EBR-1": [
+                      "D106E",
+                      "A193V"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "EBR-1: D106E, A193V"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "EBR-2_ALG03771-KR131616-1",
+                    "node_attrs": {
+                      "div": 0.115,
+                      "num_date": {
+                        "value": 2015.281,
+                        "confidence": [
+                          2015.281,
+                          2015.281
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Empedobacter_falsenii"
+                      },
+                      "allele": {
+                        "value": "EBR-2"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G6A",
+                          "T10A",
+                          "G78A",
+                          "C87T",
+                          "C111T",
+                          "G125A",
+                          "G132A",
+                          "T174C",
+                          "G228A",
+                          "G381A",
+                          "C429T",
+                          "A435G",
+                          "C513T",
+                          "T672C"
+                        ],
+                        "EBR-1": [
+                          "L4I",
+                          "G42D",
+                          "M76I"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "EBR-1: L4I, G42D, M76I"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.123,
+                      "num_date": {
+                        "value": 2001.675,
+                        "confidence": [
+                          2001.456,
+                          2001.675
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.938,
+                          "USA": 0.0561,
+                          "Belgium": 0.00316,
+                          "Pakistan": 0.00135
+                        },
+                        "entropy": 0.26
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T135C",
+                          "G180A",
+                          "G198A",
+                          "G231A",
+                          "A297G",
+                          "G442T",
+                          "T486G",
+                          "T645C",
+                          "G684T"
+                        ],
+                        "EBR-1": [
+                          "V148F"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "EBR-1: V148F"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "AF416700.1",
+                        "node_attrs": {
+                          "div": 0.123,
+                          "num_date": {
+                            "value": 2001.675,
+                            "confidence": [
+                              2000.701,
+                              2005.293
+                            ]
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 0.935,
+                              "USA": 0.0566,
+                              "Belgium": 0.00365,
+                              "Pakistan": 0.00182,
+                              "China": 0.00125,
+                              "Hong Kong": 0.00119
+                            },
+                            "entropy": 0.281
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "EBR-1_AAN32638-AF416700-57",
+                        "node_attrs": {
+                          "div": 0.123,
+                          "num_date": {
+                            "value": 2001.675,
+                            "confidence": [
+                              2001.675,
+                              2001.675
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Empedobacter_brevis"
+                          },
+                          "allele": {
+                            "value": "EBR-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.108,
+                  "num_date": {
+                    "value": 2018.138,
+                    "confidence": [
+                      2017.538,
+                      2018.138
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.678,
+                      "France": 0.287,
+                      "Hong Kong": 0.0335
+                    },
+                    "entropy": 0.743
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G6A",
+                      "T10A",
+                      "C76T",
+                      "C87T",
+                      "C111T",
+                      "T346C",
+                      "A369G",
+                      "G381A",
+                      "T408G",
+                      "A516G",
+                      "C558T",
+                      "T645A",
+                      "T651C"
+                    ],
+                    "EBR-1": [
+                      "L4I",
+                      "P26S"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "EBR-1: L4I, P26S"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "EBR-3_MDH2206856-JAOCLM010000004-84403",
+                    "node_attrs": {
+                      "div": 0.108,
+                      "num_date": {
+                        "value": 2018.138,
+                        "confidence": [
+                          2018.138,
+                          2018.138
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Empedobacter_sp._GD03644"
+                      },
+                      "allele": {
+                        "value": "EBR-3"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000010",
+                    "node_attrs": {
+                      "div": 0.108,
+                      "num_date": {
+                        "value": 2019.246,
+                        "confidence": [
+                          2018.486,
+                          2019.319
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.562,
+                          "Hong Kong": 0.363,
+                          "USA": 0.0743
+                        },
+                        "entropy": 0.891
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "EBR-3_QLL57527-CP040908-1124727",
+                        "node_attrs": {
+                          "div": 0.108,
+                          "num_date": {
+                            "value": 2019.248,
+                            "confidence": [
+                              2019.248,
+                              2019.319
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Hong Kong",
+                            "confidence": {
+                              "Hong Kong": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Empedobacter_falsenii"
+                          },
+                          "allele": {
+                            "value": "EBR-3"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "EBR-3_QEJ74008-MN339511-1",
+                        "node_attrs": {
+                          "div": 0.108,
+                          "num_date": {
+                            "value": 2019.637,
+                            "confidence": [
+                              2019.637,
+                              2019.637
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Empedobacter_falsenii"
+                          },
+                          "allele": {
+                            "value": "EBR-3"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.102,
+              "num_date": {
+                "value": 2001.434,
+                "confidence": [
+                  2000.527,
+                  2001.677
+                ]
+              },
+              "country": {
+                "value": "Belgium",
+                "confidence": {
+                  "Belgium": 0.663,
+                  "Pakistan": 0.272,
+                  "France": 0.0361,
+                  "USA": 0.0222,
+                  "China": 0.00344,
+                  "Nigeria": 0.00237,
+                  "Hong Kong": 0.0011
+                },
+                "entropy": 0.872
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T174C",
+                  "G207A",
+                  "C264G",
+                  "T408A",
+                  "C429T",
+                  "A456T",
+                  "G495A",
+                  "T508C",
+                  "T540C",
+                  "T570A",
+                  "C662T"
+                ],
+                "EBR-1": [
+                  "A221V"
+                ]
+              },
+              "labels": {
+                "aa": "EBR-1: A221V"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.103,
+                  "num_date": {
+                    "value": 2016.498,
+                    "confidence": [
+                      2015.673,
+                      2016.549
+                    ]
+                  },
+                  "country": {
+                    "value": "Pakistan",
+                    "confidence": {
+                      "Pakistan": 1.0
+                    },
+                    "entropy": 8.9e-05
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T135C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "EBR-4_RRT88574-RHPO01000040-6408",
+                    "node_attrs": {
+                      "div": 0.103,
+                      "num_date": {
+                        "value": 2016.499,
+                        "confidence": [
+                          2016.499,
+                          2016.572
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Pakistan",
+                        "confidence": {
+                          "Pakistan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Empedobacter_falsenii"
+                      },
+                      "allele": {
+                        "value": "EBR-4"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "EBR-4_RRT87442-RHPN01000039-18859",
+                    "node_attrs": {
+                      "div": 0.103,
+                      "num_date": {
+                        "value": 2016.499,
+                        "confidence": [
+                          2016.499,
+                          2016.572
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Pakistan",
+                        "confidence": {
+                          "Pakistan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Empedobacter_falsenii"
+                      },
+                      "allele": {
+                        "value": "EBR-4"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.106,
+                  "num_date": {
+                    "value": 2001.868,
+                    "confidence": [
+                      2001.499,
+                      2001.987
+                    ]
+                  },
+                  "country": {
+                    "value": "Belgium",
+                    "confidence": {
+                      "Belgium": 0.714,
+                      "Pakistan": 0.255,
+                      "France": 0.0195,
+                      "USA": 0.0081,
+                      "Nigeria": 0.00191,
+                      "China": 0.00129
+                    },
+                    "entropy": 0.728
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T24A",
+                      "A69G",
+                      "C91T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "EBR-4_STD55668-UFXS01000001-1698709",
+                    "node_attrs": {
+                      "div": 0.106,
+                      "num_date": {
+                        "value": 2001.998,
+                        "confidence": [
+                          2001.001,
+                          2001.999
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Belgium",
+                        "confidence": {
+                          "Belgium": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Empedobacter_falsenii"
+                      },
+                      "allele": {
+                        "value": "EBR-4"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000014",
+                    "node_attrs": {
+                      "div": 0.106,
+                      "num_date": {
+                        "value": 2017.826,
+                        "confidence": [
+                          2016.502,
+                          2018.151
+                        ]
+                      },
+                      "country": {
+                        "value": "Pakistan",
+                        "confidence": {
+                          "Pakistan": 0.839,
+                          "Nigeria": 0.104,
+                          "France": 0.043,
+                          "Belgium": 0.012
+                        },
+                        "entropy": 0.583
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.108,
+                          "num_date": {
+                            "value": 2018.191,
+                            "confidence": [
+                              2017.903,
+                              2018.251
+                            ]
+                          },
+                          "country": {
+                            "value": "Pakistan",
+                            "confidence": {
+                              "Pakistan": 1.0
+                            },
+                            "entropy": 0.000631
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T126A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "EBR-4_MDH0660542-JAOCDF010000043-3307",
+                            "node_attrs": {
+                              "div": 0.108,
+                              "num_date": {
+                                "value": 2018.251,
+                                "confidence": [
+                                  2018.251,
+                                  2018.251
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Pakistan",
+                                "confidence": {
+                                  "Pakistan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Empedobacter_sp._GD03865"
+                              },
+                              "allele": {
+                                "value": "EBR-4"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "EBR-4_MDH0675030-JAOCDJ010000024-19242",
+                            "node_attrs": {
+                              "div": 0.108,
+                              "num_date": {
+                                "value": 2018.251,
+                                "confidence": [
+                                  2018.251,
+                                  2018.251
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Pakistan",
+                                "confidence": {
+                                  "Pakistan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Empedobacter_sp._GD03861"
+                              },
+                              "allele": {
+                                "value": "EBR-4"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000016",
+                        "node_attrs": {
+                          "div": 0.106,
+                          "num_date": {
+                            "value": 2019.246,
+                            "confidence": [
+                              2018.428,
+                              2019.32
+                            ]
+                          },
+                          "country": {
+                            "value": "Nigeria",
+                            "confidence": {
+                              "Nigeria": 0.691,
+                              "France": 0.228,
+                              "Pakistan": 0.0781,
+                              "Belgium": 0.00133
+                            },
+                            "entropy": 0.808
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "EBR-4_QHT72954-MN997121-1",
+                            "node_attrs": {
+                              "div": 0.106,
+                              "num_date": {
+                                "value": 2020.072,
+                                "confidence": [
+                                  2020.072,
+                                  2020.072
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Empedobacter_falsenii"
+                              },
+                              "allele": {
+                                "value": "EBR-4"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "EBR-4_MBW1618269-JAAGKM010000010-62847",
+                            "node_attrs": {
+                              "div": 0.106,
+                              "num_date": {
+                                "value": 2019.248,
+                                "confidence": [
+                                  2019.248,
+                                  2019.319
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Nigeria",
+                                "confidence": {
+                                  "Nigeria": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Empedobacter_falsenii"
+                              },
+                              "allele": {
+                                "value": "EBR-4"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

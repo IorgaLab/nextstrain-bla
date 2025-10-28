@@ -1,0 +1,3013 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A FRI beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 885,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaFRI-1": {
+        "end": 885,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Canada": {
+            "latitude": 61.0666922,
+            "longitude": -107.991707
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Afghanistan": {
+            "latitude": 33.7680065,
+            "longitude": 66.2385139
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2009.73,
+        "confidence": [
+          2008.732,
+          2010.519
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.242,
+          "France": 0.178,
+          "United Kingdom": 0.121,
+          "Canada": 0.116,
+          "Afghanistan": 0.0969,
+          "Germany": 0.0841,
+          "China": 0.0813,
+          "Shinjuku": 0.0808
+        },
+        "entropy": 1.998
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000014",
+        "node_attrs": {
+          "div": 0.0137,
+          "num_date": {
+            "value": 2011.854,
+            "confidence": [
+              2011.259,
+              2012.688
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.291,
+              "France": 0.135,
+              "Canada": 0.128,
+              "United Kingdom": 0.113,
+              "Afghanistan": 0.0983,
+              "China": 0.0792,
+              "Shinjuku": 0.0781,
+              "Germany": 0.0774
+            },
+            "entropy": 1.965
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000015",
+            "node_attrs": {
+              "div": 0.0614,
+              "num_date": {
+                "value": 2016.369,
+                "confidence": [
+                  2015.88,
+                  2016.567
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.801,
+                  "Canada": 0.0689,
+                  "United Kingdom": 0.0278,
+                  "France": 0.0267,
+                  "Afghanistan": 0.025,
+                  "China": 0.0178,
+                  "Shinjuku": 0.0173,
+                  "Germany": 0.0154
+                },
+                "entropy": 0.857
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T7C",
+                  "T11G",
+                  "T12C",
+                  "T27C",
+                  "T33G",
+                  "T40C",
+                  "C52T",
+                  "A63G",
+                  "G80A",
+                  "C94A",
+                  "T120C",
+                  "G123T",
+                  "A183G",
+                  "A201G",
+                  "C222T",
+                  "C234G",
+                  "A237G",
+                  "T249C",
+                  "G253A",
+                  "A254G",
+                  "T255C",
+                  "G262A",
+                  "A277T",
+                  "T289G",
+                  "C290T",
+                  "C333T",
+                  "C336T",
+                  "C341A",
+                  "T405C",
+                  "A408G",
+                  "A462G",
+                  "C471T",
+                  "T537C",
+                  "T540A",
+                  "A543C",
+                  "G592A",
+                  "G598A",
+                  "T669A",
+                  "C708T",
+                  "G760A",
+                  "A816G",
+                  "A859G",
+                  "G862T",
+                  "A864G",
+                  "G867A"
+                ],
+                "blaFRI-1": [
+                  "F3L",
+                  "F4C",
+                  "P18S",
+                  "S27N",
+                  "Q32K",
+                  "D85S",
+                  "V88I",
+                  "T93S",
+                  "S97V",
+                  "T114K",
+                  "V198I",
+                  "D200N",
+                  "A254T",
+                  "N287D",
+                  "A288S"
+                ]
+              },
+              "labels": {
+                "aa": "blaFRI-1: F3L, F4C, P18S, S27N, Q32K, D85S, V88I, T93S, S97V, T114K, V198I, D200N, A254T, N287D, A288S"
+              }
+            },
+            "children": [
+              {
+                "name": "FRI-12_UUM03679-OP142442-1",
+                "node_attrs": {
+                  "div": 0.0773,
+                  "num_date": {
+                    "value": 2022.585,
+                    "confidence": [
+                      2022.585,
+                      2022.585
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "Canada",
+                    "confidence": {
+                      "Canada": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Enterobacter_asburiae"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "allele": {
+                    "value": "FRI-12"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T10C",
+                      "T21A",
+                      "A28T",
+                      "T29A",
+                      "T30C",
+                      "A77G",
+                      "T90G",
+                      "G99T",
+                      "T150C",
+                      "G285A",
+                      "T798C",
+                      "T801C",
+                      "A826G",
+                      "A831G"
+                    ],
+                    "blaFRI-1": [
+                      "C4R",
+                      "N7K",
+                      "I10Y",
+                      "E26G",
+                      "M33I",
+                      "T276A"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaFRI-1: C4R, N7K, I10Y, E26G, M33I, T276A"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000016",
+                "node_attrs": {
+                  "div": 0.0751,
+                  "num_date": {
+                    "value": 2016.923,
+                    "confidence": [
+                      2016.761,
+                      2016.985
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": 0.00127
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C31A",
+                      "T64C",
+                      "G85A",
+                      "A111G",
+                      "G126T",
+                      "A155G",
+                      "A156G",
+                      "C248T",
+                      "G309A",
+                      "G444A",
+                      "C761A",
+                      "T843C"
+                    ],
+                    "blaFRI-1": [
+                      "L11M",
+                      "F22L",
+                      "G29S",
+                      "E52G",
+                      "T83I",
+                      "T254N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaFRI-1: L11M, F22L, G29S, E52G, T83I, T254N"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "FRI-5_HEC5301806-DAQIOU010000031-18278",
+                    "node_attrs": {
+                      "div": 0.0751,
+                      "num_date": {
+                        "value": 2016.984,
+                        "confidence": [
+                          2016.833,
+                          2016.999
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-5"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FRI-5_HEC5302012-DAQIOU010000077-2900",
+                    "node_attrs": {
+                      "div": 0.0751,
+                      "num_date": {
+                        "value": 2016.984,
+                        "confidence": [
+                          2016.833,
+                          2016.999
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-5"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.0751,
+                      "num_date": {
+                        "value": 2018.27,
+                        "confidence": [
+                          2018.047,
+                          2018.289
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.992,
+                          "Shinjuku": 0.00204,
+                          "Canada": 0.00184,
+                          "United Kingdom": 0.00128,
+                          "Afghanistan": 0.00112,
+                          "France": 0.00107
+                        },
+                        "entropy": 0.0643
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "FRI-5_BEK81570-AP028423-86836",
+                        "node_attrs": {
+                          "div": 0.0751,
+                          "num_date": {
+                            "value": 2023.459,
+                            "confidence": [
+                              2023.459,
+                              2023.459
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "Shinjuku",
+                            "confidence": {
+                              "Shinjuku": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_asburiae"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "FRI-5"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "FRI-5_AWA42532-MH208723-1",
+                        "node_attrs": {
+                          "div": 0.0751,
+                          "num_date": {
+                            "value": 2018.289,
+                            "confidence": [
+                              2018.289,
+                              2018.289
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_cloacae_complex_sp."
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "FRI-5"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000019",
+            "node_attrs": {
+              "div": 0.0716,
+              "num_date": {
+                "value": 2018.582,
+                "confidence": [
+                  2018.487,
+                  2018.658
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.991,
+                  "Canada": 0.00226,
+                  "United Kingdom": 0.00157,
+                  "Afghanistan": 0.00137,
+                  "France": 0.00135
+                },
+                "entropy": 0.0653
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A24G",
+                  "G26T",
+                  "T41C",
+                  "T56C",
+                  "C69A",
+                  "C71A",
+                  "T81G",
+                  "T87C",
+                  "G88C",
+                  "T90G",
+                  "G99T",
+                  "C116T",
+                  "G123A",
+                  "A180G",
+                  "G184A",
+                  "C223T",
+                  "C225A",
+                  "G245A",
+                  "G262T",
+                  "G271A",
+                  "G282A",
+                  "A306G",
+                  "G335T",
+                  "C336A",
+                  "A345T",
+                  "G354T",
+                  "T384C",
+                  "C390T",
+                  "T399G",
+                  "A424G",
+                  "G459A",
+                  "T474G",
+                  "C477G",
+                  "A498G",
+                  "T570A",
+                  "G591T",
+                  "A634C",
+                  "C639A",
+                  "T645G",
+                  "T651C",
+                  "T669C",
+                  "T672A",
+                  "A678T",
+                  "A756T",
+                  "C759T",
+                  "G760T",
+                  "C799A",
+                  "C813T",
+                  "G829A",
+                  "A852T"
+                ],
+                "blaFRI-1": [
+                  "S9I",
+                  "L14S",
+                  "F19S",
+                  "T24N",
+                  "S27R",
+                  "V30L",
+                  "M33I",
+                  "A39V",
+                  "D62N",
+                  "R82K",
+                  "V88F",
+                  "D91N",
+                  "R112L",
+                  "I142V",
+                  "D159E",
+                  "K212Q",
+                  "A254S",
+                  "P267T",
+                  "V277I"
+                ]
+              },
+              "labels": {
+                "aa": "blaFRI-1: S9I, L14S, F19S, T24N, S27R, V30L, M33I, A39V, D62N, R82K, V88F, D91N, R112L, I142V, D159E, K212Q, A254S, P267T, V277I"
+              }
+            },
+            "children": [
+              {
+                "name": "FRI-8_BBJ69931-AP019635-146863",
+                "node_attrs": {
+                  "div": 0.0716,
+                  "num_date": {
+                    "value": 2018.664,
+                    "confidence": [
+                      2018.582,
+                      2018.664
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Enterobacter_sp._18A13"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "FRI-8"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000009",
+                "node_attrs": {
+                  "div": 0.0716,
+                  "num_date": {
+                    "value": 2020.067,
+                    "confidence": [
+                      2019.764,
+                      2020.097
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": 0.00143
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "FRI-8_UAN18825-CP074179-91980",
+                    "node_attrs": {
+                      "div": 0.0716,
+                      "num_date": {
+                        "value": 2020.097,
+                        "confidence": [
+                          2020.097,
+                          2020.097
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-8"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000017",
+                    "node_attrs": {
+                      "div": 0.0716,
+                      "num_date": {
+                        "value": 2020.091,
+                        "confidence": [
+                          2019.99,
+                          2020.17
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": 0.000548
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "FRI-8_UAN24702-CP074171-217252",
+                        "node_attrs": {
+                          "div": 0.0716,
+                          "num_date": {
+                            "value": 2020.173,
+                            "confidence": [
+                              2020.173,
+                              2020.173
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_sp._JBIWA003"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FRI-8"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000018",
+                        "node_attrs": {
+                          "div": 0.0716,
+                          "num_date": {
+                            "value": 2020.166,
+                            "confidence": [
+                              2020.092,
+                              2020.173
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.998,
+                              "Canada": 0.00193
+                            },
+                            "entropy": 0.0158
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "FRI-8_UAN34146-CP074160-186737",
+                            "node_attrs": {
+                              "div": 0.0716,
+                              "num_date": {
+                                "value": 2020.173,
+                                "confidence": [
+                                  2020.173,
+                                  2020.173
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Enterobacter_sp._JBIWA005"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "FRI-8"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000020",
+                            "node_attrs": {
+                              "div": 0.0716,
+                              "num_date": {
+                                "value": 2020.984,
+                                "confidence": [
+                                  2020.927,
+                                  2021.714
+                                ]
+                              },
+                              "country": {
+                                "value": "Canada",
+                                "confidence": {
+                                  "Canada": 0.992,
+                                  "Japan": 0.00761
+                                },
+                                "entropy": 0.0486
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-8_MCG7803989-JAKRWQ010000002-144093",
+                                "node_attrs": {
+                                  "div": 0.0716,
+                                  "num_date": {
+                                    "value": 2021.001,
+                                    "confidence": [
+                                      2021.001,
+                                      2021.74
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-8"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-8_UKU10120-OK264410-144093",
+                                "node_attrs": {
+                                  "div": 0.0716,
+                                  "num_date": {
+                                    "value": 2021.725,
+                                    "confidence": [
+                                      2021.725,
+                                      2021.725
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-8"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000013",
+        "node_attrs": {
+          "div": 0.0528,
+          "num_date": {
+            "value": 2014.23,
+            "confidence": [
+              2013.568,
+              2014.487
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.408,
+              "Japan": 0.319,
+              "United Kingdom": 0.135,
+              "Afghanistan": 0.038,
+              "Canada": 0.0351,
+              "Germany": 0.0269,
+              "China": 0.019,
+              "Shinjuku": 0.0185
+            },
+            "entropy": 1.489
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A20G",
+              "T29C",
+              "T30A",
+              "C31T",
+              "T34A",
+              "C35T",
+              "T57G",
+              "T66C",
+              "A70T",
+              "C92A",
+              "T93G",
+              "A101G",
+              "C106T",
+              "G115T",
+              "C142A",
+              "T150C",
+              "G154A",
+              "G168A",
+              "C204T",
+              "T218C",
+              "C278T",
+              "G285A",
+              "C291T",
+              "T294A",
+              "G342A",
+              "T366C",
+              "T368A",
+              "C426A",
+              "A438G",
+              "C492T",
+              "A529G",
+              "G549A",
+              "A558G",
+              "A582T",
+              "G591A",
+              "T597C",
+              "G613T",
+              "A618G",
+              "G661A",
+              "C663T",
+              "A684G",
+              "C720T",
+              "T732C",
+              "T774A",
+              "C780G",
+              "G786C",
+              "T789C",
+              "G795A",
+              "T822C",
+              "G884A"
+            ],
+            "blaFRI-1": [
+              "N7S",
+              "I10T",
+              "L11F",
+              "S12I",
+              "F19L",
+              "T24S",
+              "A31E",
+              "K34R",
+              "A39S",
+              "L48I",
+              "E52K",
+              "V73A",
+              "T93M",
+              "M123K",
+              "K177E",
+              "A205S",
+              "V221I",
+              "I260M"
+            ]
+          },
+          "labels": {
+            "aa": "blaFRI-1: N7S, I10T, L11F, S12I, F19L, T24S, A31E, K34R, A39S, L48I, E52K, V73A, T93M, M123K, K177E, A205S, V221I, I260M"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.0642,
+              "num_date": {
+                "value": 2014.882,
+                "confidence": [
+                  2014.438,
+                  2015.047
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.551,
+                  "Japan": 0.196,
+                  "United Kingdom": 0.164,
+                  "Afghanistan": 0.0301,
+                  "Germany": 0.022,
+                  "Canada": 0.0172,
+                  "China": 0.00973,
+                  "Shinjuku": 0.00945
+                },
+                "entropy": 1.293
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C48T",
+                  "G85A",
+                  "T255G",
+                  "A321G",
+                  "G337A",
+                  "T534A",
+                  "C615A",
+                  "T627A",
+                  "T672G",
+                  "A826G"
+                ],
+                "blaFRI-1": [
+                  "G29S",
+                  "D85E",
+                  "E113K",
+                  "D209E",
+                  "T276A"
+                ]
+              },
+              "labels": {
+                "aa": "blaFRI-1: G29S, D85E, E113K, D209E, T276A"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000000",
+                "node_attrs": {
+                  "div": 0.0768,
+                  "num_date": {
+                    "value": 2015.473,
+                    "confidence": [
+                      2015.355,
+                      2015.473
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.928,
+                      "Japan": 0.0312,
+                      "United Kingdom": 0.0227,
+                      "Afghanistan": 0.00516,
+                      "Germany": 0.0042,
+                      "Canada": 0.00358,
+                      "China": 0.00237,
+                      "Shinjuku": 0.00233
+                    },
+                    "entropy": 0.362
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A19G",
+                      "A77T",
+                      "G80T",
+                      "C94G",
+                      "A151C",
+                      "T172G",
+                      "C336T",
+                      "T511A",
+                      "C754A",
+                      "T861G",
+                      "G867T"
+                    ],
+                    "blaFRI-1": [
+                      "S7G",
+                      "E26V",
+                      "S27I",
+                      "Q32E",
+                      "T51P",
+                      "S58A",
+                      "S171T",
+                      "P252T",
+                      "N287K"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaFRI-1: S7G, E26V, S27I, Q32E, T51P, S58A, S171T, P252T, N287K"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "KT192551.1",
+                    "node_attrs": {
+                      "div": 0.0768,
+                      "num_date": {
+                        "value": 2015.473,
+                        "confidence": [
+                          2014.863,
+                          2016.98
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.9,
+                          "Japan": 0.0406,
+                          "United Kingdom": 0.0255,
+                          "Afghanistan": 0.00823,
+                          "Germany": 0.0076,
+                          "Canada": 0.00687,
+                          "Shinjuku": 0.00551,
+                          "China": 0.00551
+                        },
+                        "entropy": 0.486
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FRI-1_ALE30770-KT192551-3492",
+                    "node_attrs": {
+                      "div": 0.0768,
+                      "num_date": {
+                        "value": 2015.473,
+                        "confidence": [
+                          2015.473,
+                          2015.473
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_cloacae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "FRI-1"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.071,
+                  "num_date": {
+                    "value": 2016.014,
+                    "confidence": [
+                      2015.537,
+                      2016.18
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.549,
+                      "Japan": 0.156,
+                      "France": 0.135,
+                      "Afghanistan": 0.0714,
+                      "Germany": 0.0582,
+                      "Canada": 0.0131,
+                      "China": 0.0087,
+                      "Shinjuku": 0.00831
+                    },
+                    "entropy": 1.382
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G219A",
+                      "G245A",
+                      "G280A",
+                      "A356G",
+                      "T689A",
+                      "C762T"
+                    ],
+                    "blaFRI-1": [
+                      "R82K",
+                      "V94M",
+                      "Q119R",
+                      "V230D"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaFRI-1: R82K, V94M, Q119R, V230D"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000003",
+                    "node_attrs": {
+                      "div": 0.0744,
+                      "num_date": {
+                        "value": 2018.78,
+                        "confidence": [
+                          2018.072,
+                          2018.965
+                        ]
+                      },
+                      "country": {
+                        "value": "Afghanistan",
+                        "confidence": {
+                          "Afghanistan": 0.84,
+                          "Japan": 0.102,
+                          "United Kingdom": 0.0251,
+                          "France": 0.00988,
+                          "China": 0.00688,
+                          "Canada": 0.0068,
+                          "Germany": 0.00565,
+                          "Shinjuku": 0.00395
+                        },
+                        "entropy": 0.637
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T12A",
+                          "A14G",
+                          "C225A"
+                        ],
+                        "blaFRI-1": [
+                          "F4L",
+                          "K5R"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "blaFRI-1: F4L, K5R"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "FRI-11_MDO2456341-JAUKWV010000013-15632",
+                        "node_attrs": {
+                          "div": 0.0744,
+                          "num_date": {
+                            "value": 2018.987,
+                            "confidence": [
+                              2018.001,
+                              2018.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Afghanistan",
+                            "confidence": {
+                              "Afghanistan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_asburiae"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FRI-11"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000028",
+                        "node_attrs": {
+                          "div": 0.0744,
+                          "num_date": {
+                            "value": 2020.652,
+                            "confidence": [
+                              2020.356,
+                              2020.667
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.91,
+                              "China": 0.046,
+                              "Afghanistan": 0.0296,
+                              "United Kingdom": 0.00382,
+                              "Canada": 0.0038,
+                              "France": 0.00293,
+                              "Shinjuku": 0.00189,
+                              "Germany": 0.00174
+                            },
+                            "entropy": 0.414
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000030",
+                            "node_attrs": {
+                              "div": 0.0744,
+                              "num_date": {
+                                "value": 2021.829,
+                                "confidence": [
+                                  2021.555,
+                                  2021.84
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.996,
+                                  "Japan": 0.00292
+                                },
+                                "entropy": 0.028
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-11_UYO79762-OP501653-1",
+                                "node_attrs": {
+                                  "div": 0.0744,
+                                  "num_date": {
+                                    "value": 2022.722,
+                                    "confidence": [
+                                      2022.722,
+                                      2022.722
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_sp."
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-11"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-11_UXP26363-CP104977-76498",
+                                "node_attrs": {
+                                  "div": 0.0744,
+                                  "num_date": {
+                                    "value": 2021.84,
+                                    "confidence": [
+                                      2021.84,
+                                      2021.84
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_sp._155105"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-11"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000031",
+                            "node_attrs": {
+                              "div": 0.0744,
+                              "num_date": {
+                                "value": 2020.652,
+                                "confidence": [
+                                  2020.556,
+                                  2020.671
+                                ]
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 0.999
+                                },
+                                "entropy": 0.00883
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-11_UAN43462-CP074152-56485",
+                                "node_attrs": {
+                                  "div": 0.0744,
+                                  "num_date": {
+                                    "value": 2020.671,
+                                    "confidence": [
+                                      2020.671,
+                                      2020.671
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_sp._JBIWA008"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-11"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-11_UAN38692-CP074155-54939",
+                                "node_attrs": {
+                                  "div": 0.0744,
+                                  "num_date": {
+                                    "value": 2020.671,
+                                    "confidence": [
+                                      2020.671,
+                                      2020.671
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-11"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.0767,
+                      "num_date": {
+                        "value": 2016.366,
+                        "confidence": [
+                          2016.131,
+                          2016.46
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.745,
+                          "Japan": 0.0986,
+                          "Germany": 0.072,
+                          "France": 0.0458,
+                          "Afghanistan": 0.025,
+                          "Canada": 0.0063,
+                          "China": 0.0036,
+                          "Shinjuku": 0.00343
+                        },
+                        "entropy": 0.942
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G42T",
+                          "G88A",
+                          "A112G",
+                          "C366G",
+                          "T384C"
+                        ],
+                        "blaFRI-1": [
+                          "L14F",
+                          "V30I",
+                          "T38A"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "blaFRI-1: L14F, V30I, T38A"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000008",
+                        "node_attrs": {
+                          "div": 0.0801,
+                          "num_date": {
+                            "value": 2019.582,
+                            "confidence": [
+                              2019.48,
+                              2019.641
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": 0.00132
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T42C",
+                              "G523A",
+                              "C614T"
+                            ],
+                            "blaFRI-1": [
+                              "G175S",
+                              "S205L"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "blaFRI-1: G175S, S205L"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "FRI-10_HFH0620932-DAYAXB010000110-12120",
+                            "node_attrs": {
+                              "div": 0.0801,
+                              "num_date": {
+                                "value": 2019.623,
+                                "confidence": [
+                                  2019.582,
+                                  2019.664
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Escherichia_coli"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "FRI-10"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "FRI-10_HFH0620440-DAYAXB010000031-21645",
+                            "node_attrs": {
+                              "div": 0.0801,
+                              "num_date": {
+                                "value": 2019.623,
+                                "confidence": [
+                                  2019.582,
+                                  2019.664
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Escherichia_coli"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "FRI-10"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "FRI-10_QPQ08642-MW349709-1",
+                            "node_attrs": {
+                              "div": 0.0801,
+                              "num_date": {
+                                "value": 2020.933,
+                                "confidence": [
+                                  2020.933,
+                                  2020.933
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Escherichia_coli"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "FRI-10"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "div": 0.0801,
+                          "num_date": {
+                            "value": 2016.5,
+                            "confidence": [
+                              2016.379,
+                              2016.546
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.85,
+                              "Germany": 0.0827,
+                              "Japan": 0.039,
+                              "France": 0.0153,
+                              "Afghanistan": 0.0084,
+                              "Canada": 0.00227,
+                              "China": 0.00135,
+                              "Shinjuku": 0.0013
+                            },
+                            "entropy": 0.606
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T21C",
+                              "G255T",
+                              "G841T"
+                            ],
+                            "blaFRI-1": [
+                              "E85D",
+                              "A281S"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "blaFRI-1: E85D, A281S"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.0824,
+                              "num_date": {
+                                "value": 2016.575,
+                                "confidence": [
+                                  2016.523,
+                                  2016.575
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.999
+                                },
+                                "entropy": 0.0112
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T693C",
+                                  "A838G"
+                                ],
+                                "blaFRI-1": [
+                                  "N280D"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "blaFRI-1: N280D"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-2_AQZ19786-KX912253-8836",
+                                "node_attrs": {
+                                  "div": 0.0824,
+                                  "num_date": {
+                                    "value": 2016.742,
+                                    "confidence": [
+                                      2016.742,
+                                      2016.742
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-2"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-2_ANZ90381-KX620467-1",
+                                "node_attrs": {
+                                  "div": 0.0824,
+                                  "num_date": {
+                                    "value": 2016.575,
+                                    "confidence": [
+                                      2016.575,
+                                      2016.575
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-2"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.0824,
+                              "num_date": {
+                                "value": 2017.073,
+                                "confidence": [
+                                  2016.907,
+                                  2017.073
+                                ]
+                              },
+                              "country": {
+                                "value": "Germany",
+                                "confidence": {
+                                  "Germany": 0.982,
+                                  "United Kingdom": 0.0153,
+                                  "Japan": 0.00153
+                                },
+                                "entropy": 0.104
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T115G",
+                                  "A156G"
+                                ],
+                                "blaFRI-1": [
+                                  "S39A"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "blaFRI-1: S39A"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-3_AQS23610-KY524440-1",
+                                "node_attrs": {
+                                  "div": 0.0824,
+                                  "num_date": {
+                                    "value": 2017.073,
+                                    "confidence": [
+                                      2017.073,
+                                      2017.073
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "Germany",
+                                    "confidence": {
+                                      "Germany": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_cloacae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-3"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-3_QCO95725-MK471334-5891",
+                                "node_attrs": {
+                                  "div": 0.0824,
+                                  "num_date": {
+                                    "value": 2019.078,
+                                    "confidence": [
+                                      2019.078,
+                                      2019.078
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "Germany",
+                                    "confidence": {
+                                      "Germany": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_cloacae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-3"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000024",
+            "node_attrs": {
+              "div": 0.0642,
+              "num_date": {
+                "value": 2016.361,
+                "confidence": [
+                  2015.913,
+                  2016.468
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.961,
+                  "France": 0.0126,
+                  "Canada": 0.0118,
+                  "United Kingdom": 0.00639,
+                  "Afghanistan": 0.0034,
+                  "China": 0.00168,
+                  "Shinjuku": 0.00159,
+                  "Germany": 0.00144
+                },
+                "entropy": 0.228
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G280A",
+                  "A543C",
+                  "A561T",
+                  "A573T",
+                  "G621A",
+                  "G739A",
+                  "C759T",
+                  "A831T",
+                  "T834A",
+                  "T877A",
+                  "A878C"
+                ],
+                "blaFRI-1": [
+                  "V94M",
+                  "K191N",
+                  "V247I",
+                  "Y293T"
+                ]
+              },
+              "labels": {
+                "aa": "blaFRI-1: V94M, K191N, V247I, Y293T"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000033",
+                "node_attrs": {
+                  "div": 0.0722,
+                  "num_date": {
+                    "value": 2016.663,
+                    "confidence": [
+                      2016.575,
+                      2016.663
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": 1.65e-09
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G129A",
+                      "T249C",
+                      "A396C",
+                      "G564A",
+                      "T720G",
+                      "A873G"
+                    ],
+                    "blaFRI-1": [
+                      "M188I",
+                      "F240L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaFRI-1: M188I, F240L"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "FRI-4_HEB5890472-DAQEGM010000053-3863",
+                    "node_attrs": {
+                      "div": 0.0722,
+                      "num_date": {
+                        "value": 2016.663,
+                        "confidence": [
+                          2016.585,
+                          2016.877
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FRI-4_BAX00166-LC178555-1",
+                    "node_attrs": {
+                      "div": 0.0722,
+                      "num_date": {
+                        "value": 2016.663,
+                        "confidence": [
+                          2016.663,
+                          2016.663
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "FRI-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FRI-4_BEK76638-AP028421-84799",
+                    "node_attrs": {
+                      "div": 0.0722,
+                      "num_date": {
+                        "value": 2016.663,
+                        "confidence": [
+                          2016.585,
+                          2016.877
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FRI-4_BEK76604-AP028421-49477",
+                    "node_attrs": {
+                      "div": 0.0722,
+                      "num_date": {
+                        "value": 2016.663,
+                        "confidence": [
+                          2016.585,
+                          2016.877
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "FRI-4_HEB5890333-DAQEGM010000022-10024",
+                    "node_attrs": {
+                      "div": 0.0722,
+                      "num_date": {
+                        "value": 2016.663,
+                        "confidence": [
+                          2016.585,
+                          2016.877
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_asburiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "FRI-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000039",
+                    "node_attrs": {
+                      "div": 0.0722,
+                      "num_date": {
+                        "value": 2017.659,
+                        "confidence": [
+                          2017.444,
+                          2017.719
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": 0.000823
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "FRI-4_BBJ61008-AP019631-110582",
+                        "node_attrs": {
+                          "div": 0.0722,
+                          "num_date": {
+                            "value": 2017.674,
+                            "confidence": [
+                              2017.667,
+                              2017.747
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_asburiae"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FRI-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "FRI-4_BBJ60974-AP019631-77435",
+                        "node_attrs": {
+                          "div": 0.0722,
+                          "num_date": {
+                            "value": 2017.674,
+                            "confidence": [
+                              2017.667,
+                              2017.747
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_asburiae"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FRI-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000040",
+                "node_attrs": {
+                  "div": 0.0642,
+                  "num_date": {
+                    "value": 2017.661,
+                    "confidence": [
+                      2017.331,
+                      2018.211
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.928,
+                      "Canada": 0.0579,
+                      "France": 0.0038,
+                      "United Kingdom": 0.00364,
+                      "Afghanistan": 0.00288,
+                      "China": 0.00144,
+                      "Shinjuku": 0.00135,
+                      "Germany": 0.00104
+                    },
+                    "entropy": 0.318
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C48T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000025",
+                    "node_attrs": {
+                      "div": 0.0654,
+                      "num_date": {
+                        "value": 2018.531,
+                        "confidence": [
+                          2018.195,
+                          2018.768
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.744,
+                          "Canada": 0.247,
+                          "United Kingdom": 0.00229,
+                          "France": 0.00204,
+                          "Afghanistan": 0.00196,
+                          "China": 0.00107,
+                          "Shinjuku": 0.00101
+                        },
+                        "entropy": 0.624
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C66T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000026",
+                        "node_attrs": {
+                          "div": 0.0688,
+                          "num_date": {
+                            "value": 2018.914,
+                            "confidence": [
+                              2018.798,
+                              2018.914
+                            ]
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 0.998,
+                              "Japan": 0.00174
+                            },
+                            "entropy": 0.0133
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C225T",
+                              "C567T",
+                              "A873G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "FRI-6_AZK35806-MK248729-1",
+                            "node_attrs": {
+                              "div": 0.0688,
+                              "num_date": {
+                                "value": 2018.914,
+                                "confidence": [
+                                  2018.914,
+                                  2018.914
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "Canada",
+                                "confidence": {
+                                  "Canada": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Enterobacter_cloacae"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "FRI-6"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "FRI-6_AZV03718-CP034768-116102",
+                            "node_attrs": {
+                              "div": 0.0688,
+                              "num_date": {
+                                "value": 2018.988,
+                                "confidence": [
+                                  2018.988,
+                                  2018.988
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "Canada",
+                                "confidence": {
+                                  "Canada": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Enterobacter_sp._N18-03635"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "FRI-6"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000027",
+                        "node_attrs": {
+                          "div": 0.0665,
+                          "num_date": {
+                            "value": 2019.182,
+                            "confidence": [
+                              2018.969,
+                              2019.201
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.999
+                            },
+                            "entropy": 0.00599
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A25C"
+                            ],
+                            "blaFRI-1": [
+                              "S9R"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "blaFRI-1: S9R"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "FRI-7_BBI97867-AP019534-55765",
+                            "node_attrs": {
+                              "div": 0.0665,
+                              "num_date": {
+                                "value": 2019.201,
+                                "confidence": [
+                                  2019.201,
+                                  2019.201
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Enterobacter_asburiae"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "FRI-7"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "FRI-7_BBI97898-AP019534-88714",
+                            "node_attrs": {
+                              "div": 0.0665,
+                              "num_date": {
+                                "value": 2019.201,
+                                "confidence": [
+                                  2019.201,
+                                  2019.201
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Enterobacter_asburiae"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "FRI-7"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000029",
+                    "node_attrs": {
+                      "div": 0.071,
+                      "num_date": {
+                        "value": 2018.582,
+                        "confidence": [
+                          2018.49,
+                          2018.658
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.998,
+                          "Canada": 0.00126
+                        },
+                        "entropy": 0.0171
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T12A",
+                          "A34G",
+                          "T72C",
+                          "G101A",
+                          "C113A",
+                          "G553A"
+                        ],
+                        "blaFRI-1": [
+                          "F4L",
+                          "I12V",
+                          "R34K",
+                          "T38N",
+                          "A185T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "blaFRI-1: F4L, I12V, R34K, T38N, A185T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "FRI-9_BBJ65425-AP019633-117923",
+                        "node_attrs": {
+                          "div": 0.071,
+                          "num_date": {
+                            "value": 2018.664,
+                            "confidence": [
+                              2018.582,
+                              2018.664
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Enterobacter_asburiae"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "FRI-9"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000045",
+                        "node_attrs": {
+                          "div": 0.071,
+                          "num_date": {
+                            "value": 2019.602,
+                            "confidence": [
+                              2019.341,
+                              2019.693
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": 0.000897
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000046",
+                            "node_attrs": {
+                              "div": 0.071,
+                              "num_date": {
+                                "value": 2019.689,
+                                "confidence": [
+                                  2019.578,
+                                  2019.708
+                                ]
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": 0.000103
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-9_HDX4013931-DAPORA010000052-1479",
+                                "node_attrs": {
+                                  "div": 0.071,
+                                  "num_date": {
+                                    "value": 2019.708,
+                                    "confidence": [
+                                      2019.708,
+                                      2019.708
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-9"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-9_BFU36373-AP038771-47979",
+                                "node_attrs": {
+                                  "div": 0.071,
+                                  "num_date": {
+                                    "value": 2019.708,
+                                    "confidence": [
+                                      2019.708,
+                                      2019.708
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-9"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000047",
+                            "node_attrs": {
+                              "div": 0.071,
+                              "num_date": {
+                                "value": 2019.689,
+                                "confidence": [
+                                  2019.578,
+                                  2019.708
+                                ]
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": 0.000103
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FRI-9_BFU36406-AP038771-83401",
+                                "node_attrs": {
+                                  "div": 0.071,
+                                  "num_date": {
+                                    "value": 2019.708,
+                                    "confidence": [
+                                      2019.708,
+                                      2019.708
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-9"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FRI-9_HDX4013811-DAPORA010000023-5543",
+                                "node_attrs": {
+                                  "div": 0.071,
+                                  "num_date": {
+                                    "value": 2019.708,
+                                    "confidence": [
+                                      2019.708,
+                                      2019.708
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Enterobacter_asburiae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "FRI-9"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

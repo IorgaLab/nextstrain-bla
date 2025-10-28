@@ -1,0 +1,2744 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A CAD beta-lactamases",
+    "updated": "2025-01-20",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 915,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC13772_00046": {
+        "end": 915,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "New Zealand": {
+            "latitude": -41.500083,
+            "longitude": 172.8344077
+          },
+          "Canada": {
+            "latitude": 61.0666922,
+            "longitude": -107.991707
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1947.105,
+        "confidence": [
+          1913.82,
+          1967.44
+        ]
+      },
+      "country": {
+        "value": "Canada",
+        "confidence": {
+          "Canada": 0.375,
+          "New Zealand": 0.323,
+          "Germany": 0.17,
+          "France": 0.0802,
+          "United Kingdom": 0.0518
+        },
+        "entropy": 1.389
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000028",
+        "node_attrs": {
+          "div": 0.011,
+          "num_date": {
+            "value": 2004.789,
+            "confidence": [
+              1987.794,
+              2007.809
+            ]
+          },
+          "country": {
+            "value": "Canada",
+            "confidence": {
+              "Canada": 0.552,
+              "Germany": 0.355,
+              "New Zealand": 0.0646,
+              "France": 0.0232,
+              "United Kingdom": 0.00505
+            },
+            "entropy": 0.987
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G11A",
+              "G19C",
+              "G31C",
+              "G45A",
+              "G46A",
+              "A73G",
+              "A102G",
+              "A119C",
+              "T174G",
+              "G183A",
+              "T204C",
+              "T228C",
+              "G235A",
+              "C243A",
+              "A279C",
+              "T552C",
+              "T729G"
+            ],
+            "NCTC13772_00046": [
+              "R4K",
+              "V7L",
+              "V11L",
+              "V16I",
+              "I25V",
+              "K40T",
+              "D58E",
+              "D79N"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC13772_00046: R4K, V7L, V11L, V16I, I25V, K40T, D58E, D79N"
+          }
+        },
+        "children": [
+          {
+            "name": "CAD-8_MPQ23285-RSDV01000006-88115",
+            "node_attrs": {
+              "div": 0.0143,
+              "num_date": {
+                "value": 2014.001,
+                "confidence": [
+                  2014.001,
+                  2014.892
+                ]
+              },
+              "organism": {
+                "value": "Carnobacterium_divergens"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "CAD-8"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A461C",
+                  "T705A",
+                  "T771C"
+                ],
+                "NCTC13772_00046": [
+                  "K154T"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC13772_00046: K154T"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000029",
+            "node_attrs": {
+              "div": 0.0121,
+              "num_date": {
+                "value": 2005.793,
+                "confidence": [
+                  2003.685,
+                  2009.107
+                ]
+              },
+              "country": {
+                "value": "Canada",
+                "confidence": {
+                  "Canada": 0.913,
+                  "New Zealand": 0.0435,
+                  "France": 0.0278,
+                  "Germany": 0.0156
+                },
+                "entropy": 0.387
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C762T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "CAD-2_SBO16115-FLLU01000001-86952",
+                "node_attrs": {
+                  "div": 0.0132,
+                  "num_date": {
+                    "value": 2016.4,
+                    "confidence": [
+                      2016.4,
+                      2016.4
+                    ]
+                  },
+                  "organism": {
+                    "value": "Carnobacterium_divergens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CAD-2"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G413A"
+                    ],
+                    "NCTC13772_00046": [
+                      "S138N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC13772_00046: S138N"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000030",
+                "node_attrs": {
+                  "div": 0.0154,
+                  "num_date": {
+                    "value": 2014.005,
+                    "confidence": [
+                      2010.288,
+                      2015.978
+                    ]
+                  },
+                  "country": {
+                    "value": "Canada",
+                    "confidence": {
+                      "Canada": 0.848,
+                      "New Zealand": 0.147,
+                      "France": 0.003,
+                      "Germany": 0.00178
+                    },
+                    "entropy": 0.452
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G102A",
+                      "T380C",
+                      "T630G"
+                    ],
+                    "NCTC13772_00046": [
+                      "V127A",
+                      "D210E"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC13772_00046: V127A, D210E"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CAD-9_TFI76420-NROW01000002-100473",
+                    "node_attrs": {
+                      "div": 0.0154,
+                      "num_date": {
+                        "value": 2017.001,
+                        "confidence": [
+                          2017.001,
+                          2017.887
+                        ]
+                      },
+                      "organism": {
+                        "value": "Carnobacterium_divergens"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CAD-9"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000031",
+                    "node_attrs": {
+                      "div": 0.0176,
+                      "num_date": {
+                        "value": 2016.742,
+                        "confidence": [
+                          2014.664,
+                          2017.122
+                        ]
+                      },
+                      "country": {
+                        "value": "New Zealand",
+                        "confidence": {
+                          "New Zealand": 0.848,
+                          "Canada": 0.151
+                        },
+                        "entropy": 0.429
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G151A",
+                          "A697G"
+                        ],
+                        "NCTC13772_00046": [
+                          "E51K",
+                          "K233E"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC13772_00046: E51K, K233E"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000005",
+                        "node_attrs": {
+                          "div": 0.0176,
+                          "num_date": {
+                            "value": 2016.936,
+                            "confidence": [
+                              2016.403,
+                              2018.037
+                            ]
+                          },
+                          "country": {
+                            "value": "New Zealand",
+                            "confidence": {
+                              "New Zealand": 0.983,
+                              "Canada": 0.0172
+                            },
+                            "entropy": 0.0879
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000006",
+                            "node_attrs": {
+                              "div": 0.0176,
+                              "num_date": {
+                                "value": 2016.936,
+                                "confidence": [
+                                  2016.733,
+                                  2018.774
+                                ]
+                              },
+                              "country": {
+                                "value": "New Zealand",
+                                "confidence": {
+                                  "New Zealand": 0.997,
+                                  "Canada": 0.00262
+                                },
+                                "entropy": 0.0185
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAD-10_MDT1963174-JALRMW010000002-100625",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.055,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CAD-10_MDT1943129-JALRMS010000007-7767",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.055,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000007",
+                            "node_attrs": {
+                              "div": 0.0176,
+                              "num_date": {
+                                "value": 2016.936,
+                                "confidence": [
+                                  2016.733,
+                                  2018.774
+                                ]
+                              },
+                              "country": {
+                                "value": "New Zealand",
+                                "confidence": {
+                                  "New Zealand": 0.997,
+                                  "Canada": 0.00262
+                                },
+                                "entropy": 0.0185
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAD-10_MDT1948936-JALRMU010000007-7767",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.055,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CAD-10_MDT1940691-JALRMT010000007-7767",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.055,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000008",
+                        "node_attrs": {
+                          "div": 0.0176,
+                          "num_date": {
+                            "value": 2016.996,
+                            "confidence": [
+                              2016.477,
+                              2018.267
+                            ]
+                          },
+                          "country": {
+                            "value": "New Zealand",
+                            "confidence": {
+                              "New Zealand": 0.916,
+                              "Canada": 0.0841
+                            },
+                            "entropy": 0.29
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000010",
+                            "node_attrs": {
+                              "div": 0.0176,
+                              "num_date": {
+                                "value": 2016.996,
+                                "confidence": [
+                                  2016.725,
+                                  2018.731
+                                ]
+                              },
+                              "country": {
+                                "value": "New Zealand",
+                                "confidence": {
+                                  "New Zealand": 0.991,
+                                  "Canada": 0.00855
+                                },
+                                "entropy": 0.0498
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAD-10_MDT1956594-JALRMV010000008-7767",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.142,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CAD-10_MDT1951417-JALRNA010000007-7767",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.142,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.0176,
+                              "num_date": {
+                                "value": 2016.996,
+                                "confidence": [
+                                  2016.736,
+                                  2019.018
+                                ]
+                              },
+                              "country": {
+                                "value": "New Zealand",
+                                "confidence": {
+                                  "New Zealand": 0.842,
+                                  "Canada": 0.158
+                                },
+                                "entropy": 0.44
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAD-10_MDT1961784-JALRMP010000007-7578",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.146,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "New Zealand",
+                                    "confidence": {
+                                      "New Zealand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CAD-10_MDV8934859-JAMQEU010000091-3257",
+                                "node_attrs": {
+                                  "div": 0.0176,
+                                  "num_date": {
+                                    "value": 2019.497,
+                                    "confidence": [
+                                      2019.497,
+                                      2019.571
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_sp."
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-10"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000039",
+                "node_attrs": {
+                  "div": 0.0143,
+                  "num_date": {
+                    "value": 2009.448,
+                    "confidence": [
+                      2006.169,
+                      2011.724
+                    ]
+                  },
+                  "country": {
+                    "value": "Canada",
+                    "confidence": {
+                      "Canada": 0.989,
+                      "New Zealand": 0.00809,
+                      "France": 0.00175
+                    },
+                    "entropy": 0.068
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T619G",
+                      "A866C"
+                    ],
+                    "NCTC13772_00046": [
+                      "L207V",
+                      "E289A"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC13772_00046: L207V, E289A"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000040",
+                    "node_attrs": {
+                      "div": 0.0198,
+                      "num_date": {
+                        "value": 2016.867,
+                        "confidence": [
+                          2015.975,
+                          2017.663
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 0.998,
+                          "New Zealand": 0.00214
+                        },
+                        "entropy": 0.0176
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C82T",
+                          "G247T",
+                          "G393A",
+                          "G874T",
+                          "G898A"
+                        ],
+                        "NCTC13772_00046": [
+                          "P28S",
+                          "A83S",
+                          "M131I",
+                          "A292S",
+                          "D300N"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC13772_00046: P28S, A83S, M131I, A292S, D300N"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CAD-6_TFJ53583-NRPZ01000004-86452",
+                        "node_attrs": {
+                          "div": 0.0198,
+                          "num_date": {
+                            "value": 2017.52,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-6"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-6_TFJ46620-NRPY01000004-86452",
+                        "node_attrs": {
+                          "div": 0.0198,
+                          "num_date": {
+                            "value": 2017.52,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-6"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000041",
+                    "node_attrs": {
+                      "div": 0.0209,
+                      "num_date": {
+                        "value": 2016.867,
+                        "confidence": [
+                          2016.561,
+                          2016.984
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 1.0
+                        },
+                        "entropy": 6.36e-07
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G413A",
+                          "T414C",
+                          "C456T",
+                          "C534T",
+                          "C552T",
+                          "T572C"
+                        ],
+                        "NCTC13772_00046": [
+                          "S138N",
+                          "I191T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC13772_00046: S138N, I191T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CAD-7_TFJ28456-NRPP01000007-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-7_TFI74148-NROV01000007-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-7_TFJ13644-NRPL01000007-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-7_TFI78469-NROZ01000006-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-7_TFI85028-NRPC01000007-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-7_TFJ25875-NRPQ01000007-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-7_TFI97384-NRPE01000007-84820",
+                        "node_attrs": {
+                          "div": 0.0209,
+                          "num_date": {
+                            "value": 2017.54,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000026",
+        "node_attrs": {
+          "div": 0.00769,
+          "num_date": {
+            "value": 2002.359,
+            "confidence": [
+              1991.007,
+              2004.302
+            ]
+          },
+          "country": {
+            "value": "Canada",
+            "confidence": {
+              "Canada": 0.506,
+              "New Zealand": 0.464,
+              "France": 0.0155,
+              "United Kingdom": 0.00902,
+              "Germany": 0.00494
+            },
+            "entropy": 0.834
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000009",
+            "node_attrs": {
+              "div": 0.00769,
+              "num_date": {
+                "value": 2016.936,
+                "confidence": [
+                  2013.753,
+                  2018.769
+                ]
+              },
+              "country": {
+                "value": "New Zealand",
+                "confidence": {
+                  "New Zealand": 0.977,
+                  "Canada": 0.0227
+                },
+                "entropy": 0.113
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "CAD-5_MDT1975452-JALRMR010000026-7431",
+                "node_attrs": {
+                  "div": 0.00769,
+                  "num_date": {
+                    "value": 2019.149,
+                    "confidence": [
+                      2019.001,
+                      2019.999
+                    ]
+                  },
+                  "organism": {
+                    "value": "Carnobacterium_divergens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "New Zealand",
+                    "confidence": {
+                      "New Zealand": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CAD-5"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CAD-5_MDT1959485-JALRMY010000026-7431",
+                "node_attrs": {
+                  "div": 0.00769,
+                  "num_date": {
+                    "value": 2019.149,
+                    "confidence": [
+                      2019.001,
+                      2019.999
+                    ]
+                  },
+                  "organism": {
+                    "value": "Carnobacterium_divergens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "New Zealand",
+                    "confidence": {
+                      "New Zealand": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CAD-5"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00879,
+              "num_date": {
+                "value": 2004.444,
+                "confidence": [
+                  2004.275,
+                  2004.444
+                ]
+              },
+              "country": {
+                "value": "Canada",
+                "confidence": {
+                  "Canada": 0.722,
+                  "New Zealand": 0.246,
+                  "France": 0.0197,
+                  "United Kingdom": 0.0115
+                },
+                "entropy": 0.711
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G715A"
+                ],
+                "NCTC13772_00046": [
+                  "V239I"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC13772_00046: V239I"
+              }
+            },
+            "children": [
+              {
+                "name": "UFVP01000001.1",
+                "node_attrs": {
+                  "div": 0.00879,
+                  "num_date": {
+                    "value": 2004.444,
+                    "confidence": [
+                      1989.669,
+                      2135.785
+                    ]
+                  },
+                  "country": {
+                    "value": "Canada",
+                    "confidence": {
+                      "Canada": 0.639,
+                      "New Zealand": 0.277,
+                      "France": 0.0398,
+                      "United Kingdom": 0.0256,
+                      "Germany": 0.0185
+                    },
+                    "entropy": 0.938
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CAD-1_SUX15146-UFVP01000001-47062",
+                "node_attrs": {
+                  "div": 0.00879,
+                  "num_date": {
+                    "value": 2004.444,
+                    "confidence": [
+                      1989.669,
+                      2135.785
+                    ]
+                  },
+                  "organism": {
+                    "value": "Carnobacterium_divergens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CAD-1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CAD-1_AAV65950-AY650920-1",
+                "node_attrs": {
+                  "div": 0.00879,
+                  "num_date": {
+                    "value": 2004.444,
+                    "confidence": [
+                      2004.444,
+                      2004.444
+                    ]
+                  },
+                  "organism": {
+                    "value": "Carnobacterium_divergens"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CAD-1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000020",
+                "node_attrs": {
+                  "div": 0.00988,
+                  "num_date": {
+                    "value": 2013.914,
+                    "confidence": [
+                      2008.866,
+                      2016.393
+                    ]
+                  },
+                  "country": {
+                    "value": "Canada",
+                    "confidence": {
+                      "Canada": 0.668,
+                      "New Zealand": 0.328,
+                      "France": 0.0021,
+                      "United Kingdom": 0.0011
+                    },
+                    "entropy": 0.658
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A125C"
+                    ],
+                    "NCTC13772_00046": [
+                      "Q42P"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC13772_00046: Q42P"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CAD-3_MDT2012861-JALRMQ010000007-91287",
+                    "node_attrs": {
+                      "div": 0.011,
+                      "num_date": {
+                        "value": 2019.523,
+                        "confidence": [
+                          2019.001,
+                          2019.999
+                        ]
+                      },
+                      "organism": {
+                        "value": "Carnobacterium_divergens"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "New Zealand",
+                        "confidence": {
+                          "New Zealand": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CAD-3"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A837G"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000021",
+                    "node_attrs": {
+                      "div": 0.011,
+                      "num_date": {
+                        "value": 2016.867,
+                        "confidence": [
+                          2016.444,
+                          2017.372
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 1.0
+                        },
+                        "entropy": 7.12e-05
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G54A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CAD-3_TFJ53397-NRPX01000002-86063",
+                        "node_attrs": {
+                          "div": 0.011,
+                          "num_date": {
+                            "value": 2017.531,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-3_TFJ66502-NRQB01000002-86063",
+                        "node_attrs": {
+                          "div": 0.011,
+                          "num_date": {
+                            "value": 2017.531,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-3_TFJ45602-NRPW01000002-85926",
+                        "node_attrs": {
+                          "div": 0.011,
+                          "num_date": {
+                            "value": 2017.531,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-3_TFJ74951-NRQF01000002-85822",
+                        "node_attrs": {
+                          "div": 0.011,
+                          "num_date": {
+                            "value": 2017.531,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-3_TFJ75132-NRQH01000002-85926",
+                        "node_attrs": {
+                          "div": 0.011,
+                          "num_date": {
+                            "value": 2017.531,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-3_TFJ58380-NRQA01000002-85926",
+                        "node_attrs": {
+                          "div": 0.011,
+                          "num_date": {
+                            "value": 2017.531,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000013",
+                "node_attrs": {
+                  "div": 0.00879,
+                  "num_date": {
+                    "value": 2012.962,
+                    "confidence": [
+                      2006.479,
+                      2015.038
+                    ]
+                  },
+                  "country": {
+                    "value": "Canada",
+                    "confidence": {
+                      "Canada": 0.869,
+                      "New Zealand": 0.129,
+                      "France": 0.00114
+                    },
+                    "entropy": 0.4
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000012",
+                    "node_attrs": {
+                      "div": 0.00988,
+                      "num_date": {
+                        "value": 2016.936,
+                        "confidence": [
+                          2016.599,
+                          2016.991
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 1.0
+                        },
+                        "entropy": 3.4e-05
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G133A"
+                        ],
+                        "NCTC13772_00046": [
+                          "D45N"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC13772_00046: D45N"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CAD-4_TFI85840-NROY01000002-89423",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_TFI93839-NRPA01000002-89379",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_TFJ01192-NRPF01000002-89379",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_TFJ01811-NRPG01000002-89423",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_MDT1996989-JALRNB010000010-7305",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2019.001,
+                            "confidence": [
+                              2019.001,
+                              2019.898
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "New Zealand",
+                            "confidence": {
+                              "New Zealand": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_TFI73808-NROU01000002-89379",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_TFJ20337-NRPM01000002-89379",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAD-4_TFI94592-NRPB01000002-89245",
+                        "node_attrs": {
+                          "div": 0.00988,
+                          "num_date": {
+                            "value": 2017.634,
+                            "confidence": [
+                              2017.394,
+                              2017.678
+                            ]
+                          },
+                          "organism": {
+                            "value": "Carnobacterium_divergens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CAD-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000015",
+                    "node_attrs": {
+                      "div": 0.00879,
+                      "num_date": {
+                        "value": 2014.432,
+                        "confidence": [
+                          2011.469,
+                          2016.719
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 0.79,
+                          "New Zealand": 0.209
+                        },
+                        "entropy": 0.519
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000016",
+                        "node_attrs": {
+                          "div": 0.00879,
+                          "num_date": {
+                            "value": 2016.739,
+                            "confidence": [
+                              2015.99,
+                              2018.795
+                            ]
+                          },
+                          "country": {
+                            "value": "New Zealand",
+                            "confidence": {
+                              "New Zealand": 0.929,
+                              "Canada": 0.0712
+                            },
+                            "entropy": 0.259
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "CAD-1_MDO0875771-JAMLGB010000008-87636",
+                            "node_attrs": {
+                              "div": 0.00879,
+                              "num_date": {
+                                "value": 2018.749,
+                                "confidence": [
+                                  2018.749,
+                                  2018.823
+                                ]
+                              },
+                              "organism": {
+                                "value": "Carnobacterium_divergens"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "New Zealand",
+                                "confidence": {
+                                  "New Zealand": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CAD-1"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CAD-1_WP_034572608-NZ_JAMLGB010000008-87636",
+                            "node_attrs": {
+                              "div": 0.00879,
+                              "num_date": {
+                                "value": 2018.749,
+                                "confidence": [
+                                  2018.749,
+                                  2018.823
+                                ]
+                              },
+                              "organism": {
+                                "value": "Carnobacterium_divergens"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "New Zealand",
+                                "confidence": {
+                                  "New Zealand": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CAD-1"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000017",
+                        "node_attrs": {
+                          "div": 0.00879,
+                          "num_date": {
+                            "value": 2016.733,
+                            "confidence": [
+                              2013.673,
+                              2016.964
+                            ]
+                          },
+                          "country": {
+                            "value": "Canada",
+                            "confidence": {
+                              "Canada": 0.972,
+                              "New Zealand": 0.0273
+                            },
+                            "entropy": 0.128
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000018",
+                            "node_attrs": {
+                              "div": 0.00879,
+                              "num_date": {
+                                "value": 2016.745,
+                                "confidence": [
+                                  2015.114,
+                                  2017.172
+                                ]
+                              },
+                              "country": {
+                                "value": "Canada",
+                                "confidence": {
+                                  "Canada": 0.996,
+                                  "New Zealand": 0.00435
+                                },
+                                "entropy": 0.0295
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAD-1_TFJ22830-NRPO01000003-71098",
+                                "node_attrs": {
+                                  "div": 0.00879,
+                                  "num_date": {
+                                    "value": 2017.469,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Carnobacterium_divergens"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CAD-1"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000019",
+                                "node_attrs": {
+                                  "div": 0.00879,
+                                  "num_date": {
+                                    "value": 2016.867,
+                                    "confidence": [
+                                      2016.521,
+                                      2017.578
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 0.998,
+                                      "New Zealand": 0.00166
+                                    },
+                                    "entropy": 0.0136
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "CAD-1_TFI69483-NROR01000003-71096",
+                                    "node_attrs": {
+                                      "div": 0.00879,
+                                      "num_date": {
+                                        "value": 2017.709,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Carnobacterium_divergens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Canada",
+                                        "confidence": {
+                                          "Canada": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CAD-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "CAD-1_TFI84441-NROX01000003-71098",
+                                    "node_attrs": {
+                                      "div": 0.00879,
+                                      "num_date": {
+                                        "value": 2017.709,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Carnobacterium_divergens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Canada",
+                                        "confidence": {
+                                          "Canada": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CAD-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000022",
+                            "node_attrs": {
+                              "div": 0.00879,
+                              "num_date": {
+                                "value": 2016.769,
+                                "confidence": [
+                                  2014.949,
+                                  2017.026
+                                ]
+                              },
+                              "country": {
+                                "value": "Canada",
+                                "confidence": {
+                                  "Canada": 0.995,
+                                  "New Zealand": 0.00479
+                                },
+                                "entropy": 0.0319
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000023",
+                                "node_attrs": {
+                                  "div": 0.00879,
+                                  "num_date": {
+                                    "value": 2016.781,
+                                    "confidence": [
+                                      2016.462,
+                                      2017.573
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 0.998,
+                                      "New Zealand": 0.00171
+                                    },
+                                    "entropy": 0.0139
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "CAD-1_TFJ22909-NRPN01000003-71098",
+                                    "node_attrs": {
+                                      "div": 0.00879,
+                                      "num_date": {
+                                        "value": 2017.545,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Carnobacterium_divergens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Canada",
+                                        "confidence": {
+                                          "Canada": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CAD-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "CAD-1_TFI69404-NROS01000003-71096",
+                                    "node_attrs": {
+                                      "div": 0.00879,
+                                      "num_date": {
+                                        "value": 2017.545,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Carnobacterium_divergens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Canada",
+                                        "confidence": {
+                                          "Canada": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CAD-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000024",
+                                "node_attrs": {
+                                  "div": 0.00879,
+                                  "num_date": {
+                                    "value": 2016.781,
+                                    "confidence": [
+                                      2016.462,
+                                      2017.573
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 0.998,
+                                      "New Zealand": 0.00171
+                                    },
+                                    "entropy": 0.0139
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "CAD-1_TFJ11125-NRPI01000003-71096",
+                                    "node_attrs": {
+                                      "div": 0.00879,
+                                      "num_date": {
+                                        "value": 2017.545,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Carnobacterium_divergens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Canada",
+                                        "confidence": {
+                                          "Canada": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CAD-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "CAD-1_TFJ15372-NRPH01000003-71098",
+                                    "node_attrs": {
+                                      "div": 0.00879,
+                                      "num_date": {
+                                        "value": 2017.545,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Carnobacterium_divergens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Canada",
+                                        "confidence": {
+                                          "Canada": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CAD-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

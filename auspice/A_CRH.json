@@ -1,0 +1,658 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A CRH beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 873,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "D1345_08590": {
+        "end": 873,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Portugal": {
+            "latitude": 39.54046,
+            "longitude": -8.174701
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2013.915,
+        "confidence": [
+          2013.424,
+          2014.989
+        ]
+      },
+      "country": {
+        "value": "Portugal",
+        "confidence": {
+          "Portugal": 0.906,
+          "China": 0.0917,
+          "Japan": 0.00214
+        },
+        "entropy": 0.322
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2014.289,
+            "confidence": [
+              2013.881,
+              2015.104
+            ]
+          },
+          "country": {
+            "value": "Portugal",
+            "confidence": {
+              "Portugal": 0.993,
+              "China": 0.00645
+            },
+            "entropy": 0.0405
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "CRH-3_AQZ55550-KY773615-1",
+            "node_attrs": {
+              "div": 0.0127,
+              "num_date": {
+                "value": 2017.204,
+                "confidence": [
+                  2017.204,
+                  2017.204
+                ]
+              },
+              "allele": {
+                "value": "CRH-3"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Chromobacterium_haemolyticum"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "Portugal",
+                "confidence": {
+                  "Portugal": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C24A",
+                  "A27G",
+                  "G30T",
+                  "C31A",
+                  "G33A",
+                  "G34A",
+                  "C186T",
+                  "A466C",
+                  "G561A",
+                  "A608G",
+                  "G834C"
+                ],
+                "D1345_08590": [
+                  "F8L",
+                  "L11I",
+                  "A12T",
+                  "S156R",
+                  "Q203R"
+                ]
+              },
+              "labels": {
+                "aa": "D1345_08590: F8L, L11I, A12T, S156R, Q203R"
+              }
+            }
+          },
+          {
+            "name": "CRH-2_AQZ55549-KY773614-1",
+            "node_attrs": {
+              "div": 0.0104,
+              "num_date": {
+                "value": 2017.204,
+                "confidence": [
+                  2017.204,
+                  2017.204
+                ]
+              },
+              "allele": {
+                "value": "CRH-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Chromobacterium_haemolyticum"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "Portugal",
+                "confidence": {
+                  "Portugal": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G39A",
+                  "A45G",
+                  "C108G",
+                  "C111T",
+                  "C249A",
+                  "T480C",
+                  "T483C",
+                  "A508G",
+                  "C711T"
+                ],
+                "D1345_08590": [
+                  "D83E",
+                  "I170V"
+                ]
+              },
+              "labels": {
+                "aa": "D1345_08590: D83E, I170V"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.0163,
+          "num_date": {
+            "value": 2017.806,
+            "confidence": [
+              2017.036,
+              2017.854
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.994,
+              "Japan": 0.00492
+            },
+            "entropy": 0.0369
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T57C",
+              "G60C",
+              "G63C",
+              "C66T",
+              "T73G",
+              "T174C",
+              "C193A",
+              "C243T",
+              "A289G",
+              "G330A",
+              "T399C",
+              "T485G",
+              "G537C",
+              "G687A"
+            ],
+            "D1345_08590": [
+              "S25A",
+              "L65M",
+              "T97A",
+              "L162R"
+            ]
+          },
+          "labels": {
+            "aa": "D1345_08590: S25A, L65M, T97A, L162R"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0174,
+              "num_date": {
+                "value": 2017.873,
+                "confidence": [
+                  2017.794,
+                  2017.873
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": 0.000348
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G588T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "CP031968.1",
+                "node_attrs": {
+                  "div": 0.0174,
+                  "num_date": {
+                    "value": 2017.873,
+                    "confidence": [
+                      2016.164,
+                      2023.771
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.998,
+                      "Japan": 0.00143
+                    },
+                    "entropy": 0.0187
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CRH-1_AXT46233-CP031968-1916474",
+                "node_attrs": {
+                  "div": 0.0174,
+                  "num_date": {
+                    "value": 2017.873,
+                    "confidence": [
+                      2017.873,
+                      2017.873
+                    ]
+                  },
+                  "allele": {
+                    "value": "CRH-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_rhizoryzae"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CRH-1_QOD84562-CP061849-1962153",
+                "node_attrs": {
+                  "div": 0.0174,
+                  "num_date": {
+                    "value": 2019.582,
+                    "confidence": [
+                      2019.582,
+                      2019.656
+                    ]
+                  },
+                  "allele": {
+                    "value": "CRH-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_haemolyticum"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.0163,
+              "num_date": {
+                "value": 2018.406,
+                "confidence": [
+                  2017.974,
+                  2018.479
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.985,
+                  "Japan": 0.0152
+                },
+                "entropy": 0.0804
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "CRH-1_BBH12677-AP019312-2138231",
+                "node_attrs": {
+                  "div": 0.0163,
+                  "num_date": {
+                    "value": 2018.477,
+                    "confidence": [
+                      2018.415,
+                      2018.495
+                    ]
+                  },
+                  "allele": {
+                    "value": "CRH-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_haemolyticum"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.0163,
+                  "num_date": {
+                    "value": 2019.953,
+                    "confidence": [
+                      2019.064,
+                      2020.496
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": 0.000107
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CRH-1_MBK0413305-JAEILV010000002-150762",
+                    "node_attrs": {
+                      "div": 0.0163,
+                      "num_date": {
+                        "value": 2020.827,
+                        "confidence": [
+                          2020.827,
+                          2020.827
+                        ]
+                      },
+                      "allele": {
+                        "value": "CRH-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Chromobacterium_haemolyticum"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.0163,
+                      "num_date": {
+                        "value": 2019.953,
+                        "confidence": [
+                          2019.701,
+                          2020.746
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": 1.92e-07
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CRH-1_MBO0497734-JAFLRE010000002-249661",
+                        "node_attrs": {
+                          "div": 0.0163,
+                          "num_date": {
+                            "value": 2020.034,
+                            "confidence": [
+                              2020.001,
+                              2020.999
+                            ]
+                          },
+                          "allele": {
+                            "value": "CRH-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_haemolyticum"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CRH-1_MBO0414407-JAFLRD010000002-150762",
+                        "node_attrs": {
+                          "div": 0.0163,
+                          "num_date": {
+                            "value": 2020.034,
+                            "confidence": [
+                              2020.001,
+                              2020.999
+                            ]
+                          },
+                          "allele": {
+                            "value": "CRH-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_haemolyticum"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

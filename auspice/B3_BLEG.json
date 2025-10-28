@@ -1,0 +1,416 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 BLEG beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 633,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "AN965_09465": {
+        "end": 633,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "Philippines": {
+            "latitude": 11.383086,
+            "longitude": 123.521862
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1999.38,
+        "confidence": [
+          1966.522,
+          2005.476
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.581,
+          "Malaysia": 0.415,
+          "India": 0.00229,
+          "Philippines": 0.00115
+        },
+        "entropy": 0.702
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "BLEG-1_AIC95054-CP003923-2416056",
+        "node_attrs": {
+          "div": 0.00158,
+          "num_date": {
+            "value": 2012.807,
+            "confidence": [
+              2012.807,
+              2012.807
+            ]
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "country": {
+            "value": "Malaysia",
+            "confidence": {
+              "Malaysia": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "allele": {
+            "value": "BLEG-1"
+          },
+          "organism": {
+            "value": "Shouchella_lehensis_G1"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T453C",
+              "A537C"
+            ]
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00158,
+          "num_date": {
+            "value": 2007.001,
+            "confidence": [
+              2000.826,
+              2007.001
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.994,
+              "India": 0.00275,
+              "Malaysia": 0.0026
+            },
+            "entropy": 0.0434
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "LJJD01000015.1",
+            "node_attrs": {
+              "div": 0.00158,
+              "num_date": {
+                "value": 2007.001,
+                "confidence": [
+                  1954.424,
+                  2200.164
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.99,
+                  "India": 0.0042,
+                  "Malaysia": 0.00368,
+                  "Philippines": 0.00226
+                },
+                "entropy": 0.0675
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BLEG-1_KQL57688-LJJD01000015-486531",
+            "node_attrs": {
+              "div": 0.00158,
+              "num_date": {
+                "value": 2007.001,
+                "confidence": [
+                  2007.001,
+                  2007.001
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "BLEG-1"
+              },
+              "organism": {
+                "value": "Alkalicoccobacillus_plakortidis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.00158,
+              "num_date": {
+                "value": 2009.452,
+                "confidence": [
+                  2007.284,
+                  2010.116
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.99,
+                  "India": 0.00715,
+                  "Philippines": 0.00205
+                },
+                "entropy": 0.0641
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "BLEG-1_TES50902-SNUX01000001-570401",
+                "node_attrs": {
+                  "div": 0.00158,
+                  "num_date": {
+                    "value": 2010.116,
+                    "confidence": [
+                      2010.116,
+                      2010.116
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "allele": {
+                    "value": "BLEG-1"
+                  },
+                  "organism": {
+                    "value": "Shouchella_lehensis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.00158,
+                  "num_date": {
+                    "value": 2010.039,
+                    "confidence": [
+                      2009.437,
+                      2011.714
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.992,
+                      "Philippines": 0.00585,
+                      "India": 0.00205
+                    },
+                    "entropy": 0.0528
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "BLEG-1_RQW20878-RQRY01000005-1247870",
+                    "node_attrs": {
+                      "div": 0.00158,
+                      "num_date": {
+                        "value": 2016.332,
+                        "confidence": [
+                          2016.332,
+                          2016.406
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "country": {
+                        "value": "Philippines",
+                        "confidence": {
+                          "Philippines": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "BLEG-1"
+                      },
+                      "organism": {
+                        "value": "Bacillus_sp._C1-1"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "BLEG-1_MBG9784113-LDIM01000012-632439",
+                    "node_attrs": {
+                      "div": 0.00158,
+                      "num_date": {
+                        "value": 2011.714,
+                        "confidence": [
+                          2011.714,
+                          2011.714
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "BLEG-1"
+                      },
+                      "organism": {
+                        "value": "Shouchella_lehensis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

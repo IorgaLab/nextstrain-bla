@@ -1,0 +1,437 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 ALG11 beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 873,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2014.243,
+        "confidence": [
+          2014.128,
+          2014.259
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 1.0
+        },
+        "entropy": 9.79e-05
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.000573,
+          "num_date": {
+            "value": 2014.27,
+            "confidence": [
+              2014.214,
+              2014.27
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 9.66e-05
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T233A"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "KJ691922.1",
+            "node_attrs": {
+              "div": 0.000574,
+              "num_date": {
+                "value": 2014.27,
+                "confidence": [
+                  2014.161,
+                  2014.494
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.998,
+                  "Denamark": 0.00192
+                },
+                "entropy": 0.014
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "ALG11-2_AIA10501-KJ691922-465",
+            "node_attrs": {
+              "div": 0.000574,
+              "num_date": {
+                "value": 2014.27,
+                "confidence": [
+                  2014.27,
+                  2014.27
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "uncultured_bacterium"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "ALG11-2"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.000573,
+          "num_date": {
+            "value": 2014.27,
+            "confidence": [
+              2014.24,
+              2014.27
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 5.3e-06
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "ALG11-1_APR64489-KU167039-1",
+            "node_attrs": {
+              "div": 0.139,
+              "num_date": {
+                "value": 2015.881,
+                "confidence": [
+                  2015.881,
+                  2015.881
+                ]
+              },
+              "country": {
+                "value": "Denamark",
+                "confidence": {
+                  "Denamark": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "uncultured_bacterium"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "ALG11-1"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A7G",
+                  "T11C",
+                  "G21A",
+                  "C35T",
+                  "C38T",
+                  "C40T",
+                  "C44T",
+                  "G49A",
+                  "T50C",
+                  "C52T",
+                  "A53T",
+                  "T54C",
+                  "T56C",
+                  "T58C",
+                  "T60C",
+                  "A75G",
+                  "T78C",
+                  "A85G",
+                  "G86C",
+                  "C87T",
+                  "G88C",
+                  "G123T",
+                  "G132A",
+                  "G153C",
+                  "C156T",
+                  "G171C",
+                  "G174C",
+                  "G177C",
+                  "T192C",
+                  "C194G",
+                  "G195A",
+                  "C204T",
+                  "G214T",
+                  "A215C",
+                  "G218A",
+                  "C219T",
+                  "G241C",
+                  "G262A",
+                  "G267A",
+                  "T321A",
+                  "A324G",
+                  "C330G",
+                  "T339C",
+                  "C342G",
+                  "C357G",
+                  "A376C",
+                  "A377G",
+                  "A385C",
+                  "A386G",
+                  "T391C",
+                  "G394C",
+                  "C395A",
+                  "G417A",
+                  "G420A",
+                  "C423G",
+                  "A424T",
+                  "T426A",
+                  "A435C",
+                  "T438C",
+                  "G441C",
+                  "G447C",
+                  "G450C",
+                  "T459C",
+                  "G461A",
+                  "C462G",
+                  "A496G",
+                  "C522T",
+                  "A528G",
+                  "A532G",
+                  "T552C",
+                  "G565A",
+                  "G566A",
+                  "C568A",
+                  "A609T",
+                  "C612G",
+                  "G615C",
+                  "C618T",
+                  "A619G",
+                  "A620G",
+                  "A627C",
+                  "G642A",
+                  "C654G",
+                  "T656C",
+                  "C666T",
+                  "C671A",
+                  "G674A",
+                  "T723G",
+                  "T735C",
+                  "T741C",
+                  "C748G",
+                  "C749G",
+                  "G750C",
+                  "G753C",
+                  "G759C",
+                  "A762G",
+                  "T765C",
+                  "G770C",
+                  "T771C",
+                  "C774A",
+                  "A786G",
+                  "A799T",
+                  "A810G",
+                  "C813T",
+                  "T825C",
+                  "A837G",
+                  "A868G",
+                  "A870G",
+                  "T871C",
+                  "A873C"
+                ]
+              }
+            }
+          },
+          {
+            "name": "ALG11-3_AIA10915-KJ692117-466",
+            "node_attrs": {
+              "div": 0.000574,
+              "num_date": {
+                "value": 2014.27,
+                "confidence": [
+                  2014.27,
+                  2014.27
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "uncultured_bacterium"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "ALG11-3"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "ALG11-3_AIA10668-KJ691998-488",
+            "node_attrs": {
+              "div": 0.000574,
+              "num_date": {
+                "value": 2014.27,
+                "confidence": [
+                  2014.27,
+                  2014.27
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "uncultured_bacterium"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "ALG11-3"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

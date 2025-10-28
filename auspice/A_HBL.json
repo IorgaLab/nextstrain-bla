@@ -1,0 +1,2256 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A HBL beta-lactamases",
+    "updated": "2025-03-01",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 915,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC13199_00347": {
+        "end": 915,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "Hungary": {
+            "latitude": 47.0,
+            "longitude": 20.0
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Switzerland": {
+            "latitude": 46.8182,
+            "longitude": 8.2275
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1978.741,
+        "confidence": [
+          1976.283,
+          1979.779
+        ]
+      },
+      "country": {
+        "value": "Australia",
+        "confidence": {
+          "Australia": 0.505,
+          "USA": 0.461,
+          "Russia": 0.00825,
+          "Hungary": 0.00687,
+          "Switzerland": 0.00548,
+          "France": 0.00501,
+          "China": 0.00449,
+          "United Kingdom": 0.00428
+        },
+        "entropy": 0.879
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 1979.993,
+            "confidence": [
+              1978.196,
+              1979.993
+            ]
+          },
+          "country": {
+            "value": "Australia",
+            "confidence": {
+              "Australia": 0.585,
+              "USA": 0.413
+            },
+            "entropy": 0.696
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "LR134382.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 1979.993,
+                "confidence": [
+                  1969.721,
+                  2009.989
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 0.533,
+                  "USA": 0.392,
+                  "Russia": 0.0175,
+                  "Switzerland": 0.0124,
+                  "China": 0.012,
+                  "France": 0.0117,
+                  "Hungary": 0.0109,
+                  "United Kingdom": 0.0107
+                },
+                "entropy": 1.03
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "HBL-1_KCB44729-JHER01000036-71169",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 1979.993,
+                "confidence": [
+                  1979.001,
+                  1979.999
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "HBL-1"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Bordetella_hinzii_4161"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "HBL-1_VEH23466-LR134382-354216",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 1979.993,
+                "confidence": [
+                  1969.721,
+                  2009.989
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "HBL-1"
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Bordetella_hinzii"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 1994.001,
+                "confidence": [
+                  1991.846,
+                  1994.902
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 0.93,
+                  "USA": 0.0524,
+                  "France": 0.00417,
+                  "Russia": 0.0039,
+                  "Switzerland": 0.00277,
+                  "China": 0.00259,
+                  "Hungary": 0.00231,
+                  "United Kingdom": 0.00226
+                },
+                "entropy": 0.326
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "HBL-2_KXA73469-LRUJ01000009-94819",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 1994.993,
+                    "confidence": [
+                      1994.001,
+                      1994.999
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "HBL-2"
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Bordetella_hinzii_LMG_13501"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2017.181,
+                    "confidence": [
+                      2014.67,
+                      2017.379
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.771,
+                      "France": 0.165,
+                      "Australia": 0.0331,
+                      "Russia": 0.00955,
+                      "Switzerland": 0.00626,
+                      "China": 0.00487,
+                      "Hungary": 0.00479,
+                      "United Kingdom": 0.00474
+                    },
+                    "entropy": 0.764
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "HBL-1_QDJ39371-CP021396-4926688",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2017.379,
+                        "confidence": [
+                          2017.379,
+                          2017.379
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "HBL-1"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bordetella_hinzii"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "HBL-1_UNG16571-OM212391-1",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2021.971,
+                        "confidence": [
+                          2021.971,
+                          2021.971
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "HBL-1"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bordetella_hinzii"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "div": 0.00219,
+          "num_date": {
+            "value": 1988.562,
+            "confidence": [
+              1985.554,
+              1990.087
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.935,
+              "Australia": 0.0298,
+              "Hungary": 0.027,
+              "Russia": 0.00271,
+              "United Kingdom": 0.00176,
+              "Switzerland": 0.00161,
+              "France": 0.00129
+            },
+            "entropy": 0.318
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G276C",
+              "C738T"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000013",
+            "node_attrs": {
+              "div": 0.00329,
+              "num_date": {
+                "value": 1990.001,
+                "confidence": [
+                  1989.25,
+                  1990.869
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.936,
+                  "Hungary": 0.0486,
+                  "Australia": 0.0115,
+                  "Russia": 0.00135
+                },
+                "entropy": 0.287
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A537G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "HBL-1_KCB27017-JHEO01000247-3881",
+                "node_attrs": {
+                  "div": 0.00329,
+                  "num_date": {
+                    "value": 1990.992,
+                    "confidence": [
+                      1990.001,
+                      1990.999
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "HBL-1"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Bordetella_hinzii_CA90_BAL1384"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "HBL-1_KCB44155-JHEQ01000009-88646",
+                "node_attrs": {
+                  "div": 0.00329,
+                  "num_date": {
+                    "value": 1990.992,
+                    "confidence": [
+                      1990.001,
+                      1990.999
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "HBL-1"
+                  },
+                  "country": {
+                    "value": "Hungary",
+                    "confidence": {
+                      "Hungary": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Bordetella_hinzii_5132"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.00329,
+                  "num_date": {
+                    "value": 2018.736,
+                    "confidence": [
+                      2015.857,
+                      2020.147
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.996,
+                      "Australia": 0.00195
+                    },
+                    "entropy": 0.0359
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "HBL-1_QWF39365-CP052844-3041010",
+                    "node_attrs": {
+                      "div": 0.00329,
+                      "num_date": {
+                        "value": 2020.313,
+                        "confidence": [
+                          2020.313,
+                          2020.313
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "HBL-1"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bordetella_hinzii"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.00329,
+                      "num_date": {
+                        "value": 2020.069,
+                        "confidence": [
+                          2018.051,
+                          2020.258
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.00416
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000008",
+                        "node_attrs": {
+                          "div": 0.00329,
+                          "num_date": {
+                            "value": 2020.313,
+                            "confidence": [
+                              2019.475,
+                              2020.313
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.00225
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "HBL-1_QWF48448-CP052846-3041006",
+                            "node_attrs": {
+                              "div": 0.00329,
+                              "num_date": {
+                                "value": 2020.313,
+                                "confidence": [
+                                  2020.313,
+                                  2020.313
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "HBL-1"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Bordetella_hinzii"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "HBL-1_QWF57474-CP052848-2987500",
+                            "node_attrs": {
+                              "div": 0.00329,
+                              "num_date": {
+                                "value": 2020.313,
+                                "confidence": [
+                                  2020.313,
+                                  2020.313
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "HBL-1"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Bordetella_hinzii"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.00329,
+                          "num_date": {
+                            "value": 2020.313,
+                            "confidence": [
+                              2019.475,
+                              2020.313
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.00225
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "HBL-1_QWF43912-CP052845-3040990",
+                            "node_attrs": {
+                              "div": 0.00329,
+                              "num_date": {
+                                "value": 2020.313,
+                                "confidence": [
+                                  2020.313,
+                                  2020.313
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "HBL-1"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Bordetella_hinzii"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "HBL-1_QWF52985-CP052847-3040849",
+                            "node_attrs": {
+                              "div": 0.00329,
+                              "num_date": {
+                                "value": 2020.313,
+                                "confidence": [
+                                  2020.313,
+                                  2020.313
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "HBL-1"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Bordetella_hinzii"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000010",
+            "node_attrs": {
+              "div": 0.00219,
+              "num_date": {
+                "value": 1993.445,
+                "confidence": [
+                  1989.826,
+                  1994.231
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.986,
+                  "United Kingdom": 0.00576,
+                  "Australia": 0.00454,
+                  "Hungary": 0.00119
+                },
+                "entropy": 0.092
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000020",
+                "node_attrs": {
+                  "div": 0.00329,
+                  "num_date": {
+                    "value": 1994.27,
+                    "confidence": [
+                      1993.419,
+                      1994.926
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.977,
+                      "United Kingdom": 0.0191,
+                      "Australia": 0.00238
+                    },
+                    "entropy": 0.127
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G839A"
+                    ],
+                    "NCTC13199_00347": [
+                      "G280E"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC13199_00347: G280E"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "HBL-3_SNV92910-LT906461-3084047",
+                    "node_attrs": {
+                      "div": 0.00329,
+                      "num_date": {
+                        "value": 1994.859,
+                        "confidence": [
+                          1993.084,
+                          2000.075
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "HBL-3"
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bordetella_hinzii"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "HBL-3_KCB29565-JHEN01000127-23541",
+                    "node_attrs": {
+                      "div": 0.00329,
+                      "num_date": {
+                        "value": 2014.234,
+                        "confidence": [
+                          2014.234,
+                          2014.234
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "HBL-3"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bordetella_hinzii_L60"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "HBL-3_AKQ55059-CP012076-1789083",
+                    "node_attrs": {
+                      "div": 0.00329,
+                      "num_date": {
+                        "value": 1994.993,
+                        "confidence": [
+                          1994.001,
+                          1994.999
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "HBL-3"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bordetella_hinzii"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000012",
+                "node_attrs": {
+                  "div": 0.00219,
+                  "num_date": {
+                    "value": 1996.396,
+                    "confidence": [
+                      1993.499,
+                      1997.245
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.984,
+                      "Australia": 0.006,
+                      "Switzerland": 0.00327,
+                      "Russia": 0.00243,
+                      "United Kingdom": 0.00214
+                    },
+                    "entropy": 0.112
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000014",
+                    "node_attrs": {
+                      "div": 0.00219,
+                      "num_date": {
+                        "value": 2013.181,
+                        "confidence": [
+                          2009.977,
+                          2014.176
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.539,
+                          "Switzerland": 0.334,
+                          "China": 0.0488,
+                          "Russia": 0.043,
+                          "Australia": 0.0182,
+                          "France": 0.00618,
+                          "United Kingdom": 0.00528,
+                          "Hungary": 0.00527
+                        },
+                        "entropy": 1.142
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "HBL-1_QDJ52907-CP021399-4814419",
+                        "node_attrs": {
+                          "div": 0.00329,
+                          "num_date": {
+                            "value": 2017.379,
+                            "confidence": [
+                              2017.379,
+                              2017.379
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "HBL-1"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Bordetella_hinzii"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G822T"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000015",
+                        "node_attrs": {
+                          "div": 0.00219,
+                          "num_date": {
+                            "value": 2014.229,
+                            "confidence": [
+                              2012.697,
+                              2014.229
+                            ]
+                          },
+                          "country": {
+                            "value": "Switzerland",
+                            "confidence": {
+                              "Switzerland": 0.575,
+                              "USA": 0.26,
+                              "China": 0.0857,
+                              "Russia": 0.058,
+                              "Australia": 0.0103,
+                              "France": 0.00416,
+                              "Hungary": 0.00366,
+                              "United Kingdom": 0.00365
+                            },
+                            "entropy": 1.155
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "HBL-1_KCB50570-JHES01000060-23415",
+                            "node_attrs": {
+                              "div": 0.00219,
+                              "num_date": {
+                                "value": 2014.229,
+                                "confidence": [
+                                  2014.229,
+                                  2014.229
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "HBL-1"
+                              },
+                              "country": {
+                                "value": "Switzerland",
+                                "confidence": {
+                                  "Switzerland": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Bordetella_hinzii_1277"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000016",
+                            "node_attrs": {
+                              "div": 0.00219,
+                              "num_date": {
+                                "value": 2018.774,
+                                "confidence": [
+                                  2015.671,
+                                  2018.774
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.688,
+                                  "Russia": 0.272,
+                                  "Switzerland": 0.0201,
+                                  "USA": 0.0166,
+                                  "Australia": 0.0013
+                                },
+                                "entropy": 0.785
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "HBL-1_QII84849-CP049736-1895461",
+                                "node_attrs": {
+                                  "div": 0.00219,
+                                  "num_date": {
+                                    "value": 2018.774,
+                                    "confidence": [
+                                      2018.774,
+                                      2018.774
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "HBL-1"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Bordetella_hinzii"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000017",
+                                "node_attrs": {
+                                  "div": 0.00219,
+                                  "num_date": {
+                                    "value": 2019.544,
+                                    "confidence": [
+                                      2017.623,
+                                      2019.752
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Russia",
+                                    "confidence": {
+                                      "Russia": 0.549,
+                                      "China": 0.448,
+                                      "USA": 0.0016,
+                                      "Switzerland": 0.00109
+                                    },
+                                    "entropy": 0.71
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "HBL-1_MFU1927727-JBLOBL010000002-699948",
+                                    "node_attrs": {
+                                      "div": 0.00219,
+                                      "num_date": {
+                                        "value": 2019.752,
+                                        "confidence": [
+                                          2019.752,
+                                          2019.752
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "HBL-1"
+                                      },
+                                      "country": {
+                                        "value": "Russia",
+                                        "confidence": {
+                                          "Russia": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Bordetella_hinzii"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000018",
+                                    "node_attrs": {
+                                      "div": 0.00219,
+                                      "num_date": {
+                                        "value": 2020.064,
+                                        "confidence": [
+                                          2019.914,
+                                          2022.193
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Russia",
+                                        "confidence": {
+                                          "Russia": 0.525,
+                                          "China": 0.473,
+                                          "USA": 0.00126
+                                        },
+                                        "entropy": 0.709
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "HBL-1_WPL80125-CP138903-3681031",
+                                        "node_attrs": {
+                                          "div": 0.00219,
+                                          "num_date": {
+                                            "value": 2022.193,
+                                            "confidence": [
+                                              2022.193,
+                                              2022.193
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "allele": {
+                                            "value": "HBL-1"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Bordetella_hinzii"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000019",
+                                        "node_attrs": {
+                                          "div": 0.00219,
+                                          "num_date": {
+                                            "value": 2023.608,
+                                            "confidence": [
+                                              2021.469,
+                                              2023.771
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Russia",
+                                            "confidence": {
+                                              "Russia": 0.993,
+                                              "China": 0.00701
+                                            },
+                                            "entropy": 0.0457
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "HBL-1_MFU2004929-JBLOCK010000001-1115480",
+                                            "node_attrs": {
+                                              "div": 0.00219,
+                                              "num_date": {
+                                                "value": 2024.141,
+                                                "confidence": [
+                                                  2024.141,
+                                                  2024.141
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "HBL-1"
+                                              },
+                                              "country": {
+                                                "value": "Russia",
+                                                "confidence": {
+                                                  "Russia": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Bordetella_hinzii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "HBL-1_MFU1982969-JBLOCE010000011-71070",
+                                            "node_attrs": {
+                                              "div": 0.00219,
+                                              "num_date": {
+                                                "value": 2023.771,
+                                                "confidence": [
+                                                  2023.771,
+                                                  2023.771
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "HBL-1"
+                                              },
+                                              "country": {
+                                                "value": "Russia",
+                                                "confidence": {
+                                                  "Russia": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Bordetella_hinzii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000022",
+                    "node_attrs": {
+                      "div": 0.00329,
+                      "num_date": {
+                        "value": 1997.337,
+                        "confidence": [
+                          1996.369,
+                          1997.922
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.993,
+                          "Australia": 0.003,
+                          "Russia": 0.00102,
+                          "Switzerland": 0.00101
+                        },
+                        "entropy": 0.0502
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T516C"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "HBL-1_QDJ57355-CP021400-4695152",
+                        "node_attrs": {
+                          "div": 0.00329,
+                          "num_date": {
+                            "value": 1997.993,
+                            "confidence": [
+                              1997.001,
+                              1997.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "HBL-1"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Bordetella_hinzii"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000021",
+                        "node_attrs": {
+                          "div": 0.00329,
+                          "num_date": {
+                            "value": 2009.39,
+                            "confidence": [
+                              2006.591,
+                              2010.415
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.993,
+                              "Australia": 0.00335,
+                              "Russia": 0.00124
+                            },
+                            "entropy": 0.0516
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000023",
+                            "node_attrs": {
+                              "div": 0.00329,
+                              "num_date": {
+                                "value": 2010.001,
+                                "confidence": [
+                                  2008.799,
+                                  2010.715
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.0048
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "HBL-1_AKQ59568-CP012077-1766456",
+                                "node_attrs": {
+                                  "div": 0.00329,
+                                  "num_date": {
+                                    "value": 2010.486,
+                                    "confidence": [
+                                      2010.001,
+                                      2010.999
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "HBL-1"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Bordetella_hinzii"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "HBL-1_AZW19291-CP024172-4743629",
+                                "node_attrs": {
+                                  "div": 0.00329,
+                                  "num_date": {
+                                    "value": 2010.486,
+                                    "confidence": [
+                                      2010.001,
+                                      2010.999
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "HBL-1"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Bordetella_hinzii"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000024",
+                            "node_attrs": {
+                              "div": 0.00329,
+                              "num_date": {
+                                "value": 2014.229,
+                                "confidence": [
+                                  2011.378,
+                                  2014.229
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.999
+                                },
+                                "entropy": 0.00785
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "HBL-1_KCB24847-JHEM01000010-279613",
+                                "node_attrs": {
+                                  "div": 0.00329,
+                                  "num_date": {
+                                    "value": 2014.229,
+                                    "confidence": [
+                                      2014.229,
+                                      2014.229
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "HBL-1"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Bordetella_hinzii_OH87_BAL007II"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000025",
+                                "node_attrs": {
+                                  "div": 0.00329,
+                                  "num_date": {
+                                    "value": 2015.001,
+                                    "confidence": [
+                                      2013.615,
+                                      2015.811
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.00455
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "HBL-1_QDJ48421-CP021398-4768807",
+                                    "node_attrs": {
+                                      "div": 0.00329,
+                                      "num_date": {
+                                        "value": 2015.706,
+                                        "confidence": [
+                                          2015.001,
+                                          2015.999
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "HBL-1"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Bordetella_hinzii"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000026",
+                                    "node_attrs": {
+                                      "div": 0.00329,
+                                      "num_date": {
+                                        "value": 2017.262,
+                                        "confidence": [
+                                          2015.375,
+                                          2017.379
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.996,
+                                          "Russia": 0.00304
+                                        },
+                                        "entropy": 0.0261
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "HBL-1_QDJ43901-CP021397-4782527",
+                                        "node_attrs": {
+                                          "div": 0.00329,
+                                          "num_date": {
+                                            "value": 2017.379,
+                                            "confidence": [
+                                              2017.379,
+                                              2017.379
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "HBL-1"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Bordetella_hinzii"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000027",
+                                        "node_attrs": {
+                                          "div": 0.00329,
+                                          "num_date": {
+                                            "value": 2018.748,
+                                            "confidence": [
+                                              2016.956,
+                                              2019.305
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.942,
+                                              "Russia": 0.0561,
+                                              "Australia": 0.00101
+                                            },
+                                            "entropy": 0.236
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "HBL-1_MFU1939492-JBLOBV010000003-169640",
+                                            "node_attrs": {
+                                              "div": 0.00329,
+                                              "num_date": {
+                                                "value": 2019.305,
+                                                "confidence": [
+                                                  2019.305,
+                                                  2019.305
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "HBL-1"
+                                              },
+                                              "country": {
+                                                "value": "Russia",
+                                                "confidence": {
+                                                  "Russia": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Bordetella_hinzii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000028",
+                                            "node_attrs": {
+                                              "div": 0.00329,
+                                              "num_date": {
+                                                "value": 2019.67,
+                                                "confidence": [
+                                                  2018.065,
+                                                  2019.711
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 0.978,
+                                                  "Russia": 0.0212
+                                                },
+                                                "entropy": 0.108
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "HBL-1_QET46232-CP044059-4846235",
+                                                "node_attrs": {
+                                                  "div": 0.00329,
+                                                  "num_date": {
+                                                    "value": 2019.711,
+                                                    "confidence": [
+                                                      2019.711,
+                                                      2019.711
+                                                    ]
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Submission date"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "allele": {
+                                                    "value": "HBL-1"
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "organism": {
+                                                    "value": "Bordetella_hinzii"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000029",
+                                                "node_attrs": {
+                                                  "div": 0.00329,
+                                                  "num_date": {
+                                                    "value": 2020.065,
+                                                    "confidence": [
+                                                      2019.005,
+                                                      2020.33
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 0.963,
+                                                      "Russia": 0.0342,
+                                                      "Australia": 0.00111
+                                                    },
+                                                    "entropy": 0.171
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000030",
+                                                    "node_attrs": {
+                                                      "div": 0.00329,
+                                                      "num_date": {
+                                                        "value": 2023.598,
+                                                        "confidence": [
+                                                          2020.475,
+                                                          2023.864
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "Russia",
+                                                        "confidence": {
+                                                          "Russia": 0.989,
+                                                          "USA": 0.0101
+                                                        },
+                                                        "entropy": 0.0682
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "HBL-1_MFU1936749-JBLOBP010000007-160228",
+                                                        "node_attrs": {
+                                                          "div": 0.00329,
+                                                          "num_date": {
+                                                            "value": 2023.864,
+                                                            "confidence": [
+                                                              2023.864,
+                                                              2023.864
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "allele": {
+                                                            "value": "HBL-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "Russia",
+                                                            "confidence": {
+                                                              "Russia": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "organism": {
+                                                            "value": "Bordetella_hinzii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "HBL-1_MFU1910142-JBLOBQ010000005-122473",
+                                                        "node_attrs": {
+                                                          "div": 0.00329,
+                                                          "num_date": {
+                                                            "value": 2023.864,
+                                                            "confidence": [
+                                                              2023.864,
+                                                              2023.864
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "allele": {
+                                                            "value": "HBL-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "Russia",
+                                                            "confidence": {
+                                                              "Russia": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "organism": {
+                                                            "value": "Bordetella_hinzii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000031",
+                                                    "node_attrs": {
+                                                      "div": 0.00329,
+                                                      "num_date": {
+                                                        "value": 2020.265,
+                                                        "confidence": [
+                                                          2019.737,
+                                                          2020.491
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 0.998,
+                                                          "Russia": 0.00124
+                                                        },
+                                                        "entropy": 0.013
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "HBL-1_MBZ0073735-JAGWFM010000001-564316",
+                                                        "node_attrs": {
+                                                          "div": 0.00329,
+                                                          "num_date": {
+                                                            "value": 2020.542,
+                                                            "confidence": [
+                                                              2020.542,
+                                                              2020.542
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "allele": {
+                                                            "value": "HBL-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "organism": {
+                                                            "value": "Bordetella_hinzii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000032",
+                                                        "node_attrs": {
+                                                          "div": 0.00329,
+                                                          "num_date": {
+                                                            "value": 2020.455,
+                                                            "confidence": [
+                                                              2020.197,
+                                                              2020.531
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 1.0
+                                                            },
+                                                            "entropy": 0.00266
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "HBL-1_MBZ0077789-JAGWFN010000001-272172",
+                                                            "node_attrs": {
+                                                              "div": 0.00329,
+                                                              "num_date": {
+                                                                "value": 2020.531,
+                                                                "confidence": [
+                                                                  2020.531,
+                                                                  2020.531
+                                                                ]
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Collection date from metadata"
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location from metadata"
+                                                              },
+                                                              "allele": {
+                                                                "value": "HBL-1"
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "organism": {
+                                                                "value": "Bordetella_hinzii"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "HBL-1_MBZ0082532-JAGWFL010000001-564316",
+                                                            "node_attrs": {
+                                                              "div": 0.00329,
+                                                              "num_date": {
+                                                                "value": 2020.531,
+                                                                "confidence": [
+                                                                  2020.531,
+                                                                  2020.531
+                                                                ]
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Collection date from metadata"
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location from metadata"
+                                                              },
+                                                              "allele": {
+                                                                "value": "HBL-1"
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "organism": {
+                                                                "value": "Bordetella_hinzii"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

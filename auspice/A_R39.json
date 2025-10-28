@@ -1,0 +1,325 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A R39 beta-lactamases",
+    "updated": "2025-01-18",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 915,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "OUQ99_12145": {
+        "end": 915,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2009.235,
+        "confidence": [
+          2005.119,
+          2011.266
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.857,
+          "Russia": 0.143
+        },
+        "entropy": 0.411
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "R39-2_WAE75773-CP113264-2829998",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2011.678,
+            "confidence": [
+              2011.678,
+              2011.678
+            ]
+          },
+          "organism": {
+            "value": "Streptomonospora_nanhaiensis"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "allele": {
+            "value": "R39-2"
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        }
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2010.772,
+            "confidence": [
+              2005.88,
+              2011.786
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.713,
+              "Russia": 0.287
+            },
+            "entropy": 0.599
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "CP113264.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2011.595,
+                "confidence": [
+                  2006.345,
+                  2017.146
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.713,
+                  "Russia": 0.287
+                },
+                "entropy": 0.599
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.0155,
+              "num_date": {
+                "value": 2023.416,
+                "confidence": [
+                  2022.156,
+                  2023.873
+                ]
+              },
+              "country": {
+                "value": "Russia",
+                "confidence": {
+                  "Russia": 1.0
+                },
+                "entropy": 0.00119
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C15G",
+                  "A505C",
+                  "T567C",
+                  "A605G",
+                  "C615G",
+                  "A616G",
+                  "T617C",
+                  "G630T",
+                  "C693T",
+                  "C708G",
+                  "C711G",
+                  "A714G",
+                  "C837T",
+                  "C903A"
+                ],
+                "OUQ99_12145": [
+                  "I169L",
+                  "E202G",
+                  "D205E",
+                  "M206A"
+                ]
+              },
+              "labels": {
+                "aa": "OUQ99_12145: I169L, E202G, D205E, M206A"
+              }
+            },
+            "children": [
+              {
+                "name": "R39-1_MES0835662-JBEQNB010000009-174393",
+                "node_attrs": {
+                  "div": 0.0155,
+                  "num_date": {
+                    "value": 2023.873,
+                    "confidence": [
+                      2023.873,
+                      2023.873
+                    ]
+                  },
+                  "organism": {
+                    "value": "Nocardiopsis_umidischolae"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "R39-1"
+                  },
+                  "country": {
+                    "value": "Russia",
+                    "confidence": {
+                      "Russia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "R39-1_MES0907437-JBEQNA010000011-174393",
+                "node_attrs": {
+                  "div": 0.0155,
+                  "num_date": {
+                    "value": 2023.873,
+                    "confidence": [
+                      2023.873,
+                      2023.873
+                    ]
+                  },
+                  "organism": {
+                    "value": "Nocardiopsis_umidischolae"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "R39-1"
+                  },
+                  "country": {
+                    "value": "Russia",
+                    "confidence": {
+                      "Russia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

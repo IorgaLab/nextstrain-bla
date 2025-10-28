@@ -1,0 +1,2833 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 BMHC beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 762,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "SAMEA104719789_01182": {
+        "end": 762,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Thailand",
+            "#511EA8"
+          ],
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Hong Kong": {
+            "latitude": 22.3964,
+            "longitude": 114.1095
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Nepal": {
+            "latitude": 28.0,
+            "longitude": 84.0
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Thailand": {
+            "latitude": 14.8971921,
+            "longitude": 100.83273
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "Egypt": {
+            "latitude": 26.8206,
+            "longitude": 30.8025
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1974.876,
+        "confidence": [
+          1934.041,
+          1997.904
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.57,
+          "USA": 0.285,
+          "Thailand": 0.059,
+          "Egypt": 0.059,
+          "Viet Nam": 0.00686,
+          "Pakistan": 0.00624,
+          "Hong Kong": 0.00525,
+          "Nepal": 0.00525,
+          "India": 0.00403
+        },
+        "entropy": 1.155
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 0.00132,
+          "num_date": {
+            "value": 2014.93,
+            "confidence": [
+              2014.927,
+              2014.93
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": 4.78e-11
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A396T"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "BMHC-1_MCT4117626-JACLNM010000053-204",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT3971693-JACLMB010000041-2594",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT3935991-JACLMC010000045-2594",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT3903821-JACLMD010000045-160",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT4160632-JACLNW010000050-204",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2015.001,
+                "confidence": [
+                  2015.001,
+                  2015.888
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT3935988-JACLMC010000045-160",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT3903824-JACLMD010000045-2594",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT4203238-JACLOK010000050-36",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2014.93,
+                "confidence": [
+                  2014.684,
+                  2014.999
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BMHC-1_MCT3971690-JACLMB010000041-160",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.88
+                ]
+              },
+              "allele": {
+                "value": "BMHC-1"
+              },
+              "organism": {
+                "value": "Elizabethkingia_anophelis"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.00132,
+              "num_date": {
+                "value": 2016.089,
+                "confidence": [
+                  2015.366,
+                  2017.297
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.996,
+                  "USA": 0.00342
+                },
+                "entropy": 0.0238
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.00132,
+                  "num_date": {
+                    "value": 2017.976,
+                    "confidence": [
+                      2016.315,
+                      2018.669
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": 0.00378
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "BMHC-1_MCT3657281-JACLIP010000052-20",
+                    "node_attrs": {
+                      "div": 0.00132,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.837
+                        ]
+                      },
+                      "allele": {
+                        "value": "BMHC-1"
+                      },
+                      "organism": {
+                        "value": "Elizabethkingia_anophelis"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "BMHC-1_MCT3711495-JACLJF010000050-36",
+                    "node_attrs": {
+                      "div": 0.00132,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.837
+                        ]
+                      },
+                      "allele": {
+                        "value": "BMHC-1"
+                      },
+                      "organism": {
+                        "value": "Elizabethkingia_anophelis"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.00132,
+                  "num_date": {
+                    "value": 2016.442,
+                    "confidence": [
+                      2015.861,
+                      2017.958
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.942,
+                      "USA": 0.057
+                    },
+                    "entropy": 0.225
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.00132,
+                      "num_date": {
+                        "value": 2018.653,
+                        "confidence": [
+                          2016.813,
+                          2018.763
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.949,
+                          "China": 0.0507
+                        },
+                        "entropy": 0.207
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BMHC-1_HAY3501325-DADKIK010000055-181",
+                        "node_attrs": {
+                          "div": 0.00132,
+                          "num_date": {
+                            "value": 2018.749,
+                            "confidence": [
+                              2018.749,
+                              2018.823
+                            ]
+                          },
+                          "allele": {
+                            "value": "BMHC-1"
+                          },
+                          "organism": {
+                            "value": "Elizabethkingia_anophelis"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BMHC-1_HAY3501671-DADKIK010000070-36",
+                        "node_attrs": {
+                          "div": 0.00132,
+                          "num_date": {
+                            "value": 2018.749,
+                            "confidence": [
+                              2018.749,
+                              2018.823
+                            ]
+                          },
+                          "allele": {
+                            "value": "BMHC-1"
+                          },
+                          "organism": {
+                            "value": "Elizabethkingia_anophelis"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.00132,
+                      "num_date": {
+                        "value": 2017.946,
+                        "confidence": [
+                          2016.293,
+                          2018.748
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.996,
+                          "USA": 0.00343
+                        },
+                        "entropy": 0.0239
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BMHC-1_MEV8576158-JBEVZW010000006-825",
+                        "node_attrs": {
+                          "div": 0.00132,
+                          "num_date": {
+                            "value": 2022.086,
+                            "confidence": [
+                              2022.086,
+                              2022.153
+                            ]
+                          },
+                          "allele": {
+                            "value": "BMHC-1"
+                          },
+                          "organism": {
+                            "value": "Elizabethkingia_anophelis"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.00132,
+                          "num_date": {
+                            "value": 2018.741,
+                            "confidence": [
+                              2016.613,
+                              2020.281
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": 0.00396
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BMHC-1_MDX8580696-JAPSEV010000025-2707",
+                            "node_attrs": {
+                              "div": 0.00132,
+                              "num_date": {
+                                "value": 2022.681,
+                                "confidence": [
+                                  2022.681,
+                                  2022.681
+                                ]
+                              },
+                              "allele": {
+                                "value": "BMHC-1"
+                              },
+                              "organism": {
+                                "value": "Elizabethkingia_sp._HX_YK"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000010",
+                            "node_attrs": {
+                              "div": 0.00132,
+                              "num_date": {
+                                "value": 2018.741,
+                                "confidence": [
+                                  2017.813,
+                                  2021.419
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 0.00242
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BMHC-1_MDX8580693-JAPSEV010000025-273",
+                                "node_attrs": {
+                                  "div": 0.00132,
+                                  "num_date": {
+                                    "value": 2022.681,
+                                    "confidence": [
+                                      2022.681,
+                                      2022.681
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BMHC-1"
+                                  },
+                                  "organism": {
+                                    "value": "Elizabethkingia_sp._HX_YK"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "BMHC-1_MDX8561955-JAPSEW010000024-2707",
+                                "node_attrs": {
+                                  "div": 0.00132,
+                                  "num_date": {
+                                    "value": 2022.681,
+                                    "confidence": [
+                                      2022.681,
+                                      2022.681
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BMHC-1"
+                                  },
+                                  "organism": {
+                                    "value": "Elizabethkingia_sp._HX_ZCH"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 1995.455,
+            "confidence": [
+              1964.871,
+              2009.216
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.427,
+              "China": 0.382,
+              "Thailand": 0.0886,
+              "Egypt": 0.0886,
+              "Pakistan": 0.00391,
+              "Viet Nam": 0.00336,
+              "Hong Kong": 0.00263,
+              "Nepal": 0.00263,
+              "India": 0.00188
+            },
+            "entropy": 1.244
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00131,
+              "num_date": {
+                "value": 2009.128,
+                "confidence": [
+                  2003.367,
+                  2009.93
+                ]
+              },
+              "country": {
+                "value": "Thailand",
+                "confidence": {
+                  "Thailand": 0.379,
+                  "Egypt": 0.379,
+                  "USA": 0.119,
+                  "China": 0.109,
+                  "Pakistan": 0.00327,
+                  "Viet Nam": 0.00324,
+                  "Hong Kong": 0.00281,
+                  "Nepal": 0.00281,
+                  "India": 0.00225
+                },
+                "entropy": 1.315
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A666G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "UNSC01000004.1",
+                "node_attrs": {
+                  "div": 0.00131,
+                  "num_date": {
+                    "value": 2009.128,
+                    "confidence": [
+                      1920.038,
+                      2352.565
+                    ]
+                  },
+                  "country": {
+                    "value": "Thailand",
+                    "confidence": {
+                      "Thailand": 0.35,
+                      "Egypt": 0.35,
+                      "USA": 0.12,
+                      "China": 0.113,
+                      "Viet Nam": 0.0145,
+                      "Pakistan": 0.0141,
+                      "Hong Kong": 0.0138,
+                      "Nepal": 0.0138,
+                      "India": 0.0126
+                    },
+                    "entropy": 1.529
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BMHC-1_MCT7905261-JAODHC010000016-1526",
+                "node_attrs": {
+                  "div": 0.00131,
+                  "num_date": {
+                    "value": 2022.067,
+                    "confidence": [
+                      2022.067,
+                      2022.067
+                    ]
+                  },
+                  "allele": {
+                    "value": "BMHC-1"
+                  },
+                  "organism": {
+                    "value": "Candidatus_Ornithobacterium_hominis"
+                  },
+                  "country": {
+                    "value": "Egypt",
+                    "confidence": {
+                      "Egypt": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BMHC-1_SZD73143-UNSC01000004-229585",
+                "node_attrs": {
+                  "div": 0.00131,
+                  "num_date": {
+                    "value": 2009.93,
+                    "confidence": [
+                      2009.001,
+                      2009.999
+                    ]
+                  },
+                  "allele": {
+                    "value": "BMHC-1"
+                  },
+                  "organism": {
+                    "value": "Candidatus_Ornithobacterium_hominis"
+                  },
+                  "country": {
+                    "value": "Thailand",
+                    "confidence": {
+                      "Thailand": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000013",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2015.638,
+                "confidence": [
+                  2012.223,
+                  2016.642
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.724,
+                  "China": 0.262,
+                  "Thailand": 0.00494,
+                  "Egypt": 0.00494,
+                  "Pakistan": 0.00256
+                },
+                "entropy": 0.663
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000014",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2017.976,
+                    "confidence": [
+                      2015.779,
+                      2018.449
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.985,
+                      "China": 0.0143
+                    },
+                    "entropy": 0.0798
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "BMHC-1_MBE9409079-JADEZX010000036-31",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.79
+                        ]
+                      },
+                      "allele": {
+                        "value": "BMHC-1"
+                      },
+                      "organism": {
+                        "value": "Elizabethkingia_anophelis"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "BMHC-1_MBE9395636-JADEZW010000034-31",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.79
+                        ]
+                      },
+                      "allele": {
+                        "value": "BMHC-1"
+                      },
+                      "organism": {
+                        "value": "Elizabethkingia_anophelis"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000015",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2015.781,
+                    "confidence": [
+                      2015.476,
+                      2016.488
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.652,
+                      "China": 0.336,
+                      "Pakistan": 0.00852,
+                      "Thailand": 0.00123,
+                      "Egypt": 0.00123
+                    },
+                    "entropy": 0.711
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "BMHC-1_MCT3671566-JACLIT010000011-1005",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.884
+                        ]
+                      },
+                      "allele": {
+                        "value": "BMHC-1"
+                      },
+                      "organism": {
+                        "value": "Elizabethkingia_anophelis"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000016",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2015.993,
+                        "confidence": [
+                          2015.61,
+                          2016.522
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.793,
+                          "China": 0.127,
+                          "Pakistan": 0.0755
+                        },
+                        "entropy": 0.675
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BMHC-1_MDH1604133-JAOCHX010000108-219",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2018.158,
+                            "confidence": [
+                              2018.158,
+                              2018.158
+                            ]
+                          },
+                          "allele": {
+                            "value": "BMHC-1"
+                          },
+                          "organism": {
+                            "value": "Empedobacter_sp._GD03739"
+                          },
+                          "country": {
+                            "value": "Pakistan",
+                            "confidence": {
+                              "Pakistan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000017",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2016.11,
+                            "confidence": [
+                              2015.701,
+                              2016.647
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.988,
+                              "China": 0.00997,
+                              "Pakistan": 0.00194
+                            },
+                            "entropy": 0.0731
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000018",
+                            "node_attrs": {
+                              "div": 6.84e-17,
+                              "num_date": {
+                                "value": 2016.31,
+                                "confidence": [
+                                  2015.878,
+                                  2016.789
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.999
+                                },
+                                "entropy": 0.0078
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000019",
+                                "node_attrs": {
+                                  "div": 7.97e-17,
+                                  "num_date": {
+                                    "value": 2016.31,
+                                    "confidence": [
+                                      2015.761,
+                                      2017.956
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.00293
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000020",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.557,
+                                        "confidence": [
+                                          2016.802,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00241
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3517536-DADKIO010000030-918",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3521023-DADKIP010000015-877",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000021",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.557,
+                                        "confidence": [
+                                          2016.802,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00241
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3529342-DADKIS010000023-882",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3528655-DADKIS010000006-13",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000022",
+                                "node_attrs": {
+                                  "div": 7.97e-17,
+                                  "num_date": {
+                                    "value": 2016.31,
+                                    "confidence": [
+                                      2015.761,
+                                      2017.956
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.00293
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000023",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.557,
+                                        "confidence": [
+                                          2016.802,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00241
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3512733-DADKIN010000006-13",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3504754-DADKIL010000008-13",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000024",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.557,
+                                        "confidence": [
+                                          2016.802,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00241
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3517124-DADKIO010000015-877",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3524704-DADKIQ010000008-13",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000025",
+                            "node_attrs": {
+                              "div": 6.84e-17,
+                              "num_date": {
+                                "value": 2016.213,
+                                "confidence": [
+                                  2015.86,
+                                  2016.793
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.996,
+                                  "China": 0.00356
+                                },
+                                "entropy": 0.0268
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000026",
+                                "node_attrs": {
+                                  "div": 7.97e-17,
+                                  "num_date": {
+                                    "value": 2016.213,
+                                    "confidence": [
+                                      2015.59,
+                                      2017.785
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.00431
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000027",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.653,
+                                        "confidence": [
+                                          2016.646,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00248
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3533428-DADKIR010000023-3132",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3505591-DADKIL010000026-882",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000028",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.653,
+                                        "confidence": [
+                                          2016.646,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00248
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3513633-DADKIN010000023-882",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3532522-DADKIR010000007-13",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000029",
+                                "node_attrs": {
+                                  "div": 7.97e-17,
+                                  "num_date": {
+                                    "value": 2016.444,
+                                    "confidence": [
+                                      2015.97,
+                                      2016.893
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.978,
+                                      "China": 0.0171,
+                                      "Hong Kong": 0.00168,
+                                      "Nepal": 0.00168,
+                                      "Viet Nam": 0.00149
+                                    },
+                                    "entropy": 0.128
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000030",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2018.653,
+                                        "confidence": [
+                                          2016.557,
+                                          2018.763
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.999,
+                                          "China": 0.00112
+                                        },
+                                        "entropy": 0.0105
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BMHC-1_HAY3521388-DADKIP010000030-918",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BMHC-1_HAY3525470-DADKIQ010000025-3133",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.749,
+                                            "confidence": [
+                                              2018.749,
+                                              2018.823
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BMHC-1"
+                                          },
+                                          "organism": {
+                                            "value": "Elizabethkingia_anophelis"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000031",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2016.444,
+                                        "confidence": [
+                                          2016.048,
+                                          2016.985
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.523,
+                                          "China": 0.237,
+                                          "Hong Kong": 0.0787,
+                                          "Nepal": 0.0787,
+                                          "Viet Nam": 0.072,
+                                          "Pakistan": 0.00285,
+                                          "Thailand": 0.00253,
+                                          "Egypt": 0.00253,
+                                          "India": 0.00227
+                                        },
+                                        "entropy": 1.33
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000032",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2018.438,
+                                            "confidence": [
+                                              2016.468,
+                                              2019.855
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Hong Kong",
+                                            "confidence": {
+                                              "Hong Kong": 0.379,
+                                              "Nepal": 0.379,
+                                              "USA": 0.145,
+                                              "China": 0.0656,
+                                              "Viet Nam": 0.0204,
+                                              "Pakistan": 0.00319,
+                                              "Thailand": 0.00295,
+                                              "Egypt": 0.00295,
+                                              "India": 0.00253
+                                            },
+                                            "entropy": 1.342
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "BMHC-1_BBQ06965-AP022313-1720763",
+                                            "node_attrs": {
+                                              "div": 1.14e-16,
+                                              "num_date": {
+                                                "value": 2019.001,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.48
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "BMHC-1"
+                                              },
+                                              "organism": {
+                                                "value": "Elizabethkingia_anophelis"
+                                              },
+                                              "country": {
+                                                "value": "Nepal",
+                                                "confidence": {
+                                                  "Nepal": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "BMHC-1_MDM1063909-JACAGH010000017-6619",
+                                            "node_attrs": {
+                                              "div": 1.14e-16,
+                                              "num_date": {
+                                                "value": 2019.001,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.48
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "BMHC-1"
+                                              },
+                                              "organism": {
+                                                "value": "Empedobacter_falsenii"
+                                              },
+                                              "country": {
+                                                "value": "Hong Kong",
+                                                "confidence": {
+                                                  "Hong Kong": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000033",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2016.444,
+                                            "confidence": [
+                                              2016.074,
+                                              2017.119
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.536,
+                                              "Viet Nam": 0.214,
+                                              "USA": 0.198,
+                                              "Nepal": 0.0219,
+                                              "Hong Kong": 0.0219,
+                                              "India": 0.00212,
+                                              "Pakistan": 0.00211,
+                                              "Thailand": 0.00208,
+                                              "Egypt": 0.00208
+                                            },
+                                            "entropy": 1.204
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "BMHC-1_UZX27393-CP110126-1785412",
+                                            "node_attrs": {
+                                              "div": 1.14e-16,
+                                              "num_date": {
+                                                "value": 2020.217,
+                                                "confidence": [
+                                                  2020.217,
+                                                  2020.217
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "BMHC-1"
+                                              },
+                                              "organism": {
+                                                "value": "Riemerella_anatipestifer"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000034",
+                                            "node_attrs": {
+                                              "div": 1.14e-16,
+                                              "num_date": {
+                                                "value": 2016.491,
+                                                "confidence": [
+                                                  2016.002,
+                                                  2017.541
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Viet Nam",
+                                                "confidence": {
+                                                  "Viet Nam": 0.986,
+                                                  "China": 0.00959,
+                                                  "USA": 0.00311
+                                                },
+                                                "entropy": 0.0877
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "BMHC-1_CAI9681138-OX596084-1698622",
+                                                "node_attrs": {
+                                                  "div": 1.25e-16,
+                                                  "num_date": {
+                                                    "value": 2021.24,
+                                                    "confidence": [
+                                                      2021.24,
+                                                      2021.24
+                                                    ]
+                                                  },
+                                                  "allele": {
+                                                    "value": "BMHC-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Elizabethkingia_anophelis"
+                                                  },
+                                                  "country": {
+                                                    "value": "Viet Nam",
+                                                    "confidence": {
+                                                      "Viet Nam": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000035",
+                                                "node_attrs": {
+                                                  "div": 1.25e-16,
+                                                  "num_date": {
+                                                    "value": 2016.616,
+                                                    "confidence": [
+                                                      2016.067,
+                                                      2018.603
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "Viet Nam",
+                                                    "confidence": {
+                                                      "Viet Nam": 1.0
+                                                    },
+                                                    "entropy": 0.00287
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "BMHC-1_CAI9674264-OX596081-1723926",
+                                                    "node_attrs": {
+                                                      "div": 1.37e-16,
+                                                      "num_date": {
+                                                        "value": 2021.251,
+                                                        "confidence": [
+                                                          2021.251,
+                                                          2021.251
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "BMHC-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Elizabethkingia_anophelis"
+                                                      },
+                                                      "country": {
+                                                        "value": "Viet Nam",
+                                                        "confidence": {
+                                                          "Viet Nam": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000036",
+                                                    "node_attrs": {
+                                                      "div": 1.37e-16,
+                                                      "num_date": {
+                                                        "value": 2018.669,
+                                                        "confidence": [
+                                                          2016.632,
+                                                          2018.947
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "Viet Nam",
+                                                        "confidence": {
+                                                          "Viet Nam": 1.0
+                                                        },
+                                                        "entropy": 0.000493
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "BMHC-1_CAI9681311-OX596082-1726349",
+                                                        "node_attrs": {
+                                                          "div": 1.48e-16,
+                                                          "num_date": {
+                                                            "value": 2021.264,
+                                                            "confidence": [
+                                                              2021.264,
+                                                              2021.264
+                                                            ]
+                                                          },
+                                                          "allele": {
+                                                            "value": "BMHC-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Elizabethkingia_anophelis"
+                                                          },
+                                                          "country": {
+                                                            "value": "Viet Nam",
+                                                            "confidence": {
+                                                              "Viet Nam": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000037",
+                                                        "node_attrs": {
+                                                          "div": 1.48e-16,
+                                                          "num_date": {
+                                                            "value": 2018.669,
+                                                            "confidence": [
+                                                              2017.36,
+                                                              2018.891
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "Viet Nam",
+                                                            "confidence": {
+                                                              "Viet Nam": 1.0
+                                                            },
+                                                            "entropy": 0.00369
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "NODE_0000038",
+                                                            "node_attrs": {
+                                                              "div": 1.59e-16,
+                                                              "num_date": {
+                                                                "value": 2018.669,
+                                                                "confidence": [
+                                                                  2017.708,
+                                                                  2021.385
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "Viet Nam",
+                                                                "confidence": {
+                                                                  "Viet Nam": 0.981,
+                                                                  "India": 0.018
+                                                                },
+                                                                "entropy": 0.0994
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "BMHC-1_CAI9670133-CATOBA010000008-895",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2023.358,
+                                                                    "confidence": [
+                                                                      2023.358,
+                                                                      2023.358
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BMHC-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Elizabethkingia_anophelis"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Viet Nam",
+                                                                    "confidence": {
+                                                                      "Viet Nam": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "BMHC-1_MDO3427358-JAULSJ010000078-15",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2022.916,
+                                                                    "confidence": [
+                                                                      2022.916,
+                                                                      2022.916
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BMHC-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Chryseobacterium_urinae"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "India",
+                                                                    "confidence": {
+                                                                      "India": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location from metadata"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000039",
+                                                            "node_attrs": {
+                                                              "div": 1.59e-16,
+                                                              "num_date": {
+                                                                "value": 2018.669,
+                                                                "confidence": [
+                                                                  2018.073,
+                                                                  2021.018
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "Viet Nam",
+                                                                "confidence": {
+                                                                  "Viet Nam": 1.0
+                                                                },
+                                                                "entropy": 0.00043
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "BMHC-1_CAH1136631-CAKMKO010000005-12",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2022.032,
+                                                                    "confidence": [
+                                                                      2022.032,
+                                                                      2022.032
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BMHC-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Elizabethkingia_anophelis"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Viet Nam",
+                                                                    "confidence": {
+                                                                      "Viet Nam": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "BMHC-1_CAH1149250-CAKMKP010000039-198",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2022.032,
+                                                                    "confidence": [
+                                                                      2022.032,
+                                                                      2022.032
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BMHC-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Elizabethkingia_anophelis"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Viet Nam",
+                                                                    "confidence": {
+                                                                      "Viet Nam": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

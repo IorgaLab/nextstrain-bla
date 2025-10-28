@@ -1,0 +1,3645 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A CIA beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 879,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC10796_01271": {
+        "end": 879,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Taiwan",
+            "#4784C7"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Spain": {
+            "latitude": 40.4637,
+            "longitude": -3.7492
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Madagascar": {
+            "latitude": -18.9249604,
+            "longitude": 46.4416422
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Taiwan": {
+            "latitude": 23.8169,
+            "longitude": 121.031365
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1944.499,
+        "confidence": [
+          1939.629,
+          1946.375
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.722,
+          "": 0.0928,
+          "United Kingdom": 0.0257,
+          "Brazil": 0.0226,
+          "Australia": 0.0213,
+          "India": 0.0165,
+          "South Korea": 0.0148,
+          "Taiwan": 0.0137,
+          "Madagascar": 0.0135,
+          "Germany": 0.0135,
+          "Japan": 0.0121,
+          "Spain": 0.0107,
+          "China": 0.0107,
+          "Pakistan": 0.0104
+        },
+        "entropy": 1.221
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000029",
+        "node_attrs": {
+          "div": 0.16,
+          "num_date": {
+            "value": 2005.264,
+            "confidence": [
+              2004.438,
+              2005.775
+            ]
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A12T",
+              "A13G",
+              "A15C",
+              "T27A",
+              "T41G",
+              "T42G",
+              "G43T",
+              "T46G",
+              "C50G",
+              "A51C",
+              "G54A",
+              "A57T",
+              "T58A",
+              "C59A",
+              "A63T",
+              "C64T",
+              "G66A",
+              "C70A",
+              "A72C",
+              "A75G",
+              "A90T",
+              "C108G",
+              "T120C",
+              "T129A",
+              "T132C",
+              "G135A",
+              "A146C",
+              "A147C",
+              "C150T",
+              "A151G",
+              "G152A",
+              "T178A",
+              "C181T",
+              "T192C",
+              "C201T",
+              "C207T",
+              "G211A",
+              "T217C",
+              "G220A",
+              "A223C",
+              "A228T",
+              "A240G",
+              "T241C",
+              "A246T",
+              "A249T",
+              "T252C",
+              "G255A",
+              "G258A",
+              "T259A",
+              "A264G",
+              "A267C",
+              "T274G",
+              "C275A",
+              "A282G",
+              "A294T",
+              "C304T",
+              "T318C",
+              "G322A",
+              "A324C",
+              "A345G",
+              "A348C",
+              "C357T",
+              "A358G",
+              "C359A",
+              "C363T",
+              "A366C",
+              "G370T",
+              "T372C",
+              "C373A",
+              "T387C",
+              "T396C",
+              "T397C",
+              "T399C",
+              "A417C",
+              "T420G",
+              "G426A",
+              "T429A",
+              "T432A",
+              "C438T",
+              "C441T",
+              "G445A",
+              "A459C",
+              "G463A",
+              "T468A",
+              "T480C",
+              "G487A",
+              "C498T",
+              "G500A",
+              "G501A",
+              "A512C",
+              "C513T",
+              "G526T",
+              "A528C",
+              "C534T",
+              "A538C",
+              "A544G",
+              "T549G",
+              "A552T",
+              "C553T",
+              "T555A",
+              "T576C",
+              "G579A",
+              "C580A",
+              "C583A",
+              "T597G",
+              "T603C",
+              "C607T",
+              "G609A",
+              "G615A",
+              "T618C",
+              "A633T",
+              "A636G",
+              "C642T",
+              "A656C",
+              "A657C",
+              "C666A",
+              "T678G",
+              "T699C",
+              "C702T",
+              "A705G",
+              "G708A",
+              "C709T",
+              "C710A",
+              "G711T",
+              "T717A",
+              "T719A",
+              "T723C",
+              "C756A",
+              "C757T",
+              "T759A",
+              "C765T",
+              "G771A",
+              "A780C",
+              "A789C",
+              "G797A",
+              "C798T",
+              "C804A",
+              "A810G",
+              "A811T",
+              "A813T",
+              "A816T",
+              "A817G",
+              "G819A",
+              "A822C",
+              "C828T",
+              "G830A",
+              "T838G",
+              "A849T",
+              "T858C"
+            ],
+            "NCTC10796_01271": [
+              "T5A",
+              "F14W",
+              "A15S",
+              "S16A",
+              "A17G",
+              "K19N",
+              "S20K",
+              "Q24N",
+              "K49T",
+              "S51D",
+              "L60M",
+              "A71T",
+              "D74N",
+              "M75L",
+              "F81L",
+              "F87I",
+              "S92E",
+              "E108N",
+              "T120D",
+              "A124S",
+              "Q125K",
+              "F133L",
+              "D149N",
+              "D155N",
+              "D163N",
+              "R167K",
+              "N171T",
+              "E176Y",
+              "N180H",
+              "T182A",
+              "E184D",
+              "L194I",
+              "L195I",
+              "E219A",
+              "P237Y",
+              "N239K",
+              "I240N",
+              "S266N",
+              "T271S",
+              "E272D",
+              "K273E",
+              "R277K",
+              "S280A"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC10796_01271: T5A, F14W, A15S, S16A, A17G, K19N, S20K, Q24N, K49T, S51D, L60M, A71T, D74N, M75L, F81L, F87I, S92E, E108N, T120D, A124S, Q125K, F133L, D149N, D155N, D163N, R167K, N171T, E176Y, N180H, T182A, E184D, L194I, L195I, E219A, P237Y, N239K, I240N, S266N, T271S, E272D, K273E, R277K, S280A"
+          }
+        },
+        "children": [
+          {
+            "name": "CIA-5_WP_047096047-NZ_JACLEN010000024-82655",
+            "node_attrs": {
+              "div": 0.163,
+              "num_date": {
+                "value": 2005.999,
+                "confidence": [
+                  2005.269,
+                  2005.999
+                ]
+              },
+              "organism": {
+                "value": "Chryseobacterium_lactis"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "CIA-5"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "CIA-5_HCN51185-DQAC01000101-13709",
+            "node_attrs": {
+              "div": 0.16,
+              "num_date": {
+                "value": 2018.256,
+                "confidence": [
+                  2018.256,
+                  2018.256
+                ]
+              },
+              "organism": {
+                "value": "Chryseobacterium_sp."
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "CIA-5"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G636A",
+                  "A729C"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000028",
+        "node_attrs": {
+          "div": 0.0223,
+          "num_date": {
+            "value": 1950.813,
+            "confidence": [
+              1947.047,
+              1951.827
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.88,
+              "": 0.0336,
+              "United Kingdom": 0.0196,
+              "Brazil": 0.0154,
+              "India": 0.0072,
+              "South Korea": 0.00712,
+              "Australia": 0.00711,
+              "Japan": 0.00505,
+              "Taiwan": 0.00472,
+              "Madagascar": 0.00464,
+              "Germany": 0.00462,
+              "Spain": 0.00426,
+              "China": 0.00338,
+              "Pakistan": 0.00324
+            },
+            "entropy": 0.636
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000030",
+            "node_attrs": {
+              "div": 0.0621,
+              "num_date": {
+                "value": 1977.972,
+                "confidence": [
+                  1974.064,
+                  1981.51
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.712,
+                  "United Kingdom": 0.129,
+                  "": 0.031,
+                  "Brazil": 0.0158,
+                  "India": 0.0147,
+                  "Australia": 0.0145,
+                  "Taiwan": 0.0122,
+                  "Madagascar": 0.012,
+                  "Germany": 0.0119,
+                  "South Korea": 0.0115,
+                  "Japan": 0.00997,
+                  "China": 0.00863,
+                  "Pakistan": 0.00854,
+                  "Spain": 0.00832
+                },
+                "entropy": 1.181
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A28T",
+                  "A51T",
+                  "G82T",
+                  "T84A",
+                  "G85A",
+                  "T87A",
+                  "A93G",
+                  "G105T",
+                  "T117A",
+                  "G135A",
+                  "T153C",
+                  "T208A",
+                  "G211A",
+                  "A237C",
+                  "G258A",
+                  "C384T",
+                  "C498T",
+                  "G501A",
+                  "C513T",
+                  "T546A",
+                  "G558A",
+                  "T573C",
+                  "T576A",
+                  "C607T",
+                  "G624C",
+                  "A627T",
+                  "T661C",
+                  "T696C",
+                  "C714T",
+                  "T717C",
+                  "T738C",
+                  "G771A",
+                  "C828G",
+                  "G831A",
+                  "T840C"
+                ],
+                "NCTC10796_01271": [
+                  "M10L",
+                  "A28S",
+                  "V29I",
+                  "C70S",
+                  "A71T",
+                  "L208F"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC10796_01271: M10L, A28S, V29I, C70S, A71T, L208F"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000031",
+                "node_attrs": {
+                  "div": 0.151,
+                  "num_date": {
+                    "value": 2017.415,
+                    "confidence": [
+                      2016.881,
+                      2017.486
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": 0.000346
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C19T",
+                      "T48G",
+                      "G61A",
+                      "A90C",
+                      "A111G",
+                      "A114C",
+                      "G126T",
+                      "T165C",
+                      "A171G",
+                      "G180A",
+                      "T189C",
+                      "A195G",
+                      "T213C",
+                      "A216T",
+                      "C227T",
+                      "A228G",
+                      "A240G",
+                      "A247G",
+                      "A267G",
+                      "T274A",
+                      "A276G",
+                      "A289G",
+                      "T300G",
+                      "A306G",
+                      "A324T",
+                      "G347A",
+                      "A355C",
+                      "T381C",
+                      "A406C",
+                      "T423A",
+                      "G426A",
+                      "G427A",
+                      "T429C",
+                      "T432C",
+                      "C436A",
+                      "C438T",
+                      "G445A",
+                      "G463A",
+                      "T480C",
+                      "G486A",
+                      "A510G",
+                      "G522C",
+                      "G526T",
+                      "A527C",
+                      "A528C",
+                      "A529G",
+                      "C534A",
+                      "A544T",
+                      "A552G",
+                      "T555C",
+                      "A582G",
+                      "C583A",
+                      "G600C",
+                      "T604C",
+                      "T622A",
+                      "C624T",
+                      "A657G",
+                      "T672C",
+                      "T678G",
+                      "T687C",
+                      "C702A",
+                      "G711A",
+                      "A715G",
+                      "A716G",
+                      "A718G",
+                      "T741C",
+                      "C750T",
+                      "C756G",
+                      "C762G",
+                      "G797A",
+                      "C804T",
+                      "G819A",
+                      "A822G",
+                      "A849C",
+                      "A876G"
+                    ],
+                    "NCTC10796_01271": [
+                      "A21T",
+                      "A76V",
+                      "T83A",
+                      "I89M",
+                      "S92T",
+                      "N97D",
+                      "E108D",
+                      "G116E",
+                      "I119L",
+                      "A143T",
+                      "H146N",
+                      "D149N",
+                      "D155N",
+                      "E176S",
+                      "S177G",
+                      "T182S",
+                      "L195I",
+                      "F202L",
+                      "F208I",
+                      "N239G",
+                      "I240V",
+                      "S266N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10796_01271: A21T, A76V, T83A, I89M, S92T, N97D, E108D, G116E, I119L, A143T, H146N, D149N, D155N, E176S, S177G, T182S, L195I, F202L, F208I, N239G, I240V, S266N"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CIA-7_PNW14371-PPEH01000002-52966",
+                    "node_attrs": {
+                      "div": 0.151,
+                      "num_date": {
+                        "value": 2017.493,
+                        "confidence": [
+                          2017.415,
+                          2017.495
+                        ]
+                      },
+                      "organism": {
+                        "value": "Chryseobacterium_lactis"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CIA-7"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000012",
+                    "node_attrs": {
+                      "div": 0.151,
+                      "num_date": {
+                        "value": 2018.795,
+                        "confidence": [
+                          2017.949,
+                          2018.856
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": 2.76e-07
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CIA-7_AZA84252-CP033924-4701698",
+                        "node_attrs": {
+                          "div": 0.151,
+                          "num_date": {
+                            "value": 2018.856,
+                            "confidence": [
+                              2018.856,
+                              2018.856
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_lactis"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CIA-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CIA-7_AZB04640-CP033925-2586814",
+                        "node_attrs": {
+                          "div": 0.151,
+                          "num_date": {
+                            "value": 2018.856,
+                            "confidence": [
+                              2018.856,
+                              2018.856
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_lactis"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CIA-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000033",
+                "node_attrs": {
+                  "div": 0.155,
+                  "num_date": {
+                    "value": 2015.648,
+                    "confidence": [
+                      2014.289,
+                      2016.328
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.973,
+                      "": 0.024,
+                      "India": 0.00307
+                    },
+                    "entropy": 0.136
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A15C",
+                      "T18C",
+                      "C19G",
+                      "A21T",
+                      "A36G",
+                      "A63T",
+                      "C78A",
+                      "G127A",
+                      "A137G",
+                      "C144T",
+                      "A162T",
+                      "T174C",
+                      "A183G",
+                      "T189A",
+                      "T192C",
+                      "A216G",
+                      "T217C",
+                      "T231C",
+                      "A276C",
+                      "T279C",
+                      "A294G",
+                      "G303T",
+                      "C304T",
+                      "T321G",
+                      "A327G",
+                      "A336G",
+                      "C357T",
+                      "C359A",
+                      "C360G",
+                      "C363T",
+                      "T369A",
+                      "A375G",
+                      "T387C",
+                      "C390T",
+                      "T420C",
+                      "T423C",
+                      "C424A",
+                      "C428T",
+                      "C438A",
+                      "C441T",
+                      "A456G",
+                      "A459G",
+                      "G471A",
+                      "C474T",
+                      "A477G",
+                      "A482C",
+                      "G500A",
+                      "G522A",
+                      "C533G",
+                      "T540C",
+                      "T543C",
+                      "T549A",
+                      "A551C",
+                      "G579A",
+                      "C580T",
+                      "T588C",
+                      "T597C",
+                      "G600A",
+                      "G609A",
+                      "G615A",
+                      "T622C",
+                      "G626C",
+                      "A630C",
+                      "C642T",
+                      "T654G",
+                      "A660G",
+                      "A663G",
+                      "G670A",
+                      "T672A",
+                      "C675A",
+                      "G711C",
+                      "T726A",
+                      "T759A",
+                      "T777C",
+                      "A818G",
+                      "A849G"
+                    ],
+                    "NCTC10796_01271": [
+                      "L7V",
+                      "G43S",
+                      "N46S",
+                      "T120K",
+                      "Q142K",
+                      "A143V",
+                      "H146Q",
+                      "N161T",
+                      "R167K",
+                      "T178S",
+                      "E184A",
+                      "F208L",
+                      "G209A",
+                      "G224R",
+                      "K273R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10796_01271: L7V, G43S, N46S, T120K, Q142K, A143V, H146Q, N161T, R167K, T178S, E184A, F208L, G209A, G224R, K273R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CIA-18_WP_276964582-NZ_JAIXYJ010000036-7564",
+                    "node_attrs": {
+                      "div": 0.157,
+                      "num_date": {
+                        "value": 2016.191,
+                        "confidence": [
+                          2014.644,
+                          2017.423
+                        ]
+                      },
+                      "organism": {
+                        "value": "Chryseobacterium_sp."
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "CIA-18"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C107T"
+                        ],
+                        "NCTC10796_01271": [
+                          "T36I"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10796_01271: T36I"
+                      }
+                    }
+                  },
+                  {
+                    "name": "CIA-10_SIR36239-FTMT01000021-82232",
+                    "node_attrs": {
+                      "div": 0.158,
+                      "num_date": {
+                        "value": 2017.026,
+                        "confidence": [
+                          2017.026,
+                          2017.026
+                        ]
+                      },
+                      "organism": {
+                        "value": "Chryseobacterium_sp._RU33C"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CIA-10"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G109A",
+                          "G703A"
+                        ],
+                        "NCTC10796_01271": [
+                          "V37I",
+                          "G235R"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10796_01271: V37I, G235R"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000035",
+                    "node_attrs": {
+                      "div": 0.162,
+                      "num_date": {
+                        "value": 2017.349,
+                        "confidence": [
+                          2016.804,
+                          2017.349
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.965,
+                          "India": 0.0323,
+                          "": 0.00291
+                        },
+                        "entropy": 0.164
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A546T",
+                          "C551T",
+                          "A591G",
+                          "C756T",
+                          "T786C",
+                          "G787A"
+                        ],
+                        "NCTC10796_01271": [
+                          "A184V",
+                          "V263I"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10796_01271: A184V, V263I"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CIA-11_PXW16146-QICX01000004-79641",
+                        "node_attrs": {
+                          "div": 0.166,
+                          "num_date": {
+                            "value": 2018.393,
+                            "confidence": [
+                              2018.393,
+                              2018.393
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_sp._CBTAP_102"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CIA-11"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C15A",
+                              "C18T",
+                              "C692A"
+                            ],
+                            "NCTC10796_01271": [
+                              "T231K"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC10796_01271: T231K"
+                          }
+                        }
+                      },
+                      {
+                        "name": "CIA-17_THV56929-SDLV01000040-62777",
+                        "node_attrs": {
+                          "div": 0.162,
+                          "num_date": {
+                            "value": 2017.349,
+                            "confidence": [
+                              2017.349,
+                              2017.349
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_candidae"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "India",
+                            "confidence": {
+                              "India": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CIA-17"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000027",
+            "node_attrs": {
+              "div": 0.0469,
+              "num_date": {
+                "value": 1954.141,
+                "confidence": [
+                  1952.522,
+                  1955.766
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.923,
+                  "": 0.019,
+                  "Brazil": 0.0148,
+                  "United Kingdom": 0.00996,
+                  "South Korea": 0.00579,
+                  "India": 0.00515,
+                  "Australia": 0.00392,
+                  "Japan": 0.0037,
+                  "Spain": 0.0031,
+                  "Taiwan": 0.00265,
+                  "Madagascar": 0.00261,
+                  "Germany": 0.00259,
+                  "China": 0.00192,
+                  "Pakistan": 0.0018
+                },
+                "entropy": 0.445
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C22T",
+                  "A36T",
+                  "C124T",
+                  "A183C",
+                  "C198T",
+                  "T285G",
+                  "T411G",
+                  "A582T",
+                  "A729T"
+                ],
+                "NCTC10796_01271": [
+                  "L8F"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC10796_01271: L8F"
+              }
+            },
+            "children": [
+              {
+                "name": "CIA-13_MBV8328492-JAFAJM010000023-81156",
+                "node_attrs": {
+                  "div": 0.185,
+                  "num_date": {
+                    "value": 2017.177,
+                    "confidence": [
+                      2017.177,
+                      2017.177
+                    ]
+                  },
+                  "organism": {
+                    "value": "Chryseobacterium_sp."
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CIA-13"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A15T",
+                      "C25G",
+                      "A28T",
+                      "G30A",
+                      "G31A",
+                      "C38T",
+                      "C47T",
+                      "G49T",
+                      "G54A",
+                      "C64T",
+                      "G66A",
+                      "T69A",
+                      "T81C",
+                      "G85A",
+                      "T87C",
+                      "A88G",
+                      "A91C",
+                      "C108A",
+                      "A111G",
+                      "T117C",
+                      "G126A",
+                      "T129A",
+                      "A136G",
+                      "A139C",
+                      "A146G",
+                      "A151T",
+                      "G152A",
+                      "A162G",
+                      "A195G",
+                      "C201T",
+                      "C202T",
+                      "G204A",
+                      "T213C",
+                      "T217C",
+                      "G225C",
+                      "T231C",
+                      "A234G",
+                      "T241C",
+                      "T243C",
+                      "A249T",
+                      "A257G",
+                      "T284C",
+                      "A288T",
+                      "A294G",
+                      "A306T",
+                      "T318C",
+                      "T343C",
+                      "A345G",
+                      "A358C",
+                      "C359G",
+                      "C363T",
+                      "A366T",
+                      "T372C",
+                      "T378C",
+                      "C384T",
+                      "T387C",
+                      "T393C",
+                      "T403C",
+                      "A405G",
+                      "A414C",
+                      "T420C",
+                      "T423A",
+                      "C424A",
+                      "G427A",
+                      "T429C",
+                      "G435A",
+                      "C436A",
+                      "G445A",
+                      "T450C",
+                      "A456C",
+                      "A459C",
+                      "C465T",
+                      "G486A",
+                      "A512C",
+                      "G522A",
+                      "G526T",
+                      "A528T",
+                      "C531T",
+                      "C534G",
+                      "T540C",
+                      "T543C",
+                      "C545G",
+                      "T556C",
+                      "T570C",
+                      "T576C",
+                      "A577C",
+                      "T582C",
+                      "T588A",
+                      "T617C",
+                      "T622A",
+                      "G624C",
+                      "G625A",
+                      "G626A",
+                      "A630C",
+                      "T654C",
+                      "C666T",
+                      "A667C",
+                      "A668C",
+                      "A669G",
+                      "C675T",
+                      "C684T",
+                      "T696G",
+                      "G708A",
+                      "A718G",
+                      "T729C",
+                      "A732G",
+                      "T741C",
+                      "C762T",
+                      "C765T",
+                      "T777C",
+                      "T786C",
+                      "G793A",
+                      "A813T",
+                      "G831A",
+                      "T840C",
+                      "A849G",
+                      "G852A",
+                      "A853G",
+                      "T854C",
+                      "C855G",
+                      "T858C",
+                      "A865T",
+                      "A876G"
+                    ],
+                    "NCTC10796_01271": [
+                      "L9V",
+                      "M10L",
+                      "V11I",
+                      "A13V",
+                      "S16F",
+                      "A17S",
+                      "D23E",
+                      "V29I",
+                      "I30V",
+                      "K31Q",
+                      "N46D",
+                      "N47H",
+                      "K49R",
+                      "S51Y",
+                      "M75I",
+                      "F81L",
+                      "K86R",
+                      "L95P",
+                      "E96D",
+                      "T120R",
+                      "Q142K",
+                      "A143T",
+                      "H146N",
+                      "D149N",
+                      "N171T",
+                      "E176Y",
+                      "T182S",
+                      "K193Q",
+                      "I206T",
+                      "L208I",
+                      "G209K",
+                      "K223P",
+                      "I240V",
+                      "V265I",
+                      "I285A",
+                      "N289Y"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10796_01271: L9V, M10L, V11I, A13V, S16F, A17S, D23E, V29I, I30V, K31Q, N46D, N47H, K49R, S51Y, M75I, F81L, K86R, L95P, E96D, T120R, Q142K, A143T, H146N, D149N, N171T, E176Y, T182S, K193Q, I206T, L208I, G209K, K223P, I240V, V265I, I285A, N289Y"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000023",
+                "node_attrs": {
+                  "div": 0.0659,
+                  "num_date": {
+                    "value": 1957.256,
+                    "confidence": [
+                      1956.172,
+                      1958.087
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.97,
+                      "": 0.00752,
+                      "South Korea": 0.00468,
+                      "Brazil": 0.00351,
+                      "India": 0.0033,
+                      "Japan": 0.00251,
+                      "United Kingdom": 0.00242,
+                      "Spain": 0.0021,
+                      "Australia": 0.00106
+                    },
+                    "entropy": 0.203
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T24A",
+                      "T46A",
+                      "C62T",
+                      "A140C",
+                      "G180A",
+                      "T280C",
+                      "C283T",
+                      "C360G",
+                      "T458C",
+                      "T525C",
+                      "C533G",
+                      "C675G",
+                      "A693G",
+                      "T720A",
+                      "T783C"
+                    ],
+                    "NCTC10796_01271": [
+                      "F8L",
+                      "S16T",
+                      "A21V",
+                      "N47T",
+                      "V153A",
+                      "T178S"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10796_01271: F8L, S16T, A21V, N47T, V153A, T178S"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000024",
+                    "node_attrs": {
+                      "div": 0.0863,
+                      "num_date": {
+                        "value": 1970.336,
+                        "confidence": [
+                          1966.704,
+                          1972.89
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.507,
+                          "South Korea": 0.173,
+                          "India": 0.102,
+                          "Spain": 0.084,
+                          "": 0.0181,
+                          "Australia": 0.0146,
+                          "Brazil": 0.0142,
+                          "China": 0.0136,
+                          "United Kingdom": 0.0134,
+                          "Taiwan": 0.0127,
+                          "Madagascar": 0.0126,
+                          "Germany": 0.0125,
+                          "Japan": 0.0114,
+                          "Pakistan": 0.0102
+                        },
+                        "entropy": 1.663
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T42G",
+                          "A95G",
+                          "A114C",
+                          "G126A",
+                          "G128A",
+                          "T192C",
+                          "C201T",
+                          "G285A",
+                          "A336G",
+                          "A348C",
+                          "G360T",
+                          "A366T",
+                          "C384T",
+                          "T423G",
+                          "G426A",
+                          "G427A",
+                          "C465T",
+                          "T480C",
+                          "G486A",
+                          "C498T",
+                          "G500A",
+                          "T622C",
+                          "A633T",
+                          "C714T",
+                          "C756G",
+                          "G771A",
+                          "T786C",
+                          "A829C"
+                        ],
+                        "NCTC10796_01271": [
+                          "F14L",
+                          "D32G",
+                          "G43D",
+                          "A143T",
+                          "R167K"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10796_01271: F14L, D32G, G43D, A143T, R167K"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CIA-8_PWN72043-PPED02000001-1166143",
+                        "node_attrs": {
+                          "div": 0.18,
+                          "num_date": {
+                            "value": 2002.582,
+                            "confidence": [
+                              2002.582,
+                              2002.656
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chryseobacterium_phosphatilyticum"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "South Korea",
+                            "confidence": {
+                              "South Korea": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CIA-8"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T27C",
+                              "T45C",
+                              "T48C",
+                              "A60T",
+                              "T62C",
+                              "T81A",
+                              "T96C",
+                              "A102G",
+                              "C108T",
+                              "G115A",
+                              "T129C",
+                              "T132C",
+                              "G135C",
+                              "C140A",
+                              "T141C",
+                              "A145G",
+                              "G152A",
+                              "A171G",
+                              "T177C",
+                              "C183A",
+                              "C202T",
+                              "G204A",
+                              "T208A",
+                              "T231C",
+                              "A240G",
+                              "A249C",
+                              "A264G",
+                              "A267T",
+                              "A270G",
+                              "C280T",
+                              "A282G",
+                              "A288G",
+                              "T300A",
+                              "G303T",
+                              "A306C",
+                              "A331G",
+                              "T342A",
+                              "T378C",
+                              "T393C",
+                              "T399C",
+                              "G411T",
+                              "A414T",
+                              "T420A",
+                              "C421A",
+                              "G423A",
+                              "T429G",
+                              "T432A",
+                              "G435A",
+                              "C436A",
+                              "C441T",
+                              "A459C",
+                              "C469A",
+                              "A475C",
+                              "G522A",
+                              "G526T",
+                              "A528C",
+                              "C531T",
+                              "G533C",
+                              "A544G",
+                              "A552T",
+                              "T582A",
+                              "T588C",
+                              "A591G",
+                              "A594G",
+                              "G600A",
+                              "G609A",
+                              "T645C",
+                              "A657G",
+                              "T672G",
+                              "G675A",
+                              "T696A",
+                              "C702A",
+                              "A705G",
+                              "A718G",
+                              "T726A",
+                              "T738C",
+                              "T759A",
+                              "G797A",
+                              "G831A"
+                            ],
+                            "NCTC10796_01271": [
+                              "V21A",
+                              "N27K",
+                              "V39I",
+                              "E45D",
+                              "T47N",
+                              "K49E",
+                              "S51N",
+                              "C70S",
+                              "I111V",
+                              "P141T",
+                              "H146N",
+                              "Q157K",
+                              "K159Q",
+                              "E176Y",
+                              "S178T",
+                              "T182A",
+                              "E184D",
+                              "I240V",
+                              "S266N"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC10796_01271: V21A, N27K, V39I, E45D, T47N, K49E, S51N, C70S, I111V, P141T, H146N, Q157K, K159Q, E176Y, S178T, T182A, E184D, I240V, S266N"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000025",
+                        "node_attrs": {
+                          "div": 0.14,
+                          "num_date": {
+                            "value": 1994.507,
+                            "confidence": [
+                              1991.718,
+                              1997.066
+                            ]
+                          },
+                          "country": {
+                            "value": "India",
+                            "confidence": {
+                              "India": 0.382,
+                              "Spain": 0.369,
+                              "USA": 0.106,
+                              "South Korea": 0.0383,
+                              "China": 0.0194,
+                              "": 0.0109,
+                              "Australia": 0.0107,
+                              "Brazil": 0.00972,
+                              "United Kingdom": 0.00953,
+                              "Taiwan": 0.00932,
+                              "Madagascar": 0.00927,
+                              "Germany": 0.00924,
+                              "Japan": 0.0085,
+                              "Pakistan": 0.00849
+                            },
+                            "entropy": 1.573
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A15T",
+                              "C19T",
+                              "T48G",
+                              "C78A",
+                              "T81C",
+                              "A99G",
+                              "G135A",
+                              "A137C",
+                              "A139C",
+                              "C207A",
+                              "T213C",
+                              "G303A",
+                              "A324T",
+                              "A345G",
+                              "C348T",
+                              "T354A",
+                              "T372A",
+                              "A375G",
+                              "T381C",
+                              "T387C",
+                              "C390T",
+                              "T396C",
+                              "C409A",
+                              "T420C",
+                              "A437G",
+                              "C438A",
+                              "T440A",
+                              "C458T",
+                              "C474A",
+                              "A482C",
+                              "A512C",
+                              "T549A",
+                              "A552G",
+                              "C553G",
+                              "G558A",
+                              "T576C",
+                              "A636C",
+                              "G708A",
+                              "T726C",
+                              "T753C",
+                              "C783T",
+                              "C798T",
+                              "C804T",
+                              "A813T",
+                              "G831T",
+                              "T858C"
+                            ],
+                            "NCTC10796_01271": [
+                              "N46T",
+                              "T47P",
+                              "E108D",
+                              "L137M",
+                              "H146R",
+                              "F147Y",
+                              "A153V",
+                              "N161T",
+                              "N171T",
+                              "L185V"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC10796_01271: N46T, T47P, E108D, L137M, H146R, F147Y, A153V, N161T, N171T, L185V"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CIA-14_WP_160137591-NZ_WXVU01000005-156567",
+                            "node_attrs": {
+                              "div": 0.182,
+                              "num_date": {
+                                "value": 2010.955,
+                                "confidence": [
+                                  2010.955,
+                                  2010.955
+                                ]
+                              },
+                              "organism": {
+                                "value": "Chryseobacterium_sp._c4a"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "India",
+                                "confidence": {
+                                  "India": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CIA-14"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G48A",
+                                  "A57G",
+                                  "G105T",
+                                  "A180G",
+                                  "C183T",
+                                  "A223C",
+                                  "T224A",
+                                  "T231C",
+                                  "T241C",
+                                  "C248T",
+                                  "T252C",
+                                  "T259A",
+                                  "A265C",
+                                  "A267C",
+                                  "A276T",
+                                  "A306C",
+                                  "A312G",
+                                  "T321G",
+                                  "G322A",
+                                  "A328G",
+                                  "A331G",
+                                  "T399C",
+                                  "A456G",
+                                  "A516G",
+                                  "C525T",
+                                  "T582C",
+                                  "T604C",
+                                  "C606T",
+                                  "G624C",
+                                  "G675A",
+                                  "G693A",
+                                  "C702T",
+                                  "T719A",
+                                  "G756T",
+                                  "C827T"
+                                ],
+                                "NCTC10796_01271": [
+                                  "M75Q",
+                                  "F81L",
+                                  "T83I",
+                                  "F87I",
+                                  "I89L",
+                                  "D108N",
+                                  "N110D",
+                                  "I111V",
+                                  "F202L",
+                                  "I240K",
+                                  "T276I"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC10796_01271: M75Q, F81L, T83I, F87I, I89L, D108N, N110D, I111V, F202L, I240K, T276I"
+                              }
+                            }
+                          },
+                          {
+                            "name": "NODE_0000026",
+                            "node_attrs": {
+                              "div": 0.173,
+                              "num_date": {
+                                "value": 2008.001,
+                                "confidence": [
+                                  2007.536,
+                                  2008.001
+                                ]
+                              },
+                              "country": {
+                                "value": "Spain",
+                                "confidence": {
+                                  "Spain": 0.966,
+                                  "China": 0.0222,
+                                  "India": 0.00579,
+                                  "USA": 0.00191
+                                },
+                                "entropy": 0.192
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G82A",
+                                  "T96G",
+                                  "C108A",
+                                  "T141C",
+                                  "A171G",
+                                  "G204T",
+                                  "A216G",
+                                  "C227T",
+                                  "A234G",
+                                  "A240G",
+                                  "T243C",
+                                  "A246T",
+                                  "A249G",
+                                  "C304G",
+                                  "T366G",
+                                  "C421T",
+                                  "G435A",
+                                  "T492C",
+                                  "G501A",
+                                  "G502A",
+                                  "C537T",
+                                  "G550A",
+                                  "A593G",
+                                  "G600A",
+                                  "T672G",
+                                  "G711A",
+                                  "T729C",
+                                  "T840C"
+                                ],
+                                "NCTC10796_01271": [
+                                  "A28T",
+                                  "A76V",
+                                  "L102V",
+                                  "P141S",
+                                  "D168N",
+                                  "E184K",
+                                  "K198R"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC10796_01271: A28T, A76V, L102V, P141S, D168N, E184K, K198R"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "CIA-15_MFC3756932-JBHRYO010000002-2091266",
+                                "node_attrs": {
+                                  "div": 0.173,
+                                  "num_date": {
+                                    "value": 2020.001,
+                                    "confidence": [
+                                      2020.001,
+                                      2020.899
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Chryseobacterium_tructae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CIA-15"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CIA-15_MDN3692646-JAUFQR010000001-2091168",
+                                "node_attrs": {
+                                  "div": 0.173,
+                                  "num_date": {
+                                    "value": 2008.001,
+                                    "confidence": [
+                                      2008.001,
+                                      2008.001
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Chryseobacterium_tructae"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Spain",
+                                    "confidence": {
+                                      "Spain": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CIA-15"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000017",
+                    "node_attrs": {
+                      "div": 0.153,
+                      "num_date": {
+                        "value": 1958.134,
+                        "confidence": [
+                          1957.603,
+                          1958.497
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.986,
+                          "": 0.00508,
+                          "Japan": 0.00228,
+                          "South Korea": 0.00148,
+                          "Brazil": 0.00114,
+                          "India": 0.00109
+                        },
+                        "entropy": 0.102
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A21T",
+                          "T27G",
+                          "A39C",
+                          "A60C",
+                          "G66T",
+                          "T69C",
+                          "C70G",
+                          "A80G",
+                          "A139G",
+                          "A147G",
+                          "A168G",
+                          "T174G",
+                          "T177G",
+                          "A237T",
+                          "A317T",
+                          "T321G",
+                          "C409T",
+                          "A417C",
+                          "C428T",
+                          "T489C",
+                          "T492C",
+                          "T541G",
+                          "T543G",
+                          "T549C",
+                          "G550T",
+                          "A551C",
+                          "T555A",
+                          "T586A",
+                          "T597G",
+                          "A630T",
+                          "T651C",
+                          "A660G",
+                          "C684T",
+                          "A747G",
+                          "C750T",
+                          "C804A",
+                          "A807G",
+                          "C828A"
+                        ],
+                        "NCTC10796_01271": [
+                          "Q24E",
+                          "N27S",
+                          "T47A",
+                          "Y106F",
+                          "A143V",
+                          "S181A",
+                          "E184S",
+                          "S196T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10796_01271: Q24E, N27S, T47A, Y106F, A143V, S181A, E184S, S196T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000021",
+                        "node_attrs": {
+                          "div": 0.153,
+                          "num_date": {
+                            "value": 2015.774,
+                            "confidence": [
+                              2014.982,
+                              2016.013
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.586,
+                              "": 0.405,
+                              "China": 0.00782
+                            },
+                            "entropy": 0.732
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C108G",
+                              "A166G",
+                              "A171G",
+                              "C465T",
+                              "T786C"
+                            ],
+                            "NCTC10796_01271": [
+                              "K56E"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC10796_01271: K56E"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CIA-6_WP_061084951-NZ_CP033828-1538238",
+                            "node_attrs": {
+                              "div": 0.153,
+                              "num_date": {
+                                "value": 2016.029,
+                                "confidence": [
+                                  2016.029,
+                                  2016.029
+                                ]
+                              },
+                              "organism": {
+                                "value": "Chryseobacterium_indologenes"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "CIA-6"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000022",
+                            "node_attrs": {
+                              "div": 0.153,
+                              "num_date": {
+                                "value": 2016.029,
+                                "confidence": [
+                                  2015.674,
+                                  2016.029
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.795,
+                                  "": 0.186,
+                                  "China": 0.0179
+                                },
+                                "entropy": 0.583
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CIA-6_AYZ35283-CP033828-1538238",
+                                "node_attrs": {
+                                  "div": 0.153,
+                                  "num_date": {
+                                    "value": 2016.029,
+                                    "confidence": [
+                                      2016.029,
+                                      2016.029
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Chryseobacterium_indologenes"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CIA-6"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000032",
+                                "node_attrs": {
+                                  "div": 0.153,
+                                  "num_date": {
+                                    "value": 2019.44,
+                                    "confidence": [
+                                      2018.105,
+                                      2019.459
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.997,
+                                      "Australia": 0.00212
+                                    },
+                                    "entropy": 0.0201
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "CIA-6_MBF6644018-JADLZS010000001-1699322",
+                                    "node_attrs": {
+                                      "div": 0.153,
+                                      "num_date": {
+                                        "value": 2019.459,
+                                        "confidence": [
+                                          2019.459,
+                                          2019.459
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Chryseobacterium_indologenes"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CIA-6"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000034",
+                                    "node_attrs": {
+                                      "div": 0.153,
+                                      "num_date": {
+                                        "value": 2019.729,
+                                        "confidence": [
+                                          2018.951,
+                                          2019.79
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.996,
+                                          "Australia": 0.00374
+                                        },
+                                        "entropy": 0.0291
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CIA-6_MEB4761386-JAPSGE010000010-73475",
+                                        "node_attrs": {
+                                          "div": 0.153,
+                                          "num_date": {
+                                            "value": 2019.79,
+                                            "confidence": [
+                                              2019.79,
+                                              2019.79
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Chryseobacterium_indologenes"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "country": {
+                                            "value": "Australia",
+                                            "confidence": {
+                                              "Australia": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CIA-6"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000036",
+                                        "node_attrs": {
+                                          "div": 0.153,
+                                          "num_date": {
+                                            "value": 2019.788,
+                                            "confidence": [
+                                              2019.601,
+                                              2019.955
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.998,
+                                              "Australia": 0.00133,
+                                              "Pakistan": 0.00102
+                                            },
+                                            "entropy": 0.0189
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CIA-6_MBU3048791-JAHKNH010000113-4063",
+                                            "node_attrs": {
+                                              "div": 0.153,
+                                              "num_date": {
+                                                "value": 2020.835,
+                                                "confidence": [
+                                                  2020.835,
+                                                  2020.835
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "Pakistan",
+                                                "confidence": {
+                                                  "Pakistan": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-6"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "CIA-6_QQQ72257-CP067044-1291014",
+                                            "node_attrs": {
+                                              "div": 0.153,
+                                              "num_date": {
+                                                "value": 2019.955,
+                                                "confidence": [
+                                                  2019.955,
+                                                  2019.955
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-6"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000005",
+                        "node_attrs": {
+                          "div": 0.155,
+                          "num_date": {
+                            "value": 1958.398,
+                            "confidence": [
+                              1957.986,
+                              1958.692
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.991,
+                              "": 0.0031,
+                              "Japan": 0.00229
+                            },
+                            "entropy": 0.072
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T588A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000000",
+                            "node_attrs": {
+                              "div": 0.162,
+                              "num_date": {
+                                "value": 1958.934,
+                                "confidence": [
+                                  1958.808,
+                                  1958.991
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.996,
+                                  "Japan": 0.00187,
+                                  "": 0.00112
+                                },
+                                "entropy": 0.0366
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G670A",
+                                  "C762T"
+                                ],
+                                "NCTC10796_01271": [
+                                  "G224S"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC10796_01271: G224S"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "UIGS01000002.1",
+                                "node_attrs": {
+                                  "div": 0.162,
+                                  "num_date": {
+                                    "value": 1958.986,
+                                    "confidence": [
+                                      1958.225,
+                                      1962.957
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.986,
+                                      "Japan": 0.00246,
+                                      "": 0.00204,
+                                      "India": 0.00109,
+                                      "Brazil": 0.00104,
+                                      "South Korea": 0.00102
+                                    },
+                                    "entropy": 0.109
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CIA-1_SUX50318-UIGS01000002-1345972",
+                                "node_attrs": {
+                                  "div": 0.162,
+                                  "num_date": {
+                                    "value": 1958.997,
+                                    "confidence": [
+                                      1958.877,
+                                      1958.999
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Chryseobacterium_indologenes"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CIA-1"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000039",
+                                "node_attrs": {
+                                  "div": 0.162,
+                                  "num_date": {
+                                    "value": 2011.456,
+                                    "confidence": [
+                                      2010.618,
+                                      2011.456
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": 0.00289
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "CIA-1_BAL40892-AB639753-1",
+                                    "node_attrs": {
+                                      "div": 0.162,
+                                      "num_date": {
+                                        "value": 2011.456,
+                                        "confidence": [
+                                          2011.456,
+                                          2011.456
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Chryseobacterium_indologenes_NBRC_14944"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "country": {
+                                        "value": "Japan",
+                                        "confidence": {
+                                          "Japan": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CIA-1"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000040",
+                                    "node_attrs": {
+                                      "div": 0.162,
+                                      "num_date": {
+                                        "value": 2014.026,
+                                        "confidence": [
+                                          2013.183,
+                                          2014.026
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Japan",
+                                        "confidence": {
+                                          "Japan": 0.999
+                                        },
+                                        "entropy": 0.00685
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CIA-1_GAE64343-BAVL01000007-310280",
+                                        "node_attrs": {
+                                          "div": 0.162,
+                                          "num_date": {
+                                            "value": 2014.026,
+                                            "confidence": [
+                                              2014.026,
+                                              2014.026
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Chryseobacterium_indologenes_NBRC_14944"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "country": {
+                                            "value": "Japan",
+                                            "confidence": {
+                                              "Japan": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CIA-1"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000041",
+                                        "node_attrs": {
+                                          "div": 0.162,
+                                          "num_date": {
+                                            "value": 2016.799,
+                                            "confidence": [
+                                              2016.022,
+                                              2016.824
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.829,
+                                              "Germany": 0.104,
+                                              "Japan": 0.0637
+                                            },
+                                            "entropy": 0.596
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CIA-1_SFI71133-FORL01000001-517532",
+                                            "node_attrs": {
+                                              "div": 0.162,
+                                              "num_date": {
+                                                "value": 2016.824,
+                                                "confidence": [
+                                                  2016.824,
+                                                  2016.824
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-1"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "CIA-1_QPQ51788-CP065590-4691580",
+                                            "node_attrs": {
+                                              "div": 0.162,
+                                              "num_date": {
+                                                "value": 2019.001,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.743
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "Germany",
+                                                "confidence": {
+                                                  "Germany": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-1"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000006",
+                            "node_attrs": {
+                              "div": 0.156,
+                              "num_date": {
+                                "value": 2008.931,
+                                "confidence": [
+                                  2007.478,
+                                  2009.803
+                                ]
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 0.531,
+                                  "USA": 0.467
+                                },
+                                "entropy": 0.713
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C108G",
+                                  "A166G",
+                                  "A171G",
+                                  "T186C",
+                                  "C465T"
+                                ],
+                                "NCTC10796_01271": [
+                                  "K56E"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC10796_01271: K56E"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000007",
+                                "node_attrs": {
+                                  "div": 0.157,
+                                  "num_date": {
+                                    "value": 2011.45,
+                                    "confidence": [
+                                      2010.581,
+                                      2011.734
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": 0.00044
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "T22A"
+                                    ],
+                                    "NCTC10796_01271": [
+                                      "L8I"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "NCTC10796_01271: L8I"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "CIA-4_BAL40895-AB674568-1",
+                                    "node_attrs": {
+                                      "div": 0.157,
+                                      "num_date": {
+                                        "value": 2011.766,
+                                        "confidence": [
+                                          2011.766,
+                                          2011.766
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Chryseobacterium_indologenes"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "country": {
+                                        "value": "Japan",
+                                        "confidence": {
+                                          "Japan": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CIA-4"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "CIA-2_BAL40893-AB674566-1",
+                                    "node_attrs": {
+                                      "div": 0.158,
+                                      "num_date": {
+                                        "value": 2011.766,
+                                        "confidence": [
+                                          2011.766,
+                                          2011.766
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Chryseobacterium_indologenes"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "country": {
+                                        "value": "Japan",
+                                        "confidence": {
+                                          "Japan": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CIA-2"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A724G"
+                                        ],
+                                        "NCTC10796_01271": [
+                                          "T242A"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "NCTC10796_01271: T242A"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000008",
+                                "node_attrs": {
+                                  "div": 0.157,
+                                  "num_date": {
+                                    "value": 2009.717,
+                                    "confidence": [
+                                      2008.888,
+                                      2010.243
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.502,
+                                      "Japan": 0.497
+                                    },
+                                    "entropy": 0.698
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "A499C"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000009",
+                                    "node_attrs": {
+                                      "div": 0.16,
+                                      "num_date": {
+                                        "value": 2010.338,
+                                        "confidence": [
+                                          2009.891,
+                                          2010.563
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.848,
+                                          "Japan": 0.139,
+                                          "United Kingdom": 0.0117
+                                        },
+                                        "entropy": 0.481
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "T48G",
+                                          "G108C"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CIA-16_VFA41207-LR215967-1298886",
+                                        "node_attrs": {
+                                          "div": 0.162,
+                                          "num_date": {
+                                            "value": 2019.114,
+                                            "confidence": [
+                                              2019.114,
+                                              2019.114
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Chryseobacterium_indologenes"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CIA-16"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G80A",
+                                              "G250T"
+                                            ],
+                                            "NCTC10796_01271": [
+                                              "S27N",
+                                              "D84Y"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "NCTC10796_01271: S27N, D84Y"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000010",
+                                        "node_attrs": {
+                                          "div": 0.161,
+                                          "num_date": {
+                                            "value": 2010.582,
+                                            "confidence": [
+                                              2010.38,
+                                              2010.658
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.998,
+                                              "Japan": 0.00145
+                                            },
+                                            "entropy": 0.0129
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "T786C"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CIA-6_AZB17377-CP033930-1337905",
+                                            "node_attrs": {
+                                              "div": 0.161,
+                                              "num_date": {
+                                                "value": 2010.663,
+                                                "confidence": [
+                                                  2010.582,
+                                                  2010.664
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-6"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "CIA-9_ASE61770-CP022058-2171166",
+                                            "node_attrs": {
+                                              "div": 0.166,
+                                              "num_date": {
+                                                "value": 2015.032,
+                                                "confidence": [
+                                                  2015.032,
+                                                  2015.032
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-9"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {
+                                                "nuc": [
+                                                  "C60T",
+                                                  "G171A",
+                                                  "C587A",
+                                                  "A588T"
+                                                ],
+                                                "NCTC10796_01271": [
+                                                  "T196N"
+                                                ]
+                                              },
+                                              "labels": {
+                                                "aa": "NCTC10796_01271: T196N"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000011",
+                                    "node_attrs": {
+                                      "div": 0.159,
+                                      "num_date": {
+                                        "value": 2011.759,
+                                        "confidence": [
+                                          2011.187,
+                                          2011.766
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Japan",
+                                        "confidence": {
+                                          "Japan": 0.523,
+                                          "USA": 0.477
+                                        },
+                                        "entropy": 0.695
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G250T",
+                                          "G626C"
+                                        ],
+                                        "NCTC10796_01271": [
+                                          "D84Y",
+                                          "G209A"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "NCTC10796_01271: D84Y, G209A"
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CIA-3_BAL40894-AB674567-1",
+                                        "node_attrs": {
+                                          "div": 0.159,
+                                          "num_date": {
+                                            "value": 2011.766,
+                                            "confidence": [
+                                              2011.766,
+                                              2011.766
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Chryseobacterium_indologenes"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "country": {
+                                            "value": "Japan",
+                                            "confidence": {
+                                              "Japan": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CIA-3"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000048",
+                                        "node_attrs": {
+                                          "div": 0.159,
+                                          "num_date": {
+                                            "value": 2015.319,
+                                            "confidence": [
+                                              2014.43,
+                                              2015.319
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": 0.00136
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CIA-3_ATN05727-CP023968-2218529",
+                                            "node_attrs": {
+                                              "div": 0.159,
+                                              "num_date": {
+                                                "value": 2015.319,
+                                                "confidence": [
+                                                  2015.319,
+                                                  2015.319
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Chryseobacterium_indologenes"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CIA-3"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000049",
+                                            "node_attrs": {
+                                              "div": 0.159,
+                                              "num_date": {
+                                                "value": 2016.337,
+                                                "confidence": [
+                                                  2015.659,
+                                                  2016.337
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": 0.000508
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "CIA-3_AYY85515-CP033760-3043096",
+                                                "node_attrs": {
+                                                  "div": 0.159,
+                                                  "num_date": {
+                                                    "value": 2016.337,
+                                                    "confidence": [
+                                                      2016.337,
+                                                      2016.337
+                                                    ]
+                                                  },
+                                                  "organism": {
+                                                    "value": "Chryseobacterium_indologenes"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "CIA-3"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000050",
+                                                "node_attrs": {
+                                                  "div": 0.159,
+                                                  "num_date": {
+                                                    "value": 2017.859,
+                                                    "confidence": [
+                                                      2016.869,
+                                                      2017.859
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 0.947,
+                                                      "Madagascar": 0.0363,
+                                                      "Australia": 0.016
+                                                    },
+                                                    "entropy": 0.242
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "CIA-3_TLX26488-VCBR01000005-263358",
+                                                    "node_attrs": {
+                                                      "div": 0.159,
+                                                      "num_date": {
+                                                        "value": 2017.859,
+                                                        "confidence": [
+                                                          2017.859,
+                                                          2017.859
+                                                        ]
+                                                      },
+                                                      "organism": {
+                                                        "value": "Chryseobacterium_indologenes"
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location from metadata"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      },
+                                                      "country": {
+                                                        "value": "Madagascar",
+                                                        "confidence": {
+                                                          "Madagascar": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "allele": {
+                                                        "value": "CIA-3"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000051",
+                                                    "node_attrs": {
+                                                      "div": 0.159,
+                                                      "num_date": {
+                                                        "value": 2018.195,
+                                                        "confidence": [
+                                                          2017.712,
+                                                          2018.256
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 0.946,
+                                                          "Australia": 0.0376,
+                                                          "Madagascar": 0.0156
+                                                        },
+                                                        "entropy": 0.248
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "CIA-3_HAO28864-DMQD01000304-15250",
+                                                        "node_attrs": {
+                                                          "div": 0.159,
+                                                          "num_date": {
+                                                            "value": 2018.256,
+                                                            "confidence": [
+                                                              2018.256,
+                                                              2018.256
+                                                            ]
+                                                          },
+                                                          "organism": {
+                                                            "value": "Chryseobacterium_indologenes"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          },
+                                                          "country": {
+                                                            "value": "Australia",
+                                                            "confidence": {
+                                                              "Australia": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "CIA-3"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000052",
+                                                        "node_attrs": {
+                                                          "div": 0.159,
+                                                          "num_date": {
+                                                            "value": 2019.738,
+                                                            "confidence": [
+                                                              2018.649,
+                                                              2019.738
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 0.988,
+                                                              "Taiwan": 0.0066,
+                                                              "Australia": 0.00396,
+                                                              "Madagascar": 0.00165
+                                                            },
+                                                            "entropy": 0.0797
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "CIA-3_QIX82413-CP050961-3266256",
+                                                            "node_attrs": {
+                                                              "div": 0.159,
+                                                              "num_date": {
+                                                                "value": 2019.738,
+                                                                "confidence": [
+                                                                  2019.738,
+                                                                  2019.738
+                                                                ]
+                                                              },
+                                                              "organism": {
+                                                                "value": "Chryseobacterium_indologenes"
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location from metadata"
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Submission date"
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "allele": {
+                                                                "value": "CIA-3"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "CIA-3_UDQ52054-CP085529-2534863",
+                                                            "node_attrs": {
+                                                              "div": 0.159,
+                                                              "num_date": {
+                                                                "value": 2021.467,
+                                                                "confidence": [
+                                                                  2021.467,
+                                                                  2021.467
+                                                                ]
+                                                              },
+                                                              "organism": {
+                                                                "value": "Chryseobacterium_indologenes"
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location from metadata"
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Collection date from metadata"
+                                                              },
+                                                              "country": {
+                                                                "value": "Taiwan",
+                                                                "confidence": {
+                                                                  "Taiwan": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "allele": {
+                                                                "value": "CIA-3"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

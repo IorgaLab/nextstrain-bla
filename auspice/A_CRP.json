@@ -1,0 +1,686 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A CRP beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 882,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "BUE93_04725": {
+        "end": 882,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Bangladesh": {
+            "latitude": 24.506442,
+            "longitude": 90.041454
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000006",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1992.058,
+        "confidence": [
+          1987.63,
+          1996.852
+        ]
+      },
+      "country": {
+        "value": "Brazil",
+        "confidence": {
+          "Brazil": 0.578,
+          "USA": 0.408,
+          "Bangladesh": 0.00723,
+          "Malaysia": 0.00675
+        },
+        "entropy": 0.752
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "CRP-3_POA99544-PPTF01000019-54015",
+        "node_attrs": {
+          "div": 0.0232,
+          "num_date": {
+            "value": 2013.001,
+            "confidence": [
+              2013.001,
+              2013.89
+            ]
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "allele": {
+            "value": "CRP-3"
+          },
+          "organism": {
+            "value": "Chromobacterium_sinusclupearum"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G85C",
+              "C90G",
+              "G108A",
+              "T116A",
+              "T120C",
+              "G166A",
+              "C228T",
+              "C255T",
+              "G261T",
+              "T278C",
+              "C279T",
+              "A297G",
+              "G300C",
+              "A306C",
+              "C308T",
+              "G327A",
+              "T337G",
+              "T366C",
+              "T375G",
+              "A396C",
+              "G411A",
+              "G420A",
+              "G438A",
+              "C456T",
+              "G457T",
+              "C474T",
+              "T483G",
+              "C486G",
+              "C489T",
+              "T502C",
+              "G510C",
+              "G528A",
+              "C552T",
+              "T582A",
+              "A602C",
+              "T603G",
+              "C609T",
+              "T708C"
+            ],
+            "BUE93_04725": [
+              "A29P",
+              "D30E",
+              "V39D",
+              "A56T",
+              "I93T",
+              "E100D",
+              "A103V",
+              "S113A",
+              "A153S",
+              "D162E",
+              "H201P"
+            ]
+          },
+          "labels": {
+            "aa": "BUE93_04725: A29P, D30E, V39D, A56T, I93T, E100D, A103V, S113A, A153S, D162E, H201P"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0219,
+          "num_date": {
+            "value": 2006.859,
+            "confidence": [
+              2004.585,
+              2007.401
+            ]
+          },
+          "country": {
+            "value": "Brazil",
+            "confidence": {
+              "Brazil": 0.995,
+              "Bangladesh": 0.00333
+            },
+            "entropy": 0.0327
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0242,
+              "num_date": {
+                "value": 2007.492,
+                "confidence": [
+                  2006.807,
+                  2007.927
+                ]
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 0.998,
+                  "Bangladesh": 0.00166
+                },
+                "entropy": 0.018
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T174C",
+                  "T266A"
+                ],
+                "BUE93_04725": [
+                  "F89Y"
+                ]
+              },
+              "labels": {
+                "aa": "BUE93_04725: F89Y"
+              }
+            },
+            "children": [
+              {
+                "name": "MTBD01000007.1",
+                "node_attrs": {
+                  "div": 0.0242,
+                  "num_date": {
+                    "value": 2007.845,
+                    "confidence": [
+                      2006.809,
+                      2009.994
+                    ]
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 0.996,
+                      "Bangladesh": 0.00226,
+                      "USA": 0.00127
+                    },
+                    "entropy": 0.033
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CRP-4_PRP71943-MTBD01000007-146598",
+                "node_attrs": {
+                  "div": 0.0242,
+                  "num_date": {
+                    "value": 2007.995,
+                    "confidence": [
+                      2007.001,
+                      2007.999
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CRP-4"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_amazonense"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0242,
+              "num_date": {
+                "value": 2010.107,
+                "confidence": [
+                  2008.151,
+                  2011.753
+                ]
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 0.987,
+                  "Bangladesh": 0.0118,
+                  "Malaysia": 0.00122
+                },
+                "entropy": 0.0769
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C831T",
+                  "G834C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "CRP-2_OHX16101-MKCR01000026-88964",
+                "node_attrs": {
+                  "div": 0.0265,
+                  "num_date": {
+                    "value": 2016.728,
+                    "confidence": [
+                      2016.728,
+                      2016.728
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CRP-2"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_amazonense"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C165T",
+                      "C540G"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.0276,
+                  "num_date": {
+                    "value": 2012.318,
+                    "confidence": [
+                      2011.181,
+                      2013.108
+                    ]
+                  },
+                  "country": {
+                    "value": "Bangladesh",
+                    "confidence": {
+                      "Bangladesh": 0.873,
+                      "Malaysia": 0.0869,
+                      "Brazil": 0.0402
+                    },
+                    "entropy": 0.461
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C186T",
+                      "T366C",
+                      "G438C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 0.0288,
+                      "num_date": {
+                        "value": 2012.988,
+                        "confidence": [
+                          2012.23,
+                          2013.484
+                        ]
+                      },
+                      "country": {
+                        "value": "Bangladesh",
+                        "confidence": {
+                          "Bangladesh": 0.868,
+                          "Malaysia": 0.116,
+                          "Brazil": 0.0158
+                        },
+                        "entropy": 0.439
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C686T"
+                        ],
+                        "BUE93_04725": [
+                          "S229L"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "BUE93_04725: S229L"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CRP-1_KIA78998-JTGE01000141-4336",
+                        "node_attrs": {
+                          "div": 0.0322,
+                          "num_date": {
+                            "value": 2013.749,
+                            "confidence": [
+                              2013.749,
+                              2013.749
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Malaysia",
+                            "confidence": {
+                              "Malaysia": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CRP-1"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_piscinae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T231C",
+                              "G591A",
+                              "G633A"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "CRP-5_MBM2886717-JAFCYX010000014-5336",
+                        "node_attrs": {
+                          "div": 0.0322,
+                          "num_date": {
+                            "value": 2020.835,
+                            "confidence": [
+                              2020.835,
+                              2020.906
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Bangladesh",
+                            "confidence": {
+                              "Bangladesh": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CRP-5"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_amazonense"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A340C",
+                              "C480T",
+                              "A754T"
+                            ],
+                            "BUE93_04725": [
+                              "S114R",
+                              "T252S"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "BUE93_04725: S114R, T252S"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.031,
+                      "num_date": {
+                        "value": 2021.895,
+                        "confidence": [
+                          2019.922,
+                          2021.895
+                        ]
+                      },
+                      "country": {
+                        "value": "Bangladesh",
+                        "confidence": {
+                          "Bangladesh": 1.0
+                        },
+                        "entropy": 0.000225
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G27A",
+                          "C46T",
+                          "C747A"
+                        ],
+                        "BUE93_04725": [
+                          "P16S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "BUE93_04725: P16S"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CRP-6_WP_307909253-NZ_JAVFJF020000021-9828",
+                        "node_attrs": {
+                          "div": 0.031,
+                          "num_date": {
+                            "value": 2021.895,
+                            "confidence": [
+                              2021.895,
+                              2021.895
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Bangladesh",
+                            "confidence": {
+                              "Bangladesh": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CRP-6"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_amazonense"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CRP-6_MDQ4538882-JAVFJF010000009-2831",
+                        "node_attrs": {
+                          "div": 0.031,
+                          "num_date": {
+                            "value": 2023.637,
+                            "confidence": [
+                              2023.637,
+                              2023.637
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "Bangladesh",
+                            "confidence": {
+                              "Bangladesh": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CRP-6"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_amazonense"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

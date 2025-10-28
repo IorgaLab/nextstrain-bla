@@ -1,0 +1,564 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 ALI beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 738,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "A6E04_09515": {
+        "end": 738,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2004.591,
+        "confidence": [
+          2004.386,
+          2004.819
+        ]
+      },
+      "country": {
+        "value": "USA"
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "ALI-2_OCH27094-MAJO01000013-122519",
+        "node_attrs": {
+          "div": 0.194,
+          "num_date": {
+            "value": 2006.681,
+            "confidence": [
+              2006.681,
+              2006.681
+            ]
+          },
+          "organism": {
+            "value": "Aliivibrio_fischeri"
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "country": {
+            "value": "USA"
+          },
+          "allele": {
+            "value": "ALI-2"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A9G",
+              "C10T",
+              "C14T",
+              "C16A",
+              "T17C",
+              "C18G",
+              "C20G",
+              "A21T",
+              "T22A",
+              "C25G",
+              "A27C",
+              "A28G",
+              "G29T",
+              "T31G",
+              "G33T",
+              "G34T",
+              "A37G",
+              "G40A",
+              "C42T",
+              "G49A",
+              "A51C",
+              "G52T",
+              "C53T",
+              "A54G",
+              "G55T",
+              "A57T",
+              "A59C",
+              "G60A",
+              "T63A",
+              "G64A",
+              "A66G",
+              "G67C",
+              "A72G",
+              "G75T",
+              "A91G",
+              "A98C",
+              "T99C",
+              "G103A",
+              "G105T",
+              "A111G",
+              "A117G",
+              "G120A",
+              "A122T",
+              "T126A",
+              "C138T",
+              "C142A",
+              "G144A",
+              "C147T",
+              "A150G",
+              "A151G",
+              "G153T",
+              "A156C",
+              "T159A",
+              "T163A",
+              "G165T",
+              "G166A",
+              "C168T",
+              "T177C",
+              "T180A",
+              "A183G",
+              "G184A",
+              "G186T",
+              "G190A",
+              "T192A",
+              "G196A",
+              "A198T",
+              "G201A",
+              "T211C",
+              "G213C",
+              "G222T",
+              "G234T",
+              "T235G",
+              "C236A",
+              "G237A",
+              "C240T",
+              "G258A",
+              "G275A",
+              "A276T",
+              "A282G",
+              "T283C",
+              "A285T",
+              "G288A",
+              "G294A",
+              "C297A",
+              "T301A",
+              "T303A",
+              "T324G",
+              "C340T",
+              "C352G",
+              "A353G",
+              "C354G",
+              "G360T",
+              "C366T",
+              "G369T",
+              "T370A",
+              "T372A",
+              "G373A",
+              "C374A",
+              "G381C",
+              "C384T",
+              "A386C",
+              "T388C",
+              "T390G",
+              "T391C",
+              "G393T",
+              "A394G",
+              "A395T",
+              "A396T",
+              "G397A",
+              "G398A",
+              "T399A",
+              "C405T",
+              "G408A",
+              "A415G",
+              "G417A",
+              "C424G",
+              "A426G",
+              "T429A",
+              "T430G",
+              "C431A",
+              "A432C",
+              "G434C",
+              "G436C",
+              "T438G",
+              "A439G",
+              "T441A",
+              "T443C",
+              "G447T",
+              "G450A",
+              "A453G",
+              "A456T",
+              "G462A",
+              "A468G",
+              "C474T",
+              "G484C",
+              "G485C",
+              "C489A",
+              "A493T",
+              "T495A",
+              "T504C",
+              "G505T",
+              "G507T",
+              "G510T",
+              "A513G",
+              "A519T",
+              "A522T",
+              "A534G",
+              "C538T",
+              "T540A",
+              "C543T",
+              "C546A",
+              "T549C",
+              "T550C",
+              "A561G",
+              "T573C",
+              "G576C",
+              "A579T",
+              "G582C",
+              "T588A",
+              "T591C",
+              "C597A",
+              "T600C",
+              "A601C",
+              "G603C",
+              "A604G",
+              "A605C",
+              "A606T",
+              "G607A",
+              "C608A",
+              "G615T",
+              "G616C",
+              "G617A",
+              "T621A",
+              "T624C",
+              "C625A",
+              "A630T",
+              "A633G",
+              "C638T",
+              "G639A",
+              "C649G",
+              "G652A",
+              "A654T",
+              "T657A",
+              "T660G",
+              "G664A",
+              "A672G",
+              "G678A",
+              "A679G",
+              "C681T",
+              "G682A",
+              "T684C",
+              "T687G",
+              "G688A",
+              "G696T",
+              "A700G",
+              "T702A",
+              "A706T",
+              "G707C",
+              "G718A",
+              "A724G",
+              "C726T",
+              "G728A",
+              "A731G",
+              "A732T",
+              "A733T",
+              "T735G",
+              "G738A"
+            ],
+            "A6E04_09515": [
+              "L4F",
+              "T5I",
+              "L6T",
+              "A7G",
+              "L8I",
+              "L9V",
+              "S10V",
+              "S11A",
+              "V12F",
+              "I13V",
+              "G14S",
+              "A17T",
+              "A18L",
+              "A19S",
+              "E20A",
+              "V22M",
+              "V23L",
+              "I31V",
+              "N33T",
+              "V35I",
+              "Y41F",
+              "Q48K",
+              "K51D",
+              "K52N",
+              "L55I",
+              "V56I",
+              "V62I",
+              "V64I",
+              "G66S",
+              "S79E",
+              "G92D",
+              "S101T",
+              "H118G",
+              "E120D",
+              "S124T",
+              "A125K",
+              "K129T",
+              "F130L",
+              "K132V",
+              "G133K",
+              "T139A",
+              "Q142E",
+              "F143L",
+              "S144D",
+              "G145A",
+              "D146Q",
+              "N147E",
+              "F148S",
+              "E152D",
+              "G162P",
+              "T165S",
+              "A169S",
+              "L173F",
+              "M201L",
+              "K202A",
+              "A203K",
+              "G206Q",
+              "Q209K",
+              "K210N",
+              "T213I",
+              "Q217E",
+              "A218T",
+              "N219K",
+              "F220L",
+              "V222I",
+              "N227D",
+              "V228I",
+              "E230K",
+              "I234V",
+              "D240N",
+              "T242A",
+              "G243E",
+              "K244S",
+              "I245L"
+            ]
+          },
+          "labels": {
+            "aa": "A6E04_09515: L4F, T5I, L6T, A7G, L8I, L9V, S10V, S11A, V12F, I13V, G14S, A17T, A18L, A19S, E20A, V22M, V23L, I31V, N33T, V35I, Y41F, Q48K, K51D, K52N, L55I, V56I, V62I, V64I, G66S, S79E, G92D, S101T, H118G, E120D, S124T, A125K, K129T, F130L, K132V, G133K, T139A, Q142E, F143L, S144D, G145A, D146Q, N147E, F148S, E152D, G162P, T165S, A169S, L173F, M201L, K202A, A203K, G206Q, Q209K, K210N, T213I, Q217E, A218T, N219K, F220L, V222I, N227D, V228I, E230K, I234V, D240N, T242A, G243E, K244S, I245L"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.171,
+          "num_date": {
+            "value": 2006.281,
+            "confidence": [
+              2006.223,
+              2006.296
+            ]
+          },
+          "country": {
+            "value": "USA"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "ALI-1_OEF19526-AJYJ02000044-178798",
+            "node_attrs": {
+              "div": 0.174,
+              "num_date": {
+                "value": 2006.31,
+                "confidence": [
+                  2006.248,
+                  2006.327
+                ]
+              },
+              "organism": {
+                "value": "Aliivibrio_logei_5S-186"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA"
+              },
+              "allele": {
+                "value": "ALI-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T45C",
+                  "T501C"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.176,
+              "num_date": {
+                "value": 2006.322,
+                "confidence": [
+                  2006.291,
+                  2006.322
+                ]
+              },
+              "country": {
+                "value": "USA"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T30C",
+                  "A249G",
+                  "A618G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "MAJU01000008.1",
+                "node_attrs": {
+                  "div": 0.176,
+                  "num_date": {
+                    "value": 2006.322,
+                    "confidence": [
+                      2006.291,
+                      2006.349
+                    ]
+                  },
+                  "country": {
+                    "value": "USA"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "ALI-1_OCH22080-MAJU01000008-660774",
+                "node_attrs": {
+                  "div": 0.176,
+                  "num_date": {
+                    "value": 2006.322,
+                    "confidence": [
+                      2006.322,
+                      2006.322
+                    ]
+                  },
+                  "organism": {
+                    "value": "Aliivibrio_logei"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA"
+                  },
+                  "allele": {
+                    "value": "ALI-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

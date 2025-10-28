@@ -1,0 +1,369 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 EAM beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 957,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaEAM-1": {
+        "end": 957,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2000.834,
+        "confidence": [
+          1998.352,
+          2003.582
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.559,
+          "USA": 0.401,
+          "South Korea": 0.0402
+        },
+        "entropy": 0.821
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "EAM-2_SFP12905-FOWZ01000002-434678",
+        "node_attrs": {
+          "div": 0.0364,
+          "num_date": {
+            "value": 2016.824,
+            "confidence": [
+              2016.824,
+              2016.824
+            ]
+          },
+          "organism": {
+            "value": "Qipengyuania_nanhaisediminis"
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "allele": {
+            "value": "EAM-2"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T19G",
+              "T48G",
+              "C51T",
+              "A57G",
+              "A58G",
+              "A63T",
+              "A78G",
+              "G84A",
+              "G88A",
+              "G93C",
+              "A113C",
+              "C116A",
+              "G118C",
+              "T119C",
+              "G135A",
+              "T156C",
+              "A204G",
+              "C234T",
+              "T240C",
+              "A249G",
+              "A267T",
+              "C270A",
+              "C276T",
+              "C297G",
+              "G303A",
+              "T342C",
+              "T381C",
+              "C402A",
+              "C411T",
+              "A414C",
+              "G441C",
+              "T442G",
+              "T447G",
+              "T452C",
+              "A510G",
+              "A522C",
+              "A529G",
+              "C530T",
+              "A553G",
+              "G564A",
+              "A570G",
+              "G588A",
+              "C591T",
+              "T600G",
+              "G609C",
+              "T663C",
+              "G697A",
+              "A731T",
+              "G753A",
+              "T759C",
+              "C783T",
+              "A819G",
+              "C828T",
+              "A861C",
+              "C865T",
+              "C888A",
+              "C897T",
+              "A904G",
+              "T912G",
+              "A918G",
+              "G930A",
+              "T934C",
+              "G936T"
+            ],
+            "blaEAM-1": [
+              "F7V",
+              "I20V",
+              "A30T",
+              "E38A",
+              "T39K",
+              "V40P",
+              "E89D",
+              "D90E",
+              "L148V",
+              "V151A",
+              "T177V",
+              "I185V",
+              "I190M",
+              "V233I",
+              "Y244F",
+              "H289Y",
+              "K302E"
+            ]
+          },
+          "labels": {
+            "aa": "blaEAM-1: F7V, I20V, A30T, E38A, T39K, V40P, E89D, D90E, L148V, V151A, T177V, I185V, I190M, V233I, Y244F, H289Y, K302E"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.0321,
+          "num_date": {
+            "value": 2011.593,
+            "confidence": [
+              2011.289,
+              2011.593
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.952,
+              "South Korea": 0.0385,
+              "USA": 0.00995
+            },
+            "entropy": 0.219
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "JN558591.1",
+            "node_attrs": {
+              "div": 0.0321,
+              "num_date": {
+                "value": 2011.593,
+                "confidence": [
+                  2008.213,
+                  2019.156
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.949,
+                  "South Korea": 0.0398,
+                  "USA": 0.011
+                },
+                "entropy": 0.228
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "EAM-1_MXO95542-WTYI01000001-771568",
+            "node_attrs": {
+              "div": 0.0321,
+              "num_date": {
+                "value": 2019.968,
+                "confidence": [
+                  2019.968,
+                  2019.968
+                ]
+              },
+              "organism": {
+                "value": "Qipengyuania_aquimaris"
+              },
+              "country": {
+                "value": "South Korea",
+                "confidence": {
+                  "South Korea": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "EAM-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "EAM-1_AFN85388-JN558591-1",
+            "node_attrs": {
+              "div": 0.0321,
+              "num_date": {
+                "value": 2011.593,
+                "confidence": [
+                  2011.593,
+                  2011.593
+                ]
+              },
+              "organism": {
+                "value": "Qipengyuania_aquimaris"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "EAM-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

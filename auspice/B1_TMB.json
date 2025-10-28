@@ -1,0 +1,472 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 TMB beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 738,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "tmb-1": {
+        "end": 738,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "UNITED KINGDOM": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2008.215,
+        "confidence": [
+          1956.114,
+          2010.617
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.996,
+          "UNITED KINGDOM": 0.00372
+        },
+        "entropy": 0.0298
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00136,
+          "num_date": {
+            "value": 2012.799,
+            "confidence": [
+              2006.762,
+              2012.799
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 1.0
+            },
+            "entropy": 7.79e-05
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T544C"
+            ],
+            "tmb-1": [
+              "S182P"
+            ]
+          },
+          "labels": {
+            "aa": "tmb-1: S182P"
+          }
+        },
+        "children": [
+          {
+            "name": "TMB-2_BAM73613-AB758278-99",
+            "node_attrs": {
+              "div": 0.00136,
+              "num_date": {
+                "value": 2012.799,
+                "confidence": [
+                  2012.799,
+                  2012.799
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Acinetobacter_courvalinii"
+              },
+              "allele": {
+                "value": "TMB-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "TMB-2_BAM73612-AB758277-161",
+            "node_attrs": {
+              "div": 0.00136,
+              "num_date": {
+                "value": 2012.799,
+                "confidence": [
+                  2012.799,
+                  2012.799
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Acinetobacter_pittii"
+              },
+              "allele": {
+                "value": "TMB-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2011.015,
+            "confidence": [
+              1996.926,
+              2011.015
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.991,
+              "UNITED KINGDOM": 0.00744,
+              "France": 0.00125
+            },
+            "entropy": 0.0535
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "FR771847.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2011.015,
+                "confidence": [
+                  1893.756,
+                  2372.003
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.989,
+                  "UNITED KINGDOM": 0.0088,
+                  "France": 0.00187
+                },
+                "entropy": 0.064
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "TMB-1_CBY88906-FR771847-16",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2011.015,
+                "confidence": [
+                  2011.015,
+                  2011.015
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "UNITED KINGDOM",
+                "confidence": {
+                  "UNITED KINGDOM": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Achromobacter_sp._sallbros1"
+              },
+              "allele": {
+                "value": "TMB-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2012.758,
+                "confidence": [
+                  2011.543,
+                  2013.612
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.993,
+                  "France": 0.00405,
+                  "UNITED KINGDOM": 0.00279
+                },
+                "entropy": 0.0455
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "TMB-1_BAN81906-AB846838-1167",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2013.621,
+                    "confidence": [
+                      2013.621,
+                      2013.621
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Acinetobacter_baumannii"
+                  },
+                  "allele": {
+                    "value": "TMB-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2017.859,
+                    "confidence": [
+                      2014.192,
+                      2017.859
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.999
+                    },
+                    "entropy": 0.00524
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "TMB-1_AXV46154-MH401970-21886",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2018.404,
+                        "confidence": [
+                          2018.404,
+                          2018.404
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_hormaechei_subsp._steigerwaltii"
+                      },
+                      "allele": {
+                        "value": "TMB-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "TMB-1_PXY62695-QJHC01000153-665",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2017.859,
+                        "confidence": [
+                          2017.859,
+                          2017.859
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Enterobacter_hormaechei_subsp._steigerwaltii"
+                      },
+                      "allele": {
+                        "value": "TMB-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

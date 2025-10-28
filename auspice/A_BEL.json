@@ -1,0 +1,1850 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A BEL beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 852,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "bla(BEL1)": {
+        "end": 852,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Portugal": {
+            "latitude": 39.54046,
+            "longitude": -8.174701
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Spain": {
+            "latitude": 40.4637,
+            "longitude": -3.7492
+          },
+          "Poland": {
+            "latitude": 52.0977181,
+            "longitude": 19.0258159
+          },
+          "Belgium": {
+            "latitude": 50.707735,
+            "longitude": 4.677726
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2005.355,
+        "confidence": [
+          1977.14,
+          2005.355
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.49,
+          "The Netherlands": 0.467,
+          "Spain": 0.0204,
+          "Belgium": 0.00639,
+          "USA": 0.00526,
+          "Poland": 0.00521,
+          "Portugal": 0.00521
+        },
+        "entropy": 0.899
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "BEL-4_ANM44757-KX388629-1",
+        "node_attrs": {
+          "div": 0.00117,
+          "num_date": {
+            "value": 2016.455,
+            "confidence": [
+              2016.455,
+              2016.455
+            ]
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "country": {
+            "value": "The Netherlands",
+            "confidence": {
+              "The Netherlands": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "allele": {
+            "value": "BEL-4"
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "organism": {
+            "value": "Pseudomonas_aeruginosa"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A517G"
+            ],
+            "bla(BEL1)": [
+              "T173A"
+            ]
+          },
+          "labels": {
+            "aa": "bla(BEL1): T173A"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2005.437,
+            "confidence": [
+              2005.363,
+              2005.437
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.985,
+              "Spain": 0.0152
+            },
+            "entropy": 0.0811
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "DQ089809.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2005.437,
+                "confidence": [
+                  1996.696,
+                  2214.512
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.845,
+                  "Spain": 0.0552,
+                  "The Netherlands": 0.0304,
+                  "Belgium": 0.02,
+                  "USA": 0.0166,
+                  "Poland": 0.0165,
+                  "Portugal": 0.0165
+                },
+                "entropy": 0.69
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BEL-1_AAZ04368-DQ089809-1006",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2005.437,
+                "confidence": [
+                  2005.437,
+                  2005.437
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "BEL-1"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BEL-3_ACT09140-GQ202694-1",
+            "node_attrs": {
+              "div": 0.00117,
+              "num_date": {
+                "value": 2009.396,
+                "confidence": [
+                  2009.396,
+                  2009.396
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "Spain",
+                "confidence": {
+                  "Spain": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "BEL-3"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C478T"
+                ],
+                "bla(BEL1)": [
+                  "P160S"
+                ]
+              },
+              "labels": {
+                "aa": "bla(BEL1): P160S"
+              }
+            }
+          },
+          {
+            "name": "BEL-2_ACV69996-FJ666063-1",
+            "node_attrs": {
+              "div": 0.00117,
+              "num_date": {
+                "value": 2009.073,
+                "confidence": [
+                  2009.073,
+                  2009.073
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "BEL-2"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C463T"
+                ],
+                "bla(BEL1)": [
+                  "L155F"
+                ]
+              },
+              "labels": {
+                "aa": "bla(BEL1): L155F"
+              }
+            }
+          },
+          {
+            "name": "BEL-1_AGY30880-KF525338-573",
+            "node_attrs": {
+              "div": 0.00117,
+              "num_date": {
+                "value": 2013.599,
+                "confidence": [
+                  2013.599,
+                  2013.599
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "BEL-1"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "uncultured_bacterium"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A324G"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2008.83,
+                "confidence": [
+                  2005.748,
+                  2009.091
+                ]
+              },
+              "country": {
+                "value": "Spain",
+                "confidence": {
+                  "Spain": 0.89,
+                  "France": 0.0805,
+                  "Belgium": 0.0254
+                },
+                "entropy": 0.426
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2008.842,
+                    "confidence": [
+                      2007.359,
+                      2009.362
+                    ]
+                  },
+                  "country": {
+                    "value": "Spain",
+                    "confidence": {
+                      "Spain": 0.992,
+                      "France": 0.00472,
+                      "Belgium": 0.00246
+                    },
+                    "entropy": 0.0526
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2008.976,
+                        "confidence": [
+                          2008.766,
+                          2009.397
+                        ]
+                      },
+                      "country": {
+                        "value": "Spain",
+                        "confidence": {
+                          "Spain": 0.999
+                        },
+                        "entropy": 0.00927
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BEL-1_HBY0598543-DAGQDC010000095-43",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.001,
+                            "confidence": [
+                              2009.001,
+                              2009.646
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae_subsp._pneumoniae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BEL-1_HBY0649251-DAGQDJ010000100-44",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.001,
+                            "confidence": [
+                              2009.001,
+                              2009.646
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae_subsp._pneumoniae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2008.976,
+                        "confidence": [
+                          2008.766,
+                          2009.397
+                        ]
+                      },
+                      "country": {
+                        "value": "Spain",
+                        "confidence": {
+                          "Spain": 0.999
+                        },
+                        "entropy": 0.00927
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BEL-1_HBY0604291-DAGQDD010000129-44",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.001,
+                            "confidence": [
+                              2009.001,
+                              2009.646
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae_subsp._pneumoniae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BEL-1_HBY0649107-DAGQDJ010000078-43",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.001,
+                            "confidence": [
+                              2009.001,
+                              2009.646
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae_subsp._pneumoniae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2008.83,
+                    "confidence": [
+                      2007.282,
+                      2009.338
+                    ]
+                  },
+                  "country": {
+                    "value": "Spain",
+                    "confidence": {
+                      "Spain": 0.902,
+                      "Belgium": 0.0802,
+                      "France": 0.0151
+                    },
+                    "entropy": 0.376
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2008.976,
+                        "confidence": [
+                          2008.767,
+                          2009.409
+                        ]
+                      },
+                      "country": {
+                        "value": "Spain",
+                        "confidence": {
+                          "Spain": 0.993,
+                          "Belgium": 0.00571
+                        },
+                        "entropy": 0.0467
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BEL-1_HBY0604207-DAGQDD010000091-43",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.001,
+                            "confidence": [
+                              2009.001,
+                              2009.651
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae_subsp._pneumoniae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BEL-1_HBY0598657-DAGQDC010000132-44",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.001,
+                            "confidence": [
+                              2009.001,
+                              2009.651
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_pneumoniae_subsp._pneumoniae"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 4.56e-17,
+                      "num_date": {
+                        "value": 2008.888,
+                        "confidence": [
+                          2008.81,
+                          2009.413
+                        ]
+                      },
+                      "country": {
+                        "value": "Belgium",
+                        "confidence": {
+                          "Belgium": 0.622,
+                          "Spain": 0.375,
+                          "France": 0.0016
+                        },
+                        "entropy": 0.685
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BEL-1_ADB27941-GU250439-763",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2009.914,
+                            "confidence": [
+                              2009.914,
+                              2009.914
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "Belgium",
+                            "confidence": {
+                              "Belgium": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "BEL-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 5.7e-17,
+                          "num_date": {
+                            "value": 2008.948,
+                            "confidence": [
+                              2008.79,
+                              2009.651
+                            ]
+                          },
+                          "country": {
+                            "value": "Belgium",
+                            "confidence": {
+                              "Belgium": 0.62,
+                              "Spain": 0.377
+                            },
+                            "entropy": 0.681
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BEL-1_ADB27948-GU250441-1878",
+                            "node_attrs": {
+                              "div": 6.84e-17,
+                              "num_date": {
+                                "value": 2009.916,
+                                "confidence": [
+                                  2009.916,
+                                  2009.916
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "country": {
+                                "value": "Belgium",
+                                "confidence": {
+                                  "Belgium": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "BEL-1"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_aeruginosa"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000010",
+                            "node_attrs": {
+                              "div": 6.84e-17,
+                              "num_date": {
+                                "value": 2008.982,
+                                "confidence": [
+                                  2008.849,
+                                  2009.928
+                                ]
+                              },
+                              "country": {
+                                "value": "Spain",
+                                "confidence": {
+                                  "Spain": 0.948,
+                                  "Belgium": 0.0495
+                                },
+                                "entropy": 0.217
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BEL-1_HAT7507369-DACUGO010000152-7261",
+                                "node_attrs": {
+                                  "div": 7.97e-17,
+                                  "num_date": {
+                                    "value": 2012.637,
+                                    "confidence": [
+                                      2012.001,
+                                      2012.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Spain",
+                                    "confidence": {
+                                      "Spain": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "BEL-1"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "Citrobacter_braakii"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000011",
+                                "node_attrs": {
+                                  "div": 7.97e-17,
+                                  "num_date": {
+                                    "value": 2008.982,
+                                    "confidence": [
+                                      2008.858,
+                                      2011.104
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Spain",
+                                    "confidence": {
+                                      "Spain": 0.988,
+                                      "Belgium": 0.00785,
+                                      "Poland": 0.00347
+                                    },
+                                    "entropy": 0.0785
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000012",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2012.683,
+                                        "confidence": [
+                                          2009.911,
+                                          2013.677
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Spain",
+                                        "confidence": {
+                                          "Spain": 0.999
+                                        },
+                                        "entropy": 0.0115
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BEL-1_HAT1563822-DACSDR010000127-44",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2013.839,
+                                            "confidence": [
+                                              2013.001,
+                                              2013.999
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "country": {
+                                            "value": "Spain",
+                                            "confidence": {
+                                              "Spain": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "BEL-1"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Raoultella_ornithinolytica"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "BEL-1_HAT1563945-DACSDR010000210-85",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2013.839,
+                                            "confidence": [
+                                              2013.001,
+                                              2013.999
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "country": {
+                                            "value": "Spain",
+                                            "confidence": {
+                                              "Spain": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "BEL-1"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Raoultella_ornithinolytica"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000013",
+                                    "node_attrs": {
+                                      "div": 9.11e-17,
+                                      "num_date": {
+                                        "value": 2010.202,
+                                        "confidence": [
+                                          2009.136,
+                                          2013.647
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Spain",
+                                        "confidence": {
+                                          "Spain": 0.938,
+                                          "Poland": 0.0511,
+                                          "Belgium": 0.00588,
+                                          "Portugal": 0.00229,
+                                          "France": 0.00182
+                                        },
+                                        "entropy": 0.278
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BEL-1_AHD24679-KF745070-3077",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2013.766,
+                                            "confidence": [
+                                              2013.766,
+                                              2013.766
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "Poland",
+                                            "confidence": {
+                                              "Poland": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "BEL-1"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "organism": {
+                                            "value": "Klebsiella_pneumoniae"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000014",
+                                        "node_attrs": {
+                                          "div": 1.03e-16,
+                                          "num_date": {
+                                            "value": 2011.449,
+                                            "confidence": [
+                                              2009.893,
+                                              2013.14
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Spain",
+                                            "confidence": {
+                                              "Spain": 0.987,
+                                              "Poland": 0.005,
+                                              "Portugal": 0.00494,
+                                              "Belgium": 0.00174
+                                            },
+                                            "entropy": 0.0849
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "NODE_0000015",
+                                            "node_attrs": {
+                                              "div": 1.14e-16,
+                                              "num_date": {
+                                                "value": 2012.621,
+                                                "confidence": [
+                                                  2011.606,
+                                                  2015.578
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Spain",
+                                                "confidence": {
+                                                  "Spain": 0.999
+                                                },
+                                                "entropy": 0.011
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "BEL-1_UXE41589-CP104455-13735",
+                                                "node_attrs": {
+                                                  "div": 1.25e-16,
+                                                  "num_date": {
+                                                    "value": 2015.25,
+                                                    "confidence": [
+                                                      2015.001,
+                                                      2015.999
+                                                    ]
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "country": {
+                                                    "value": "Spain",
+                                                    "confidence": {
+                                                      "Spain": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "BEL-1"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Raoultella_ornithinolytica"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "BEL-1_UXE41588-CP104455-12769",
+                                                "node_attrs": {
+                                                  "div": 1.25e-16,
+                                                  "num_date": {
+                                                    "value": 2015.25,
+                                                    "confidence": [
+                                                      2015.001,
+                                                      2015.999
+                                                    ]
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "country": {
+                                                    "value": "Spain",
+                                                    "confidence": {
+                                                      "Spain": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "BEL-1"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Raoultella_ornithinolytica"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "name": "NODE_0000016",
+                                            "node_attrs": {
+                                              "div": 1.14e-16,
+                                              "num_date": {
+                                                "value": 2011.531,
+                                                "confidence": [
+                                                  2009.961,
+                                                  2014.132
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Spain",
+                                                "confidence": {
+                                                  "Spain": 0.942,
+                                                  "Portugal": 0.0492,
+                                                  "Belgium": 0.00353,
+                                                  "Poland": 0.00226,
+                                                  "France": 0.00177
+                                                },
+                                                "entropy": 0.26
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "BEL-1_MBM3074682-WLVC01000113-143",
+                                                "node_attrs": {
+                                                  "div": 1.25e-16,
+                                                  "num_date": {
+                                                    "value": 2015.415,
+                                                    "confidence": [
+                                                      2015.415,
+                                                      2015.487
+                                                    ]
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "country": {
+                                                    "value": "Portugal",
+                                                    "confidence": {
+                                                      "Portugal": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "BEL-1"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Lelliottia_sp._RWM.1"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000017",
+                                                "node_attrs": {
+                                                  "div": 1.25e-16,
+                                                  "num_date": {
+                                                    "value": 2012.6,
+                                                    "confidence": [
+                                                      2011.043,
+                                                      2014.205
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "Spain",
+                                                    "confidence": {
+                                                      "Spain": 0.996,
+                                                      "Portugal": 0.00242
+                                                    },
+                                                    "entropy": 0.0323
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000018",
+                                                    "node_attrs": {
+                                                      "div": 1.37e-16,
+                                                      "num_date": {
+                                                        "value": 2013.942,
+                                                        "confidence": [
+                                                          2012.375,
+                                                          2015.464
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "Spain",
+                                                        "confidence": {
+                                                          "Spain": 0.999
+                                                        },
+                                                        "entropy": 0.00741
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "BEL-1_HBW0306108-DAGKAB010000092-43",
+                                                        "node_attrs": {
+                                                          "div": 1.48e-16,
+                                                          "num_date": {
+                                                            "value": 2015.464,
+                                                            "confidence": [
+                                                              2015.464,
+                                                              2015.464
+                                                            ]
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "country": {
+                                                            "value": "Spain",
+                                                            "confidence": {
+                                                              "Spain": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "BEL-1"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_pneumoniae"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "BEL-1_HBW0306368-DAGKAB010000115-84",
+                                                        "node_attrs": {
+                                                          "div": 1.48e-16,
+                                                          "num_date": {
+                                                            "value": 2015.464,
+                                                            "confidence": [
+                                                              2015.464,
+                                                              2015.464
+                                                            ]
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "country": {
+                                                            "value": "Spain",
+                                                            "confidence": {
+                                                              "Spain": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "BEL-1"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_pneumoniae"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000019",
+                                                    "node_attrs": {
+                                                      "div": 1.37e-16,
+                                                      "num_date": {
+                                                        "value": 2012.719,
+                                                        "confidence": [
+                                                          2011.359,
+                                                          2014.33
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "Spain",
+                                                        "confidence": {
+                                                          "Spain": 0.996,
+                                                          "USA": 0.00212
+                                                        },
+                                                        "entropy": 0.0287
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "BEL-1_MES3656985-JAWVAA010000014-49166",
+                                                        "node_attrs": {
+                                                          "div": 1.48e-16,
+                                                          "num_date": {
+                                                            "value": 2018.273,
+                                                            "confidence": [
+                                                              2018.273,
+                                                              2018.273
+                                                            ]
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "country": {
+                                                            "value": "Spain",
+                                                            "confidence": {
+                                                              "Spain": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "BEL-1"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Escherichia_coli"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000020",
+                                                        "node_attrs": {
+                                                          "div": 1.48e-16,
+                                                          "num_date": {
+                                                            "value": 2013.978,
+                                                            "confidence": [
+                                                              2012.216,
+                                                              2015.391
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "Spain",
+                                                            "confidence": {
+                                                              "Spain": 0.95,
+                                                              "USA": 0.0438,
+                                                              "Belgium": 0.00306,
+                                                              "France": 0.00159
+                                                            },
+                                                            "entropy": 0.229
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "NODE_0000021",
+                                                            "node_attrs": {
+                                                              "div": 1.59e-16,
+                                                              "num_date": {
+                                                                "value": 2015.152,
+                                                                "confidence": [
+                                                                  2013.538,
+                                                                  2018.734
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "Spain",
+                                                                "confidence": {
+                                                                  "Spain": 0.997,
+                                                                  "USA": 0.00184
+                                                                },
+                                                                "entropy": 0.0236
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "BEL-1_MES3662397-JAWVAB010000003-79672",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2019.045,
+                                                                    "confidence": [
+                                                                      2019.045,
+                                                                      2019.045
+                                                                    ]
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location from metadata"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Spain",
+                                                                    "confidence": {
+                                                                      "Spain": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BEL-1"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Escherichia_coli"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "BEL-1_QPL19263-MT720902-9656",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2020.512,
+                                                                    "confidence": [
+                                                                      2020.512,
+                                                                      2020.512
+                                                                    ]
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Spain",
+                                                                    "confidence": {
+                                                                      "Spain": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BEL-1"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Klebsiella_pneumoniae"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000022",
+                                                            "node_attrs": {
+                                                              "div": 1.59e-16,
+                                                              "num_date": {
+                                                                "value": 2014.999,
+                                                                "confidence": [
+                                                                  2012.502,
+                                                                  2016.193
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 0.973,
+                                                                  "Spain": 0.0253
+                                                                },
+                                                                "entropy": 0.137
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "NODE_0000023",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2016.159,
+                                                                    "confidence": [
+                                                                      2014.326,
+                                                                      2018.757
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "USA",
+                                                                    "confidence": {
+                                                                      "USA": 0.999
+                                                                    },
+                                                                    "entropy": 0.00703
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "BEL-1_HBX5227771-DAGORT010000106-49",
+                                                                    "node_attrs": {
+                                                                      "div": 1.82e-16,
+                                                                      "num_date": {
+                                                                        "value": 2019.042,
+                                                                        "confidence": [
+                                                                          2019.042,
+                                                                          2019.042
+                                                                        ]
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BEL-1"
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Klebsiella_pneumoniae"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "BEL-1_HBX5222151-DAGORS010000108-818",
+                                                                    "node_attrs": {
+                                                                      "div": 1.82e-16,
+                                                                      "num_date": {
+                                                                        "value": 2019.042,
+                                                                        "confidence": [
+                                                                          2019.042,
+                                                                          2019.042
+                                                                        ]
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BEL-1"
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Klebsiella_pneumoniae"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000024",
+                                                                "node_attrs": {
+                                                                  "div": 1.71e-16,
+                                                                  "num_date": {
+                                                                    "value": 2016.159,
+                                                                    "confidence": [
+                                                                      2014.326,
+                                                                      2018.757
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "USA",
+                                                                    "confidence": {
+                                                                      "USA": 0.999
+                                                                    },
+                                                                    "entropy": 0.00703
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "BEL-1_HBX5227548-DAGORT010000093-28",
+                                                                    "node_attrs": {
+                                                                      "div": 1.82e-16,
+                                                                      "num_date": {
+                                                                        "value": 2019.042,
+                                                                        "confidence": [
+                                                                          2019.042,
+                                                                          2019.042
+                                                                        ]
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BEL-1"
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Klebsiella_pneumoniae"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "BEL-1_HBX5221849-DAGORS010000071-817",
+                                                                    "node_attrs": {
+                                                                      "div": 1.82e-16,
+                                                                      "num_date": {
+                                                                        "value": 2019.042,
+                                                                        "confidence": [
+                                                                          2019.042,
+                                                                          2019.042
+                                                                        ]
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BEL-1"
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Klebsiella_pneumoniae"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

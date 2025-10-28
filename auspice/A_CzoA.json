@@ -1,0 +1,4498 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A CzoA beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 906,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "CSE6_008_13910": {
+        "end": 906,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "Italy",
+            "#5098B9"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Switzerland": {
+            "latitude": 46.8182,
+            "longitude": 8.2275
+          },
+          "Spain": {
+            "latitude": 40.4637,
+            "longitude": -3.7492
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "Belgium": {
+            "latitude": 50.707735,
+            "longitude": 4.677726
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "Chile": {
+            "latitude": -31.7613364,
+            "longitude": -71.3187696
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Italy": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "Cameroon": {
+            "latitude": 4.6125522,
+            "longitude": 13.1535811
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1073.21,
+        "confidence": [
+          995.703,
+          1157.655
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.663,
+          "Brazil": 0.0835,
+          "": 0.0589,
+          "USA": 0.0493,
+          "India": 0.0293,
+          "Japan": 0.0213,
+          "Chile": 0.0155,
+          "United Kingdom": 0.0135,
+          "Cameroon": 0.00914,
+          "Italy": 0.0084,
+          "Germany": 0.00689,
+          "Spain": 0.00634,
+          "South Korea": 0.00628,
+          "Pakistan": 0.00627,
+          "Malaysia": 0.00627,
+          "Switzerland": 0.00623,
+          "Belgium": 0.00509,
+          "N/A": 0.0047
+        },
+        "entropy": 1.432
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000045",
+        "node_attrs": {
+          "div": 0.00336,
+          "num_date": {
+            "value": 1112.144,
+            "confidence": [
+              1052.571,
+              1209.333
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.604,
+              "Brazil": 0.106,
+              "": 0.0689,
+              "USA": 0.0599,
+              "India": 0.0358,
+              "Japan": 0.0217,
+              "Chile": 0.0183,
+              "United Kingdom": 0.0135,
+              "Cameroon": 0.011,
+              "Italy": 0.00874,
+              "Germany": 0.00746,
+              "Switzerland": 0.00702,
+              "South Korea": 0.00695,
+              "Pakistan": 0.00694,
+              "Malaysia": 0.00694,
+              "Spain": 0.00692,
+              "Belgium": 0.00555,
+              "N/A": 0.00527
+            },
+            "entropy": 1.585
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000046",
+            "node_attrs": {
+              "div": 0.0889,
+              "num_date": {
+                "value": 2005.839,
+                "confidence": [
+                  1994.641,
+                  2014.48
+                ]
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T37G",
+                  "A83G",
+                  "A90G",
+                  "G104A",
+                  "A112G",
+                  "C117G",
+                  "G120A",
+                  "G123T",
+                  "A136G",
+                  "T138C",
+                  "T142G",
+                  "T144A",
+                  "G147A",
+                  "C150G",
+                  "A153C",
+                  "G205A",
+                  "T210A",
+                  "T244C",
+                  "A255G",
+                  "C258T",
+                  "G278A",
+                  "T291C",
+                  "C306T",
+                  "T309C",
+                  "C312T",
+                  "T313G",
+                  "T315G",
+                  "T318G",
+                  "A343G",
+                  "A345T",
+                  "G354A",
+                  "G360C",
+                  "A363C",
+                  "A367G",
+                  "T369C",
+                  "C375A",
+                  "G388C",
+                  "T411G",
+                  "C414G",
+                  "G429A",
+                  "T435C",
+                  "C439T",
+                  "G447T",
+                  "C453T",
+                  "C498T",
+                  "C504G",
+                  "C507G",
+                  "G513T",
+                  "C522T",
+                  "T528G",
+                  "A538T",
+                  "T540C",
+                  "G543T",
+                  "C544T",
+                  "C564T",
+                  "G576A",
+                  "G606A",
+                  "C639T",
+                  "T672C",
+                  "A683G",
+                  "C699A",
+                  "T719C",
+                  "G732C",
+                  "A745C",
+                  "T780G",
+                  "C785A",
+                  "T792G",
+                  "G795C",
+                  "G801T",
+                  "C828T",
+                  "C829G",
+                  "G831C",
+                  "T837C",
+                  "G840A",
+                  "C859A"
+                ],
+                "CSE6_008_13910": [
+                  "L13V",
+                  "K28R",
+                  "R35K",
+                  "S38G",
+                  "D39E",
+                  "I46V",
+                  "S48A",
+                  "G69S",
+                  "D70E",
+                  "R93K",
+                  "S105A",
+                  "I115V",
+                  "N123D",
+                  "E130Q",
+                  "E149D",
+                  "T180S",
+                  "K228R",
+                  "V240A",
+                  "A262E",
+                  "P277A",
+                  "L287M"
+                ]
+              },
+              "labels": {
+                "aa": "CSE6_008_13910: L13V, K28R, R35K, S38G, D39E, I46V, S48A, G69S, D70E, R93K, S105A, I115V, N123D, E130Q, E149D, T180S, K228R, V240A, A262E, P277A, L287M"
+              }
+            },
+            "children": [
+              {
+                "name": "CzoA-14_MEB5965022-JALKOW010000002-631662",
+                "node_attrs": {
+                  "div": 0.09,
+                  "num_date": {
+                    "value": 2019.659,
+                    "confidence": [
+                      2019.659,
+                      2019.659
+                    ]
+                  },
+                  "organism": {
+                    "value": "Comamonas_testosteroni"
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CzoA-14"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G531A"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "CzoA-15_WP_294255791-NZ_CAJYJF010000014-23208",
+                "node_attrs": {
+                  "div": 0.09,
+                  "num_date": {
+                    "value": 2020.772,
+                    "confidence": [
+                      2020.772,
+                      2020.772
+                    ]
+                  },
+                  "organism": {
+                    "value": "uncultured_Comamonas_sp."
+                  },
+                  "allele": {
+                    "value": "CzoA-15"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A769G"
+                    ],
+                    "CSE6_008_13910": [
+                      "I257V"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CSE6_008_13910: I257V"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.0889,
+                  "num_date": {
+                    "value": 2013.34,
+                    "confidence": [
+                      2006.554,
+                      2015.762
+                    ]
+                  },
+                  "country": {
+                    "value": "Chile",
+                    "confidence": {
+                      "Chile": 0.392,
+                      "Cameroon": 0.372,
+                      "": 0.131,
+                      "India": 0.0989,
+                      "China": 0.00281
+                    },
+                    "entropy": 1.278
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CzoA-14_MPS92361-SPEY01000006-92348",
+                    "node_attrs": {
+                      "div": 0.0889,
+                      "num_date": {
+                        "value": 2015.749,
+                        "confidence": [
+                          2015.749,
+                          2015.823
+                        ]
+                      },
+                      "organism": {
+                        "value": "Comamonas_sp."
+                      },
+                      "country": {
+                        "value": "Chile",
+                        "confidence": {
+                          "Chile": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CzoA-14"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "CzoA-14_MDR3064415-JAITTT010000008-72399",
+                    "node_attrs": {
+                      "div": 0.0889,
+                      "num_date": {
+                        "value": 2017.464,
+                        "confidence": [
+                          2017.464,
+                          2017.464
+                        ]
+                      },
+                      "organism": {
+                        "value": "Comamonas_sp."
+                      },
+                      "country": {
+                        "value": "Cameroon",
+                        "confidence": {
+                          "Cameroon": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CzoA-14"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000049",
+            "node_attrs": {
+              "div": 0.0216,
+              "num_date": {
+                "value": 1545.879,
+                "confidence": [
+                  1474.015,
+                  1633.781
+                ]
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 0.558,
+                  "USA": 0.235,
+                  "China": 0.135,
+                  "Japan": 0.0141,
+                  "": 0.0106,
+                  "Chile": 0.0092,
+                  "Switzerland": 0.00589,
+                  "India": 0.00505,
+                  "United Kingdom": 0.00348,
+                  "Italy": 0.00275,
+                  "Germany": 0.00271,
+                  "South Korea": 0.0027,
+                  "Pakistan": 0.0027,
+                  "Malaysia": 0.0027,
+                  "Cameroon": 0.00268,
+                  "Spain": 0.00259,
+                  "N/A": 0.00221,
+                  "Belgium": 0.00216
+                },
+                "entropy": 1.303
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A153G",
+                  "T210C",
+                  "A255C",
+                  "G264C",
+                  "T319G",
+                  "C333A",
+                  "C372G",
+                  "C409G",
+                  "C439A",
+                  "G447A",
+                  "C594T",
+                  "C642A",
+                  "T662C",
+                  "C765G"
+                ],
+                "CSE6_008_13910": [
+                  "S107A",
+                  "L137V",
+                  "L147M",
+                  "V221A"
+                ]
+              },
+              "labels": {
+                "aa": "CSE6_008_13910: S107A, L137V, L147M, V221A"
+              }
+            },
+            "children": [
+              {
+                "name": "CzoA-16_NIF81912-VWWQ01000001-16439",
+                "node_attrs": {
+                  "div": 0.0478,
+                  "num_date": {
+                    "value": 2017.064,
+                    "confidence": [
+                      2017.064,
+                      2017.064
+                    ]
+                  },
+                  "organism": {
+                    "value": "Comamonas_sp._Tr-654"
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "CzoA-16"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G96T",
+                      "G104A",
+                      "C114T",
+                      "C156T",
+                      "A195G",
+                      "G271T",
+                      "T318A",
+                      "G354A",
+                      "C355T",
+                      "G360A",
+                      "G372A",
+                      "C375T",
+                      "G429A",
+                      "C552G",
+                      "G570C",
+                      "A591C",
+                      "C678G",
+                      "C687T",
+                      "G706A",
+                      "G801A",
+                      "C802T",
+                      "G831A",
+                      "G866A"
+                    ],
+                    "CSE6_008_13910": [
+                      "R35K",
+                      "A91S",
+                      "R119W",
+                      "Q197H",
+                      "G236S",
+                      "R289K"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CSE6_008_13910: R35K, A91S, R119W, Q197H, G236S, R289K"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000050",
+                "node_attrs": {
+                  "div": 0.0295,
+                  "num_date": {
+                    "value": 1697.062,
+                    "confidence": [
+                      1626.004,
+                      1764.244
+                    ]
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 0.502,
+                      "USA": 0.348,
+                      "China": 0.106,
+                      "Japan": 0.0151,
+                      "Chile": 0.00938,
+                      "Switzerland": 0.0058,
+                      "": 0.00315,
+                      "India": 0.00136,
+                      "United Kingdom": 0.00105
+                    },
+                    "entropy": 1.174
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T186C",
+                      "A558G",
+                      "G576A",
+                      "C639T",
+                      "C705G",
+                      "G843A",
+                      "G852A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000051",
+                    "node_attrs": {
+                      "div": 0.034,
+                      "num_date": {
+                        "value": 1797.385,
+                        "confidence": [
+                          1732.257,
+                          1854.842
+                        ]
+                      },
+                      "country": {
+                        "value": "Brazil",
+                        "confidence": {
+                          "Brazil": 0.534,
+                          "USA": 0.392,
+                          "China": 0.0486,
+                          "Japan": 0.00679,
+                          "Chile": 0.00431,
+                          "Switzerland": 0.00302,
+                          "": 0.00231,
+                          "India": 0.00102
+                        },
+                        "entropy": 1.0
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A333G",
+                          "G408C",
+                          "C453T",
+                          "G831T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CzoA-13_WP_043003018-NZ_JRQK01000002-141304",
+                        "node_attrs": {
+                          "div": 0.0464,
+                          "num_date": {
+                            "value": 2006.001,
+                            "confidence": [
+                              2006.001,
+                              2006.899
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni_ZNC0007"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-13"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A86G",
+                              "C128G",
+                              "G285T",
+                              "G319T",
+                              "G436A",
+                              "C469T",
+                              "G573A",
+                              "G597A",
+                              "C610T",
+                              "C799T",
+                              "T849C"
+                            ],
+                            "CSE6_008_13910": [
+                              "Q29R",
+                              "A43G",
+                              "E95D",
+                              "A107S",
+                              "V146M"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: Q29R, A43G, E95D, A107S, V146M"
+                          }
+                        }
+                      },
+                      {
+                        "name": "CzoA-17_MBS3018133-JAANES010000001-963196",
+                        "node_attrs": {
+                          "div": 0.0475,
+                          "num_date": {
+                            "value": 2012.25,
+                            "confidence": [
+                              2012.25,
+                              2012.321
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_sp._PE63"
+                          },
+                          "country": {
+                            "value": "Brazil",
+                            "confidence": {
+                              "Brazil": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-17"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G162A",
+                              "C300A",
+                              "A351G",
+                              "G429A",
+                              "G510A",
+                              "G546T",
+                              "T672G",
+                              "C693T",
+                              "G720A",
+                              "C723T",
+                              "G765A",
+                              "C825T"
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000052",
+                    "node_attrs": {
+                      "div": 0.0465,
+                      "num_date": {
+                        "value": 1954.485,
+                        "confidence": [
+                          1920.839,
+                          1982.87
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.391,
+                          "China": 0.272,
+                          "Japan": 0.132,
+                          "Chile": 0.0967,
+                          "Switzerland": 0.0618,
+                          "Brazil": 0.0365,
+                          "": 0.00144
+                        },
+                        "entropy": 1.575
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C154T",
+                          "C163T",
+                          "C169G",
+                          "G171C",
+                          "A281G",
+                          "C292T",
+                          "T318A",
+                          "G330T",
+                          "C490A",
+                          "A578G",
+                          "C693T",
+                          "G694T",
+                          "G732T",
+                          "G807A",
+                          "C834T"
+                        ],
+                        "CSE6_008_13910": [
+                          "L52F",
+                          "H55Y",
+                          "L57V",
+                          "D94G",
+                          "L164M",
+                          "Q193R",
+                          "A232S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CSE6_008_13910: L52F, H55Y, L57V, D94G, L164M, Q193R, A232S"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000053",
+                        "node_attrs": {
+                          "div": 0.051,
+                          "num_date": {
+                            "value": 2013.53,
+                            "confidence": [
+                              2000.612,
+                              2013.53
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.498,
+                              "Chile": 0.408,
+                              "China": 0.0455,
+                              "USA": 0.0357,
+                              "Switzerland": 0.00575,
+                              "Brazil": 0.0036
+                            },
+                            "entropy": 1.052
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C258T",
+                              "C268T",
+                              "G280A",
+                              "C607T"
+                            ],
+                            "CSE6_008_13910": [
+                              "G94S"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: G94S"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CzoA-12_AIJ46625-CP006704-2678938",
+                            "node_attrs": {
+                              "div": 0.051,
+                              "num_date": {
+                                "value": 2013.53,
+                                "confidence": [
+                                  2013.53,
+                                  2013.53
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni_TK102"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-12"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CzoA-12_MPS89743-SPFA01000010-448060",
+                            "node_attrs": {
+                              "div": 0.051,
+                              "num_date": {
+                                "value": 2015.749,
+                                "confidence": [
+                                  2015.749,
+                                  2015.823
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_sp."
+                              },
+                              "country": {
+                                "value": "Chile",
+                                "confidence": {
+                                  "Chile": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-12"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000054",
+                        "node_attrs": {
+                          "div": 0.0487,
+                          "num_date": {
+                            "value": 2001.001,
+                            "confidence": [
+                              1987.573,
+                              2001.882
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.458,
+                              "China": 0.4,
+                              "Switzerland": 0.117,
+                              "Japan": 0.0129,
+                              "Chile": 0.00754,
+                              "Brazil": 0.00321
+                            },
+                            "entropy": 1.1
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C708G",
+                              "T792A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CzoA-11_TYK69733-VOQU01000005-21763",
+                            "node_attrs": {
+                              "div": 0.0499,
+                              "num_date": {
+                                "value": 2017.33,
+                                "confidence": [
+                                  2017.33,
+                                  2017.33
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_sp._Z3"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-11"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G21A"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "name": "CzoA-11_EED67776-AAUJ02000001-2969255",
+                            "node_attrs": {
+                              "div": 0.0487,
+                              "num_date": {
+                                "value": 2009.004,
+                                "confidence": [
+                                  2009.004,
+                                  2009.004
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni_KF-1"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-11"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CzoA-11_WQG65906-CP140157-4908387",
+                            "node_attrs": {
+                              "div": 0.0487,
+                              "num_date": {
+                                "value": 2001.929,
+                                "confidence": [
+                                  2001.001,
+                                  2001.999
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni"
+                              },
+                              "country": {
+                                "value": "Switzerland",
+                                "confidence": {
+                                  "Switzerland": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-11"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000038",
+        "node_attrs": {
+          "div": 0.00787,
+          "num_date": {
+            "value": 1192.26,
+            "confidence": [
+              1120.436,
+              1272.384
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.871,
+              "": 0.0256,
+              "Brazil": 0.0192,
+              "Japan": 0.0167,
+              "USA": 0.0164,
+              "United Kingdom": 0.0118,
+              "India": 0.00793,
+              "Italy": 0.00554,
+              "Chile": 0.00526,
+              "Germany": 0.00315,
+              "Spain": 0.00271,
+              "Cameroon": 0.00238,
+              "Belgium": 0.00229,
+              "South Korea": 0.00216,
+              "Pakistan": 0.00216,
+              "Malaysia": 0.00216,
+              "Switzerland": 0.00198,
+              "N/A": 0.00145
+            },
+            "entropy": 0.697
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T93C",
+              "G96A",
+              "A465G",
+              "A627G",
+              "C646T",
+              "C830A"
+            ],
+            "CSE6_008_13910": [
+              "P277Q"
+            ]
+          },
+          "labels": {
+            "aa": "CSE6_008_13910: P277Q"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000039",
+            "node_attrs": {
+              "div": 0.018,
+              "num_date": {
+                "value": 1545.185,
+                "confidence": [
+                  1428.611,
+                  1617.972
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.917,
+                  "United Kingdom": 0.0204,
+                  "Italy": 0.0147,
+                  "": 0.0094,
+                  "Japan": 0.00653,
+                  "Germany": 0.00545,
+                  "USA": 0.00474,
+                  "Brazil": 0.00468,
+                  "India": 0.00297,
+                  "Chile": 0.00243,
+                  "South Korea": 0.00167,
+                  "Pakistan": 0.00167,
+                  "Malaysia": 0.00167,
+                  "Spain": 0.00164,
+                  "Switzerland": 0.00142,
+                  "Cameroon": 0.00125,
+                  "Belgium": 0.0012,
+                  "N/A": 0.00111
+                },
+                "entropy": 0.484
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C204T",
+                  "C252A",
+                  "C258T",
+                  "C604T",
+                  "C687T",
+                  "C693T",
+                  "C723T",
+                  "C768T",
+                  "C785A",
+                  "G840T",
+                  "A880G"
+                ],
+                "CSE6_008_13910": [
+                  "A262E",
+                  "I294V"
+                ]
+              },
+              "labels": {
+                "aa": "CSE6_008_13910: A262E, I294V"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000040",
+                "node_attrs": {
+                  "div": 0.0488,
+                  "num_date": {
+                    "value": 1994.317,
+                    "confidence": [
+                      1970.798,
+                      2010.451
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.999,
+                      "": 0.00144
+                    },
+                    "entropy": 0.0114
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T42C",
+                      "G45A",
+                      "C50T",
+                      "A90G",
+                      "A106G",
+                      "A146G",
+                      "A153G",
+                      "C163T",
+                      "T210C",
+                      "G273C",
+                      "A276G",
+                      "T291A",
+                      "G357T",
+                      "G360T",
+                      "C464T",
+                      "C503T",
+                      "T540C",
+                      "G586T",
+                      "A591G",
+                      "G707C",
+                      "C711T",
+                      "G810A",
+                      "T870C",
+                      "C873T",
+                      "G877A",
+                      "G879C",
+                      "A884G"
+                    ],
+                    "CSE6_008_13910": [
+                      "A17V",
+                      "T36A",
+                      "Q49R",
+                      "H55Y",
+                      "A155V",
+                      "T168I",
+                      "V196L",
+                      "G236A",
+                      "A293T",
+                      "K295R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CSE6_008_13910: A17V, T36A, Q49R, H55Y, A155V, T168I, V196L, G236A, A293T, K295R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CzoA-18_UUC95894-CP101743-2538777",
+                    "node_attrs": {
+                      "div": 0.0488,
+                      "num_date": {
+                        "value": 2021.711,
+                        "confidence": [
+                          2021.711,
+                          2021.711
+                        ]
+                      },
+                      "organism": {
+                        "value": "Comamonas_sp._C11"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CzoA-18"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000041",
+                    "node_attrs": {
+                      "div": 0.05,
+                      "num_date": {
+                        "value": 2011.939,
+                        "confidence": [
+                          1993.087,
+                          2016.014
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.995,
+                          "": 0.00482
+                        },
+                        "entropy": 0.0309
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C507T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CzoA-18_WEE80117-CP090445-2686700",
+                        "node_attrs": {
+                          "div": 0.05,
+                          "num_date": {
+                            "value": 2021.33,
+                            "confidence": [
+                              2021.33,
+                              2021.33
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-18"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CzoA-19_WP_182286792-NZ_CP043568-2490157",
+                        "node_attrs": {
+                          "div": 0.0522,
+                          "num_date": {
+                            "value": 2018.497,
+                            "confidence": [
+                              2018.497,
+                              2018.497
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni"
+                          },
+                          "allele": {
+                            "value": "CzoA-19"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G184A",
+                              "G444A"
+                            ],
+                            "CSE6_008_13910": [
+                              "G62S"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: G62S"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000042",
+                "node_attrs": {
+                  "div": 0.0362,
+                  "num_date": {
+                    "value": 2005.393,
+                    "confidence": [
+                      1975.636,
+                      2010.391
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.725,
+                      "United Kingdom": 0.127,
+                      "Italy": 0.114,
+                      "Germany": 0.032
+                    },
+                    "entropy": 0.87
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G99A",
+                      "C154T",
+                      "C159A",
+                      "G249C",
+                      "C333A",
+                      "C372G",
+                      "T411C",
+                      "T540G",
+                      "C547G",
+                      "A558G",
+                      "C750T",
+                      "C822T",
+                      "C828T",
+                      "G846T",
+                      "T849G",
+                      "G885A"
+                    ],
+                    "CSE6_008_13910": [
+                      "L52F",
+                      "P183A"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CSE6_008_13910: L52F, P183A"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CzoA-3_RDI15171-QQAS01000001-493795",
+                    "node_attrs": {
+                      "div": 0.0384,
+                      "num_date": {
+                        "value": 2018.558,
+                        "confidence": [
+                          2018.558,
+                          2018.558
+                        ]
+                      },
+                      "organism": {
+                        "value": "Comamonas_sp._AG1104"
+                      },
+                      "country": {
+                        "value": "Italy",
+                        "confidence": {
+                          "Italy": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CzoA-3"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C151A",
+                          "T816C"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "CzoA-3_SUY77527-UFXL01000001-2622127",
+                    "node_attrs": {
+                      "div": 0.0362,
+                      "num_date": {
+                        "value": 2008.417,
+                        "confidence": [
+                          1975.083,
+                          2050.535
+                        ]
+                      },
+                      "organism": {
+                        "value": "Comamonas_testosteroni"
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "CzoA-3"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000025",
+                    "node_attrs": {
+                      "div": 0.0362,
+                      "num_date": {
+                        "value": 2011.966,
+                        "confidence": [
+                          1997.316,
+                          2011.966
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.827,
+                          "Germany": 0.104,
+                          "United Kingdom": 0.0361,
+                          "Italy": 0.0316
+                        },
+                        "entropy": 0.636
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CzoA-3_EHN63954-AHIL01000043-336837",
+                        "node_attrs": {
+                          "div": 0.0362,
+                          "num_date": {
+                            "value": 2011.966,
+                            "confidence": [
+                              2011.966,
+                              2011.966
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni_ATCC_11996"
+                          },
+                          "country": {
+                            "value": "Germany",
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-3"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CzoA-3_QQN69111-CP067086-4546175",
+                        "node_attrs": {
+                          "div": 0.0362,
+                          "num_date": {
+                            "value": 2015.582,
+                            "confidence": [
+                              2015.582,
+                              2015.656
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-3"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000030",
+            "node_attrs": {
+              "div": 0.0306,
+              "num_date": {
+                "value": 1485.136,
+                "confidence": [
+                  1392.424,
+                  1525.764
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.925,
+                  "Japan": 0.0269,
+                  "": 0.0145,
+                  "United Kingdom": 0.00942,
+                  "USA": 0.00778,
+                  "Belgium": 0.00303,
+                  "Spain": 0.0026,
+                  "Chile": 0.00246,
+                  "Brazil": 0.00226,
+                  "India": 0.00124
+                },
+                "entropy": 0.416
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G99A",
+                  "C121T",
+                  "T142G",
+                  "T144C",
+                  "C154T",
+                  "C163T",
+                  "C247T",
+                  "G259A",
+                  "G273A",
+                  "A276G",
+                  "A277C",
+                  "C282T",
+                  "G285A",
+                  "G324A",
+                  "G357C",
+                  "A363T",
+                  "C396T",
+                  "C678T",
+                  "G732A",
+                  "G852A"
+                ],
+                "CSE6_008_13910": [
+                  "S48A",
+                  "L52F",
+                  "H55Y",
+                  "V87M"
+                ]
+              },
+              "labels": {
+                "aa": "CSE6_008_13910: S48A, L52F, H55Y, V87M"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000031",
+                "node_attrs": {
+                  "div": 0.0418,
+                  "num_date": {
+                    "value": 1719.446,
+                    "confidence": [
+                      1637.635,
+                      1783.412
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.737,
+                      "United Kingdom": 0.0613,
+                      "": 0.0593,
+                      "Belgium": 0.037,
+                      "USA": 0.0329,
+                      "Spain": 0.0267,
+                      "Chile": 0.0134,
+                      "Japan": 0.0119,
+                      "India": 0.00253,
+                      "Brazil": 0.0025,
+                      "Italy": 0.00211,
+                      "Germany": 0.00203,
+                      "South Korea": 0.00201,
+                      "Pakistan": 0.00201,
+                      "Malaysia": 0.00201,
+                      "Switzerland": 0.00187,
+                      "Cameroon": 0.00158,
+                      "N/A": 0.00151
+                    },
+                    "entropy": 1.13
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C128T",
+                      "C204T",
+                      "A345C",
+                      "C391T",
+                      "T540G",
+                      "C547G",
+                      "G586T",
+                      "C604T",
+                      "C768T",
+                      "G843A",
+                      "A880G"
+                    ],
+                    "CSE6_008_13910": [
+                      "A43V",
+                      "P183A",
+                      "V196L",
+                      "I294V"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CSE6_008_13910: A43V, P183A, V196L, I294V"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000032",
+                    "node_attrs": {
+                      "div": 0.0588,
+                      "num_date": {
+                        "value": 1940.522,
+                        "confidence": [
+                          1900.654,
+                          1973.416
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.364,
+                          "": 0.286,
+                          "USA": 0.178,
+                          "China": 0.142,
+                          "Belgium": 0.00523,
+                          "Spain": 0.00423,
+                          "Japan": 0.00325,
+                          "Chile": 0.00298,
+                          "India": 0.00189,
+                          "Brazil": 0.00179,
+                          "Italy": 0.00159,
+                          "Switzerland": 0.00152,
+                          "Germany": 0.0015,
+                          "South Korea": 0.00147,
+                          "Pakistan": 0.00147,
+                          "Malaysia": 0.00147,
+                          "Cameroon": 0.00124,
+                          "N/A": 0.00119
+                        },
+                        "entropy": 1.494
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T137A",
+                          "T287C",
+                          "T288G",
+                          "C595T",
+                          "C635G",
+                          "T646C",
+                          "A654G",
+                          "T672C",
+                          "G688C",
+                          "C723T",
+                          "G737C",
+                          "C785A",
+                          "G840T",
+                          "A852G",
+                          "C903T"
+                        ],
+                        "CSE6_008_13910": [
+                          "I46N",
+                          "I96T",
+                          "A212G",
+                          "V230L",
+                          "S246T",
+                          "A262E"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CSE6_008_13910: I46N, I96T, A212G, V230L, S246T, A262E"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CzoA-20_WKL16239-CP129672-310932",
+                        "node_attrs": {
+                          "div": 0.0644,
+                          "num_date": {
+                            "value": 2014.001,
+                            "confidence": [
+                              2014.001,
+                              2014.899
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-20"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A153G",
+                              "T210C",
+                              "C672A",
+                              "A876G"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000033",
+                        "node_attrs": {
+                          "div": 0.0633,
+                          "num_date": {
+                            "value": 2008.679,
+                            "confidence": [
+                              1995.682,
+                              2008.679
+                            ]
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C36T",
+                              "A108C",
+                              "T128C",
+                              "G487A",
+                              "A489T"
+                            ],
+                            "CSE6_008_13910": [
+                              "V43A",
+                              "E163N"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: V43A, E163N"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CzoA-21_WQD45311-CP139994-2467720",
+                            "node_attrs": {
+                              "div": 0.0633,
+                              "num_date": {
+                                "value": 2023.925,
+                                "confidence": [
+                                  2023.925,
+                                  2023.925
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-21"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CzoA-21_WP_304349310-NZ_CALMIJ010000006-58242",
+                            "node_attrs": {
+                              "div": 0.0633,
+                              "num_date": {
+                                "value": 2008.679,
+                                "confidence": [
+                                  2008.679,
+                                  2008.679
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni"
+                              },
+                              "allele": {
+                                "value": "CzoA-21"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000034",
+                    "node_attrs": {
+                      "div": 0.0542,
+                      "num_date": {
+                        "value": 1979.362,
+                        "confidence": [
+                          1952.859,
+                          1991.494
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.675,
+                          "Belgium": 0.166,
+                          "Spain": 0.106,
+                          "Chile": 0.0437,
+                          "": 0.00272,
+                          "United Kingdom": 0.00207,
+                          "USA": 0.00121
+                        },
+                        "entropy": 1.002
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C333G",
+                          "C561A",
+                          "T678C",
+                          "A716C",
+                          "G717A",
+                          "A732C",
+                          "G786A",
+                          "C813G",
+                          "T849C",
+                          "C859T"
+                        ],
+                        "CSE6_008_13910": [
+                          "K239T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CSE6_008_13910: K239T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CzoA-23_MDN5505069-JAKDHT010000132-6310",
+                        "node_attrs": {
+                          "div": 0.0565,
+                          "num_date": {
+                            "value": 2018.79,
+                            "confidence": [
+                              2018.79,
+                              2018.79
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_sp."
+                          },
+                          "country": {
+                            "value": "Spain",
+                            "confidence": {
+                              "Spain": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-23"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A140G",
+                              "C439T"
+                            ],
+                            "CSE6_008_13910": [
+                              "Q47R"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: Q47R"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000036",
+                        "node_attrs": {
+                          "div": 0.0565,
+                          "num_date": {
+                            "value": 2013.67,
+                            "confidence": [
+                              2000.201,
+                              2013.67
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.803,
+                              "Chile": 0.154,
+                              "Belgium": 0.0232,
+                              "Spain": 0.0167
+                            },
+                            "entropy": 0.648
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G48A",
+                              "A273G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CzoA-5_MPT09692-SPET01000004-74003",
+                            "node_attrs": {
+                              "div": 0.0565,
+                              "num_date": {
+                                "value": 2015.749,
+                                "confidence": [
+                                  2015.749,
+                                  2015.823
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_sp."
+                              },
+                              "country": {
+                                "value": "Chile",
+                                "confidence": {
+                                  "Chile": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-5"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CzoA-5_KGH29654-AWOR01000046-338709",
+                            "node_attrs": {
+                              "div": 0.0565,
+                              "num_date": {
+                                "value": 2013.67,
+                                "confidence": [
+                                  2013.67,
+                                  2013.67
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-5"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000037",
+                        "node_attrs": {
+                          "div": 0.0553,
+                          "num_date": {
+                            "value": 1998.163,
+                            "confidence": [
+                              1984.477,
+                              1998.176
+                            ]
+                          },
+                          "country": {
+                            "value": "Belgium",
+                            "confidence": {
+                              "Belgium": 0.999
+                            },
+                            "entropy": 0.00789
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G468T"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CzoA-5_KWT67877-LMXT01000078-82664",
+                            "node_attrs": {
+                              "div": 0.0553,
+                              "num_date": {
+                                "value": 1998.176,
+                                "confidence": [
+                                  1998.163,
+                                  1998.245
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni"
+                              },
+                              "country": {
+                                "value": "Belgium",
+                                "confidence": {
+                                  "Belgium": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-5"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CzoA-5_KOC24335-JNVD01000013-503015",
+                            "node_attrs": {
+                              "div": 0.0553,
+                              "num_date": {
+                                "value": 2013.763,
+                                "confidence": [
+                                  2013.763,
+                                  2013.763
+                                ]
+                              },
+                              "organism": {
+                                "value": "Comamonas_testosteroni"
+                              },
+                              "country": {
+                                "value": "Belgium",
+                                "confidence": {
+                                  "Belgium": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "CzoA-5"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000028",
+                "node_attrs": {
+                  "div": 0.0407,
+                  "num_date": {
+                    "value": 1550.049,
+                    "confidence": [
+                      1491.685,
+                      1609.492
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.936,
+                      "Japan": 0.0377,
+                      "": 0.00785,
+                      "United Kingdom": 0.00473,
+                      "USA": 0.00397,
+                      "Chile": 0.00155,
+                      "Belgium": 0.00149,
+                      "Spain": 0.00139,
+                      "Brazil": 0.00118
+                    },
+                    "entropy": 0.339
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A6G",
+                      "A135G",
+                      "T186C",
+                      "A195G",
+                      "T495G",
+                      "A508C",
+                      "A525G",
+                      "C594T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000029",
+                    "node_attrs": {
+                      "div": 0.068,
+                      "num_date": {
+                        "value": 1921.247,
+                        "confidence": [
+                          1876.676,
+                          1956.433
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.997,
+                          "China": 0.0024
+                        },
+                        "entropy": 0.0209
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C117T",
+                          "G126A",
+                          "T174C",
+                          "C198T",
+                          "C234T",
+                          "C252T",
+                          "C327G",
+                          "C372A",
+                          "C442T",
+                          "C456T",
+                          "G495A",
+                          "T555C",
+                          "A558G",
+                          "C567T",
+                          "A654G",
+                          "G690T",
+                          "C693T",
+                          "T719C",
+                          "C723T",
+                          "C762T",
+                          "C765G",
+                          "C783T",
+                          "G810A",
+                          "C873T"
+                        ],
+                        "CSE6_008_13910": [
+                          "V240A"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CSE6_008_13910: V240A"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CzoA-4_BDR08797-AP026738-2401617",
+                        "node_attrs": {
+                          "div": 0.0747,
+                          "num_date": {
+                            "value": 1994.999,
+                            "confidence": [
+                              1994.101,
+                              1994.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_thiooxydans"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-4"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G104A",
+                              "C139G",
+                              "C156A",
+                              "C169T",
+                              "C207T",
+                              "G573A"
+                            ],
+                            "CSE6_008_13910": [
+                              "R35K",
+                              "Q47E",
+                              "F52L"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: R35K, Q47E, F52L"
+                          }
+                        }
+                      },
+                      {
+                        "name": "CzoA-22_GEQ75566-BKBW01000004-317006",
+                        "node_attrs": {
+                          "div": 0.0736,
+                          "num_date": {
+                            "value": 2019.593,
+                            "confidence": [
+                              2019.593,
+                              2019.593
+                            ]
+                          },
+                          "organism": {
+                            "value": "Comamonas_testosteroni"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "CzoA-22"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A146G",
+                              "G330T",
+                              "G387T",
+                              "G499A",
+                              "C828T"
+                            ],
+                            "CSE6_008_13910": [
+                              "Q49R",
+                              "Q129H",
+                              "G167S"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: Q49R, Q129H, G167S"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000016",
+                    "node_attrs": {
+                      "div": 0.0554,
+                      "num_date": {
+                        "value": 1717.003,
+                        "confidence": [
+                          1663.072,
+                          1761.006
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.997,
+                          "Japan": 0.00305
+                        },
+                        "entropy": 0.0253
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T42G",
+                          "C567A",
+                          "G579A",
+                          "A716C",
+                          "G717A",
+                          "C756T",
+                          "C765T",
+                          "G786A",
+                          "C813G",
+                          "A830C",
+                          "T849C",
+                          "C859T",
+                          "G885A",
+                          "G898A"
+                        ],
+                        "CSE6_008_13910": [
+                          "K239T",
+                          "Q277P",
+                          "A300T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CSE6_008_13910: K239T, Q277P, A300T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000017",
+                        "node_attrs": {
+                          "div": 0.0621,
+                          "num_date": {
+                            "value": 1909.157,
+                            "confidence": [
+                              1866.589,
+                              1946.966
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.999,
+                              "Japan": 0.00106
+                            },
+                            "entropy": 0.00877
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C130T",
+                              "C183T",
+                              "C252T",
+                              "C503T",
+                              "T594C",
+                              "C849A"
+                            ],
+                            "CSE6_008_13910": [
+                              "T168I"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "CSE6_008_13910: T168I"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000043",
+                            "node_attrs": {
+                              "div": 0.0621,
+                              "num_date": {
+                                "value": 1987.552,
+                                "confidence": [
+                                  1950.599,
+                                  2013.929
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.984,
+                                  "Japan": 0.0163
+                                },
+                                "entropy": 0.0853
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CzoA-1_MDO1475436-JABFDR010000018-24711",
+                                "node_attrs": {
+                                  "div": 0.0632,
+                                  "num_date": {
+                                    "value": 2018.916,
+                                    "confidence": [
+                                      2018.916,
+                                      2018.99
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Comamonas_thiooxydans"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CzoA-1"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C177T"
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "name": "CzoA-1_BDB69782-AP025193-2457345",
+                                "node_attrs": {
+                                  "div": 0.0632,
+                                  "num_date": {
+                                    "value": 2019.001,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.899
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Comamonas_thiooxydans"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CzoA-1"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C231T"
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000019",
+                            "node_attrs": {
+                              "div": 0.0655,
+                              "num_date": {
+                                "value": 1954.095,
+                                "confidence": [
+                                  1921.242,
+                                  1973.279
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 0.000167
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G390A",
+                                  "C643T",
+                                  "A654G"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000020",
+                                "node_attrs": {
+                                  "div": 0.0666,
+                                  "num_date": {
+                                    "value": 1967.693,
+                                    "confidence": [
+                                      1943.677,
+                                      1988.979
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": 1.57e-05
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C372A"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "CzoA-1_QOQ84290-CP063057-2401299",
+                                    "node_attrs": {
+                                      "div": 0.0688,
+                                      "num_date": {
+                                        "value": 2019.377,
+                                        "confidence": [
+                                          2019.377,
+                                          2019.377
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Comamonas_thiooxydans"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CzoA-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G42A",
+                                          "A390G"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000021",
+                                    "node_attrs": {
+                                      "div": 0.0699,
+                                      "num_date": {
+                                        "value": 1997.43,
+                                        "confidence": [
+                                          1980.002,
+                                          2010.438
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": 6.22e-06
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A489G",
+                                          "G576A",
+                                          "A849C"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CzoA-24_MBL5976052-JAEIJE010000001-460580",
+                                        "node_attrs": {
+                                          "div": 0.0744,
+                                          "num_date": {
+                                            "value": 2018.999,
+                                            "confidence": [
+                                              2018.101,
+                                              2018.999
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_sp._NyZ500"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-24"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C23T",
+                                              "C177T",
+                                              "C849T",
+                                              "T859C"
+                                            ],
+                                            "CSE6_008_13910": [
+                                              "T8I"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "CSE6_008_13910: T8I"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "CzoA-1_UUE94792-CP092733-790618",
+                                        "node_attrs": {
+                                          "div": 0.0699,
+                                          "num_date": {
+                                            "value": 2016.835,
+                                            "confidence": [
+                                              2016.835,
+                                              2016.906
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_thiooxydans"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000022",
+                                "node_attrs": {
+                                  "div": 0.0677,
+                                  "num_date": {
+                                    "value": 1981.448,
+                                    "confidence": [
+                                      1963.082,
+                                      1997.929
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.998,
+                                      "South Korea": 0.00146
+                                    },
+                                    "entropy": 0.0121
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G603A",
+                                      "C741A"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "CzoA-1_XGB20567-CP079703-2519339",
+                                    "node_attrs": {
+                                      "div": 0.0677,
+                                      "num_date": {
+                                        "value": 2019.829,
+                                        "confidence": [
+                                          2019.829,
+                                          2019.829
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Comamonas_thiooxydans"
+                                      },
+                                      "country": {
+                                        "value": "South Korea",
+                                        "confidence": {
+                                          "South Korea": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CzoA-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000023",
+                                    "node_attrs": {
+                                      "div": 0.0688,
+                                      "num_date": {
+                                        "value": 1997.498,
+                                        "confidence": [
+                                          1979.9,
+                                          2004.796
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": 0.000757
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C231T"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000024",
+                                        "node_attrs": {
+                                          "div": 0.071,
+                                          "num_date": {
+                                            "value": 2010.269,
+                                            "confidence": [
+                                              2001.826,
+                                              2011.824
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.993,
+                                              "Japan": 0.00664
+                                            },
+                                            "entropy": 0.0468
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G654A",
+                                              "C768T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CzoA-1_BCX53273-AP024703-3165404",
+                                            "node_attrs": {
+                                              "div": 0.071,
+                                              "num_date": {
+                                                "value": 2011.929,
+                                                "confidence": [
+                                                  2011.001,
+                                                  2011.999
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Comamonas_testosteroni"
+                                              },
+                                              "country": {
+                                                "value": "Japan",
+                                                "confidence": {
+                                                  "Japan": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CzoA-1"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000055",
+                                            "node_attrs": {
+                                              "div": 0.071,
+                                              "num_date": {
+                                                "value": 2013.22,
+                                                "confidence": [
+                                                  2007.594,
+                                                  2014.258
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 0.994,
+                                                  "Malaysia": 0.00404,
+                                                  "Japan": 0.00207
+                                                },
+                                                "entropy": 0.042
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "CzoA-1_TYK77604-VOQT01000001-283658",
+                                                "node_attrs": {
+                                                  "div": 0.071,
+                                                  "num_date": {
+                                                    "value": 2017.33,
+                                                    "confidence": [
+                                                      2017.33,
+                                                      2017.33
+                                                    ]
+                                                  },
+                                                  "organism": {
+                                                    "value": "Comamonas_sp._Z1"
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "CzoA-1"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "CzoA-1_KKI12729-LAVC01000029-70881",
+                                                "node_attrs": {
+                                                  "div": 0.071,
+                                                  "num_date": {
+                                                    "value": 2014.248,
+                                                    "confidence": [
+                                                      2014.248,
+                                                      2014.319
+                                                    ]
+                                                  },
+                                                  "organism": {
+                                                    "value": "Comamonas_thiooxydans"
+                                                  },
+                                                  "country": {
+                                                    "value": "Malaysia",
+                                                    "confidence": {
+                                                      "Malaysia": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "CzoA-1"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000056",
+                                        "node_attrs": {
+                                          "div": 0.0688,
+                                          "num_date": {
+                                            "value": 2005.972,
+                                            "confidence": [
+                                              1994.906,
+                                              2010.36
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": 6.79e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CzoA-1_EFI60385-ADVQ01000062-39810",
+                                            "node_attrs": {
+                                              "div": 0.0688,
+                                              "num_date": {
+                                                "value": 2010.36,
+                                                "confidence": [
+                                                  2010.36,
+                                                  2010.36
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Comamonas_thiooxydans"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "CzoA-1"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000057",
+                                            "node_attrs": {
+                                              "div": 0.0688,
+                                              "num_date": {
+                                                "value": 2014.633,
+                                                "confidence": [
+                                                  2005.894,
+                                                  2017.763
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 0.998,
+                                                  "Pakistan": 0.00202
+                                                },
+                                                "entropy": 0.015
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "CzoA-1_TFF63003-RSDT01000001-608373",
+                                                "node_attrs": {
+                                                  "div": 0.0688,
+                                                  "num_date": {
+                                                    "value": 2017.763,
+                                                    "confidence": [
+                                                      2017.763,
+                                                      2017.763
+                                                    ]
+                                                  },
+                                                  "organism": {
+                                                    "value": "Comamonas_sp._A23"
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "CzoA-1"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "CzoA-1_MDH1473336-JAOCIU010000001-527804",
+                                                "node_attrs": {
+                                                  "div": 0.0688,
+                                                  "num_date": {
+                                                    "value": 2018.158,
+                                                    "confidence": [
+                                                      2018.158,
+                                                      2018.158
+                                                    ]
+                                                  },
+                                                  "organism": {
+                                                    "value": "Comamonas_thiooxydans"
+                                                  },
+                                                  "country": {
+                                                    "value": "Pakistan",
+                                                    "confidence": {
+                                                      "Pakistan": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "CzoA-1"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000013",
+                        "node_attrs": {
+                          "div": 0.0599,
+                          "num_date": {
+                            "value": 1756.726,
+                            "confidence": [
+                              1706.575,
+                              1796.216
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.997,
+                              "Japan": 0.00288
+                            },
+                            "entropy": 0.0229
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G354A",
+                              "G447A",
+                              "C501T",
+                              "G819A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000014",
+                            "node_attrs": {
+                              "div": 0.1,
+                              "num_date": {
+                                "value": 2013.507,
+                                "confidence": [
+                                  2002.551,
+                                  2015.733
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.889,
+                                  "Japan": 0.0905,
+                                  "": 0.0197
+                                },
+                                "entropy": 0.405
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G6A",
+                                  "G42T",
+                                  "C81T",
+                                  "G84A",
+                                  "A99G",
+                                  "A105G",
+                                  "A106G",
+                                  "C107T",
+                                  "T121C",
+                                  "G135A",
+                                  "A136G",
+                                  "A146G",
+                                  "G171C",
+                                  "C186T",
+                                  "G195C",
+                                  "C204T",
+                                  "T210C",
+                                  "T247C",
+                                  "A255C",
+                                  "C258T",
+                                  "A259G",
+                                  "A273G",
+                                  "G276A",
+                                  "C277A",
+                                  "T282C",
+                                  "A285G",
+                                  "C306T",
+                                  "T309C",
+                                  "T313G",
+                                  "A324G",
+                                  "C355T",
+                                  "C357G",
+                                  "T363A",
+                                  "T396C",
+                                  "A505T"
+                                ],
+                                "CSE6_008_13910": [
+                                  "T36V",
+                                  "I46V",
+                                  "Q49R",
+                                  "M87V",
+                                  "S105A",
+                                  "R119W",
+                                  "T169S"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "CSE6_008_13910: T36V, I46V, Q49R, M87V, S105A, R119W, T169S"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "CzoA-2_OAD85933-LKFB01000002-54841",
+                                "node_attrs": {
+                                  "div": 0.1,
+                                  "num_date": {
+                                    "value": 2015.733,
+                                    "confidence": [
+                                      2015.733,
+                                      2015.733
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Comamonas_thiooxydans"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CzoA-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000060",
+                                "node_attrs": {
+                                  "div": 0.1,
+                                  "num_date": {
+                                    "value": 2015.397,
+                                    "confidence": [
+                                      2008.93,
+                                      2019.496
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.937,
+                                      "": 0.0427,
+                                      "Japan": 0.0197
+                                    },
+                                    "entropy": 0.276
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "CzoA-2_WP_063661049-NZ_JAMYJT010000007-33293",
+                                    "node_attrs": {
+                                      "div": 0.1,
+                                      "num_date": {
+                                        "value": 2021.845,
+                                        "confidence": [
+                                          2021.845,
+                                          2021.845
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Comamonas_thiooxydans"
+                                      },
+                                      "allele": {
+                                        "value": "CzoA-2"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "CzoA-2_MCO8249613-JAMYJT010000007-33293",
+                                    "node_attrs": {
+                                      "div": 0.1,
+                                      "num_date": {
+                                        "value": 2021.845,
+                                        "confidence": [
+                                          2021.845,
+                                          2021.845
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Comamonas_thiooxydans"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CzoA-2"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000004",
+                            "node_attrs": {
+                              "div": 0.0643,
+                              "num_date": {
+                                "value": 1857.728,
+                                "confidence": [
+                                  1797.825,
+                                  1881.172
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 0.000116
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C114T",
+                                  "C198T",
+                                  "T291A",
+                                  "G390A"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "CzoA-6_KGG85453-AWTQ01000023-407981",
+                                "node_attrs": {
+                                  "div": 0.0778,
+                                  "num_date": {
+                                    "value": 2013.684,
+                                    "confidence": [
+                                      2013.684,
+                                      2013.684
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Comamonas_thiooxydans"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "CzoA-6"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G135A",
+                                      "G142T",
+                                      "C144T",
+                                      "A153G",
+                                      "T154C",
+                                      "C160T",
+                                      "A390T",
+                                      "G468A",
+                                      "C581T",
+                                      "G707A",
+                                      "C711T",
+                                      "G810T"
+                                    ],
+                                    "CSE6_008_13910": [
+                                      "A48S",
+                                      "F52L",
+                                      "E130D",
+                                      "A194V",
+                                      "G236D"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "CSE6_008_13910: A48S, F52L, E130D, A194V, G236D"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "NODE_0000001",
+                                "node_attrs": {
+                                  "div": 0.0699,
+                                  "num_date": {
+                                    "value": 1938.227,
+                                    "confidence": [
+                                      1893.736,
+                                      1980.435
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.992,
+                                      "N/A": 0.00662
+                                    },
+                                    "entropy": 0.0513
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C693T",
+                                      "C696A",
+                                      "A819G",
+                                      "C829T",
+                                      "G841A"
+                                    ],
+                                    "CSE6_008_13910": [
+                                      "P277S",
+                                      "A281T"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "CSE6_008_13910: P277S, A281T"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000000",
+                                    "node_attrs": {
+                                      "div": 0.0733,
+                                      "num_date": {
+                                        "value": 2005.055,
+                                        "confidence": [
+                                          1936.513,
+                                          2089.351
+                                        ]
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A30G",
+                                          "C177T",
+                                          "G468A"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BBXH01000008.1",
+                                        "node_attrs": {
+                                          "div": 0.0733,
+                                          "num_date": {
+                                            "value": 2023.598,
+                                            "confidence": [
+                                              1949.901,
+                                              2114.706
+                                            ]
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "CzoA-7_GAO69954-BBXH01000008-40151",
+                                        "node_attrs": {
+                                          "div": 0.0733,
+                                          "num_date": {
+                                            "value": 2023.598,
+                                            "confidence": [
+                                              1949.901,
+                                              2114.706
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_sp._E6"
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000002",
+                                    "node_attrs": {
+                                      "div": 0.0755,
+                                      "num_date": {
+                                        "value": 2013.684,
+                                        "confidence": [
+                                          2005.875,
+                                          2013.684
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": 1.53e-07
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A390G",
+                                          "C450T",
+                                          "A489G",
+                                          "G495A",
+                                          "T646C"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CzoA-7_KGH18731-AWTO01000141-175720",
+                                        "node_attrs": {
+                                          "div": 0.0755,
+                                          "num_date": {
+                                            "value": 2013.684,
+                                            "confidence": [
+                                              2013.684,
+                                              2013.684
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_thiooxydans"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "CzoA-7_KGH04690-AWTP01000155-175697",
+                                        "node_attrs": {
+                                          "div": 0.0755,
+                                          "num_date": {
+                                            "value": 2013.684,
+                                            "confidence": [
+                                              2013.684,
+                                              2013.684
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_thiooxydans"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "CzoA-7_KGH19693-AWTM01000109-175697",
+                                        "node_attrs": {
+                                          "div": 0.0755,
+                                          "num_date": {
+                                            "value": 2013.684,
+                                            "confidence": [
+                                              2013.684,
+                                              2013.684
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_thiooxydans"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000005",
+                                "node_attrs": {
+                                  "div": 0.0655,
+                                  "num_date": {
+                                    "value": 1884.25,
+                                    "confidence": [
+                                      1835.923,
+                                      1916.794
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.998,
+                                      "India": 0.00135
+                                    },
+                                    "entropy": 0.0134
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "A489G"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "CzoA-9_CUA92822-CYHD01000003-238844",
+                                    "node_attrs": {
+                                      "div": 0.0688,
+                                      "num_date": {
+                                        "value": 2015.648,
+                                        "confidence": [
+                                          2015.648,
+                                          2015.648
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Comamonas_thiooxydans"
+                                      },
+                                      "country": {
+                                        "value": "India",
+                                        "confidence": {
+                                          "India": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "CzoA-9"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C93A",
+                                          "C450T",
+                                          "C716A"
+                                        ],
+                                        "CSE6_008_13910": [
+                                          "T239K"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "CSE6_008_13910: T239K"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000006",
+                                    "node_attrs": {
+                                      "div": 0.0699,
+                                      "num_date": {
+                                        "value": 1938.865,
+                                        "confidence": [
+                                          1896.127,
+                                          1962.1
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": 0.0029
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C333G",
+                                          "A354G",
+                                          "T646C",
+                                          "C750T"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CzoA-8_KGG92077-AWTN01000090-56056",
+                                        "node_attrs": {
+                                          "div": 0.0733,
+                                          "num_date": {
+                                            "value": 2013.684,
+                                            "confidence": [
+                                              2013.684,
+                                              2013.684
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Comamonas_thiooxydans"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "CzoA-8"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G42A",
+                                              "C177T",
+                                              "C548T"
+                                            ],
+                                            "CSE6_008_13910": [
+                                              "P183L"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "CSE6_008_13910: P183L"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000007",
+                                        "node_attrs": {
+                                          "div": 0.0789,
+                                          "num_date": {
+                                            "value": 2005.72,
+                                            "confidence": [
+                                              1989.296,
+                                              2010.142
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.987,
+                                              "": 0.0133
+                                            },
+                                            "entropy": 0.0719
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "A175G",
+                                              "T244C",
+                                              "G471T",
+                                              "A717T",
+                                              "C785A",
+                                              "C799T",
+                                              "A819G",
+                                              "T859C"
+                                            ],
+                                            "CSE6_008_13910": [
+                                              "T59A",
+                                              "A262E"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "CSE6_008_13910: T59A, A262E"
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CzoA-10_WP_034352070-NZ_CP094238-2408532",
+                                            "node_attrs": {
+                                              "div": 0.0789,
+                                              "num_date": {
+                                                "value": 2011.434,
+                                                "confidence": [
+                                                  2011.434,
+                                                  2011.434
+                                                ]
+                                              },
+                                              "organism": {
+                                                "value": "Comamonas_sp._7D-2"
+                                              },
+                                              "allele": {
+                                                "value": "CzoA-10"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000068",
+                                            "node_attrs": {
+                                              "div": 0.0789,
+                                              "num_date": {
+                                                "value": 2005.72,
+                                                "confidence": [
+                                                  1997.34,
+                                                  2011.97
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": 0.000499
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "CzoA-10_TZG07200-VTRK01000011-134823",
+                                                "node_attrs": {
+                                                  "div": 0.0789,
+                                                  "num_date": {
+                                                    "value": 2014.001,
+                                                    "confidence": [
+                                                      2014.001,
+                                                      2014.075
+                                                    ]
+                                                  },
+                                                  "organism": {
+                                                    "value": "Comamonas_thiooxydans"
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "allele": {
+                                                    "value": "CzoA-10"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000069",
+                                                "node_attrs": {
+                                                  "div": 0.0789,
+                                                  "num_date": {
+                                                    "value": 2010.151,
+                                                    "confidence": [
+                                                      2002.808,
+                                                      2013.023
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": 5.11e-06
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000070",
+                                                    "node_attrs": {
+                                                      "div": 0.0789,
+                                                      "num_date": {
+                                                        "value": 2013.673,
+                                                        "confidence": [
+                                                          2008.067,
+                                                          2013.673
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": 2.68e-06
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "CzoA-10_KGG91852-AWOT01000086-134744",
+                                                        "node_attrs": {
+                                                          "div": 0.0789,
+                                                          "num_date": {
+                                                            "value": 2013.673,
+                                                            "confidence": [
+                                                              2013.673,
+                                                              2013.673
+                                                            ]
+                                                          },
+                                                          "organism": {
+                                                            "value": "Comamonas_thiooxydans"
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "CzoA-10"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "CzoA-10_KGH15460-AWOU01000002-134722",
+                                                        "node_attrs": {
+                                                          "div": 0.0789,
+                                                          "num_date": {
+                                                            "value": 2013.673,
+                                                            "confidence": [
+                                                              2013.673,
+                                                              2013.673
+                                                            ]
+                                                          },
+                                                          "organism": {
+                                                            "value": "Comamonas_thiooxydans"
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "CzoA-10"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000071",
+                                                    "node_attrs": {
+                                                      "div": 0.0789,
+                                                      "num_date": {
+                                                        "value": 2013.673,
+                                                        "confidence": [
+                                                          2008.067,
+                                                          2013.673
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": 2.68e-06
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "CzoA-10_KGH07931-AWOS01000012-134716",
+                                                        "node_attrs": {
+                                                          "div": 0.0789,
+                                                          "num_date": {
+                                                            "value": 2013.673,
+                                                            "confidence": [
+                                                              2013.673,
+                                                              2013.673
+                                                            ]
+                                                          },
+                                                          "organism": {
+                                                            "value": "Comamonas_thiooxydans"
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "CzoA-10"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "CzoA-10_KGG95359-AWOV01000002-134722",
+                                                        "node_attrs": {
+                                                          "div": 0.0789,
+                                                          "num_date": {
+                                                            "value": 2013.673,
+                                                            "confidence": [
+                                                              2013.673,
+                                                              2013.673
+                                                            ]
+                                                          },
+                                                          "organism": {
+                                                            "value": "Comamonas_thiooxydans"
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "allele": {
+                                                            "value": "CzoA-10"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

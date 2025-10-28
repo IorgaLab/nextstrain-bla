@@ -1,0 +1,3090 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A FAR beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 942,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "ACH49Y_24970": {
+        "end": 942,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Spain": {
+            "latitude": 40.4637,
+            "longitude": -3.7492
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1969.953,
+        "confidence": [
+          1953.355,
+          1971.108
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.71,
+          "USA": 0.223,
+          "": 0.0411,
+          "India": 0.00896,
+          "United Kingdom": 0.00878,
+          "Spain": 0.00859
+        },
+        "entropy": 0.833
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "FAR-10_MBF6541216-JADLPH010000048-3425",
+        "node_attrs": {
+          "div": 0.0118,
+          "num_date": {
+            "value": 2019.001,
+            "confidence": [
+              2019.001,
+              2019.895
+            ]
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "allele": {
+            "value": "FAR-10"
+          },
+          "organism": {
+            "value": "Nocardia_farcinica"
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T36A",
+              "C65T",
+              "A145G",
+              "A180G",
+              "G204C",
+              "G267T",
+              "C414T",
+              "G555T",
+              "G675A",
+              "C881T"
+            ],
+            "ACH49Y_24970": [
+              "A22V",
+              "T49A",
+              "A294V"
+            ]
+          },
+          "labels": {
+            "aa": "ACH49Y_24970: A22V, T49A, A294V"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000015",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 1969.979,
+            "confidence": [
+              1957.24,
+              1971.365
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.738,
+              "USA": 0.224,
+              "": 0.0264,
+              "India": 0.00408,
+              "United Kingdom": 0.00397,
+              "Spain": 0.00386
+            },
+            "entropy": 0.721
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "FAR-19_MBF6522964-JADLPG010000040-4630",
+            "node_attrs": {
+              "div": 0.00536,
+              "num_date": {
+                "value": 2019.001,
+                "confidence": [
+                  2019.001,
+                  2019.89
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "FAR-19"
+              },
+              "organism": {
+                "value": "Nocardia_farcinica"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C255G",
+                  "C294G",
+                  "G554A",
+                  "C813G"
+                ],
+                "ACH49Y_24970": [
+                  "R185Q"
+                ]
+              },
+              "labels": {
+                "aa": "ACH49Y_24970: R185Q"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000011",
+            "node_attrs": {
+              "div": 0.00107,
+              "num_date": {
+                "value": 1970.642,
+                "confidence": [
+                  1962.037,
+                  1971.679
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.744,
+                  "USA": 0.235,
+                  "": 0.0158,
+                  "India": 0.00166,
+                  "United Kingdom": 0.00161,
+                  "Spain": 0.00156
+                },
+                "entropy": 0.657
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C738T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.00107,
+                  "num_date": {
+                    "value": 1971.077,
+                    "confidence": [
+                      1963.805,
+                      1971.884
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.7,
+                      "USA": 0.284,
+                      "": 0.0124,
+                      "India": 0.00117,
+                      "United Kingdom": 0.00113,
+                      "Spain": 0.00109
+                    },
+                    "entropy": 0.684
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G207C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 0.00107,
+                      "num_date": {
+                        "value": 2004.463,
+                        "confidence": [
+                          1996.704,
+                          2014.362
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.946,
+                          "USA": 0.0358,
+                          "": 0.0125,
+                          "India": 0.00186,
+                          "United Kingdom": 0.00181,
+                          "Spain": 0.00175
+                        },
+                        "entropy": 0.26
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "FAR-8_MBF6359479-JADLQK010000001-1046123",
+                        "node_attrs": {
+                          "div": 0.00536,
+                          "num_date": {
+                            "value": 2019.999,
+                            "confidence": [
+                              2019.101,
+                              2019.999
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "FAR-8"
+                          },
+                          "organism": {
+                            "value": "Nocardia_farcinica"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C134G",
+                              "A698C",
+                              "C818T",
+                              "A939G"
+                            ],
+                            "ACH49Y_24970": [
+                              "T45S",
+                              "D233A",
+                              "A273V"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "ACH49Y_24970: T45S, D233A, A273V"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.00214,
+                          "num_date": {
+                            "value": 2017.898,
+                            "confidence": [
+                              2014.24,
+                              2018.938
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.999
+                            },
+                            "entropy": 0.0115
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G675A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "FAR-3_MBF6418832-JADLQA010000004-192942",
+                            "node_attrs": {
+                              "div": 0.00214,
+                              "num_date": {
+                                "value": 2020.001,
+                                "confidence": [
+                                  2020.001,
+                                  2020.885
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "FAR-3"
+                              },
+                              "organism": {
+                                "value": "Nocardia_farcinica"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000008",
+                            "node_attrs": {
+                              "div": 0.00214,
+                              "num_date": {
+                                "value": 2018.922,
+                                "confidence": [
+                                  2017.468,
+                                  2019.208
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 0.00224
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FAR-3_MBF6500529-JADLPM010000002-215502",
+                                "node_attrs": {
+                                  "div": 0.00214,
+                                  "num_date": {
+                                    "value": 2019.276,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-3"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-3_MBF6430309-JADLPZ010000004-192944",
+                                "node_attrs": {
+                                  "div": 0.00214,
+                                  "num_date": {
+                                    "value": 2019.276,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-3"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.00427,
+                      "num_date": {
+                        "value": 1971.067,
+                        "confidence": [
+                          1969.386,
+                          1972.498
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.605,
+                          "USA": 0.381,
+                          "": 0.0111,
+                          "India": 0.00126,
+                          "United Kingdom": 0.00122,
+                          "Spain": 0.00118
+                        },
+                        "entropy": 0.746
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C285T",
+                          "C687T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000006",
+                        "node_attrs": {
+                          "div": 0.00641,
+                          "num_date": {
+                            "value": 2017.029,
+                            "confidence": [
+                              2012.372,
+                              2017.968
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.995,
+                              "USA": 0.00341,
+                              "": 0.00134
+                            },
+                            "entropy": 0.0382
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C134G",
+                              "G495A",
+                              "C562T"
+                            ],
+                            "ACH49Y_24970": [
+                              "T45S",
+                              "R188C"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "ACH49Y_24970: T45S, R188C"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "FAR-14_WZH91941-CP133580-2446703",
+                            "node_attrs": {
+                              "div": 0.00641,
+                              "num_date": {
+                                "value": 2022.478,
+                                "confidence": [
+                                  2022.478,
+                                  2022.478
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "FAR-14"
+                              },
+                              "organism": {
+                                "value": "Nocardia_farcinica"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "FAR-14_MBF6249937-JADLRB010000001-1051302",
+                            "node_attrs": {
+                              "div": 0.00641,
+                              "num_date": {
+                                "value": 2017.984,
+                                "confidence": [
+                                  2017.001,
+                                  2017.999
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "FAR-14"
+                              },
+                              "organism": {
+                                "value": "Nocardia_farcinica"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000001",
+                        "node_attrs": {
+                          "div": 0.00641,
+                          "num_date": {
+                            "value": 1972.143,
+                            "confidence": [
+                              1971.094,
+                              1972.686
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.531,
+                              "China": 0.456,
+                              "": 0.0095,
+                              "India": 0.00146,
+                              "United Kingdom": 0.00142,
+                              "Spain": 0.00139
+                            },
+                            "entropy": 0.767
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G64T",
+                              "A145G",
+                              "G495A"
+                            ],
+                            "ACH49Y_24970": [
+                              "A22S",
+                              "T49A"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "ACH49Y_24970: A22S, T49A"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000000",
+                            "node_attrs": {
+                              "div": 0.00854,
+                              "num_date": {
+                                "value": 1972.857,
+                                "confidence": [
+                                  1972.347,
+                                  1972.857
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.764,
+                                  "China": 0.224,
+                                  "": 0.00668,
+                                  "India": 0.00167,
+                                  "United Kingdom": 0.00164,
+                                  "Spain": 0.00161
+                                },
+                                "entropy": 0.606
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G747A",
+                                  "C915T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "JBIRZT010000043.1",
+                                "node_attrs": {
+                                  "div": 0.00854,
+                                  "num_date": {
+                                    "value": 1972.857,
+                                    "confidence": [
+                                      1965.956,
+                                      2044.281
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.714,
+                                      "China": 0.234,
+                                      "": 0.0205,
+                                      "India": 0.0106,
+                                      "United Kingdom": 0.0105,
+                                      "Spain": 0.0104
+                                    },
+                                    "entropy": 0.804
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-5_MFI2561302-JBIRZT010000043-50236",
+                                "node_attrs": {
+                                  "div": 0.00854,
+                                  "num_date": {
+                                    "value": 1972.857,
+                                    "confidence": [
+                                      1972.857,
+                                      1972.857
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-5"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000010",
+                            "node_attrs": {
+                              "div": 0.00641,
+                              "num_date": {
+                                "value": 2017.939,
+                                "confidence": [
+                                  2011.628,
+                                  2018.593
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.995,
+                                  "USA": 0.00288,
+                                  "": 0.00204
+                                },
+                                "entropy": 0.0382
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "FAR-5_MBF6067855-JADLRT010000001-495472",
+                                "node_attrs": {
+                                  "div": 0.00641,
+                                  "num_date": {
+                                    "value": 2018.37,
+                                    "confidence": [
+                                      2018.001,
+                                      2018.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-5"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000012",
+                                "node_attrs": {
+                                  "div": 0.00641,
+                                  "num_date": {
+                                    "value": 2017.939,
+                                    "confidence": [
+                                      2015.781,
+                                      2019.011
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.997,
+                                      "": 0.00308
+                                    },
+                                    "entropy": 0.0244
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-5_MBC9818101-JACVEM010000011-244289",
+                                    "node_attrs": {
+                                      "div": 0.00641,
+                                      "num_date": {
+                                        "value": 2019.273,
+                                        "confidence": [
+                                          2019.273,
+                                          2019.273
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-5"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000013",
+                                    "node_attrs": {
+                                      "div": 0.00641,
+                                      "num_date": {
+                                        "value": 2018.388,
+                                        "confidence": [
+                                          2017.745,
+                                          2020.127
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.955,
+                                          "": 0.0446
+                                        },
+                                        "entropy": 0.19
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "FAR-5_WP_086838944-NZ_JACETW010000030-70197",
+                                        "node_attrs": {
+                                          "div": 0.00641,
+                                          "num_date": {
+                                            "value": 2020.25,
+                                            "confidence": [
+                                              2020.25,
+                                              2020.25
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "allele": {
+                                            "value": "FAR-5"
+                                          },
+                                          "organism": {
+                                            "value": "Nocardia_farcinica"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "FAR-5_MBA4858332-JACETW010000030-70197",
+                                        "node_attrs": {
+                                          "div": 0.00641,
+                                          "num_date": {
+                                            "value": 2020.25,
+                                            "confidence": [
+                                              2020.25,
+                                              2020.25
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "FAR-5"
+                                          },
+                                          "organism": {
+                                            "value": "Nocardia_farcinica"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000014",
+                "node_attrs": {
+                  "div": 0.00321,
+                  "num_date": {
+                    "value": 1996.908,
+                    "confidence": [
+                      1987.427,
+                      2002.094
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.975,
+                      "USA": 0.02,
+                      "": 0.00399
+                    },
+                    "entropy": 0.136
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C255G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000016",
+                    "node_attrs": {
+                      "div": 0.00321,
+                      "num_date": {
+                        "value": 2010.155,
+                        "confidence": [
+                          2003.411,
+                          2013.376
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.967,
+                          "USA": 0.0313,
+                          "": 0.00125
+                        },
+                        "entropy": 0.152
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "FAR-3_MBF6441727-JADLPX010000002-522402",
+                        "node_attrs": {
+                          "div": 0.00534,
+                          "num_date": {
+                            "value": 2018.001,
+                            "confidence": [
+                              2018.001,
+                              2018.892
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "FAR-3"
+                          },
+                          "organism": {
+                            "value": "Nocardia_farcinica"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T102A",
+                              "T660C"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000017",
+                        "node_attrs": {
+                          "div": 0.00321,
+                          "num_date": {
+                            "value": 2013.27,
+                            "confidence": [
+                              2009.77,
+                              2014.478
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.917,
+                              "USA": 0.081,
+                              "": 0.0014
+                            },
+                            "entropy": 0.295
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "FAR-3_PEH75352-PDDW01000001-894950",
+                            "node_attrs": {
+                              "div": 0.00321,
+                              "num_date": {
+                                "value": 2014.478,
+                                "confidence": [
+                                  2014.478,
+                                  2014.478
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "FAR-3"
+                              },
+                              "organism": {
+                                "value": "Nocardia_sp._FDAARGOS_372"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000018",
+                            "node_attrs": {
+                              "div": 0.00321,
+                              "num_date": {
+                                "value": 2014.478,
+                                "confidence": [
+                                  2011.951,
+                                  2015.516
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.986,
+                                  "USA": 0.00975,
+                                  "": 0.00368
+                                },
+                                "entropy": 0.08
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000019",
+                                "node_attrs": {
+                                  "div": 0.00321,
+                                  "num_date": {
+                                    "value": 2015.651,
+                                    "confidence": [
+                                      2013.845,
+                                      2015.718
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.951,
+                                      "": 0.0465,
+                                      "USA": 0.00254
+                                    },
+                                    "entropy": 0.209
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-3_UEX24911-CP086599-2325335",
+                                    "node_attrs": {
+                                      "div": 0.00321,
+                                      "num_date": {
+                                        "value": 2015.667,
+                                        "confidence": [
+                                          2015.667,
+                                          2015.739
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-3"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "FAR-3_WP_098083300-NZ_CP086599-2325335",
+                                    "node_attrs": {
+                                      "div": 0.00321,
+                                      "num_date": {
+                                        "value": 2015.667,
+                                        "confidence": [
+                                          2015.667,
+                                          2015.739
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "allele": {
+                                        "value": "FAR-3"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000020",
+                                "node_attrs": {
+                                  "div": 0.00321,
+                                  "num_date": {
+                                    "value": 2016.922,
+                                    "confidence": [
+                                      2013.958,
+                                      2017.77
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.994,
+                                      "USA": 0.0057
+                                    },
+                                    "entropy": 0.0384
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-3_MBF6184645-JADLRN010000001-1098482",
+                                    "node_attrs": {
+                                      "div": 0.00321,
+                                      "num_date": {
+                                        "value": 2017.942,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-3"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000024",
+                                    "node_attrs": {
+                                      "div": 0.00321,
+                                      "num_date": {
+                                        "value": 2017.898,
+                                        "confidence": [
+                                          2016.352,
+                                          2018.896
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.967,
+                                          "USA": 0.032
+                                        },
+                                        "entropy": 0.149
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "FAR-3_MEV5393993-JBFATX010000079-8885",
+                                        "node_attrs": {
+                                          "div": 0.00321,
+                                          "num_date": {
+                                            "value": 2024.419,
+                                            "confidence": [
+                                              2024.419,
+                                              2024.419
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "FAR-3"
+                                          },
+                                          "organism": {
+                                            "value": "Nocardia_farcinica"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000029",
+                                        "node_attrs": {
+                                          "div": 0.00321,
+                                          "num_date": {
+                                            "value": 2018.922,
+                                            "confidence": [
+                                              2017.73,
+                                              2019.098
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.998,
+                                              "USA": 0.00154
+                                            },
+                                            "entropy": 0.0128
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "FAR-3_MBF6310489-JADLQT010000001-1149161",
+                                            "node_attrs": {
+                                              "div": 0.00321,
+                                              "num_date": {
+                                                "value": 2019.294,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.999
+                                                ]
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "FAR-3"
+                                              },
+                                              "organism": {
+                                                "value": "Nocardia_farcinica"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "FAR-3_MBF6405692-JADLQC010000001-245876",
+                                            "node_attrs": {
+                                              "div": 0.00321,
+                                              "num_date": {
+                                                "value": 2019.294,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.999
+                                                ]
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "FAR-3"
+                                              },
+                                              "organism": {
+                                                "value": "Nocardia_farcinica"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000021",
+                    "node_attrs": {
+                      "div": 0.00427,
+                      "num_date": {
+                        "value": 2001.446,
+                        "confidence": [
+                          1994.412,
+                          2003.899
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 0.997,
+                          "USA": 0.00161,
+                          "": 0.0013
+                        },
+                        "entropy": 0.026
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G747A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000022",
+                        "node_attrs": {
+                          "div": 0.00534,
+                          "num_date": {
+                            "value": 2003.318,
+                            "confidence": [
+                              1999.859,
+                              2005.927
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.986,
+                              "": 0.00678,
+                              "Spain": 0.00558,
+                              "USA": 0.0012
+                            },
+                            "entropy": 0.0873
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A145G"
+                            ],
+                            "ACH49Y_24970": [
+                              "T49A"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "ACH49Y_24970: T49A"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000023",
+                            "node_attrs": {
+                              "div": 0.00962,
+                              "num_date": {
+                                "value": 2017.922,
+                                "confidence": [
+                                  2015.937,
+                                  2018.937
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.999
+                                },
+                                "entropy": 0.00755
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C69G",
+                                  "C181T",
+                                  "C813G",
+                                  "A939G"
+                                ],
+                                "ACH49Y_24970": [
+                                  "I23M"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "ACH49Y_24970: I23M"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "FAR-16_MBF6140295-JADLRP010000005-234470",
+                                "node_attrs": {
+                                  "div": 0.00962,
+                                  "num_date": {
+                                    "value": 2018.984,
+                                    "confidence": [
+                                      2018.001,
+                                      2018.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-16"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-16_MBF6387313-JADLQH010000008-63347",
+                                "node_attrs": {
+                                  "div": 0.00962,
+                                  "num_date": {
+                                    "value": 2019.001,
+                                    "confidence": [
+                                      2019.001,
+                                      2019.891
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-16"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000025",
+                            "node_attrs": {
+                              "div": 0.00962,
+                              "num_date": {
+                                "value": 2008.499,
+                                "confidence": [
+                                  2006.865,
+                                  2008.566
+                                ]
+                              },
+                              "country": {
+                                "value": "Spain",
+                                "confidence": {
+                                  "Spain": 0.992,
+                                  "China": 0.00777
+                                },
+                                "entropy": 0.051
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T36A",
+                                  "G201A",
+                                  "G495A",
+                                  "G909C"
+                                ],
+                                "ACH49Y_24970": [
+                                  "E303D"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "ACH49Y_24970: E303D"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "FAR-4_PFX05073-NXEG01000001-474343",
+                                "node_attrs": {
+                                  "div": 0.00962,
+                                  "num_date": {
+                                    "value": 2009.916,
+                                    "confidence": [
+                                      2009.916,
+                                      2009.99
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Spain",
+                                    "confidence": {
+                                      "Spain": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-4"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-4_PFX10343-NXEH01000001-7650",
+                                "node_attrs": {
+                                  "div": 0.00962,
+                                  "num_date": {
+                                    "value": 2008.566,
+                                    "confidence": [
+                                      2008.499,
+                                      2008.581
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Spain",
+                                    "confidence": {
+                                      "Spain": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-4"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000026",
+                            "node_attrs": {
+                              "div": 0.00748,
+                              "num_date": {
+                                "value": 2010.421,
+                                "confidence": [
+                                  2006.376,
+                                  2014.262
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.904,
+                                  "": 0.0884,
+                                  "India": 0.00489,
+                                  "USA": 0.00193
+                                },
+                                "entropy": 0.352
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G207C",
+                                  "C916A"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000027",
+                                "node_attrs": {
+                                  "div": 0.00962,
+                                  "num_date": {
+                                    "value": 2017.029,
+                                    "confidence": [
+                                      2014.581,
+                                      2017.693
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.843,
+                                      "": 0.155,
+                                      "USA": 0.00118
+                                    },
+                                    "entropy": 0.449
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G495A",
+                                      "C687T"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-18_WP_195028323-NZ_JADLQY010000002-426803",
+                                    "node_attrs": {
+                                      "div": 0.00962,
+                                      "num_date": {
+                                        "value": 2017.636,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "allele": {
+                                        "value": "FAR-18"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "FAR-18_MBF6267633-JADLQY010000002-426803",
+                                    "node_attrs": {
+                                      "div": 0.00962,
+                                      "num_date": {
+                                        "value": 2017.636,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-18"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000028",
+                                "node_attrs": {
+                                  "div": 0.00962,
+                                  "num_date": {
+                                    "value": 2017.898,
+                                    "confidence": [
+                                      2015.746,
+                                      2018.938
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.796,
+                                      "": 0.128,
+                                      "India": 0.0707,
+                                      "USA": 0.0037
+                                    },
+                                    "entropy": 0.664
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G255C",
+                                      "G400C"
+                                    ],
+                                    "ACH49Y_24970": [
+                                      "E134Q"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "ACH49Y_24970: E134Q"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-17_MCZ9327111-JAQAZD010000003-514015",
+                                    "node_attrs": {
+                                      "div": 0.00962,
+                                      "num_date": {
+                                        "value": 2022.149,
+                                        "confidence": [
+                                          2022.149,
+                                          2022.149
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "country": {
+                                        "value": "India",
+                                        "confidence": {
+                                          "India": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-17"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000034",
+                                    "node_attrs": {
+                                      "div": 0.00962,
+                                      "num_date": {
+                                        "value": 2018.922,
+                                        "confidence": [
+                                          2017.697,
+                                          2019.122
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.803,
+                                          "": 0.183,
+                                          "India": 0.0118,
+                                          "USA": 0.0015
+                                        },
+                                        "entropy": 0.554
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "FAR-17_WP_195012853-NZ_JADLQI010000001-562799",
+                                        "node_attrs": {
+                                          "div": 0.00962,
+                                          "num_date": {
+                                            "value": 2019.335,
+                                            "confidence": [
+                                              2019.001,
+                                              2019.999
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "allele": {
+                                            "value": "FAR-17"
+                                          },
+                                          "organism": {
+                                            "value": "Nocardia_farcinica"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "FAR-17_MBF6371980-JADLQI010000001-562799",
+                                        "node_attrs": {
+                                          "div": 0.00962,
+                                          "num_date": {
+                                            "value": 2019.335,
+                                            "confidence": [
+                                              2019.001,
+                                              2019.999
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "FAR-17"
+                                          },
+                                          "organism": {
+                                            "value": "Nocardia_farcinica"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000030",
+                        "node_attrs": {
+                          "div": 0.00534,
+                          "num_date": {
+                            "value": 2003.528,
+                            "confidence": [
+                              1999.404,
+                              2007.406
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.998
+                            },
+                            "entropy": 0.0151
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C134G"
+                            ],
+                            "ACH49Y_24970": [
+                              "T45S"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "ACH49Y_24970: T45S"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000031",
+                            "node_attrs": {
+                              "div": 0.00641,
+                              "num_date": {
+                                "value": 2005.428,
+                                "confidence": [
+                                  2002.477,
+                                  2009.832
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 0.996,
+                                  "United Kingdom": 0.00179,
+                                  "USA": 0.00142,
+                                  "": 0.00105
+                                },
+                                "entropy": 0.0343
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G201A"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000032",
+                                "node_attrs": {
+                                  "div": 0.00961,
+                                  "num_date": {
+                                    "value": 2011.882,
+                                    "confidence": [
+                                      2008.519,
+                                      2014.897
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.956,
+                                      "United Kingdom": 0.035,
+                                      "USA": 0.00424,
+                                      "": 0.00337
+                                    },
+                                    "entropy": 0.212
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "A145G",
+                                      "A747G",
+                                      "C813G"
+                                    ],
+                                    "ACH49Y_24970": [
+                                      "T49A"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "ACH49Y_24970: T49A"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-15_VFA95650-CAACYE020000001-5556724",
+                                    "node_attrs": {
+                                      "div": 0.0117,
+                                      "num_date": {
+                                        "value": 2019.116,
+                                        "confidence": [
+                                          2019.116,
+                                          2019.116
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-15"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G255C",
+                                          "T660C"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "FAR-11_MBF6231076-JADLRG010000002-617043",
+                                    "node_attrs": {
+                                      "div": 0.0139,
+                                      "num_date": {
+                                        "value": 2017.999,
+                                        "confidence": [
+                                          2017.118,
+                                          2017.999
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-11"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A242T",
+                                          "G622A",
+                                          "G675A",
+                                          "C678A"
+                                        ],
+                                        "ACH49Y_24970": [
+                                          "E81V",
+                                          "A208T"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "ACH49Y_24970: E81V, A208T"
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000033",
+                                "node_attrs": {
+                                  "div": 0.0128,
+                                  "num_date": {
+                                    "value": 2018.392,
+                                    "confidence": [
+                                      2017.847,
+                                      2018.802
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": 1.84e-05
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "T15C",
+                                      "T102A",
+                                      "C237T",
+                                      "G255C",
+                                      "G654C",
+                                      "C903G"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-6_MBF6290247-JADLQS010000001-1168",
+                                    "node_attrs": {
+                                      "div": 0.0128,
+                                      "num_date": {
+                                        "value": 2019.001,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.885
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-6"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "FAR-6_MBF6255641-JADLRC010000002-217048",
+                                    "node_attrs": {
+                                      "div": 0.0128,
+                                      "num_date": {
+                                        "value": 2018.984,
+                                        "confidence": [
+                                          2018.001,
+                                          2018.999
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-6"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "FAR-6_MBF6577361-JADLPC010000101-2950",
+                                    "node_attrs": {
+                                      "div": 0.0128,
+                                      "num_date": {
+                                        "value": 2019.001,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.885
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-6"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "FAR-6_MBF6377420-JADLQJ010000002-1168",
+                                    "node_attrs": {
+                                      "div": 0.0128,
+                                      "num_date": {
+                                        "value": 2019.001,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.885
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-6"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000036",
+                            "node_attrs": {
+                              "div": 0.00748,
+                              "num_date": {
+                                "value": 2016.001,
+                                "confidence": [
+                                  2014.765,
+                                  2016.903
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 1.68e-06
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G207C",
+                                  "C285T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "FAR-6_MBF6494022-JADLPO010000040-44873",
+                                "node_attrs": {
+                                  "div": 0.00748,
+                                  "num_date": {
+                                    "value": 2017.001,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.883
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-6"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-6_MBF6304271-JADLQZ010000001-1046405",
+                                "node_attrs": {
+                                  "div": 0.00748,
+                                  "num_date": {
+                                    "value": 2017.001,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.883
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-6"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-6_MBF6529706-JADLPJ010000033-44879",
+                                "node_attrs": {
+                                  "div": 0.00748,
+                                  "num_date": {
+                                    "value": 2017.001,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.883
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-6"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "FAR-6_MBF6261261-JADLRA010000001-1046437",
+                                "node_attrs": {
+                                  "div": 0.00748,
+                                  "num_date": {
+                                    "value": 2016.984,
+                                    "confidence": [
+                                      2016.001,
+                                      2016.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "FAR-6"
+                                  },
+                                  "organism": {
+                                    "value": "Nocardia_farcinica"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000042",
+                                "node_attrs": {
+                                  "div": 0.00748,
+                                  "num_date": {
+                                    "value": 2017.869,
+                                    "confidence": [
+                                      2015.747,
+                                      2018.168
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.998,
+                                      "USA": 0.00236
+                                    },
+                                    "entropy": 0.018
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "FAR-6_MBF6507108-JADLPL010000002-203371",
+                                    "node_attrs": {
+                                      "div": 0.00748,
+                                      "num_date": {
+                                        "value": 2018.264,
+                                        "confidence": [
+                                          2018.001,
+                                          2018.999
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "FAR-6"
+                                      },
+                                      "organism": {
+                                        "value": "Nocardia_farcinica"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000043",
+                                    "node_attrs": {
+                                      "div": 0.00748,
+                                      "num_date": {
+                                        "value": 2017.948,
+                                        "confidence": [
+                                          2016.673,
+                                          2018.496
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.949,
+                                          "USA": 0.0501
+                                        },
+                                        "entropy": 0.205
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "FAR-6_AXK85143-CP031418-1125229",
+                                        "node_attrs": {
+                                          "div": 0.00748,
+                                          "num_date": {
+                                            "value": 2018.582,
+                                            "confidence": [
+                                              2018.582,
+                                              2018.582
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "FAR-6"
+                                          },
+                                          "organism": {
+                                            "value": "Nocardia_farcinica"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000044",
+                                        "node_attrs": {
+                                          "div": 0.00748,
+                                          "num_date": {
+                                            "value": 2017.949,
+                                            "confidence": [
+                                              2017.402,
+                                              2018.686
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.997,
+                                              "USA": 0.00248
+                                            },
+                                            "entropy": 0.0188
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "FAR-6_MBF6389312-JADLQG010000001-1046437",
+                                            "node_attrs": {
+                                              "div": 0.00748,
+                                              "num_date": {
+                                                "value": 2019.104,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.999
+                                                ]
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "allele": {
+                                                "value": "FAR-6"
+                                              },
+                                              "organism": {
+                                                "value": "Nocardia_farcinica"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000045",
+                                            "node_attrs": {
+                                              "div": 0.00748,
+                                              "num_date": {
+                                                "value": 2018.339,
+                                                "confidence": [
+                                                  2017.86,
+                                                  2018.811
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": 0.00299
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "NODE_0000046",
+                                                "node_attrs": {
+                                                  "div": 0.00748,
+                                                  "num_date": {
+                                                    "value": 2018.752,
+                                                    "confidence": [
+                                                      2018.192,
+                                                      2019.09
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": 0.00182
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "FAR-6_MBF6578871-JADLPE010000003-260322",
+                                                    "node_attrs": {
+                                                      "div": 0.00748,
+                                                      "num_date": {
+                                                        "value": 2019.356,
+                                                        "confidence": [
+                                                          2019.001,
+                                                          2019.999
+                                                        ]
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "allele": {
+                                                        "value": "FAR-6"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Nocardia_farcinica"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "FAR-6_MBF6588535-JADLPB010000036-4614",
+                                                    "node_attrs": {
+                                                      "div": 0.00748,
+                                                      "num_date": {
+                                                        "value": 2019.356,
+                                                        "confidence": [
+                                                          2019.001,
+                                                          2019.999
+                                                        ]
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "allele": {
+                                                        "value": "FAR-6"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Nocardia_farcinica"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "name": "NODE_0000047",
+                                                "node_attrs": {
+                                                  "div": 0.00748,
+                                                  "num_date": {
+                                                    "value": 2018.752,
+                                                    "confidence": [
+                                                      2018.192,
+                                                      2019.09
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": 0.00182
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "FAR-6_MBF6279071-JADLQU010000001-260321",
+                                                    "node_attrs": {
+                                                      "div": 0.00748,
+                                                      "num_date": {
+                                                        "value": 2019.356,
+                                                        "confidence": [
+                                                          2019.001,
+                                                          2019.999
+                                                        ]
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "allele": {
+                                                        "value": "FAR-6"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Nocardia_farcinica"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "FAR-6_MBF6563329-JADLPD010000004-203410",
+                                                    "node_attrs": {
+                                                      "div": 0.00748,
+                                                      "num_date": {
+                                                        "value": 2019.356,
+                                                        "confidence": [
+                                                          2019.001,
+                                                          2019.999
+                                                        ]
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "allele": {
+                                                        "value": "FAR-6"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Nocardia_farcinica"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

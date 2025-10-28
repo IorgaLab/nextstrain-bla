@@ -1,0 +1,1659 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A ERP beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 882,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaERP-1": {
+        "end": 882,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "Canada": {
+            "latitude": 61.0666922,
+            "longitude": -107.991707
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1980.282,
+        "confidence": [
+          1974.511,
+          1985.552
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.988,
+          "Australia": 0.00376,
+          "South Korea": 0.00313,
+          "China": 0.00185,
+          "Canada": 0.00156,
+          "USA": 0.00129
+        },
+        "entropy": 0.0809
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000017",
+        "node_attrs": {
+          "div": 0.0445,
+          "num_date": {
+            "value": 2015.135,
+            "confidence": [
+              2013.424,
+              2016.067
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 1.0
+            },
+            "entropy": 2.85e-05
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T30G",
+              "C42T",
+              "C71T",
+              "A72G",
+              "C76T",
+              "A93C",
+              "G94A",
+              "C99T",
+              "G132A",
+              "T141C",
+              "T147C",
+              "T157G",
+              "T159C",
+              "T201C",
+              "T213C",
+              "A273G",
+              "T312C",
+              "G315A",
+              "C321T",
+              "G336A",
+              "A384G",
+              "G396A",
+              "T405C",
+              "A423G",
+              "T427C",
+              "A432G",
+              "G441A",
+              "G448T",
+              "G450A",
+              "G456A",
+              "C459G",
+              "C471A",
+              "T501C",
+              "A516G",
+              "G519C",
+              "T522C",
+              "G528C",
+              "C567T",
+              "C576T",
+              "T589C",
+              "C592T",
+              "A615T",
+              "A618C",
+              "A623G",
+              "G624A",
+              "G630A",
+              "A660G",
+              "G663T",
+              "C678T",
+              "A681G",
+              "G693T",
+              "G694A",
+              "C717T",
+              "C720T",
+              "C753T",
+              "G789T",
+              "G790T",
+              "C792T",
+              "T798C",
+              "A823C",
+              "G852C",
+              "G856A",
+              "C857G",
+              "T873C",
+              "G874T"
+            ],
+            "blaERP-1": [
+              "T24M",
+              "G32S",
+              "S53A",
+              "A150S",
+              "Q208R",
+              "G232S",
+              "A264S",
+              "K275Q",
+              "A286S",
+              "V292F"
+            ]
+          },
+          "labels": {
+            "aa": "blaERP-1: T24M, G32S, S53A, A150S, Q208R, G232S, A264S, K275Q, A286S, V292F"
+          }
+        },
+        "children": [
+          {
+            "name": "ERP-5_MBD8161493-JACYND010000001-279951",
+            "node_attrs": {
+              "div": 0.0479,
+              "num_date": {
+                "value": 2016.999,
+                "confidence": [
+                  2016.133,
+                  2016.999
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "ERP-5"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Erwinia_persicina"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G162T",
+                  "C312A",
+                  "G662A"
+                ],
+                "blaERP-1": [
+                  "G221D"
+                ]
+              },
+              "labels": {
+                "aa": "blaERP-1: G221D"
+              }
+            }
+          },
+          {
+            "name": "ERP-7_MBD8213066-JACYMO010000001-422914",
+            "node_attrs": {
+              "div": 0.0456,
+              "num_date": {
+                "value": 2016.001,
+                "confidence": [
+                  2016.001,
+                  2016.859
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "ERP-7"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Erwinia_persicina"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C821A"
+                ],
+                "blaERP-1": [
+                  "A274E"
+                ]
+              },
+              "labels": {
+                "aa": "blaERP-1: A274E"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000016",
+        "node_attrs": {
+          "div": 0.0314,
+          "num_date": {
+            "value": 2001.999,
+            "confidence": [
+              2000.461,
+              2002.045
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.995,
+              "Australia": 0.00424
+            },
+            "entropy": 0.0333
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.0325,
+              "num_date": {
+                "value": 2016.999,
+                "confidence": [
+                  2015.13,
+                  2017.791
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 0.999,
+                  "China": 0.00118
+                },
+                "entropy": 0.0113
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T427C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "ERP-6_HBT30335-DOLJ01000341-2425",
+                "node_attrs": {
+                  "div": 0.0336,
+                  "num_date": {
+                    "value": 2018.256,
+                    "confidence": [
+                      2018.256,
+                      2018.256
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "ERP-6"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Erwinia_persicina"
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A529G"
+                    ],
+                    "blaERP-1": [
+                      "I177V"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaERP-1: I177V"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.0325,
+                  "num_date": {
+                    "value": 2018.117,
+                    "confidence": [
+                      2016.529,
+                      2018.207
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 0.998,
+                      "China": 0.00229
+                    },
+                    "entropy": 0.0168
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "ERP-1_QZQ48285-CP082141-2346042",
+                    "node_attrs": {
+                      "div": 0.0336,
+                      "num_date": {
+                        "value": 2019.473,
+                        "confidence": [
+                          2019.473,
+                          2019.473
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "ERP-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Erwinia_persicina"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G426A"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.0325,
+                      "num_date": {
+                        "value": 2018.117,
+                        "confidence": [
+                          2017.411,
+                          2018.249
+                        ]
+                      },
+                      "country": {
+                        "value": "Australia",
+                        "confidence": {
+                          "Australia": 1.0
+                        },
+                        "entropy": 4.1e-05
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "ERP-1_HBI05754-DNUQ01000044-7640",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2018.256,
+                            "confidence": [
+                              2018.256,
+                              2018.256
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "allele": {
+                            "value": "ERP-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Erwinia_persicina"
+                          },
+                          "country": {
+                            "value": "Australia",
+                            "confidence": {
+                              "Australia": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000006",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2018.219,
+                            "confidence": [
+                              2017.99,
+                              2018.256
+                            ]
+                          },
+                          "country": {
+                            "value": "Australia",
+                            "confidence": {
+                              "Australia": 1.0
+                            },
+                            "entropy": 1.95e-07
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "ERP-1_HBT54561-DOLI01000408-2323",
+                            "node_attrs": {
+                              "div": 0.0325,
+                              "num_date": {
+                                "value": 2018.256,
+                                "confidence": [
+                                  2018.256,
+                                  2018.256
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "allele": {
+                                "value": "ERP-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "organism": {
+                                "value": "Erwinia_persicina"
+                              },
+                              "country": {
+                                "value": "Australia",
+                                "confidence": {
+                                  "Australia": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "ERP-1_HBH69445-DNUL01000436-10559",
+                            "node_attrs": {
+                              "div": 0.0325,
+                              "num_date": {
+                                "value": 2018.256,
+                                "confidence": [
+                                  2018.256,
+                                  2018.256
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "allele": {
+                                "value": "ERP-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "organism": {
+                                "value": "Erwinia_persicina"
+                              },
+                              "country": {
+                                "value": "Australia",
+                                "confidence": {
+                                  "Australia": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0314,
+              "num_date": {
+                "value": 2001.999,
+                "confidence": [
+                  2001.059,
+                  2002.067
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": 0.00272
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000000",
+                "node_attrs": {
+                  "div": 0.0325,
+                  "num_date": {
+                    "value": 2002.081,
+                    "confidence": [
+                      2002.003,
+                      2002.081
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": 0.00267
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C246G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "AY077733.1",
+                    "node_attrs": {
+                      "div": 0.0325,
+                      "num_date": {
+                        "value": 2002.081,
+                        "confidence": [
+                          1999.299,
+                          2016.859
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.995,
+                          "South Korea": 0.00155,
+                          "China": 0.00105
+                        },
+                        "entropy": 0.0405
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "ERP-1_AXU95105-CP022725-1650720",
+                    "node_attrs": {
+                      "div": 0.0325,
+                      "num_date": {
+                        "value": 2016.25,
+                        "confidence": [
+                          2016.25,
+                          2016.25
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "ERP-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Erwinia_persicina"
+                      },
+                      "country": {
+                        "value": "South Korea",
+                        "confidence": {
+                          "South Korea": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "ERP-1_AAL86999-AY077733-1",
+                    "node_attrs": {
+                      "div": 0.0325,
+                      "num_date": {
+                        "value": 2002.081,
+                        "confidence": [
+                          2002.081,
+                          2002.081
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "ERP-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Erwinia_persicina"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000009",
+                "node_attrs": {
+                  "div": 0.0314,
+                  "num_date": {
+                    "value": 2013.405,
+                    "confidence": [
+                      2011.252,
+                      2014.555
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": 0.00031
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.0325,
+                      "num_date": {
+                        "value": 2014.509,
+                        "confidence": [
+                          2013.717,
+                          2014.953
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": 1.59e-06
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C654T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "ERP-1_TKJ89639-QGAC01000011-61328",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2014.996,
+                            "confidence": [
+                              2014.001,
+                              2014.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ERP-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Erwinia_persicina"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2016.922,
+                            "confidence": [
+                              2015.618,
+                              2017.549
+                            ]
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": 4.2e-07
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "ERP-1_MBD8105022-JACYNN010000001-241782",
+                            "node_attrs": {
+                              "div": 0.0325,
+                              "num_date": {
+                                "value": 2017.001,
+                                "confidence": [
+                                  2017.001,
+                                  2017.843
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "ERP-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "organism": {
+                                "value": "Erwinia_persicina"
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "ERP-1_MBD8208168-JACYNM010000001-241782",
+                            "node_attrs": {
+                              "div": 0.0325,
+                              "num_date": {
+                                "value": 2017.001,
+                                "confidence": [
+                                  2017.001,
+                                  2017.843
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "ERP-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "organism": {
+                                "value": "Erwinia_persicina"
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000013",
+                    "node_attrs": {
+                      "div": 0.0314,
+                      "num_date": {
+                        "value": 2015.32,
+                        "confidence": [
+                          2014.078,
+                          2016.311
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.998,
+                          "USA": 0.0016
+                        },
+                        "entropy": 0.018
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "ERP-3_MBD8169349-JACYMQ010000010-16157",
+                        "node_attrs": {
+                          "div": 0.0325,
+                          "num_date": {
+                            "value": 2016.161,
+                            "confidence": [
+                              2016.001,
+                              2016.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "ERP-3"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Erwinia_persicina"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C44T"
+                            ],
+                            "blaERP-1": [
+                              "A15V"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "blaERP-1: A15V"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000015",
+                        "node_attrs": {
+                          "div": 0.0314,
+                          "num_date": {
+                            "value": 2016.233,
+                            "confidence": [
+                              2015.214,
+                              2017.016
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.684,
+                              "Australia": 0.279,
+                              "France": 0.021,
+                              "Canada": 0.0143,
+                              "China": 0.00111
+                            },
+                            "entropy": 0.766
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.0325,
+                              "num_date": {
+                                "value": 2017.0,
+                                "confidence": [
+                                  2016.491,
+                                  2017.822
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.685,
+                                  "Australia": 0.278,
+                                  "Canada": 0.0289,
+                                  "France": 0.00687,
+                                  "China": 0.00203
+                                },
+                                "entropy": 0.765
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C76A"
+                                ],
+                                "blaERP-1": [
+                                  "L26M"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "blaERP-1: L26M"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "ERP-4_MBC3943990-JACONS010000001-310056",
+                                "node_attrs": {
+                                  "div": 0.0325,
+                                  "num_date": {
+                                    "value": 2017.631,
+                                    "confidence": [
+                                      2017.001,
+                                      2017.999
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "ERP-4"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "organism": {
+                                    "value": "Erwinia_persicina"
+                                  },
+                                  "country": {
+                                    "value": "Canada",
+                                    "confidence": {
+                                      "Canada": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "ERP-4_WWW31973-CP146504-652296",
+                                "node_attrs": {
+                                  "div": 0.0325,
+                                  "num_date": {
+                                    "value": 2023.834,
+                                    "confidence": [
+                                      2023.834,
+                                      2023.906
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "ERP-4"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "Erwinia_persicina"
+                                  },
+                                  "country": {
+                                    "value": "Australia",
+                                    "confidence": {
+                                      "Australia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000014",
+                                "node_attrs": {
+                                  "div": 0.0359,
+                                  "num_date": {
+                                    "value": 2018.941,
+                                    "confidence": [
+                                      2018.125,
+                                      2019.323
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.872,
+                                      "Australia": 0.0674,
+                                      "China": 0.0534,
+                                      "Canada": 0.00554,
+                                      "France": 0.00138
+                                    },
+                                    "entropy": 0.496
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G41C",
+                                      "G45A",
+                                      "T427C"
+                                    ],
+                                    "blaERP-1": [
+                                      "G14A"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "blaERP-1: G14A"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "ERP-2_XNR46264-CP123752-2343322",
+                                    "node_attrs": {
+                                      "div": 0.037,
+                                      "num_date": {
+                                        "value": 2022.212,
+                                        "confidence": [
+                                          2022.212,
+                                          2022.212
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "ERP-2"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "organism": {
+                                        "value": "Erwinia_persicina"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "T474C"
+                                        ]
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000022",
+                                    "node_attrs": {
+                                      "div": 0.0359,
+                                      "num_date": {
+                                        "value": 2018.922,
+                                        "confidence": [
+                                          2018.488,
+                                          2019.519
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00136
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "ERP-2_MCQ4092527-JANFMX010000001-441750",
+                                        "node_attrs": {
+                                          "div": 0.0359,
+                                          "num_date": {
+                                            "value": 2019.059,
+                                            "confidence": [
+                                              2019.001,
+                                              2019.999
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "ERP-2"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Erwinia_persicina"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "ERP-2_MCQ4099420-JANFMY010000002-115399",
+                                        "node_attrs": {
+                                          "div": 0.0359,
+                                          "num_date": {
+                                            "value": 2019.059,
+                                            "confidence": [
+                                              2019.001,
+                                              2019.999
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "ERP-2"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Erwinia_persicina"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000018",
+                            "node_attrs": {
+                              "div": 0.0314,
+                              "num_date": {
+                                "value": 2018.117,
+                                "confidence": [
+                                  2016.519,
+                                  2018.2
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.698,
+                                  "Australia": 0.296,
+                                  "France": 0.00309,
+                                  "Canada": 0.00248
+                                },
+                                "entropy": 0.646
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000019",
+                                "node_attrs": {
+                                  "div": 0.0314,
+                                  "num_date": {
+                                    "value": 2018.922,
+                                    "confidence": [
+                                      2017.854,
+                                      2019.396
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.00241
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "ERP-1_MCQ4105361-JANFMZ010000012-104404",
+                                    "node_attrs": {
+                                      "div": 0.0314,
+                                      "num_date": {
+                                        "value": 2019.001,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.834
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "ERP-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "organism": {
+                                        "value": "Erwinia_persicina"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "ERP-1_UTX10916-CP101613-2371746",
+                                    "node_attrs": {
+                                      "div": 0.0314,
+                                      "num_date": {
+                                        "value": 2019.001,
+                                        "confidence": [
+                                          2019.001,
+                                          2019.834
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "ERP-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "organism": {
+                                        "value": "Erwinia_persicina"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000020",
+                                "node_attrs": {
+                                  "div": 0.0314,
+                                  "num_date": {
+                                    "value": 2018.117,
+                                    "confidence": [
+                                      2017.408,
+                                      2018.249
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Australia",
+                                    "confidence": {
+                                      "Australia": 0.999
+                                    },
+                                    "entropy": 0.00596
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "ERP-1_HBH66497-DNUM01000519-8735",
+                                    "node_attrs": {
+                                      "div": 0.0314,
+                                      "num_date": {
+                                        "value": 2018.256,
+                                        "confidence": [
+                                          2018.256,
+                                          2018.256
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "allele": {
+                                        "value": "ERP-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "organism": {
+                                        "value": "Erwinia_persicina"
+                                      },
+                                      "country": {
+                                        "value": "Australia",
+                                        "confidence": {
+                                          "Australia": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000021",
+                                    "node_attrs": {
+                                      "div": 0.0314,
+                                      "num_date": {
+                                        "value": 2018.219,
+                                        "confidence": [
+                                          2017.989,
+                                          2018.256
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Australia",
+                                        "confidence": {
+                                          "Australia": 1.0
+                                        },
+                                        "entropy": 1.12e-05
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "ERP-1_HBQ78901-DOII01000162-13405",
+                                        "node_attrs": {
+                                          "div": 0.0314,
+                                          "num_date": {
+                                            "value": 2018.256,
+                                            "confidence": [
+                                              2018.256,
+                                              2018.256
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "allele": {
+                                            "value": "ERP-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "organism": {
+                                            "value": "Erwinia_persicina"
+                                          },
+                                          "country": {
+                                            "value": "Australia",
+                                            "confidence": {
+                                              "Australia": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "ERP-1_HBT12858-DOLK01000165-10339",
+                                        "node_attrs": {
+                                          "div": 0.0314,
+                                          "num_date": {
+                                            "value": 2018.256,
+                                            "confidence": [
+                                              2018.256,
+                                              2018.256
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "allele": {
+                                            "value": "ERP-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "organism": {
+                                            "value": "Erwinia_persicina"
+                                          },
+                                          "country": {
+                                            "value": "Australia",
+                                            "confidence": {
+                                              "Australia": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

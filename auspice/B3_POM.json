@@ -1,0 +1,1167 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 POM beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 861,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "pom1": {
+        "end": 861,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "Italy",
+            "#5098B9"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Italy": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "Bangladesh": {
+            "latitude": 24.506442,
+            "longitude": 90.041454
+          },
+          "Chile": {
+            "latitude": -31.7613364,
+            "longitude": -71.3187696
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "Czech Republic": {
+            "latitude": 49.8175,
+            "longitude": 15.473
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Nigeria": {
+            "latitude": 10.0,
+            "longitude": 8.0
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2006.779,
+        "confidence": [
+          2005.361,
+          2007.455
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.608,
+          "Pakistan": 0.296,
+          "Italy": 0.0409,
+          "Brazil": 0.0385,
+          "Nigeria": 0.00785,
+          "Germany": 0.00389,
+          "Czech Republic": 0.00296,
+          "Gaza Strip": 0.00141
+        },
+        "entropy": 1.008
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2010.675,
+            "confidence": [
+              2007.967,
+              2013.666
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.612,
+              "Pakistan": 0.315,
+              "Nigeria": 0.0192,
+              "Italy": 0.0181,
+              "Brazil": 0.0178,
+              "Germany": 0.00939,
+              "Czech Republic": 0.00678
+            },
+            "entropy": 0.971
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C489G"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000009",
+            "node_attrs": {
+              "div": 0.00353,
+              "num_date": {
+                "value": 2018.33,
+                "confidence": [
+                  2017.1,
+                  2018.33
+                ]
+              },
+              "country": {
+                "value": "Pakistan",
+                "confidence": {
+                  "Pakistan": 1.0
+                },
+                "entropy": 1.37e-06
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C57T",
+                  "C339G",
+                  "C378T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "POM-1_MDH1166455-JAOBZB010000025-32840",
+                "node_attrs": {
+                  "div": 0.00353,
+                  "num_date": {
+                    "value": 2018.33,
+                    "confidence": [
+                      2018.33,
+                      2018.33
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Metapseudomonas_otitidis"
+                  },
+                  "allele": {
+                    "value": "POM-1"
+                  },
+                  "country": {
+                    "value": "Pakistan",
+                    "confidence": {
+                      "Pakistan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "POM-1_MDH1161779-JAOBZG010000149-2039",
+                "node_attrs": {
+                  "div": 0.00353,
+                  "num_date": {
+                    "value": 2018.33,
+                    "confidence": [
+                      2018.33,
+                      2018.33
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Metapseudomonas_otitidis"
+                  },
+                  "allele": {
+                    "value": "POM-1"
+                  },
+                  "country": {
+                    "value": "Pakistan",
+                    "confidence": {
+                      "Pakistan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "POM-1_MDH1109473-JAOBYY010000069-25190",
+                "node_attrs": {
+                  "div": 0.00353,
+                  "num_date": {
+                    "value": 2018.33,
+                    "confidence": [
+                      2018.33,
+                      2018.33
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Metapseudomonas_otitidis"
+                  },
+                  "allele": {
+                    "value": "POM-1"
+                  },
+                  "country": {
+                    "value": "Pakistan",
+                    "confidence": {
+                      "Pakistan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000011",
+            "node_attrs": {
+              "div": 0.00118,
+              "num_date": {
+                "value": 2014.41,
+                "confidence": [
+                  2011.029,
+                  2015.68
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.696,
+                  "Nigeria": 0.119,
+                  "Pakistan": 0.0776,
+                  "Germany": 0.0577,
+                  "Czech Republic": 0.0393,
+                  "Brazil": 0.00489,
+                  "Italy": 0.00468
+                },
+                "entropy": 1.055
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G495A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000012",
+                "node_attrs": {
+                  "div": 0.00235,
+                  "num_date": {
+                    "value": 2016.765,
+                    "confidence": [
+                      2015.239,
+                      2017.532
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.839,
+                      "Czech Republic": 0.0987,
+                      "Nigeria": 0.028,
+                      "Pakistan": 0.018,
+                      "Germany": 0.0136,
+                      "Brazil": 0.00128,
+                      "Italy": 0.00117
+                    },
+                    "entropy": 0.628
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G783A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "POM-1_BBT16706-AP022213-3016666",
+                    "node_attrs": {
+                      "div": 0.00353,
+                      "num_date": {
+                        "value": 2017.642,
+                        "confidence": [
+                          2017.642,
+                          2017.642
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-1"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C360T"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "POM-1_MCO7552299-JAMYBQ010000001-34450",
+                    "node_attrs": {
+                      "div": 0.00235,
+                      "num_date": {
+                        "value": 2020.001,
+                        "confidence": [
+                          2020.001,
+                          2020.863
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-1"
+                      },
+                      "country": {
+                        "value": "Czech Republic",
+                        "confidence": {
+                          "Czech Republic": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000013",
+                "node_attrs": {
+                  "div": 0.00353,
+                  "num_date": {
+                    "value": 2015.899,
+                    "confidence": [
+                      2014.413,
+                      2017.158
+                    ]
+                  },
+                  "country": {
+                    "value": "Nigeria",
+                    "confidence": {
+                      "Nigeria": 0.457,
+                      "Japan": 0.274,
+                      "Germany": 0.221,
+                      "Pakistan": 0.0286,
+                      "Czech Republic": 0.0147,
+                      "Brazil": 0.00204,
+                      "Italy": 0.00191
+                    },
+                    "entropy": 1.244
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C96G",
+                      "C240T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "POM-1_MBO2929852-JAGFDR010000068-26600",
+                    "node_attrs": {
+                      "div": 0.00471,
+                      "num_date": {
+                        "value": 2017.53,
+                        "confidence": [
+                          2017.001,
+                          2017.999
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-1"
+                      },
+                      "country": {
+                        "value": "Nigeria",
+                        "confidence": {
+                          "Nigeria": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G36T"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "POM-2_QCE31564-MK807024-1",
+                    "node_attrs": {
+                      "div": 0.00942,
+                      "num_date": {
+                        "value": 2019.295,
+                        "confidence": [
+                          2019.295,
+                          2019.295
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-2"
+                      },
+                      "country": {
+                        "value": "Germany",
+                        "confidence": {
+                          "Germany": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G96A",
+                          "G402A",
+                          "A486G",
+                          "G669A",
+                          "G853A"
+                        ],
+                        "pom1": [
+                          "G285S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "pom1: G285S"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00118,
+          "num_date": {
+            "value": 2006.969,
+            "confidence": [
+              2006.719,
+              2007.446
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.607,
+              "Pakistan": 0.289,
+              "Italy": 0.0496,
+              "Brazil": 0.0463,
+              "Nigeria": 0.0036,
+              "Germany": 0.0018,
+              "Gaza Strip": 0.00159,
+              "Czech Republic": 0.00148
+            },
+            "entropy": 1.007
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "POM-1_KIV73840-JYFT01000015-181126",
+            "node_attrs": {
+              "div": 0.00707,
+              "num_date": {
+                "value": 2010.916,
+                "confidence": [
+                  2010.916,
+                  2010.916
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Pseudomonas_sp._FeS53a"
+              },
+              "allele": {
+                "value": "POM-1"
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G498A",
+                  "C501T",
+                  "C504T",
+                  "C516T",
+                  "C594T"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00471,
+              "num_date": {
+                "value": 2007.919,
+                "confidence": [
+                  2007.514,
+                  2007.919
+                ]
+              },
+              "country": {
+                "value": "Italy",
+                "confidence": {
+                  "Italy": 0.523,
+                  "Japan": 0.302,
+                  "Pakistan": 0.144,
+                  "Brazil": 0.0235,
+                  "Nigeria": 0.00214,
+                  "Germany": 0.00125,
+                  "Gaza Strip": 0.00118,
+                  "Czech Republic": 0.00116
+                },
+                "entropy": 1.113
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C603T",
+                  "C741T",
+                  "G783A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "EU315252.1",
+                "node_attrs": {
+                  "div": 0.00471,
+                  "num_date": {
+                    "value": 2007.919,
+                    "confidence": [
+                      2001.314,
+                      2036.681
+                    ]
+                  },
+                  "country": {
+                    "value": "Italy",
+                    "confidence": {
+                      "Italy": 0.52,
+                      "Japan": 0.3,
+                      "Pakistan": 0.144,
+                      "Brazil": 0.0242,
+                      "Nigeria": 0.00288,
+                      "Germany": 0.00203,
+                      "Czech Republic": 0.00202,
+                      "Gaza Strip": 0.00198,
+                      "Bangladesh": 0.00138,
+                      "Chile": 0.00137
+                    },
+                    "entropy": 1.142
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "POM-1_ABY56045-EU315252-972",
+                "node_attrs": {
+                  "div": 0.00471,
+                  "num_date": {
+                    "value": 2007.919,
+                    "confidence": [
+                      2007.919,
+                      2007.919
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Metapseudomonas_otitidis"
+                  },
+                  "allele": {
+                    "value": "POM-1"
+                  },
+                  "country": {
+                    "value": "Italy",
+                    "confidence": {
+                      "Italy": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000008",
+            "node_attrs": {
+              "div": 0.00118,
+              "num_date": {
+                "value": 2014.896,
+                "confidence": [
+                  2009.721,
+                  2016.342
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.677,
+                  "Pakistan": 0.301,
+                  "Gaza Strip": 0.00979,
+                  "Brazil": 0.00581,
+                  "Italy": 0.00577
+                },
+                "entropy": 0.742
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.00353,
+                  "num_date": {
+                    "value": 2017.857,
+                    "confidence": [
+                      2016.148,
+                      2018.478
+                    ]
+                  },
+                  "country": {
+                    "value": "Pakistan",
+                    "confidence": {
+                      "Pakistan": 0.67,
+                      "Gaza Strip": 0.186,
+                      "Japan": 0.139,
+                      "Brazil": 0.00146,
+                      "Italy": 0.00136
+                    },
+                    "entropy": 0.887
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A123G",
+                      "C240T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "POM-1_MDH0337283-JAODZP010000021-60545",
+                    "node_attrs": {
+                      "div": 0.00471,
+                      "num_date": {
+                        "value": 2018.544,
+                        "confidence": [
+                          2018.544,
+                          2018.544
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-1"
+                      },
+                      "country": {
+                        "value": "Pakistan",
+                        "confidence": {
+                          "Pakistan": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G180A"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "POM-1_WMR31263-CP133395-3979080",
+                    "node_attrs": {
+                      "div": 0.00353,
+                      "num_date": {
+                        "value": 2021.001,
+                        "confidence": [
+                          2021.001,
+                          2021.874
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-1"
+                      },
+                      "country": {
+                        "value": "Gaza Strip",
+                        "confidence": {
+                          "Gaza Strip": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000010",
+                "node_attrs": {
+                  "div": 0.00118,
+                  "num_date": {
+                    "value": 2015.579,
+                    "confidence": [
+                      2012.936,
+                      2017.749
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.994,
+                      "Pakistan": 0.00401,
+                      "Bangladesh": 0.00105
+                    },
+                    "entropy": 0.041
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "POM-1_BCA28798-AP022642-3042912",
+                    "node_attrs": {
+                      "div": 0.00353,
+                      "num_date": {
+                        "value": 2020.116,
+                        "confidence": [
+                          2020.116,
+                          2020.116
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Metapseudomonas_otitidis"
+                      },
+                      "allele": {
+                        "value": "POM-1"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G126A",
+                          "C360T"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.00353,
+                      "num_date": {
+                        "value": 2018.313,
+                        "confidence": [
+                          2016.627,
+                          2019.969
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.994,
+                          "Bangladesh": 0.00385,
+                          "Chile": 0.00129,
+                          "Pakistan": 0.00116
+                        },
+                        "entropy": 0.0456
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G276A",
+                          "G327C"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "POM-1_MFE1811972-JBHZID010000001-681246",
+                        "node_attrs": {
+                          "div": 0.00471,
+                          "num_date": {
+                            "value": 2022.388,
+                            "confidence": [
+                              2022.388,
+                              2022.388
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Metapseudomonas_otitidis"
+                          },
+                          "allele": {
+                            "value": "POM-1"
+                          },
+                          "country": {
+                            "value": "Bangladesh",
+                            "confidence": {
+                              "Bangladesh": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C57T"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.00471,
+                          "num_date": {
+                            "value": 2019.977,
+                            "confidence": [
+                              2018.26,
+                              2020.999
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.996,
+                              "Chile": 0.00254,
+                              "Bangladesh": 0.00126
+                            },
+                            "entropy": 0.0313
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C96G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "POM-1_MDV3439883-JAWJUL010000032-34536",
+                            "node_attrs": {
+                              "div": 0.00825,
+                              "num_date": {
+                                "value": 2023.999,
+                                "confidence": [
+                                  2023.111,
+                                  2023.999
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "organism": {
+                                "value": "Metapseudomonas_otitidis"
+                              },
+                              "allele": {
+                                "value": "POM-1"
+                              },
+                              "country": {
+                                "value": "Chile",
+                                "confidence": {
+                                  "Chile": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C159T",
+                                  "A276G",
+                                  "C282A"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "name": "POM-1_WAF88411-CP102328-2966206",
+                            "node_attrs": {
+                              "div": 0.00589,
+                              "num_date": {
+                                "value": 2021.495,
+                                "confidence": [
+                                  2021.423,
+                                  2021.495
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "organism": {
+                                "value": "Metapseudomonas_otitidis"
+                              },
+                              "allele": {
+                                "value": "POM-1"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C237T"
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

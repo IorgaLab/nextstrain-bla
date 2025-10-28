@@ -1,0 +1,1150 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B2 CVA beta-lactamases",
+    "updated": "2024-12-29",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 774,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC9370_02589": {
+        "end": 774,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1919.72,
+        "confidence": [
+          1913.612,
+          1922.624
+        ]
+      },
+      "country": {
+        "value": "United Kingdom",
+        "confidence": {
+          "United Kingdom": 0.646,
+          "India": 0.171,
+          "Brazil": 0.165,
+          "USA": 0.00885,
+          "Malaysia": 0.00516,
+          "Russia": 0.00265,
+          "China": 0.00108
+        },
+        "entropy": 0.974
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "div": 0.0317,
+          "num_date": {
+            "value": 2009.098,
+            "confidence": [
+              2000.945,
+              2011.853
+            ]
+          },
+          "country": {
+            "value": "Brazil",
+            "confidence": {
+              "Brazil": 1.0
+            },
+            "entropy": 0.00113
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A5G",
+              "G8A",
+              "G22A",
+              "C23T",
+              "G37T",
+              "G45A",
+              "C46T",
+              "T47G",
+              "G57C",
+              "C60T",
+              "C105G",
+              "C111T",
+              "A120G",
+              "C144T",
+              "A153C",
+              "G157A",
+              "G165T",
+              "G168A",
+              "T171C",
+              "G180A",
+              "G216A",
+              "C252G",
+              "A331G",
+              "T390C",
+              "C431T",
+              "G448C",
+              "C702T",
+              "A764C"
+            ],
+            "NCTC9370_02589": [
+              "H2R",
+              "R3K",
+              "A8I",
+              "G13C",
+              "L16W",
+              "V53I",
+              "I111V",
+              "A144V",
+              "V150L",
+              "Q255P"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC9370_02589: H2R, R3K, A8I, G13C, L16W, V53I, I111V, A144V, V150L, Q255P"
+          }
+        },
+        "children": [
+          {
+            "name": "CVA-3_MCD4499863-JAJNRT010000008-57204",
+            "node_attrs": {
+              "div": 0.0382,
+              "num_date": {
+                "value": 2017.889,
+                "confidence": [
+                  2017.889,
+                  2017.889
+                ]
+              },
+              "organism": {
+                "value": "Chromobacterium_vaccinii"
+              },
+              "allele": {
+                "value": "CVA-3"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A7G",
+                  "T19C",
+                  "G25A",
+                  "C384T",
+                  "G585A"
+                ],
+                "NCTC9370_02589": [
+                  "K3E",
+                  "F7L",
+                  "G9S"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC9370_02589: K3E, F7L, G9S"
+              }
+            }
+          },
+          {
+            "name": "CVA-2_MCD4485698-JAJNRV010000068-19591",
+            "node_attrs": {
+              "div": 0.0395,
+              "num_date": {
+                "value": 2018.949,
+                "confidence": [
+                  2018.949,
+                  2018.949
+                ]
+              },
+              "organism": {
+                "value": "Chromobacterium_vaccinii"
+              },
+              "allele": {
+                "value": "CVA-2"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G72A",
+                  "A82G",
+                  "C273G",
+                  "C288T",
+                  "C417T",
+                  "C597A"
+                ],
+                "NCTC9370_02589": [
+                  "S28G"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC9370_02589: S28G"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.0052,
+          "num_date": {
+            "value": 1920.322,
+            "confidence": [
+              1915.243,
+              1923.469
+            ]
+          },
+          "country": {
+            "value": "United Kingdom",
+            "confidence": {
+              "United Kingdom": 0.656,
+              "India": 0.173,
+              "Brazil": 0.154,
+              "USA": 0.00885,
+              "Malaysia": 0.0051,
+              "Russia": 0.00255
+            },
+            "entropy": 0.959
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0236,
+              "num_date": {
+                "value": 1929.471,
+                "confidence": [
+                  1927.763,
+                  1929.955
+                ]
+              },
+              "country": {
+                "value": "United Kingdom",
+                "confidence": {
+                  "United Kingdom": 0.945,
+                  "India": 0.0214,
+                  "Brazil": 0.0189,
+                  "USA": 0.0117,
+                  "Russia": 0.00261
+                },
+                "entropy": 0.285
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G177C",
+                  "C353T",
+                  "C435A",
+                  "A446G",
+                  "C504G",
+                  "C519T",
+                  "T537C",
+                  "C610T",
+                  "A618G",
+                  "A670G",
+                  "T699C",
+                  "A737G",
+                  "G741T",
+                  "G747T"
+                ],
+                "NCTC9370_02589": [
+                  "A118V",
+                  "Q149R",
+                  "I224V",
+                  "K246R"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC9370_02589: A118V, Q149R, I224V, K246R"
+              }
+            },
+            "children": [
+              {
+                "name": "UFVJ01000003.1",
+                "node_attrs": {
+                  "div": 0.0236,
+                  "num_date": {
+                    "value": 1929.84,
+                    "confidence": [
+                      1927.533,
+                      1934.255
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.944,
+                      "India": 0.0215,
+                      "Brazil": 0.0191,
+                      "USA": 0.0119,
+                      "Russia": 0.00277
+                    },
+                    "entropy": 0.29
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CVA-1_SUX54204-UFVJ01000003-550903",
+                "node_attrs": {
+                  "div": 0.0236,
+                  "num_date": {
+                    "value": 1929.993,
+                    "confidence": [
+                      1928.494,
+                      1929.999
+                    ]
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_vaccinii"
+                  },
+                  "allele": {
+                    "value": "CVA-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000011",
+                "node_attrs": {
+                  "div": 0.0236,
+                  "num_date": {
+                    "value": 2013.145,
+                    "confidence": [
+                      2009.014,
+                      2013.423
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.814,
+                      "Russia": 0.173,
+                      "United Kingdom": 0.0117
+                    },
+                    "entropy": 0.532
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CVA-1_WP_235429325-NZ_CP017707-1439708",
+                    "node_attrs": {
+                      "div": 0.0236,
+                      "num_date": {
+                        "value": 2013.423,
+                        "confidence": [
+                          2013.423,
+                          2013.423
+                        ]
+                      },
+                      "organism": {
+                        "value": "Chromobacterium_vaccinii"
+                      },
+                      "allele": {
+                        "value": "CVA-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000003",
+                    "node_attrs": {
+                      "div": 0.0249,
+                      "num_date": {
+                        "value": 2019.304,
+                        "confidence": [
+                          2016.068,
+                          2019.582
+                        ]
+                      },
+                      "country": {
+                        "value": "Russia",
+                        "confidence": {
+                          "Russia": 1.0
+                        },
+                        "entropy": 0.000333
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C354T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CVA-1_QND84291-CP060044-2030795",
+                        "node_attrs": {
+                          "div": 0.0249,
+                          "num_date": {
+                            "value": 2019.582,
+                            "confidence": [
+                              2019.582,
+                              2019.582
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_vaccinii"
+                          },
+                          "allele": {
+                            "value": "CVA-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Russia",
+                            "confidence": {
+                              "Russia": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CVA-1_QND89522-CP060046-2030816",
+                        "node_attrs": {
+                          "div": 0.0249,
+                          "num_date": {
+                            "value": 2019.582,
+                            "confidence": [
+                              2019.582,
+                              2019.582
+                            ]
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_vaccinii"
+                          },
+                          "allele": {
+                            "value": "CVA-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Russia",
+                            "confidence": {
+                              "Russia": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.0236,
+              "num_date": {
+                "value": 1958.596,
+                "confidence": [
+                  1951.925,
+                  1962.064
+                ]
+              },
+              "country": {
+                "value": "India",
+                "confidence": {
+                  "India": 0.887,
+                  "Brazil": 0.0832,
+                  "Malaysia": 0.0219,
+                  "United Kingdom": 0.00692
+                },
+                "entropy": 0.437
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A31C",
+                  "G57A",
+                  "G249A",
+                  "C342T",
+                  "C417T",
+                  "T469C",
+                  "A546G",
+                  "C636G",
+                  "G638A",
+                  "G643A",
+                  "G654A",
+                  "C684T",
+                  "C705G"
+                ],
+                "NCTC9370_02589": [
+                  "M11L",
+                  "D212E",
+                  "R213K",
+                  "A215T"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC9370_02589: M11L, D212E, R213K, A215T"
+              }
+            },
+            "children": [
+              {
+                "name": "CVA-6_WP_031296540-NZ_AVPH01000248-40486",
+                "node_attrs": {
+                  "div": 0.0248,
+                  "num_date": {
+                    "value": 2013.256,
+                    "confidence": [
+                      2013.256,
+                      2013.256
+                    ]
+                  },
+                  "organism": {
+                    "value": "Pseudogulbenkiania_ferrooxidans_EGD-HP2"
+                  },
+                  "allele": {
+                    "value": "CVA-6"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.0261,
+                  "num_date": {
+                    "value": 1960.816,
+                    "confidence": [
+                      1955.704,
+                      1964.161
+                    ]
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 0.886,
+                      "Brazil": 0.0835,
+                      "Malaysia": 0.0238,
+                      "United Kingdom": 0.00557
+                    },
+                    "entropy": 0.438
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G318T",
+                      "G399C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CVA-6_MEN7433253-JAYFSJ010000019-58001",
+                    "node_attrs": {
+                      "div": 0.0274,
+                      "num_date": {
+                        "value": 2009.684,
+                        "confidence": [
+                          2009.684,
+                          2009.684
+                        ]
+                      },
+                      "organism": {
+                        "value": "Chromobacterium_indicum"
+                      },
+                      "allele": {
+                        "value": "CVA-6"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.0326,
+                      "num_date": {
+                        "value": 1964.198,
+                        "confidence": [
+                          1960.74,
+                          1966.988
+                        ]
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 0.625,
+                          "Malaysia": 0.235,
+                          "Brazil": 0.129,
+                          "China": 0.00657,
+                          "United Kingdom": 0.00422
+                        },
+                        "entropy": 0.96
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T462C",
+                          "C492T",
+                          "T495C",
+                          "C702T",
+                          "T717C",
+                          "C753T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.0378,
+                          "num_date": {
+                            "value": 2009.168,
+                            "confidence": [
+                              2002.382,
+                              2013.627
+                            ]
+                          },
+                          "country": {
+                            "value": "Brazil",
+                            "confidence": {
+                              "Brazil": 1.0
+                            },
+                            "entropy": 0.00257
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C144T",
+                              "A153C",
+                              "G157A",
+                              "G705C"
+                            ],
+                            "NCTC9370_02589": [
+                              "V53I"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC9370_02589: V53I"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CVA-5_MCD4505566-JAJNRU010000018-101712",
+                            "node_attrs": {
+                              "div": 0.043,
+                              "num_date": {
+                                "value": 2017.549,
+                                "confidence": [
+                                  2017.549,
+                                  2017.549
+                                ]
+                              },
+                              "organism": {
+                                "value": "Chromobacterium_piscinae"
+                              },
+                              "allele": {
+                                "value": "CVA-5"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Brazil",
+                                "confidence": {
+                                  "Brazil": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "A10G",
+                                  "G220A",
+                                  "G355T",
+                                  "C519A"
+                                ],
+                                "NCTC9370_02589": [
+                                  "I4V",
+                                  "A74T",
+                                  "D119Y"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "NCTC9370_02589: I4V, A74T, D119Y"
+                              }
+                            }
+                          },
+                          {
+                            "name": "CVA-7_MEN6078986-JBDJPN010000005-58153",
+                            "node_attrs": {
+                              "div": 0.0417,
+                              "num_date": {
+                                "value": 2021.681,
+                                "confidence": [
+                                  2021.681,
+                                  2021.681
+                                ]
+                              },
+                              "organism": {
+                                "value": "Chromobacterium_piscinae"
+                              },
+                              "allele": {
+                                "value": "CVA-7"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Brazil",
+                                "confidence": {
+                                  "Brazil": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T318G",
+                                  "T342C",
+                                  "C399G"
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "div": 0.0577,
+                          "num_date": {
+                            "value": 1972.662,
+                            "confidence": [
+                              1971.756,
+                              1972.962
+                            ]
+                          },
+                          "country": {
+                            "value": "Malaysia",
+                            "confidence": {
+                              "Malaysia": 0.877,
+                              "India": 0.0815,
+                              "China": 0.0238,
+                              "Brazil": 0.017
+                            },
+                            "entropy": 0.485
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A12G",
+                              "G183A",
+                              "G344A",
+                              "C573T",
+                              "A581G",
+                              "G585A",
+                              "T594C",
+                              "G627A",
+                              "G636C",
+                              "A638G",
+                              "C642G",
+                              "A643G",
+                              "A654G",
+                              "A728G",
+                              "G732A",
+                              "C755A",
+                              "G760T",
+                              "A764C",
+                              "G768C"
+                            ],
+                            "NCTC9370_02589": [
+                              "I4M",
+                              "R115Q",
+                              "Q194R",
+                              "E212D",
+                              "K213R",
+                              "T215A",
+                              "Q243R",
+                              "A252E",
+                              "A254S",
+                              "Q255P"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC9370_02589: I4M, R115Q, Q194R, E212D, K213R, T215A, Q243R, A252E, A254S, Q255P"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "CVA-4_MCD5329982-JAJOHV010000087-12818",
+                            "node_attrs": {
+                              "div": 0.0577,
+                              "num_date": {
+                                "value": 1972.993,
+                                "confidence": [
+                                  1972.001,
+                                  1972.999
+                                ]
+                              },
+                              "organism": {
+                                "value": "Chromobacterium_piscinae"
+                              },
+                              "allele": {
+                                "value": "CVA-4"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "Malaysia",
+                                "confidence": {
+                                  "Malaysia": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000018",
+                            "node_attrs": {
+                              "div": 0.0577,
+                              "num_date": {
+                                "value": 2019.553,
+                                "confidence": [
+                                  2015.166,
+                                  2020.716
+                                ]
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": 0.00011
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CVA-4_MFC3247408-JBHRUC010000001-2630849",
+                                "node_attrs": {
+                                  "div": 0.0577,
+                                  "num_date": {
+                                    "value": 2022.001,
+                                    "confidence": [
+                                      2022.001,
+                                      2022.876
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Chromobacterium_piscinae"
+                                  },
+                                  "allele": {
+                                    "value": "CVA-4"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CVA-4_MFB9167010-JBHMEG010000004-79765",
+                                "node_attrs": {
+                                  "div": 0.0577,
+                                  "num_date": {
+                                    "value": 2020.001,
+                                    "confidence": [
+                                      2020.001,
+                                      2020.88
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Chromobacterium_piscinae"
+                                  },
+                                  "allele": {
+                                    "value": "CVA-4"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

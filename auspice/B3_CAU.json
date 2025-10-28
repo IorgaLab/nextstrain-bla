@@ -1,0 +1,1431 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 CAU beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 870,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "CA608_11430": {
+        "end": 870,
+        "seqid": "config/ref.gb",
+        "start": 867,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "CA608_11435": {
+        "end": 870,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "CA608_11440": {
+        "end": 4,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "ITALY",
+            "#5098B9"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "ITALY": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "UNITED KINGDOM": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1931.236,
+        "confidence": [
+          1926.427,
+          1936.726
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.399,
+          "": 0.172,
+          "UNITED KINGDOM": 0.144,
+          "ITALY": 0.143,
+          "China": 0.142
+        },
+        "entropy": 1.504
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000011",
+        "node_attrs": {
+          "div": 0.0306,
+          "num_date": {
+            "value": 1963.248,
+            "confidence": [
+              1959.381,
+              1968.934
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.33,
+              "": 0.18,
+              "UNITED KINGDOM": 0.164,
+              "ITALY": 0.163,
+              "China": 0.162
+            },
+            "entropy": 1.562
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G12C",
+              "C16A",
+              "G18C",
+              "G22C",
+              "C23T",
+              "C24G",
+              "T27G",
+              "C34G",
+              "G36C",
+              "T42C",
+              "T108C",
+              "T126C",
+              "C135G",
+              "G198C",
+              "G240C",
+              "T312C",
+              "G318C",
+              "T322C",
+              "C335T",
+              "G337A",
+              "G338C",
+              "G378C",
+              "A379G",
+              "C380A",
+              "G382C",
+              "C383A",
+              "T407A",
+              "C408G",
+              "T409A",
+              "G430C",
+              "C432G",
+              "C439G",
+              "C440T",
+              "G446A",
+              "C460G",
+              "A461G",
+              "G462C",
+              "A463G",
+              "T485C",
+              "C519G",
+              "G550A",
+              "C615G",
+              "G618C",
+              "C633T",
+              "C659A",
+              "C660G",
+              "G723C",
+              "G858A",
+              "C859G"
+            ],
+            "CA608_11435": [
+              "L6I",
+              "A8L",
+              "L12V",
+              "T112I",
+              "G113T",
+              "M126I",
+              "T127E",
+              "A128Q",
+              "V136E",
+              "Y137N",
+              "A144P",
+              "P147V",
+              "R149K",
+              "Q154G",
+              "T155A",
+              "I162T",
+              "V184I",
+              "A220E",
+              "P287A"
+            ]
+          },
+          "labels": {
+            "aa": "CA608_11435: L6I, A8L, L12V, T112I, G113T, M126I, T127E, A128Q, V136E, Y137N, A144P, P147V, R149K, Q154G, T155A, I162T, V184I, A220E, P287A"
+          }
+        },
+        "children": [
+          {
+            "name": "CAU-6_WP_066682788-NZ_LSJA01000390-1242",
+            "node_attrs": {
+              "div": 0.0987,
+              "num_date": {
+                "value": 2012.001,
+                "confidence": [
+                  2012.001,
+                  2012.895
+                ]
+              },
+              "allele": {
+                "value": "CAU-6"
+              },
+              "organism": {
+                "value": "Caulobacter_sp._CCH9-E1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C9T",
+                  "C13G",
+                  "T14C",
+                  "C43T",
+                  "G45C",
+                  "G51C",
+                  "G54C",
+                  "G75C",
+                  "A119G",
+                  "A173C",
+                  "C177G",
+                  "T180C",
+                  "C184A",
+                  "G186C",
+                  "C237T",
+                  "A238G",
+                  "G241T",
+                  "C253A",
+                  "A296T",
+                  "C306T",
+                  "C309A",
+                  "C312G",
+                  "C318T",
+                  "G321A",
+                  "C336T",
+                  "C368A",
+                  "C375G",
+                  "T411C",
+                  "G423C",
+                  "A448G",
+                  "C450G",
+                  "C459T",
+                  "C462T",
+                  "G463C",
+                  "C464A",
+                  "C465G",
+                  "C489G",
+                  "G510T",
+                  "T609C",
+                  "A628G",
+                  "C629A",
+                  "C630G",
+                  "C639G",
+                  "G675C",
+                  "C693T",
+                  "G717A",
+                  "A725G",
+                  "G750A",
+                  "T792C",
+                  "C804T",
+                  "C813A",
+                  "C851G",
+                  "G852C",
+                  "G855C",
+                  "G866A"
+                ],
+                "CA608_11435": [
+                  "L5A",
+                  "L15F",
+                  "N40S",
+                  "E58A",
+                  "L62I",
+                  "T80A",
+                  "A81S",
+                  "Q85K",
+                  "Y99F",
+                  "A123E",
+                  "T150A",
+                  "A155Q",
+                  "T210E",
+                  "N242S",
+                  "A284G",
+                  "R289Q"
+                ]
+              },
+              "labels": {
+                "aa": "CA608_11435: L5A, L15F, N40S, E58A, L62I, T80A, A81S, Q85K, Y99F, A123E, T150A, A155Q, T210E, N242S, A284G, R289Q"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000012",
+            "node_attrs": {
+              "div": 0.106,
+              "num_date": {
+                "value": 2004.668,
+                "confidence": [
+                  2004.148,
+                  2004.723
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.999
+                },
+                "entropy": 0.0095
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C10G",
+                  "C12T",
+                  "C15G",
+                  "G28A",
+                  "C29T",
+                  "T35C",
+                  "T37C",
+                  "G51A",
+                  "C96G",
+                  "A97C",
+                  "A98G",
+                  "C105T",
+                  "C117T",
+                  "C138G",
+                  "A163G",
+                  "C164T",
+                  "G194C",
+                  "A211G",
+                  "C212T",
+                  "C252T",
+                  "G259A",
+                  "G261C",
+                  "A271G",
+                  "C313T",
+                  "G315C",
+                  "C390T",
+                  "C393T",
+                  "C414T",
+                  "G471C",
+                  "C475T",
+                  "A490C",
+                  "G493A",
+                  "C498G",
+                  "C522T",
+                  "A556C",
+                  "A557G",
+                  "G558A",
+                  "G585C",
+                  "C588T",
+                  "C613T",
+                  "G636C",
+                  "C638A",
+                  "C645G",
+                  "C648G",
+                  "G658C",
+                  "C668T",
+                  "C681G",
+                  "G687C",
+                  "A724G",
+                  "A743G",
+                  "G744C",
+                  "C751T",
+                  "T762C",
+                  "C765G",
+                  "T780C",
+                  "C794G",
+                  "A829C",
+                  "G834A",
+                  "C860G",
+                  "A862G",
+                  "A863C"
+                ],
+                "CA608_11435": [
+                  "L4V",
+                  "A10M",
+                  "V12A",
+                  "K33R",
+                  "T55V",
+                  "G65A",
+                  "T71V",
+                  "A87T",
+                  "I91V",
+                  "L105F",
+                  "M164L",
+                  "V165I",
+                  "K186R",
+                  "T213N",
+                  "E220Q",
+                  "A223V",
+                  "N242D",
+                  "Q248R",
+                  "A265G",
+                  "K277Q",
+                  "A287G",
+                  "K288A"
+                ]
+              },
+              "labels": {
+                "aa": "CA608_11435: L4V, A10M, V12A, K33R, T55V, G65A, T71V, A87T, I91V, L105F, M164L, V165I, K186R, T213N, E220Q, A223V, N242D, Q248R, A265G, K277Q, A287G, K288A"
+              }
+            },
+            "children": [
+              {
+                "name": "CAU-5_WP_004621313-NZ_APMP01000020-26461",
+                "node_attrs": {
+                  "div": 0.106,
+                  "num_date": {
+                    "value": 2004.747,
+                    "confidence": [
+                      2004.676,
+                      2004.747
+                    ]
+                  },
+                  "allele": {
+                    "value": "CAU-5"
+                  },
+                  "organism": {
+                    "value": "Caulobacter_vibrioides_OR37"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CAU-5_MBQ1562558-JAFONN010000085-124147",
+                "node_attrs": {
+                  "div": 0.106,
+                  "num_date": {
+                    "value": 2018.607,
+                    "confidence": [
+                      2018.607,
+                      2018.607
+                    ]
+                  },
+                  "allele": {
+                    "value": "CAU-5"
+                  },
+                  "organism": {
+                    "value": "Caulobacter_sp."
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CAU-5_ENZ81183-APMP01000020-26461",
+                "node_attrs": {
+                  "div": 0.106,
+                  "num_date": {
+                    "value": 2004.747,
+                    "confidence": [
+                      2004.676,
+                      2004.747
+                    ]
+                  },
+                  "allele": {
+                    "value": "CAU-5"
+                  },
+                  "organism": {
+                    "value": "Caulobacter_vibrioides_OR37"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000009",
+        "node_attrs": {
+          "div": 0.0282,
+          "num_date": {
+            "value": 1939.819,
+            "confidence": [
+              1935.031,
+              1943.591
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.512,
+              "": 0.152,
+              "UNITED KINGDOM": 0.113,
+              "ITALY": 0.112,
+              "China": 0.111
+            },
+            "entropy": 1.364
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000010",
+            "node_attrs": {
+              "div": 0.0832,
+              "num_date": {
+                "value": 1990.926,
+                "confidence": [
+                  1990.072,
+                  1991.664
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.497,
+                  "": 0.496,
+                  "ITALY": 0.00219,
+                  "UNITED KINGDOM": 0.00219,
+                  "China": 0.00217
+                },
+                "entropy": 0.735
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C10T",
+                  "G19A",
+                  "C20T",
+                  "T27C",
+                  "G30C",
+                  "G45C",
+                  "G51T",
+                  "G54C",
+                  "C58T",
+                  "T108G",
+                  "G141A",
+                  "A173C",
+                  "C177G",
+                  "C207G",
+                  "C231G",
+                  "A238G",
+                  "G241T",
+                  "G259A",
+                  "G261T",
+                  "C273G",
+                  "C291T",
+                  "C294T",
+                  "A296T",
+                  "C297T",
+                  "C306G",
+                  "C330T",
+                  "C346G",
+                  "C415G",
+                  "G429C",
+                  "C435G",
+                  "C441G",
+                  "C444T",
+                  "A445C",
+                  "G477A",
+                  "C513T",
+                  "C534T",
+                  "C540G",
+                  "C624T",
+                  "C630T",
+                  "G687C",
+                  "C711T",
+                  "T762C",
+                  "C781A",
+                  "G798A"
+                ],
+                "CA608_11435": [
+                  "A7I",
+                  "H20Y",
+                  "E58A",
+                  "T80A",
+                  "A81S",
+                  "A87T",
+                  "I91M",
+                  "Y99F",
+                  "L116V",
+                  "P139A",
+                  "P261T"
+                ]
+              },
+              "labels": {
+                "aa": "CA608_11435: A7I, H20Y, E58A, T80A, A81S, A87T, I91M, Y99F, L116V, P139A, P261T"
+              }
+            },
+            "children": [
+              {
+                "name": "CAU-4_AZS20886-CP033875-1728797",
+                "node_attrs": {
+                  "div": 0.0832,
+                  "num_date": {
+                    "value": 1991.141,
+                    "confidence": [
+                      1991.001,
+                      1991.999
+                    ]
+                  },
+                  "allele": {
+                    "value": "CAU-4"
+                  },
+                  "organism": {
+                    "value": "Caulobacter_sp._FWC26"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CAU-4_WP_062095207-NZ_CP033875-1728797",
+                "node_attrs": {
+                  "div": 0.0832,
+                  "num_date": {
+                    "value": 1991.141,
+                    "confidence": [
+                      1991.001,
+                      1991.999
+                    ]
+                  },
+                  "allele": {
+                    "value": "CAU-4"
+                  },
+                  "organism": {
+                    "value": "Caulobacter_sp._FWC26"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000005",
+            "node_attrs": {
+              "div": 0.0528,
+              "num_date": {
+                "value": 1951.247,
+                "confidence": [
+                  1948.72,
+                  1953.967
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.866,
+                  "": 0.0473,
+                  "UNITED KINGDOM": 0.0294,
+                  "ITALY": 0.0286,
+                  "China": 0.0282
+                },
+                "entropy": 0.575
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C13A",
+                  "G48C",
+                  "C49T",
+                  "C165G",
+                  "C184G",
+                  "C213G",
+                  "A221T",
+                  "A223G",
+                  "G258T",
+                  "C300T",
+                  "G362A",
+                  "G369C",
+                  "G406A",
+                  "G417A",
+                  "C449G",
+                  "G546C",
+                  "A572C",
+                  "G576C",
+                  "G714A",
+                  "C759T"
+                ],
+                "CA608_11435": [
+                  "L5I",
+                  "P17S",
+                  "L62V",
+                  "Q74L",
+                  "I75V",
+                  "G121D",
+                  "V136I",
+                  "T150S",
+                  "N191T"
+                ]
+              },
+              "labels": {
+                "aa": "CA608_11435: L5I, P17S, L62V, Q74L, I75V, G121D, V136I, T150S, N191T"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.0668,
+                  "num_date": {
+                    "value": 1959.497,
+                    "confidence": [
+                      1958.799,
+                      1959.573
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.981,
+                      "": 0.00682,
+                      "UNITED KINGDOM": 0.00413,
+                      "ITALY": 0.0041,
+                      "China": 0.00404
+                    },
+                    "entropy": 0.12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C105T",
+                      "C129T",
+                      "C147T",
+                      "C387T",
+                      "C435G",
+                      "C453T",
+                      "G561C",
+                      "C562A",
+                      "G675A",
+                      "C690G",
+                      "C696T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CAU-3_ATC29010-CP023314-2465686",
+                    "node_attrs": {
+                      "div": 0.0668,
+                      "num_date": {
+                        "value": 1959.577,
+                        "confidence": [
+                          1959.497,
+                          1959.579
+                        ]
+                      },
+                      "allele": {
+                        "value": "CAU-3"
+                      },
+                      "organism": {
+                        "value": "Caulobacter_vibrioides"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.0668,
+                      "num_date": {
+                        "value": 2011.103,
+                        "confidence": [
+                          2009.47,
+                          2011.103
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.994,
+                          "": 0.00227,
+                          "ITALY": 0.00128,
+                          "UNITED KINGDOM": 0.00126,
+                          "China": 0.00125
+                        },
+                        "entropy": 0.0452
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CAU-3_AAK24110-AE005673-2345897",
+                        "node_attrs": {
+                          "div": 0.0668,
+                          "num_date": {
+                            "value": 2011.103,
+                            "confidence": [
+                              2011.103,
+                              2011.103
+                            ]
+                          },
+                          "allele": {
+                            "value": "CAU-3"
+                          },
+                          "organism": {
+                            "value": "Caulobacter_vibrioides_CB15"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000008",
+                        "node_attrs": {
+                          "div": 0.0668,
+                          "num_date": {
+                            "value": 2016.624,
+                            "confidence": [
+                              2015.016,
+                              2016.673
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.999
+                            },
+                            "entropy": 0.00516
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "CAU-3_QXZ50523-CP079926-2388477",
+                            "node_attrs": {
+                              "div": 0.0668,
+                              "num_date": {
+                                "value": 2019.33,
+                                "confidence": [
+                                  2019.33,
+                                  2019.404
+                                ]
+                              },
+                              "allele": {
+                                "value": "CAU-3"
+                              },
+                              "organism": {
+                                "value": "Caulobacter_vibrioides"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "CAU-3_ACL95688-CP001340-2371873",
+                            "node_attrs": {
+                              "div": 0.0668,
+                              "num_date": {
+                                "value": 2016.673,
+                                "confidence": [
+                                  2016.673,
+                                  2016.673
+                                ]
+                              },
+                              "allele": {
+                                "value": "CAU-3"
+                              },
+                              "organism": {
+                                "value": "Caulobacter_vibrioides_NA1000"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.0668,
+                  "num_date": {
+                    "value": 1959.305,
+                    "confidence": [
+                      1958.127,
+                      1959.458
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.978,
+                      "": 0.00728,
+                      "UNITED KINGDOM": 0.00648,
+                      "ITALY": 0.00435,
+                      "China": 0.00428
+                    },
+                    "entropy": 0.138
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A379G",
+                      "C405T",
+                      "T434C",
+                      "C522T",
+                      "C603A",
+                      "C684T",
+                      "G687T",
+                      "C696G",
+                      "C774T",
+                      "T780C",
+                      "G783A",
+                      "A784G",
+                      "C785G",
+                      "G864C"
+                    ],
+                    "CA608_11435": [
+                      "T127A",
+                      "V145A",
+                      "T262G",
+                      "K288N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CA608_11435: T127A, V145A, T262G, K288N"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CAU-2_CAC48262-AJ315850-1",
+                    "node_attrs": {
+                      "div": 0.0702,
+                      "num_date": {
+                        "value": 2001.585,
+                        "confidence": [
+                          2001.585,
+                          2001.585
+                        ]
+                      },
+                      "allele": {
+                        "value": "CAU-2"
+                      },
+                      "organism": {
+                        "value": "Caulobacter_vibrioides"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "UNITED KINGDOM",
+                        "confidence": {
+                          "UNITED KINGDOM": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G190C",
+                          "G265C",
+                          "C864G",
+                          "G866C"
+                        ],
+                        "CA608_11435": [
+                          "D64H",
+                          "V89L",
+                          "N288K",
+                          "R289P"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CA608_11435: D64H, V89L, N288K, R289P"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.0679,
+                      "num_date": {
+                        "value": 1959.497,
+                        "confidence": [
+                          1959.215,
+                          1959.576
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.998
+                        },
+                        "entropy": 0.0168
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CP023313.2",
+                        "node_attrs": {
+                          "div": 0.0679,
+                          "num_date": {
+                            "value": 1959.585,
+                            "confidence": [
+                              1956.603,
+                              1970.694
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.959,
+                              "": 0.0127,
+                              "UNITED KINGDOM": 0.00952,
+                              "ITALY": 0.00936,
+                              "China": 0.00927
+                            },
+                            "entropy": 0.227
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CAU-1_ATC25095-CP023313-2422739",
+                        "node_attrs": {
+                          "div": 0.0679,
+                          "num_date": {
+                            "value": 1959.577,
+                            "confidence": [
+                              1959.497,
+                              1959.579
+                            ]
+                          },
+                          "allele": {
+                            "value": "CAU-1"
+                          },
+                          "organism": {
+                            "value": "Caulobacter_vibrioides"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000013",
+                        "node_attrs": {
+                          "div": 0.0679,
+                          "num_date": {
+                            "value": 1962.41,
+                            "confidence": [
+                              1960.88,
+                              1962.485
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.998
+                            },
+                            "entropy": 0.0188
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "CAU-1_PLR09873-PJRR01000019-545404",
+                            "node_attrs": {
+                              "div": 0.0679,
+                              "num_date": {
+                                "value": 1962.415,
+                                "confidence": [
+                                  1962.415,
+                                  1962.487
+                                ]
+                              },
+                              "allele": {
+                                "value": "CAU-1"
+                              },
+                              "organism": {
+                                "value": "Caulobacter_vibrioides"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000014",
+                            "node_attrs": {
+                              "div": 0.0679,
+                              "num_date": {
+                                "value": 1982.926,
+                                "confidence": [
+                                  1981.726,
+                                  1983.899
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.969,
+                                  "ITALY": 0.0165,
+                                  "": 0.00662,
+                                  "UNITED KINGDOM": 0.0042,
+                                  "China": 0.00417
+                                },
+                                "entropy": 0.178
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAU-1_CAC87665-AJ308331-1",
+                                "node_attrs": {
+                                  "div": 0.0679,
+                                  "num_date": {
+                                    "value": 2001.678,
+                                    "confidence": [
+                                      2001.678,
+                                      2001.678
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "CAU-1"
+                                  },
+                                  "organism": {
+                                    "value": "Caulobacter_vibrioides"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "ITALY",
+                                    "confidence": {
+                                      "ITALY": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CAU-1_AZH13247-CP034122-2367949",
+                                "node_attrs": {
+                                  "div": 0.0679,
+                                  "num_date": {
+                                    "value": 1983.302,
+                                    "confidence": [
+                                      1983.001,
+                                      1983.999
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "CAU-1"
+                                  },
+                                  "organism": {
+                                    "value": "Caulobacter_vibrioides"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

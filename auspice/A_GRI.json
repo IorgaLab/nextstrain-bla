@@ -1,0 +1,454 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A GRI beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 885,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "ampA": {
+        "end": 885,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Switzerland": {
+            "latitude": 46.8182,
+            "longitude": 8.2275
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "FRANCE": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2002.018,
+        "confidence": [
+          1984.773,
+          2004.625
+        ]
+      },
+      "country": {
+        "value": "FRANCE",
+        "confidence": {
+          "FRANCE": 0.472,
+          "Japan": 0.178,
+          "Switzerland": 0.149,
+          "USA": 0.109,
+          "United Kingdom": 0.0921
+        },
+        "entropy": 1.406
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 0.00682,
+          "num_date": {
+            "value": 2014.265,
+            "confidence": [
+              2008.727,
+              2019.064
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.463,
+              "Switzerland": 0.388,
+              "FRANCE": 0.105,
+              "USA": 0.0236,
+              "United Kingdom": 0.0199
+            },
+            "entropy": 1.127
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C47T",
+              "T64A",
+              "G114A",
+              "G345A",
+              "T825C",
+              "T828C"
+            ],
+            "ampA": [
+              "A16V",
+              "C22S"
+            ]
+          },
+          "labels": {
+            "aa": "ampA: A16V, C22S"
+          }
+        },
+        "children": [
+          {
+            "name": "GRI-2_GKX61225-BRLI01000016-38947",
+            "node_attrs": {
+              "div": 0.00909,
+              "num_date": {
+                "value": 2022.429,
+                "confidence": [
+                  2022.429,
+                  2022.429
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Leminorella_grimontii"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "GRI-2"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G12A",
+                  "C738T"
+                ]
+              }
+            }
+          },
+          {
+            "name": "GRI-2_XBC25439-CP146357-3668018",
+            "node_attrs": {
+              "div": 0.0102,
+              "num_date": {
+                "value": 2023.999,
+                "confidence": [
+                  2023.104,
+                  2023.999
+                ]
+              },
+              "country": {
+                "value": "Switzerland",
+                "confidence": {
+                  "Switzerland": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Leminorella_grimontii"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "GRI-2"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G816A",
+                  "G846T",
+                  "T858G"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2007.04,
+            "confidence": [
+              2004.422,
+              2007.04
+            ]
+          },
+          "country": {
+            "value": "FRANCE",
+            "confidence": {
+              "FRANCE": 0.623,
+              "USA": 0.144,
+              "United Kingdom": 0.121,
+              "Japan": 0.0608,
+              "Switzerland": 0.051
+            },
+            "entropy": 1.152
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "AM422900.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2007.04,
+                "confidence": [
+                  1979.123,
+                  2086.522
+                ]
+              },
+              "country": {
+                "value": "FRANCE",
+                "confidence": {
+                  "FRANCE": 0.621,
+                  "USA": 0.144,
+                  "United Kingdom": 0.122,
+                  "Japan": 0.0613,
+                  "Switzerland": 0.0515
+                },
+                "entropy": 1.155
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "GRI-1_CAM12803-AM422900-1149",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2007.04,
+                "confidence": [
+                  2007.04,
+                  2007.04
+                ]
+              },
+              "country": {
+                "value": "FRANCE",
+                "confidence": {
+                  "FRANCE": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Leminorella_grimontii_ATCC_33999_=_DSM_5078"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "GRI-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2014.333,
+                "confidence": [
+                  2009.266,
+                  2014.333
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.464,
+                  "United Kingdom": 0.391,
+                  "FRANCE": 0.124,
+                  "Japan": 0.0115,
+                  "Switzerland": 0.00964
+                },
+                "entropy": 1.078
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "GRI-1_VFS62103-CAADJC010000002-3954475",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2019.179,
+                    "confidence": [
+                      2019.179,
+                      2019.179
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Leminorella_grimontii"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "GRI-1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "GRI-1_KFC93116-JMPN01000028-39910",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2014.333,
+                    "confidence": [
+                      2014.333,
+                      2014.333
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Leminorella_grimontii_ATCC_33999_=_DSM_5078"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "GRI-1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

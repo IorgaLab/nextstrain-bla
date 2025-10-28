@@ -1,0 +1,1615 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B2 CVI beta-lactamases",
+    "updated": "2024-12-29",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 768,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "BS642_07385": {
+        "end": 768,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Singapore",
+            "#4334BF"
+          ],
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Singapore": {
+            "latitude": 1.2904527,
+            "longitude": 103.852038
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "Ghana": {
+            "latitude": 7.811417,
+            "longitude": -1.089272
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Switzerland": {
+            "latitude": 46.8182,
+            "longitude": 8.2275
+          },
+          "Bangladesh": {
+            "latitude": 24.506442,
+            "longitude": 90.041454
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1931.228,
+        "confidence": [
+          1911.033,
+          1945.424
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.918,
+          "Singapore": 0.0704,
+          "Brazil": 0.00737,
+          "Malaysia": 0.00266,
+          "China": 0.00152
+        },
+        "entropy": 0.329
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000009",
+        "node_attrs": {
+          "div": 0.00393,
+          "num_date": {
+            "value": 2010.75,
+            "confidence": [
+              1997.615,
+              2015.944
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.914,
+              "Singapore": 0.0857
+            },
+            "entropy": 0.297
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G582A",
+              "C588T",
+              "A620G"
+            ],
+            "BS642_07385": [
+              "K207R"
+            ]
+          },
+          "labels": {
+            "aa": "BS642_07385: K207R"
+          }
+        },
+        "children": [
+          {
+            "name": "CVI-6_WP_246880741-NZ_JAGKRE010000002-57153",
+            "node_attrs": {
+              "div": 0.00393,
+              "num_date": {
+                "value": 2018.001,
+                "confidence": [
+                  2018.001,
+                  2018.899
+                ]
+              },
+              "allele": {
+                "value": "CVI-6"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Chromobacterium_violaceum"
+              },
+              "country": {
+                "value": "Singapore",
+                "confidence": {
+                  "Singapore": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000010",
+            "node_attrs": {
+              "div": 0.00523,
+              "num_date": {
+                "value": 2016.761,
+                "confidence": [
+                  2012.587,
+                  2016.761
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.00113
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A587G"
+                ],
+                "BS642_07385": [
+                  "N196S"
+                ]
+              },
+              "labels": {
+                "aa": "BS642_07385: N196S"
+              }
+            },
+            "children": [
+              {
+                "name": "CVI-3_WP_081573430-NZ_MUKS01000015-57247",
+                "node_attrs": {
+                  "div": 0.00523,
+                  "num_date": {
+                    "value": 2016.761,
+                    "confidence": [
+                      2016.761,
+                      2016.761
+                    ]
+                  },
+                  "allele": {
+                    "value": "CVI-3"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_violaceum"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CVI-3_OQS23165-MUKS01000015-57247",
+                "node_attrs": {
+                  "div": 0.00523,
+                  "num_date": {
+                    "value": 2017.092,
+                    "confidence": [
+                      2017.092,
+                      2017.092
+                    ]
+                  },
+                  "allele": {
+                    "value": "CVI-3"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Chromobacterium_violaceum"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 5.63e-17,
+          "num_date": {
+            "value": 1937.918,
+            "confidence": [
+              1923.075,
+              1951.676
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.918,
+              "Singapore": 0.0688,
+              "Brazil": 0.00811,
+              "Malaysia": 0.00292,
+              "China": 0.00164
+            },
+            "entropy": 0.33
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "CVI-7_MCD0493986-JAJMMA010000047-60976",
+            "node_attrs": {
+              "div": 0.00131,
+              "num_date": {
+                "value": 2017.889,
+                "confidence": [
+                  2017.889,
+                  2017.889
+                ]
+              },
+              "allele": {
+                "value": "CVI-7"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Chromobacterium_violaceum"
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C72T"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.00131,
+              "num_date": {
+                "value": 1951.61,
+                "confidence": [
+                  1936.112,
+                  1953.121
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.923,
+                  "Singapore": 0.0675,
+                  "Malaysia": 0.00397,
+                  "Brazil": 0.00343,
+                  "China": 0.00218
+                },
+                "entropy": 0.312
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T537G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000000",
+                "node_attrs": {
+                  "div": 0.00392,
+                  "num_date": {
+                    "value": 1953.001,
+                    "confidence": [
+                      1952.35,
+                      1953.931
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.965,
+                      "Singapore": 0.0261,
+                      "China": 0.00596,
+                      "Malaysia": 0.00151,
+                      "Brazil": 0.00135
+                    },
+                    "entropy": 0.18
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C120T",
+                      "C727T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "MQZX01000032.1",
+                    "node_attrs": {
+                      "div": 0.00392,
+                      "num_date": {
+                        "value": 1953.978,
+                        "confidence": [
+                          1929.148,
+                          2121.043
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.958,
+                          "Singapore": 0.0273,
+                          "China": 0.00713,
+                          "Brazil": 0.00253,
+                          "Malaysia": 0.00225
+                        },
+                        "entropy": 0.221
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "CVI-7_OLZ82357-MQZX01000032-7965",
+                    "node_attrs": {
+                      "div": 0.00392,
+                      "num_date": {
+                        "value": 1953.965,
+                        "confidence": [
+                          1953.001,
+                          1953.999
+                        ]
+                      },
+                      "allele": {
+                        "value": "CVI-7"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Chromobacterium_violaceum"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "CVI-7_MFB9157976-JBHMEH010000028-8001",
+                    "node_attrs": {
+                      "div": 0.00392,
+                      "num_date": {
+                        "value": 2020.001,
+                        "confidence": [
+                          2020.001,
+                          2020.899
+                        ]
+                      },
+                      "allele": {
+                        "value": "CVI-7"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Chromobacterium_violaceum"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.00131,
+                  "num_date": {
+                    "value": 1992.208,
+                    "confidence": [
+                      1960.6,
+                      1998.004
+                    ]
+                  },
+                  "country": {
+                    "value": "Malaysia",
+                    "confidence": {
+                      "Malaysia": 0.537,
+                      "Singapore": 0.326,
+                      "USA": 0.135
+                    },
+                    "entropy": 0.991
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CVI-4_WP_246879480-NZ_JAGKRF010000037-100770",
+                    "node_attrs": {
+                      "div": 0.00524,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.897
+                        ]
+                      },
+                      "allele": {
+                        "value": "CVI-4"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Chromobacterium_violaceum"
+                      },
+                      "country": {
+                        "value": "Singapore",
+                        "confidence": {
+                          "Singapore": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A578C",
+                          "G694A",
+                          "C750G"
+                        ],
+                        "BS642_07385": [
+                          "E193A",
+                          "G232S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "BS642_07385: E193A, G232S"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.00131,
+                      "num_date": {
+                        "value": 1992.829,
+                        "confidence": [
+                          1978.29,
+                          2002.822
+                        ]
+                      },
+                      "country": {
+                        "value": "Malaysia",
+                        "confidence": {
+                          "Malaysia": 0.994,
+                          "USA": 0.00523,
+                          "Singapore": 0.00107
+                        },
+                        "entropy": 0.0419
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CVI-7_MBT2867482-JAFBBB010000004-382423",
+                        "node_attrs": {
+                          "div": 0.00524,
+                          "num_date": {
+                            "value": 2019.916,
+                            "confidence": [
+                              2019.916,
+                              2019.916
+                            ]
+                          },
+                          "allele": {
+                            "value": "CVI-7"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Chromobacterium_violaceum"
+                          },
+                          "country": {
+                            "value": "Malaysia",
+                            "confidence": {
+                              "Malaysia": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G417A",
+                              "G420A",
+                              "T501C"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000008",
+                        "node_attrs": {
+                          "div": 0.00131,
+                          "num_date": {
+                            "value": 1998.581,
+                            "confidence": [
+                              1991.084,
+                              2006.047
+                            ]
+                          },
+                          "country": {
+                            "value": "Malaysia",
+                            "confidence": {
+                              "Malaysia": 0.995,
+                              "USA": 0.00494
+                            },
+                            "entropy": 0.0329
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000003",
+                            "node_attrs": {
+                              "div": 0.00393,
+                              "num_date": {
+                                "value": 2010.511,
+                                "confidence": [
+                                  2008.098,
+                                  2010.511
+                                ]
+                              },
+                              "country": {
+                                "value": "Malaysia",
+                                "confidence": {
+                                  "Malaysia": 1.0
+                                },
+                                "entropy": 4.25e-11
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G363A",
+                                  "A443T"
+                                ],
+                                "BS642_07385": [
+                                  "E148V"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "BS642_07385: E148V"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "CVI-2_KMO02375-LDUX01000038-57045",
+                                "node_attrs": {
+                                  "div": 0.00393,
+                                  "num_date": {
+                                    "value": 2010.511,
+                                    "confidence": [
+                                      2010.511,
+                                      2010.511
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "CVI-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "Chromobacterium_violaceum"
+                                  },
+                                  "country": {
+                                    "value": "Malaysia",
+                                    "confidence": {
+                                      "Malaysia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CVI-2_KMN91167-LDUU01000010-57049",
+                                "node_attrs": {
+                                  "div": 0.00393,
+                                  "num_date": {
+                                    "value": 2010.511,
+                                    "confidence": [
+                                      2010.511,
+                                      2010.511
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "CVI-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "Chromobacterium_violaceum"
+                                  },
+                                  "country": {
+                                    "value": "Malaysia",
+                                    "confidence": {
+                                      "Malaysia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CVI-2_KMN85904-LDUT01000018-73333",
+                                "node_attrs": {
+                                  "div": 0.00393,
+                                  "num_date": {
+                                    "value": 2010.511,
+                                    "confidence": [
+                                      2010.511,
+                                      2010.511
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "CVI-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "Chromobacterium_violaceum"
+                                  },
+                                  "country": {
+                                    "value": "Malaysia",
+                                    "confidence": {
+                                      "Malaysia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CVI-2_KMN47704-LDUM01000033-73334",
+                                "node_attrs": {
+                                  "div": 0.00393,
+                                  "num_date": {
+                                    "value": 2010.763,
+                                    "confidence": [
+                                      2010.763,
+                                      2010.763
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "CVI-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "organism": {
+                                    "value": "Chromobacterium_violaceum"
+                                  },
+                                  "country": {
+                                    "value": "Malaysia",
+                                    "confidence": {
+                                      "Malaysia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.00131,
+                              "num_date": {
+                                "value": 2003.253,
+                                "confidence": [
+                                  1996.415,
+                                  2009.758
+                                ]
+                              },
+                              "country": {
+                                "value": "Malaysia",
+                                "confidence": {
+                                  "Malaysia": 0.972,
+                                  "USA": 0.0145,
+                                  "Brazil": 0.0108,
+                                  "Ghana": 0.00197
+                                },
+                                "entropy": 0.154
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000018",
+                                "node_attrs": {
+                                  "div": 0.00262,
+                                  "num_date": {
+                                    "value": 2013.507,
+                                    "confidence": [
+                                      2009.902,
+                                      2014.801
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Brazil",
+                                    "confidence": {
+                                      "Brazil": 0.992,
+                                      "USA": 0.00765
+                                    },
+                                    "entropy": 0.049
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C180T"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "CVI-7_ATP34653-CP024029-3142343",
+                                    "node_attrs": {
+                                      "div": 0.00262,
+                                      "num_date": {
+                                        "value": 2014.801,
+                                        "confidence": [
+                                          2014.801,
+                                          2014.801
+                                        ]
+                                      },
+                                      "allele": {
+                                        "value": "CVI-7"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "organism": {
+                                        "value": "Chromobacterium_violaceum"
+                                      },
+                                      "country": {
+                                        "value": "Brazil",
+                                        "confidence": {
+                                          "Brazil": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "CVI-7_ATP30745-CP024028-3140136",
+                                    "node_attrs": {
+                                      "div": 0.00262,
+                                      "num_date": {
+                                        "value": 2014.801,
+                                        "confidence": [
+                                          2014.801,
+                                          2014.801
+                                        ]
+                                      },
+                                      "allele": {
+                                        "value": "CVI-7"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "organism": {
+                                        "value": "Chromobacterium_violaceum"
+                                      },
+                                      "country": {
+                                        "value": "Brazil",
+                                        "confidence": {
+                                          "Brazil": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000013",
+                                    "node_attrs": {
+                                      "div": 0.00262,
+                                      "num_date": {
+                                        "value": 2015.28,
+                                        "confidence": [
+                                          2011.957,
+                                          2016.619
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.999,
+                                          "Brazil": 0.00123
+                                        },
+                                        "entropy": 0.00956
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000014",
+                                        "node_attrs": {
+                                          "div": 0.00262,
+                                          "num_date": {
+                                            "value": 2016.552,
+                                            "confidence": [
+                                              2014.308,
+                                              2019.627
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": 2.24e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CVI-7_QRO33272-CP069442-87050",
+                                            "node_attrs": {
+                                              "div": 0.00262,
+                                              "num_date": {
+                                                "value": 2021.097,
+                                                "confidence": [
+                                                  2021.097,
+                                                  2021.097
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "CVI-7"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "organism": {
+                                                "value": "Chromobacterium_violaceum"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "CVI-7_QRQ16926-CP069587-4704969",
+                                            "node_attrs": {
+                                              "div": 0.00262,
+                                              "num_date": {
+                                                "value": 2021.097,
+                                                "confidence": [
+                                                  2021.097,
+                                                  2021.097
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "CVI-7"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "organism": {
+                                                "value": "Chromobacterium_violaceum"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000015",
+                                        "node_attrs": {
+                                          "div": 0.00262,
+                                          "num_date": {
+                                            "value": 2016.789,
+                                            "confidence": [
+                                              2014.403,
+                                              2017.092
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": 2.24e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CVI-7_OQS47858-MUKW01000010-73257",
+                                            "node_attrs": {
+                                              "div": 0.00262,
+                                              "num_date": {
+                                                "value": 2017.092,
+                                                "confidence": [
+                                                  2017.092,
+                                                  2017.092
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "CVI-7"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Chromobacterium_violaceum"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "CVI-7_OQS49950-MUKX01000010-73257",
+                                            "node_attrs": {
+                                              "div": 0.00262,
+                                              "num_date": {
+                                                "value": 2017.092,
+                                                "confidence": [
+                                                  2017.092,
+                                                  2017.092
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "CVI-7"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Chromobacterium_violaceum"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000016",
+                                "node_attrs": {
+                                  "div": 0.00131,
+                                  "num_date": {
+                                    "value": 2008.712,
+                                    "confidence": [
+                                      2001.524,
+                                      2012.4
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Malaysia",
+                                    "confidence": {
+                                      "Malaysia": 0.967,
+                                      "USA": 0.0226,
+                                      "Ghana": 0.00504,
+                                      "Brazil": 0.00439
+                                    },
+                                    "entropy": 0.177
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000012",
+                                    "node_attrs": {
+                                      "div": 0.00262,
+                                      "num_date": {
+                                        "value": 2015.28,
+                                        "confidence": [
+                                          2012.31,
+                                          2017.092
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.999
+                                        },
+                                        "entropy": 0.00696
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C48G"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CVI-7_OQS23964-MUKR01000012-57361",
+                                        "node_attrs": {
+                                          "div": 0.00262,
+                                          "num_date": {
+                                            "value": 2017.092,
+                                            "confidence": [
+                                              2017.092,
+                                              2017.092
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "CVI-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "organism": {
+                                            "value": "Chromobacterium_violaceum"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "CVI-7_OQS09069-MUKQ01000013-57361",
+                                        "node_attrs": {
+                                          "div": 0.00262,
+                                          "num_date": {
+                                            "value": 2017.092,
+                                            "confidence": [
+                                              2017.092,
+                                              2017.092
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "CVI-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "organism": {
+                                            "value": "Chromobacterium_violaceum"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000019",
+                                    "node_attrs": {
+                                      "div": 0.00131,
+                                      "num_date": {
+                                        "value": 2011.708,
+                                        "confidence": [
+                                          2006.953,
+                                          2014.031
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Malaysia",
+                                        "confidence": {
+                                          "Malaysia": 0.97,
+                                          "Ghana": 0.0168,
+                                          "USA": 0.0078,
+                                          "Bangladesh": 0.00197,
+                                          "Switzerland": 0.00197,
+                                          "Brazil": 0.00152
+                                        },
+                                        "entropy": 0.171
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "CVI-7_MFB0826964-JBHDKE010000016-38245",
+                                        "node_attrs": {
+                                          "div": 0.00262,
+                                          "num_date": {
+                                            "value": 2022.434,
+                                            "confidence": [
+                                              2022.434,
+                                              2022.434
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "CVI-7"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "organism": {
+                                            "value": "Chromobacterium_violaceum"
+                                          },
+                                          "country": {
+                                            "value": "Ghana",
+                                            "confidence": {
+                                              "Ghana": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C96T"
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000020",
+                                        "node_attrs": {
+                                          "div": 0.00131,
+                                          "num_date": {
+                                            "value": 2014.154,
+                                            "confidence": [
+                                              2010.66,
+                                              2014.284
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Malaysia",
+                                            "confidence": {
+                                              "Malaysia": 0.98,
+                                              "Ghana": 0.00622,
+                                              "Bangladesh": 0.00521,
+                                              "Switzerland": 0.00521,
+                                              "USA": 0.00264
+                                            },
+                                            "entropy": 0.126
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "CVI-7_KJH68906-JYGI01000004-39009",
+                                            "node_attrs": {
+                                              "div": 0.00131,
+                                              "num_date": {
+                                                "value": 2014.284,
+                                                "confidence": [
+                                                  2014.284,
+                                                  2014.284
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "CVI-7"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "organism": {
+                                                "value": "Chromobacterium_violaceum"
+                                              },
+                                              "country": {
+                                                "value": "Malaysia",
+                                                "confidence": {
+                                                  "Malaysia": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000021",
+                                            "node_attrs": {
+                                              "div": 0.00131,
+                                              "num_date": {
+                                                "value": 2017.04,
+                                                "confidence": [
+                                                  2013.632,
+                                                  2017.04
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Bangladesh",
+                                                "confidence": {
+                                                  "Bangladesh": 0.349,
+                                                  "Switzerland": 0.349,
+                                                  "Malaysia": 0.298,
+                                                  "Ghana": 0.00203
+                                                },
+                                                "entropy": 1.121
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "CVI-7_MBA8734873-JABXOB010000003-468316",
+                                                "node_attrs": {
+                                                  "div": 0.00131,
+                                                  "num_date": {
+                                                    "value": 2017.804,
+                                                    "confidence": [
+                                                      2017.804,
+                                                      2017.804
+                                                    ]
+                                                  },
+                                                  "allele": {
+                                                    "value": "CVI-7"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Chromobacterium_violaceum"
+                                                  },
+                                                  "country": {
+                                                    "value": "Bangladesh",
+                                                    "confidence": {
+                                                      "Bangladesh": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "CVI-7_OVE48475-NHOO01000007-21533",
+                                                "node_attrs": {
+                                                  "div": 0.00131,
+                                                  "num_date": {
+                                                    "value": 2017.04,
+                                                    "confidence": [
+                                                      2017.04,
+                                                      2017.04
+                                                    ]
+                                                  },
+                                                  "allele": {
+                                                    "value": "CVI-7"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Chromobacterium_violaceum"
+                                                  },
+                                                  "country": {
+                                                    "value": "Switzerland",
+                                                    "confidence": {
+                                                      "Switzerland": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

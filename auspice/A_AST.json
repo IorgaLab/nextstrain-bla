@@ -1,0 +1,492 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A AST beta-lactamases",
+    "updated": "2025-01-18",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 933,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "bla": {
+        "end": 933,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Venezuela",
+            "#86BB6E"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Venezuela": {
+            "latitude": 8.0,
+            "longitude": -66.0
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1988.363,
+        "confidence": [
+          1979.957,
+          1993.211
+        ]
+      },
+      "country": {
+        "value": "Venezuela",
+        "confidence": {
+          "Venezuela": 0.371,
+          "France": 0.346,
+          "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)": 0.229,
+          "China": 0.0538
+        },
+        "entropy": 1.23
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 1989.881,
+            "confidence": [
+              1984.345,
+              1995.559
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.416,
+              "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)": 0.275,
+              "Venezuela": 0.27,
+              "China": 0.0389
+            },
+            "entropy": 1.199
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "AST-2_CCF63029-FO082843-2495107",
+            "node_attrs": {
+              "div": 0.00756,
+              "num_date": {
+                "value": 2012.1,
+                "confidence": [
+                  2012.1,
+                  2012.1
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "AST-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)",
+                "confidence": {
+                  "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Nocardia_cyriacigeorgica_GUH-2"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C114G",
+                  "T122C",
+                  "A128G",
+                  "G135A",
+                  "G162C",
+                  "T183G",
+                  "C516T"
+                ],
+                "bla": [
+                  "V41A",
+                  "D43G"
+                ]
+              },
+              "labels": {
+                "aa": "bla: V41A, D43G"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00539,
+              "num_date": {
+                "value": 2000.466,
+                "confidence": [
+                  1997.302,
+                  2000.466
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.878,
+                  "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)": 0.0576,
+                  "Venezuela": 0.0564,
+                  "China": 0.00849
+                },
+                "entropy": 0.482
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C87G",
+                  "C447G",
+                  "C450T",
+                  "C540G",
+                  "C588G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "AF279904.1",
+                "node_attrs": {
+                  "div": 0.00539,
+                  "num_date": {
+                    "value": 2000.466,
+                    "confidence": [
+                      1989.559,
+                      2024.245
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.875,
+                      "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)": 0.0583,
+                      "Venezuela": 0.0571,
+                      "China": 0.00929
+                    },
+                    "entropy": 0.489
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AST-1_AAG44836-AF279904-160",
+                "node_attrs": {
+                  "div": 0.00539,
+                  "num_date": {
+                    "value": 2000.466,
+                    "confidence": [
+                      2000.466,
+                      2000.466
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "AST-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Nocardia_asteroides"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.00646,
+          "num_date": {
+            "value": 2000.48,
+            "confidence": [
+              1996.654,
+              2001.877
+            ]
+          },
+          "country": {
+            "value": "Venezuela",
+            "confidence": {
+              "Venezuela": 0.809,
+              "China": 0.116,
+              "France": 0.0444,
+              "Submitted (06-FEB-2012) Genoscope - Centre National de Sequencage : BP 191 91006 EVRY cedex - FRANCE (E-mail : seqref@genoscope.cns.fr - Web : www.genoscope.cns.fr)": 0.0299
+            },
+            "entropy": 0.665
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C19T",
+              "A79G",
+              "C536T",
+              "C633T",
+              "C657T",
+              "T726C"
+            ],
+            "bla": [
+              "P7S",
+              "T27A",
+              "A179V"
+            ]
+          },
+          "labels": {
+            "aa": "bla: P7S, T27A, A179V"
+          }
+        },
+        "children": [
+          {
+            "name": "AST-3_MBF6428149-JADLQD010000011-64493",
+            "node_attrs": {
+              "div": 0.00646,
+              "num_date": {
+                "value": 2019.001,
+                "confidence": [
+                  2019.001,
+                  2019.898
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "AST-3"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Nocardia_cyriacigeorgica"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00861,
+              "num_date": {
+                "value": 2002.582,
+                "confidence": [
+                  2001.204,
+                  2002.627
+                ]
+              },
+              "country": {
+                "value": "Venezuela",
+                "confidence": {
+                  "Venezuela": 1.0
+                },
+                "entropy": 0.00208
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T855G",
+                  "A899G"
+                ],
+                "bla": [
+                  "E300G"
+                ]
+              },
+              "labels": {
+                "aa": "bla: E300G"
+              }
+            },
+            "children": [
+              {
+                "name": "AST-4_NEW34383-JAAGVB010000027-25861",
+                "node_attrs": {
+                  "div": 0.00861,
+                  "num_date": {
+                    "value": 2002.582,
+                    "confidence": [
+                      2002.582,
+                      2002.656
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "allele": {
+                    "value": "AST-4"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Venezuela",
+                    "confidence": {
+                      "Venezuela": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Nocardia_cyriacigeorgica"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AST-4_WP_163845679-NZ_JAAGVB010000027-25861",
+                "node_attrs": {
+                  "div": 0.00861,
+                  "num_date": {
+                    "value": 2002.582,
+                    "confidence": [
+                      2002.582,
+                      2002.656
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "allele": {
+                    "value": "AST-4"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Venezuela",
+                    "confidence": {
+                      "Venezuela": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Nocardia_cyriacigeorgica"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

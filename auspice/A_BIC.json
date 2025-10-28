@@ -1,0 +1,302 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A BIC beta-lactamases",
+    "updated": "2025-01-20",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 885,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaBIC-1": {
+        "end": 885,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Denmark": {
+            "latitude": 56.2639,
+            "longitude": 9.5018
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1999.664,
+        "confidence": [
+          1991.014,
+          2007.123
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.505,
+          "Denmark": 0.332,
+          "China": 0.163
+        },
+        "entropy": 1.007
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "BIC-2_WKD79667-OR143113-121",
+        "node_attrs": {
+          "div": 0.00681,
+          "num_date": {
+            "value": 2023.451,
+            "confidence": [
+              2023.451,
+              2023.451
+            ]
+          },
+          "country": {
+            "value": "Denmark",
+            "confidence": {
+              "Denmark": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "organism": {
+            "value": "Pseudomonas_fluorescens"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "allele": {
+            "value": "BIC-2"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T9C",
+              "C37A",
+              "T132C",
+              "C235T",
+              "G303A",
+              "T408C",
+              "A498G",
+              "A666G",
+              "T687C",
+              "G696T",
+              "G807A"
+            ],
+            "blaBIC-1": [
+              "L13I",
+              "E232D"
+            ]
+          },
+          "labels": {
+            "aa": "blaBIC-1: L13I, E232D"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00567,
+          "num_date": {
+            "value": 2009.445,
+            "confidence": [
+              2005.46,
+              2009.445
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.713,
+              "China": 0.229,
+              "Denmark": 0.0583
+            },
+            "entropy": 0.744
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "GQ260093.1",
+            "node_attrs": {
+              "div": 0.00567,
+              "num_date": {
+                "value": 2009.445,
+                "confidence": [
+                  1982.117,
+                  2079.565
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.712,
+                  "China": 0.229,
+                  "Denmark": 0.0592
+                },
+                "entropy": 0.747
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIC-1_ADB56658-GQ260093-1",
+            "node_attrs": {
+              "div": 0.00567,
+              "num_date": {
+                "value": 2009.445,
+                "confidence": [
+                  2009.445,
+                  2009.445
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Pseudomonas_fluorescens"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "BIC-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIC-1_QCH41449-MK847898-5140",
+            "node_attrs": {
+              "div": 0.00567,
+              "num_date": {
+                "value": 2019.314,
+                "confidence": [
+                  2019.314,
+                  2019.314
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "organism": {
+                "value": "Cloning_vector_pET28A-blaBIC-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "BIC-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

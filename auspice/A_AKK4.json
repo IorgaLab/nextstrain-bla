@@ -1,0 +1,346 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A AKK4 beta-lactamases",
+    "updated": "2025-01-18",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 921,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "AC781_04685": {
+        "end": 921,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Netherlands": {
+            "latitude": 52.1326,
+            "longitude": 5.2913
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1991.105,
+        "confidence": [
+          1950.628,
+          2006.356
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.5,
+          "Netherlands": 0.5
+        },
+        "entropy": 0.693
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "AKK4-2_MBT9450600-JACVVN010000012-1279368",
+        "node_attrs": {
+          "div": 0.00218,
+          "num_date": {
+            "value": 2019.56,
+            "confidence": [
+              2019.56,
+              2019.56
+            ]
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "organism": {
+            "value": "Akkermansia_glycaniphila"
+          },
+          "allele": {
+            "value": "AKK4-2"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C277A",
+              "T858G"
+            ],
+            "AC781_04685": [
+              "L93M"
+            ]
+          },
+          "labels": {
+            "aa": "AC781_04685: L93M"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2011.76,
+            "confidence": [
+              2005.625,
+              2011.76
+            ]
+          },
+          "country": {
+            "value": "Netherlands",
+            "confidence": {
+              "Netherlands": 0.864,
+              "China": 0.136
+            },
+            "entropy": 0.397
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "LIGX01000018.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2011.76,
+                "confidence": [
+                  1889.908,
+                  2404.439
+                ]
+              },
+              "country": {
+                "value": "Netherlands",
+                "confidence": {
+                  "Netherlands": 0.86,
+                  "China": 0.14
+                },
+                "entropy": 0.404
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK4-1_OCA03381-LIGX01000018-22521",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2011.76,
+                "confidence": [
+                  2011.76,
+                  2011.76
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "Netherlands",
+                "confidence": {
+                  "Netherlands": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Akkermansia_glycaniphila"
+              },
+              "allele": {
+                "value": "AKK4-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2016.728,
+                "confidence": [
+                  2012.398,
+                  2016.728
+                ]
+              },
+              "country": {
+                "value": "Netherlands",
+                "confidence": {
+                  "Netherlands": 0.863,
+                  "China": 0.137
+                },
+                "entropy": 0.399
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "AKK4-1_XAL76077-PP740733-1",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2024.307,
+                    "confidence": [
+                      2024.307,
+                      2024.307
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "synthetic_construct"
+                  },
+                  "allele": {
+                    "value": "AKK4-1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AKK4-1_SEH91366-LT629973-1967471",
+                "node_attrs": {
+                  "div": 3.42e-17,
+                  "num_date": {
+                    "value": 2016.728,
+                    "confidence": [
+                      2016.728,
+                      2016.728
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "Netherlands",
+                    "confidence": {
+                      "Netherlands": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Akkermansia_glycaniphila"
+                  },
+                  "allele": {
+                    "value": "AKK4-1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

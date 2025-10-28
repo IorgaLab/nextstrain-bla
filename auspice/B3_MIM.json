@@ -1,0 +1,504 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 MIM beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 900,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "JI59_01225": {
+        "end": 900,
+        "seqid": "config/ref.gb",
+        "start": 897,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "JI59_01230": {
+        "end": 900,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "BELGIUM": {
+            "latitude": 50.707735,
+            "longitude": 4.677726
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2008.208,
+        "confidence": [
+          2007.356,
+          2009.232
+        ]
+      },
+      "country": {
+        "value": "South Korea",
+        "confidence": {
+          "South Korea": 0.463,
+          "BELGIUM": 0.446,
+          "USA": 0.0906
+        },
+        "entropy": 0.934
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.078,
+          "num_date": {
+            "value": 2014.656,
+            "confidence": [
+              2014.442,
+              2014.656
+            ]
+          },
+          "country": {
+            "value": "South Korea",
+            "confidence": {
+              "South Korea": 0.993,
+              "BELGIUM": 0.00537,
+              "USA": 0.00169
+            },
+            "entropy": 0.0459
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C1A",
+              "G6C",
+              "A12G",
+              "G19A",
+              "C27T",
+              "G28A",
+              "C30T",
+              "A31C",
+              "T42C",
+              "G45A",
+              "A59G",
+              "G60C",
+              "G67A",
+              "T68A",
+              "T69A",
+              "G72A",
+              "C73G",
+              "T76C",
+              "C78A",
+              "C79A",
+              "A83C",
+              "A84T",
+              "G87C",
+              "T88G",
+              "G92C",
+              "C93G",
+              "T99C",
+              "G100A",
+              "C101A",
+              "A102G",
+              "A106C",
+              "G108C",
+              "G114C",
+              "C116G",
+              "T129G",
+              "T135C",
+              "A141G",
+              "T156C",
+              "C165A",
+              "A174C",
+              "G196A",
+              "T207C",
+              "G210C",
+              "T213C",
+              "A216T",
+              "C222T",
+              "G225C",
+              "C231T",
+              "C246T",
+              "T249C",
+              "C255G",
+              "G264C",
+              "G285T",
+              "C300G",
+              "G306A",
+              "T324C",
+              "C336T",
+              "T344C",
+              "C354T",
+              "A360G",
+              "T378C",
+              "A381G",
+              "G385A",
+              "G393T",
+              "C394G",
+              "T399C",
+              "A405T",
+              "A408G",
+              "C441T",
+              "G447C",
+              "A458T",
+              "G472C",
+              "G474C",
+              "C477T",
+              "C479T",
+              "C482A",
+              "A493G",
+              "G494T",
+              "C498T",
+              "T501C",
+              "T516C",
+              "G537A",
+              "G540C",
+              "T543A",
+              "A545G",
+              "C548A",
+              "C549A",
+              "G555C",
+              "A564G",
+              "T570A",
+              "A617G",
+              "C639T",
+              "A657C",
+              "G662A",
+              "T672C",
+              "T693C",
+              "C697A",
+              "A704G",
+              "A705C",
+              "G726C",
+              "C735T",
+              "G753C",
+              "A762C",
+              "C789T",
+              "G792A",
+              "G804A",
+              "G816A",
+              "T825C",
+              "A843T",
+              "G846A",
+              "G850A",
+              "C851G",
+              "T870C",
+              "G875A",
+              "C876G",
+              "A880G",
+              "G893C",
+              "A895C",
+              "A897G"
+            ],
+            "JI59_01225": [
+              "M1V"
+            ],
+            "JI59_01230": [
+              "L1M",
+              "V7I",
+              "A10T",
+              "T11P",
+              "K20S",
+              "V23K",
+              "P25A",
+              "S26P",
+              "P27T",
+              "K28T",
+              "S30A",
+              "S31T",
+              "A34K",
+              "M36L",
+              "P39R",
+              "V66I",
+              "E72D",
+              "V115A",
+              "V129I",
+              "L132V",
+              "Q153L",
+              "A158P",
+              "A160V",
+              "P161H",
+              "S165V",
+              "H182R",
+              "A183E",
+              "K206R",
+              "G221D",
+              "Q235R",
+              "A284S",
+              "G292E",
+              "T294A",
+              "G298A",
+              "K299Q"
+            ]
+          },
+          "labels": {
+            "aa": "JI59_01225: M1V; JI59_01230: L1M, V7I, A10T, T11P, K20S, V23K, P25A, S26P, P27T, K28T, S30A, S31T, A34K, M36L, P39R, V66I, E72D, V115A, V129I, L132V, Q153L, A158P, A160V, P161H, S165V, H182R, A183E, K206R, G221D, Q235R, A284S, G292E, T294A, G298A, K299Q"
+          }
+        },
+        "children": [
+          {
+            "name": "CP009291.1",
+            "node_attrs": {
+              "div": 0.078,
+              "num_date": {
+                "value": 2014.656,
+                "confidence": [
+                  2014.404,
+                  2014.919
+                ]
+              },
+              "country": {
+                "value": "South Korea",
+                "confidence": {
+                  "South Korea": 0.991,
+                  "BELGIUM": 0.00602,
+                  "USA": 0.00259
+                },
+                "entropy": 0.0548
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "MIM-1_AIT78529-CP009291-278313",
+            "node_attrs": {
+              "div": 0.078,
+              "num_date": {
+                "value": 2014.656,
+                "confidence": [
+                  2014.656,
+                  2014.656
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "MIM-1"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "South Korea",
+                "confidence": {
+                  "South Korea": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Novosphingobium_pentaromativorans_US6-1"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0701,
+          "num_date": {
+            "value": 2013.871,
+            "confidence": [
+              2013.686,
+              2014.071
+            ]
+          },
+          "country": {
+            "value": "BELGIUM",
+            "confidence": {
+              "BELGIUM": 0.885,
+              "USA": 0.0971,
+              "South Korea": 0.0179
+            },
+            "entropy": 0.407
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "MIM-5_SLJ90930-FVZE01000001-1335593",
+            "node_attrs": {
+              "div": 0.0739,
+              "num_date": {
+                "value": 2017.16,
+                "confidence": [
+                  2017.16,
+                  2017.16
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "MIM-5"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Novosphingobium_mathurense"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A174G",
+                  "C255T",
+                  "A381C",
+                  "C453A",
+                  "A762T",
+                  "C786T"
+                ]
+              }
+            }
+          },
+          {
+            "name": "MIM-3_CDO37469-CCBH010000171-36601",
+            "node_attrs": {
+              "div": 0.0787,
+              "num_date": {
+                "value": 2014.234,
+                "confidence": [
+                  2014.234,
+                  2014.234
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "MIM-3"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "BELGIUM",
+                "confidence": {
+                  "BELGIUM": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Novosphingobium_sp._KN65.2"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G48A",
+                  "C288G",
+                  "T483A",
+                  "C495A",
+                  "A603T"
+                ],
+                "JI59_01230": [
+                  "S165R",
+                  "E201D"
+                ]
+              },
+              "labels": {
+                "aa": "JI59_01230: S165R, E201D"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

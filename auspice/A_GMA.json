@@ -1,0 +1,3164 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A GMA beta-lactamases",
+    "updated": "2025-02-22",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 849,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "bla": {
+        "end": 849,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Turkey": {
+            "latitude": 39.046746,
+            "longitude": 36.767068
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1986.905,
+        "confidence": [
+          1975.226,
+          1995.314
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.429,
+          "India": 0.285,
+          "China": 0.12,
+          "USA": 0.0731,
+          "South Korea": 0.0657,
+          "Turkey": 0.0275
+        },
+        "entropy": 1.444
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "GMA-2_KAB0300971-VXDD01000003-611062",
+        "node_attrs": {
+          "div": 0.0119,
+          "num_date": {
+            "value": 2012.217,
+            "confidence": [
+              2012.217,
+              2012.217
+            ]
+          },
+          "allele": {
+            "value": "GMA-2"
+          },
+          "organism": {
+            "value": "Vibrio_fortis"
+          },
+          "country": {
+            "value": "India",
+            "confidence": {
+              "India": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C76A",
+              "A132C",
+              "A143G",
+              "C189T",
+              "G219A",
+              "C320T",
+              "T437C",
+              "T544C",
+              "A652C",
+              "G657A",
+              "A687T",
+              "C702T",
+              "A714T"
+            ],
+            "bla": [
+              "L26I",
+              "Q48R",
+              "S107L",
+              "I146T",
+              "Y182H",
+              "K218Q"
+            ]
+          },
+          "labels": {
+            "aa": "bla: L26I, Q48R, S107L, I146T, Y182H, K218Q"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000029",
+        "node_attrs": {
+          "div": 0.00355,
+          "num_date": {
+            "value": 1999.966,
+            "confidence": [
+              1999.07,
+              2001.857
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.955,
+              "China": 0.0279,
+              "South Korea": 0.00983,
+              "USA": 0.00435,
+              "India": 0.00299
+            },
+            "entropy": 0.233
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "GMA-1_QJR97681-MN865127-125929",
+            "node_attrs": {
+              "div": 0.00355,
+              "num_date": {
+                "value": 2019.974,
+                "confidence": [
+                  2019.974,
+                  2019.974
+                ]
+              },
+              "allele": {
+                "value": "GMA-1"
+              },
+              "organism": {
+                "value": "Vibrio_alginolyticus"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000031",
+            "node_attrs": {
+              "div": 0.00591,
+              "num_date": {
+                "value": 2004.554,
+                "confidence": [
+                  2002.98,
+                  2004.712
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.96,
+                  "South Korea": 0.0325,
+                  "China": 0.00568,
+                  "USA": 0.00139
+                },
+                "entropy": 0.194
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A684G",
+                  "A843C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "GMA-1_BDR36853-AP026782-115388",
+                "node_attrs": {
+                  "div": 0.00591,
+                  "num_date": {
+                    "value": 2004.712,
+                    "confidence": [
+                      2004.712,
+                      2004.712
+                    ]
+                  },
+                  "allele": {
+                    "value": "GMA-1"
+                  },
+                  "organism": {
+                    "value": "Photobacterium_damselae_subsp._damselae"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.00591,
+                  "num_date": {
+                    "value": 2007.415,
+                    "confidence": [
+                      2004.377,
+                      2007.415
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.675,
+                      "South Korea": 0.315,
+                      "China": 0.00657,
+                      "USA": 0.0028
+                    },
+                    "entropy": 0.684
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "GMA-1_ODS10217-MDCJ01000002-434890",
+                    "node_attrs": {
+                      "div": 0.00591,
+                      "num_date": {
+                        "value": 2007.415,
+                        "confidence": [
+                          2007.415,
+                          2007.415
+                        ]
+                      },
+                      "allele": {
+                        "value": "GMA-1"
+                      },
+                      "organism": {
+                        "value": "Vibrio_scophthalmi"
+                      },
+                      "country": {
+                        "value": "South Korea",
+                        "confidence": {
+                          "South Korea": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 0.00591,
+                      "num_date": {
+                        "value": 2008.689,
+                        "confidence": [
+                          2006.921,
+                          2010.533
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.698,
+                          "South Korea": 0.281,
+                          "China": 0.0133,
+                          "USA": 0.00725
+                        },
+                        "entropy": 0.705
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "GMA-1_BAL43278-AB571865-78793",
+                        "node_attrs": {
+                          "div": 0.00591,
+                          "num_date": {
+                            "value": 2010.533,
+                            "confidence": [
+                              2010.533,
+                              2010.533
+                            ]
+                          },
+                          "allele": {
+                            "value": "GMA-1"
+                          },
+                          "organism": {
+                            "value": "Photobacterium_damselae_subsp._damselae"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000005",
+                        "node_attrs": {
+                          "div": 0.00591,
+                          "num_date": {
+                            "value": 2010.506,
+                            "confidence": [
+                              2008.792,
+                              2012.263
+                            ]
+                          },
+                          "country": {
+                            "value": "South Korea",
+                            "confidence": {
+                              "South Korea": 0.445,
+                              "Japan": 0.375,
+                              "China": 0.0999,
+                              "USA": 0.0777,
+                              "India": 0.00151,
+                              "Turkey": 0.00116
+                            },
+                            "entropy": 1.174
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "GMA-1_ANS84419-CP016307-652198",
+                            "node_attrs": {
+                              "div": 0.00591,
+                              "num_date": {
+                                "value": 2012.332,
+                                "confidence": [
+                                  2012.332,
+                                  2012.332
+                                ]
+                              },
+                              "allele": {
+                                "value": "GMA-1"
+                              },
+                              "organism": {
+                                "value": "Vibrio_scophthalmi"
+                              },
+                              "country": {
+                                "value": "South Korea",
+                                "confidence": {
+                                  "South Korea": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000006",
+                            "node_attrs": {
+                              "div": 0.00591,
+                              "num_date": {
+                                "value": 2012.167,
+                                "confidence": [
+                                  2010.65,
+                                  2013.963
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.415,
+                                  "China": 0.413,
+                                  "Japan": 0.108,
+                                  "South Korea": 0.0625,
+                                  "Turkey": 0.00147,
+                                  "India": 0.00113
+                                },
+                                "entropy": 1.161
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "GMA-1_AHJ00703-CP007004-2973952",
+                                "node_attrs": {
+                                  "div": 0.00591,
+                                  "num_date": {
+                                    "value": 2013.963,
+                                    "confidence": [
+                                      2013.963,
+                                      2013.963
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "GMA-1"
+                                  },
+                                  "organism": {
+                                    "value": "Vibrio_parahaemolyticus_UCM-V493"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000007",
+                                "node_attrs": {
+                                  "div": 0.00591,
+                                  "num_date": {
+                                    "value": 2015.712,
+                                    "confidence": [
+                                      2011.89,
+                                      2015.837
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "China",
+                                    "confidence": {
+                                      "China": 0.947,
+                                      "USA": 0.0416,
+                                      "Japan": 0.00962,
+                                      "South Korea": 0.00191
+                                    },
+                                    "entropy": 0.243
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000008",
+                                    "node_attrs": {
+                                      "div": 0.00591,
+                                      "num_date": {
+                                        "value": 2015.712,
+                                        "confidence": [
+                                          2013.348,
+                                          2015.907
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.994,
+                                          "USA": 0.0048,
+                                          "Japan": 0.00116
+                                        },
+                                        "entropy": 0.0408
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "GMA-1_MDW1912443-JAWOUF010000032-8523",
+                                        "node_attrs": {
+                                          "div": 0.00591,
+                                          "num_date": {
+                                            "value": 2015.712,
+                                            "confidence": [
+                                              2015.001,
+                                              2015.999
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "GMA-1"
+                                          },
+                                          "organism": {
+                                            "value": "Vibrio_sp._707"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000009",
+                                        "node_attrs": {
+                                          "div": 0.00591,
+                                          "num_date": {
+                                            "value": 2015.712,
+                                            "confidence": [
+                                              2014.516,
+                                              2015.945
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.998,
+                                              "USA": 0.00116
+                                            },
+                                            "entropy": 0.0133
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GMA-1_MDW2046669-JAWOUE010000037-2913",
+                                            "node_attrs": {
+                                              "div": 0.00591,
+                                              "num_date": {
+                                                "value": 2015.813,
+                                                "confidence": [
+                                                  2015.001,
+                                                  2015.999
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Vibrio_sp._708"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "GMA-1_MDW1923482-JAWOUD010000029-8523",
+                                            "node_attrs": {
+                                              "div": 0.00591,
+                                              "num_date": {
+                                                "value": 2015.813,
+                                                "confidence": [
+                                                  2015.001,
+                                                  2015.999
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Vibrio_sp._736"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000010",
+                                    "node_attrs": {
+                                      "div": 0.00591,
+                                      "num_date": {
+                                        "value": 2015.716,
+                                        "confidence": [
+                                          2014.8,
+                                          2016.015
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.993,
+                                          "USA": 0.00533,
+                                          "Japan": 0.00126
+                                        },
+                                        "entropy": 0.0443
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000011",
+                                        "node_attrs": {
+                                          "div": 0.00591,
+                                          "num_date": {
+                                            "value": 2016.127,
+                                            "confidence": [
+                                              2015.807,
+                                              2016.526
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.998,
+                                              "USA": 0.00133
+                                            },
+                                            "entropy": 0.0148
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GMA-1_MBO0204863-JAFLOA010000015-72553",
+                                            "node_attrs": {
+                                              "div": 0.00591,
+                                              "num_date": {
+                                                "value": 2016.526,
+                                                "confidence": [
+                                                  2016.526,
+                                                  2016.526
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Vibrio_alginolyticus"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000012",
+                                            "node_attrs": {
+                                              "div": 0.00591,
+                                              "num_date": {
+                                                "value": 2018.555,
+                                                "confidence": [
+                                                  2016.384,
+                                                  2019.974
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 0.999
+                                                },
+                                                "entropy": 0.0116
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "GMA-1_QJR97643-MN865127-87644",
+                                                "node_attrs": {
+                                                  "div": 0.00591,
+                                                  "num_date": {
+                                                    "value": 2019.974,
+                                                    "confidence": [
+                                                      2019.974,
+                                                      2019.974
+                                                    ]
+                                                  },
+                                                  "allele": {
+                                                    "value": "GMA-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Vibrio_alginolyticus"
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Submission date"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000013",
+                                                "node_attrs": {
+                                                  "div": 0.00591,
+                                                  "num_date": {
+                                                    "value": 2019.878,
+                                                    "confidence": [
+                                                      2017.913,
+                                                      2020.777
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 0.999
+                                                    },
+                                                    "entropy": 0.0112
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "GMA-1_WHR54408-CP115190-48619",
+                                                    "node_attrs": {
+                                                      "div": 0.00591,
+                                                      "num_date": {
+                                                        "value": 2021.248,
+                                                        "confidence": [
+                                                          2021.248,
+                                                          2021.319
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "GMA-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Vibrio_furnissii"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000014",
+                                                    "node_attrs": {
+                                                      "div": 0.00591,
+                                                      "num_date": {
+                                                        "value": 2021.184,
+                                                        "confidence": [
+                                                          2019.168,
+                                                          2021.256
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 0.999
+                                                        },
+                                                        "entropy": 0.0104
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "GMA-1_XFF48430-CP168657-391458",
+                                                        "node_attrs": {
+                                                          "div": 0.00591,
+                                                          "num_date": {
+                                                            "value": 2021.256,
+                                                            "confidence": [
+                                                              2021.256,
+                                                              2021.256
+                                                            ]
+                                                          },
+                                                          "allele": {
+                                                            "value": "GMA-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Vibrio_anguillarum"
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "GMA-1_WQE79346-CP140105-68119",
+                                                        "node_attrs": {
+                                                          "div": 0.00591,
+                                                          "num_date": {
+                                                            "value": 2021.807,
+                                                            "confidence": [
+                                                              2021.807,
+                                                              2021.807
+                                                            ]
+                                                          },
+                                                          "allele": {
+                                                            "value": "GMA-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Vibrio_alfacsensis"
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000015",
+                                        "node_attrs": {
+                                          "div": 0.00591,
+                                          "num_date": {
+                                            "value": 2015.806,
+                                            "confidence": [
+                                              2015.687,
+                                              2016.036
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.998,
+                                              "USA": 0.00134
+                                            },
+                                            "entropy": 0.0149
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GMA-1_MDF5082380-JARKCB010000010-9817",
+                                            "node_attrs": {
+                                              "div": 0.00591,
+                                              "num_date": {
+                                                "value": 2016.192,
+                                                "confidence": [
+                                                  2016.001,
+                                                  2016.999
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Vibrio_parahaemolyticus"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000016",
+                                            "node_attrs": {
+                                              "div": 0.00591,
+                                              "num_date": {
+                                                "value": 2015.834,
+                                                "confidence": [
+                                                  2015.691,
+                                                  2016.199
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 0.998,
+                                                  "USA": 0.00103
+                                                },
+                                                "entropy": 0.0124
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "NODE_0000017",
+                                                "node_attrs": {
+                                                  "div": 0.00591,
+                                                  "num_date": {
+                                                    "value": 2016.222,
+                                                    "confidence": [
+                                                      2015.827,
+                                                      2016.71
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 0.999
+                                                    },
+                                                    "entropy": 0.0105
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "GMA-1_MDW2317007-JAWOWB010000015-79257",
+                                                    "node_attrs": {
+                                                      "div": 0.00591,
+                                                      "num_date": {
+                                                        "value": 2016.582,
+                                                        "confidence": [
+                                                          2016.001,
+                                                          2016.999
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "GMA-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Vibrio_sp._1456-1"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "GMA-1_MDW2306455-JAWOWA010000015-27383",
+                                                    "node_attrs": {
+                                                      "div": 0.00591,
+                                                      "num_date": {
+                                                        "value": 2016.582,
+                                                        "confidence": [
+                                                          2016.001,
+                                                          2016.999
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "GMA-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Vibrio_sp._1457"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "name": "NODE_0000018",
+                                                "node_attrs": {
+                                                  "div": 0.00591,
+                                                  "num_date": {
+                                                    "value": 2016.222,
+                                                    "confidence": [
+                                                      2015.827,
+                                                      2016.71
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 0.999
+                                                    },
+                                                    "entropy": 0.0105
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "GMA-1_MDW1862188-JAWOTE010000017-39408",
+                                                    "node_attrs": {
+                                                      "div": 0.00591,
+                                                      "num_date": {
+                                                        "value": 2016.582,
+                                                        "confidence": [
+                                                          2016.001,
+                                                          2016.999
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "GMA-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Vibrio_sp._Vb1166"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "GMA-1_MDW2067702-JAWOVU010000109-90",
+                                                    "node_attrs": {
+                                                      "div": 0.00591,
+                                                      "num_date": {
+                                                        "value": 2016.582,
+                                                        "confidence": [
+                                                          2016.001,
+                                                          2016.999
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "GMA-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Vibrio_sp._1579"
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00473,
+              "num_date": {
+                "value": 2002.273,
+                "confidence": [
+                  2000.998,
+                  2002.273
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.979,
+                  "China": 0.0183,
+                  "USA": 0.00108,
+                  "South Korea": 0.00103
+                },
+                "entropy": 0.111
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T114C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "AB083415.2",
+                "node_attrs": {
+                  "div": 0.00473,
+                  "num_date": {
+                    "value": 2002.273,
+                    "confidence": [
+                      1992.138,
+                      2060.54
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.823,
+                      "China": 0.0757,
+                      "USA": 0.036,
+                      "South Korea": 0.0329,
+                      "India": 0.0204,
+                      "Turkey": 0.0121
+                    },
+                    "entropy": 0.721
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "GMA-1_BAB88923-AB083415-183",
+                "node_attrs": {
+                  "div": 0.00473,
+                  "num_date": {
+                    "value": 2002.273,
+                    "confidence": [
+                      2002.273,
+                      2002.273
+                    ]
+                  },
+                  "allele": {
+                    "value": "GMA-1"
+                  },
+                  "organism": {
+                    "value": "Photobacterium_damselae_subsp._piscicida"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000020",
+                "node_attrs": {
+                  "div": 0.00473,
+                  "num_date": {
+                    "value": 2002.342,
+                    "confidence": [
+                      2001.643,
+                      2003.675
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.915,
+                      "China": 0.0804,
+                      "USA": 0.00275
+                    },
+                    "entropy": 0.31
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "GMA-1_AYM87792-CP033065-3180898",
+                    "node_attrs": {
+                      "div": 0.00473,
+                      "num_date": {
+                        "value": 2004.324,
+                        "confidence": [
+                          2004.324,
+                          2004.324
+                        ]
+                      },
+                      "allele": {
+                        "value": "GMA-1"
+                      },
+                      "organism": {
+                        "value": "Pseudoalteromonas_agarivorans"
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000021",
+                    "node_attrs": {
+                      "div": 0.00473,
+                      "num_date": {
+                        "value": 2003.149,
+                        "confidence": [
+                          2002.328,
+                          2004.12
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 0.992,
+                          "China": 0.00717
+                        },
+                        "entropy": 0.052
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000022",
+                        "node_attrs": {
+                          "div": 0.00473,
+                          "num_date": {
+                            "value": 2004.367,
+                            "confidence": [
+                              2003.336,
+                              2004.367
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.999
+                            },
+                            "entropy": 0.00859
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "GMA-1_BCN23252-AP024165-494141",
+                            "node_attrs": {
+                              "div": 0.00473,
+                              "num_date": {
+                                "value": 2004.367,
+                                "confidence": [
+                                  2004.367,
+                                  2004.367
+                                ]
+                              },
+                              "allele": {
+                                "value": "GMA-1"
+                              },
+                              "organism": {
+                                "value": "Vibrio_alfacsensis"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "GMA-1_BCN27181-AP024167-275409",
+                            "node_attrs": {
+                              "div": 0.00473,
+                              "num_date": {
+                                "value": 2004.367,
+                                "confidence": [
+                                  2004.367,
+                                  2004.367
+                                ]
+                              },
+                              "allele": {
+                                "value": "GMA-1"
+                              },
+                              "organism": {
+                                "value": "Vibrio_alfacsensis"
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000023",
+                        "node_attrs": {
+                          "div": 0.00473,
+                          "num_date": {
+                            "value": 2004.304,
+                            "confidence": [
+                              2003.078,
+                              2004.615
+                            ]
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 0.994,
+                              "China": 0.00319,
+                              "USA": 0.00277
+                            },
+                            "entropy": 0.044
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000024",
+                            "node_attrs": {
+                              "div": 0.00473,
+                              "num_date": {
+                                "value": 2004.712,
+                                "confidence": [
+                                  2003.847,
+                                  2004.712
+                                ]
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 0.999
+                                },
+                                "entropy": 0.00762
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "GMA-1_BBM65633-AP019849-2687531",
+                                "node_attrs": {
+                                  "div": 0.00473,
+                                  "num_date": {
+                                    "value": 2004.712,
+                                    "confidence": [
+                                      2004.712,
+                                      2004.712
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "GMA-1"
+                                  },
+                                  "organism": {
+                                    "value": "Vibrio_alfacsensis"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "GMA-1_BBM67684-AP019851-130740",
+                                "node_attrs": {
+                                  "div": 0.00473,
+                                  "num_date": {
+                                    "value": 2004.712,
+                                    "confidence": [
+                                      2004.712,
+                                      2004.712
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "GMA-1"
+                                  },
+                                  "organism": {
+                                    "value": "Vibrio_alfacsensis"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000025",
+                            "node_attrs": {
+                              "div": 0.00473,
+                              "num_date": {
+                                "value": 2004.697,
+                                "confidence": [
+                                  2004.182,
+                                  2007.304
+                                ]
+                              },
+                              "country": {
+                                "value": "Japan",
+                                "confidence": {
+                                  "Japan": 0.937,
+                                  "USA": 0.0472,
+                                  "China": 0.0136,
+                                  "South Korea": 0.00126
+                                },
+                                "entropy": 0.278
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "GMA-1_BAH83579-AB453229-2206",
+                                "node_attrs": {
+                                  "div": 0.00473,
+                                  "num_date": {
+                                    "value": 2008.602,
+                                    "confidence": [
+                                      2008.602,
+                                      2008.602
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "GMA-1"
+                                  },
+                                  "organism": {
+                                    "value": "Photobacterium_damselae_subsp._piscicida"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000026",
+                                "node_attrs": {
+                                  "div": 0.00473,
+                                  "num_date": {
+                                    "value": 2006.528,
+                                    "confidence": [
+                                      2005.116,
+                                      2008.082
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.889,
+                                      "Japan": 0.0691,
+                                      "China": 0.0382,
+                                      "Turkey": 0.00226
+                                    },
+                                    "entropy": 0.436
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000027",
+                                    "node_attrs": {
+                                      "div": 0.00473,
+                                      "num_date": {
+                                        "value": 2008.704,
+                                        "confidence": [
+                                          2006.924,
+                                          2008.704
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.993,
+                                          "China": 0.00414,
+                                          "Japan": 0.00282
+                                        },
+                                        "entropy": 0.0483
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "GMA-1_HCH5935702-DAHUQA010000019-9600",
+                                        "node_attrs": {
+                                          "div": 0.00473,
+                                          "num_date": {
+                                            "value": 2008.704,
+                                            "confidence": [
+                                              2008.704,
+                                              2008.704
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "GMA-1"
+                                          },
+                                          "organism": {
+                                            "value": "Vibrio_parahaemolyticus"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "GMA-1_HCH5936575-DAHUQA010000059-21273",
+                                        "node_attrs": {
+                                          "div": 0.00473,
+                                          "num_date": {
+                                            "value": 2008.704,
+                                            "confidence": [
+                                              2008.704,
+                                              2008.704
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "GMA-1"
+                                          },
+                                          "organism": {
+                                            "value": "Vibrio_parahaemolyticus"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000028",
+                                    "node_attrs": {
+                                      "div": 0.00473,
+                                      "num_date": {
+                                        "value": 2007.959,
+                                        "confidence": [
+                                          2006.336,
+                                          2008.616
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.915,
+                                          "China": 0.0551,
+                                          "Japan": 0.0199,
+                                          "Turkey": 0.00889
+                                        },
+                                        "entropy": 0.366
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000030",
+                                        "node_attrs": {
+                                          "div": 0.00473,
+                                          "num_date": {
+                                            "value": 2008.709,
+                                            "confidence": [
+                                              2007.485,
+                                              2008.709
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.994,
+                                              "China": 0.00491
+                                            },
+                                            "entropy": 0.0417
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GMA-1_HCH3496594-DAHTXX010000060-22467",
+                                            "node_attrs": {
+                                              "div": 0.00473,
+                                              "num_date": {
+                                                "value": 2008.709,
+                                                "confidence": [
+                                                  2008.709,
+                                                  2008.709
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Vibrio_parahaemolyticus"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "GMA-1_HCH3495756-DAHTXX010000019-9600",
+                                            "node_attrs": {
+                                              "div": 0.00473,
+                                              "num_date": {
+                                                "value": 2008.709,
+                                                "confidence": [
+                                                  2008.709,
+                                                  2008.709
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Vibrio_parahaemolyticus"
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000032",
+                                        "node_attrs": {
+                                          "div": 0.00473,
+                                          "num_date": {
+                                            "value": 2010.993,
+                                            "confidence": [
+                                              2008.202,
+                                              2011.654
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.601,
+                                              "China": 0.238,
+                                              "Turkey": 0.14,
+                                              "Japan": 0.018,
+                                              "South Korea": 0.00197,
+                                              "India": 0.00115
+                                            },
+                                            "entropy": 1.015
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "GMA-1_TLS89899-VANF01000020-258",
+                                            "node_attrs": {
+                                              "div": 0.00473,
+                                              "num_date": {
+                                                "value": 2011.349,
+                                                "confidence": [
+                                                  2011.001,
+                                                  2011.999
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "GMA-1"
+                                              },
+                                              "organism": {
+                                                "value": "Photobacterium_damselae_subsp._damselae"
+                                              },
+                                              "country": {
+                                                "value": "Turkey",
+                                                "confidence": {
+                                                  "Turkey": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000033",
+                                            "node_attrs": {
+                                              "div": 0.00473,
+                                              "num_date": {
+                                                "value": 2015.709,
+                                                "confidence": [
+                                                  2010.975,
+                                                  2015.716
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 0.69,
+                                                  "USA": 0.299,
+                                                  "Turkey": 0.00604,
+                                                  "Japan": 0.00461
+                                                },
+                                                "entropy": 0.677
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "GMA-1_WCM68699-CP080480-44458",
+                                                "node_attrs": {
+                                                  "div": 0.00473,
+                                                  "num_date": {
+                                                    "value": 2015.716,
+                                                    "confidence": [
+                                                      2015.716,
+                                                      2015.716
+                                                    ]
+                                                  },
+                                                  "allele": {
+                                                    "value": "GMA-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Vibrio_parahaemolyticus"
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location of submitter"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000034",
+                                                "node_attrs": {
+                                                  "div": 0.00473,
+                                                  "num_date": {
+                                                    "value": 2015.716,
+                                                    "confidence": [
+                                                      2014.614,
+                                                      2015.876
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "China",
+                                                    "confidence": {
+                                                      "China": 0.645,
+                                                      "USA": 0.35,
+                                                      "Japan": 0.0035
+                                                    },
+                                                    "entropy": 0.68
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000035",
+                                                    "node_attrs": {
+                                                      "div": 0.00473,
+                                                      "num_date": {
+                                                        "value": 2015.809,
+                                                        "confidence": [
+                                                          2015.698,
+                                                          2015.866
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 0.951,
+                                                          "China": 0.0479
+                                                        },
+                                                        "entropy": 0.203
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "GMA-1_MBU2952768-JAHKPI010000013-5996",
+                                                        "node_attrs": {
+                                                          "div": 0.00473,
+                                                          "num_date": {
+                                                            "value": 2015.834,
+                                                            "confidence": [
+                                                              2015.834,
+                                                              2015.896
+                                                            ]
+                                                          },
+                                                          "allele": {
+                                                            "value": "GMA-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Marinobacter_sp._F3R08"
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "GMA-1_MBU2865639-JAHKPK010000004-3825",
+                                                        "node_attrs": {
+                                                          "div": 0.00473,
+                                                          "num_date": {
+                                                            "value": 2015.834,
+                                                            "confidence": [
+                                                              2015.834,
+                                                              2015.896
+                                                            ]
+                                                          },
+                                                          "allele": {
+                                                            "value": "GMA-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Pacificibacter_marinus"
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000036",
+                                                    "node_attrs": {
+                                                      "div": 0.00473,
+                                                      "num_date": {
+                                                        "value": 2015.716,
+                                                        "confidence": [
+                                                          2015.689,
+                                                          2015.873
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 0.935,
+                                                          "USA": 0.0609,
+                                                          "Japan": 0.00377
+                                                        },
+                                                        "entropy": 0.257
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "NODE_0000037",
+                                                        "node_attrs": {
+                                                          "div": 0.00473,
+                                                          "num_date": {
+                                                            "value": 2015.716,
+                                                            "confidence": [
+                                                              2015.684,
+                                                              2016.137
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 0.992,
+                                                              "USA": 0.00717
+                                                            },
+                                                            "entropy": 0.05
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "NODE_0000038",
+                                                            "node_attrs": {
+                                                              "div": 0.00473,
+                                                              "num_date": {
+                                                                "value": 2016.102,
+                                                                "confidence": [
+                                                                  2015.785,
+                                                                  2016.803
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "China",
+                                                                "confidence": {
+                                                                  "China": 0.998,
+                                                                  "USA": 0.00137
+                                                                },
+                                                                "entropy": 0.0145
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "GMA-1_MDW2189104-JAWOVN010000069-1778",
+                                                                "node_attrs": {
+                                                                  "div": 0.00473,
+                                                                  "num_date": {
+                                                                    "value": 2016.485,
+                                                                    "confidence": [
+                                                                      2016.001,
+                                                                      2016.999
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "GMA-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Vibrio_sp._1733"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "China",
+                                                                    "confidence": {
+                                                                      "China": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "GMA-1_MDW2326007-JAWOWF010000016-89867",
+                                                                "node_attrs": {
+                                                                  "div": 0.00473,
+                                                                  "num_date": {
+                                                                    "value": 2016.485,
+                                                                    "confidence": [
+                                                                      2016.001,
+                                                                      2016.999
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "GMA-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Vibrio_sp._1401"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "China",
+                                                                    "confidence": {
+                                                                      "China": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000039",
+                                                            "node_attrs": {
+                                                              "div": 0.00473,
+                                                              "num_date": {
+                                                                "value": 2016.102,
+                                                                "confidence": [
+                                                                  2015.785,
+                                                                  2016.803
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "China",
+                                                                "confidence": {
+                                                                  "China": 0.998,
+                                                                  "USA": 0.00137
+                                                                },
+                                                                "entropy": 0.0145
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "GMA-1_MDG2783002-JARQQD010000008-4559",
+                                                                "node_attrs": {
+                                                                  "div": 0.00473,
+                                                                  "num_date": {
+                                                                    "value": 2016.485,
+                                                                    "confidence": [
+                                                                      2016.001,
+                                                                      2016.999
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "GMA-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Vibrio_parahaemolyticus"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "China",
+                                                                    "confidence": {
+                                                                      "China": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "GMA-1_MDG2778413-JARQQC010000009-163992",
+                                                                "node_attrs": {
+                                                                  "div": 0.00473,
+                                                                  "num_date": {
+                                                                    "value": 2016.485,
+                                                                    "confidence": [
+                                                                      2016.001,
+                                                                      2016.999
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "GMA-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Vibrio_parahaemolyticus"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "China",
+                                                                    "confidence": {
+                                                                      "China": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000040",
+                                                        "node_attrs": {
+                                                          "div": 0.00473,
+                                                          "num_date": {
+                                                            "value": 2016.117,
+                                                            "confidence": [
+                                                              2015.794,
+                                                              2016.545
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "China",
+                                                            "confidence": {
+                                                              "China": 0.952,
+                                                              "USA": 0.0341,
+                                                              "Japan": 0.0136
+                                                            },
+                                                            "entropy": 0.223
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "GMA-1_MBO0185233-JAFLNZ010000021-4559",
+                                                            "node_attrs": {
+                                                              "div": 0.00473,
+                                                              "num_date": {
+                                                                "value": 2016.545,
+                                                                "confidence": [
+                                                                  2016.545,
+                                                                  2016.545
+                                                                ]
+                                                              },
+                                                              "allele": {
+                                                                "value": "GMA-1"
+                                                              },
+                                                              "organism": {
+                                                                "value": "Vibrio_parahaemolyticus"
+                                                              },
+                                                              "country": {
+                                                                "value": "China",
+                                                                "confidence": {
+                                                                  "China": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location of submitter"
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Collection date from metadata"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000041",
+                                                            "node_attrs": {
+                                                              "div": 0.00473,
+                                                              "num_date": {
+                                                                "value": 2016.518,
+                                                                "confidence": [
+                                                                  2015.983,
+                                                                  2017.199
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "China",
+                                                                "confidence": {
+                                                                  "China": 0.778,
+                                                                  "Japan": 0.137,
+                                                                  "USA": 0.0834
+                                                                },
+                                                                "entropy": 0.686
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "GMA-1_GAW47555-BDMQ01000005-8501",
+                                                                "node_attrs": {
+                                                                  "div": 0.00473,
+                                                                  "num_date": {
+                                                                    "value": 2017.199,
+                                                                    "confidence": [
+                                                                      2017.199,
+                                                                      2017.199
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "GMA-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Photobacterium_damselae_subsp._piscicida"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Japan",
+                                                                    "confidence": {
+                                                                      "Japan": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location from metadata"
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000042",
+                                                                "node_attrs": {
+                                                                  "div": 0.00473,
+                                                                  "num_date": {
+                                                                    "value": 2017.158,
+                                                                    "confidence": [
+                                                                      2016.441,
+                                                                      2017.819
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "China",
+                                                                    "confidence": {
+                                                                      "China": 0.763,
+                                                                      "USA": 0.201,
+                                                                      "Japan": 0.0352
+                                                                    },
+                                                                    "entropy": 0.655
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "GMA-1_HAS6601116-DACQKF010000003-16058",
+                                                                    "node_attrs": {
+                                                                      "div": 0.00473,
+                                                                      "num_date": {
+                                                                        "value": 2017.749,
+                                                                        "confidence": [
+                                                                          2017.749,
+                                                                          2017.823
+                                                                        ]
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "GMA-1"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Vibrio_parahaemolyticus"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Collection date from metadata"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000043",
+                                                                    "node_attrs": {
+                                                                      "div": 0.00473,
+                                                                      "num_date": {
+                                                                        "value": 2017.679,
+                                                                        "confidence": [
+                                                                          2017.061,
+                                                                          2018.661
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "China",
+                                                                        "confidence": {
+                                                                          "China": 0.969,
+                                                                          "USA": 0.0265,
+                                                                          "Japan": 0.00424
+                                                                        },
+                                                                        "entropy": 0.151
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "GMA-1_MBO0138607-JAFLNP010000014-4559",
+                                                                        "node_attrs": {
+                                                                          "div": 0.00473,
+                                                                          "num_date": {
+                                                                            "value": 2018.988,
+                                                                            "confidence": [
+                                                                              2018.988,
+                                                                              2018.988
+                                                                            ]
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "GMA-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Vibrio_sp._Vb2736"
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "China",
+                                                                            "confidence": {
+                                                                              "China": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location of submitter"
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Collection date from metadata"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "NODE_0000044",
+                                                                        "node_attrs": {
+                                                                          "div": 0.00473,
+                                                                          "num_date": {
+                                                                            "value": 2018.444,
+                                                                            "confidence": [
+                                                                              2017.544,
+                                                                              2019.001
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "China",
+                                                                            "confidence": {
+                                                                              "China": 0.984,
+                                                                              "USA": 0.0126,
+                                                                              "Japan": 0.00312
+                                                                            },
+                                                                            "entropy": 0.0899
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "name": "NODE_0000045",
+                                                                            "node_attrs": {
+                                                                              "div": 0.00473,
+                                                                              "num_date": {
+                                                                                "value": 2018.984,
+                                                                                "confidence": [
+                                                                                  2018.222,
+                                                                                  2019.563
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "China",
+                                                                                "confidence": {
+                                                                                  "China": 0.998,
+                                                                                  "USA": 0.00185
+                                                                                },
+                                                                                "entropy": 0.0189
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            },
+                                                                            "children": [
+                                                                              {
+                                                                                "name": "GMA-1_MDG3378411-JARNUH010000007-123297",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.00473,
+                                                                                  "num_date": {
+                                                                                    "value": 2019.308,
+                                                                                    "confidence": [
+                                                                                      2019.001,
+                                                                                      2019.999
+                                                                                    ]
+                                                                                  },
+                                                                                  "allele": {
+                                                                                    "value": "GMA-1"
+                                                                                  },
+                                                                                  "organism": {
+                                                                                    "value": "Vibrio_parahaemolyticus"
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "China",
+                                                                                    "confidence": {
+                                                                                      "China": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
+                                                                                  },
+                                                                                  "countryAccuracy": {
+                                                                                    "value": "Geographic location of submitter"
+                                                                                  },
+                                                                                  "dateAccuracy": {
+                                                                                    "value": "Collection date from metadata"
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "name": "GMA-1_MDF4498325-JARJXW010000007-124292",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.00473,
+                                                                                  "num_date": {
+                                                                                    "value": 2019.308,
+                                                                                    "confidence": [
+                                                                                      2019.001,
+                                                                                      2019.999
+                                                                                    ]
+                                                                                  },
+                                                                                  "allele": {
+                                                                                    "value": "GMA-1"
+                                                                                  },
+                                                                                  "organism": {
+                                                                                    "value": "Vibrio_parahaemolyticus"
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "China",
+                                                                                    "confidence": {
+                                                                                      "China": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
+                                                                                  },
+                                                                                  "countryAccuracy": {
+                                                                                    "value": "Geographic location of submitter"
+                                                                                  },
+                                                                                  "dateAccuracy": {
+                                                                                    "value": "Collection date from metadata"
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                }
+                                                                              }
+                                                                            ]
+                                                                          },
+                                                                          {
+                                                                            "name": "NODE_0000046",
+                                                                            "node_attrs": {
+                                                                              "div": 0.00473,
+                                                                              "num_date": {
+                                                                                "value": 2018.969,
+                                                                                "confidence": [
+                                                                                  2018.133,
+                                                                                  2019.975
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "China",
+                                                                                "confidence": {
+                                                                                  "China": 0.942,
+                                                                                  "USA": 0.0378,
+                                                                                  "Japan": 0.0198
+                                                                                },
+                                                                                "entropy": 0.262
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            },
+                                                                            "children": [
+                                                                              {
+                                                                                "name": "GMA-1_MFH4821929-JBBLMX010000022-61072",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.00473,
+                                                                                  "num_date": {
+                                                                                    "value": 2020.001,
+                                                                                    "confidence": [
+                                                                                      2020.001,
+                                                                                      2020.878
+                                                                                    ]
+                                                                                  },
+                                                                                  "allele": {
+                                                                                    "value": "GMA-1"
+                                                                                  },
+                                                                                  "organism": {
+                                                                                    "value": "Vibrio_alginolyticus"
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "China",
+                                                                                    "confidence": {
+                                                                                      "China": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
+                                                                                  },
+                                                                                  "countryAccuracy": {
+                                                                                    "value": "Geographic location of submitter"
+                                                                                  },
+                                                                                  "dateAccuracy": {
+                                                                                    "value": "Collection date from metadata"
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "name": "NODE_0000047",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.00473,
+                                                                                  "num_date": {
+                                                                                    "value": 2019.957,
+                                                                                    "confidence": [
+                                                                                      2018.866,
+                                                                                      2020.775
+                                                                                    ]
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "China",
+                                                                                    "confidence": {
+                                                                                      "China": 0.442,
+                                                                                      "USA": 0.312,
+                                                                                      "Japan": 0.242,
+                                                                                      "South Korea": 0.00197
+                                                                                    },
+                                                                                    "entropy": 1.092
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                },
+                                                                                "children": [
+                                                                                  {
+                                                                                    "name": "GMA-1_MBE8127778-SRHT02000006-199333",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.00473,
+                                                                                      "num_date": {
+                                                                                        "value": 2020.813,
+                                                                                        "confidence": [
+                                                                                          2020.813,
+                                                                                          2020.813
+                                                                                        ]
+                                                                                      },
+                                                                                      "allele": {
+                                                                                        "value": "GMA-1"
+                                                                                      },
+                                                                                      "organism": {
+                                                                                        "value": "Photobacterium_damselae_subsp._piscicida"
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "Japan",
+                                                                                        "confidence": {
+                                                                                          "Japan": 1.0
+                                                                                        },
+                                                                                        "entropy": -1e-12
+                                                                                      },
+                                                                                      "countryAccuracy": {
+                                                                                        "value": "Geographic location from metadata"
+                                                                                      },
+                                                                                      "dateAccuracy": {
+                                                                                        "value": "Submission date"
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    }
+                                                                                  },
+                                                                                  {
+                                                                                    "name": "NODE_0000048",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.00473,
+                                                                                      "num_date": {
+                                                                                        "value": 2020.783,
+                                                                                        "confidence": [
+                                                                                          2019.545,
+                                                                                          2021.487
+                                                                                        ]
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "USA",
+                                                                                        "confidence": {
+                                                                                          "USA": 0.954,
+                                                                                          "China": 0.0355,
+                                                                                          "Japan": 0.01
+                                                                                        },
+                                                                                        "entropy": 0.214
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    },
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "name": "GMA-1_HDM8230565-DANSCG010000055-1522",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.00473,
+                                                                                          "num_date": {
+                                                                                            "value": 2021.84,
+                                                                                            "confidence": [
+                                                                                              2021.84,
+                                                                                              2021.84
+                                                                                            ]
+                                                                                          },
+                                                                                          "allele": {
+                                                                                            "value": "GMA-1"
+                                                                                          },
+                                                                                          "organism": {
+                                                                                            "value": "Vibrio_campbellii"
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "USA",
+                                                                                            "confidence": {
+                                                                                              "USA": 1.0
+                                                                                            },
+                                                                                            "entropy": -1e-12
+                                                                                          },
+                                                                                          "countryAccuracy": {
+                                                                                            "value": "Geographic location of submitter"
+                                                                                          },
+                                                                                          "dateAccuracy": {
+                                                                                            "value": "Submission date"
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        }
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "GMA-1_HDM8230308-DANSCG010000026-6609",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.00473,
+                                                                                          "num_date": {
+                                                                                            "value": 2021.84,
+                                                                                            "confidence": [
+                                                                                              2021.84,
+                                                                                              2021.84
+                                                                                            ]
+                                                                                          },
+                                                                                          "allele": {
+                                                                                            "value": "GMA-1"
+                                                                                          },
+                                                                                          "organism": {
+                                                                                            "value": "Vibrio_campbellii"
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "USA",
+                                                                                            "confidence": {
+                                                                                              "USA": 1.0
+                                                                                            },
+                                                                                            "entropy": -1e-12
+                                                                                          },
+                                                                                          "countryAccuracy": {
+                                                                                            "value": "Geographic location of submitter"
+                                                                                          },
+                                                                                          "dateAccuracy": {
+                                                                                            "value": "Submission date"
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        }
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

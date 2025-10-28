@@ -1,0 +1,781 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 CAM beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 726,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NKN79_006261": {
+        "end": 726,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Canada": {
+            "latitude": 61.0666922,
+            "longitude": -107.991707
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1997.378,
+        "confidence": [
+          1994.106,
+          2000.947
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.474,
+          "China": 0.301,
+          "Canada": 0.225
+        },
+        "entropy": 1.051
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "CAM-2_MCD9185600-JAJQRF010000001-996230",
+        "node_attrs": {
+          "div": 0.0534,
+          "num_date": {
+            "value": 2016.499,
+            "confidence": [
+              2016.499,
+              2016.572
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "allele": {
+            "value": "CAM-2"
+          },
+          "organism": {
+            "value": "Pyrinomonadaceae_bacterium"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C8T",
+              "T35C",
+              "T44C",
+              "G57A",
+              "C62T",
+              "G64A",
+              "T69C",
+              "C81T",
+              "T82A",
+              "A86C",
+              "A87G",
+              "G90C",
+              "T91G",
+              "C92T",
+              "T129C",
+              "A138G",
+              "T145C",
+              "C147T",
+              "A156G",
+              "A173C",
+              "T186C",
+              "T187C",
+              "C231G",
+              "C252T",
+              "A315G",
+              "G323A",
+              "G324A",
+              "A327G",
+              "A330G",
+              "A353G",
+              "G354A",
+              "G366A",
+              "T384C",
+              "A390G",
+              "C408T",
+              "C417T",
+              "G429A",
+              "A430C",
+              "G435A",
+              "A450G",
+              "A455T",
+              "C456T",
+              "T486C",
+              "G512A",
+              "T528C",
+              "A555C",
+              "G564A",
+              "T576C",
+              "T582C",
+              "G586A",
+              "T588C",
+              "C600T",
+              "C606T",
+              "A608T",
+              "A609G",
+              "C612A",
+              "C633T",
+              "A663C",
+              "A681T",
+              "C682T",
+              "C684G",
+              "A693T",
+              "A696G",
+              "C705T",
+              "A706G",
+              "A707G",
+              "C713A",
+              "C715T",
+              "T717C",
+              "A719C",
+              "T724G"
+            ],
+            "NKN79_006261": [
+              "S3L",
+              "V12A",
+              "L15P",
+              "T21M",
+              "G22S",
+              "S28T",
+              "Q29P",
+              "S31V",
+              "S49P",
+              "D58A",
+              "R108K",
+              "K118R",
+              "I144L",
+              "Y152F",
+              "R171K",
+              "E185D",
+              "D196N",
+              "K203M",
+              "N204K",
+              "K236G",
+              "T238N",
+              "R239C",
+              "K240T",
+              "*242E"
+            ]
+          },
+          "labels": {
+            "aa": "NKN79_006261: S3L, V12A, L15P, T21M, G22S, S28T, Q29P, S31V, S49P, D58A, R108K, K118R, I144L, Y152F, R171K, E185D, D196N, K203M, N204K, K236G, T238N, R239C, K240T, *242E"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.0534,
+          "num_date": {
+            "value": 2008.917,
+            "confidence": [
+              2008.649,
+              2008.975
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 0.000475
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "DAHTBN010000041.1",
+            "node_attrs": {
+              "div": 0.0534,
+              "num_date": {
+                "value": 2008.961,
+                "confidence": [
+                  2007.603,
+                  2013.59
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.968,
+                  "China": 0.0174,
+                  "Canada": 0.0145
+                },
+                "entropy": 0.163
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "CAM-1_HCH0451017-DAHTBN010000041-590",
+            "node_attrs": {
+              "div": 0.0534,
+              "num_date": {
+                "value": 2008.969,
+                "confidence": [
+                  2008.917,
+                  2008.999
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "CAM-1"
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "CAM-1_HCH0451239-DAHTBN010000069-3570",
+            "node_attrs": {
+              "div": 0.0534,
+              "num_date": {
+                "value": 2008.969,
+                "confidence": [
+                  2008.917,
+                  2008.999
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "CAM-1"
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0534,
+              "num_date": {
+                "value": 2009.629,
+                "confidence": [
+                  2009.034,
+                  2009.655
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.000493
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.0534,
+                  "num_date": {
+                    "value": 2009.657,
+                    "confidence": [
+                      2009.445,
+                      2009.723
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.000226
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CAM-1_HCH0444688-DAHTBM010000079-590",
+                    "node_attrs": {
+                      "div": 0.0534,
+                      "num_date": {
+                        "value": 2009.696,
+                        "confidence": [
+                          2009.667,
+                          2009.747
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "CAM-1"
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_aeruginosa"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "CAM-1_HCH0444858-DAHTBM010000116-3401",
+                    "node_attrs": {
+                      "div": 0.0534,
+                      "num_date": {
+                        "value": 2009.696,
+                        "confidence": [
+                          2009.667,
+                          2009.747
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "CAM-1"
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_aeruginosa"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.0534,
+                  "num_date": {
+                    "value": 2009.629,
+                    "confidence": [
+                      2009.317,
+                      2009.675
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.000237
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "CAM-1_HCH0432526-DAHTBL010000039-590",
+                    "node_attrs": {
+                      "div": 0.0534,
+                      "num_date": {
+                        "value": 2009.678,
+                        "confidence": [
+                          2009.667,
+                          2009.747
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "CAM-1"
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_aeruginosa"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.0534,
+                      "num_date": {
+                        "value": 2009.647,
+                        "confidence": [
+                          2009.547,
+                          2009.714
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000501
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CAM-1_HCH0432781-DAHTBL010000069-3570",
+                        "node_attrs": {
+                          "div": 0.0534,
+                          "num_date": {
+                            "value": 2009.684,
+                            "confidence": [
+                              2009.667,
+                              2009.747
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "CAM-1"
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000006",
+                        "node_attrs": {
+                          "div": 0.0534,
+                          "num_date": {
+                            "value": 2009.658,
+                            "confidence": [
+                              2009.617,
+                              2009.732
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.999
+                            },
+                            "entropy": 0.00964
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "CAM-1_AVX51087-MG430339-67104",
+                            "node_attrs": {
+                              "div": 0.0534,
+                              "num_date": {
+                                "value": 2017.84,
+                                "confidence": [
+                                  2017.84,
+                                  2017.84
+                                ]
+                              },
+                              "country": {
+                                "value": "Canada",
+                                "confidence": {
+                                  "Canada": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "CAM-1"
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_aeruginosa"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000007",
+                            "node_attrs": {
+                              "div": 0.0534,
+                              "num_date": {
+                                "value": 2009.739,
+                                "confidence": [
+                                  2009.636,
+                                  2009.772
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000491
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "CAM-1_HCH0503223-DAHTBV010000108-3570",
+                                "node_attrs": {
+                                  "div": 0.0534,
+                                  "num_date": {
+                                    "value": 2009.777,
+                                    "confidence": [
+                                      2009.749,
+                                      2009.832
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "CAM-1"
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_aeruginosa"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "CAM-1_HCH0503058-DAHTBV010000071-590",
+                                "node_attrs": {
+                                  "div": 0.0534,
+                                  "num_date": {
+                                    "value": 2009.777,
+                                    "confidence": [
+                                      2009.749,
+                                      2009.832
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "CAM-1"
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_aeruginosa"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

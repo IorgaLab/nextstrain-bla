@@ -1,0 +1,2348 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 SPR beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 897,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "CR62_04910": {
+        "end": 897,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Sweden": {
+            "latitude": 59.6749712,
+            "longitude": 14.5208584
+          },
+          "Spain": {
+            "latitude": 40.4637,
+            "longitude": -3.7492
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "Portugal": {
+            "latitude": 39.54046,
+            "longitude": -8.174701
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1951.027,
+        "confidence": [
+          1947.038,
+          1954.065
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.142,
+          "United Kingdom": 0.141,
+          "Sweden": 0.131,
+          "Russia": 0.122,
+          "Antarctica": 0.119,
+          "Spain": 0.118,
+          "Portugal": 0.114,
+          "Japan": 0.113
+        },
+        "entropy": 2.076
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000006",
+        "node_attrs": {
+          "div": 0.00637,
+          "num_date": {
+            "value": 1953.118,
+            "confidence": [
+              1949.259,
+              1956.017
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.142,
+              "United Kingdom": 0.141,
+              "Sweden": 0.133,
+              "Russia": 0.123,
+              "Antarctica": 0.118,
+              "Spain": 0.118,
+              "Portugal": 0.114,
+              "Japan": 0.113
+            },
+            "entropy": 2.076
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "SPR-9_WP_017893459-NZ_KB661120-3574239",
+            "node_attrs": {
+              "div": 0.0786,
+              "num_date": {
+                "value": 1980.001,
+                "confidence": [
+                  1980.001,
+                  1980.897
+                ]
+              },
+              "country": {
+                "value": "Sweden",
+                "confidence": {
+                  "Sweden": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_sp._S4"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "SPR-9"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A13C",
+                  "C39T",
+                  "A52G",
+                  "A53G",
+                  "A63G",
+                  "C69T",
+                  "C75G",
+                  "A108G",
+                  "G111T",
+                  "A120G",
+                  "C144T",
+                  "T168C",
+                  "C171G",
+                  "T186A",
+                  "T199C",
+                  "T217C",
+                  "T234C",
+                  "T238C",
+                  "A240G",
+                  "T243C",
+                  "A252T",
+                  "A263G",
+                  "T273A",
+                  "G279T",
+                  "C288T",
+                  "T301C",
+                  "T324C",
+                  "A327G",
+                  "T342G",
+                  "T358C",
+                  "A361C",
+                  "G378T",
+                  "T387C",
+                  "C396T",
+                  "G420T",
+                  "A423C",
+                  "A465G",
+                  "C476T",
+                  "A495G",
+                  "G518A",
+                  "G534A",
+                  "T549C",
+                  "G587A",
+                  "G594A",
+                  "C603T",
+                  "C621T",
+                  "C624T",
+                  "T627C",
+                  "C693T",
+                  "C699T",
+                  "A768T",
+                  "G778C",
+                  "T779A",
+                  "G780A",
+                  "G783C",
+                  "G790A",
+                  "T807G",
+                  "G856A",
+                  "G882A",
+                  "T894G",
+                  "A896G"
+                ],
+                "CR62_04910": [
+                  "I5L",
+                  "N18G",
+                  "K88R",
+                  "K121Q",
+                  "A159V",
+                  "G173D",
+                  "R196H",
+                  "E256D",
+                  "V260Q",
+                  "A264T",
+                  "A286T",
+                  "I298M"
+                ]
+              },
+              "labels": {
+                "aa": "CR62_04910: I5L, N18G, K88R, K121Q, A159V, G173D, R196H, E256D, V260Q, A264T, A286T, I298M"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.145,
+              "num_date": {
+                "value": 1980.359,
+                "confidence": [
+                  1979.412,
+                  1980.569
+                ]
+              },
+              "country": {
+                "value": "Russia",
+                "confidence": {
+                  "Russia": 0.807,
+                  "United Kingdom": 0.0382,
+                  "Sweden": 0.032,
+                  "Portugal": 0.0298,
+                  "USA": 0.0274,
+                  "Spain": 0.0219,
+                  "Antarctica": 0.0217,
+                  "Japan": 0.0216
+                },
+                "entropy": 0.861
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A9G",
+                  "A20T",
+                  "C22T",
+                  "A25G",
+                  "G27T",
+                  "T30C",
+                  "G36T",
+                  "G37A",
+                  "G40A",
+                  "C43T",
+                  "T57A",
+                  "T85C",
+                  "G87T",
+                  "G99T",
+                  "C102G",
+                  "T106A",
+                  "C109T",
+                  "G189A",
+                  "C192T",
+                  "G195A",
+                  "C196T",
+                  "G207C",
+                  "A216G",
+                  "T225G",
+                  "G237A",
+                  "G255A",
+                  "G256A",
+                  "T285C",
+                  "A289G",
+                  "C294T",
+                  "T300C",
+                  "C306T",
+                  "T330C",
+                  "C333T",
+                  "C348T",
+                  "T357G",
+                  "A363G",
+                  "C366G",
+                  "G375T",
+                  "C399G",
+                  "C406G",
+                  "A408G",
+                  "T412C",
+                  "G414A",
+                  "A429G",
+                  "G444C",
+                  "A447T",
+                  "G468A",
+                  "C486T",
+                  "C489T",
+                  "G492T",
+                  "G498C",
+                  "C510A",
+                  "C519T",
+                  "C520T",
+                  "A524C",
+                  "A525G",
+                  "G531A",
+                  "T535C",
+                  "T553C",
+                  "C564A",
+                  "G576A",
+                  "C583T",
+                  "G596A",
+                  "G602A",
+                  "C642T",
+                  "C645T",
+                  "C660T",
+                  "A673G",
+                  "G674A",
+                  "C676T",
+                  "C690T",
+                  "C696T",
+                  "G708A",
+                  "T709C",
+                  "G711T",
+                  "T714G",
+                  "C715G",
+                  "G726A",
+                  "T732C",
+                  "T735C",
+                  "G753A",
+                  "A788G",
+                  "G789A",
+                  "C792A",
+                  "C795G",
+                  "C799T",
+                  "A834C",
+                  "C841A",
+                  "C844G",
+                  "G846A",
+                  "C853A",
+                  "G855A",
+                  "C857T",
+                  "A874G",
+                  "A875C",
+                  "C877A",
+                  "G879A",
+                  "A885G",
+                  "T888G",
+                  "A889G",
+                  "A891T"
+                ],
+                "CR62_04910": [
+                  "Y7F",
+                  "T9A",
+                  "V13I",
+                  "A14T",
+                  "S36T",
+                  "A86T",
+                  "N97D",
+                  "Q136E",
+                  "K175T",
+                  "G199E",
+                  "S201N",
+                  "S225D",
+                  "Q239E",
+                  "Q263R",
+                  "Q278H",
+                  "Q281K",
+                  "Q282E",
+                  "Q285K",
+                  "A286V",
+                  "K292A",
+                  "Q293K",
+                  "N296K",
+                  "K297D"
+                ]
+              },
+              "labels": {
+                "aa": "CR62_04910: Y7F, T9A, V13I, A14T, S36T, A86T, N97D, Q136E, K175T, G199E, S201N, S225D, Q239E, Q263R, Q278H, Q281K, Q282E, Q285K, A286V, K292A, Q293K, N296K, K297D"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.15,
+                  "num_date": {
+                    "value": 2009.001,
+                    "confidence": [
+                      2008.575,
+                      2009.916
+                    ]
+                  },
+                  "country": {
+                    "value": "Portugal",
+                    "confidence": {
+                      "Portugal": 0.808,
+                      "United Kingdom": 0.0762,
+                      "USA": 0.0291,
+                      "Russia": 0.0259,
+                      "Sweden": 0.0163,
+                      "Antarctica": 0.0154,
+                      "Spain": 0.0154,
+                      "Japan": 0.014
+                    },
+                    "entropy": 0.822
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T93C",
+                      "G96T",
+                      "G366A",
+                      "T375G",
+                      "C396A",
+                      "G795A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "SPR-8_CUW22545-FBSD01000012-95097",
+                    "node_attrs": {
+                      "div": 0.15,
+                      "num_date": {
+                        "value": 2015.944,
+                        "confidence": [
+                          2015.944,
+                          2015.944
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Serratia_grimesii"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "SPR-8"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "SPR-8_SMZ57678-LT883155-3487868",
+                    "node_attrs": {
+                      "div": 0.15,
+                      "num_date": {
+                        "value": 2009.997,
+                        "confidence": [
+                          2009.001,
+                          2009.999
+                        ]
+                      },
+                      "country": {
+                        "value": "Portugal",
+                        "confidence": {
+                          "Portugal": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Serratia_grimesii"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "SPR-8"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "div": 0.146,
+                  "num_date": {
+                    "value": 1980.627,
+                    "confidence": [
+                      1980.135,
+                      1980.729
+                    ]
+                  },
+                  "country": {
+                    "value": "Russia",
+                    "confidence": {
+                      "Russia": 0.866,
+                      "United Kingdom": 0.0268,
+                      "Sweden": 0.0223,
+                      "Portugal": 0.0208,
+                      "USA": 0.0188,
+                      "Spain": 0.0151,
+                      "Antarctica": 0.015,
+                      "Japan": 0.0149
+                    },
+                    "entropy": 0.65
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.148,
+                      "num_date": {
+                        "value": 1980.75,
+                        "confidence": [
+                          1980.564,
+                          1980.75
+                        ]
+                      },
+                      "country": {
+                        "value": "Russia",
+                        "confidence": {
+                          "Russia": 0.93,
+                          "United Kingdom": 0.0141,
+                          "Sweden": 0.0117,
+                          "Portugal": 0.0109,
+                          "USA": 0.00971,
+                          "Spain": 0.00783,
+                          "Antarctica": 0.00773,
+                          "Japan": 0.0077
+                        },
+                        "entropy": 0.386
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G591A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "JGVP01000014.1",
+                        "node_attrs": {
+                          "div": 0.148,
+                          "num_date": {
+                            "value": 1980.75,
+                            "confidence": [
+                              1978.69,
+                              1987.806
+                            ]
+                          },
+                          "country": {
+                            "value": "Russia",
+                            "confidence": {
+                              "Russia": 0.866,
+                              "United Kingdom": 0.0268,
+                              "Sweden": 0.0224,
+                              "Portugal": 0.0206,
+                              "USA": 0.0189,
+                              "Spain": 0.0152,
+                              "Antarctica": 0.015,
+                              "Japan": 0.0149
+                            },
+                            "entropy": 0.651
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "SPR-8_KFB88393-JGVP01000014-16782",
+                        "node_attrs": {
+                          "div": 0.148,
+                          "num_date": {
+                            "value": 1980.75,
+                            "confidence": [
+                              1980.75,
+                              1980.75
+                            ]
+                          },
+                          "country": {
+                            "value": "Russia",
+                            "confidence": {
+                              "Russia": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Serratia_grimesii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "SPR-8"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000002",
+                    "node_attrs": {
+                      "div": 0.149,
+                      "num_date": {
+                        "value": 2022.61,
+                        "confidence": [
+                          2021.732,
+                          2022.61
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": 0.000597
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C178A",
+                          "G587A"
+                        ],
+                        "CR62_04910": [
+                          "R60S",
+                          "R196H"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CR62_04910: R60S, R196H"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "SPR-7_CAI2404841-CAMITD010000001-250959",
+                        "node_attrs": {
+                          "div": 0.149,
+                          "num_date": {
+                            "value": 2022.61,
+                            "confidence": [
+                              2022.61,
+                              2022.61
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Serratia_grimesii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "SPR-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "SPR-7_CAI0941406-CAMIQM010000002-942165",
+                        "node_attrs": {
+                          "div": 0.149,
+                          "num_date": {
+                            "value": 2022.61,
+                            "confidence": [
+                              2022.61,
+                              2022.61
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Serratia_grimesii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "SPR-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "SPR-7_SUI35741-UGYI01000001-3458577",
+                        "node_attrs": {
+                          "div": 0.149,
+                          "num_date": {
+                            "value": 2022.61,
+                            "confidence": [
+                              2021.461,
+                              2023.886
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Serratia_grimesii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "SPR-7"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000007",
+        "node_attrs": {
+          "div": 0.103,
+          "num_date": {
+            "value": 1995.946,
+            "confidence": [
+              1993.419,
+              1998.837
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.148,
+              "Spain": 0.146,
+              "United Kingdom": 0.133,
+              "Antarctica": 0.131,
+              "Japan": 0.129,
+              "Sweden": 0.111,
+              "Russia": 0.105,
+              "Portugal": 0.0974
+            },
+            "entropy": 2.069
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T15G",
+              "C26T",
+              "G36A",
+              "G37T",
+              "G40T",
+              "T42A",
+              "T48C",
+              "C51T",
+              "A70G",
+              "C75T",
+              "A78G",
+              "G81A",
+              "T93C",
+              "A117G",
+              "C135G",
+              "G150T",
+              "G156T",
+              "T159G",
+              "T162G",
+              "T174C",
+              "C177A",
+              "G189T",
+              "G201C",
+              "C228T",
+              "T234G",
+              "G265T",
+              "G267C",
+              "C270T",
+              "G279A",
+              "A308T",
+              "T309C",
+              "C312T",
+              "C315T",
+              "T318C",
+              "T345A",
+              "T351C",
+              "G354T",
+              "G375A",
+              "T419G",
+              "T441C",
+              "C442T",
+              "A447G",
+              "C459T",
+              "C466G",
+              "T480C",
+              "G493C",
+              "C501T",
+              "C510T",
+              "G537A",
+              "T549G",
+              "G558T",
+              "G561C",
+              "G570A",
+              "C574T",
+              "T575C",
+              "A585G",
+              "T588G",
+              "G594C",
+              "C598A",
+              "G602C",
+              "C606T",
+              "C628T",
+              "G636C",
+              "A652G",
+              "C672G",
+              "T687C",
+              "G694A",
+              "G703A",
+              "C704G",
+              "T705G",
+              "G707T",
+              "G708T",
+              "T714C",
+              "G723C",
+              "T779C",
+              "G783A",
+              "C792T",
+              "T800G",
+              "T819G",
+              "A821T",
+              "T826C",
+              "G828A",
+              "A849T",
+              "A854G",
+              "A858T",
+              "G865A",
+              "A887G",
+              "T893A"
+            ],
+            "CR62_04910": [
+              "I5M",
+              "T9M",
+              "V13F",
+              "A14S",
+              "N24D",
+              "M50I",
+              "H53Q",
+              "L67F",
+              "A89S",
+              "Y103F",
+              "L140R",
+              "P156A",
+              "E165Q",
+              "L192S",
+              "Q200K",
+              "S201T",
+              "I218V",
+              "G232S",
+              "A235R",
+              "R236L",
+              "Q241H",
+              "V260A",
+              "L267R",
+              "Q274L",
+              "Q285R",
+              "A289T",
+              "N296S",
+              "I298N"
+            ]
+          },
+          "labels": {
+            "aa": "CR62_04910: I5M, T9M, V13F, A14S, N24D, M50I, H53Q, L67F, A89S, Y103F, L140R, P156A, E165Q, L192S, Q200K, S201T, I218V, G232S, A235R, R236L, Q241H, V260A, L267R, Q274L, Q285R, A289T, N296S, I298N"
+          }
+        },
+        "children": [
+          {
+            "name": "SPR-2_GAK27633-DF820427-2777735",
+            "node_attrs": {
+              "div": 0.143,
+              "num_date": {
+                "value": 2014.401,
+                "confidence": [
+                  2014.401,
+                  2014.401
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_liquefaciens_FK01"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "allele": {
+                "value": "SPR-2"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C56T",
+                  "A65G",
+                  "A177G",
+                  "A216G",
+                  "C231T",
+                  "A240G",
+                  "A252G",
+                  "A279C",
+                  "C288T",
+                  "A289G",
+                  "A327T",
+                  "T342C",
+                  "T358C",
+                  "G378A",
+                  "G382A",
+                  "T435C",
+                  "A465T",
+                  "A495G",
+                  "G498C",
+                  "T507C",
+                  "T510G",
+                  "T511C",
+                  "C520G",
+                  "G534A",
+                  "T558C",
+                  "C561T",
+                  "C579T",
+                  "T627C",
+                  "C645T",
+                  "A656G",
+                  "G674A",
+                  "A683C",
+                  "G717A",
+                  "C756T",
+                  "C795T",
+                  "T798C",
+                  "A843G",
+                  "T849C",
+                  "C857A",
+                  "T871C",
+                  "G879A"
+                ],
+                "CR62_04910": [
+                  "A19V",
+                  "Q22R",
+                  "N97D",
+                  "V128I",
+                  "L174V",
+                  "D219G",
+                  "S225N",
+                  "Q228P",
+                  "A286D"
+                ]
+              },
+              "labels": {
+                "aa": "CR62_04910: A19V, Q22R, N97D, V128I, L174V, D219G, S225N, Q228P, A286D"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000008",
+            "node_attrs": {
+              "div": 0.132,
+              "num_date": {
+                "value": 2006.735,
+                "confidence": [
+                  2005.072,
+                  2007.718
+                ]
+              },
+              "country": {
+                "value": "Spain",
+                "confidence": {
+                  "Spain": 0.403,
+                  "Antarctica": 0.24,
+                  "USA": 0.181,
+                  "United Kingdom": 0.0555,
+                  "Japan": 0.0342,
+                  "Sweden": 0.0307,
+                  "Russia": 0.0294,
+                  "Portugal": 0.0256
+                },
+                "entropy": 1.598
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C236G",
+                  "C249T",
+                  "C257T",
+                  "T384G",
+                  "G417A",
+                  "C462T",
+                  "A505G",
+                  "C519G",
+                  "A528T",
+                  "A546G",
+                  "C567T",
+                  "T574A",
+                  "G592A",
+                  "A609G",
+                  "C657T",
+                  "G786T",
+                  "A892G"
+                ],
+                "CR62_04910": [
+                  "A79G",
+                  "A86V",
+                  "I169V",
+                  "L176F",
+                  "S192T",
+                  "G198S",
+                  "N298D"
+                ]
+              },
+              "labels": {
+                "aa": "CR62_04910: A79G, A86V, I169V, L176F, S192T, G198S, N298D"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000009",
+                "node_attrs": {
+                  "div": 0.142,
+                  "num_date": {
+                    "value": 2009.757,
+                    "confidence": [
+                      2009.128,
+                      2009.97
+                    ]
+                  },
+                  "country": {
+                    "value": "Spain",
+                    "confidence": {
+                      "Spain": 0.912,
+                      "USA": 0.0309,
+                      "Antarctica": 0.0238,
+                      "United Kingdom": 0.00953,
+                      "Japan": 0.00677,
+                      "Sweden": 0.00604,
+                      "Russia": 0.00583,
+                      "Portugal": 0.00506
+                    },
+                    "entropy": 0.446
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C102A",
+                      "T150G",
+                      "G237A",
+                      "T285C",
+                      "A327C",
+                      "C594T",
+                      "C784A",
+                      "C820T"
+                    ],
+                    "CR62_04910": [
+                      "I50M",
+                      "L262I"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CR62_04910: I50M, L262I"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "SPR-4_AKE09609-CP011303-1486579",
+                    "node_attrs": {
+                      "div": 0.142,
+                      "num_date": {
+                        "value": 2009.997,
+                        "confidence": [
+                          2009.001,
+                          2009.999
+                        ]
+                      },
+                      "country": {
+                        "value": "Spain",
+                        "confidence": {
+                          "Spain": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Serratia_liquefaciens"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "SPR-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000010",
+                    "node_attrs": {
+                      "div": 0.142,
+                      "num_date": {
+                        "value": 2023.991,
+                        "confidence": [
+                          2022.266,
+                          2023.998
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.997,
+                          "United Kingdom": 0.00119
+                        },
+                        "entropy": 0.0218
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "SPR-4_ENN9144999-ABTZJM010000008-250820",
+                        "node_attrs": {
+                          "div": 0.142,
+                          "num_date": {
+                            "value": 2024.001,
+                            "confidence": [
+                              2024.001,
+                              2024.727
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Serratia_liquefaciens"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "SPR-4"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "div": 0.142,
+                          "num_date": {
+                            "value": 2023.991,
+                            "confidence": [
+                              2023.054,
+                              2024.161
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.00159
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "SPR-4_ENN9146938-ABTZJM010000063-7042",
+                            "node_attrs": {
+                              "div": 0.142,
+                              "num_date": {
+                                "value": 2024.026,
+                                "confidence": [
+                                  2024.001,
+                                  2024.999
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Serratia_liquefaciens"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "SPR-4"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.142,
+                              "num_date": {
+                                "value": 2023.991,
+                                "confidence": [
+                                  2023.685,
+                                  2024.482
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.00085
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "SPR-4_ENG6110653-ABTARS010000083-1929",
+                                "node_attrs": {
+                                  "div": 0.142,
+                                  "num_date": {
+                                    "value": 2024.034,
+                                    "confidence": [
+                                      2024.001,
+                                      2024.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-4"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "SPR-4_ENG6108085-ABTARS010000007-250841",
+                                "node_attrs": {
+                                  "div": 0.142,
+                                  "num_date": {
+                                    "value": 2024.034,
+                                    "confidence": [
+                                      2024.001,
+                                      2024.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-4"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000013",
+                "node_attrs": {
+                  "div": 0.137,
+                  "num_date": {
+                    "value": 2008.96,
+                    "confidence": [
+                      2007.623,
+                      2009.838
+                    ]
+                  },
+                  "country": {
+                    "value": "Antarctica",
+                    "confidence": {
+                      "Antarctica": 0.462,
+                      "USA": 0.259,
+                      "Spain": 0.159,
+                      "United Kingdom": 0.0477,
+                      "Japan": 0.0208,
+                      "Sweden": 0.0181,
+                      "Russia": 0.0176,
+                      "Portugal": 0.015
+                    },
+                    "entropy": 1.432
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C93T",
+                      "G160C",
+                      "C321T",
+                      "T324C",
+                      "A375G"
+                    ],
+                    "CR62_04910": [
+                      "V54L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "CR62_04910: V54L"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000014",
+                    "node_attrs": {
+                      "div": 0.143,
+                      "num_date": {
+                        "value": 2011.059,
+                        "confidence": [
+                          2010.619,
+                          2011.059
+                        ]
+                      },
+                      "country": {
+                        "value": "Antarctica",
+                        "confidence": {
+                          "Antarctica": 0.89,
+                          "USA": 0.06,
+                          "Spain": 0.0228,
+                          "United Kingdom": 0.0113,
+                          "Japan": 0.00464,
+                          "Sweden": 0.00409,
+                          "Russia": 0.00409,
+                          "Portugal": 0.00349
+                        },
+                        "entropy": 0.5
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A240G",
+                          "T300C",
+                          "C306A",
+                          "G474C",
+                          "G475A"
+                        ],
+                        "CR62_04910": [
+                          "K158N",
+                          "A159T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CR62_04910: K158N, A159T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "SPR-3_OKP23481-MQRG01000004-69233",
+                        "node_attrs": {
+                          "div": 0.143,
+                          "num_date": {
+                            "value": 2011.059,
+                            "confidence": [
+                              2011.059,
+                              2011.059
+                            ]
+                          },
+                          "country": {
+                            "value": "Antarctica",
+                            "confidence": {
+                              "Antarctica": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Serratia_liquefaciens"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "SPR-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000015",
+                        "node_attrs": {
+                          "div": 0.143,
+                          "num_date": {
+                            "value": 2018.983,
+                            "confidence": [
+                              2018.421,
+                              2019.899
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.945,
+                              "United Kingdom": 0.0295,
+                              "Antarctica": 0.0132,
+                              "Spain": 0.00527,
+                              "Japan": 0.00195,
+                              "Russia": 0.00189,
+                              "Sweden": 0.00169,
+                              "Portugal": 0.00164
+                            },
+                            "entropy": 0.288
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "SPR-3_MBI6162437-JAEHSQ010000006-265880",
+                            "node_attrs": {
+                              "div": 0.143,
+                              "num_date": {
+                                "value": 2019.008,
+                                "confidence": [
+                                  2019.001,
+                                  2019.999
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Serratia_liquefaciens"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "SPR-3"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000016",
+                            "node_attrs": {
+                              "div": 0.143,
+                              "num_date": {
+                                "value": 2022.61,
+                                "confidence": [
+                                  2021.597,
+                                  2022.61
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.698,
+                                  "United Kingdom": 0.297,
+                                  "Antarctica": 0.00139,
+                                  "Spain": 0.00124
+                                },
+                                "entropy": 0.643
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "SPR-3_CAI2405270-CAMIRC010000001-265959",
+                                "node_attrs": {
+                                  "div": 0.143,
+                                  "num_date": {
+                                    "value": 2022.61,
+                                    "confidence": [
+                                      2022.61,
+                                      2022.61
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-3"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000017",
+                                "node_attrs": {
+                                  "div": 0.143,
+                                  "num_date": {
+                                    "value": 2022.938,
+                                    "confidence": [
+                                      2022.295,
+                                      2023.399
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.99,
+                                      "United Kingdom": 0.0103
+                                    },
+                                    "entropy": 0.0597
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "SPR-3_HEJ8020903-DARSZP010000001-264667",
+                                    "node_attrs": {
+                                      "div": 0.143,
+                                      "num_date": {
+                                        "value": 2023.001,
+                                        "confidence": [
+                                          2023.001,
+                                          2023.766
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Serratia_liquefaciens"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "SPR-3"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "SPR-3_HEJ8025844-DARSZP010000034-2671",
+                                    "node_attrs": {
+                                      "div": 0.143,
+                                      "num_date": {
+                                        "value": 2023.001,
+                                        "confidence": [
+                                          2023.001,
+                                          2023.766
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Serratia_liquefaciens"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "SPR-3"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000018",
+                    "node_attrs": {
+                      "div": 0.148,
+                      "num_date": {
+                        "value": 2013.494,
+                        "confidence": [
+                          2012.658,
+                          2013.769
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.973,
+                          "Antarctica": 0.00974,
+                          "United Kingdom": 0.00873,
+                          "Spain": 0.00507,
+                          "Japan": 0.001
+                        },
+                        "entropy": 0.163
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G447A",
+                          "G453A",
+                          "G456T",
+                          "A457G",
+                          "T462C",
+                          "A465T",
+                          "G466C",
+                          "C476T",
+                          "A843G",
+                          "G856T"
+                        ],
+                        "CR62_04910": [
+                          "S153G",
+                          "A156P",
+                          "A159V",
+                          "A286S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "CR62_04910: S153G, A156P, A159V, A286S"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000019",
+                        "node_attrs": {
+                          "div": 0.151,
+                          "num_date": {
+                            "value": 2013.93,
+                            "confidence": [
+                              2013.702,
+                              2013.93
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.00131
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C594T",
+                              "C624T"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "SPR-6_WP_048759255-NZ_CP014017-4389647",
+                            "node_attrs": {
+                              "div": 0.151,
+                              "num_date": {
+                                "value": 2013.93,
+                                "confidence": [
+                                  2013.93,
+                                  2013.93
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Serratia_liquefaciens"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "SPR-6"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "SPR-6_AMH01337-CP014017-4389647",
+                            "node_attrs": {
+                              "div": 0.151,
+                              "num_date": {
+                                "value": 2013.93,
+                                "confidence": [
+                                  2013.93,
+                                  2013.93
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Serratia_liquefaciens"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "SPR-6"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000020",
+                            "node_attrs": {
+                              "div": 0.151,
+                              "num_date": {
+                                "value": 2015.938,
+                                "confidence": [
+                                  2015.081,
+                                  2016.463
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.00402
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "SPR-6_HEI8952228-DARQEO010000001-275478",
+                                "node_attrs": {
+                                  "div": 0.151,
+                                  "num_date": {
+                                    "value": 2016.001,
+                                    "confidence": [
+                                      2016.001,
+                                      2016.761
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-6"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "SPR-6_HEI8957081-DARQEO010000021-32548",
+                                "node_attrs": {
+                                  "div": 0.151,
+                                  "num_date": {
+                                    "value": 2016.001,
+                                    "confidence": [
+                                      2016.001,
+                                      2016.761
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-6"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000022",
+                        "node_attrs": {
+                          "div": 0.15,
+                          "num_date": {
+                            "value": 2015.938,
+                            "confidence": [
+                              2014.905,
+                              2016.695
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.976,
+                              "United Kingdom": 0.0158,
+                              "Antarctica": 0.00301,
+                              "Spain": 0.0026
+                            },
+                            "entropy": 0.143
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G597C"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "SPR-6_RYM62773-MQMV01000014-151907",
+                            "node_attrs": {
+                              "div": 0.15,
+                              "num_date": {
+                                "value": 2016.001,
+                                "confidence": [
+                                  2016.001,
+                                  2016.815
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Serratia_liquefaciens"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "SPR-6"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000023",
+                            "node_attrs": {
+                              "div": 0.159,
+                              "num_date": {
+                                "value": 2022.61,
+                                "confidence": [
+                                  2022.194,
+                                  2022.61
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.953,
+                                  "USA": 0.0467
+                                },
+                                "entropy": 0.189
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "T93C",
+                                  "C102A",
+                                  "T150G",
+                                  "C160G",
+                                  "C231T",
+                                  "A252C",
+                                  "T285C",
+                                  "A429G"
+                                ],
+                                "CR62_04910": [
+                                  "I50M",
+                                  "L54V"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "CR62_04910: I50M, L54V"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "SPR-5_CAI2045956-CAMKUZ010000001-600166",
+                                "node_attrs": {
+                                  "div": 0.159,
+                                  "num_date": {
+                                    "value": 2022.61,
+                                    "confidence": [
+                                      2022.61,
+                                      2022.61
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-5"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "SPR-5_HEJ7994907-DARSZI010000004-8156",
+                                "node_attrs": {
+                                  "div": 0.159,
+                                  "num_date": {
+                                    "value": 2022.61,
+                                    "confidence": [
+                                      2022.001,
+                                      2022.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-5"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "SPR-5_HEJ7999785-DARSZI010000249-901",
+                                "node_attrs": {
+                                  "div": 0.159,
+                                  "num_date": {
+                                    "value": 2022.61,
+                                    "confidence": [
+                                      2022.001,
+                                      2022.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-5"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "SPR-5_CAI0717238-CAMIRO010000001-271929",
+                                "node_attrs": {
+                                  "div": 0.159,
+                                  "num_date": {
+                                    "value": 2022.61,
+                                    "confidence": [
+                                      2022.61,
+                                      2022.61
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-5"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "SPR-5_CAI2414187-CAMITL010000001-600444",
+                                "node_attrs": {
+                                  "div": 0.159,
+                                  "num_date": {
+                                    "value": 2022.61,
+                                    "confidence": [
+                                      2022.61,
+                                      2022.61
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Serratia_liquefaciens"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "SPR-5"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

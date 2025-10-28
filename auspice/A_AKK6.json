@@ -1,0 +1,1626 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A AKK6 beta-lactamases",
+    "updated": "2025-01-18",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 870,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "HMPREF1326_00013": {
+        "end": 870,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Austria": {
+            "latitude": 47.5162,
+            "longitude": 14.5501
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2001.164,
+        "confidence": [
+          1998.365,
+          2004.091
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.329,
+          "Japan": 0.178,
+          "": 0.178,
+          "South Korea": 0.17,
+          "Austria": 0.145
+        },
+        "entropy": 1.561
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 0.0151,
+          "num_date": {
+            "value": 2007.171,
+            "confidence": [
+              2005.402,
+              2009.17
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.484,
+              "": 0.152,
+              "Japan": 0.136,
+              "South Korea": 0.127,
+              "Austria": 0.1
+            },
+            "entropy": 1.403
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0302,
+              "num_date": {
+                "value": 2012.359,
+                "confidence": [
+                  2011.903,
+                  2012.359
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.906,
+                  "": 0.07,
+                  "Japan": 0.00957,
+                  "South Korea": 0.00865,
+                  "Austria": 0.00614
+                },
+                "entropy": 0.393
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G49T",
+                  "G342A",
+                  "G397A",
+                  "C398A",
+                  "G421A",
+                  "A468G",
+                  "C478A",
+                  "T536G",
+                  "T606C",
+                  "C735T",
+                  "T834C",
+                  "G854A"
+                ],
+                "HMPREF1326_00013": [
+                  "A17S",
+                  "A133K",
+                  "E141K",
+                  "H160N",
+                  "M179R",
+                  "G285E"
+                ]
+              },
+              "labels": {
+                "aa": "HMPREF1326_00013: A17S, A133K, E141K, H160N, M179R, G285E"
+              }
+            },
+            "children": [
+              {
+                "name": "AMCH01000001.1",
+                "node_attrs": {
+                  "div": 0.0302,
+                  "num_date": {
+                    "value": 2012.359,
+                    "confidence": [
+                      2008.905,
+                      2022.265
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.825,
+                      "": 0.0871,
+                      "Japan": 0.0334,
+                      "South Korea": 0.031,
+                      "Austria": 0.024
+                    },
+                    "entropy": 0.682
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AKK6-4_KZA06165-AMCH01000001-12570",
+                "node_attrs": {
+                  "div": 0.0302,
+                  "num_date": {
+                    "value": 2012.359,
+                    "confidence": [
+                      2012.359,
+                      2012.359
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-4"
+                  },
+                  "organism": {
+                    "value": "Akkermansia_sp._KLE1605"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.0302,
+                  "num_date": {
+                    "value": 2014.684,
+                    "confidence": [
+                      2013.615,
+                      2014.763
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.579,
+                      "": 0.405,
+                      "Japan": 0.00629,
+                      "South Korea": 0.00561,
+                      "Austria": 0.00382
+                    },
+                    "entropy": 0.764
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "AKK6-4_WP_067951945-NZ_CALEXQ010000010-12448",
+                    "node_attrs": {
+                      "div": 0.0302,
+                      "num_date": {
+                        "value": 2014.763,
+                        "confidence": [
+                          2014.763,
+                          2014.763
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "AKK6-4"
+                      },
+                      "organism": {
+                        "value": "uncultured_Akkermansia_sp."
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "AKK6-4_KXU54776-KQ971078-12585",
+                    "node_attrs": {
+                      "div": 0.0302,
+                      "num_date": {
+                        "value": 2016.135,
+                        "confidence": [
+                          2016.135,
+                          2016.135
+                        ]
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "AKK6-4"
+                      },
+                      "organism": {
+                        "value": "Akkermansia_sp._KLE1798"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.0291,
+              "num_date": {
+                "value": 2018.001,
+                "confidence": [
+                  2017.711,
+                  2018.001
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.004
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C47T",
+                  "C189T",
+                  "C238A",
+                  "G315A",
+                  "G400A",
+                  "C401A",
+                  "T444C",
+                  "T447C",
+                  "T511A",
+                  "C579T",
+                  "C580T",
+                  "G679A",
+                  "C753T"
+                ],
+                "HMPREF1326_00013": [
+                  "A16V",
+                  "Q80K",
+                  "A134N",
+                  "S171T",
+                  "A227T"
+                ]
+              },
+              "labels": {
+                "aa": "HMPREF1326_00013: A16V, Q80K, A134N, S171T, A227T"
+              }
+            },
+            "children": [
+              {
+                "name": "AKK6-1_WP_161981441-NZ_CAAEWG010000018-4562",
+                "node_attrs": {
+                  "div": 0.0291,
+                  "num_date": {
+                    "value": 2018.001,
+                    "confidence": [
+                      2018.001,
+                      2018.001
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Austria",
+                    "confidence": {
+                      "Austria": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-1"
+                  },
+                  "organism": {
+                    "value": "uncultured_Akkermansia_sp."
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AKK6-1_MEE0764728-JAXJZN010000026-1532",
+                "node_attrs": {
+                  "div": 0.0291,
+                  "num_date": {
+                    "value": 2023.834,
+                    "confidence": [
+                      2023.834,
+                      2023.834
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-1"
+                  },
+                  "organism": {
+                    "value": "Akkermansia_sp."
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AKK6-1_WVO32133-CP143890-2236207",
+                "node_attrs": {
+                  "div": 0.0291,
+                  "num_date": {
+                    "value": 2018.001,
+                    "confidence": [
+                      2015.335,
+                      2027.827
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-1"
+                  },
+                  "organism": {
+                    "value": "Akkermansia_sp._AE01SA01"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AKK6-1_MBS6781848-JAGZVP010000031-862",
+                "node_attrs": {
+                  "div": 0.0291,
+                  "num_date": {
+                    "value": 2018.001,
+                    "confidence": [
+                      2015.335,
+                      2027.827
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-1"
+                  },
+                  "organism": {
+                    "value": "Akkermansia_sp."
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "AKK6-1_WVO29483-CP143889-2130704",
+                "node_attrs": {
+                  "div": 0.0291,
+                  "num_date": {
+                    "value": 2018.001,
+                    "confidence": [
+                      2015.335,
+                      2027.827
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-1"
+                  },
+                  "organism": {
+                    "value": "Akkermansia_sp._RCC_12PD"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000008",
+        "node_attrs": {
+          "div": 0.027,
+          "num_date": {
+            "value": 2014.997,
+            "confidence": [
+              2014.995,
+              2014.997
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": -9.82e-13
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C5G",
+              "A9G",
+              "G10T",
+              "C15T",
+              "A26C",
+              "C30T",
+              "A35G",
+              "G39A",
+              "C73T",
+              "C82A",
+              "T84G",
+              "C106T",
+              "C174T",
+              "A198G",
+              "C207T",
+              "G212A",
+              "G220A",
+              "C222T",
+              "T228C",
+              "A240C",
+              "T256C",
+              "C276T",
+              "C306A",
+              "G309A",
+              "T312C",
+              "C316T",
+              "G318A",
+              "C360T",
+              "C390A",
+              "G435A",
+              "A450G",
+              "G459A",
+              "A517G",
+              "C524T",
+              "A844G"
+            ],
+            "HMPREF1326_00013": [
+              "A2G",
+              "V4F",
+              "E9A",
+              "E12G",
+              "H28K",
+              "G71E",
+              "D74N",
+              "Q80H",
+              "M173V",
+              "S175F",
+              "K282E"
+            ]
+          },
+          "labels": {
+            "aa": "HMPREF1326_00013: A2G, V4F, E9A, E12G, H28K, G71E, D74N, Q80H, M173V, S175F, K282E"
+          }
+        },
+        "children": [
+          {
+            "name": "AKK6-3_QWP69956-CP072018-2137501",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Akkermansia_muciniphila"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_QWO92616-CP072048-2137504",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Candidatus_Akkermansia_timonensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_MDU7626570-JAWFTR010000025-956",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.992,
+                  2014.999
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Akkermansia_sp."
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_QWO95148-CP072047-2142066",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Candidatus_Akkermansia_timonensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_MBS7153651-JAGZPV010000072-12485",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Akkermansia_sp."
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_QWO85312-CP072051-2184462",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Candidatus_Akkermansia_timonensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_MBT9601413-JAGFOB010000001-2221776",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Akkermansia_muciniphila"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_MBT9565754-JAGFOF010000001-2142006",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Akkermansia_muciniphila"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_QWO92079-CP072049-1600611",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Candidatus_Akkermansia_timonensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "AKK6-3_MBT9563163-JAGFOD010000002-2221769",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2014.997,
+                "confidence": [
+                  2014.691,
+                  2025.509
+                ]
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "AKK6-3"
+              },
+              "organism": {
+                "value": "Candidatus_Akkermansia_timonensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000009",
+            "node_attrs": {
+              "div": 0.027,
+              "num_date": {
+                "value": 2015.366,
+                "confidence": [
+                  2014.999,
+                  2015.75
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.00264
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "AKK6-2_APO33505-KX128069-3608",
+                "node_attrs": {
+                  "div": 0.0281,
+                  "num_date": {
+                    "value": 2016.133,
+                    "confidence": [
+                      2016.133,
+                      2016.133
+                    ]
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "AKK6-2"
+                  },
+                  "organism": {
+                    "value": "uncultured_bacterium"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G235T"
+                    ],
+                    "HMPREF1326_00013": [
+                      "V79L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "HMPREF1326_00013: V79L"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000010",
+                "node_attrs": {
+                  "div": 0.027,
+                  "num_date": {
+                    "value": 2015.819,
+                    "confidence": [
+                      2015.411,
+                      2016.05
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.999
+                    },
+                    "entropy": 0.00614
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000011",
+                    "node_attrs": {
+                      "div": 0.027,
+                      "num_date": {
+                        "value": 2016.009,
+                        "confidence": [
+                          2015.704,
+                          2016.119
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.00188
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "AKK6-3_APO32360-KX127545-957",
+                        "node_attrs": {
+                          "div": 0.027,
+                          "num_date": {
+                            "value": 2016.133,
+                            "confidence": [
+                              2016.133,
+                              2016.133
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "AKK6-3"
+                          },
+                          "organism": {
+                            "value": "uncultured_bacterium"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000012",
+                        "node_attrs": {
+                          "div": 0.027,
+                          "num_date": {
+                            "value": 2016.133,
+                            "confidence": [
+                              2015.908,
+                              2016.133
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.00164
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "AKK6-3_APO32362-KX127546-38",
+                            "node_attrs": {
+                              "div": 0.027,
+                              "num_date": {
+                                "value": 2016.133,
+                                "confidence": [
+                                  2016.133,
+                                  2016.133
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "AKK6-3"
+                              },
+                              "organism": {
+                                "value": "uncultured_bacterium"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "AKK6-3_APO35288-KX128764-1298",
+                            "node_attrs": {
+                              "div": 0.027,
+                              "num_date": {
+                                "value": 2016.133,
+                                "confidence": [
+                                  2016.133,
+                                  2016.133
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "AKK6-3"
+                              },
+                              "organism": {
+                                "value": "uncultured_bacterium"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000013",
+                    "node_attrs": {
+                      "div": 0.027,
+                      "num_date": {
+                        "value": 2017.678,
+                        "confidence": [
+                          2016.725,
+                          2017.678
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.997,
+                          "South Korea": 0.00132
+                        },
+                        "entropy": 0.0214
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "AKK6-3_MBT8796366-JABDHV010000053-857",
+                        "node_attrs": {
+                          "div": 0.027,
+                          "num_date": {
+                            "value": 2017.678,
+                            "confidence": [
+                              2017.678,
+                              2017.678
+                            ]
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "AKK6-3"
+                          },
+                          "organism": {
+                            "value": "Akkermansia_muciniphila"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000014",
+                        "node_attrs": {
+                          "div": 0.027,
+                          "num_date": {
+                            "value": 2018.697,
+                            "confidence": [
+                              2018.008,
+                              2018.697
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.98,
+                              "South Korea": 0.0147,
+                              "Japan": 0.00399,
+                              "": 0.00101
+                            },
+                            "entropy": 0.116
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "AKK6-3_MBT8772133-JABDHS010000035-12386",
+                            "node_attrs": {
+                              "div": 0.027,
+                              "num_date": {
+                                "value": 2018.697,
+                                "confidence": [
+                                  2018.697,
+                                  2018.697
+                                ]
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "allele": {
+                                "value": "AKK6-3"
+                              },
+                              "organism": {
+                                "value": "Akkermansia_muciniphila"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000015",
+                            "node_attrs": {
+                              "div": 0.027,
+                              "num_date": {
+                                "value": 2020.001,
+                                "confidence": [
+                                  2019.464,
+                                  2020.877
+                                ]
+                              },
+                              "country": {
+                                "value": "South Korea",
+                                "confidence": {
+                                  "South Korea": 0.464,
+                                  "USA": 0.431,
+                                  "Japan": 0.0942,
+                                  "": 0.00618,
+                                  "Austria": 0.00452
+                                },
+                                "entropy": 0.997
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "AKK6-3_HJH94321-DAJPEZ010000001-297422",
+                                "node_attrs": {
+                                  "div": 0.027,
+                                  "num_date": {
+                                    "value": 2020.133,
+                                    "confidence": [
+                                      2020.001,
+                                      2020.999
+                                    ]
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "South Korea",
+                                    "confidence": {
+                                      "South Korea": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "allele": {
+                                    "value": "AKK6-3"
+                                  },
+                                  "organism": {
+                                    "value": "Akkermansiaceae_bacterium"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000016",
+                                "node_attrs": {
+                                  "div": 0.027,
+                                  "num_date": {
+                                    "value": 2021.538,
+                                    "confidence": [
+                                      2020.778,
+                                      2021.776
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 0.541,
+                                      "USA": 0.359,
+                                      "South Korea": 0.0881,
+                                      "": 0.00692,
+                                      "Austria": 0.00508
+                                    },
+                                    "entropy": 0.975
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "AKK6-3_MEF2892649-JAXKHC010000470-1640",
+                                    "node_attrs": {
+                                      "div": 0.027,
+                                      "num_date": {
+                                        "value": 2023.834,
+                                        "confidence": [
+                                          2023.834,
+                                          2023.834
+                                        ]
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "allele": {
+                                        "value": "AKK6-3"
+                                      },
+                                      "organism": {
+                                        "value": "Akkermansia_sp."
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000017",
+                                    "node_attrs": {
+                                      "div": 0.027,
+                                      "num_date": {
+                                        "value": 2021.801,
+                                        "confidence": [
+                                          2021.372,
+                                          2021.801
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Japan",
+                                        "confidence": {
+                                          "Japan": 0.988,
+                                          "USA": 0.00979,
+                                          "South Korea": 0.00156
+                                        },
+                                        "entropy": 0.07
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "AKK6-3_WP_215437845-NZ_AP025943-2146199",
+                                        "node_attrs": {
+                                          "div": 0.027,
+                                          "num_date": {
+                                            "value": 2021.801,
+                                            "confidence": [
+                                              2021.801,
+                                              2021.801
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "country": {
+                                            "value": "Japan",
+                                            "confidence": {
+                                              "Japan": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "AKK6-3"
+                                          },
+                                          "organism": {
+                                            "value": "Akkermansia_biwaensis"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "AKK6-3_BDL44154-AP025943-2146199",
+                                        "node_attrs": {
+                                          "div": 0.027,
+                                          "num_date": {
+                                            "value": 2021.801,
+                                            "confidence": [
+                                              2021.801,
+                                              2021.801
+                                            ]
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "country": {
+                                            "value": "Japan",
+                                            "confidence": {
+                                              "Japan": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "allele": {
+                                            "value": "AKK6-3"
+                                          },
+                                          "organism": {
+                                            "value": "Akkermansia_biwaensis"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

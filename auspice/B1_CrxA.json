@@ -1,0 +1,352 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 CrxA beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 1053,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "EGP90_12065": {
+        "end": 1053,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2005.501,
+        "confidence": [
+          1967.588,
+          2011.799
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.665,
+          "India": 0.333,
+          "Germany": 0.00178
+        },
+        "entropy": 0.649
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 1.14e-17,
+          "num_date": {
+            "value": 2011.966,
+            "confidence": [
+              2003.984,
+              2012.682
+            ]
+          },
+          "country": {
+            "value": "India",
+            "confidence": {
+              "India": 0.666,
+              "USA": 0.332,
+              "Germany": 0.00134
+            },
+            "entropy": 0.645
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "RKAD01000132.1",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2011.966,
+                "confidence": [
+                  1717.599,
+                  2623.191
+                ]
+              },
+              "country": {
+                "value": "India",
+                "confidence": {
+                  "India": 0.665,
+                  "USA": 0.332,
+                  "Germany": 0.00248
+                },
+                "entropy": 0.652
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "CrxA-2_MBE5695272-RKAD01000132-97430",
+            "node_attrs": {
+              "div": 2.28e-17,
+              "num_date": {
+                "value": 2012.001,
+                "confidence": [
+                  2012.001,
+                  2012.894
+                ]
+              },
+              "organism": {
+                "value": "Bacteroides_sp."
+              },
+              "country": {
+                "value": "India",
+                "confidence": {
+                  "India": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "CrxA-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.000951,
+          "num_date": {
+            "value": 2011.971,
+            "confidence": [
+              2007.004,
+              2016.194
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.998,
+              "Germany": 0.00134
+            },
+            "entropy": 0.0125
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A372G"
+            ],
+            "EGP90_12065": [
+              "I124M"
+            ]
+          },
+          "labels": {
+            "aa": "EGP90_12065: I124M"
+          }
+        },
+        "children": [
+          {
+            "name": "CrxA-1_MCU4242643-QPIO01000015-48879",
+            "node_attrs": {
+              "div": 0.000951,
+              "num_date": {
+                "value": 2016.952,
+                "confidence": [
+                  2016.001,
+                  2016.999
+                ]
+              },
+              "organism": {
+                "value": "Bacteroides_xylanisolvens"
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "CrxA-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "CrxA-1_CAG9874826-CAKJYL010000004-2205525",
+            "node_attrs": {
+              "div": 0.000951,
+              "num_date": {
+                "value": 2021.807,
+                "confidence": [
+                  2021.807,
+                  2021.807
+                ]
+              },
+              "organism": {
+                "value": "Bacteroides_ovatus"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "CrxA-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "CrxA-1_MBS5055441-JAGZKL010000021-2571",
+            "node_attrs": {
+              "div": 0.000951,
+              "num_date": {
+                "value": 2014.738,
+                "confidence": [
+                  1864.454,
+                  2643.655
+                ]
+              },
+              "organism": {
+                "value": "Bacteroides_sp."
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "CrxA-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1219 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B1 BIM beta-lactamases",
+    "updated": "2025-01-23",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 738,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "IEC33019_p5366": {
+        "end": 738,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2013.092,
+        "confidence": [
+          1968.705,
+          2014.69
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.67,
+          "Brazil": 0.33
+        },
+        "entropy": 0.634
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 2.96e-17,
+          "num_date": {
+            "value": 2013.092,
+            "confidence": [
+              1990.683,
+              2015.305
+            ]
+          },
+          "country": {
+            "value": "Brazil",
+            "confidence": {
+              "Brazil": 0.663,
+              "USA": 0.337
+            },
+            "entropy": 0.639
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "CP016446.1",
+            "node_attrs": {
+              "div": 5.92e-17,
+              "num_date": {
+                "value": 2015.416,
+                "confidence": [
+                  1920.639,
+                  2148.667
+                ]
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 0.647,
+                  "USA": 0.353
+                },
+                "entropy": 0.649
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-1_ANY85569-CP016446-14509",
+            "node_attrs": {
+              "div": 5.92e-17,
+              "num_date": {
+                "value": 2015.305,
+                "confidence": [
+                  2015.305,
+                  2015.305
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_putida"
+              },
+              "allele": {
+                "value": "BIM-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00272,
+          "num_date": {
+            "value": 2021.001,
+            "confidence": [
+              2020.987,
+              2021.001
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 6.43e-11
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C17T",
+              "T141C"
+            ],
+            "IEC33019_p5366": [
+              "A6V"
+            ]
+          },
+          "labels": {
+            "aa": "IEC33019_p5366: A6V"
+          }
+        },
+        "children": [
+          {
+            "name": "BIM-2_EIU3324552-ABEUEU010000216-218",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.001,
+                "confidence": [
+                  2021.001,
+                  2021.001
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EKG7554443-ABJVUP010000125-218",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.656,
+                "confidence": [
+                  2021.656,
+                  2021.656
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EIU3324696-ABEUEU010000264-52",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.001,
+                "confidence": [
+                  2021.001,
+                  2021.001
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EKG7554544-ABJVUP010000171-52",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.656,
+                "confidence": [
+                  2021.656,
+                  2021.656
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EIU2572047-ABEUAU010000193-52",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.656,
+                "confidence": [
+                  2021.656,
+                  2021.656
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EIU3441922-ABEUFV010000158-218",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.001,
+                "confidence": [
+                  2021.001,
+                  2021.001
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EIU3442050-ABEUFV010000199-52",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.001,
+                "confidence": [
+                  2021.001,
+                  2021.001
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BIM-2_EIU2571937-ABEUAU010000147-218",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.656,
+                "confidence": [
+                  2021.656,
+                  2021.656
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_aeruginosa"
+              },
+              "allele": {
+                "value": "BIM-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00272,
+              "num_date": {
+                "value": 2021.263,
+                "confidence": [
+                  2021.142,
+                  2021.519
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.000576
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.00272,
+                  "num_date": {
+                    "value": 2021.328,
+                    "confidence": [
+                      2021.252,
+                      2021.578
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.000595
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.00272,
+                      "num_date": {
+                        "value": 2021.263,
+                        "confidence": [
+                          2021.2,
+                          2021.714
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000555
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BIM-2_EIU2676787-ABEUBF010000240-52",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2021.714,
+                            "confidence": [
+                              2021.714,
+                              2021.714
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          },
+                          "allele": {
+                            "value": "BIM-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BIM-2_EIU2676644-ABEUBF010000167-217",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2021.714,
+                            "confidence": [
+                              2021.714,
+                              2021.714
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          },
+                          "allele": {
+                            "value": "BIM-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.00272,
+                      "num_date": {
+                        "value": 2021.263,
+                        "confidence": [
+                          2021.2,
+                          2021.714
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000555
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BIM-2_EIU2726683-ABEUBC010000221-52",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2021.714,
+                            "confidence": [
+                              2021.714,
+                              2021.714
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          },
+                          "allele": {
+                            "value": "BIM-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BIM-2_EIU2726576-ABEUBC010000172-218",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2021.714,
+                            "confidence": [
+                              2021.714,
+                              2021.714
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          },
+                          "allele": {
+                            "value": "BIM-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.00272,
+                  "num_date": {
+                    "value": 2021.285,
+                    "confidence": [
+                      2021.203,
+                      2021.698
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.000596
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.00272,
+                      "num_date": {
+                        "value": 2022.653,
+                        "confidence": [
+                          2021.542,
+                          2023.217
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000555
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BIM-2_ELQ7839171-ABOCXD010000294-218",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2023.437,
+                            "confidence": [
+                              2023.437,
+                              2023.437
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          },
+                          "allele": {
+                            "value": "BIM-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BIM-2_ELQ7839367-ABOCXD010000433-52",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2023.437,
+                            "confidence": [
+                              2023.437,
+                              2023.437
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_aeruginosa"
+                          },
+                          "allele": {
+                            "value": "BIM-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000009",
+                    "node_attrs": {
+                      "div": 0.00272,
+                      "num_date": {
+                        "value": 2021.285,
+                        "confidence": [
+                          2021.191,
+                          2022.248
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000597
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2022.743,
+                            "confidence": [
+                              2021.293,
+                              2023.804
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.000555
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BIM-2_ELY0898828-ABPCLH010000146-218",
+                            "node_attrs": {
+                              "div": 0.00272,
+                              "num_date": {
+                                "value": 2023.804,
+                                "confidence": [
+                                  2023.804,
+                                  2023.804
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_aeruginosa"
+                              },
+                              "allele": {
+                                "value": "BIM-2"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "BIM-2_ELY0898958-ABPCLH010000185-52",
+                            "node_attrs": {
+                              "div": 0.00272,
+                              "num_date": {
+                                "value": 2023.886,
+                                "confidence": [
+                                  2023.886,
+                                  2023.886
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_aeruginosa"
+                              },
+                              "allele": {
+                                "value": "BIM-2"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "div": 0.00272,
+                          "num_date": {
+                            "value": 2022.708,
+                            "confidence": [
+                              2021.337,
+                              2023.369
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.000595
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.00272,
+                              "num_date": {
+                                "value": 2022.708,
+                                "confidence": [
+                                  2021.987,
+                                  2023.459
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000555
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BIM-2_EKU8073499-ABEUDI020000130-217",
+                                "node_attrs": {
+                                  "div": 0.00272,
+                                  "num_date": {
+                                    "value": 2023.459,
+                                    "confidence": [
+                                      2023.459,
+                                      2023.459
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_aeruginosa"
+                                  },
+                                  "allele": {
+                                    "value": "BIM-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "BIM-2_EKV3097326-ABEUEY020000134-218",
+                                "node_attrs": {
+                                  "div": 0.00272,
+                                  "num_date": {
+                                    "value": 2023.459,
+                                    "confidence": [
+                                      2023.459,
+                                      2023.459
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_aeruginosa"
+                                  },
+                                  "allele": {
+                                    "value": "BIM-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000013",
+                            "node_attrs": {
+                              "div": 0.00272,
+                              "num_date": {
+                                "value": 2022.708,
+                                "confidence": [
+                                  2021.987,
+                                  2023.459
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000555
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BIM-2_EKV3097453-ABEUEY020000194-52",
+                                "node_attrs": {
+                                  "div": 0.00272,
+                                  "num_date": {
+                                    "value": 2023.459,
+                                    "confidence": [
+                                      2023.459,
+                                      2023.459
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_aeruginosa"
+                                  },
+                                  "allele": {
+                                    "value": "BIM-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "BIM-2_EKU8073648-ABEUDI020000181-52",
+                                "node_attrs": {
+                                  "div": 0.00272,
+                                  "num_date": {
+                                    "value": 2023.459,
+                                    "confidence": [
+                                      2023.459,
+                                      2023.459
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_aeruginosa"
+                                  },
+                                  "allele": {
+                                    "value": "BIM-2"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

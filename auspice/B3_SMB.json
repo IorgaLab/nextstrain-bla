@@ -1,0 +1,1107 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 SMB beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 843,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "SMB-1": {
+        "end": 843,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000005",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2007.607,
+        "confidence": [
+          2007.091,
+          2008.122
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.431,
+          "Germany": 0.363,
+          "USA": 0.206
+        },
+        "entropy": 1.056
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.158,
+          "num_date": {
+            "value": 2011.412,
+            "confidence": [
+              2011.335,
+              2011.412
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.994,
+              "Germany": 0.00344,
+              "USA": 0.00263
+            },
+            "entropy": 0.0411
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G6A",
+              "G7A",
+              "A15T",
+              "C21G",
+              "C30G",
+              "T33G",
+              "C36T",
+              "A40T",
+              "C45T",
+              "C48G",
+              "A49C",
+              "C51G",
+              "A57G",
+              "C60T",
+              "C63T",
+              "A82C",
+              "G108C",
+              "T123C",
+              "C135T",
+              "A139G",
+              "T141G",
+              "G145C",
+              "A148T",
+              "T150C",
+              "G153A",
+              "C177T",
+              "C188A",
+              "G199C",
+              "A201G",
+              "G210T",
+              "C216T",
+              "C222T",
+              "A223G",
+              "G225C",
+              "A233T",
+              "G241T",
+              "A242C",
+              "T265A",
+              "C270T",
+              "G303C",
+              "C304A",
+              "A309G",
+              "C324T",
+              "C336G",
+              "C339G",
+              "A340G",
+              "C345G",
+              "C348T",
+              "C351G",
+              "A354T",
+              "A358T",
+              "T372C",
+              "G378C",
+              "T383G",
+              "C387T",
+              "A400T",
+              "G401C",
+              "C402G",
+              "G437C",
+              "C438G",
+              "G444T",
+              "C450G",
+              "A453G",
+              "G454C",
+              "A457G",
+              "C459G",
+              "T465G",
+              "C468G",
+              "A477T",
+              "C482A",
+              "C483G",
+              "A490G",
+              "G491C",
+              "C501G",
+              "C509A",
+              "A510G",
+              "C518T",
+              "G544C",
+              "C545A",
+              "A546G",
+              "A559G",
+              "G567C",
+              "T570C",
+              "T572C",
+              "C573G",
+              "G580C",
+              "C588A",
+              "A591T",
+              "G594C",
+              "C606T",
+              "A613T",
+              "C618T",
+              "C624G",
+              "C636G",
+              "C637T",
+              "A638C",
+              "A639G",
+              "C654T",
+              "C656A",
+              "C657G",
+              "A658G",
+              "A660G",
+              "C663G",
+              "A666G",
+              "G668A",
+              "C669G",
+              "C672G",
+              "A673T",
+              "C681T",
+              "G696C",
+              "C714T",
+              "G721A",
+              "G722C",
+              "C723G",
+              "A738G",
+              "G741A",
+              "A747G",
+              "C750G",
+              "G752A",
+              "C753T",
+              "G754T",
+              "C759T",
+              "C765G",
+              "C768T",
+              "C770A",
+              "A772G",
+              "A773G",
+              "G776C",
+              "C777T",
+              "G783C",
+              "A784G",
+              "T791C",
+              "C792G",
+              "A794C",
+              "G807A",
+              "C810G",
+              "C813T",
+              "A834G",
+              "G837A"
+            ],
+            "SMB-1": [
+              "V3I",
+              "T14S",
+              "N17Q",
+              "K28Q",
+              "I47V",
+              "V49L",
+              "T50S",
+              "A63E",
+              "E67Q",
+              "T75A",
+              "Y78F",
+              "E81S",
+              "S89T",
+              "L102M",
+              "T114A",
+              "E118D",
+              "M120L",
+              "I128S",
+              "G146A",
+              "V152L",
+              "I153V",
+              "T161K",
+              "S164A",
+              "A170E",
+              "T173I",
+              "A182Q",
+              "N187D",
+              "V191A",
+              "V194L",
+              "T205S",
+              "Q213S",
+              "A219E",
+              "T220A",
+              "S223K",
+              "T225S",
+              "G241T",
+              "S251N",
+              "A252S",
+              "T257N",
+              "N258G",
+              "G259A",
+              "T262A",
+              "V264A",
+              "E265A"
+            ]
+          },
+          "labels": {
+            "aa": "SMB-1: V3I, T14S, N17Q, K28Q, I47V, V49L, T50S, A63E, E67Q, T75A, Y78F, E81S, S89T, L102M, T114A, E118D, M120L, I128S, G146A, V152L, I153V, T161K, S164A, A170E, T173I, A182Q, N187D, V191A, V194L, T205S, Q213S, A219E, T220A, S223K, T225S, G241T, S251N, A252S, T257N, N258G, G259A, T262A, V264A, E265A"
+          }
+        },
+        "children": [
+          {
+            "name": "AB636283.1",
+            "node_attrs": {
+              "div": 0.158,
+              "num_date": {
+                "value": 2011.412,
+                "confidence": [
+                  2011.312,
+                  2011.549
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.992,
+                  "Germany": 0.00402,
+                  "USA": 0.00367
+                },
+                "entropy": 0.0504
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "SMB-1_BAL14456-AB636283-1",
+            "node_attrs": {
+              "div": 0.158,
+              "num_date": {
+                "value": 2011.412,
+                "confidence": [
+                  2011.412,
+                  2011.412
+                ]
+              },
+              "organism": {
+                "value": "Serratia_marcescens"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "SMB-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0505,
+          "num_date": {
+            "value": 2010.127,
+            "confidence": [
+              2009.763,
+              2010.496
+            ]
+          },
+          "country": {
+            "value": "Germany",
+            "confidence": {
+              "Germany": 0.638,
+              "USA": 0.279,
+              "Japan": 0.0833
+            },
+            "entropy": 0.85
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "SMB-3_AIQ86556-KM113772-871",
+            "node_attrs": {
+              "div": 0.121,
+              "num_date": {
+                "value": 2014.525,
+                "confidence": [
+                  2014.525,
+                  2014.525
+                ]
+              },
+              "organism": {
+                "value": "bacterium_enrichment_culture_clone_cep-06"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "SMB-3"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T33C",
+                  "T66A",
+                  "G81A",
+                  "C93A",
+                  "T105C",
+                  "T111C",
+                  "C114T",
+                  "C117A",
+                  "G138C",
+                  "T141C",
+                  "C183A",
+                  "C186G",
+                  "G198A",
+                  "T204C",
+                  "G210A",
+                  "G225A",
+                  "G333T",
+                  "A355G",
+                  "G381A",
+                  "C384T",
+                  "G408A",
+                  "C417T",
+                  "C420A",
+                  "G444A",
+                  "C450T",
+                  "C468A",
+                  "C480A",
+                  "C483A",
+                  "C486T",
+                  "G495C",
+                  "G498C",
+                  "C507T",
+                  "G508C",
+                  "C516T",
+                  "C519T",
+                  "A520T",
+                  "G534A",
+                  "T535G",
+                  "C537T",
+                  "C549T",
+                  "A550C",
+                  "G552A",
+                  "T566C",
+                  "T609G",
+                  "T621C",
+                  "A627G",
+                  "G630T",
+                  "G633T",
+                  "G642T",
+                  "C645T",
+                  "G655A",
+                  "A673G",
+                  "T690C",
+                  "C755T",
+                  "G756C",
+                  "A769G",
+                  "C771A",
+                  "C774A",
+                  "G783T",
+                  "G839C",
+                  "C840T",
+                  "G842A"
+                ],
+                "SMB-1": [
+                  "D22E",
+                  "T119A",
+                  "A170P",
+                  "T174S",
+                  "S179A",
+                  "K184Q",
+                  "V189A",
+                  "A219T",
+                  "T225A",
+                  "A252V",
+                  "T257A",
+                  "N258K",
+                  "R280P"
+                ]
+              },
+              "labels": {
+                "aa": "SMB-1: D22E, T119A, A170P, T174S, S179A, K184Q, V189A, A219T, T225A, A252V, T257A, N258K, R280P"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0904,
+              "num_date": {
+                "value": 2011.278,
+                "confidence": [
+                  2010.944,
+                  2011.643
+                ]
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 0.89,
+                  "USA": 0.102,
+                  "Japan": 0.00824
+                },
+                "entropy": 0.376
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T73G",
+                  "A87G",
+                  "G125C",
+                  "G189C",
+                  "G192A",
+                  "C213G",
+                  "A226C",
+                  "G243A",
+                  "G252A",
+                  "G279A",
+                  "G288C",
+                  "A295G",
+                  "G327C",
+                  "T342C",
+                  "A393G",
+                  "G423C",
+                  "G442A",
+                  "T489C",
+                  "T504C",
+                  "C527G",
+                  "G646A",
+                  "A667G",
+                  "A715C",
+                  "C762T",
+                  "C781A",
+                  "G782A"
+                ],
+                "SMB-1": [
+                  "S25A",
+                  "G42A",
+                  "M76L",
+                  "I99V",
+                  "A148T",
+                  "T176S",
+                  "G216S",
+                  "S223G",
+                  "M239L",
+                  "R261K"
+                ]
+              },
+              "labels": {
+                "aa": "SMB-1: S25A, G42A, M76L, I99V, A148T, T176S, G216S, S223G, M239L, R261K"
+              }
+            },
+            "children": [
+              {
+                "name": "SMB-4_KQZ26793-LMFZ01000048-3142",
+                "node_attrs": {
+                  "div": 0.211,
+                  "num_date": {
+                    "value": 2013.999,
+                    "confidence": [
+                      2013.71,
+                      2013.999
+                    ]
+                  },
+                  "organism": {
+                    "value": "Duganella_sp._Root1480D1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "allele": {
+                    "value": "SMB-4"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Germany",
+                    "confidence": {
+                      "Germany": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A22T",
+                      "G28T",
+                      "G39A",
+                      "T42G",
+                      "A50T",
+                      "G75A",
+                      "C76G",
+                      "G81A",
+                      "A82C",
+                      "G84A",
+                      "C96T",
+                      "A104G",
+                      "T105C",
+                      "G108C",
+                      "C126A",
+                      "C129G",
+                      "T165C",
+                      "C183T",
+                      "T204G",
+                      "C226T",
+                      "G241A",
+                      "C258T",
+                      "C261T",
+                      "C288T",
+                      "G300C",
+                      "G303C",
+                      "G312A",
+                      "C345T",
+                      "C357T",
+                      "C366T",
+                      "C396T",
+                      "C414T",
+                      "C415G",
+                      "C435G",
+                      "G444C",
+                      "G456A",
+                      "T465C",
+                      "C469A",
+                      "C472T",
+                      "G474A",
+                      "C480G",
+                      "C486G",
+                      "C507T",
+                      "A510C",
+                      "C519A",
+                      "C521G",
+                      "C528T",
+                      "G534A",
+                      "G548A",
+                      "C549A",
+                      "G564A",
+                      "C573T",
+                      "C579T",
+                      "T585C",
+                      "C588G",
+                      "T609C",
+                      "C612T",
+                      "C624G",
+                      "C636A",
+                      "A639G",
+                      "G661A",
+                      "C669G",
+                      "C674A",
+                      "C675G",
+                      "A682G",
+                      "G696C",
+                      "A705G",
+                      "C715T",
+                      "C723T",
+                      "C726T",
+                      "C735T",
+                      "G736T",
+                      "A744C",
+                      "C753T",
+                      "C765T",
+                      "C774T",
+                      "C786G",
+                      "C792G",
+                      "C798T",
+                      "C801T",
+                      "C804G",
+                      "C810T",
+                      "C819A",
+                      "C823T",
+                      "C827T",
+                      "C828A",
+                      "A835G",
+                      "A836G",
+                      "G837T",
+                      "C838A",
+                      "G839A",
+                      "C840G",
+                      "G842A"
+                    ],
+                    "SMB-1": [
+                      "I8F",
+                      "A10S",
+                      "N17I",
+                      "P26A",
+                      "K28Q",
+                      "N35S",
+                      "E81K",
+                      "P139A",
+                      "P157T",
+                      "T174S",
+                      "G183E",
+                      "V221I",
+                      "T225K",
+                      "I228V",
+                      "A246S",
+                      "K248N",
+                      "A276V",
+                      "K279G",
+                      "R280K"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "SMB-1: I8F, A10S, N17I, P26A, K28Q, N35S, E81K, P139A, P157T, T174S, G183E, V221I, T225K, I228V, A246S, K248N, A276V, K279G, R280K"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.125,
+                  "num_date": {
+                    "value": 2012.665,
+                    "confidence": [
+                      2012.315,
+                      2012.902
+                    ]
+                  },
+                  "country": {
+                    "value": "Germany",
+                    "confidence": {
+                      "Germany": 0.901,
+                      "USA": 0.0962,
+                      "Japan": 0.0031
+                    },
+                    "entropy": 0.337
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C21T",
+                      "G54A",
+                      "C60A",
+                      "T66C",
+                      "T150G",
+                      "C162A",
+                      "T285C",
+                      "C341G",
+                      "C344A",
+                      "T369C",
+                      "T372A",
+                      "T413A",
+                      "C443A",
+                      "T447C",
+                      "C472A",
+                      "G474T",
+                      "A591C",
+                      "G633C",
+                      "A660T",
+                      "C663T",
+                      "A666C",
+                      "G687C",
+                      "A816G"
+                    ],
+                    "SMB-1": [
+                      "D20E",
+                      "T114S",
+                      "A115D",
+                      "F138Y",
+                      "T148K",
+                      "L158I",
+                      "E222D"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "SMB-1: D20E, T114S, A115D, F138Y, T148K, L158I, E222D"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "SMB-5_SFG47003-FOOF01000012-218493",
+                    "node_attrs": {
+                      "div": 0.207,
+                      "num_date": {
+                        "value": 2016.824,
+                        "confidence": [
+                          2016.824,
+                          2016.824
+                        ]
+                      },
+                      "organism": {
+                        "value": "Duganella_sp._CF458"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "SMB-5"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C36T",
+                          "G75A",
+                          "G87A",
+                          "C99T",
+                          "T111C",
+                          "T123C",
+                          "G147A",
+                          "A166G",
+                          "C174T",
+                          "C186G",
+                          "A201G",
+                          "T204C",
+                          "G207T",
+                          "G210T",
+                          "G213C",
+                          "C222T",
+                          "C264T",
+                          "C267A",
+                          "T276C",
+                          "C282T",
+                          "C297T",
+                          "A325G",
+                          "C336T",
+                          "C339T",
+                          "C363T",
+                          "C366A",
+                          "C414T",
+                          "C417T",
+                          "C420T",
+                          "G437C",
+                          "C438T",
+                          "T465G",
+                          "C468T",
+                          "G471A",
+                          "A472G",
+                          "G491A",
+                          "G498C",
+                          "A510T",
+                          "C522A",
+                          "A546T",
+                          "G558A",
+                          "C576T",
+                          "G580C",
+                          "T585C",
+                          "C588A",
+                          "A601G",
+                          "T609C",
+                          "C615G",
+                          "C618T",
+                          "A627G",
+                          "G630C",
+                          "C656T",
+                          "T660C",
+                          "C666T",
+                          "A673T",
+                          "C711T",
+                          "C723G",
+                          "G729A",
+                          "A744G",
+                          "C755T",
+                          "G756C",
+                          "C774A",
+                          "C811T",
+                          "C813G",
+                          "C818A",
+                          "C819T",
+                          "G825A",
+                          "C827T",
+                          "C838A",
+                          "G839A"
+                        ],
+                        "SMB-1": [
+                          "I56V",
+                          "T109A",
+                          "G146A",
+                          "I158V",
+                          "S164N",
+                          "V194L",
+                          "S201G",
+                          "A219V",
+                          "T225S",
+                          "A252V",
+                          "N258K",
+                          "T273N",
+                          "A276V",
+                          "R280N"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "SMB-1: I56V, T109A, G146A, I158V, S164N, V194L, S201G, A219V, T225S, A252V, N258K, T273N, A276V, R280N"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 0.169,
+                      "num_date": {
+                        "value": 2013.907,
+                        "confidence": [
+                          2013.688,
+                          2013.984
+                        ]
+                      },
+                      "country": {
+                        "value": "Germany",
+                        "confidence": {
+                          "Germany": 1.0
+                        },
+                        "entropy": 7.79e-05
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T42C",
+                          "G138A",
+                          "C183G",
+                          "C195T",
+                          "G196T",
+                          "G198C",
+                          "A242C",
+                          "C336A",
+                          "C351T",
+                          "G381A",
+                          "T455C",
+                          "A462G",
+                          "C483T",
+                          "G498A",
+                          "C513T",
+                          "C549G",
+                          "G552A",
+                          "A557T",
+                          "T570C",
+                          "C600T",
+                          "C640T",
+                          "C654T",
+                          "C672G",
+                          "G702T",
+                          "A747G",
+                          "G756A",
+                          "G763A",
+                          "C770G",
+                          "C810A"
+                        ],
+                        "SMB-1": [
+                          "A66S",
+                          "E81A",
+                          "V152A",
+                          "K186M",
+                          "V255I",
+                          "T257S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "SMB-1: A66S, E81A, V152A, K186M, V255I, T257S"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "SMB-6_KRB87325-LMIC01000034-307680",
+                        "node_attrs": {
+                          "div": 0.169,
+                          "num_date": {
+                            "value": 2013.959,
+                            "confidence": [
+                              2013.731,
+                              2013.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Duganella_sp._Root198D2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "SMB-6"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Germany",
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "SMB-6_KQV59847-LMDB01000002-301290",
+                        "node_attrs": {
+                          "div": 0.169,
+                          "num_date": {
+                            "value": 2013.959,
+                            "confidence": [
+                              2013.731,
+                              2013.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Duganella_sp._Root336D2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "SMB-6"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Germany",
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

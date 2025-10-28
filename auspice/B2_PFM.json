@@ -1,0 +1,4065 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B2 PFM beta-lactamases",
+    "updated": "2024-12-29",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 762,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "I5F20_13950": {
+        "end": 762,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Italy",
+            "#5098B9"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Greece": {
+            "latitude": 39.0,
+            "longitude": 22.0
+          },
+          "Italy": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "Portugal": {
+            "latitude": 39.54046,
+            "longitude": -8.174701
+          },
+          "Netherlands": {
+            "latitude": 52.1326,
+            "longitude": 5.2913
+          },
+          "Norway": {
+            "latitude": 61.3109,
+            "longitude": 8.73701
+          },
+          "Denmark": {
+            "latitude": 56.2639,
+            "longitude": 9.5018
+          },
+          "Belgium": {
+            "latitude": 50.707735,
+            "longitude": 4.677726
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Switzerland": {
+            "latitude": 46.8182,
+            "longitude": 8.2275
+          },
+          "Lebanon": {
+            "latitude": 33.945959,
+            "longitude": 35.86863
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Canada": {
+            "latitude": 61.0666922,
+            "longitude": -107.991707
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000008",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1990.186,
+        "confidence": [
+          1988.633,
+          1992.475
+        ]
+      },
+      "country": {
+        "value": "Denmark",
+        "confidence": {
+          "Denmark": 0.068,
+          "Greece": 0.0641,
+          "France": 0.0634,
+          "USA": 0.0559,
+          "United Kingdom": 0.0559,
+          "Antarctica": 0.0554,
+          "Portugal": 0.0548,
+          "Belgium": 0.0542,
+          "Svalbard": 0.0541,
+          "Switzerland": 0.0537,
+          "Norway": 0.0533,
+          "India": 0.053,
+          "Lebanon": 0.053,
+          "Canada": 0.0529,
+          "China": 0.0529,
+          "Netherlands": 0.052,
+          "Germany": 0.052,
+          "Italy": 0.0517
+        },
+        "entropy": 2.887
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000030",
+        "node_attrs": {
+          "div": 0.0445,
+          "num_date": {
+            "value": 2002.914,
+            "confidence": [
+              2001.113,
+              2004.668
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.0655,
+              "France": 0.0633,
+              "Portugal": 0.0591,
+              "Denmark": 0.0564,
+              "Antarctica": 0.0556,
+              "United Kingdom": 0.0551,
+              "Lebanon": 0.055,
+              "India": 0.055,
+              "Canada": 0.0548,
+              "Belgium": 0.0545,
+              "Svalbard": 0.0541,
+              "Norway": 0.0538,
+              "Netherlands": 0.0537,
+              "China": 0.0535,
+              "Switzerland": 0.0534,
+              "Germany": 0.0526,
+              "Greece": 0.0524,
+              "Italy": 0.0522
+            },
+            "entropy": 2.888
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T11C",
+              "A14G",
+              "A28C",
+              "G69C",
+              "T72C",
+              "T84C",
+              "C166A",
+              "C198A",
+              "C201A",
+              "T207C",
+              "A210G",
+              "A235G",
+              "G258C",
+              "T288C",
+              "A294C",
+              "C303G",
+              "G312A",
+              "A315G",
+              "T317G",
+              "C324G",
+              "T330C",
+              "G396C",
+              "A408G",
+              "A413T",
+              "T414C",
+              "C420G",
+              "T447G",
+              "C462T",
+              "C478A",
+              "A486C",
+              "T505G",
+              "C510T",
+              "A546G",
+              "A561C",
+              "G611C",
+              "A636G",
+              "A652G",
+              "G653A",
+              "T664C",
+              "A687C",
+              "C696T",
+              "A709G",
+              "T729A",
+              "T732C",
+              "C744T",
+              "G752A",
+              "G754A"
+            ],
+            "I5F20_13950": [
+              "I4T",
+              "N5S",
+              "I10L",
+              "E23D",
+              "H56N",
+              "I79V",
+              "E86D",
+              "L106R",
+              "Y138F",
+              "H160N",
+              "S169A",
+              "S204T",
+              "S218D",
+              "S237G",
+              "H243Q",
+              "G251D",
+              "E252K"
+            ]
+          },
+          "labels": {
+            "aa": "I5F20_13950: I4T, N5S, I10L, E23D, H56N, I79V, E86D, L106R, Y138F, H160N, S169A, S204T, S218D, S237G, H243Q, G251D, E252K"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000031",
+            "node_attrs": {
+              "div": 0.078,
+              "num_date": {
+                "value": 2013.569,
+                "confidence": [
+                  2012.324,
+                  2014.035
+                ]
+              },
+              "country": {
+                "value": "Portugal",
+                "confidence": {
+                  "Portugal": 0.449,
+                  "India": 0.0909,
+                  "Netherlands": 0.0874,
+                  "Canada": 0.0777,
+                  "France": 0.0319,
+                  "USA": 0.0247,
+                  "Denmark": 0.0215,
+                  "Antarctica": 0.0203,
+                  "Greece": 0.0201,
+                  "United Kingdom": 0.02,
+                  "Belgium": 0.02,
+                  "Germany": 0.0199,
+                  "Switzerland": 0.0197,
+                  "Svalbard": 0.0196,
+                  "Norway": 0.0193,
+                  "Lebanon": 0.0193,
+                  "China": 0.0192,
+                  "Italy": 0.0189
+                },
+                "entropy": 2.124
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C7T",
+                  "T15C",
+                  "C18A",
+                  "G36C",
+                  "C45T",
+                  "T56C",
+                  "T129C",
+                  "G160A",
+                  "C183T",
+                  "A198G",
+                  "C333T",
+                  "A343T",
+                  "G420A",
+                  "A472G",
+                  "T477C",
+                  "T480A",
+                  "T483C",
+                  "A494T",
+                  "G541A",
+                  "C552G",
+                  "T553C",
+                  "C664A",
+                  "G720A",
+                  "A737C",
+                  "C748A",
+                  "A758C"
+                ],
+                "I5F20_13950": [
+                  "L3F",
+                  "V19A",
+                  "A54T",
+                  "M115L",
+                  "N158D",
+                  "N160K",
+                  "Y165F",
+                  "E181K",
+                  "L222M",
+                  "N246T",
+                  "H250N",
+                  "Q253P"
+                ]
+              },
+              "labels": {
+                "aa": "I5F20_13950: L3F, V19A, A54T, M115L, N158D, N160K, Y165F, E181K, L222M, N246T, H250N, Q253P"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000032",
+                "node_attrs": {
+                  "div": 0.0885,
+                  "num_date": {
+                    "value": 2018.53,
+                    "confidence": [
+                      2018.091,
+                      2018.585
+                    ]
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 0.999
+                    },
+                    "entropy": 0.0081
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C39A",
+                      "A125C",
+                      "A211C",
+                      "C450T",
+                      "G548A",
+                      "C583T",
+                      "G597A",
+                      "T714C"
+                    ],
+                    "I5F20_13950": [
+                      "E42A",
+                      "K71Q",
+                      "R183H"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "I5F20_13950: E42A, K71Q, R183H"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PFM-11_QZC93110-CP080597-4127881",
+                    "node_attrs": {
+                      "div": 0.0885,
+                      "num_date": {
+                        "value": 2018.585,
+                        "confidence": [
+                          2018.585,
+                          2018.585
+                        ]
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._ERGC3:05"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PFM-11"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PFM-11_MBX7276712-JAIEWI010000002-3064139",
+                    "node_attrs": {
+                      "div": 0.0885,
+                      "num_date": {
+                        "value": 2018.585,
+                        "confidence": [
+                          2018.585,
+                          2018.585
+                        ]
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._ERGC3:01"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PFM-11"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000033",
+                "node_attrs": {
+                  "div": 0.0832,
+                  "num_date": {
+                    "value": 2014.458,
+                    "confidence": [
+                      2013.754,
+                      2014.675
+                    ]
+                  },
+                  "country": {
+                    "value": "Portugal",
+                    "confidence": {
+                      "Portugal": 0.66,
+                      "Netherlands": 0.105,
+                      "Canada": 0.0884,
+                      "India": 0.0285,
+                      "France": 0.0195,
+                      "USA": 0.00993,
+                      "Denmark": 0.0082,
+                      "Germany": 0.00792,
+                      "Greece": 0.00767,
+                      "Antarctica": 0.00752,
+                      "Belgium": 0.0075,
+                      "United Kingdom": 0.00743,
+                      "Switzerland": 0.00734,
+                      "Svalbard": 0.00715,
+                      "Lebanon": 0.00705,
+                      "Italy": 0.00699,
+                      "Norway": 0.00698,
+                      "China": 0.00693
+                    },
+                    "entropy": 1.384
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C26T",
+                      "C243T",
+                      "A471G",
+                      "T588C"
+                    ],
+                    "I5F20_13950": [
+                      "A9V"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "I5F20_13950: A9V"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PFM-13_QQD30039-CP066169-3023781",
+                    "node_attrs": {
+                      "div": 0.0845,
+                      "num_date": {
+                        "value": 2017.415,
+                        "confidence": [
+                          2017.415,
+                          2017.487
+                        ]
+                      },
+                      "country": {
+                        "value": "Canada",
+                        "confidence": {
+                          "Canada": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_simiae"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PFM-13"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C612G"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000034",
+                    "node_attrs": {
+                      "div": 0.0845,
+                      "num_date": {
+                        "value": 2014.618,
+                        "confidence": [
+                          2014.099,
+                          2014.814
+                        ]
+                      },
+                      "country": {
+                        "value": "Portugal",
+                        "confidence": {
+                          "Portugal": 0.755,
+                          "Netherlands": 0.116,
+                          "Canada": 0.0435,
+                          "France": 0.0166,
+                          "India": 0.0146,
+                          "USA": 0.00562,
+                          "Germany": 0.00471,
+                          "Denmark": 0.00453,
+                          "Greece": 0.00421,
+                          "Belgium": 0.00414,
+                          "Antarctica": 0.00407,
+                          "United Kingdom": 0.00404,
+                          "Switzerland": 0.00398,
+                          "Svalbard": 0.00379,
+                          "Italy": 0.00379,
+                          "Lebanon": 0.00374,
+                          "Norway": 0.00367,
+                          "China": 0.00363
+                        },
+                        "entropy": 1.024
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C99T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PFM-13_NCE91744-QODJ01000030-45321",
+                        "node_attrs": {
+                          "div": 0.0898,
+                          "num_date": {
+                            "value": 2014.999,
+                            "confidence": [
+                              2014.717,
+                              2014.999
+                            ]
+                          },
+                          "country": {
+                            "value": "Portugal",
+                            "confidence": {
+                              "Portugal": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_sp._L13"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PFM-13"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G132A",
+                              "G291A",
+                              "C684T",
+                              "C711T"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "div": 0.0845,
+                          "num_date": {
+                            "value": 2015.954,
+                            "confidence": [
+                              2015.483,
+                              2016.822
+                            ]
+                          },
+                          "country": {
+                            "value": "Netherlands",
+                            "confidence": {
+                              "Netherlands": 0.787,
+                              "France": 0.0897,
+                              "Portugal": 0.0705,
+                              "Germany": 0.00784,
+                              "Canada": 0.00617,
+                              "USA": 0.00406,
+                              "India": 0.00397,
+                              "Belgium": 0.0035,
+                              "Denmark": 0.0035,
+                              "United Kingdom": 0.00314,
+                              "Antarctica": 0.00304,
+                              "Greece": 0.00303,
+                              "Switzerland": 0.0029,
+                              "Italy": 0.00288,
+                              "Lebanon": 0.00243,
+                              "Svalbard": 0.00238,
+                              "Norway": 0.00221,
+                              "China": 0.00219
+                            },
+                            "entropy": 0.888
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "PFM-13_NVZ55842-JACAOZ010000006-124613",
+                            "node_attrs": {
+                              "div": 0.0845,
+                              "num_date": {
+                                "value": 2016.001,
+                                "confidence": [
+                                  2016.001,
+                                  2016.85
+                                ]
+                              },
+                              "country": {
+                                "value": "Netherlands",
+                                "confidence": {
+                                  "Netherlands": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_edaphica"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PFM-13"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000010",
+                            "node_attrs": {
+                              "div": 0.0845,
+                              "num_date": {
+                                "value": 2016.876,
+                                "confidence": [
+                                  2016.139,
+                                  2017.305
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 0.641,
+                                  "Netherlands": 0.211,
+                                  "Germany": 0.0437,
+                                  "Portugal": 0.0224,
+                                  "Belgium": 0.00758,
+                                  "USA": 0.00749,
+                                  "Denmark": 0.00715,
+                                  "United Kingdom": 0.00657,
+                                  "Antarctica": 0.00628,
+                                  "Greece": 0.006,
+                                  "Italy": 0.00598,
+                                  "Switzerland": 0.00587,
+                                  "Canada": 0.00559,
+                                  "India": 0.00507,
+                                  "Lebanon": 0.0047,
+                                  "Svalbard": 0.00454,
+                                  "Norway": 0.00416,
+                                  "China": 0.00412
+                                },
+                                "entropy": 1.252
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PFM-13_NMX56256-JAAQWL010000003-277227",
+                                "node_attrs": {
+                                  "div": 0.0845,
+                                  "num_date": {
+                                    "value": 2020.206,
+                                    "confidence": [
+                                      2020.206,
+                                      2020.206
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Germany",
+                                    "confidence": {
+                                      "Germany": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_sp._WS_5146"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "PFM-13"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000037",
+                                "node_attrs": {
+                                  "div": 0.0858,
+                                  "num_date": {
+                                    "value": 2017.319,
+                                    "confidence": [
+                                      2016.854,
+                                      2017.637
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 0.997,
+                                      "Netherlands": 0.00153
+                                    },
+                                    "entropy": 0.0234
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G256A"
+                                    ],
+                                    "I5F20_13950": [
+                                      "D86N"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "I5F20_13950: D86N"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "PFM-12_MBD8719232-JACYVP010000024-46488",
+                                    "node_attrs": {
+                                      "div": 0.0858,
+                                      "num_date": {
+                                        "value": 2017.354,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_fluorescens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-12"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "PFM-12_MBD8093279-JACYNQ010000026-47303",
+                                    "node_attrs": {
+                                      "div": 0.0858,
+                                      "num_date": {
+                                        "value": 2017.354,
+                                        "confidence": [
+                                          2017.001,
+                                          2017.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_fluorescens"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-12"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000038",
+            "node_attrs": {
+              "div": 0.0972,
+              "num_date": {
+                "value": 2012.87,
+                "confidence": [
+                  2012.644,
+                  2012.87
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.000468
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C11G",
+                  "C18T",
+                  "C30T",
+                  "C34A",
+                  "A43G",
+                  "C51T",
+                  "C58A",
+                  "G71C",
+                  "C72G",
+                  "C81T",
+                  "G123A",
+                  "G135A",
+                  "C141T",
+                  "A233G",
+                  "G261A",
+                  "A339G",
+                  "T390C",
+                  "C421T",
+                  "C442A",
+                  "G447A",
+                  "T448C",
+                  "G453C",
+                  "G463A",
+                  "C465G",
+                  "G468A",
+                  "C490A",
+                  "C501T",
+                  "G504A",
+                  "T507C",
+                  "A543G",
+                  "T606C",
+                  "C609T",
+                  "C627G",
+                  "C628T",
+                  "G645C",
+                  "A675C",
+                  "A747G",
+                  "G759T"
+                ],
+                "I5F20_13950": [
+                  "T4S",
+                  "L12M",
+                  "I15V",
+                  "L20I",
+                  "S24T",
+                  "K78R",
+                  "Q148K",
+                  "Y150H",
+                  "A155T",
+                  "L164M",
+                  "E225D",
+                  "Q253H"
+                ]
+              },
+              "labels": {
+                "aa": "I5F20_13950: T4S, L12M, I15V, L20I, S24T, K78R, Q148K, Y150H, A155T, L164M, E225D, Q253H"
+              }
+            },
+            "children": [
+              {
+                "name": "PFM-8_PMV65395-POEM01000031-7040",
+                "node_attrs": {
+                  "div": 0.0972,
+                  "num_date": {
+                    "value": 2012.87,
+                    "confidence": [
+                      2012.87,
+                      2012.87
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_sp._GW123-5C08"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PFM-8"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "PFM-8_PMV74422-POEK01000009-7040",
+                "node_attrs": {
+                  "div": 0.0972,
+                  "num_date": {
+                    "value": 2012.87,
+                    "confidence": [
+                      2012.87,
+                      2012.87
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_sp._GW123-5D08"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PFM-8"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000013",
+                "node_attrs": {
+                  "div": 0.0972,
+                  "num_date": {
+                    "value": 2013.884,
+                    "confidence": [
+                      2013.264,
+                      2013.884
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.00106
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "PFM-8_PMV50113-POEG01000044-7040",
+                    "node_attrs": {
+                      "div": 0.0972,
+                      "num_date": {
+                        "value": 2013.884,
+                        "confidence": [
+                          2013.884,
+                          2013.884
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._GW460-4"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PFM-8"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000014",
+                    "node_attrs": {
+                      "div": 0.0972,
+                      "num_date": {
+                        "value": 2014.459,
+                        "confidence": [
+                          2013.9,
+                          2014.459
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000263
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "PFM-8_PMV28939-POED01000009-7040",
+                        "node_attrs": {
+                          "div": 0.0972,
+                          "num_date": {
+                            "value": 2014.459,
+                            "confidence": [
+                              2014.459,
+                              2014.459
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_sp._DP16D-L5"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PFM-8"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000015",
+                        "node_attrs": {
+                          "div": 0.0972,
+                          "num_date": {
+                            "value": 2014.638,
+                            "confidence": [
+                              2014.318,
+                              2014.935
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.000239
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "PFM-8_WP_102591908-NZ_JACNCM010000009-7109",
+                            "node_attrs": {
+                              "div": 0.0972,
+                              "num_date": {
+                                "value": 2015.166,
+                                "confidence": [
+                                  2015.166,
+                                  2015.166
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_sp._FW305-55"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PFM-8"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000016",
+                            "node_attrs": {
+                              "div": 0.0972,
+                              "num_date": {
+                                "value": 2014.856,
+                                "confidence": [
+                                  2014.578,
+                                  2015.021
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000116
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PFM-8_PMV40969-POEJ01000032-7040",
+                                "node_attrs": {
+                                  "div": 0.0972,
+                                  "num_date": {
+                                    "value": 2015.114,
+                                    "confidence": [
+                                      2015.114,
+                                      2015.114
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_sp._FW305-3-2-15-C-R2A1"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "PFM-8"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000017",
+                                "node_attrs": {
+                                  "div": 0.0972,
+                                  "num_date": {
+                                    "value": 2014.97,
+                                    "confidence": [
+                                      2014.742,
+                                      2015.078
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.000115
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000021",
+                                    "node_attrs": {
+                                      "div": 0.0972,
+                                      "num_date": {
+                                        "value": 2015.114,
+                                        "confidence": [
+                                          2014.914,
+                                          2015.114
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.000113
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "PFM-8_PMV38934-POEE01000009-7040",
+                                        "node_attrs": {
+                                          "div": 0.0972,
+                                          "num_date": {
+                                            "value": 2015.114,
+                                            "confidence": [
+                                              2015.114,
+                                              2015.114
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_sp._FW305-3-2-15-A-LB2"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PFM-8"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "PFM-8_PMV51246-POEH01000010-7040",
+                                        "node_attrs": {
+                                          "div": 0.0972,
+                                          "num_date": {
+                                            "value": 2015.114,
+                                            "confidence": [
+                                              2015.114,
+                                              2015.114
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_sp._FW305-3-2-15-C-LB1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PFM-8"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000023",
+                                    "node_attrs": {
+                                      "div": 0.0972,
+                                      "num_date": {
+                                        "value": 2015.114,
+                                        "confidence": [
+                                          2014.914,
+                                          2015.114
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.000113
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "PFM-8_PMV63630-POEF01000007-7040",
+                                        "node_attrs": {
+                                          "div": 0.0972,
+                                          "num_date": {
+                                            "value": 2015.114,
+                                            "confidence": [
+                                              2015.114,
+                                              2015.114
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_sp._FW305-3-2-15-C-LB3"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PFM-8"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "PFM-8_PMV25217-POEI01000004-7040",
+                                        "node_attrs": {
+                                          "div": 0.0972,
+                                          "num_date": {
+                                            "value": 2015.114,
+                                            "confidence": [
+                                              2015.114,
+                                              2015.114
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_sp._FW305-3-2-15-C-TSA2"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PFM-8"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000027",
+        "node_attrs": {
+          "div": 0.0199,
+          "num_date": {
+            "value": 1993.914,
+            "confidence": [
+              1991.455,
+              1994.69
+            ]
+          },
+          "country": {
+            "value": "Denmark",
+            "confidence": {
+              "Denmark": 0.118,
+              "Greece": 0.113,
+              "France": 0.0606,
+              "United Kingdom": 0.0512,
+              "USA": 0.0497,
+              "Antarctica": 0.0491,
+              "Svalbard": 0.0487,
+              "Switzerland": 0.0486,
+              "Portugal": 0.0478,
+              "Belgium": 0.0474,
+              "Lebanon": 0.0471,
+              "Norway": 0.0461,
+              "India": 0.0459,
+              "Canada": 0.0458,
+              "China": 0.0457,
+              "Netherlands": 0.0452,
+              "Germany": 0.045,
+              "Italy": 0.0448
+            },
+            "entropy": 2.83
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000028",
+            "node_attrs": {
+              "div": 0.0702,
+              "num_date": {
+                "value": 2014.497,
+                "confidence": [
+                  2014.098,
+                  2014.573
+                ]
+              },
+              "country": {
+                "value": "Switzerland",
+                "confidence": {
+                  "Switzerland": 0.891,
+                  "Belgium": 0.014,
+                  "France": 0.0139,
+                  "Denmark": 0.00666,
+                  "Greece": 0.00609,
+                  "USA": 0.00583,
+                  "Svalbard": 0.00575,
+                  "Antarctica": 0.00567,
+                  "United Kingdom": 0.00544,
+                  "Portugal": 0.00531,
+                  "Netherlands": 0.00526,
+                  "Italy": 0.00509,
+                  "Germany": 0.00507,
+                  "Lebanon": 0.00507,
+                  "Norway": 0.00507,
+                  "India": 0.00498,
+                  "Canada": 0.00496,
+                  "China": 0.00493
+                },
+                "entropy": 0.646
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G6A",
+                  "C7G",
+                  "A28G",
+                  "C34A",
+                  "G37T",
+                  "C38T",
+                  "T56C",
+                  "G69T",
+                  "G71T",
+                  "T72A",
+                  "G78T",
+                  "C81T",
+                  "A96G",
+                  "G102C",
+                  "T114G",
+                  "C150G",
+                  "C153T",
+                  "C166G",
+                  "G174A",
+                  "C241T",
+                  "G255A",
+                  "C303T",
+                  "C306T",
+                  "C318T",
+                  "C336A",
+                  "A339T",
+                  "C348T",
+                  "G365C",
+                  "C367A",
+                  "G369T",
+                  "A376G",
+                  "G402C",
+                  "G630A",
+                  "A652C",
+                  "A663G",
+                  "C667T",
+                  "G690A",
+                  "G708A"
+                ],
+                "I5F20_13950": [
+                  "L3V",
+                  "I10V",
+                  "L12M",
+                  "A13F",
+                  "V19A",
+                  "E23D",
+                  "S24I",
+                  "H56D",
+                  "P81S",
+                  "S122T",
+                  "Q123N",
+                  "S126G",
+                  "S218R",
+                  "P223S"
+                ]
+              },
+              "labels": {
+                "aa": "I5F20_13950: L3V, I10V, L12M, A13F, V19A, E23D, S24I, H56D, P81S, S122T, Q123N, S126G, S218R, P223S"
+              }
+            },
+            "children": [
+              {
+                "name": "PFM-1_TYK54762-VSRO01000017-35465",
+                "node_attrs": {
+                  "div": 0.0702,
+                  "num_date": {
+                    "value": 2014.578,
+                    "confidence": [
+                      2014.497,
+                      2014.579
+                    ]
+                  },
+                  "country": {
+                    "value": "Switzerland",
+                    "confidence": {
+                      "Switzerland": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_synxantha"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PFM-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000026",
+                "node_attrs": {
+                  "div": 0.0702,
+                  "num_date": {
+                    "value": 2019.227,
+                    "confidence": [
+                      2018.412,
+                      2019.234
+                    ]
+                  },
+                  "country": {
+                    "value": "Belgium",
+                    "confidence": {
+                      "Belgium": 0.481,
+                      "France": 0.477,
+                      "Switzerland": 0.00905,
+                      "Svalbard": 0.00305,
+                      "Antarctica": 0.00301,
+                      "Denmark": 0.00276,
+                      "USA": 0.00259,
+                      "Netherlands": 0.00253,
+                      "United Kingdom": 0.0024,
+                      "Greece": 0.0023,
+                      "Italy": 0.00218,
+                      "Germany": 0.00206,
+                      "Portugal": 0.00181,
+                      "Lebanon": 0.00174,
+                      "Norway": 0.0017,
+                      "India": 0.00154,
+                      "Canada": 0.00154,
+                      "China": 0.00149
+                    },
+                    "entropy": 0.947
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "PFM-1_QDC33502-MN065826-1",
+                    "node_attrs": {
+                      "div": 0.0702,
+                      "num_date": {
+                        "value": 2019.445,
+                        "confidence": [
+                          2019.445,
+                          2019.445
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_fluorescens"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PFM-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PFM-1_MCK3832728-SPKM01000027-244270",
+                    "node_attrs": {
+                      "div": 0.0702,
+                      "num_date": {
+                        "value": 2019.234,
+                        "confidence": [
+                          2019.234,
+                          2019.234
+                        ]
+                      },
+                      "country": {
+                        "value": "Belgium",
+                        "confidence": {
+                          "Belgium": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_fluorescens"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PFM-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000018",
+            "node_attrs": {
+              "div": 0.0397,
+              "num_date": {
+                "value": 1997.307,
+                "confidence": [
+                  1996.035,
+                  1997.654
+                ]
+              },
+              "country": {
+                "value": "Denmark",
+                "confidence": {
+                  "Denmark": 0.355,
+                  "Greece": 0.338,
+                  "France": 0.0314,
+                  "United Kingdom": 0.0223,
+                  "Svalbard": 0.0212,
+                  "Switzerland": 0.0204,
+                  "USA": 0.0199,
+                  "Antarctica": 0.0195,
+                  "Lebanon": 0.019,
+                  "Belgium": 0.0182,
+                  "Portugal": 0.0181,
+                  "India": 0.017,
+                  "Norway": 0.017,
+                  "Canada": 0.0169,
+                  "China": 0.0168,
+                  "Netherlands": 0.0167,
+                  "Germany": 0.0165,
+                  "Italy": 0.0165
+                },
+                "entropy": 1.944
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C12T",
+                  "C21G",
+                  "G50C",
+                  "A57C",
+                  "C58T",
+                  "G67C",
+                  "A73G",
+                  "C76T",
+                  "A138G",
+                  "C156T",
+                  "T159C",
+                  "A175G",
+                  "C450T"
+                ],
+                "I5F20_13950": [
+                  "C17S",
+                  "L20F",
+                  "E23Q",
+                  "N25D",
+                  "I59V"
+                ]
+              },
+              "labels": {
+                "aa": "I5F20_13950: C17S, L20F, E23Q, N25D, I59V"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000019",
+                "node_attrs": {
+                  "div": 0.045,
+                  "num_date": {
+                    "value": 2000.904,
+                    "confidence": [
+                      1999.03,
+                      2002.834
+                    ]
+                  },
+                  "country": {
+                    "value": "Denmark",
+                    "confidence": {
+                      "Denmark": 0.111,
+                      "Greece": 0.107,
+                      "Svalbard": 0.0641,
+                      "France": 0.0602,
+                      "Belgium": 0.0506,
+                      "United Kingdom": 0.0505,
+                      "USA": 0.0497,
+                      "Antarctica": 0.0488,
+                      "Lebanon": 0.0483,
+                      "Switzerland": 0.0481,
+                      "Portugal": 0.0472,
+                      "Norway": 0.0457,
+                      "India": 0.0453,
+                      "Canada": 0.0452,
+                      "China": 0.0452,
+                      "Netherlands": 0.0447,
+                      "Germany": 0.0445,
+                      "Italy": 0.0443
+                    },
+                    "entropy": 2.839
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C161A",
+                      "A315G",
+                      "A339G",
+                      "C552G"
+                    ],
+                    "I5F20_13950": [
+                      "A54E"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "I5F20_13950: A54E"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000020",
+                    "node_attrs": {
+                      "div": 0.0529,
+                      "num_date": {
+                        "value": 2015.14,
+                        "confidence": [
+                          2014.602,
+                          2015.147
+                        ]
+                      },
+                      "country": {
+                        "value": "Lebanon",
+                        "confidence": {
+                          "Lebanon": 0.846,
+                          "USA": 0.091,
+                          "France": 0.00811,
+                          "Denmark": 0.00439,
+                          "Greece": 0.00407,
+                          "Portugal": 0.00403,
+                          "Svalbard": 0.004,
+                          "Belgium": 0.00365,
+                          "Antarctica": 0.0036,
+                          "Switzerland": 0.00356,
+                          "United Kingdom": 0.00356,
+                          "Netherlands": 0.0035,
+                          "India": 0.00349,
+                          "Canada": 0.00342,
+                          "Germany": 0.00333,
+                          "Norway": 0.00333,
+                          "Italy": 0.00333,
+                          "China": 0.0033
+                        },
+                        "entropy": 0.705
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C86T",
+                          "A311G",
+                          "C348T",
+                          "G369A",
+                          "T588G",
+                          "G690A"
+                        ],
+                        "I5F20_13950": [
+                          "T29I",
+                          "K104R"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "I5F20_13950: T29I, K104R"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PFM-2_KRP45299-JYLH01000007-68875",
+                        "node_attrs": {
+                          "div": 0.0529,
+                          "num_date": {
+                            "value": 2015.147,
+                            "confidence": [
+                              2015.147,
+                              2015.147
+                            ]
+                          },
+                          "country": {
+                            "value": "Lebanon",
+                            "confidence": {
+                              "Lebanon": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_libanensis"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PFM-2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000035",
+                        "node_attrs": {
+                          "div": 0.0529,
+                          "num_date": {
+                            "value": 2016.784,
+                            "confidence": [
+                              2016.037,
+                              2016.786
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.839,
+                              "Lebanon": 0.0792,
+                              "France": 0.0331,
+                              "Denmark": 0.00421,
+                              "Greece": 0.0037,
+                              "Belgium": 0.0037,
+                              "Portugal": 0.00365,
+                              "Netherlands": 0.00354,
+                              "United Kingdom": 0.00339,
+                              "Antarctica": 0.00333,
+                              "Switzerland": 0.00328,
+                              "Svalbard": 0.00314,
+                              "Italy": 0.00312,
+                              "Germany": 0.00304,
+                              "India": 0.00284,
+                              "Canada": 0.00275,
+                              "Norway": 0.00261,
+                              "China": 0.00258
+                            },
+                            "entropy": 0.741
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "PFM-2_SDK66951-LT629699-1005795",
+                            "node_attrs": {
+                              "div": 0.0529,
+                              "num_date": {
+                                "value": 2016.786,
+                                "confidence": [
+                                  2016.786,
+                                  2016.786
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_libanensis"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "PFM-2"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "PFM-2_QGJ02506-MN080496-1",
+                            "node_attrs": {
+                              "div": 0.0529,
+                              "num_date": {
+                                "value": 2019.462,
+                                "confidence": [
+                                  2019.462,
+                                  2019.462
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_libanensis"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "allele": {
+                                "value": "PFM-2"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000022",
+                    "node_attrs": {
+                      "div": 0.0881,
+                      "num_date": {
+                        "value": 2009.495,
+                        "confidence": [
+                          2009.177,
+                          2009.495
+                        ]
+                      },
+                      "country": {
+                        "value": "Svalbard",
+                        "confidence": {
+                          "Svalbard": 0.849,
+                          "Belgium": 0.0889,
+                          "France": 0.0063,
+                          "Antarctica": 0.00485,
+                          "Denmark": 0.00433,
+                          "Switzerland": 0.00408,
+                          "Greece": 0.00406,
+                          "Norway": 0.00403,
+                          "Lebanon": 0.00389,
+                          "USA": 0.00372,
+                          "Portugal": 0.00349,
+                          "United Kingdom": 0.00347,
+                          "China": 0.00337,
+                          "India": 0.00334,
+                          "Canada": 0.00333,
+                          "Netherlands": 0.0033,
+                          "Germany": 0.00327,
+                          "Italy": 0.00325
+                        },
+                        "entropy": 0.698
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C18T",
+                          "C26T",
+                          "C45T",
+                          "C67A",
+                          "G126A",
+                          "A154G",
+                          "C180T",
+                          "C198A",
+                          "G216T",
+                          "C267T",
+                          "T288C",
+                          "C336A",
+                          "A408G",
+                          "G417A",
+                          "G418A",
+                          "G438A",
+                          "T447A",
+                          "T450C",
+                          "G457A",
+                          "C464A",
+                          "T477C",
+                          "C484A",
+                          "G489A",
+                          "A546G",
+                          "C570T",
+                          "G597A",
+                          "C603G",
+                          "A652C",
+                          "C657T",
+                          "G710A",
+                          "A737C",
+                          "C744T"
+                        ],
+                        "I5F20_13950": [
+                          "A9V",
+                          "Q23K",
+                          "I52V",
+                          "V140I",
+                          "D153N",
+                          "A155D",
+                          "S218R",
+                          "S237N",
+                          "N246T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "I5F20_13950: A9V, Q23K, I52V, V140I, D153N, A155D, S218R, S237N, N246T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PFM-4_OAE14554-LVWZ01000046-4813",
+                        "node_attrs": {
+                          "div": 0.0881,
+                          "num_date": {
+                            "value": 2009.495,
+                            "confidence": [
+                              2009.495,
+                              2009.495
+                            ]
+                          },
+                          "country": {
+                            "value": "Svalbard",
+                            "confidence": {
+                              "Svalbard": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_brenneri"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PFM-4"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000039",
+                        "node_attrs": {
+                          "div": 0.0881,
+                          "num_date": {
+                            "value": 2011.163,
+                            "confidence": [
+                              2010.499,
+                              2011.237
+                            ]
+                          },
+                          "country": {
+                            "value": "Belgium",
+                            "confidence": {
+                              "Belgium": 0.843,
+                              "Svalbard": 0.0885,
+                              "Antarctica": 0.0099,
+                              "France": 0.0075,
+                              "Norway": 0.00705,
+                              "Switzerland": 0.00416,
+                              "Denmark": 0.00387,
+                              "Greece": 0.00368,
+                              "Lebanon": 0.00349,
+                              "USA": 0.00346,
+                              "China": 0.00343,
+                              "Portugal": 0.00326,
+                              "United Kingdom": 0.00324,
+                              "India": 0.00313,
+                              "Canada": 0.00311,
+                              "Netherlands": 0.00308,
+                              "Germany": 0.00305,
+                              "Italy": 0.00304
+                            },
+                            "entropy": 0.726
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "PFM-4_MBU4627809-JACOMR010000005-4635",
+                            "node_attrs": {
+                              "div": 0.0881,
+                              "num_date": {
+                                "value": 2011.163,
+                                "confidence": [
+                                  2011.163,
+                                  2011.237
+                                ]
+                              },
+                              "country": {
+                                "value": "Belgium",
+                                "confidence": {
+                                  "Belgium": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_sp._BF61"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PFM-4"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000040",
+                            "node_attrs": {
+                              "div": 0.0881,
+                              "num_date": {
+                                "value": 2015.996,
+                                "confidence": [
+                                  2015.2,
+                                  2016.643
+                                ]
+                              },
+                              "country": {
+                                "value": "Antarctica",
+                                "confidence": {
+                                  "Antarctica": 0.57,
+                                  "Norway": 0.324,
+                                  "Belgium": 0.0188,
+                                  "France": 0.00904,
+                                  "China": 0.00882,
+                                  "Svalbard": 0.00737,
+                                  "Denmark": 0.0057,
+                                  "Greece": 0.00563,
+                                  "Switzerland": 0.00538,
+                                  "USA": 0.00537,
+                                  "United Kingdom": 0.00523,
+                                  "Portugal": 0.00515,
+                                  "Lebanon": 0.00498,
+                                  "India": 0.00493,
+                                  "Canada": 0.00492,
+                                  "Netherlands": 0.0049,
+                                  "Italy": 0.00487,
+                                  "Germany": 0.00485
+                                },
+                                "entropy": 1.207
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000041",
+                                "node_attrs": {
+                                  "div": 0.0881,
+                                  "num_date": {
+                                    "value": 2022.001,
+                                    "confidence": [
+                                      2021.246,
+                                      2022.076
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Antarctica",
+                                    "confidence": {
+                                      "Antarctica": 0.834,
+                                      "China": 0.121,
+                                      "Norway": 0.00653,
+                                      "France": 0.00411,
+                                      "Belgium": 0.00327,
+                                      "Greece": 0.00269,
+                                      "Denmark": 0.00266,
+                                      "USA": 0.00249,
+                                      "Svalbard": 0.00248,
+                                      "United Kingdom": 0.00243,
+                                      "Portugal": 0.0024,
+                                      "Switzerland": 0.00234,
+                                      "India": 0.0023,
+                                      "Lebanon": 0.0023,
+                                      "Canada": 0.00229,
+                                      "Italy": 0.00226,
+                                      "Netherlands": 0.00226,
+                                      "Germany": 0.00224
+                                    },
+                                    "entropy": 0.669
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "PFM-4_WLH59827-CP117441-2825988",
+                                    "node_attrs": {
+                                      "div": 0.0881,
+                                      "num_date": {
+                                        "value": 2023.097,
+                                        "confidence": [
+                                          2023.097,
+                                          2023.097
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_sp._FP2294"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-4"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "PFM-4_MDI3205497-JASBQT010000029-35568",
+                                    "node_attrs": {
+                                      "div": 0.0881,
+                                      "num_date": {
+                                        "value": 2022.001,
+                                        "confidence": [
+                                          2022.001,
+                                          2022.075
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Antarctica",
+                                        "confidence": {
+                                          "Antarctica": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_shahriarae"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-4"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000042",
+                                "node_attrs": {
+                                  "div": 0.0881,
+                                  "num_date": {
+                                    "value": 2015.954,
+                                    "confidence": [
+                                      2015.772,
+                                      2016.759
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Antarctica",
+                                    "confidence": {
+                                      "Antarctica": 0.604,
+                                      "Norway": 0.36,
+                                      "Belgium": 0.00648,
+                                      "France": 0.00332,
+                                      "China": 0.00324,
+                                      "Svalbard": 0.0024,
+                                      "Greece": 0.00196,
+                                      "Denmark": 0.00193,
+                                      "USA": 0.00178,
+                                      "Switzerland": 0.00176,
+                                      "United Kingdom": 0.00173,
+                                      "Portugal": 0.00169,
+                                      "Lebanon": 0.00164,
+                                      "India": 0.00162,
+                                      "Canada": 0.00161,
+                                      "Netherlands": 0.00161,
+                                      "Italy": 0.0016,
+                                      "Germany": 0.00159
+                                    },
+                                    "entropy": 0.888
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "PFM-4_MBJ2260375-JAEKCU010000001-264682",
+                                    "node_attrs": {
+                                      "div": 0.0881,
+                                      "num_date": {
+                                        "value": 2016.302,
+                                        "confidence": [
+                                          2016.001,
+                                          2016.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Norway",
+                                        "confidence": {
+                                          "Norway": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_sp._MF6787"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-4"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "PFM-4_QYM66263-CP080494-3210956",
+                                    "node_attrs": {
+                                      "div": 0.0881,
+                                      "num_date": {
+                                        "value": 2016.302,
+                                        "confidence": [
+                                          2016.001,
+                                          2016.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Antarctica",
+                                        "confidence": {
+                                          "Antarctica": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_sp._So3.2b"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-4"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.0423,
+                  "num_date": {
+                    "value": 1997.55,
+                    "confidence": [
+                      1996.574,
+                      1997.901
+                    ]
+                  },
+                  "country": {
+                    "value": "Denmark",
+                    "confidence": {
+                      "Denmark": 0.392,
+                      "Greece": 0.373,
+                      "France": 0.0256,
+                      "United Kingdom": 0.0174,
+                      "Svalbard": 0.0162,
+                      "Switzerland": 0.0158,
+                      "USA": 0.0152,
+                      "Antarctica": 0.0149,
+                      "Lebanon": 0.0145,
+                      "Belgium": 0.0136,
+                      "Portugal": 0.0136,
+                      "India": 0.0127,
+                      "Norway": 0.0127,
+                      "Canada": 0.0126,
+                      "China": 0.0125,
+                      "Netherlands": 0.0125,
+                      "Italy": 0.0123,
+                      "Germany": 0.0123
+                    },
+                    "entropy": 1.72
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C195T",
+                      "G492C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000001",
+                    "node_attrs": {
+                      "div": 0.0463,
+                      "num_date": {
+                        "value": 1998.201,
+                        "confidence": [
+                          1997.479,
+                          1998.476
+                        ]
+                      },
+                      "country": {
+                        "value": "Greece",
+                        "confidence": {
+                          "Greece": 0.583,
+                          "Denmark": 0.217,
+                          "France": 0.0217,
+                          "United Kingdom": 0.0144,
+                          "Svalbard": 0.0135,
+                          "Switzerland": 0.0135,
+                          "Antarctica": 0.013,
+                          "USA": 0.013,
+                          "Lebanon": 0.0124,
+                          "Portugal": 0.0116,
+                          "Belgium": 0.0116,
+                          "Norway": 0.0109,
+                          "India": 0.0108,
+                          "Canada": 0.0108,
+                          "China": 0.0107,
+                          "Netherlands": 0.0107,
+                          "Italy": 0.0106,
+                          "Germany": 0.0105
+                        },
+                        "entropy": 1.518
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C612T",
+                          "G676A",
+                          "G708A"
+                        ],
+                        "I5F20_13950": [
+                          "A226T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "I5F20_13950: A226T"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000000",
+                        "node_attrs": {
+                          "div": 0.0542,
+                          "num_date": {
+                            "value": 1998.911,
+                            "confidence": [
+                              1998.482,
+                              1998.989
+                            ]
+                          },
+                          "country": {
+                            "value": "Greece",
+                            "confidence": {
+                              "Greece": 0.875,
+                              "Denmark": 0.0542,
+                              "France": 0.00774,
+                              "United Kingdom": 0.00495,
+                              "Switzerland": 0.00484,
+                              "Svalbard": 0.0048,
+                              "Antarctica": 0.00465,
+                              "USA": 0.00464,
+                              "Lebanon": 0.00443,
+                              "Portugal": 0.00415,
+                              "Belgium": 0.00411,
+                              "India": 0.00387,
+                              "Norway": 0.00387,
+                              "Canada": 0.00384,
+                              "China": 0.00383,
+                              "Netherlands": 0.00382,
+                              "Italy": 0.00376,
+                              "Germany": 0.00376
+                            },
+                            "entropy": 0.659
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C101A",
+                              "G126A",
+                              "C243A",
+                              "T381C",
+                              "G402C",
+                              "G666A"
+                            ],
+                            "I5F20_13950": [
+                              "P34Q"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "I5F20_13950: P34Q"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "JAEACS010000008.1",
+                            "node_attrs": {
+                              "div": 0.0542,
+                              "num_date": {
+                                "value": 1998.955,
+                                "confidence": [
+                                  1998.443,
+                                  1999.755
+                                ]
+                              },
+                              "country": {
+                                "value": "Greece",
+                                "confidence": {
+                                  "Greece": 0.78,
+                                  "Denmark": 0.0585,
+                                  "France": 0.0157,
+                                  "Switzerland": 0.0108,
+                                  "Svalbard": 0.0106,
+                                  "Antarctica": 0.0106,
+                                  "USA": 0.0105,
+                                  "United Kingdom": 0.0105,
+                                  "Lebanon": 0.01,
+                                  "Portugal": 0.00968,
+                                  "Belgium": 0.00953,
+                                  "India": 0.00912,
+                                  "Norway": 0.00911,
+                                  "Canada": 0.00907,
+                                  "China": 0.00903,
+                                  "Netherlands": 0.00896,
+                                  "Germany": 0.00886,
+                                  "Italy": 0.00885
+                                },
+                                "entropy": 1.098
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "PFM-7_MBL4981632-JAEACS010000008-222759",
+                            "node_attrs": {
+                              "div": 0.0542,
+                              "num_date": {
+                                "value": 1998.998,
+                                "confidence": [
+                                  1998.001,
+                                  1998.999
+                                ]
+                              },
+                              "country": {
+                                "value": "Greece",
+                                "confidence": {
+                                  "Greece": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_fluorescens"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PFM-7"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000002",
+                        "node_attrs": {
+                          "div": 0.0542,
+                          "num_date": {
+                            "value": 2006.342,
+                            "confidence": [
+                              2004.26,
+                              2007.971
+                            ]
+                          },
+                          "country": {
+                            "value": "Antarctica",
+                            "confidence": {
+                              "Antarctica": 0.112,
+                              "France": 0.0964,
+                              "Greece": 0.0588,
+                              "Denmark": 0.0573,
+                              "Belgium": 0.0536,
+                              "United Kingdom": 0.0529,
+                              "USA": 0.051,
+                              "Norway": 0.0505,
+                              "China": 0.0489,
+                              "Italy": 0.0488,
+                              "Netherlands": 0.0482,
+                              "Switzerland": 0.0479,
+                              "Portugal": 0.047,
+                              "Svalbard": 0.0465,
+                              "Germany": 0.0462,
+                              "Lebanon": 0.0453,
+                              "India": 0.0443,
+                              "Canada": 0.0442
+                            },
+                            "entropy": 2.848
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T288G",
+                              "A313G",
+                              "A315G",
+                              "C411T",
+                              "G435T",
+                              "T450C"
+                            ],
+                            "I5F20_13950": [
+                              "K105E"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "I5F20_13950: K105E"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "PFM-6_WP_053221259-NZ_LFMW01000021-207967",
+                            "node_attrs": {
+                              "div": 0.0714,
+                              "num_date": {
+                                "value": 2012.16,
+                                "confidence": [
+                                  2012.16,
+                                  2012.16
+                                ]
+                              },
+                              "country": {
+                                "value": "Antarctica",
+                                "confidence": {
+                                  "Antarctica": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_fildesensis"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PFM-6"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C18T",
+                                  "C45T",
+                                  "C88A",
+                                  "C161A",
+                                  "G174C",
+                                  "T177C",
+                                  "T195C",
+                                  "C198A",
+                                  "G216C",
+                                  "A235G",
+                                  "A311G",
+                                  "A343C",
+                                  "G690A"
+                                ],
+                                "I5F20_13950": [
+                                  "H30N",
+                                  "A54E",
+                                  "I79V",
+                                  "K104R",
+                                  "M115L"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "I5F20_13950: H30N, A54E, I79V, K104R, M115L"
+                              }
+                            }
+                          },
+                          {
+                            "name": "NODE_0000003",
+                            "node_attrs": {
+                              "div": 0.066,
+                              "num_date": {
+                                "value": 2011.474,
+                                "confidence": [
+                                  2010.751,
+                                  2011.846
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 0.712,
+                                  "United Kingdom": 0.0405,
+                                  "Italy": 0.0357,
+                                  "Belgium": 0.0188,
+                                  "Denmark": 0.0187,
+                                  "Antarctica": 0.0173,
+                                  "USA": 0.0171,
+                                  "Netherlands": 0.017,
+                                  "Greece": 0.0148,
+                                  "Switzerland": 0.0145,
+                                  "Germany": 0.0141,
+                                  "Portugal": 0.0125,
+                                  "Lebanon": 0.0118,
+                                  "Svalbard": 0.0115,
+                                  "India": 0.0108,
+                                  "Norway": 0.0108,
+                                  "Canada": 0.0108,
+                                  "China": 0.0107
+                                },
+                                "entropy": 1.387
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C171T",
+                                  "G231A",
+                                  "G261A",
+                                  "C441T",
+                                  "A473G",
+                                  "C492G",
+                                  "C513G",
+                                  "G644T",
+                                  "G666A"
+                                ],
+                                "I5F20_13950": [
+                                  "N158S",
+                                  "G215V"
+                                ]
+                              },
+                              "labels": {
+                                "aa": "I5F20_13950: N158S, G215V"
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "PFM-10_MCF5685373-WJZD01000005-93207",
+                                "node_attrs": {
+                                  "div": 0.0687,
+                                  "num_date": {
+                                    "value": 2017.338,
+                                    "confidence": [
+                                      2017.338,
+                                      2017.338
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_sp._PA-1-3F"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "PFM-10"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "G406A",
+                                      "C583T"
+                                    ],
+                                    "I5F20_13950": [
+                                      "E136K"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "I5F20_13950: E136K"
+                                  }
+                                }
+                              },
+                              {
+                                "name": "NODE_0000004",
+                                "node_attrs": {
+                                  "div": 0.0673,
+                                  "num_date": {
+                                    "value": 2011.837,
+                                    "confidence": [
+                                      2011.374,
+                                      2011.988
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 0.865,
+                                      "Italy": 0.0309,
+                                      "United Kingdom": 0.0157,
+                                      "Belgium": 0.00811,
+                                      "Denmark": 0.00797,
+                                      "USA": 0.00734,
+                                      "Netherlands": 0.00733,
+                                      "Antarctica": 0.00725,
+                                      "Greece": 0.0063,
+                                      "Switzerland": 0.00615,
+                                      "Germany": 0.00598,
+                                      "Portugal": 0.00517,
+                                      "Lebanon": 0.00489,
+                                      "Svalbard": 0.00472,
+                                      "India": 0.00444,
+                                      "Canada": 0.00443,
+                                      "Norway": 0.0044,
+                                      "China": 0.00435
+                                    },
+                                    "entropy": 0.752
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C739T"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "PFM-5_MQB15142-QTSW01000006-142930",
+                                    "node_attrs": {
+                                      "div": 0.0673,
+                                      "num_date": {
+                                        "value": 2016.001,
+                                        "confidence": [
+                                          2016.001,
+                                          2016.899
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Italy",
+                                        "confidence": {
+                                          "Italy": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_lactis"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-5"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "PFM-5_WP_050516231-NZ_KN360950-1675150",
+                                    "node_attrs": {
+                                      "div": 0.0673,
+                                      "num_date": {
+                                        "value": 2011.998,
+                                        "confidence": [
+                                          2011.001,
+                                          2011.999
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_lactis"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-5"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.0476,
+                      "num_date": {
+                        "value": 1998.205,
+                        "confidence": [
+                          1997.586,
+                          1998.495
+                        ]
+                      },
+                      "country": {
+                        "value": "Denmark",
+                        "confidence": {
+                          "Denmark": 0.609,
+                          "Greece": 0.2,
+                          "France": 0.0213,
+                          "United Kingdom": 0.0148,
+                          "Svalbard": 0.0129,
+                          "Switzerland": 0.0129,
+                          "USA": 0.0123,
+                          "Antarctica": 0.012,
+                          "Lebanon": 0.0118,
+                          "Portugal": 0.0111,
+                          "Belgium": 0.011,
+                          "India": 0.0103,
+                          "Norway": 0.0103,
+                          "Canada": 0.0103,
+                          "China": 0.0102,
+                          "Netherlands": 0.0102,
+                          "Germany": 0.01,
+                          "Italy": 0.01
+                        },
+                        "entropy": 1.467
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G423T",
+                          "A663G",
+                          "T681C",
+                          "G690A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PFM-3_QGJ02507-MN080497-1",
+                        "node_attrs": {
+                          "div": 0.0568,
+                          "num_date": {
+                            "value": 2019.462,
+                            "confidence": [
+                              2019.462,
+                              2019.462
+                            ]
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_fluorescens"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "PFM-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A109G",
+                              "A154G",
+                              "G174A",
+                              "G231A",
+                              "G261A",
+                              "C534T",
+                              "G648T"
+                            ],
+                            "I5F20_13950": [
+                              "I37V",
+                              "I52V"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "I5F20_13950: I37V, I52V"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.0555,
+                          "num_date": {
+                            "value": 1998.837,
+                            "confidence": [
+                              1998.541,
+                              1998.966
+                            ]
+                          },
+                          "country": {
+                            "value": "Denmark",
+                            "confidence": {
+                              "Denmark": 0.873,
+                              "Greece": 0.0547,
+                              "France": 0.0082,
+                              "United Kingdom": 0.00576,
+                              "Switzerland": 0.00485,
+                              "Svalbard": 0.00481,
+                              "USA": 0.00462,
+                              "Antarctica": 0.00444,
+                              "Lebanon": 0.00443,
+                              "Portugal": 0.00413,
+                              "Belgium": 0.00408,
+                              "India": 0.00386,
+                              "Norway": 0.00384,
+                              "Canada": 0.00383,
+                              "China": 0.0038,
+                              "Netherlands": 0.00379,
+                              "Germany": 0.00373,
+                              "Italy": 0.00373
+                            },
+                            "entropy": 0.664
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A24G",
+                              "C27T",
+                              "C34T",
+                              "C86G",
+                              "C87T",
+                              "C161A"
+                            ],
+                            "I5F20_13950": [
+                              "T29S",
+                              "A54E"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "I5F20_13950: T29S, A54E"
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "PFM-9_MBY8952762-JAFLXE010000027-93535",
+                            "node_attrs": {
+                              "div": 0.0568,
+                              "num_date": {
+                                "value": 1998.999,
+                                "confidence": [
+                                  1998.76,
+                                  1998.999
+                                ]
+                              },
+                              "country": {
+                                "value": "Denmark",
+                                "confidence": {
+                                  "Denmark": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "organism": {
+                                "value": "Pseudomonas_carnis"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PFM-9"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G468A"
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "name": "NODE_0000051",
+                            "node_attrs": {
+                              "div": 0.0581,
+                              "num_date": {
+                                "value": 2016.758,
+                                "confidence": [
+                                  2015.984,
+                                  2017.062
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.998
+                                },
+                                "entropy": 0.0171
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C534T",
+                                  "G648T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000052",
+                                "node_attrs": {
+                                  "div": 0.0581,
+                                  "num_date": {
+                                    "value": 2017.284,
+                                    "confidence": [
+                                      2016.766,
+                                      2017.326
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": 0.000268
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "PFM-9_MCF5791473-WJZM01000005-12197",
+                                    "node_attrs": {
+                                      "div": 0.0581,
+                                      "num_date": {
+                                        "value": 2017.338,
+                                        "confidence": [
+                                          2017.338,
+                                          2017.338
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_sp._PA-1-6B"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PFM-9"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000053",
+                                    "node_attrs": {
+                                      "div": 0.0581,
+                                      "num_date": {
+                                        "value": 2017.284,
+                                        "confidence": [
+                                          2017.091,
+                                          2017.338
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": 8.67e-05
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "PFM-9_MCF8970026-WJZO01000261-4989",
+                                        "node_attrs": {
+                                          "div": 0.0581,
+                                          "num_date": {
+                                            "value": 2017.338,
+                                            "confidence": [
+                                              2017.338,
+                                              2017.338
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_carnis"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PFM-9"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "PFM-9_MCF5797319-WJZJ01000032-25265",
+                                        "node_attrs": {
+                                          "div": 0.0581,
+                                          "num_date": {
+                                            "value": 2017.338,
+                                            "confidence": [
+                                              2017.338,
+                                              2017.338
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_sp._PA-1-5A"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PFM-9"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000054",
+                                "node_attrs": {
+                                  "div": 0.0581,
+                                  "num_date": {
+                                    "value": 2016.921,
+                                    "confidence": [
+                                      2016.534,
+                                      2017.175
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "United Kingdom",
+                                    "confidence": {
+                                      "United Kingdom": 1.0
+                                    },
+                                    "entropy": 0.000539
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000055",
+                                    "node_attrs": {
+                                      "div": 0.0581,
+                                      "num_date": {
+                                        "value": 2017.284,
+                                        "confidence": [
+                                          2016.86,
+                                          2017.301
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": 0.000125
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000056",
+                                        "node_attrs": {
+                                          "div": 0.0581,
+                                          "num_date": {
+                                            "value": 2017.284,
+                                            "confidence": [
+                                              2017.121,
+                                              2017.338
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": 8.56e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PFM-9_MCF9014073-WJZK01000127-7696",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_carnis"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "PFM-9_MCF8995848-WJZG01000206-7851",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_carnis"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000057",
+                                        "node_attrs": {
+                                          "div": 0.0581,
+                                          "num_date": {
+                                            "value": 2017.284,
+                                            "confidence": [
+                                              2017.121,
+                                              2017.338
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": 8.56e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PFM-9_MCF5834875-WJZL01000025-59169",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_sp._PA-1-6A"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "PFM-9_MCF5816897-WJZA01000289-854",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_sp._PA-1-2A"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000058",
+                                    "node_attrs": {
+                                      "div": 0.0581,
+                                      "num_date": {
+                                        "value": 2017.284,
+                                        "confidence": [
+                                          2016.86,
+                                          2017.301
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "United Kingdom",
+                                        "confidence": {
+                                          "United Kingdom": 1.0
+                                        },
+                                        "entropy": 0.000125
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000059",
+                                        "node_attrs": {
+                                          "div": 0.0581,
+                                          "num_date": {
+                                            "value": 2017.284,
+                                            "confidence": [
+                                              2017.121,
+                                              2017.338
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": 8.56e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PFM-9_MCF5692860-WJZS01000038-16061",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_sp._PA-1-8C"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "PFM-9_MCF8990216-WJZQ01000082-12977",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_carnis"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000060",
+                                        "node_attrs": {
+                                          "div": 0.0581,
+                                          "num_date": {
+                                            "value": 2017.284,
+                                            "confidence": [
+                                              2017.121,
+                                              2017.338
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "United Kingdom",
+                                            "confidence": {
+                                              "United Kingdom": 1.0
+                                            },
+                                            "entropy": 8.56e-05
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PFM-9_MCF9009143-WJZC01000275-4889",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_carnis"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "PFM-9_MCF5788666-WJZN01000054-584",
+                                            "node_attrs": {
+                                              "div": 0.0581,
+                                              "num_date": {
+                                                "value": 2017.338,
+                                                "confidence": [
+                                                  2017.338,
+                                                  2017.338
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "United Kingdom",
+                                                "confidence": {
+                                                  "United Kingdom": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "organism": {
+                                                "value": "Pseudomonas_sp._PA-1-6G"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PFM-9"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

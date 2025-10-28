@@ -1,0 +1,1004 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of subclass B3 PAM beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 864,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "PSGK_10550": {
+        "end": 864,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1963.186,
+        "confidence": [
+          1952.653,
+          1968.115
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.582,
+          "USA": 0.211,
+          "Germany": 0.188,
+          "France": 0.0187
+        },
+        "entropy": 1.032
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000006",
+        "node_attrs": {
+          "div": 0.0518,
+          "num_date": {
+            "value": 2004.244,
+            "confidence": [
+              2000.033,
+              2006.008
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.749,
+              "USA": 0.246,
+              "Germany": 0.0044
+            },
+            "entropy": 0.591
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C9G",
+              "C52G",
+              "A64G",
+              "A65C",
+              "G66C",
+              "C68A",
+              "C69G",
+              "G75C",
+              "T90C",
+              "G91A",
+              "A93G",
+              "G96C",
+              "G99C",
+              "C100G",
+              "A102C",
+              "A123G",
+              "G126C",
+              "T255C",
+              "C274G",
+              "A275C",
+              "G276C",
+              "C279G",
+              "C285T",
+              "C286G",
+              "C449A",
+              "C450A",
+              "C454A",
+              "G456C",
+              "A457C",
+              "C458A",
+              "C460A",
+              "G465C",
+              "A487G",
+              "G489C",
+              "T522C",
+              "C534G",
+              "C540G",
+              "G543C",
+              "G604A",
+              "C605G",
+              "A633G",
+              "G640C",
+              "C657G",
+              "G663T",
+              "C666G",
+              "T678C",
+              "C681A",
+              "G723C",
+              "A726G",
+              "A757G",
+              "A767C",
+              "A768C",
+              "A770G",
+              "G781C",
+              "C782A",
+              "C783G",
+              "G789C",
+              "T804C",
+              "A813G",
+              "C820G",
+              "A821C",
+              "G825T",
+              "C832A",
+              "A852G",
+              "G855C",
+              "T856A",
+              "C857A"
+            ],
+            "PSGK_10550": [
+              "F3L",
+              "L18V",
+              "K22A",
+              "P23Q",
+              "E31K",
+              "Q34D",
+              "Q92A",
+              "L96V",
+              "A150E",
+              "L152I",
+              "T153Q",
+              "P154T",
+              "E155D",
+              "T163A",
+              "A202S",
+              "D214H",
+              "T253A",
+              "E256A",
+              "K257R",
+              "A261Q",
+              "Q274A",
+              "K275N",
+              "Q278K",
+              "K285N",
+              "S286K"
+            ]
+          },
+          "labels": {
+            "aa": "PSGK_10550: F3L, L18V, K22A, P23Q, E31K, Q34D, Q92A, L96V, A150E, L152I, T153Q, P154T, E155D, T163A, A202S, D214H, T253A, E256A, K257R, A261Q, Q274A, K275N, Q278K, K285N, S286K"
+          }
+        },
+        "children": [
+          {
+            "name": "NODE_0000007",
+            "node_attrs": {
+              "div": 0.0635,
+              "num_date": {
+                "value": 2018.749,
+                "confidence": [
+                  2017.406,
+                  2018.749
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": 0.000828
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C147G",
+                  "C213T",
+                  "G342A",
+                  "G364A",
+                  "A402G",
+                  "G415A",
+                  "A565G",
+                  "A575G",
+                  "T663C",
+                  "C669A"
+                ],
+                "PSGK_10550": [
+                  "V122M",
+                  "D139N",
+                  "T189A",
+                  "Q192R",
+                  "D223E"
+                ]
+              },
+              "labels": {
+                "aa": "PSGK_10550: V122M, D139N, T189A, Q192R, D223E"
+              }
+            },
+            "children": [
+              {
+                "name": "PAM-2_BCG24254-AP023189-2672031",
+                "node_attrs": {
+                  "div": 0.0635,
+                  "num_date": {
+                    "value": 2018.749,
+                    "confidence": [
+                      2018.749,
+                      2018.749
+                    ]
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_tohonis"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PAM-2"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "PAM-2_GJN52392-BQKM01000003-545053",
+                "node_attrs": {
+                  "div": 0.0635,
+                  "num_date": {
+                    "value": 2021.108,
+                    "confidence": [
+                      2021.108,
+                      2021.108
+                    ]
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_tohonis"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PAM-2"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000008",
+            "node_attrs": {
+              "div": 0.06,
+              "num_date": {
+                "value": 2009.096,
+                "confidence": [
+                  2007.69,
+                  2009.359
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.657,
+                  "USA": 0.342
+                },
+                "entropy": 0.647
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C216T",
+                  "C219G",
+                  "C312G",
+                  "C324T",
+                  "T365C",
+                  "C680A",
+                  "C777T"
+                ],
+                "PSGK_10550": [
+                  "V122A",
+                  "A227E"
+                ]
+              },
+              "labels": {
+                "aa": "PSGK_10550: V122A, A227E"
+              }
+            },
+            "children": [
+              {
+                "name": "PAM-3_GJN50066-BQKL01000042-20313",
+                "node_attrs": {
+                  "div": 0.06,
+                  "num_date": {
+                    "value": 2020.835,
+                    "confidence": [
+                      2020.835,
+                      2020.835
+                    ]
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_tohonis"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PAM-3"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000009",
+                "node_attrs": {
+                  "div": 0.0611,
+                  "num_date": {
+                    "value": 2009.478,
+                    "confidence": [
+                      2008.937,
+                      2009.478
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.979,
+                      "Japan": 0.0207
+                    },
+                    "entropy": 0.101
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A681G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PAM-3_MDW3716134-JAWQCL010000042-23392",
+                    "node_attrs": {
+                      "div": 0.0611,
+                      "num_date": {
+                        "value": 2023.001,
+                        "confidence": [
+                          2023.001,
+                          2023.899
+                        ]
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._2023EL-01195"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PAM-3"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PAM-3_PZE11107-QKRU01000053-30534",
+                    "node_attrs": {
+                      "div": 0.0611,
+                      "num_date": {
+                        "value": 2009.478,
+                        "confidence": [
+                          2009.478,
+                          2009.478
+                        ]
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._57B-090624"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PAM-3"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "div": 0.0284,
+          "num_date": {
+            "value": 1990.34,
+            "confidence": [
+              1987.444,
+              1990.874
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.488,
+              "Germany": 0.323,
+              "USA": 0.174,
+              "France": 0.0154
+            },
+            "entropy": 1.084
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000010",
+            "node_attrs": {
+              "div": 0.0307,
+              "num_date": {
+                "value": 2012.638,
+                "confidence": [
+                  2009.941,
+                  2013.672
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.981,
+                  "USA": 0.0186
+                },
+                "entropy": 0.0978
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C52G",
+                  "G189A",
+                  "A487G"
+                ],
+                "PSGK_10550": [
+                  "L18V",
+                  "T163A"
+                ]
+              },
+              "labels": {
+                "aa": "PSGK_10550: L18V, T163A"
+              }
+            },
+            "children": [
+              {
+                "name": "PAM-1_BAO01151-AB858498-1",
+                "node_attrs": {
+                  "div": 0.0318,
+                  "num_date": {
+                    "value": 2013.771,
+                    "confidence": [
+                      2013.771,
+                      2013.771
+                    ]
+                  },
+                  "organism": {
+                    "value": "Aquipseudomonas_alcaligenes"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "allele": {
+                    "value": "PAM-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C363T"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.033,
+                  "num_date": {
+                    "value": 2020.001,
+                    "confidence": [
+                      2018.281,
+                      2020.805
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 0.946,
+                      "USA": 0.0541
+                    },
+                    "entropy": 0.211
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G66A",
+                      "C162T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PAM-1_MDU9416350-JAVYJE010000016-118359",
+                    "node_attrs": {
+                      "div": 0.033,
+                      "num_date": {
+                        "value": 2020.043,
+                        "confidence": [
+                          2020.001,
+                          2020.999
+                        ]
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._zfem005"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PAM-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PAM-1_WCD82828-CP116239-2723926",
+                    "node_attrs": {
+                      "div": 0.0342,
+                      "num_date": {
+                        "value": 2022.001,
+                        "confidence": [
+                          2022.001,
+                          2022.866
+                        ]
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_sp._TUM22785"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PAM-1"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C267T"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0295,
+              "num_date": {
+                "value": 1990.346,
+                "confidence": [
+                  1988.078,
+                  1991.08
+                ]
+              },
+              "country": {
+                "value": "Germany",
+                "confidence": {
+                  "Germany": 0.415,
+                  "Japan": 0.382,
+                  "USA": 0.184,
+                  "France": 0.0192
+                },
+                "entropy": 1.12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "PAM-5_MBB4819665-JACHKV010000008-12496",
+                "node_attrs": {
+                  "div": 0.0318,
+                  "num_date": {
+                    "value": 2020.589,
+                    "confidence": [
+                      2020.589,
+                      2020.589
+                    ]
+                  },
+                  "organism": {
+                    "value": "Aquipseudomonas_alcaligenes"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PAM-5"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G189A",
+                      "C657G"
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "div": 0.0342,
+                  "num_date": {
+                    "value": 1991.509,
+                    "confidence": [
+                      1990.56,
+                      1991.859
+                    ]
+                  },
+                  "country": {
+                    "value": "Germany",
+                    "confidence": {
+                      "Germany": 0.664,
+                      "Japan": 0.207,
+                      "USA": 0.0986,
+                      "France": 0.0313
+                    },
+                    "entropy": 0.935
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C174T",
+                      "C309T",
+                      "G333A",
+                      "C360T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PAM-5_WVW91709-PP331844-1",
+                    "node_attrs": {
+                      "div": 0.0353,
+                      "num_date": {
+                        "value": 2024.108,
+                        "confidence": [
+                          2024.108,
+                          2024.108
+                        ]
+                      },
+                      "organism": {
+                        "value": "Pseudomonas_tohonis"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PAM-5"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C405T"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.0376,
+                      "num_date": {
+                        "value": 1992.102,
+                        "confidence": [
+                          1991.723,
+                          1992.102
+                        ]
+                      },
+                      "country": {
+                        "value": "Germany",
+                        "confidence": {
+                          "Germany": 0.831,
+                          "Japan": 0.103,
+                          "USA": 0.0495,
+                          "France": 0.0158
+                        },
+                        "entropy": 0.602
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C201T",
+                          "C507T",
+                          "C693T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "CP146285.1",
+                        "node_attrs": {
+                          "div": 0.0376,
+                          "num_date": {
+                            "value": 1992.102,
+                            "confidence": [
+                              1989.174,
+                              2008.496
+                            ]
+                          },
+                          "country": {
+                            "value": "Germany",
+                            "confidence": {
+                              "Germany": 0.828,
+                              "Japan": 0.104,
+                              "USA": 0.0508,
+                              "France": 0.017
+                            },
+                            "entropy": 0.612
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PAM-5_XGX16360-CP146285-2371083",
+                        "node_attrs": {
+                          "div": 0.0376,
+                          "num_date": {
+                            "value": 1992.102,
+                            "confidence": [
+                              1992.102,
+                              1992.102
+                            ]
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_solani"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PAM-5"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Germany",
+                            "confidence": {
+                              "Germany": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

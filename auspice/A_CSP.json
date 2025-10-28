@@ -1,0 +1,754 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A CSP beta-lactamases",
+    "updated": "2025-01-24",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 882,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "blaSPU-1": {
+        "end": 882,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1996.902,
+        "confidence": [
+          1993.149,
+          2000.534
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.588,
+          "France": 0.316,
+          "China": 0.0955
+        },
+        "entropy": 0.9
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "CSP-3_MBB1541352-JABCPE020000001-90835",
+        "node_attrs": {
+          "div": 0.0242,
+          "num_date": {
+            "value": 2016.086,
+            "confidence": [
+              2016.086,
+              2016.155
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "organism": {
+            "value": "Flavobacteriaceae_bacterium"
+          },
+          "allele": {
+            "value": "CSP-3"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G33A",
+              "T102C",
+              "T183C",
+              "T237G",
+              "A279C",
+              "T294A",
+              "G310T",
+              "G321T",
+              "C327T",
+              "A328G",
+              "G333A",
+              "T336C",
+              "C480T",
+              "T504C",
+              "A510G",
+              "A561G",
+              "A578G",
+              "C588A",
+              "G591A",
+              "T630C",
+              "T631G",
+              "A642G",
+              "G741A",
+              "C747T",
+              "A748G",
+              "T759C",
+              "G766A",
+              "A808G",
+              "A841G",
+              "A852C"
+            ],
+            "blaSPU-1": [
+              "E93D",
+              "D104Y",
+              "N110D",
+              "E193G",
+              "S211A",
+              "I250V",
+              "E256K",
+              "N270D",
+              "I281V"
+            ]
+          },
+          "labels": {
+            "aa": "blaSPU-1: E93D, D104Y, N110D, E193G, S211A, I250V, E256K, N270D, I281V"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.0103,
+          "num_date": {
+            "value": 2002.816,
+            "confidence": [
+              2000.224,
+              2005.054
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.58,
+              "France": 0.365,
+              "China": 0.055
+            },
+            "entropy": 0.843
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000005",
+            "node_attrs": {
+              "div": 0.0241,
+              "num_date": {
+                "value": 2009.207,
+                "confidence": [
+                  2008.161,
+                  2009.419
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.981,
+                  "France": 0.017,
+                  "China": 0.00234
+                },
+                "entropy": 0.103
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G94A",
+                  "G99A",
+                  "G114A",
+                  "A276T",
+                  "C361T",
+                  "T366C",
+                  "T378C",
+                  "G471A",
+                  "C607T",
+                  "C705T",
+                  "T729C",
+                  "C777A"
+                ],
+                "blaSPU-1": [
+                  "G32S",
+                  "H121Y"
+                ]
+              },
+              "labels": {
+                "aa": "blaSPU-1: G32S, H121Y"
+              }
+            },
+            "children": [
+              {
+                "name": "CSP-5_MBF1096788-JABZLD010000010-3912",
+                "node_attrs": {
+                  "div": 0.0241,
+                  "num_date": {
+                    "value": 2017.001,
+                    "confidence": [
+                      2017.001,
+                      2017.899
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "organism": {
+                    "value": "Riemerella_sp."
+                  },
+                  "allele": {
+                    "value": "CSP-5"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.0252,
+                  "num_date": {
+                    "value": 2009.497,
+                    "confidence": [
+                      2009.149,
+                      2009.497
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.997,
+                      "France": 0.00306
+                    },
+                    "entropy": 0.0234
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A872G"
+                    ],
+                    "blaSPU-1": [
+                      "Q291R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaSPU-1: Q291R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CSP-2_ACT97447-GQ343035-582",
+                    "node_attrs": {
+                      "div": 0.0252,
+                      "num_date": {
+                        "value": 2009.497,
+                        "confidence": [
+                          2009.497,
+                          2009.497
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "organism": {
+                        "value": "uncultured_organism"
+                      },
+                      "allele": {
+                        "value": "CSP-2"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.0252,
+                      "num_date": {
+                        "value": 2014.351,
+                        "confidence": [
+                          2011.994,
+                          2015.43
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.999
+                        },
+                        "entropy": 0.00612
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CSP-2_MBB1574474-JABCOA020000050-18",
+                        "node_attrs": {
+                          "div": 0.0252,
+                          "num_date": {
+                            "value": 2015.667,
+                            "confidence": [
+                              2015.667,
+                              2015.739
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Flavobacteriaceae_bacterium"
+                          },
+                          "allele": {
+                            "value": "CSP-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CSP-2_MBB1561105-JABCOT020000045-8597",
+                        "node_attrs": {
+                          "div": 0.0275,
+                          "num_date": {
+                            "value": 2015.747,
+                            "confidence": [
+                              2015.675,
+                              2015.747
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Flavobacteriaceae_bacterium"
+                          },
+                          "allele": {
+                            "value": "CSP-2"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G177A",
+                              "T183C"
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.016,
+              "num_date": {
+                "value": 2009.708,
+                "confidence": [
+                  2009.203,
+                  2009.708
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.896,
+                  "China": 0.0588,
+                  "USA": 0.0457
+                },
+                "entropy": 0.406
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C75T",
+                  "C393T",
+                  "C409T",
+                  "T444C",
+                  "C522A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "GQ919044.1",
+                "node_attrs": {
+                  "div": 0.016,
+                  "num_date": {
+                    "value": 2009.708,
+                    "confidence": [
+                      2003.674,
+                      2023.243
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.855,
+                      "China": 0.0733,
+                      "USA": 0.0719
+                    },
+                    "entropy": 0.515
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "CSP-1_ADK47391-GQ919044-1",
+                "node_attrs": {
+                  "div": 0.016,
+                  "num_date": {
+                    "value": 2009.708,
+                    "confidence": [
+                      2009.708,
+                      2009.708
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "organism": {
+                    "value": "Capnocytophaga_sputigena"
+                  },
+                  "allele": {
+                    "value": "CSP-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.0171,
+                  "num_date": {
+                    "value": 2016.919,
+                    "confidence": [
+                      2014.952,
+                      2017.55
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.987,
+                      "France": 0.0108,
+                      "USA": 0.0021
+                    },
+                    "entropy": 0.0746
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T511C"
+                    ],
+                    "blaSPU-1": [
+                      "S171P"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "blaSPU-1: S171P"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "CSP-4_MBI1667993-JAEFDB010000002-198477",
+                    "node_attrs": {
+                      "div": 0.0171,
+                      "num_date": {
+                        "value": 2017.497,
+                        "confidence": [
+                          2017.497,
+                          2017.571
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "organism": {
+                        "value": "Capnocytophaga_periodontitidis"
+                      },
+                      "allele": {
+                        "value": "CSP-4"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000010",
+                    "node_attrs": {
+                      "div": 0.0171,
+                      "num_date": {
+                        "value": 2022.009,
+                        "confidence": [
+                          2020.268,
+                          2022.015
+                        ]
+                      },
+                      "country": {
+                        "value": "China",
+                        "confidence": {
+                          "China": 1.0
+                        },
+                        "entropy": 0.00112
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "CSP-4_MEN2719978-JBDICM010000008-80210",
+                        "node_attrs": {
+                          "div": 0.0171,
+                          "num_date": {
+                            "value": 2022.015,
+                            "confidence": [
+                              2022.015,
+                              2022.015
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Capnocytophaga_sputigena"
+                          },
+                          "allele": {
+                            "value": "CSP-4"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "CSP-4_MEN2801105-JBDICN010000006-660",
+                        "node_attrs": {
+                          "div": 0.0171,
+                          "num_date": {
+                            "value": 2022.56,
+                            "confidence": [
+                              2022.56,
+                              2022.56
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Capnocytophaga_sputigena"
+                          },
+                          "allele": {
+                            "value": "CSP-4"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
