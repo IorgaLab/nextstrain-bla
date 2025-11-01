@@ -1,0 +1,2235 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class D BAT beta-lactamases",
+    "updated": "2025-10-30",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 807,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "AXI57_19425": {
+        "end": 807,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Denmark": {
+            "latitude": 56.2639,
+            "longitude": 9.5018
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "Ukraine": {
+            "latitude": 49.4871968,
+            "longitude": 31.2718321
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Netherlands": {
+            "latitude": 52.1326,
+            "longitude": 5.2913
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1898.1,
+        "confidence": [
+          1873.708,
+          1911.681
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.848,
+          "Ukraine": 0.0445,
+          "Netherlands": 0.0245,
+          "South Korea": 0.0204,
+          "China": 0.0159,
+          "Denmark": 0.0156,
+          "Germany": 0.0156,
+          "Japan": 0.0155
+        },
+        "entropy": 0.709
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000010",
+        "node_attrs": {
+          "div": 0.00249,
+          "num_date": {
+            "value": 1927.806,
+            "confidence": [
+              1917.863,
+              1935.881
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.892,
+              "Ukraine": 0.0609,
+              "South Korea": 0.0183,
+              "Netherlands": 0.00708,
+              "China": 0.00559,
+              "Denmark": 0.00548,
+              "Germany": 0.00548,
+              "Japan": 0.00544
+            },
+            "entropy": 0.495
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.00249,
+              "num_date": {
+                "value": 1950.776,
+                "confidence": [
+                  1941.715,
+                  1966.815
+                ]
+              },
+              "country": {
+                "value": "Ukraine",
+                "confidence": {
+                  "Ukraine": 0.436,
+                  "USA": 0.361,
+                  "South Korea": 0.126,
+                  "Netherlands": 0.0159,
+                  "China": 0.0154,
+                  "Denmark": 0.0152,
+                  "Germany": 0.0152,
+                  "Japan": 0.0152
+                },
+                "entropy": 1.312
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "BAT-5_WFE14767-CP120846-621581",
+                "node_attrs": {
+                  "div": 0.00872,
+                  "num_date": {
+                    "value": 2015.568,
+                    "confidence": [
+                      2015.568,
+                      2015.568
+                    ]
+                  },
+                  "allele": {
+                    "value": "BAT-5"
+                  },
+                  "organism": {
+                    "value": "Bacillus_atrophaeus"
+                  },
+                  "country": {
+                    "value": "South Korea",
+                    "confidence": {
+                      "South Korea": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G176A",
+                      "A208T",
+                      "A636G",
+                      "G798A",
+                      "T802A"
+                    ],
+                    "AXI57_19425": [
+                      "R59H",
+                      "N70Y",
+                      "Y268N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "AXI57_19425: R59H, N70Y, Y268N"
+                  }
+                }
+              },
+              {
+                "name": "BAT-4_AKL83204-CP011802-77395",
+                "node_attrs": {
+                  "div": 0.00747,
+                  "num_date": {
+                    "value": 1976.001,
+                    "confidence": [
+                      1976.001,
+                      1976.898
+                    ]
+                  },
+                  "allele": {
+                    "value": "BAT-4"
+                  },
+                  "organism": {
+                    "value": "Bacillus_atrophaeus_UCMB-5137"
+                  },
+                  "country": {
+                    "value": "Ukraine",
+                    "confidence": {
+                      "Ukraine": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C197T",
+                      "C363T",
+                      "G730A",
+                      "G735A"
+                    ],
+                    "AXI57_19425": [
+                      "T66I",
+                      "V244I"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "AXI57_19425: T66I, V244I"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00872,
+              "num_date": {
+                "value": 1940.001,
+                "confidence": [
+                  1937.421,
+                  1940.906
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.999
+                },
+                "entropy": 0.00615
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G419A",
+                  "T435C",
+                  "T562C",
+                  "T707A",
+                  "T784C"
+                ],
+                "AXI57_19425": [
+                  "R140H",
+                  "I236K"
+                ]
+              },
+              "labels": {
+                "aa": "AXI57_19425: R140H, I236K"
+              }
+            },
+            "children": [
+              {
+                "name": "LSBB01000003.1",
+                "node_attrs": {
+                  "div": 0.00872,
+                  "num_date": {
+                    "value": 1940.681,
+                    "confidence": [
+                      1926.512,
+                      2013.63
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.931,
+                      "Ukraine": 0.011,
+                      "China": 0.00999,
+                      "Netherlands": 0.00997,
+                      "Denmark": 0.00986,
+                      "Germany": 0.00986,
+                      "Japan": 0.00983,
+                      "South Korea": 0.00892
+                    },
+                    "entropy": 0.387
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BAT-3_KXZ18375-LSBB01000003-204747",
+                "node_attrs": {
+                  "div": 0.00872,
+                  "num_date": {
+                    "value": 1940.981,
+                    "confidence": [
+                      1940.001,
+                      1940.999
+                    ]
+                  },
+                  "allele": {
+                    "value": "BAT-3"
+                  },
+                  "organism": {
+                    "value": "Bacillus_atrophaeus"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.00872,
+                  "num_date": {
+                    "value": 1944.816,
+                    "confidence": [
+                      1940.183,
+                      1947.729
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.000345
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000009",
+                    "node_attrs": {
+                      "div": 0.00996,
+                      "num_date": {
+                        "value": 1950.736,
+                        "confidence": [
+                          1947.608,
+                          1950.736
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000205
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T327C"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "BAT-3_MED4821914-JARTJI010000009-220254",
+                        "node_attrs": {
+                          "div": 0.00996,
+                          "num_date": {
+                            "value": 1950.736,
+                            "confidence": [
+                              1950.736,
+                              1950.736
+                            ]
+                          },
+                          "allele": {
+                            "value": "BAT-3"
+                          },
+                          "organism": {
+                            "value": "Bacillus_atrophaeus"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "BAT-3_MED4788658-JARTJB010000008-7164",
+                        "node_attrs": {
+                          "div": 0.00996,
+                          "num_date": {
+                            "value": 1950.741,
+                            "confidence": [
+                              1950.741,
+                              1950.741
+                            ]
+                          },
+                          "allele": {
+                            "value": "BAT-3"
+                          },
+                          "organism": {
+                            "value": "Bacillus_atrophaeus"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.00872,
+                      "num_date": {
+                        "value": 1946.778,
+                        "confidence": [
+                          1944.128,
+                          1949.994
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000166
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.00872,
+                          "num_date": {
+                            "value": 1949.916,
+                            "confidence": [
+                              1947.248,
+                              1950.726
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.000369
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BAT-3_MED4810118-JARTIX010000010-204748",
+                            "node_attrs": {
+                              "div": 0.00872,
+                              "num_date": {
+                                "value": 1950.741,
+                                "confidence": [
+                                  1950.741,
+                                  1950.741
+                                ]
+                              },
+                              "allele": {
+                                "value": "BAT-3"
+                              },
+                              "organism": {
+                                "value": "Bacillus_atrophaeus"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000008",
+                            "node_attrs": {
+                              "div": 0.00872,
+                              "num_date": {
+                                "value": 1950.726,
+                                "confidence": [
+                                  1949.426,
+                                  1950.834
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.999
+                                },
+                                "entropy": 0.012
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BAT-3_MGG3003486-JBCMVW010000009-204749",
+                                "node_attrs": {
+                                  "div": 0.00872,
+                                  "num_date": {
+                                    "value": 1950.834,
+                                    "confidence": [
+                                      1950.834,
+                                      1950.834
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-3"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "BAT-3_GED04032-BJNX01000018-7192",
+                                "node_attrs": {
+                                  "div": 0.00872,
+                                  "num_date": {
+                                    "value": 2019.442,
+                                    "confidence": [
+                                      2019.442,
+                                      2019.442
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-3"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "Japan",
+                                    "confidence": {
+                                      "Japan": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "div": 0.00872,
+                          "num_date": {
+                            "value": 1949.94,
+                            "confidence": [
+                              1946.769,
+                              1950.569
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.000161
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000014",
+                            "node_attrs": {
+                              "div": 0.00872,
+                              "num_date": {
+                                "value": 1950.736,
+                                "confidence": [
+                                  1948.949,
+                                  1950.736
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000157
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BAT-3_MED4842160-JARTJL010000001-192530",
+                                "node_attrs": {
+                                  "div": 0.00872,
+                                  "num_date": {
+                                    "value": 1950.736,
+                                    "confidence": [
+                                      1950.736,
+                                      1950.736
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-3"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "BAT-3_MED4817781-JARTJF010000009-7257",
+                                "node_attrs": {
+                                  "div": 0.00872,
+                                  "num_date": {
+                                    "value": 1950.736,
+                                    "confidence": [
+                                      1950.736,
+                                      1950.736
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-3"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000015",
+                            "node_attrs": {
+                              "div": 0.00872,
+                              "num_date": {
+                                "value": 1950.736,
+                                "confidence": [
+                                  1948.949,
+                                  1950.736
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000157
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BAT-3_MED4825135-JARTJH010000006-7146",
+                                "node_attrs": {
+                                  "div": 0.00872,
+                                  "num_date": {
+                                    "value": 1950.736,
+                                    "confidence": [
+                                      1950.736,
+                                      1950.736
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-3"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "BAT-3_MED4804345-JARTJC010000005-218948",
+                                "node_attrs": {
+                                  "div": 0.00872,
+                                  "num_date": {
+                                    "value": 1950.736,
+                                    "confidence": [
+                                      1950.736,
+                                      1950.736
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-3"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000012",
+        "node_attrs": {
+          "div": 0.0138,
+          "num_date": {
+            "value": 1934.861,
+            "confidence": [
+              1923.119,
+              1940.165
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.944,
+              "Netherlands": 0.0259,
+              "Ukraine": 0.00807,
+              "South Korea": 0.00456,
+              "China": 0.00452,
+              "Denmark": 0.00443,
+              "Germany": 0.00443,
+              "Japan": 0.0044
+            },
+            "entropy": 0.309
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T19C",
+              "T36A",
+              "T39G",
+              "T42C",
+              "A186T",
+              "G213T",
+              "C252T",
+              "T270C",
+              "A276C",
+              "G282A",
+              "C306T",
+              "T327C",
+              "C387T"
+            ],
+            "AXI57_19425": [
+              "S7P",
+              "F13L",
+              "K62N",
+              "Q71H"
+            ]
+          },
+          "labels": {
+            "aa": "AXI57_19425: S7P, F13L, K62N, Q71H"
+          }
+        },
+        "children": [
+          {
+            "name": "BAT-2_KYD03274-LQYR01000019-7192",
+            "node_attrs": {
+              "div": 0.0352,
+              "num_date": {
+                "value": 2012.026,
+                "confidence": [
+                  2012.026,
+                  2012.026
+                ]
+              },
+              "allele": {
+                "value": "BAT-2"
+              },
+              "organism": {
+                "value": "Bacillus_atrophaeus"
+              },
+              "country": {
+                "value": "Netherlands",
+                "confidence": {
+                  "Netherlands": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T96G",
+                  "A141C",
+                  "A157G",
+                  "C225T",
+                  "A231G",
+                  "T369C",
+                  "C385A",
+                  "A390T",
+                  "T435C",
+                  "A457G",
+                  "G534A",
+                  "G544A",
+                  "A546G",
+                  "A570G",
+                  "C576G",
+                  "G579T",
+                  "A638G"
+                ],
+                "AXI57_19425": [
+                  "S32R",
+                  "E47D",
+                  "N53D",
+                  "H129N",
+                  "K153E",
+                  "A182T",
+                  "N192K",
+                  "D213G"
+                ]
+              },
+              "labels": {
+                "aa": "AXI57_19425: S32R, E47D, N53D, H129N, K153E, A182T, N192K, D213G"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000013",
+            "node_attrs": {
+              "div": 0.0163,
+              "num_date": {
+                "value": 1942.322,
+                "confidence": [
+                  1940.307,
+                  1942.322
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 0.00014
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "A191G",
+                  "G691T"
+                ],
+                "AXI57_19425": [
+                  "D64G",
+                  "V231F"
+                ]
+              },
+              "labels": {
+                "aa": "AXI57_19425: D64G, V231F"
+              }
+            },
+            "children": [
+              {
+                "name": "BAT-1_MEC2359614-JARSRP010000015-204690",
+                "node_attrs": {
+                  "div": 0.0163,
+                  "num_date": {
+                    "value": 1942.322,
+                    "confidence": [
+                      1942.322,
+                      1942.322
+                    ]
+                  },
+                  "allele": {
+                    "value": "BAT-1"
+                  },
+                  "organism": {
+                    "value": "Bacillus_atrophaeus"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BAT-1_MEC2363745-JARSRN010000010-204691",
+                "node_attrs": {
+                  "div": 0.0163,
+                  "num_date": {
+                    "value": 1942.322,
+                    "confidence": [
+                      1942.322,
+                      1942.322
+                    ]
+                  },
+                  "allele": {
+                    "value": "BAT-1"
+                  },
+                  "organism": {
+                    "value": "Bacillus_atrophaeus"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000018",
+                "node_attrs": {
+                  "div": 0.0163,
+                  "num_date": {
+                    "value": 1949.974,
+                    "confidence": [
+                      1945.375,
+                      1951.476
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 0.000273
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "BAT-1_MED0768198-JARLWM010000009-435616",
+                    "node_attrs": {
+                      "div": 0.0163,
+                      "num_date": {
+                        "value": 1951.752,
+                        "confidence": [
+                          1951.752,
+                          1951.752
+                        ]
+                      },
+                      "allele": {
+                        "value": "BAT-1"
+                      },
+                      "organism": {
+                        "value": "Bacillus_atrophaeus"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000019",
+                    "node_attrs": {
+                      "div": 0.0163,
+                      "num_date": {
+                        "value": 1951.698,
+                        "confidence": [
+                          1949.511,
+                          1951.81
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": 0.000643
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "BAT-1_MGG4376237-JBCNIJ010000009-204690",
+                        "node_attrs": {
+                          "div": 0.0163,
+                          "num_date": {
+                            "value": 1951.81,
+                            "confidence": [
+                              1951.81,
+                              1951.81
+                            ]
+                          },
+                          "allele": {
+                            "value": "BAT-1"
+                          },
+                          "organism": {
+                            "value": "Bacillus_atrophaeus"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000020",
+                        "node_attrs": {
+                          "div": 0.0163,
+                          "num_date": {
+                            "value": 1970.319,
+                            "confidence": [
+                              1961.171,
+                              1970.319
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 0.000973
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "BAT-1_MEC2037068-JARSOT010000018-7224",
+                            "node_attrs": {
+                              "div": 0.0163,
+                              "num_date": {
+                                "value": 1970.319,
+                                "confidence": [
+                                  1970.319,
+                                  1970.319
+                                ]
+                              },
+                              "allele": {
+                                "value": "BAT-1"
+                              },
+                              "organism": {
+                                "value": "Bacillus_atrophaeus"
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000021",
+                            "node_attrs": {
+                              "div": 0.0163,
+                              "num_date": {
+                                "value": 1977.307,
+                                "confidence": [
+                                  1970.423,
+                                  1977.697
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000602
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "BAT-1_MEC1857038-JARSOG010000005-27202",
+                                "node_attrs": {
+                                  "div": 0.0163,
+                                  "num_date": {
+                                    "value": 1977.697,
+                                    "confidence": [
+                                      1977.697,
+                                      1977.697
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "BAT-1"
+                                  },
+                                  "organism": {
+                                    "value": "Bacillus_atrophaeus"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000022",
+                                "node_attrs": {
+                                  "div": 0.0163,
+                                  "num_date": {
+                                    "value": 1988.678,
+                                    "confidence": [
+                                      1979.961,
+                                      1988.947
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": 0.000495
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "BAT-1_MEC1730734-JARSLX010000012-7276",
+                                    "node_attrs": {
+                                      "div": 0.0163,
+                                      "num_date": {
+                                        "value": 1988.947,
+                                        "confidence": [
+                                          1988.947,
+                                          1988.947
+                                        ]
+                                      },
+                                      "allele": {
+                                        "value": "BAT-1"
+                                      },
+                                      "organism": {
+                                        "value": "Bacillus_atrophaeus"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000023",
+                                    "node_attrs": {
+                                      "div": 0.0163,
+                                      "num_date": {
+                                        "value": 1993.497,
+                                        "confidence": [
+                                          1987.635,
+                                          1993.497
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": 0.00238
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "BAT-1_MGG1280346-JBCMSV010000002-204691",
+                                        "node_attrs": {
+                                          "div": 0.0163,
+                                          "num_date": {
+                                            "value": 1993.497,
+                                            "confidence": [
+                                              1993.497,
+                                              1993.497
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "BAT-1"
+                                          },
+                                          "organism": {
+                                            "value": "Bacillus_atrophaeus"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000024",
+                                        "node_attrs": {
+                                          "div": 0.0163,
+                                          "num_date": {
+                                            "value": 2004.938,
+                                            "confidence": [
+                                              1995.6,
+                                              2005.064
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.966,
+                                              "China": 0.0327
+                                            },
+                                            "entropy": 0.156
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "BAT-1_EIM09515-AJRJ01000061-17604",
+                                            "node_attrs": {
+                                              "div": 0.0163,
+                                              "num_date": {
+                                                "value": 2005.001,
+                                                "confidence": [
+                                                  2005.001,
+                                                  2005.075
+                                                ]
+                                              },
+                                              "allele": {
+                                                "value": "BAT-1"
+                                              },
+                                              "organism": {
+                                                "value": "Bacillus_atrophaeus_C89"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000025",
+                                            "node_attrs": {
+                                              "div": 0.0163,
+                                              "num_date": {
+                                                "value": 2008.386,
+                                                "confidence": [
+                                                  2001.959,
+                                                  2008.553
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": 0.00416
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "BAT-1_MCM3460929-JAMAXF010000004-446610",
+                                                "node_attrs": {
+                                                  "div": 0.0163,
+                                                  "num_date": {
+                                                    "value": 2008.553,
+                                                    "confidence": [
+                                                      2008.553,
+                                                      2008.553
+                                                    ]
+                                                  },
+                                                  "allele": {
+                                                    "value": "BAT-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Bacillus_atrophaeus"
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000026",
+                                                "node_attrs": {
+                                                  "div": 0.0163,
+                                                  "num_date": {
+                                                    "value": 2008.457,
+                                                    "confidence": [
+                                                      2005.624,
+                                                      2010.7
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": 0.000232
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "BAT-1_ADP31031-CP002207-67027",
+                                                    "node_attrs": {
+                                                      "div": 0.0163,
+                                                      "num_date": {
+                                                        "value": 2010.7,
+                                                        "confidence": [
+                                                          2010.7,
+                                                          2010.7
+                                                        ]
+                                                      },
+                                                      "allele": {
+                                                        "value": "BAT-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Bacillus_atrophaeus_1942"
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Submission date"
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000027",
+                                                    "node_attrs": {
+                                                      "div": 0.0163,
+                                                      "num_date": {
+                                                        "value": 2010.673,
+                                                        "confidence": [
+                                                          2008.228,
+                                                          2011.714
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": 0.000188
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "BAT-1_MBG9758237-LDIC01000001-7455",
+                                                        "node_attrs": {
+                                                          "div": 0.0163,
+                                                          "num_date": {
+                                                            "value": 2011.714,
+                                                            "confidence": [
+                                                              2011.714,
+                                                              2011.714
+                                                            ]
+                                                          },
+                                                          "allele": {
+                                                            "value": "BAT-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Bacillus_atrophaeus"
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000028",
+                                                        "node_attrs": {
+                                                          "div": 0.0163,
+                                                          "num_date": {
+                                                            "value": 2011.655,
+                                                            "confidence": [
+                                                              2010.185,
+                                                              2014.092
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "USA",
+                                                            "confidence": {
+                                                              "USA": 1.0
+                                                            },
+                                                            "entropy": 0.00185
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "NODE_0000029",
+                                                            "node_attrs": {
+                                                              "div": 0.0163,
+                                                              "num_date": {
+                                                                "value": 2014.027,
+                                                                "confidence": [
+                                                                  2011.664,
+                                                                  2014.316
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 0.987,
+                                                                  "Denmark": 0.0125
+                                                                },
+                                                                "entropy": 0.0727
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "BAT-1_AIK48474-CP007640-4166449",
+                                                                "node_attrs": {
+                                                                  "div": 0.0163,
+                                                                  "num_date": {
+                                                                    "value": 2014.341,
+                                                                    "confidence": [
+                                                                      2014.341,
+                                                                      2014.341
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BAT-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Bacillus_atrophaeus_subsp._globigii"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Denmark",
+                                                                    "confidence": {
+                                                                      "Denmark": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location from metadata"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000030",
+                                                                "node_attrs": {
+                                                                  "div": 0.0163,
+                                                                  "num_date": {
+                                                                    "value": 2014.352,
+                                                                    "confidence": [
+                                                                      2013.071,
+                                                                      2014.352
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "USA",
+                                                                    "confidence": {
+                                                                      "USA": 1.0
+                                                                    },
+                                                                    "entropy": 0.00181
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "BAT-1_KFK84775-KN049968-3645593",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0163,
+                                                                      "num_date": {
+                                                                        "value": 2014.352,
+                                                                        "confidence": [
+                                                                          2014.352,
+                                                                          2014.352
+                                                                        ]
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BAT-1"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Bacillus_atrophaeus"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "BAT-1_KFK84775-JMTJ01000001-7203",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0163,
+                                                                      "num_date": {
+                                                                        "value": 2014.352,
+                                                                        "confidence": [
+                                                                          2014.352,
+                                                                          2014.352
+                                                                        ]
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BAT-1"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Bacillus_atrophaeus"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000031",
+                                                            "node_attrs": {
+                                                              "div": 0.0163,
+                                                              "num_date": {
+                                                                "value": 2014.231,
+                                                                "confidence": [
+                                                                  2012.5,
+                                                                  2016.201
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 1.0
+                                                                },
+                                                                "entropy": 0.000188
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "BAT-1_AMR63961-CP014840-3412310",
+                                                                "node_attrs": {
+                                                                  "div": 0.0163,
+                                                                  "num_date": {
+                                                                    "value": 2016.201,
+                                                                    "confidence": [
+                                                                      2016.201,
+                                                                      2016.201
+                                                                    ]
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "BAT-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Bacillus_subtilis_subsp._globigii"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "USA",
+                                                                    "confidence": {
+                                                                      "USA": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000032",
+                                                                "node_attrs": {
+                                                                  "div": 0.0163,
+                                                                  "num_date": {
+                                                                    "value": 2014.581,
+                                                                    "confidence": [
+                                                                      2013.874,
+                                                                      2018.741
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "USA",
+                                                                    "confidence": {
+                                                                      "USA": 1.0
+                                                                    },
+                                                                    "entropy": 0.000212
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "BAT-1_MDR4399678-VLYP01000091-569",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0163,
+                                                                      "num_date": {
+                                                                        "value": 2019.536,
+                                                                        "confidence": [
+                                                                          2019.536,
+                                                                          2019.536
+                                                                        ]
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "BAT-1"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Bacillus_atrophaeus"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Submission date"
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000033",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0163,
+                                                                      "num_date": {
+                                                                        "value": 2019.308,
+                                                                        "confidence": [
+                                                                          2015.278,
+                                                                          2020.714
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": 0.00189
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "BAT-1_XEE59782-CP166481-612486",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0163,
+                                                                          "num_date": {
+                                                                            "value": 2021.385,
+                                                                            "confidence": [
+                                                                              2021.385,
+                                                                              2021.385
+                                                                            ]
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "BAT-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Bacillus_atrophaeus"
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "USA",
+                                                                            "confidence": {
+                                                                              "USA": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Collection date from metadata"
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location from metadata"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "NODE_0000034",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0163,
+                                                                          "num_date": {
+                                                                            "value": 2019.395,
+                                                                            "confidence": [
+                                                                              2017.981,
+                                                                              2022.126
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "USA",
+                                                                            "confidence": {
+                                                                              "USA": 0.987,
+                                                                              "Germany": 0.0124
+                                                                            },
+                                                                            "entropy": 0.0719
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "name": "BAT-1_MCY9165096-JALAVQ010000007-7361",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0163,
+                                                                              "num_date": {
+                                                                                "value": 2022.149,
+                                                                                "confidence": [
+                                                                                  2022.149,
+                                                                                  2022.149
+                                                                                ]
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "BAT-1"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Bacillus_atrophaeus"
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "USA",
+                                                                                "confidence": {
+                                                                                  "USA": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Submission date"
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location of submitter"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "name": "BAT-1_WQP45773-CP140981-1417238",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0163,
+                                                                              "num_date": {
+                                                                                "value": 2023.925,
+                                                                                "confidence": [
+                                                                                  2023.925,
+                                                                                  2023.925
+                                                                                ]
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "BAT-1"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Bacillus_atrophaeus"
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "Germany",
+                                                                                "confidence": {
+                                                                                  "Germany": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Submission date"
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location of submitter"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

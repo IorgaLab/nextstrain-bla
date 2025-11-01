@@ -1,0 +1,944 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class D BOC beta-lactamases",
+    "updated": "2025-10-30",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 798,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "AF332_16035": {
+        "end": 798,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000007",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1942.694,
+        "confidence": [
+          1935.48,
+          1947.37
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.953,
+          "Malaysia": 0.0401,
+          "South Korea": 0.0071
+        },
+        "entropy": 0.21
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.0321,
+          "num_date": {
+            "value": 1967.001,
+            "confidence": [
+              1965.513,
+              1967.001
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.999,
+              "Malaysia": 0.0011
+            },
+            "entropy": 0.0113
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G9T",
+              "T30A",
+              "C32T",
+              "C34A",
+              "G57T",
+              "A63G",
+              "A71C",
+              "G118T",
+              "A126T",
+              "G145A",
+              "T147C",
+              "C180A",
+              "G192A",
+              "G195A",
+              "A200C",
+              "G210A",
+              "G213T",
+              "A222T",
+              "C243T",
+              "C282T",
+              "A303G",
+              "T305C",
+              "C318T",
+              "T345G",
+              "C372A",
+              "A410C",
+              "G411A",
+              "C426T",
+              "A447C",
+              "G540T",
+              "T543A",
+              "A546G",
+              "A549G",
+              "T553C",
+              "G555T",
+              "T562A",
+              "C565G",
+              "A567G",
+              "G570A",
+              "C573T",
+              "A582C",
+              "A663C",
+              "G717A",
+              "T759A",
+              "A781G"
+            ],
+            "AF332_16035": [
+              "W3C",
+              "A11V",
+              "L12I",
+              "E24A",
+              "A40S",
+              "V49I",
+              "K67T",
+              "V102A",
+              "K137T",
+              "S188T",
+              "Q189E",
+              "K261E"
+            ]
+          },
+          "labels": {
+            "aa": "AF332_16035: W3C, A11V, L12I, E24A, A40S, V49I, K67T, V102A, K137T, S188T, Q189E, K261E"
+          }
+        },
+        "children": [
+          {
+            "name": "LGUF01000007.1",
+            "node_attrs": {
+              "div": 0.0321,
+              "num_date": {
+                "value": 1967.001,
+                "confidence": [
+                  1965.099,
+                  1969.341
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.996,
+                  "Malaysia": 0.0025,
+                  "South Korea": 0.00166
+                },
+                "entropy": 0.0298
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BOC-3_KON88166-LGUF01000007-3228121",
+            "node_attrs": {
+              "div": 0.0321,
+              "num_date": {
+                "value": 1967.001,
+                "confidence": [
+                  1967.001,
+                  1967.001
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "organism": {
+                "value": "Sporosarcina_globispora"
+              },
+              "allele": {
+                "value": "BOC-3"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0388,
+          "num_date": {
+            "value": 1954.092,
+            "confidence": [
+              1947.832,
+              1959.89
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.936,
+              "Malaysia": 0.0565,
+              "South Korea": 0.0073
+            },
+            "entropy": 0.26
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "BOC-4_KML36619-LDWQ01000076-25576",
+            "node_attrs": {
+              "div": 0.124,
+              "num_date": {
+                "value": 2010.511,
+                "confidence": [
+                  2010.511,
+                  2010.511
+                ]
+              },
+              "country": {
+                "value": "Malaysia",
+                "confidence": {
+                  "Malaysia": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "organism": {
+                "value": "Cytobacillus_firmus"
+              },
+              "allele": {
+                "value": "BOC-4"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G6T",
+                  "T7C",
+                  "G19T",
+                  "T30C",
+                  "G31T",
+                  "C33T",
+                  "G40T",
+                  "T47G",
+                  "G48C",
+                  "A55G",
+                  "G57A",
+                  "A96G",
+                  "A117G",
+                  "T138A",
+                  "A185G",
+                  "C216G",
+                  "A219G",
+                  "C234T",
+                  "C249A",
+                  "A270G",
+                  "A285G",
+                  "T306G",
+                  "G312C",
+                  "C330T",
+                  "G342C",
+                  "A366T",
+                  "A396G",
+                  "C398T",
+                  "A408T",
+                  "G414A",
+                  "G420T",
+                  "T429C",
+                  "G438A",
+                  "A439G",
+                  "A447G",
+                  "A459T",
+                  "T460A",
+                  "T465C",
+                  "A468T",
+                  "G475T",
+                  "A500G",
+                  "T537G",
+                  "G540A",
+                  "G552T",
+                  "A588G",
+                  "G609A",
+                  "A618C",
+                  "C624T",
+                  "G627A",
+                  "T633C",
+                  "A645G",
+                  "G651C",
+                  "C675T",
+                  "G676A",
+                  "C681T",
+                  "G693T",
+                  "G702C",
+                  "T715G",
+                  "T726C",
+                  "A733T",
+                  "T738C",
+                  "G757A",
+                  "G760T",
+                  "C769T",
+                  "C786T",
+                  "A787C",
+                  "A789T",
+                  "G793T"
+                ],
+                "AF332_16035": [
+                  "K2N",
+                  "W3R",
+                  "V7F",
+                  "A11S",
+                  "V14L",
+                  "L16C",
+                  "T19A",
+                  "N62S",
+                  "T133M",
+                  "E136D",
+                  "K140N",
+                  "M146I",
+                  "R147G",
+                  "S154T",
+                  "A159S",
+                  "K167R",
+                  "N179K",
+                  "E184D",
+                  "Q206H",
+                  "V226I",
+                  "S239A",
+                  "T245S",
+                  "A253T",
+                  "V254L",
+                  "I263L",
+                  "E265*"
+                ]
+              },
+              "labels": {
+                "aa": "AF332_16035: K2N, W3R, V7F, A11S, V14L, L16C, T19A, N62S, T133M, E136D, K140N, M146I, R147G, S154T, A159S, K167R, N179K, E184D, Q206H, V226I, S239A, T245S, A253T, V254L, I263L, E265*"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0815,
+              "num_date": {
+                "value": 1988.651,
+                "confidence": [
+                  1984.845,
+                  1992.576
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.991,
+                  "South Korea": 0.00725,
+                  "Malaysia": 0.00182
+                },
+                "entropy": 0.0562
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G15A",
+                  "T20C",
+                  "T21G",
+                  "A27T",
+                  "G37T",
+                  "A99G",
+                  "G102T",
+                  "A131C",
+                  "T138C",
+                  "T183C",
+                  "C216T",
+                  "T255G",
+                  "G279A",
+                  "A418C",
+                  "G423A",
+                  "G434A",
+                  "G435C",
+                  "G438C",
+                  "A439C",
+                  "G440A",
+                  "T444C",
+                  "T462A",
+                  "T465A",
+                  "T471C",
+                  "G477C",
+                  "A504T",
+                  "T507C",
+                  "T537A",
+                  "G552A",
+                  "A579G",
+                  "A618G",
+                  "T625C",
+                  "T666G",
+                  "G693A",
+                  "T741G",
+                  "C747T",
+                  "A768G",
+                  "A789G",
+                  "G795C"
+                ],
+                "AF332_16035": [
+                  "V7A",
+                  "A13S",
+                  "E34D",
+                  "K44T",
+                  "K140Q",
+                  "R145N",
+                  "M146I",
+                  "R147Q",
+                  "N179K",
+                  "I263M",
+                  "E265D"
+                ]
+              },
+              "labels": {
+                "aa": "AF332_16035: V7A, A13S, E34D, K44T, K140Q, R145N, M146I, R147Q, N179K, I263M, E265D"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.131,
+                  "num_date": {
+                    "value": 2018.486,
+                    "confidence": [
+                      2017.627,
+                      2018.486
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 1.16e-05
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T24A",
+                      "T30G",
+                      "C34A",
+                      "C38T",
+                      "G40A",
+                      "A63T",
+                      "A87G",
+                      "G100C",
+                      "A107C",
+                      "G178A",
+                      "A207G",
+                      "A258G",
+                      "C282T",
+                      "G294A",
+                      "A309G",
+                      "A321C",
+                      "T336C",
+                      "T345G",
+                      "G357A",
+                      "C372A",
+                      "T381C",
+                      "G414T",
+                      "A423T",
+                      "C435A",
+                      "C438T",
+                      "A552C",
+                      "A591T",
+                      "G609A",
+                      "T633C",
+                      "G699A",
+                      "G702C",
+                      "A703T",
+                      "G720T",
+                      "G741C",
+                      "T747A",
+                      "G750A",
+                      "T761C",
+                      "A797G"
+                    ],
+                    "AF332_16035": [
+                      "L12I",
+                      "S13F",
+                      "V14M",
+                      "D34H",
+                      "H36P",
+                      "V60I",
+                      "E107D",
+                      "M119I",
+                      "K138N",
+                      "E141D",
+                      "N145K",
+                      "E184D",
+                      "T235S",
+                      "V254A"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "AF332_16035: L12I, S13F, V14M, D34H, H36P, V60I, E107D, M119I, K138N, E141D, N145K, E184D, T235S, V254A"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "BOC-5_RBP88774-QNSF01000013-101728",
+                    "node_attrs": {
+                      "div": 0.131,
+                      "num_date": {
+                        "value": 2018.486,
+                        "confidence": [
+                          2018.486,
+                          2018.486
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "organism": {
+                        "value": "Cytobacillus_firmus"
+                      },
+                      "allele": {
+                        "value": "BOC-5"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "BOC-5_TDX39559-SOEE01000010-167189",
+                    "node_attrs": {
+                      "div": 0.131,
+                      "num_date": {
+                        "value": 2019.21,
+                        "confidence": [
+                          2019.21,
+                          2019.21
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "organism": {
+                        "value": "Cytobacillus_oceanisediminis"
+                      },
+                      "allele": {
+                        "value": "BOC-5"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.0993,
+                  "num_date": {
+                    "value": 1998.846,
+                    "confidence": [
+                      1997.535,
+                      1999.413
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.98,
+                      "South Korea": 0.02
+                    },
+                    "entropy": 0.0987
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A71G",
+                      "C81G",
+                      "A155G",
+                      "T429A",
+                      "C538T",
+                      "T606C",
+                      "A643T",
+                      "C681T",
+                      "G701A",
+                      "A765G",
+                      "G774A",
+                      "A782G"
+                    ],
+                    "AF332_16035": [
+                      "E24G",
+                      "N52S",
+                      "T215S",
+                      "G234E",
+                      "K261R"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "AF332_16035: E24G, N52S, T215S, G234E, K261R"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "BOC-2_MFD5851630-JBHXCK010000020-15437",
+                    "node_attrs": {
+                      "div": 0.0993,
+                      "num_date": {
+                        "value": 2010.001,
+                        "confidence": [
+                          2010.001,
+                          2010.001
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "organism": {
+                        "value": "Cytobacillus_pseudoceanisediminis"
+                      },
+                      "allele": {
+                        "value": "BOC-2"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G21A"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.101,
+                      "num_date": {
+                        "value": 1999.41,
+                        "confidence": [
+                          1998.819,
+                          1999.612
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.952,
+                          "South Korea": 0.0475
+                        },
+                        "entropy": 0.192
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C585T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "BOC-1_AND40381-CP015506-2938989",
+                        "node_attrs": {
+                          "div": 0.103,
+                          "num_date": {
+                            "value": 1999.664,
+                            "confidence": [
+                              1999.591,
+                              1999.664
+                            ]
+                          },
+                          "country": {
+                            "value": "South Korea",
+                            "confidence": {
+                              "South Korea": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "organism": {
+                            "value": "Cytobacillus_oceanisediminis_2691"
+                          },
+                          "allele": {
+                            "value": "BOC-1"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G190C"
+                            ],
+                            "AF332_16035": [
+                              "E64Q"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "AF332_16035: E64Q"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000006",
+                        "node_attrs": {
+                          "div": 0.102,
+                          "num_date": {
+                            "value": 2010.827,
+                            "confidence": [
+                              2009.169,
+                              2010.958
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": 5.89e-05
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G21A",
+                              "T306G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "name": "BOC-2_EFV76456-GL635753-695341",
+                            "node_attrs": {
+                              "div": 0.102,
+                              "num_date": {
+                                "value": 2010.958,
+                                "confidence": [
+                                  2010.958,
+                                  2010.958
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "organism": {
+                                "value": "Bacillus_sp._2_A_57_CT2"
+                              },
+                              "allele": {
+                                "value": "BOC-2"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "BOC-2_EFV76456-ACWD01000046-84888",
+                            "node_attrs": {
+                              "div": 0.102,
+                              "num_date": {
+                                "value": 2010.958,
+                                "confidence": [
+                                  2010.958,
+                                  2010.958
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "organism": {
+                                "value": "Bacillus_sp._2_A_57_CT2"
+                              },
+                              "allele": {
+                                "value": "BOC-2"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

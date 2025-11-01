@@ -1,0 +1,589 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class D BSU beta-lactamases",
+    "updated": "2025-10-30",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 804,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "P9293_02835": {
+        "end": 804,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Denmark": {
+            "latitude": 56.2639,
+            "longitude": 9.5018
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1909.685,
+        "confidence": [
+          1821.173,
+          1935.529
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.993,
+          "South Korea": 0.00571
+        },
+        "entropy": 0.0435
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.00876,
+          "num_date": {
+            "value": 2009.175,
+            "confidence": [
+              1991.656,
+              2012.777
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.977,
+              "South Korea": 0.0195,
+              "Republic of": 0.00151,
+              "France": 0.00151
+            },
+            "entropy": 0.119
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A152T",
+              "C321T",
+              "C339T",
+              "A430G",
+              "G448A",
+              "G453A",
+              "T543A",
+              "C576A",
+              "T630C"
+            ],
+            "P9293_02835": [
+              "H51L",
+              "K144E",
+              "V150I"
+            ]
+          },
+          "labels": {
+            "aa": "P9293_02835: H51L, K144E, V150I"
+          }
+        },
+        "children": [
+          {
+            "name": "BSU-1_ELS62907-AMXN01000001-303499",
+            "node_attrs": {
+              "div": 0.00876,
+              "num_date": {
+                "value": 2012.777,
+                "confidence": [
+                  2012.777,
+                  2012.777
+                ]
+              },
+              "allele": {
+                "value": "BSU-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "country": {
+                "value": "South Korea",
+                "confidence": {
+                  "South Korea": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Bacillus_inaquosorum_KCTC_13429"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.00876,
+              "num_date": {
+                "value": 2016.036,
+                "confidence": [
+                  2003.53,
+                  2016.256
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.985,
+                  "South Korea": 0.00721,
+                  "Republic of": 0.00376,
+                  "France": 0.00376
+                },
+                "entropy": 0.0922
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "BSU-1_MCE0741425-JAJSOZ010000015-40737",
+                "node_attrs": {
+                  "div": 0.00876,
+                  "num_date": {
+                    "value": 2016.25,
+                    "confidence": [
+                      2016.25,
+                      2016.321
+                    ]
+                  },
+                  "allele": {
+                    "value": "BSU-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Bacillus_sp._G16"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.00876,
+                  "num_date": {
+                    "value": 2017.63,
+                    "confidence": [
+                      2012.149,
+                      2018.374
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.349,
+                      "Republic of": 0.349,
+                      "USA": 0.299,
+                      "South Korea": 0.00227
+                    },
+                    "entropy": 1.111
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "BSU-1_CAM3513419-CBCSBO010000002-525528",
+                    "node_attrs": {
+                      "div": 0.00876,
+                      "num_date": {
+                        "value": 2025.105,
+                        "confidence": [
+                          2025.105,
+                          2025.105
+                        ]
+                      },
+                      "allele": {
+                        "value": "BSU-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bacillus_inaquosorum"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "BSU-1_AWM18717-CP029465-3834649",
+                    "node_attrs": {
+                      "div": 0.00876,
+                      "num_date": {
+                        "value": 2018.374,
+                        "confidence": [
+                          2018.374,
+                          2018.374
+                        ]
+                      },
+                      "allele": {
+                        "value": "BSU-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "Republic of",
+                        "confidence": {
+                          "Republic of": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "organism": {
+                        "value": "Bacillus_inaquosorum"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00249,
+          "num_date": {
+            "value": 1950.741,
+            "confidence": [
+              1937.126,
+              1950.741
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 0.000107
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "JARTHF010000002.1",
+            "node_attrs": {
+              "div": 0.00249,
+              "num_date": {
+                "value": 1950.741,
+                "confidence": [
+                  1892.993,
+                  2224.569
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.997,
+                  "South Korea": 0.00109
+                },
+                "entropy": 0.026
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BSU-2_MED4646352-JARTHF010000002-185368",
+            "node_attrs": {
+              "div": 0.00249,
+              "num_date": {
+                "value": 1950.812,
+                "confidence": [
+                  1950.812,
+                  1950.812
+                ]
+              },
+              "allele": {
+                "value": "BSU-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Bacillus_inaquosorum"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "BSU-2_MED4789707-JARTIW010000001-507996",
+            "node_attrs": {
+              "div": 0.00249,
+              "num_date": {
+                "value": 1950.741,
+                "confidence": [
+                  1950.741,
+                  1950.741
+                ]
+              },
+              "allele": {
+                "value": "BSU-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Bacillus_inaquosorum"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00374,
+              "num_date": {
+                "value": 2017.644,
+                "confidence": [
+                  1997.9,
+                  2017.758
+                ]
+              },
+              "country": {
+                "value": "Denmark",
+                "confidence": {
+                  "Denmark": 1.0
+                },
+                "entropy": 0.0016
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C768T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "BSU-2_PJH93602-PHIE01000002-515600",
+                "node_attrs": {
+                  "div": 0.00374,
+                  "num_date": {
+                    "value": 2017.749,
+                    "confidence": [
+                      2017.749,
+                      2017.823
+                    ]
+                  },
+                  "allele": {
+                    "value": "BSU-2"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Denmark",
+                    "confidence": {
+                      "Denmark": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Bacillus_sp._SN1"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BSU-2_PSI04908-PXUR01000002-264849",
+                "node_attrs": {
+                  "div": 0.00374,
+                  "num_date": {
+                    "value": 2017.837,
+                    "confidence": [
+                      2017.837,
+                      2017.837
+                    ]
+                  },
+                  "allele": {
+                    "value": "BSU-2"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Denmark",
+                    "confidence": {
+                      "Denmark": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Bacillus_subtilis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

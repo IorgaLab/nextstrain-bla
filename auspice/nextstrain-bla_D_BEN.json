@@ -1,0 +1,536 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class D BEN beta-lactamases",
+    "updated": "2025-10-30",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 813,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "A360_RS0126085": {
+        "end": 813,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Tajikistan": {
+            "latitude": 38.861,
+            "longitude": 71.2761
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1996.78,
+        "confidence": [
+          1996.068,
+          1997.616
+        ]
+      },
+      "country": {
+        "value": "South Korea",
+        "confidence": {
+          "South Korea": 0.75,
+          "PR China": 0.129,
+          "China": 0.108,
+          "Republic of": 0.00768,
+          "Tajikistan": 0.00563
+        },
+        "entropy": 0.786
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00123,
+          "num_date": {
+            "value": 1996.958,
+            "confidence": [
+              1996.372,
+              1997.793
+            ]
+          },
+          "country": {
+            "value": "South Korea",
+            "confidence": {
+              "South Korea": 0.763,
+              "PR China": 0.13,
+              "China": 0.0946,
+              "Republic of": 0.00676,
+              "Tajikistan": 0.00497
+            },
+            "entropy": 0.755
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "BEN-2_AKO90865-CP011974-209046",
+            "node_attrs": {
+              "div": 0.00744,
+              "num_date": {
+                "value": 2012.788,
+                "confidence": [
+                  2012.788,
+                  2012.788
+                ]
+              },
+              "organism": {
+                "value": "Priestia_filamentosa"
+              },
+              "allele": {
+                "value": "BEN-2"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "PR China",
+                "confidence": {
+                  "PR China": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C426T",
+                  "G537A",
+                  "A538G",
+                  "A550G"
+                ],
+                "A360_RS0126085": [
+                  "N180D",
+                  "K184E"
+                ]
+              },
+              "labels": {
+                "aa": "A360_RS0126085: N180D, K184E"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0301,
+              "num_date": {
+                "value": 1999.415,
+                "confidence": [
+                  1999.206,
+                  1999.489
+                ]
+              },
+              "country": {
+                "value": "South Korea",
+                "confidence": {
+                  "South Korea": 0.978,
+                  "PR China": 0.0123,
+                  "China": 0.00887
+                },
+                "entropy": 0.128
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C264T",
+                  "G428A",
+                  "T508A",
+                  "C510T",
+                  "A600G",
+                  "C604A",
+                  "C639T",
+                  "T684C",
+                  "G756A",
+                  "G759A",
+                  "T762A",
+                  "A768G",
+                  "A774T",
+                  "T775C",
+                  "G777A",
+                  "A778C",
+                  "T795A",
+                  "T800G",
+                  "C801T",
+                  "G805A",
+                  "A807C",
+                  "A809C"
+                ],
+                "A360_RS0126085": [
+                  "R143Q",
+                  "S170T",
+                  "K260Q",
+                  "I267S",
+                  "E269N",
+                  "*270S"
+                ]
+              },
+              "labels": {
+                "aa": "A360_RS0126085: R143Q, S170T, K260Q, I267S, E269N, *270S"
+              }
+            },
+            "children": [
+              {
+                "name": "NZ_ALIM01000051.1",
+                "node_attrs": {
+                  "div": 0.0301,
+                  "num_date": {
+                    "value": 1999.48,
+                    "confidence": [
+                      1998.485,
+                      2002.292
+                    ]
+                  },
+                  "country": {
+                    "value": "South Korea",
+                    "confidence": {
+                      "South Korea": 0.975,
+                      "PR China": 0.0131,
+                      "China": 0.00937,
+                      "Republic of": 0.00125,
+                      "Tajikistan": 0.00117
+                    },
+                    "entropy": 0.141
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BEN-3_WP_019395598-NZ_ALIM01000051-42075",
+                "node_attrs": {
+                  "div": 0.0301,
+                  "num_date": {
+                    "value": 1999.493,
+                    "confidence": [
+                      1999.415,
+                      1999.495
+                    ]
+                  },
+                  "organism": {
+                    "value": "Priestia_filamentosa"
+                  },
+                  "allele": {
+                    "value": "BEN-3"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "South Korea",
+                    "confidence": {
+                      "South Korea": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.034,
+          "num_date": {
+            "value": 2011.714,
+            "confidence": [
+              2011.284,
+              2011.714
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.935,
+              "Republic of": 0.0377,
+              "Tajikistan": 0.0139,
+              "South Korea": 0.0113,
+              "PR China": 0.00251
+            },
+            "entropy": 0.312
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C57A",
+              "A58G",
+              "A93G",
+              "G96A",
+              "A99G",
+              "G111A",
+              "C118T",
+              "A126T",
+              "G128A",
+              "G177A",
+              "C192T",
+              "T345C",
+              "C393T",
+              "T480C",
+              "A515G",
+              "A531G",
+              "C573A",
+              "C632A",
+              "G665A",
+              "C666T",
+              "A671T",
+              "C690T",
+              "C729T",
+              "G733A",
+              "T735C",
+              "A757C",
+              "G758A",
+              "A783G",
+              "T786C"
+            ],
+            "A360_RS0126085": [
+              "I20V",
+              "L40F",
+              "G43E",
+              "K172R",
+              "T211N",
+              "S222N",
+              "Q224L",
+              "D245N",
+              "R253Q"
+            ]
+          },
+          "labels": {
+            "aa": "A360_RS0126085: I20V, L40F, G43E, K172R, T211N, S222N, Q224L, D245N, R253Q"
+          }
+        },
+        "children": [
+          {
+            "name": "BEN-1_MBG9812239-LDIO01000039-14682",
+            "node_attrs": {
+              "div": 0.034,
+              "num_date": {
+                "value": 2011.714,
+                "confidence": [
+                  2011.714,
+                  2011.714
+                ]
+              },
+              "organism": {
+                "value": "Priestia_endophytica"
+              },
+              "allele": {
+                "value": "BEN-1"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.034,
+              "num_date": {
+                "value": 2016.106,
+                "confidence": [
+                  2015.487,
+                  2016.152
+                ]
+              },
+              "country": {
+                "value": "Republic of",
+                "confidence": {
+                  "Republic of": 0.717,
+                  "Tajikistan": 0.254,
+                  "China": 0.0279
+                },
+                "entropy": 0.694
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "BEN-1_KYG33776-LTAP01000005-11435",
+                "node_attrs": {
+                  "div": 0.034,
+                  "num_date": {
+                    "value": 2016.152,
+                    "confidence": [
+                      2016.152,
+                      2016.152
+                    ]
+                  },
+                  "organism": {
+                    "value": "Priestia_endophytica"
+                  },
+                  "allele": {
+                    "value": "BEN-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "country": {
+                    "value": "Republic of",
+                    "confidence": {
+                      "Republic of": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "BEN-1_SFQ85185-FOXX01000015-11091",
+                "node_attrs": {
+                  "div": 0.034,
+                  "num_date": {
+                    "value": 2016.827,
+                    "confidence": [
+                      2016.827,
+                      2016.827
+                    ]
+                  },
+                  "organism": {
+                    "value": "Priestia_endophytica_DSM_13796"
+                  },
+                  "allele": {
+                    "value": "BEN-1"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Tajikistan",
+                    "confidence": {
+                      "Tajikistan": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
