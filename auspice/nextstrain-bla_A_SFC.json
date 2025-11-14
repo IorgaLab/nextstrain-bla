@@ -1,0 +1,485 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A SFC beta-lactamases",
+    "updated": "2025-11-13",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 930,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Japan",
+            "#4B8FC1"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Portugal": {
+            "latitude": 39.54046,
+            "longitude": -8.174701
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1994.33,
+        "confidence": [
+          1973.507,
+          2001.603
+        ]
+      },
+      "country": {
+        "value": "Japan",
+        "confidence": {
+          "Japan": 0.974,
+          "Portugal": 0.0226,
+          "China": 0.00366
+        },
+        "entropy": 0.133
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.00539,
+          "num_date": {
+            "value": 2019.001,
+            "confidence": [
+              2017.94,
+              2019.82
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 1.0
+            },
+            "entropy": 1.84e-06
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G78T",
+              "A120G",
+              "C477T",
+              "T483C",
+              "C620T",
+              "A823G",
+              "T825A"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "SFC-2_UAN54394-CP074143-5100345",
+            "node_attrs": {
+              "div": 0.00539,
+              "num_date": {
+                "value": 2020.209,
+                "confidence": [
+                  2020.209,
+                  2020.209
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_sp._JSRIV002"
+              },
+              "allele": {
+                "value": "SFC-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "SFC-2_UAN48719-CP074147-4981569",
+            "node_attrs": {
+              "div": 0.00539,
+              "num_date": {
+                "value": 2020.173,
+                "confidence": [
+                  2020.173,
+                  2020.173
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_sp._JSRIV001"
+              },
+              "allele": {
+                "value": "SFC-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "SFC-2_MGQ6550657-JBQXIC010000049-15914",
+            "node_attrs": {
+              "div": 0.00539,
+              "num_date": {
+                "value": 2019.97,
+                "confidence": [
+                  2019.001,
+                  2019.999
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_sp._IR-2025"
+              },
+              "allele": {
+                "value": "SFC-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "SFC-2_UAN60438-CP074140-5082244",
+            "node_attrs": {
+              "div": 0.00539,
+              "num_date": {
+                "value": 2020.209,
+                "confidence": [
+                  2020.209,
+                  2020.209
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_sp._JSRIV004"
+              },
+              "allele": {
+                "value": "SFC-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00215,
+          "num_date": {
+            "value": 2003.574,
+            "confidence": [
+              1998.795,
+              2003.574
+            ]
+          },
+          "country": {
+            "value": "Japan",
+            "confidence": {
+              "Japan": 0.964,
+              "Portugal": 0.031,
+              "China": 0.00497
+            },
+            "entropy": 0.17
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "AY354402.1",
+            "node_attrs": {
+              "div": 0.00215,
+              "num_date": {
+                "value": 2003.574,
+                "confidence": [
+                  1950.575,
+                  2145.887
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.96,
+                  "Portugal": 0.0324,
+                  "China": 0.00649,
+                  "France": 0.00158
+                },
+                "entropy": 0.194
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "SFC-1_AAR06587-AY354402-82",
+            "node_attrs": {
+              "div": 0.00215,
+              "num_date": {
+                "value": 2003.574,
+                "confidence": [
+                  2003.574,
+                  2003.574
+                ]
+              },
+              "country": {
+                "value": "Portugal",
+                "confidence": {
+                  "Portugal": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Serratia_fonticola"
+              },
+              "allele": {
+                "value": "SFC-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00215,
+              "num_date": {
+                "value": 2018.944,
+                "confidence": [
+                  2010.91,
+                  2019.314
+                ]
+              },
+              "country": {
+                "value": "Japan",
+                "confidence": {
+                  "Japan": 0.976,
+                  "China": 0.0188,
+                  "Portugal": 0.00489
+                },
+                "entropy": 0.124
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "SFC-1_UAN65703-CP074137-4832865",
+                "node_attrs": {
+                  "div": 0.00215,
+                  "num_date": {
+                    "value": 2020.209,
+                    "confidence": [
+                      2020.209,
+                      2020.209
+                    ]
+                  },
+                  "country": {
+                    "value": "Japan",
+                    "confidence": {
+                      "Japan": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Serratia_sp._JSRIV006"
+                  },
+                  "allele": {
+                    "value": "SFC-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "SFC-1_QCH41446-MK847897-5158",
+                "node_attrs": {
+                  "div": 0.00215,
+                  "num_date": {
+                    "value": 2019.314,
+                    "confidence": [
+                      2019.314,
+                      2019.314
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Cloning_vector_pET28A-blaSFC-1"
+                  },
+                  "allele": {
+                    "value": "SFC-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

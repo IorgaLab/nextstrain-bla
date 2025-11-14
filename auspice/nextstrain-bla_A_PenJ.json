@@ -1,0 +1,601 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A PenJ beta-lactamases",
+    "updated": "2025-11-11",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 888,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC13388_04250": {
+        "end": 888,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1846.754,
+        "confidence": [
+          1697.048,
+          1911.174
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 1.0
+        },
+        "entropy": 0.000444
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00339,
+          "num_date": {
+            "value": 1977.001,
+            "confidence": [
+              1950.746,
+              1977.837
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 8.96e-07
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A72G",
+              "C206A",
+              "G393A",
+              "C471T",
+              "T737A",
+              "C756T",
+              "G776A",
+              "G831A"
+            ],
+            "NCTC13388_04250": [
+              "A69D",
+              "F246Y",
+              "S259N"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC13388_04250: A69D, F246Y, S259N"
+          }
+        },
+        "children": [
+          {
+            "name": "PenJ-1_AOI39443-CP013356-1723025",
+            "node_attrs": {
+              "div": 0.00339,
+              "num_date": {
+                "value": 1977.837,
+                "confidence": [
+                  1977.001,
+                  1977.999
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "PenJ-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Burkholderia_oklahomensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00339,
+              "num_date": {
+                "value": 2013.481,
+                "confidence": [
+                  1982.1,
+                  2014.44
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 1.57e-07
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "PenJ-1_AIO70431-CP008727-1635176",
+                "node_attrs": {
+                  "div": 0.00339,
+                  "num_date": {
+                    "value": 2014.44,
+                    "confidence": [
+                      2014.44,
+                      2014.44
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "PenJ-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Burkholderia_oklahomensis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.00339,
+                  "num_date": {
+                    "value": 2013.481,
+                    "confidence": [
+                      2002.591,
+                      2015.884
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": 1.55e-07
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "PenJ-1_QPS40209-CP065684-2778826",
+                    "node_attrs": {
+                      "div": 0.00339,
+                      "num_date": {
+                        "value": 2020.919,
+                        "confidence": [
+                          2020.919,
+                          2020.919
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "PenJ-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_oklahomensis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PenJ-1_KUY50356-LOSS01000107-14566",
+                    "node_attrs": {
+                      "div": 0.00339,
+                      "num_date": {
+                        "value": 2015.884,
+                        "confidence": [
+                          2015.884,
+                          2015.884
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "PenJ-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_oklahomensis_EO147"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.00568,
+          "num_date": {
+            "value": 1973.001,
+            "confidence": [
+              1955.417,
+              1973.687
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 1.0
+            },
+            "entropy": 9.21e-07
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "UFUH01000002.1",
+            "node_attrs": {
+              "div": 0.00568,
+              "num_date": {
+                "value": 1973.001,
+                "confidence": [
+                  1843.283,
+                  2723.462
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 0.998,
+                  "United Kingdom": 0.00195
+                },
+                "entropy": 0.0141
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "PenJ-2_AOI49122-CP013359-1657870",
+            "node_attrs": {
+              "div": 0.00568,
+              "num_date": {
+                "value": 1973.001,
+                "confidence": [
+                  1973.001,
+                  1973.899
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "PenJ-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Burkholderia_oklahomensis_C6786"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "PenJ-2_SUY26753-UFUH01000002-618575",
+            "node_attrs": {
+              "div": 0.00568,
+              "num_date": {
+                "value": 1973.001,
+                "confidence": [
+                  1843.283,
+                  2723.462
+                ]
+              },
+              "country": {
+                "value": "United Kingdom",
+                "confidence": {
+                  "United Kingdom": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "PenJ-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Burkholderia_oklahomensis"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "PenJ-2_AJX35697-CP009556-2185996",
+            "node_attrs": {
+              "div": 0.00568,
+              "num_date": {
+                "value": 1973.001,
+                "confidence": [
+                  1973.001,
+                  1973.899
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "PenJ-2"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Burkholderia_oklahomensis_C6786"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.00568,
+              "num_date": {
+                "value": 2013.448,
+                "confidence": [
+                  1986.839,
+                  2015.884
+                ]
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": 1.58e-07
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "PenJ-2_MBI0362647-JAEDZZ010000002-1042047",
+                "node_attrs": {
+                  "div": 0.00568,
+                  "num_date": {
+                    "value": 2020.887,
+                    "confidence": [
+                      2020.887,
+                      2020.887
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "PenJ-2"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Burkholderia_oklahomensis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "PenJ-2_KUY60828-LOST01000027-296481",
+                "node_attrs": {
+                  "div": 0.00568,
+                  "num_date": {
+                    "value": 2015.884,
+                    "confidence": [
+                      2015.884,
+                      2015.884
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "PenJ-2"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Burkholderia_oklahomensis_C6786"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

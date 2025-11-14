@@ -1,0 +1,2640 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A OXY-4-like beta-lactamases",
+    "updated": "2025-11-09",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 873,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "HMPREF9694_04587": {
+        "end": 873,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "Hong Kong": {
+            "latitude": 22.3964,
+            "longitude": 114.1095
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "South Korea": {
+            "latitude": 36.609249,
+            "longitude": 127.917932
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          },
+          "Poland": {
+            "latitude": 52.0977181,
+            "longitude": 19.0258159
+          },
+          "Ireland": {
+            "latitude": 52.865,
+            "longitude": -7.979
+          },
+          "Egypt": {
+            "latitude": 26.8206,
+            "longitude": 30.8025
+          },
+          "Switzerland": {
+            "latitude": 46.8182,
+            "longitude": 8.2275
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000001",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1994.892,
+        "confidence": [
+          1991.28,
+          1998.718
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.328,
+          "China": 0.163,
+          "USA": 0.129,
+          "Switzerland": 0.0661,
+          "": 0.0464,
+          "Egypt": 0.0345,
+          "Ireland": 0.0345,
+          "Poland": 0.0303,
+          "South Korea": 0.0291,
+          "India": 0.029,
+          "JPN": 0.0287,
+          "Pakistan": 0.0274,
+          "Australia": 0.027,
+          "Hong Kong": 0.0264
+        },
+        "entropy": 2.186
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000005",
+        "node_attrs": {
+          "div": 0.0767,
+          "num_date": {
+            "value": 2018.877,
+            "confidence": [
+              2018.343,
+              2019.236
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 1.0
+            },
+            "entropy": 0.000467
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T4C",
+              "T12C",
+              "T13A",
+              "C14G",
+              "G15C",
+              "T21C",
+              "C30G",
+              "C39G",
+              "C42G",
+              "C45G",
+              "T48G",
+              "A54G",
+              "T69C",
+              "T70A",
+              "C71G",
+              "A72C",
+              "T73C",
+              "A75G",
+              "C81G",
+              "T84C",
+              "C87G",
+              "T93C",
+              "C96G",
+              "G105A",
+              "T111G",
+              "T115C",
+              "A117G",
+              "T126C",
+              "T127A",
+              "C128G",
+              "T135C",
+              "G138C",
+              "G162C",
+              "A165G",
+              "T172A",
+              "C173G",
+              "G174C",
+              "C183G",
+              "T201C",
+              "C207G",
+              "T222C",
+              "C234G",
+              "C237G",
+              "C240G",
+              "A249G",
+              "C270G",
+              "T282C",
+              "A286C",
+              "G288C",
+              "G294A",
+              "T304A",
+              "C305G",
+              "G306C",
+              "T310C",
+              "A312G",
+              "C318G",
+              "A348G",
+              "A354C",
+              "C372G",
+              "T378G",
+              "C399T",
+              "T402C",
+              "T414C",
+              "G417A",
+              "C423T",
+              "T426C",
+              "C429T",
+              "T432G",
+              "G438C",
+              "C450G",
+              "A456G",
+              "C459T",
+              "C462G",
+              "C471T",
+              "T474C",
+              "C477T",
+              "T480G",
+              "T483C",
+              "T489C",
+              "C492G",
+              "G498C",
+              "G504A",
+              "C528G",
+              "T531C",
+              "G537A",
+              "A555G",
+              "T556C",
+              "C567G",
+              "T573C",
+              "T579C",
+              "G582A",
+              "G588C",
+              "T597C",
+              "C621G",
+              "T625C",
+              "A627G",
+              "A633C",
+              "T648C",
+              "G660C",
+              "A663G",
+              "T672C",
+              "A675G",
+              "C684G",
+              "A687G",
+              "C699G",
+              "G702C",
+              "A720C",
+              "C726T",
+              "C744T",
+              "C753T",
+              "T765C",
+              "T771G",
+              "A783G",
+              "A801G",
+              "G831A",
+              "A837G",
+              "C840G",
+              "C855T",
+              "G867C",
+              "G873A"
+            ]
+          }
+        },
+        "children": [
+          {
+            "name": "OXY-4-2_QCY59226-MN030561-1",
+            "node_attrs": {
+              "div": 0.0767,
+              "num_date": {
+                "value": 2019.423,
+                "confidence": [
+                  2019.423,
+                  2019.423
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "OXY-4-2"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Klebsiella_pasteurii"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G249T"
+                ],
+                "HMPREF9694_04587": [
+                  "L83F"
+                ]
+              },
+              "labels": {
+                "aa": "HMPREF9694_04587: L83F"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.079,
+              "num_date": {
+                "value": 2019.245,
+                "confidence": [
+                  2018.988,
+                  2019.392
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": 1.05e-06
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T247C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "OXY-4-5_QCY59232-MN030567-1",
+                "node_attrs": {
+                  "div": 0.0801,
+                  "num_date": {
+                    "value": 2019.423,
+                    "confidence": [
+                      2019.423,
+                      2019.423
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "OXY-4-5"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Klebsiella_pasteurii"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C803T"
+                    ],
+                    "HMPREF9694_04587": [
+                      "P268L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "HMPREF9694_04587: P268L"
+                  }
+                }
+              },
+              {
+                "name": "OXY-4-4_QCY59228-MN030563-1",
+                "node_attrs": {
+                  "div": 0.0801,
+                  "num_date": {
+                    "value": 2019.423,
+                    "confidence": [
+                      2019.423,
+                      2019.423
+                    ]
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "allele": {
+                    "value": "OXY-4-4"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Klebsiella_pasteurii"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G467A"
+                    ],
+                    "HMPREF9694_04587": [
+                      "S156N"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "HMPREF9694_04587: S156N"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000004",
+        "node_attrs": {
+          "div": 0.0774,
+          "num_date": {
+            "value": 2015.498,
+            "confidence": [
+              2014.936,
+              2015.821
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.435,
+              "USA": 0.333,
+              "Switzerland": 0.124,
+              "France": 0.096,
+              "": 0.00423,
+              "Ireland": 0.00111,
+              "Poland": 0.00102
+            },
+            "entropy": 1.291
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "OXY-4-1_WND08827-CP134211-4370478",
+            "node_attrs": {
+              "div": 0.0774,
+              "num_date": {
+                "value": 2022.177,
+                "confidence": [
+                  2022.177,
+                  2022.177
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "OXY-4-1"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Klebsiella_pasteurii"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0785,
+              "num_date": {
+                "value": 2015.78,
+                "confidence": [
+                  2015.423,
+                  2015.963
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.415,
+                  "USA": 0.35,
+                  "Switzerland": 0.13,
+                  "France": 0.0965,
+                  "": 0.00371
+                },
+                "entropy": 1.282
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T195C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "JH603150.1",
+                "node_attrs": {
+                  "div": 0.0785,
+                  "num_date": {
+                    "value": 2015.905,
+                    "confidence": [
+                      2015.412,
+                      2016.745
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.41,
+                      "USA": 0.346,
+                      "Switzerland": 0.13,
+                      "France": 0.0963,
+                      "": 0.00502,
+                      "Ireland": 0.00179,
+                      "Poland": 0.00166,
+                      "South Korea": 0.00157,
+                      "India": 0.00156,
+                      "JPN": 0.00153,
+                      "Egypt": 0.00151,
+                      "Australia": 0.00136,
+                      "Pakistan": 0.00134,
+                      "Hong Kong": 0.00127
+                    },
+                    "entropy": 1.338
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000009",
+                "node_attrs": {
+                  "div": 0.0793,
+                  "num_date": {
+                    "value": 2016.019,
+                    "confidence": [
+                      2015.714,
+                      2016.024
+                    ]
+                  },
+                  "country": {
+                    "value": "USA",
+                    "confidence": {
+                      "USA": 0.417,
+                      "China": 0.402,
+                      "France": 0.105,
+                      "Switzerland": 0.0695,
+                      "": 0.0037
+                    },
+                    "entropy": 1.201
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G147T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "OXY-4-1_VUS49742-CABGGY010000012-416420",
+                    "node_attrs": {
+                      "div": 0.08,
+                      "num_date": {
+                        "value": 2019.505,
+                        "confidence": [
+                          2019.505,
+                          2019.505
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "OXY-4-1"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Klebsiella_pasteurii"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T147C"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000010",
+                    "node_attrs": {
+                      "div": 0.08,
+                      "num_date": {
+                        "value": 2016.026,
+                        "confidence": [
+                          2015.971,
+                          2016.026
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.534,
+                          "China": 0.393,
+                          "France": 0.0416,
+                          "Switzerland": 0.0256,
+                          "": 0.00378
+                        },
+                        "entropy": 0.965
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "OXY-4-1_AYZ16597-CP033824-1404986",
+                        "node_attrs": {
+                          "div": 0.08,
+                          "num_date": {
+                            "value": 2016.026,
+                            "confidence": [
+                              2016.026,
+                              2016.026
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "OXY-4-1"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_sp._FDAARGOS_511"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.08,
+                          "num_date": {
+                            "value": 2021.012,
+                            "confidence": [
+                              2020.342,
+                              2021.012
+                            ]
+                          },
+                          "country": {
+                            "value": "China",
+                            "confidence": {
+                              "China": 0.909,
+                              "": 0.0626,
+                              "USA": 0.0226,
+                              "France": 0.00211,
+                              "Switzerland": 0.00106
+                            },
+                            "entropy": 0.384
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "OXY-4-1_QQO26774-CP067093-5174728",
+                            "node_attrs": {
+                              "div": 0.08,
+                              "num_date": {
+                                "value": 2021.012,
+                                "confidence": [
+                                  2021.012,
+                                  2021.012
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "allele": {
+                                "value": "OXY-4-1"
+                              },
+                              "country": {
+                                "value": "China",
+                                "confidence": {
+                                  "China": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "organism": {
+                                "value": "Klebsiella_michiganensis"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "OXY-4-1_MDV1908501-JAWIHF010000017-56924",
+                            "node_attrs": {
+                              "div": 0.08,
+                              "num_date": {
+                                "value": 2023.086,
+                                "confidence": [
+                                  2023.086,
+                                  2023.153
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "OXY-4-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "organism": {
+                                "value": "Klebsiella_pasteurii"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000011",
+                "node_attrs": {
+                  "div": 0.0785,
+                  "num_date": {
+                    "value": 2016.99,
+                    "confidence": [
+                      2016.344,
+                      2017.201
+                    ]
+                  },
+                  "country": {
+                    "value": "Switzerland",
+                    "confidence": {
+                      "Switzerland": 0.996,
+                      "France": 0.00125,
+                      "USA": 0.00116
+                    },
+                    "entropy": 0.0296
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "OXY-4-1_MBF8463794-VNNJ01000245-3461",
+                    "node_attrs": {
+                      "div": 0.0785,
+                      "num_date": {
+                        "value": 2017.001,
+                        "confidence": [
+                          2017.001,
+                          2017.617
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "OXY-4-1"
+                      },
+                      "country": {
+                        "value": "Switzerland",
+                        "confidence": {
+                          "Switzerland": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Klebsiella_michiganensis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000012",
+                    "node_attrs": {
+                      "div": 0.0785,
+                      "num_date": {
+                        "value": 2016.99,
+                        "confidence": [
+                          2016.815,
+                          2017.333
+                        ]
+                      },
+                      "country": {
+                        "value": "Switzerland",
+                        "confidence": {
+                          "Switzerland": 0.996,
+                          "": 0.00135,
+                          "France": 0.00127,
+                          "USA": 0.00105
+                        },
+                        "entropy": 0.0317
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "OXY-4-1_MBZ7661391-VNUW01000007-165434",
+                        "node_attrs": {
+                          "div": 0.0785,
+                          "num_date": {
+                            "value": 2017.24,
+                            "confidence": [
+                              2017.001,
+                              2017.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "allele": {
+                            "value": "OXY-4-1"
+                          },
+                          "country": {
+                            "value": "Switzerland",
+                            "confidence": {
+                              "Switzerland": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_grimontii"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000013",
+                        "node_attrs": {
+                          "div": 0.0785,
+                          "num_date": {
+                            "value": 2017.366,
+                            "confidence": [
+                              2017.094,
+                              2017.366
+                            ]
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "OXY-4-1_MDS7910193-JAQSLI010000001-384798",
+                            "node_attrs": {
+                              "div": 0.0785,
+                              "num_date": {
+                                "value": 2017.366,
+                                "confidence": [
+                                  2017.366,
+                                  2017.366
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "allele": {
+                                "value": "OXY-4-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "organism": {
+                                "value": "Klebsiella_pasteurii"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000014",
+                            "node_attrs": {
+                              "div": 0.0785,
+                              "num_date": {
+                                "value": 2018.195,
+                                "confidence": [
+                                  2017.474,
+                                  2018.423
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 0.389,
+                                  "Pakistan": 0.242,
+                                  "": 0.191,
+                                  "USA": 0.0826,
+                                  "Switzerland": 0.0776,
+                                  "China": 0.012,
+                                  "Poland": 0.00101
+                                },
+                                "entropy": 1.522
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000008",
+                                "node_attrs": {
+                                  "div": 0.0797,
+                                  "num_date": {
+                                    "value": 2018.544,
+                                    "confidence": [
+                                      2018.264,
+                                      2018.544
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Pakistan",
+                                    "confidence": {
+                                      "Pakistan": 0.52,
+                                      "France": 0.171,
+                                      "USA": 0.162,
+                                      "": 0.0886,
+                                      "Switzerland": 0.0308,
+                                      "China": 0.0222,
+                                      "Poland": 0.00159
+                                    },
+                                    "entropy": 1.382
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "C44T"
+                                    ],
+                                    "HMPREF9694_04587": [
+                                      "A15V"
+                                    ]
+                                  },
+                                  "labels": {
+                                    "aa": "HMPREF9694_04587: A15V"
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "name": "OXY-4-3_MDH0310994-JAOEBM010000002-258224",
+                                    "node_attrs": {
+                                      "div": 0.0797,
+                                      "num_date": {
+                                        "value": 2018.544,
+                                        "confidence": [
+                                          2018.544,
+                                          2018.544
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "OXY-4-3"
+                                      },
+                                      "country": {
+                                        "value": "Pakistan",
+                                        "confidence": {
+                                          "Pakistan": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "organism": {
+                                        "value": "Klebsiella_pasteurii"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000016",
+                                    "node_attrs": {
+                                      "div": 0.0797,
+                                      "num_date": {
+                                        "value": 2019.483,
+                                        "confidence": [
+                                          2018.806,
+                                          2019.754
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.766,
+                                          "China": 0.102,
+                                          "Pakistan": 0.0728,
+                                          "France": 0.027,
+                                          "": 0.0173,
+                                          "Poland": 0.00725,
+                                          "Switzerland": 0.00466
+                                        },
+                                        "entropy": 0.879
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "OXY-4-3_MGK4338079-JBPQFI010000001-4433568",
+                                        "node_attrs": {
+                                          "div": 0.0797,
+                                          "num_date": {
+                                            "value": 2019.509,
+                                            "confidence": [
+                                              2019.001,
+                                              2019.999
+                                            ]
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "OXY-4-3"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "organism": {
+                                            "value": "Klebsiella_pasteurii"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000017",
+                                        "node_attrs": {
+                                          "div": 0.0797,
+                                          "num_date": {
+                                            "value": 2021.286,
+                                            "confidence": [
+                                              2020.636,
+                                              2021.286
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.838,
+                                              "USA": 0.0778,
+                                              "Poland": 0.0691,
+                                              "Pakistan": 0.00699,
+                                              "France": 0.00295,
+                                              "": 0.00228
+                                            },
+                                            "entropy": 0.623
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "OXY-4-3_MDM4219757-JATAUJ010000007-171775",
+                                            "node_attrs": {
+                                              "div": 0.0797,
+                                              "num_date": {
+                                                "value": 2023.467,
+                                                "confidence": [
+                                                  2023.467,
+                                                  2023.467
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              },
+                                              "allele": {
+                                                "value": "OXY-4-3"
+                                              },
+                                              "country": {
+                                                "value": "Poland",
+                                                "confidence": {
+                                                  "Poland": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Klebsiella_pasteurii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "OXY-4-3_QUE96219-CP073236-5453998",
+                                            "node_attrs": {
+                                              "div": 0.0797,
+                                              "num_date": {
+                                                "value": 2021.286,
+                                                "confidence": [
+                                                  2021.286,
+                                                  2021.286
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              },
+                                              "allele": {
+                                                "value": "OXY-4-3"
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Klebsiella_pasteurii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000018",
+                                "node_attrs": {
+                                  "div": 0.0785,
+                                  "num_date": {
+                                    "value": 2018.838,
+                                    "confidence": [
+                                      2018.263,
+                                      2019.198
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 0.97,
+                                      "": 0.0295
+                                    },
+                                    "entropy": 0.14
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "OXY-4-2_VUS33624-CABGHC010000001-1048284",
+                                    "node_attrs": {
+                                      "div": 0.0797,
+                                      "num_date": {
+                                        "value": 2019.505,
+                                        "confidence": [
+                                          2019.505,
+                                          2019.505
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "allele": {
+                                        "value": "OXY-4-2"
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "organism": {
+                                        "value": "Klebsiella_pasteurii"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A249C"
+                                        ],
+                                        "HMPREF9694_04587": [
+                                          "L83F"
+                                        ]
+                                      },
+                                      "labels": {
+                                        "aa": "HMPREF9694_04587: L83F"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000019",
+                                    "node_attrs": {
+                                      "div": 0.0785,
+                                      "num_date": {
+                                        "value": 2019.197,
+                                        "confidence": [
+                                          2018.695,
+                                          2019.311
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 0.97,
+                                          "": 0.0296
+                                        },
+                                        "entropy": 0.134
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000003",
+                                        "node_attrs": {
+                                          "div": 0.0797,
+                                          "num_date": {
+                                            "value": 2019.448,
+                                            "confidence": [
+                                              2019.268,
+                                              2019.505
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "France",
+                                            "confidence": {
+                                              "France": 0.987,
+                                              "": 0.0117,
+                                              "Egypt": 0.0011
+                                            },
+                                            "entropy": 0.0738
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "G467A"
+                                            ],
+                                            "HMPREF9694_04587": [
+                                              "S156N"
+                                            ]
+                                          },
+                                          "labels": {
+                                            "aa": "HMPREF9694_04587: S156N"
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "OXY-4-4_VUS34372-CABGHE010000001-1127454",
+                                            "node_attrs": {
+                                              "div": 0.0797,
+                                              "num_date": {
+                                                "value": 2019.505,
+                                                "confidence": [
+                                                  2019.505,
+                                                  2019.505
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              },
+                                              "allele": {
+                                                "value": "OXY-4-4"
+                                              },
+                                              "country": {
+                                                "value": "France",
+                                                "confidence": {
+                                                  "France": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Klebsiella_pasteurii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "OXY-4-4_MDD9661747-JARANL010000002-386580",
+                                            "node_attrs": {
+                                              "div": 0.0797,
+                                              "num_date": {
+                                                "value": 2023.056,
+                                                "confidence": [
+                                                  2023.056,
+                                                  2023.056
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              },
+                                              "allele": {
+                                                "value": "OXY-4-4"
+                                              },
+                                              "country": {
+                                                "value": "Egypt",
+                                                "confidence": {
+                                                  "Egypt": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Klebsiella_pasteurii"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000021",
+                                        "node_attrs": {
+                                          "div": 0.0785,
+                                          "num_date": {
+                                            "value": 2019.221,
+                                            "confidence": [
+                                              2018.953,
+                                              2019.382
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "France",
+                                            "confidence": {
+                                              "France": 0.872,
+                                              "": 0.128
+                                            },
+                                            "entropy": 0.385
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "OXY-4-1_QPF29003-CP064784-1495092",
+                                            "node_attrs": {
+                                              "div": 0.0785,
+                                              "num_date": {
+                                                "value": 2019.335,
+                                                "confidence": [
+                                                  2019.001,
+                                                  2019.999
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "OXY-4-1"
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "organism": {
+                                                "value": "Klebsiella_sp._BDA134-6"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000022",
+                                            "node_attrs": {
+                                              "div": 0.0785,
+                                              "num_date": {
+                                                "value": 2019.323,
+                                                "confidence": [
+                                                  2019.16,
+                                                  2019.439
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "France",
+                                                "confidence": {
+                                                  "France": 0.873,
+                                                  "": 0.126
+                                                },
+                                                "entropy": 0.387
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "NODE_0000023",
+                                                "node_attrs": {
+                                                  "div": 0.0785,
+                                                  "num_date": {
+                                                    "value": 2019.418,
+                                                    "confidence": [
+                                                      2019.258,
+                                                      2019.464
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "France",
+                                                    "confidence": {
+                                                      "France": 1.0
+                                                    },
+                                                    "entropy": 0.00171
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "NODE_0000024",
+                                                    "node_attrs": {
+                                                      "div": 0.0785,
+                                                      "num_date": {
+                                                        "value": 2019.456,
+                                                        "confidence": [
+                                                          2019.368,
+                                                          2019.505
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "France",
+                                                        "confidence": {
+                                                          "France": 1.0
+                                                        },
+                                                        "entropy": 4.27e-06
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "OXY-4-1_VUS52621-CABGGZ010000040-534487",
+                                                        "node_attrs": {
+                                                          "div": 0.0785,
+                                                          "num_date": {
+                                                            "value": 2019.505,
+                                                            "confidence": [
+                                                              2019.505,
+                                                              2019.505
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          },
+                                                          "allele": {
+                                                            "value": "OXY-4-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "France",
+                                                            "confidence": {
+                                                              "France": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_grimontii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "OXY-4-1_VUS88333-CABGGV010000008-20326",
+                                                        "node_attrs": {
+                                                          "div": 0.0785,
+                                                          "num_date": {
+                                                            "value": 2019.505,
+                                                            "confidence": [
+                                                              2019.505,
+                                                              2019.505
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          },
+                                                          "allele": {
+                                                            "value": "OXY-4-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "France",
+                                                            "confidence": {
+                                                              "France": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_pasteurii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000025",
+                                                    "node_attrs": {
+                                                      "div": 0.0785,
+                                                      "num_date": {
+                                                        "value": 2019.456,
+                                                        "confidence": [
+                                                          2019.368,
+                                                          2019.505
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "France",
+                                                        "confidence": {
+                                                          "France": 1.0
+                                                        },
+                                                        "entropy": 4.27e-06
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "OXY-4-1_VUS73181-CABGGR010000001-1101767",
+                                                        "node_attrs": {
+                                                          "div": 0.0785,
+                                                          "num_date": {
+                                                            "value": 2019.505,
+                                                            "confidence": [
+                                                              2019.505,
+                                                              2019.505
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          },
+                                                          "allele": {
+                                                            "value": "OXY-4-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "France",
+                                                            "confidence": {
+                                                              "France": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_pasteurii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "OXY-4-1_VUS23132-CABGGO010000001-372998",
+                                                        "node_attrs": {
+                                                          "div": 0.0785,
+                                                          "num_date": {
+                                                            "value": 2019.505,
+                                                            "confidence": [
+                                                              2019.505,
+                                                              2019.505
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          },
+                                                          "allele": {
+                                                            "value": "OXY-4-1"
+                                                          },
+                                                          "country": {
+                                                            "value": "France",
+                                                            "confidence": {
+                                                              "France": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_pasteurii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "name": "NODE_0000026",
+                                                "node_attrs": {
+                                                  "div": 0.0785,
+                                                  "num_date": {
+                                                    "value": 2019.466,
+                                                    "confidence": [
+                                                      2019.317,
+                                                      2020.17
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "France",
+                                                    "confidence": {
+                                                      "France": 0.499,
+                                                      "Ireland": 0.24,
+                                                      "": 0.224,
+                                                      "Hong Kong": 0.0274,
+                                                      "USA": 0.00479,
+                                                      "Australia": 0.0024
+                                                    },
+                                                    "entropy": 1.185
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "OXY-4-1_WVG98100-CP143095-4830999",
+                                                    "node_attrs": {
+                                                      "div": 0.0785,
+                                                      "num_date": {
+                                                        "value": 2020.001,
+                                                        "confidence": [
+                                                          2020.001,
+                                                          2020.625
+                                                        ]
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      },
+                                                      "allele": {
+                                                        "value": "OXY-4-1"
+                                                      },
+                                                      "country": {
+                                                        "value": "Ireland",
+                                                        "confidence": {
+                                                          "Ireland": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location from metadata"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Klebsiella_pasteurii"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000027",
+                                                    "node_attrs": {
+                                                      "div": 0.0785,
+                                                      "num_date": {
+                                                        "value": 2020.303,
+                                                        "confidence": [
+                                                          2019.882,
+                                                          2020.343
+                                                        ]
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "OXY-4-1_MDS7871226-JAQSLB010000006-295692",
+                                                        "node_attrs": {
+                                                          "div": 0.0785,
+                                                          "num_date": {
+                                                            "value": 2020.343,
+                                                            "confidence": [
+                                                              2020.343,
+                                                              2020.343
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "allele": {
+                                                            "value": "OXY-4-1"
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location of submitter"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Klebsiella_pasteurii"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000028",
+                                                        "node_attrs": {
+                                                          "div": 0.0785,
+                                                          "num_date": {
+                                                            "value": 2020.407,
+                                                            "confidence": [
+                                                              2020.182,
+                                                              2020.484
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "Hong Kong",
+                                                            "confidence": {
+                                                              "Hong Kong": 0.512,
+                                                              "": 0.321,
+                                                              "USA": 0.0516,
+                                                              "France": 0.0445,
+                                                              "Australia": 0.0424,
+                                                              "Ireland": 0.0214,
+                                                              "India": 0.00236,
+                                                              "China": 0.0017
+                                                            },
+                                                            "entropy": 1.263
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "OXY-4-1_QZY78763-CP082360-4430818",
+                                                            "node_attrs": {
+                                                              "div": 0.0785,
+                                                              "num_date": {
+                                                                "value": 2020.491,
+                                                                "confidence": [
+                                                                  2020.417,
+                                                                  2020.496
+                                                                ]
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Collection date from metadata"
+                                                              },
+                                                              "allele": {
+                                                                "value": "OXY-4-1"
+                                                              },
+                                                              "country": {
+                                                                "value": "Hong Kong",
+                                                                "confidence": {
+                                                                  "Hong Kong": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location from metadata"
+                                                              },
+                                                              "organism": {
+                                                                "value": "Klebsiella_sp._CTHL.F3a"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000029",
+                                                            "node_attrs": {
+                                                              "div": 0.0785,
+                                                              "num_date": {
+                                                                "value": 2021.925,
+                                                                "confidence": [
+                                                                  2021.2,
+                                                                  2021.944
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "Australia",
+                                                                "confidence": {
+                                                                  "Australia": 0.452,
+                                                                  "USA": 0.431,
+                                                                  "Hong Kong": 0.0425,
+                                                                  "": 0.0305,
+                                                                  "India": 0.0214,
+                                                                  "China": 0.00802,
+                                                                  "South Korea": 0.00522,
+                                                                  "France": 0.00449,
+                                                                  "Ireland": 0.00249
+                                                                },
+                                                                "entropy": 1.165
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "OXY-4-1_UHD02089-CP089403-2961427",
+                                                                "node_attrs": {
+                                                                  "div": 0.0785,
+                                                                  "num_date": {
+                                                                    "value": 2021.944,
+                                                                    "confidence": [
+                                                                      2021.944,
+                                                                      2021.944
+                                                                    ]
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Submission date"
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "OXY-4-1"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Australia",
+                                                                    "confidence": {
+                                                                      "Australia": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location of submitter"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Klebsiella_pasteurii"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000030",
+                                                                "node_attrs": {
+                                                                  "div": 0.0785,
+                                                                  "num_date": {
+                                                                    "value": 2022.001,
+                                                                    "confidence": [
+                                                                      2021.67,
+                                                                      2022.191
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "USA",
+                                                                    "confidence": {
+                                                                      "USA": 0.874,
+                                                                      "India": 0.0466,
+                                                                      "Australia": 0.0444,
+                                                                      "China": 0.0149,
+                                                                      "South Korea": 0.0107,
+                                                                      "Hong Kong": 0.00412,
+                                                                      "": 0.00362
+                                                                    },
+                                                                    "entropy": 0.563
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "OXY-4-1_MDC0753606-JAQNDH010000001-194877",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0785,
+                                                                      "num_date": {
+                                                                        "value": 2022.065,
+                                                                        "confidence": [
+                                                                          2022.001,
+                                                                          2022.999
+                                                                        ]
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Collection date from metadata"
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "OXY-4-1"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location from metadata"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Klebsiella_pasteurii"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000031",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0785,
+                                                                      "num_date": {
+                                                                        "value": 2022.176,
+                                                                        "confidence": [
+                                                                          2021.962,
+                                                                          2022.267
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 0.786,
+                                                                          "India": 0.127,
+                                                                          "China": 0.0363,
+                                                                          "South Korea": 0.0293,
+                                                                          "Australia": 0.0177,
+                                                                          "": 0.00177,
+                                                                          "Hong Kong": 0.00168
+                                                                        },
+                                                                        "entropy": 0.777
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "OXY-4-1_MFP7353455-JAWVOK010000002-588377",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0785,
+                                                                          "num_date": {
+                                                                            "value": 2022.267,
+                                                                            "confidence": [
+                                                                              2022.267,
+                                                                              2022.267
+                                                                            ]
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Collection date from metadata"
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "OXY-4-1"
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "India",
+                                                                            "confidence": {
+                                                                              "India": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location from metadata"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Klebsiella_pasteurii"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "NODE_0000032",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0785,
+                                                                          "num_date": {
+                                                                            "value": 2022.673,
+                                                                            "confidence": [
+                                                                              2022.243,
+                                                                              2022.708
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "USA",
+                                                                            "confidence": {
+                                                                              "USA": 0.721,
+                                                                              "China": 0.127,
+                                                                              "South Korea": 0.118,
+                                                                              "India": 0.0291,
+                                                                              "Australia": 0.00404
+                                                                            },
+                                                                            "entropy": 0.89
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "name": "OXY-4-1_MEQ0256236-JBEAIB010000067-188324",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0785,
+                                                                              "num_date": {
+                                                                                "value": 2022.708,
+                                                                                "confidence": [
+                                                                                  2022.708,
+                                                                                  2022.708
+                                                                                ]
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Collection date from metadata"
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "OXY-4-1"
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "South Korea",
+                                                                                "confidence": {
+                                                                                  "South Korea": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location from metadata"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Klebsiella_sp._CN_Kp116"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "name": "NODE_0000033",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0785,
+                                                                              "num_date": {
+                                                                                "value": 2022.985,
+                                                                                "confidence": [
+                                                                                  2022.563,
+                                                                                  2023.029
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "USA",
+                                                                                "confidence": {
+                                                                                  "USA": 0.698,
+                                                                                  "China": 0.298,
+                                                                                  "South Korea": 0.00317
+                                                                                },
+                                                                                "entropy": 0.64
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            },
+                                                                            "children": [
+                                                                              {
+                                                                                "name": "OXY-4-1_MEQ5192735-JBEEVD010000003-304114",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.0785,
+                                                                                  "num_date": {
+                                                                                    "value": 2023.001,
+                                                                                    "confidence": [
+                                                                                      2023.001,
+                                                                                      2023.635
+                                                                                    ]
+                                                                                  },
+                                                                                  "dateAccuracy": {
+                                                                                    "value": "Collection date from metadata"
+                                                                                  },
+                                                                                  "allele": {
+                                                                                    "value": "OXY-4-1"
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "China",
+                                                                                    "confidence": {
+                                                                                      "China": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
+                                                                                  },
+                                                                                  "countryAccuracy": {
+                                                                                    "value": "Geographic location of submitter"
+                                                                                  },
+                                                                                  "organism": {
+                                                                                    "value": "Klebsiella_pasteurii"
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "name": "NODE_0000034",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.0785,
+                                                                                  "num_date": {
+                                                                                    "value": 2022.985,
+                                                                                    "confidence": [
+                                                                                      2022.771,
+                                                                                      2023.045
+                                                                                    ]
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "USA",
+                                                                                    "confidence": {
+                                                                                      "USA": 0.712,
+                                                                                      "China": 0.287
+                                                                                    },
+                                                                                    "entropy": 0.605
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                },
+                                                                                "children": [
+                                                                                  {
+                                                                                    "name": "OXY-4-1_MDC0691467-JAQNDI010000001-475143",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.0785,
+                                                                                      "num_date": {
+                                                                                        "value": 2023.045,
+                                                                                        "confidence": [
+                                                                                          2023.045,
+                                                                                          2023.045
+                                                                                        ]
+                                                                                      },
+                                                                                      "dateAccuracy": {
+                                                                                        "value": "Submission date"
+                                                                                      },
+                                                                                      "allele": {
+                                                                                        "value": "OXY-4-1"
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "USA",
+                                                                                        "confidence": {
+                                                                                          "USA": 1.0
+                                                                                        },
+                                                                                        "entropy": -1e-12
+                                                                                      },
+                                                                                      "countryAccuracy": {
+                                                                                        "value": "Geographic location of submitter"
+                                                                                      },
+                                                                                      "organism": {
+                                                                                        "value": "Klebsiella_pasteurii"
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    }
+                                                                                  },
+                                                                                  {
+                                                                                    "name": "NODE_0000035",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.0785,
+                                                                                      "num_date": {
+                                                                                        "value": 2023.035,
+                                                                                        "confidence": [
+                                                                                          2022.938,
+                                                                                          2023.124
+                                                                                        ]
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "USA",
+                                                                                        "confidence": {
+                                                                                          "USA": 0.67,
+                                                                                          "China": 0.318,
+                                                                                          "": 0.0104
+                                                                                        },
+                                                                                        "entropy": 0.688
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    },
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "name": "OXY-4-1_MDV1076638-JAWIAT010000005-43062",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.0785,
+                                                                                          "num_date": {
+                                                                                            "value": 2023.136,
+                                                                                            "confidence": [
+                                                                                              2023.086,
+                                                                                              2023.16
+                                                                                            ]
+                                                                                          },
+                                                                                          "dateAccuracy": {
+                                                                                            "value": "Collection date from metadata"
+                                                                                          },
+                                                                                          "allele": {
+                                                                                            "value": "OXY-4-1"
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "China",
+                                                                                            "confidence": {
+                                                                                              "China": 1.0
+                                                                                            },
+                                                                                            "entropy": -1e-12
+                                                                                          },
+                                                                                          "countryAccuracy": {
+                                                                                            "value": "Geographic location of submitter"
+                                                                                          },
+                                                                                          "organism": {
+                                                                                            "value": "Klebsiella_pasteurii"
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        }
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "NODE_0000036",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.0785,
+                                                                                          "num_date": {
+                                                                                            "value": 2023.067,
+                                                                                            "confidence": [
+                                                                                              2023.015,
+                                                                                              2023.328
+                                                                                            ]
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "USA",
+                                                                                            "confidence": {
+                                                                                              "USA": 0.668,
+                                                                                              "": 0.161,
+                                                                                              "China": 0.157,
+                                                                                              "JPN": 0.0112,
+                                                                                              "Ireland": 0.00251
+                                                                                            },
+                                                                                            "entropy": 0.928
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        },
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "name": "OXY-4-1_MDW2717088-JAWPBP010000012-34427",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0785,
+                                                                                              "num_date": {
+                                                                                                "value": 2023.349,
+                                                                                                "confidence": [
+                                                                                                  2023.349,
+                                                                                                  2023.349
+                                                                                                ]
+                                                                                              },
+                                                                                              "dateAccuracy": {
+                                                                                                "value": "Collection date from metadata"
+                                                                                              },
+                                                                                              "allele": {
+                                                                                                "value": "OXY-4-1"
+                                                                                              },
+                                                                                              "countryAccuracy": {
+                                                                                                "value": "Geographic location of submitter"
+                                                                                              },
+                                                                                              "organism": {
+                                                                                                "value": "Klebsiella_pasteurii"
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "name": "NODE_0000037",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0785,
+                                                                                              "num_date": {
+                                                                                                "value": 2024.485,
+                                                                                                "confidence": [
+                                                                                                  2023.364,
+                                                                                                  2024.493
+                                                                                                ]
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "USA",
+                                                                                                "confidence": {
+                                                                                                  "USA": 0.764,
+                                                                                                  "JPN": 0.166,
+                                                                                                  "Ireland": 0.0339,
+                                                                                                  "China": 0.018,
+                                                                                                  "": 0.017
+                                                                                                },
+                                                                                                "entropy": 0.77
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            },
+                                                                                            "children": [
+                                                                                              {
+                                                                                                "name": "OXY-4-1_BFO33367-AP035775-4199828",
+                                                                                                "node_attrs": {
+                                                                                                  "div": 0.0785,
+                                                                                                  "num_date": {
+                                                                                                    "value": 2024.493,
+                                                                                                    "confidence": [
+                                                                                                      2024.493,
+                                                                                                      2024.493
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "dateAccuracy": {
+                                                                                                    "value": "Submission date"
+                                                                                                  },
+                                                                                                  "allele": {
+                                                                                                    "value": "OXY-4-1"
+                                                                                                  },
+                                                                                                  "country": {
+                                                                                                    "value": "JPN",
+                                                                                                    "confidence": {
+                                                                                                      "JPN": 1.0
+                                                                                                    },
+                                                                                                    "entropy": -1e-12
+                                                                                                  },
+                                                                                                  "countryAccuracy": {
+                                                                                                    "value": "Geographic location of submitter"
+                                                                                                  },
+                                                                                                  "organism": {
+                                                                                                    "value": "Klebsiella_pasteurii"
+                                                                                                  }
+                                                                                                },
+                                                                                                "branch_attrs": {
+                                                                                                  "mutations": {}
+                                                                                                }
+                                                                                              },
+                                                                                              {
+                                                                                                "name": "NODE_0000038",
+                                                                                                "node_attrs": {
+                                                                                                  "div": 0.0785,
+                                                                                                  "num_date": {
+                                                                                                    "value": 2024.485,
+                                                                                                    "confidence": [
+                                                                                                      2024.246,
+                                                                                                      2024.542
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "country": {
+                                                                                                    "value": "USA",
+                                                                                                    "confidence": {
+                                                                                                      "USA": 0.859,
+                                                                                                      "Ireland": 0.0724,
+                                                                                                      "JPN": 0.0558,
+                                                                                                      "China": 0.00636,
+                                                                                                      "": 0.00598
+                                                                                                    },
+                                                                                                    "entropy": 0.553
+                                                                                                  }
+                                                                                                },
+                                                                                                "branch_attrs": {
+                                                                                                  "mutations": {}
+                                                                                                },
+                                                                                                "children": [
+                                                                                                  {
+                                                                                                    "name": "OXY-4-1_XOT15577-CP181306-4344293",
+                                                                                                    "node_attrs": {
+                                                                                                      "div": 0.0785,
+                                                                                                      "num_date": {
+                                                                                                        "value": 2025.045,
+                                                                                                        "confidence": [
+                                                                                                          2025.045,
+                                                                                                          2025.045
+                                                                                                        ]
+                                                                                                      },
+                                                                                                      "dateAccuracy": {
+                                                                                                        "value": "Submission date"
+                                                                                                      },
+                                                                                                      "allele": {
+                                                                                                        "value": "OXY-4-1"
+                                                                                                      },
+                                                                                                      "country": {
+                                                                                                        "value": "Ireland",
+                                                                                                        "confidence": {
+                                                                                                          "Ireland": 1.0
+                                                                                                        },
+                                                                                                        "entropy": -1e-12
+                                                                                                      },
+                                                                                                      "countryAccuracy": {
+                                                                                                        "value": "Geographic location of submitter"
+                                                                                                      },
+                                                                                                      "organism": {
+                                                                                                        "value": "Klebsiella_pasteurii"
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "branch_attrs": {
+                                                                                                      "mutations": {}
+                                                                                                    }
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "name": "OXY-4-1_XED35749-CP166204-4412857",
+                                                                                                    "node_attrs": {
+                                                                                                      "div": 0.0785,
+                                                                                                      "num_date": {
+                                                                                                        "value": 2024.542,
+                                                                                                        "confidence": [
+                                                                                                          2024.542,
+                                                                                                          2024.542
+                                                                                                        ]
+                                                                                                      },
+                                                                                                      "dateAccuracy": {
+                                                                                                        "value": "Submission date"
+                                                                                                      },
+                                                                                                      "allele": {
+                                                                                                        "value": "OXY-4-1"
+                                                                                                      },
+                                                                                                      "country": {
+                                                                                                        "value": "USA",
+                                                                                                        "confidence": {
+                                                                                                          "USA": 1.0
+                                                                                                        },
+                                                                                                        "entropy": -1e-12
+                                                                                                      },
+                                                                                                      "countryAccuracy": {
+                                                                                                        "value": "Geographic location of submitter"
+                                                                                                      },
+                                                                                                      "organism": {
+                                                                                                        "value": "Klebsiella_pasteurii"
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "branch_attrs": {
+                                                                                                      "mutations": {}
+                                                                                                    }
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

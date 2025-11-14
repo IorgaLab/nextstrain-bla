@@ -1,0 +1,1223 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A LUT beta-lactamases",
+    "updated": "2025-11-05",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 891,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC11842_05229": {
+        "end": 891,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Pakistan": {
+            "latitude": 30.0,
+            "longitude": 70.0
+          },
+          "Saudi Arabia": {
+            "latitude": 25.0,
+            "longitude": 45.0
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1947.205,
+        "confidence": [
+          1934.318,
+          1958.089
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.998,
+          "China": 0.00172
+        },
+        "entropy": 0.0137
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 1.35e-21,
+          "num_date": {
+            "value": 1949.734,
+            "confidence": [
+              1941.139,
+              1962.853
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.997,
+              "China": 0.00311
+            },
+            "entropy": 0.0223
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "LUT-5_ACN76565-FJ750575-1",
+            "node_attrs": {
+              "div": 0.00677,
+              "num_date": {
+                "value": 2009.119,
+                "confidence": [
+                  2009.119,
+                  2009.119
+                ]
+              },
+              "allele": {
+                "value": "LUT-5"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_luteola"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G129A",
+                  "C249T",
+                  "G266A",
+                  "C339A",
+                  "C486A",
+                  "C585T",
+                  "G861A"
+                ],
+                "NCTC11842_05229": [
+                  "R89Q"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC11842_05229: R89Q"
+              }
+            }
+          },
+          {
+            "name": "LUT-7_AYN96462-CP033105-4786970",
+            "node_attrs": {
+              "div": 0.0159,
+              "num_date": {
+                "value": 2014.747,
+                "confidence": [
+                  2014.675,
+                  2014.747
+                ]
+              },
+              "allele": {
+                "value": "LUT-7"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_sp._LTJR-52"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G15T",
+                  "C359T",
+                  "G427A",
+                  "C450G",
+                  "C525T",
+                  "G560A",
+                  "A711C",
+                  "A723G",
+                  "G779A",
+                  "A821C",
+                  "G890A"
+                ],
+                "NCTC11842_05229": [
+                  "A120V",
+                  "V143M",
+                  "S187N",
+                  "R260H",
+                  "Q274P"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC11842_05229: A120V, V143M, S187N, R260H, Q274P"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000014",
+        "node_attrs": {
+          "div": 0.00113,
+          "num_date": {
+            "value": 1956.477,
+            "confidence": [
+              1946.903,
+              1967.577
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 1.0
+            },
+            "entropy": 0.000529
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G358T",
+              "G381A"
+            ],
+            "NCTC11842_05229": [
+              "A120S"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC11842_05229: A120S"
+          }
+        },
+        "children": [
+          {
+            "name": "LUT-6_ACN76566-FJ750576-1",
+            "node_attrs": {
+              "div": 0.0079,
+              "num_date": {
+                "value": 2009.119,
+                "confidence": [
+                  2009.119,
+                  2009.119
+                ]
+              },
+              "allele": {
+                "value": "LUT-6"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "organism": {
+                "value": "Pseudomonas_luteola"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C249T",
+                  "C396T",
+                  "A522G",
+                  "C585T",
+                  "G604A",
+                  "G690A",
+                  "A818G",
+                  "G834T"
+                ],
+                "NCTC11842_05229": [
+                  "G202S",
+                  "N273S"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC11842_05229: G202S, N273S"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000013",
+            "node_attrs": {
+              "div": 0.0079,
+              "num_date": {
+                "value": 1977.777,
+                "confidence": [
+                  1967.35,
+                  1986.536
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": 0.00063
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G178A",
+                  "C477T",
+                  "A510G",
+                  "G666A"
+                ],
+                "NCTC11842_05229": [
+                  "D60N"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC11842_05229: D60N"
+              }
+            },
+            "children": [
+              {
+                "name": "LUT-4_ACN76564-FJ750574-1",
+                "node_attrs": {
+                  "div": 0.0124,
+                  "num_date": {
+                    "value": 2009.119,
+                    "confidence": [
+                      2009.119,
+                      2009.119
+                    ]
+                  },
+                  "allele": {
+                    "value": "LUT-4"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "organism": {
+                    "value": "Pseudomonas_luteola"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T21C",
+                      "T99C",
+                      "G729A",
+                      "A818G"
+                    ],
+                    "NCTC11842_05229": [
+                      "N273S"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC11842_05229: N273S"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000011",
+                "node_attrs": {
+                  "div": 0.0102,
+                  "num_date": {
+                    "value": 1987.455,
+                    "confidence": [
+                      1979.611,
+                      1992.617
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.997,
+                      "USA": 0.00309
+                    },
+                    "entropy": 0.0209
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G156A",
+                      "G297A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000012",
+                    "node_attrs": {
+                      "div": 0.0147,
+                      "num_date": {
+                        "value": 2008.39,
+                        "confidence": [
+                          2003.067,
+                          2009.119
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.992,
+                          "USA": 0.008
+                        },
+                        "entropy": 0.0467
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T190C",
+                          "C249T",
+                          "C305T",
+                          "A846G"
+                        ],
+                        "NCTC11842_05229": [
+                          "T102M"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC11842_05229: T102M"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "LUT-3_SER30462-FOEV01000016-91210",
+                        "node_attrs": {
+                          "div": 0.0147,
+                          "num_date": {
+                            "value": 2016.821,
+                            "confidence": [
+                              2016.821,
+                              2016.821
+                            ]
+                          },
+                          "allele": {
+                            "value": "LUT-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_luteola"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "LUT-3_ACN76563-FJ750573-1",
+                        "node_attrs": {
+                          "div": 0.0147,
+                          "num_date": {
+                            "value": 2009.119,
+                            "confidence": [
+                              2009.119,
+                              2009.119
+                            ]
+                          },
+                          "allele": {
+                            "value": "LUT-3"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_luteola"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.0113,
+                      "num_date": {
+                        "value": 1994.393,
+                        "confidence": [
+                          1992.478,
+                          1994.393
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.994,
+                          "USA": 0.0059
+                        },
+                        "entropy": 0.0362
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A136C"
+                        ],
+                        "NCTC11842_05229": [
+                          "K46Q"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC11842_05229: K46Q"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "UAUF01000014.1",
+                        "node_attrs": {
+                          "div": 0.0113,
+                          "num_date": {
+                            "value": 1994.393,
+                            "confidence": [
+                              1978.05,
+                              2150.54
+                            ]
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 0.986,
+                              "USA": 0.00797,
+                              "China": 0.00142,
+                              "United Kingdom": 0.00141
+                            },
+                            "entropy": 0.0898
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "LUT-1_SPZ13485-UAUF01000014-1603139",
+                        "node_attrs": {
+                          "div": 0.0113,
+                          "num_date": {
+                            "value": 1994.393,
+                            "confidence": [
+                              1978.05,
+                              2150.54
+                            ]
+                          },
+                          "allele": {
+                            "value": "LUT-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_luteola"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "LUT-1_MFK4135232-JBJDQB010000019-18411",
+                        "node_attrs": {
+                          "div": 0.0113,
+                          "num_date": {
+                            "value": 1994.393,
+                            "confidence": [
+                              1994.393,
+                              1994.393
+                            ]
+                          },
+                          "allele": {
+                            "value": "LUT-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_luteola"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "LUT-1_AAU10324-AY695112-1",
+                        "node_attrs": {
+                          "div": 0.0124,
+                          "num_date": {
+                            "value": 2004.559,
+                            "confidence": [
+                              2004.559,
+                              2004.559
+                            ]
+                          },
+                          "allele": {
+                            "value": "LUT-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_luteola"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T561C"
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "name": "LUT-2_ACN76562-FJ750572-1",
+                        "node_attrs": {
+                          "div": 0.0147,
+                          "num_date": {
+                            "value": 2009.119,
+                            "confidence": [
+                              2009.119,
+                              2009.119
+                            ]
+                          },
+                          "allele": {
+                            "value": "LUT-2"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "organism": {
+                            "value": "Pseudomonas_luteola"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G37A",
+                              "G781A",
+                              "A846G"
+                            ],
+                            "NCTC11842_05229": [
+                              "A13T",
+                              "A261T"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC11842_05229: A13T, A261T"
+                          }
+                        }
+                      },
+                      {
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.0113,
+                          "num_date": {
+                            "value": 2002.749,
+                            "confidence": [
+                              1995.059,
+                              2008.375
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.968,
+                              "France": 0.0243,
+                              "Saudi Arabia": 0.00414,
+                              "Pakistan": 0.00248
+                            },
+                            "entropy": 0.165
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000008",
+                            "node_attrs": {
+                              "div": 0.0113,
+                              "num_date": {
+                                "value": 2013.221,
+                                "confidence": [
+                                  2004.56,
+                                  2013.221
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": 0.000522
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "LUT-1_ENA29232-AQFP01000014-88765",
+                                "node_attrs": {
+                                  "div": 0.0113,
+                                  "num_date": {
+                                    "value": 2013.221,
+                                    "confidence": [
+                                      2013.221,
+                                      2013.221
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "LUT-1"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_sp._HPB0071"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "LUT-1_ENA29232-KI517368-144915",
+                                "node_attrs": {
+                                  "div": 0.0113,
+                                  "num_date": {
+                                    "value": 2013.221,
+                                    "confidence": [
+                                      2013.221,
+                                      2013.221
+                                    ]
+                                  },
+                                  "allele": {
+                                    "value": "LUT-1"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "organism": {
+                                    "value": "Pseudomonas_sp._HPB0071"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000009",
+                            "node_attrs": {
+                              "div": 0.0113,
+                              "num_date": {
+                                "value": 2008.78,
+                                "confidence": [
+                                  2001.715,
+                                  2013.065
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.96,
+                                  "Saudi Arabia": 0.0177,
+                                  "France": 0.0103,
+                                  "Pakistan": 0.0091,
+                                  "Germany": 0.00265
+                                },
+                                "entropy": 0.216
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "NODE_0000010",
+                                "node_attrs": {
+                                  "div": 0.0113,
+                                  "num_date": {
+                                    "value": 2013.061,
+                                    "confidence": [
+                                      2007.753,
+                                      2014.123
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Saudi Arabia",
+                                    "confidence": {
+                                      "Saudi Arabia": 0.999
+                                    },
+                                    "entropy": 0.0068
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "LUT-1_XWO42906-CP069263-651939",
+                                    "node_attrs": {
+                                      "div": 0.0113,
+                                      "num_date": {
+                                        "value": 2014.086,
+                                        "confidence": [
+                                          2014.086,
+                                          2014.153
+                                        ]
+                                      },
+                                      "allele": {
+                                        "value": "LUT-1"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Saudi Arabia",
+                                        "confidence": {
+                                          "Saudi Arabia": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_luteola"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "LUT-1_XWO38151-CP069257-651857",
+                                    "node_attrs": {
+                                      "div": 0.0113,
+                                      "num_date": {
+                                        "value": 2014.086,
+                                        "confidence": [
+                                          2014.086,
+                                          2014.153
+                                        ]
+                                      },
+                                      "allele": {
+                                        "value": "LUT-1"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Saudi Arabia",
+                                        "confidence": {
+                                          "Saudi Arabia": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_sp._JZ114"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "NODE_0000015",
+                                "node_attrs": {
+                                  "div": 0.0113,
+                                  "num_date": {
+                                    "value": 2013.124,
+                                    "confidence": [
+                                      2006.279,
+                                      2015.376
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.961,
+                                      "Pakistan": 0.0229,
+                                      "Germany": 0.00661,
+                                      "Saudi Arabia": 0.00548,
+                                      "France": 0.00379
+                                    },
+                                    "entropy": 0.208
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "LUT-1_RRW44976-RHRU01000013-91395",
+                                    "node_attrs": {
+                                      "div": 0.0113,
+                                      "num_date": {
+                                        "value": 2016.499,
+                                        "confidence": [
+                                          2016.499,
+                                          2016.572
+                                        ]
+                                      },
+                                      "allele": {
+                                        "value": "LUT-1"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "country": {
+                                        "value": "Pakistan",
+                                        "confidence": {
+                                          "Pakistan": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "organism": {
+                                        "value": "Pseudomonas_luteola"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000016",
+                                    "node_attrs": {
+                                      "div": 0.0113,
+                                      "num_date": {
+                                        "value": 2013.978,
+                                        "confidence": [
+                                          2011.513,
+                                          2016.914
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.973,
+                                          "Germany": 0.0177,
+                                          "Pakistan": 0.00656,
+                                          "Saudi Arabia": 0.00138,
+                                          "France": 0.00119
+                                        },
+                                        "entropy": 0.148
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "LUT-1_SHJ60423-FQYS01000018-66536",
+                                        "node_attrs": {
+                                          "div": 0.0113,
+                                          "num_date": {
+                                            "value": 2016.914,
+                                            "confidence": [
+                                              2016.914,
+                                              2016.914
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "LUT-1"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_luteola"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "LUT-1_MBF8642846-JADMCD010000012-54215",
+                                        "node_attrs": {
+                                          "div": 0.0113,
+                                          "num_date": {
+                                            "value": 2019.001,
+                                            "confidence": [
+                                              2019.001,
+                                              2019.897
+                                            ]
+                                          },
+                                          "allele": {
+                                            "value": "LUT-1"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "country": {
+                                            "value": "Germany",
+                                            "confidence": {
+                                              "Germany": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "organism": {
+                                            "value": "Pseudomonas_luteola"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

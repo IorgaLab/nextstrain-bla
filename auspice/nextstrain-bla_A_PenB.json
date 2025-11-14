@@ -1,0 +1,3048 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A PenB beta-lactamases",
+    "updated": "2025-11-10",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 939,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC13417_04899": {
+        "end": 939,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Taiwan",
+            "#4784C7"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "Puerto Rico",
+            "#E68234"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "Puerto Rico": {
+            "latitude": 18.2459121,
+            "longitude": -66.4164147
+          },
+          "Nigeria": {
+            "latitude": 10.0,
+            "longitude": 8.0
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "Taiwan": {
+            "latitude": 23.8169,
+            "longitude": 121.031365
+          },
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Kuwait": {
+            "latitude": 29.452987,
+            "longitude": 47.447194
+          },
+          "India": {
+            "latitude": 21.077353,
+            "longitude": 78.723951
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1982.371,
+        "confidence": [
+          1978.948,
+          1986.197
+        ]
+      },
+      "country": {
+        "value": "USA",
+        "confidence": {
+          "USA": 0.111,
+          "Brazil": 0.101,
+          "India": 0.0976,
+          "Puerto Rico": 0.0884,
+          "United Kingdom": 0.088,
+          "Kuwait": 0.0873,
+          "Germany": 0.0862,
+          "France": 0.0861,
+          "Taiwan": 0.0854,
+          "Nigeria": 0.0849,
+          "Russia": 0.084
+        },
+        "entropy": 2.394
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000011",
+        "node_attrs": {
+          "div": 0.0886,
+          "num_date": {
+            "value": 2009.794,
+            "confidence": [
+              2009.135,
+              2009.979
+            ]
+          },
+          "country": {
+            "value": "USA",
+            "confidence": {
+              "USA": 0.964,
+              "Nigeria": 0.00536,
+              "India": 0.00521,
+              "France": 0.00438,
+              "Russia": 0.00373,
+              "Germany": 0.00352,
+              "Kuwait": 0.00343,
+              "Brazil": 0.00312,
+              "Taiwan": 0.00302,
+              "Puerto Rico": 0.00221,
+              "United Kingdom": 0.00214
+            },
+            "entropy": 0.237
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C6T",
+              "A16C",
+              "T21C",
+              "T35G",
+              "G45C",
+              "C63G",
+              "C68T",
+              "C78T",
+              "G84A",
+              "G86C",
+              "A89C",
+              "C93T",
+              "G94C",
+              "T96G",
+              "C101A",
+              "C152T",
+              "G157T",
+              "A159C",
+              "A162G",
+              "G163A",
+              "A166T",
+              "C169T",
+              "C171T",
+              "C174G",
+              "A176C",
+              "T177G",
+              "A183G",
+              "A188C",
+              "C189G",
+              "T201C",
+              "G225T",
+              "G238C",
+              "T239G",
+              "A241G",
+              "T242C",
+              "C243G",
+              "G244T",
+              "A245T",
+              "G257A",
+              "C264T",
+              "T279C",
+              "T300C",
+              "C336G",
+              "C340T",
+              "A345G",
+              "C356T",
+              "T360C",
+              "A361G",
+              "C362G",
+              "A364C",
+              "G366A",
+              "C372T",
+              "G393A",
+              "A398G",
+              "G399C",
+              "T405C",
+              "G412A",
+              "G414C",
+              "C417A",
+              "G423C",
+              "G426C",
+              "C429G",
+              "G430C",
+              "C431A",
+              "G432A",
+              "C433T",
+              "G441A",
+              "A445G",
+              "T465C",
+              "G480C",
+              "C481G",
+              "T482C",
+              "G489A",
+              "G492C",
+              "C495T",
+              "C498T",
+              "C501A",
+              "T505G",
+              "C513G",
+              "C519G",
+              "A521T",
+              "C543T",
+              "G552C",
+              "A561C",
+              "T579C",
+              "G591C",
+              "C598G",
+              "C599T",
+              "C633A",
+              "A637C",
+              "A639G",
+              "C642G",
+              "T644C",
+              "G648C",
+              "A649G",
+              "C650T",
+              "C657T",
+              "A663G",
+              "G670C",
+              "G687A",
+              "G696A",
+              "T735C",
+              "G748C",
+              "A753C",
+              "G755C",
+              "A757C",
+              "C758A",
+              "C759G",
+              "C762G",
+              "G764C",
+              "T777C",
+              "G792A",
+              "C810T",
+              "C813G",
+              "G822C",
+              "A823C",
+              "G846C",
+              "G864A",
+              "A865G",
+              "G869A",
+              "A870G",
+              "G871C",
+              "T876A",
+              "C880A",
+              "G881A",
+              "A886C",
+              "T891G",
+              "T904G",
+              "G906T",
+              "T908C",
+              "T920C",
+              "C921G",
+              "C923T",
+              "G924C",
+              "C925G",
+              "A926C",
+              "G935C"
+            ],
+            "NCTC13417_04899": [
+              "K6Q",
+              "L12R",
+              "A23V",
+              "R29P",
+              "Q30P",
+              "A32P",
+              "P34Q",
+              "A51V",
+              "A53S",
+              "A55T",
+              "T56S",
+              "L57F",
+              "D59A",
+              "D63A",
+              "V80R",
+              "I81A",
+              "E82L",
+              "G86D",
+              "T119M",
+              "T121G",
+              "K122Q",
+              "E133G",
+              "A138T",
+              "A144Q",
+              "T149A",
+              "L161A",
+              "S169A",
+              "Y174F",
+              "P200V",
+              "I213L",
+              "V215A",
+              "T217V",
+              "A224P",
+              "A250P",
+              "W252S",
+              "T253Q",
+              "G255A",
+              "T275P",
+              "T289A",
+              "R290Q",
+              "A291P",
+              "D292E",
+              "R294K",
+              "K296Q",
+              "D297E",
+              "S302A",
+              "V303A",
+              "V307A",
+              "A308V",
+              "Q309A",
+              "G312A"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC13417_04899: K6Q, L12R, A23V, R29P, Q30P, A32P, P34Q, A51V, A53S, A55T, T56S, L57F, D59A, D63A, V80R, I81A, E82L, G86D, T119M, T121G, K122Q, E133G, A138T, A144Q, T149A, L161A, S169A, Y174F, P200V, I213L, V215A, T217V, A224P, A250P, W252S, T253Q, G255A, T275P, T289A, R290Q, A291P, D292E, R294K, K296Q, D297E, S302A, V303A, V307A, A308V, Q309A, G312A"
+          }
+        },
+        "children": [
+          {
+            "name": "PenB-23_AOK08050-CP013438-1706861",
+            "node_attrs": {
+              "div": 0.0886,
+              "num_date": {
+                "value": 2009.997,
+                "confidence": [
+                  2009.001,
+                  2009.999
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "PenB-23"
+              },
+              "organism": {
+                "value": "Burkholderia_latens"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "PenB-23_MCA8310987-JAIZSC010000019-94742",
+            "node_attrs": {
+              "div": 0.0886,
+              "num_date": {
+                "value": 2014.001,
+                "confidence": [
+                  2014.001,
+                  2014.899
+                ]
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "PenB-23"
+              },
+              "organism": {
+                "value": "Burkholderia_sp._AU28942"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000007",
+        "node_attrs": {
+          "div": 0.0827,
+          "num_date": {
+            "value": 2004.494,
+            "confidence": [
+              2003.592,
+              2004.652
+            ]
+          },
+          "country": {
+            "value": "India",
+            "confidence": {
+              "India": 0.428,
+              "France": 0.378,
+              "United Kingdom": 0.142,
+              "USA": 0.0152,
+              "Brazil": 0.0101,
+              "Kuwait": 0.00452,
+              "Nigeria": 0.00447,
+              "Puerto Rico": 0.00439,
+              "Germany": 0.00431,
+              "Taiwan": 0.00425,
+              "Russia": 0.00422
+            },
+            "entropy": 1.261
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000005",
+            "node_attrs": {
+              "div": 0.0827,
+              "num_date": {
+                "value": 2005.779,
+                "confidence": [
+                  2004.899,
+                  2006.301
+                ]
+              },
+              "country": {
+                "value": "India",
+                "confidence": {
+                  "India": 0.886,
+                  "France": 0.0741,
+                  "United Kingdom": 0.0175,
+                  "USA": 0.00716,
+                  "Brazil": 0.00492,
+                  "Kuwait": 0.00186,
+                  "Nigeria": 0.0018,
+                  "Puerto Rico": 0.00179,
+                  "Germany": 0.00173,
+                  "Taiwan": 0.00171,
+                  "Russia": 0.0017
+                },
+                "entropy": 0.5
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000012",
+                "node_attrs": {
+                  "div": 0.0851,
+                  "num_date": {
+                    "value": 2006.765,
+                    "confidence": [
+                      2006.163,
+                      2006.97
+                    ]
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 0.991,
+                      "France": 0.00612
+                    },
+                    "entropy": 0.0653
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T465C",
+                      "C570T",
+                      "C664T",
+                      "C759G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PenB-4_MCW3605682-JAIMHV010000004-255759",
+                    "node_attrs": {
+                      "div": 0.0851,
+                      "num_date": {
+                        "value": 2010.001,
+                        "confidence": [
+                          2010.001,
+                          2010.899
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PenB-4"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_cenocepacia"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PenB-4_MCW5185757-NBWM02000001-312449",
+                    "node_attrs": {
+                      "div": 0.0851,
+                      "num_date": {
+                        "value": 2006.997,
+                        "confidence": [
+                          2006.001,
+                          2006.999
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PenB-4"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_cenocepacia"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.0859,
+                  "num_date": {
+                    "value": 2007.868,
+                    "confidence": [
+                      2006.853,
+                      2008.356
+                    ]
+                  },
+                  "country": {
+                    "value": "India",
+                    "confidence": {
+                      "India": 0.907,
+                      "France": 0.0363,
+                      "USA": 0.0125,
+                      "Brazil": 0.0116,
+                      "United Kingdom": 0.0088,
+                      "Kuwait": 0.00435,
+                      "Puerto Rico": 0.00417,
+                      "Nigeria": 0.00399,
+                      "Germany": 0.00388,
+                      "Taiwan": 0.00384,
+                      "Russia": 0.0038
+                    },
+                    "entropy": 0.49
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G120A",
+                      "A123G",
+                      "C618T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PenB-4_NDV70836-JAAEAM010000002-23554",
+                    "node_attrs": {
+                      "div": 0.0915,
+                      "num_date": {
+                        "value": 2018.001,
+                        "confidence": [
+                          2018.001,
+                          2018.899
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Brazil",
+                        "confidence": {
+                          "Brazil": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PenB-4"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_cenocepacia"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C9T",
+                          "G99A",
+                          "C171T",
+                          "G309T",
+                          "C378T",
+                          "T465C",
+                          "C759G"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000009",
+                    "node_attrs": {
+                      "div": 0.0911,
+                      "num_date": {
+                        "value": 2008.765,
+                        "confidence": [
+                          2008.383,
+                          2008.979
+                        ]
+                      },
+                      "country": {
+                        "value": "India",
+                        "confidence": {
+                          "India": 0.973,
+                          "France": 0.0101,
+                          "USA": 0.00407,
+                          "Brazil": 0.00338,
+                          "United Kingdom": 0.00235,
+                          "Kuwait": 0.00134,
+                          "Puerto Rico": 0.0013,
+                          "Nigeria": 0.00126,
+                          "Germany": 0.00123,
+                          "Taiwan": 0.00122,
+                          "Russia": 0.0012
+                        },
+                        "entropy": 0.18
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C138T",
+                          "A183G",
+                          "G363C"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PenB-4_MCW3658406-JAIMII010000006-254102",
+                        "node_attrs": {
+                          "div": 0.0911,
+                          "num_date": {
+                            "value": 2008.997,
+                            "confidence": [
+                              2008.001,
+                              2008.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "India",
+                            "confidence": {
+                              "India": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PenB-4"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PenB-4_MDS0804328-JANLBS010000035-34096",
+                        "node_attrs": {
+                          "div": 0.0911,
+                          "num_date": {
+                            "value": 2021.5,
+                            "confidence": [
+                              2021.5,
+                              2021.5
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "India",
+                            "confidence": {
+                              "India": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PenB-4"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.0857,
+              "num_date": {
+                "value": 2004.62,
+                "confidence": [
+                  2004.425,
+                  2004.894
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.454,
+                  "India": 0.34,
+                  "United Kingdom": 0.174,
+                  "USA": 0.0104,
+                  "Brazil": 0.00663,
+                  "Kuwait": 0.00269,
+                  "Nigeria": 0.00268,
+                  "Puerto Rico": 0.00257,
+                  "Germany": 0.00253,
+                  "Taiwan": 0.00249,
+                  "Russia": 0.00248
+                },
+                "entropy": 1.203
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "NODE_0000010",
+                "node_attrs": {
+                  "div": 0.0857,
+                  "num_date": {
+                    "value": 2007.863,
+                    "confidence": [
+                      2006.907,
+                      2008.34
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.995,
+                      "India": 0.00289
+                    },
+                    "entropy": 0.0404
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C780T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PenB-4_ACO36252-FJ386402-1",
+                    "node_attrs": {
+                      "div": 0.0857,
+                      "num_date": {
+                        "value": 2008.788,
+                        "confidence": [
+                          2008.788,
+                          2008.788
+                        ]
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PenB-4"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_cenocepacia"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.0868,
+                      "num_date": {
+                        "value": 2008.221,
+                        "confidence": [
+                          2007.713,
+                          2008.56
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": 0.0036
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C518T"
+                        ],
+                        "NCTC13417_04899": [
+                          "A173V"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC13417_04899: A173V"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PenB-3_ACO36251-FJ386401-1",
+                        "node_attrs": {
+                          "div": 0.0868,
+                          "num_date": {
+                            "value": 2008.788,
+                            "confidence": [
+                              2008.788,
+                              2008.788
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "PenB-3"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PenB-2_ACO36249-FJ386399-1",
+                        "node_attrs": {
+                          "div": 0.0921,
+                          "num_date": {
+                            "value": 2008.788,
+                            "confidence": [
+                              2008.788,
+                              2008.788
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "PenB-2"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G238A",
+                              "G412T",
+                              "A445G",
+                              "G544A",
+                              "A637C"
+                            ],
+                            "NCTC13417_04899": [
+                              "V80I",
+                              "A138S",
+                              "T149A",
+                              "A182T",
+                              "I213L"
+                            ]
+                          },
+                          "labels": {
+                            "aa": "NCTC13417_04899: V80I, A138S, T149A, A182T, I213L"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.0868,
+                  "num_date": {
+                    "value": 2004.851,
+                    "confidence": [
+                      2004.617,
+                      2004.946
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 0.447,
+                      "India": 0.293,
+                      "United Kingdom": 0.235,
+                      "USA": 0.00846,
+                      "Brazil": 0.00525,
+                      "Kuwait": 0.00203,
+                      "Nigeria": 0.00203,
+                      "Puerto Rico": 0.00192,
+                      "Germany": 0.0019,
+                      "Russia": 0.00186,
+                      "Taiwan": 0.00186
+                    },
+                    "entropy": 1.2
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C356A"
+                    ],
+                    "NCTC13417_04899": [
+                      "T119K"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC13417_04899: T119K"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000013",
+                    "node_attrs": {
+                      "div": 0.0868,
+                      "num_date": {
+                        "value": 2008.515,
+                        "confidence": [
+                          2008.015,
+                          2008.515
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.923,
+                          "India": 0.0256,
+                          "United Kingdom": 0.0154,
+                          "Brazil": 0.0107,
+                          "USA": 0.00783,
+                          "Kuwait": 0.00329,
+                          "Puerto Rico": 0.00308,
+                          "Nigeria": 0.00289,
+                          "Germany": 0.00274,
+                          "Taiwan": 0.00272,
+                          "Russia": 0.00267
+                        },
+                        "entropy": 0.42
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C780T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PenB-1_ACJ63454-EU872211-1",
+                        "node_attrs": {
+                          "div": 0.0868,
+                          "num_date": {
+                            "value": 2008.515,
+                            "confidence": [
+                              2008.515,
+                              2008.515
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "PenB-1"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PenB-1_MDR8036856-JAHLCP010000003-810169",
+                        "node_attrs": {
+                          "div": 0.0868,
+                          "num_date": {
+                            "value": 2016.001,
+                            "confidence": [
+                              2016.001,
+                              2016.075
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "Brazil",
+                            "confidence": {
+                              "Brazil": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PenB-1"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000000",
+                    "node_attrs": {
+                      "div": 0.0889,
+                      "num_date": {
+                        "value": 2004.956,
+                        "confidence": [
+                          2004.882,
+                          2004.996
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.375,
+                          "France": 0.352,
+                          "India": 0.254,
+                          "USA": 0.00679,
+                          "Brazil": 0.00387,
+                          "Nigeria": 0.00152,
+                          "Kuwait": 0.00151,
+                          "Puerto Rico": 0.00143,
+                          "Germany": 0.00142,
+                          "Russia": 0.0014,
+                          "Taiwan": 0.00139
+                        },
+                        "entropy": 1.195
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C618T"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "UARC01000016.1",
+                        "node_attrs": {
+                          "div": 0.0889,
+                          "num_date": {
+                            "value": 2004.988,
+                            "confidence": [
+                              2004.097,
+                              2010.258
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.353,
+                              "France": 0.326,
+                              "India": 0.241,
+                              "USA": 0.0186,
+                              "Brazil": 0.0136,
+                              "Kuwait": 0.00819,
+                              "Puerto Rico": 0.00813,
+                              "Nigeria": 0.00806,
+                              "Germany": 0.00796,
+                              "Taiwan": 0.00787,
+                              "Russia": 0.00777
+                            },
+                            "entropy": 1.44
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PenB-1_SPV09868-UARC01000016-125111",
+                        "node_attrs": {
+                          "div": 0.0889,
+                          "num_date": {
+                            "value": 2004.997,
+                            "confidence": [
+                              2004.929,
+                              2004.999
+                            ]
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "allele": {
+                            "value": "PenB-1"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_cenocepacia"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000015",
+                        "node_attrs": {
+                          "div": 0.0889,
+                          "num_date": {
+                            "value": 2007.001,
+                            "confidence": [
+                              2006.708,
+                              2007.933
+                            ]
+                          },
+                          "country": {
+                            "value": "India",
+                            "confidence": {
+                              "India": 0.502,
+                              "France": 0.4,
+                              "United Kingdom": 0.0507,
+                              "USA": 0.0217,
+                              "Brazil": 0.00719,
+                              "Nigeria": 0.00339,
+                              "Kuwait": 0.00318,
+                              "Germany": 0.00303,
+                              "Russia": 0.003,
+                              "Taiwan": 0.00294,
+                              "Puerto Rico": 0.00293
+                            },
+                            "entropy": 1.089
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "PenB-1_MCW3636243-JAIMHT010000007-255484",
+                            "node_attrs": {
+                              "div": 0.0889,
+                              "num_date": {
+                                "value": 2007.974,
+                                "confidence": [
+                                  2007.001,
+                                  2007.999
+                                ]
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "India",
+                                "confidence": {
+                                  "India": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PenB-1"
+                              },
+                              "organism": {
+                                "value": "Burkholderia_cenocepacia"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000016",
+                            "node_attrs": {
+                              "div": 0.0889,
+                              "num_date": {
+                                "value": 2008.417,
+                                "confidence": [
+                                  2007.961,
+                                  2008.417
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 0.84,
+                                  "India": 0.0792,
+                                  "USA": 0.0585,
+                                  "United Kingdom": 0.00721,
+                                  "Brazil": 0.00383,
+                                  "Nigeria": 0.00276,
+                                  "Kuwait": 0.00204,
+                                  "Russia": 0.00188,
+                                  "Germany": 0.00184,
+                                  "Taiwan": 0.00169,
+                                  "Puerto Rico": 0.00148
+                                },
+                                "entropy": 0.643
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PenB-1_SOT44320-OEOG01000043-22370",
+                                "node_attrs": {
+                                  "div": 0.0889,
+                                  "num_date": {
+                                    "value": 2008.417,
+                                    "confidence": [
+                                      2008.417,
+                                      2008.417
+                                    ]
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "PenB-1"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_cenocepacia"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000017",
+                                "node_attrs": {
+                                  "div": 0.0889,
+                                  "num_date": {
+                                    "value": 2009.954,
+                                    "confidence": [
+                                      2009.606,
+                                      2010.892
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.834,
+                                      "France": 0.0924,
+                                      "India": 0.0213,
+                                      "Nigeria": 0.0143,
+                                      "Kuwait": 0.00818,
+                                      "Brazil": 0.00792,
+                                      "United Kingdom": 0.0049,
+                                      "Russia": 0.0046,
+                                      "Germany": 0.00445,
+                                      "Taiwan": 0.004,
+                                      "Puerto Rico": 0.00357
+                                    },
+                                    "entropy": 0.709
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "PenB-1_MBR8352772-JAGSTY010000009-256348",
+                                    "node_attrs": {
+                                      "div": 0.0889,
+                                      "num_date": {
+                                        "value": 2010.001,
+                                        "confidence": [
+                                          2010.001,
+                                          2010.891
+                                        ]
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location from metadata"
+                                      },
+                                      "allele": {
+                                        "value": "PenB-1"
+                                      },
+                                      "organism": {
+                                        "value": "Burkholderia_cenocepacia"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000018",
+                                    "node_attrs": {
+                                      "div": 0.0889,
+                                      "num_date": {
+                                        "value": 2014.724,
+                                        "confidence": [
+                                          2013.464,
+                                          2015.304
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Nigeria",
+                                        "confidence": {
+                                          "Nigeria": 0.384,
+                                          "Kuwait": 0.21,
+                                          "USA": 0.199,
+                                          "Brazil": 0.0976,
+                                          "Puerto Rico": 0.026,
+                                          "France": 0.0192,
+                                          "India": 0.0188,
+                                          "Russia": 0.0118,
+                                          "Germany": 0.0117,
+                                          "Taiwan": 0.0113,
+                                          "United Kingdom": 0.0101
+                                        },
+                                        "entropy": 1.691
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "NODE_0000001",
+                                        "node_attrs": {
+                                          "div": 0.0921,
+                                          "num_date": {
+                                            "value": 2015.667,
+                                            "confidence": [
+                                              2015.34,
+                                              2015.667
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Nigeria",
+                                            "confidence": {
+                                              "Nigeria": 0.721,
+                                              "USA": 0.203,
+                                              "Kuwait": 0.0326,
+                                              "Brazil": 0.0147,
+                                              "India": 0.00563,
+                                              "France": 0.00534,
+                                              "Puerto Rico": 0.00464,
+                                              "Russia": 0.00358,
+                                              "Germany": 0.00346,
+                                              "Taiwan": 0.00317,
+                                              "United Kingdom": 0.00252
+                                            },
+                                            "entropy": 0.888
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C759G",
+                                              "G879A",
+                                              "T891C"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PenB-1_MDI9685600-JASGXL010000020-62301",
+                                            "node_attrs": {
+                                              "div": 0.0921,
+                                              "num_date": {
+                                                "value": 2015.667,
+                                                "confidence": [
+                                                  2015.667,
+                                                  2015.667
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "Nigeria",
+                                                "confidence": {
+                                                  "Nigeria": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PenB-1"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_cenocepacia"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000020",
+                                            "node_attrs": {
+                                              "div": 0.0921,
+                                              "num_date": {
+                                                "value": 2017.001,
+                                                "confidence": [
+                                                  2016.66,
+                                                  2017.901
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 0.886,
+                                                  "Nigeria": 0.0841,
+                                                  "Kuwait": 0.00591,
+                                                  "India": 0.00438,
+                                                  "France": 0.00382,
+                                                  "Brazil": 0.00379,
+                                                  "Russia": 0.00306,
+                                                  "Germany": 0.00291,
+                                                  "Taiwan": 0.00253,
+                                                  "Puerto Rico": 0.00212,
+                                                  "United Kingdom": 0.00186
+                                                },
+                                                "entropy": 0.487
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "PenB-1_MBR8099337-JAGSVK010000009-271038",
+                                                "node_attrs": {
+                                                  "div": 0.0921,
+                                                  "num_date": {
+                                                    "value": 2017.001,
+                                                    "confidence": [
+                                                      2017.001,
+                                                      2017.898
+                                                    ]
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "allele": {
+                                                    "value": "PenB-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Burkholderia_cenocepacia"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000021",
+                                                "node_attrs": {
+                                                  "div": 0.0921,
+                                                  "num_date": {
+                                                    "value": 2023.317,
+                                                    "confidence": [
+                                                      2022.692,
+                                                      2023.368
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 0.999
+                                                    },
+                                                    "entropy": 0.0103
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "PenB-1_HEP6433235-DATYAB010000139-1078",
+                                                    "node_attrs": {
+                                                      "div": 0.0921,
+                                                      "num_date": {
+                                                        "value": 2023.368,
+                                                        "confidence": [
+                                                          2023.368,
+                                                          2023.368
+                                                        ]
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "allele": {
+                                                        "value": "PenB-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Burkholderia_cenocepacia"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "PenB-1_HEP6431318-DATYAB010000042-21899",
+                                                    "node_attrs": {
+                                                      "div": 0.0921,
+                                                      "num_date": {
+                                                        "value": 2023.368,
+                                                        "confidence": [
+                                                          2023.368,
+                                                          2023.368
+                                                        ]
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      },
+                                                      "country": {
+                                                        "value": "USA",
+                                                        "confidence": {
+                                                          "USA": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "allele": {
+                                                        "value": "PenB-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Burkholderia_cenocepacia"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "name": "NODE_0000022",
+                                        "node_attrs": {
+                                          "div": 0.0889,
+                                          "num_date": {
+                                            "value": 2015.999,
+                                            "confidence": [
+                                              2015.283,
+                                              2016.079
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Kuwait",
+                                            "confidence": {
+                                              "Kuwait": 0.612,
+                                              "Brazil": 0.269,
+                                              "Puerto Rico": 0.0504,
+                                              "Nigeria": 0.0293,
+                                              "USA": 0.021,
+                                              "India": 0.00432,
+                                              "France": 0.0041,
+                                              "Taiwan": 0.0029,
+                                              "Germany": 0.00239,
+                                              "Russia": 0.00237,
+                                              "United Kingdom": 0.00221
+                                            },
+                                            "entropy": 1.094
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PenB-1_MBG0867218-JACCQA010000040-23878",
+                                            "node_attrs": {
+                                              "div": 0.0889,
+                                              "num_date": {
+                                                "value": 2016.001,
+                                                "confidence": [
+                                                  2016.001,
+                                                  2016.636
+                                                ]
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              },
+                                              "country": {
+                                                "value": "Kuwait",
+                                                "confidence": {
+                                                  "Kuwait": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PenB-1"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_sp._9779_493"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000023",
+                                            "node_attrs": {
+                                              "div": 0.0889,
+                                              "num_date": {
+                                                "value": 2016.077,
+                                                "confidence": [
+                                                  2015.774,
+                                                  2016.152
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Brazil",
+                                                "confidence": {
+                                                  "Brazil": 0.594,
+                                                  "Kuwait": 0.254,
+                                                  "Puerto Rico": 0.115,
+                                                  "Nigeria": 0.0117,
+                                                  "USA": 0.0103,
+                                                  "India": 0.00351,
+                                                  "France": 0.00326,
+                                                  "Taiwan": 0.00299,
+                                                  "Germany": 0.00193,
+                                                  "Russia": 0.00189,
+                                                  "United Kingdom": 0.00188
+                                                },
+                                                "entropy": 1.096
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "PenB-1_MDR8101433-JAHLCQ010000001-1502974",
+                                                "node_attrs": {
+                                                  "div": 0.0889,
+                                                  "num_date": {
+                                                    "value": 2016.155,
+                                                    "confidence": [
+                                                      2016.086,
+                                                      2016.163
+                                                    ]
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Collection date from metadata"
+                                                  },
+                                                  "country": {
+                                                    "value": "Brazil",
+                                                    "confidence": {
+                                                      "Brazil": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "allele": {
+                                                    "value": "PenB-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Burkholderia_cenocepacia"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000024",
+                                                "node_attrs": {
+                                                  "div": 0.0889,
+                                                  "num_date": {
+                                                    "value": 2017.086,
+                                                    "confidence": [
+                                                      2016.468,
+                                                      2017.265
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "Puerto Rico",
+                                                    "confidence": {
+                                                      "Puerto Rico": 0.991,
+                                                      "Taiwan": 0.00362,
+                                                      "Brazil": 0.00342,
+                                                      "Kuwait": 0.00136
+                                                    },
+                                                    "entropy": 0.0657
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "PenB-1_RQV33717-QTSJ01000049-24239",
+                                                    "node_attrs": {
+                                                      "div": 0.0889,
+                                                      "num_date": {
+                                                        "value": 2017.248,
+                                                        "confidence": [
+                                                          2017.248,
+                                                          2017.319
+                                                        ]
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      },
+                                                      "country": {
+                                                        "value": "Puerto Rico",
+                                                        "confidence": {
+                                                          "Puerto Rico": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location from metadata"
+                                                      },
+                                                      "allele": {
+                                                        "value": "PenB-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Burkholderia_cenocepacia"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000025",
+                                                    "node_attrs": {
+                                                      "div": 0.0889,
+                                                      "num_date": {
+                                                        "value": 2017.248,
+                                                        "confidence": [
+                                                          2016.953,
+                                                          2017.319
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "Puerto Rico",
+                                                        "confidence": {
+                                                          "Puerto Rico": 0.988,
+                                                          "Taiwan": 0.00913,
+                                                          "Brazil": 0.00125
+                                                        },
+                                                        "entropy": 0.0732
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "PenB-1_RQU53521-QTRW01000038-21323",
+                                                        "node_attrs": {
+                                                          "div": 0.0889,
+                                                          "num_date": {
+                                                            "value": 2017.312,
+                                                            "confidence": [
+                                                              2017.248,
+                                                              2017.327
+                                                            ]
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Collection date from metadata"
+                                                          },
+                                                          "country": {
+                                                            "value": "Puerto Rico",
+                                                            "confidence": {
+                                                              "Puerto Rico": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "allele": {
+                                                            "value": "PenB-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Burkholderia_cenocepacia"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000026",
+                                                        "node_attrs": {
+                                                          "div": 0.0889,
+                                                          "num_date": {
+                                                            "value": 2017.891,
+                                                            "confidence": [
+                                                              2017.372,
+                                                              2018.069
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "Taiwan",
+                                                            "confidence": {
+                                                              "Taiwan": 0.985,
+                                                              "Puerto Rico": 0.00967,
+                                                              "Germany": 0.00227,
+                                                              "USA": 0.00187
+                                                            },
+                                                            "entropy": 0.0916
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "PenB-1_QUN39631-CP073669-407334",
+                                                            "node_attrs": {
+                                                              "div": 0.0889,
+                                                              "num_date": {
+                                                                "value": 2018.089,
+                                                                "confidence": [
+                                                                  2018.089,
+                                                                  2018.089
+                                                                ]
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Collection date from metadata"
+                                                              },
+                                                              "country": {
+                                                                "value": "Taiwan",
+                                                                "confidence": {
+                                                                  "Taiwan": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location from metadata"
+                                                              },
+                                                              "allele": {
+                                                                "value": "PenB-1"
+                                                              },
+                                                              "organism": {
+                                                                "value": "Burkholderia_cenocepacia"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000027",
+                                                            "node_attrs": {
+                                                              "div": 0.0889,
+                                                              "num_date": {
+                                                                "value": 2018.144,
+                                                                "confidence": [
+                                                                  2017.763,
+                                                                  2018.144
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "Taiwan",
+                                                                "confidence": {
+                                                                  "Taiwan": 0.984,
+                                                                  "Germany": 0.00647,
+                                                                  "USA": 0.00514,
+                                                                  "Puerto Rico": 0.00325
+                                                                },
+                                                                "entropy": 0.101
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "PenB-1_QUO28463-CP073704-2284740",
+                                                                "node_attrs": {
+                                                                  "div": 0.0889,
+                                                                  "num_date": {
+                                                                    "value": 2018.144,
+                                                                    "confidence": [
+                                                                      2018.144,
+                                                                      2018.144
+                                                                    ]
+                                                                  },
+                                                                  "dateAccuracy": {
+                                                                    "value": "Collection date from metadata"
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Taiwan",
+                                                                    "confidence": {
+                                                                      "Taiwan": 1.0
+                                                                    },
+                                                                    "entropy": -1e-12
+                                                                  },
+                                                                  "countryAccuracy": {
+                                                                    "value": "Geographic location from metadata"
+                                                                  },
+                                                                  "allele": {
+                                                                    "value": "PenB-1"
+                                                                  },
+                                                                  "organism": {
+                                                                    "value": "Burkholderia_cenocepacia"
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                }
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000028",
+                                                                "node_attrs": {
+                                                                  "div": 0.0889,
+                                                                  "num_date": {
+                                                                    "value": 2018.491,
+                                                                    "confidence": [
+                                                                      2018.073,
+                                                                      2018.56
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Germany",
+                                                                    "confidence": {
+                                                                      "Germany": 0.385,
+                                                                      "USA": 0.308,
+                                                                      "Taiwan": 0.289,
+                                                                      "Puerto Rico": 0.00286,
+                                                                      "India": 0.00272,
+                                                                      "Nigeria": 0.00258,
+                                                                      "France": 0.00235,
+                                                                      "Russia": 0.00201,
+                                                                      "Kuwait": 0.00195,
+                                                                      "Brazil": 0.0019,
+                                                                      "United Kingdom": 0.00141
+                                                                    },
+                                                                    "entropy": 1.197
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "PenB-1_MBO1857410-JAGEMP010000061-44825",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0889,
+                                                                      "num_date": {
+                                                                        "value": 2018.517,
+                                                                        "confidence": [
+                                                                          2018.497,
+                                                                          2018.579
+                                                                        ]
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Collection date from metadata"
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "Germany",
+                                                                        "confidence": {
+                                                                          "Germany": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location from metadata"
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "PenB-1"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Burkholderia_cenocepacia"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000029",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0889,
+                                                                      "num_date": {
+                                                                        "value": 2018.833,
+                                                                        "confidence": [
+                                                                          2018.458,
+                                                                          2018.845
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "USA",
+                                                                        "confidence": {
+                                                                          "USA": 0.991,
+                                                                          "Germany": 0.00493,
+                                                                          "Taiwan": 0.00336
+                                                                        },
+                                                                        "entropy": 0.0627
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "PenB-1_RSB87812-RKIN01000001-663235",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0889,
+                                                                          "num_date": {
+                                                                            "value": 2018.845,
+                                                                            "confidence": [
+                                                                              2018.845,
+                                                                              2018.845
+                                                                            ]
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Submission date"
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "USA",
+                                                                            "confidence": {
+                                                                              "USA": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location from metadata"
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "PenB-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Burkholderia_cenocepacia"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "NODE_0000030",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0889,
+                                                                          "num_date": {
+                                                                            "value": 2019.001,
+                                                                            "confidence": [
+                                                                              2018.711,
+                                                                              2019.558
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "USA",
+                                                                            "confidence": {
+                                                                              "USA": 1.0
+                                                                            },
+                                                                            "entropy": 0.00439
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "name": "PenB-1_MBR7944494-JAGSWL010000015-90078",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0889,
+                                                                              "num_date": {
+                                                                                "value": 2019.121,
+                                                                                "confidence": [
+                                                                                  2019.001,
+                                                                                  2019.999
+                                                                                ]
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Collection date from metadata"
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "USA",
+                                                                                "confidence": {
+                                                                                  "USA": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location from metadata"
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "PenB-1"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Burkholderia_cenocepacia"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "name": "NODE_0000031",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0889,
+                                                                              "num_date": {
+                                                                                "value": 2019.589,
+                                                                                "confidence": [
+                                                                                  2019.058,
+                                                                                  2019.909
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "USA",
+                                                                                "confidence": {
+                                                                                  "USA": 0.997,
+                                                                                  "India": 0.00139
+                                                                                },
+                                                                                "entropy": 0.0218
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            },
+                                                                            "children": [
+                                                                              {
+                                                                                "name": "PenB-1_MBJ9697763-JADVKB010000089-22186",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.0889,
+                                                                                  "num_date": {
+                                                                                    "value": 2019.997,
+                                                                                    "confidence": [
+                                                                                      2019.001,
+                                                                                      2019.999
+                                                                                    ]
+                                                                                  },
+                                                                                  "dateAccuracy": {
+                                                                                    "value": "Collection date from metadata"
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "USA",
+                                                                                    "confidence": {
+                                                                                      "USA": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
+                                                                                  },
+                                                                                  "countryAccuracy": {
+                                                                                    "value": "Geographic location from metadata"
+                                                                                  },
+                                                                                  "allele": {
+                                                                                    "value": "PenB-1"
+                                                                                  },
+                                                                                  "organism": {
+                                                                                    "value": "Burkholderia_cenocepacia"
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "name": "NODE_0000032",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.0889,
+                                                                                  "num_date": {
+                                                                                    "value": 2021.472,
+                                                                                    "confidence": [
+                                                                                      2020.819,
+                                                                                      2021.5
+                                                                                    ]
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "USA",
+                                                                                    "confidence": {
+                                                                                      "USA": 0.794,
+                                                                                      "India": 0.194,
+                                                                                      "France": 0.00366,
+                                                                                      "Nigeria": 0.00169,
+                                                                                      "Brazil": 0.00128,
+                                                                                      "Russia": 0.00113,
+                                                                                      "Germany": 0.00103,
+                                                                                      "Kuwait": 0.001
+                                                                                    },
+                                                                                    "entropy": 0.578
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                },
+                                                                                "children": [
+                                                                                  {
+                                                                                    "name": "PenB-1_MDR5643757-JANHBG010000044-5688",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.0889,
+                                                                                      "num_date": {
+                                                                                        "value": 2021.5,
+                                                                                        "confidence": [
+                                                                                          2021.5,
+                                                                                          2021.5
+                                                                                        ]
+                                                                                      },
+                                                                                      "dateAccuracy": {
+                                                                                        "value": "Collection date from metadata"
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "India",
+                                                                                        "confidence": {
+                                                                                          "India": 1.0
+                                                                                        },
+                                                                                        "entropy": -1e-12
+                                                                                      },
+                                                                                      "countryAccuracy": {
+                                                                                        "value": "Geographic location from metadata"
+                                                                                      },
+                                                                                      "allele": {
+                                                                                        "value": "PenB-1"
+                                                                                      },
+                                                                                      "organism": {
+                                                                                        "value": "Burkholderia_cenocepacia"
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    }
+                                                                                  },
+                                                                                  {
+                                                                                    "name": "NODE_0000033",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.0889,
+                                                                                      "num_date": {
+                                                                                        "value": 2021.985,
+                                                                                        "confidence": [
+                                                                                          2021.45,
+                                                                                          2022.564
+                                                                                        ]
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "USA",
+                                                                                        "confidence": {
+                                                                                          "USA": 0.995,
+                                                                                          "India": 0.00378
+                                                                                        },
+                                                                                        "entropy": 0.0326
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    },
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "name": "PenB-1_MDN7683865-JAUJRH010000049-21872",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.0889,
+                                                                                          "num_date": {
+                                                                                            "value": 2022.001,
+                                                                                            "confidence": [
+                                                                                              2022.001,
+                                                                                              2022.759
+                                                                                            ]
+                                                                                          },
+                                                                                          "dateAccuracy": {
+                                                                                            "value": "Collection date from metadata"
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "USA",
+                                                                                            "confidence": {
+                                                                                              "USA": 1.0
+                                                                                            },
+                                                                                            "entropy": -1e-12
+                                                                                          },
+                                                                                          "countryAccuracy": {
+                                                                                            "value": "Geographic location from metadata"
+                                                                                          },
+                                                                                          "allele": {
+                                                                                            "value": "PenB-1"
+                                                                                          },
+                                                                                          "organism": {
+                                                                                            "value": "Burkholderia_cenocepacia"
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        }
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "NODE_0000034",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.0889,
+                                                                                          "num_date": {
+                                                                                            "value": 2022.454,
+                                                                                            "confidence": [
+                                                                                              2021.996,
+                                                                                              2022.903
+                                                                                            ]
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "USA",
+                                                                                            "confidence": {
+                                                                                              "USA": 0.997
+                                                                                            },
+                                                                                            "entropy": 0.0227
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        },
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "name": "PenB-1_MDN7620147-JAUJQW010000004-227897",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0889,
+                                                                                              "num_date": {
+                                                                                                "value": 2022.963,
+                                                                                                "confidence": [
+                                                                                                  2022.001,
+                                                                                                  2022.999
+                                                                                                ]
+                                                                                              },
+                                                                                              "dateAccuracy": {
+                                                                                                "value": "Collection date from metadata"
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "USA",
+                                                                                                "confidence": {
+                                                                                                  "USA": 1.0
+                                                                                                },
+                                                                                                "entropy": -1e-12
+                                                                                              },
+                                                                                              "countryAccuracy": {
+                                                                                                "value": "Geographic location from metadata"
+                                                                                              },
+                                                                                              "allele": {
+                                                                                                "value": "PenB-1"
+                                                                                              },
+                                                                                              "organism": {
+                                                                                                "value": "Burkholderia_cenocepacia"
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "name": "NODE_0000035",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0889,
+                                                                                              "num_date": {
+                                                                                                "value": 2024.357,
+                                                                                                "confidence": [
+                                                                                                  2023.098,
+                                                                                                  2024.384
+                                                                                                ]
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "USA",
+                                                                                                "confidence": {
+                                                                                                  "USA": 0.881,
+                                                                                                  "Russia": 0.112,
+                                                                                                  "Nigeria": 0.00119,
+                                                                                                  "India": 0.00117
+                                                                                                },
+                                                                                                "entropy": 0.405
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            },
+                                                                                            "children": [
+                                                                                              {
+                                                                                                "name": "PenB-1_MGR8020304-JBRFMS010000007-257186",
+                                                                                                "node_attrs": {
+                                                                                                  "div": 0.0889,
+                                                                                                  "num_date": {
+                                                                                                    "value": 2024.001,
+                                                                                                    "confidence": [
+                                                                                                      2024.001,
+                                                                                                      2024.671
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "dateAccuracy": {
+                                                                                                    "value": "Collection date from metadata"
+                                                                                                  },
+                                                                                                  "country": {
+                                                                                                    "value": "Russia",
+                                                                                                    "confidence": {
+                                                                                                      "Russia": 1.0
+                                                                                                    },
+                                                                                                    "entropy": -1e-12
+                                                                                                  },
+                                                                                                  "countryAccuracy": {
+                                                                                                    "value": "Geographic location of submitter"
+                                                                                                  },
+                                                                                                  "allele": {
+                                                                                                    "value": "PenB-1"
+                                                                                                  },
+                                                                                                  "organism": {
+                                                                                                    "value": "Burkholderia_cenocepacia"
+                                                                                                  }
+                                                                                                },
+                                                                                                "branch_attrs": {
+                                                                                                  "mutations": {}
+                                                                                                }
+                                                                                              },
+                                                                                              {
+                                                                                                "name": "NODE_0000036",
+                                                                                                "node_attrs": {
+                                                                                                  "div": 0.0889,
+                                                                                                  "num_date": {
+                                                                                                    "value": 2024.357,
+                                                                                                    "confidence": [
+                                                                                                      2023.804,
+                                                                                                      2024.394
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "country": {
+                                                                                                    "value": "USA",
+                                                                                                    "confidence": {
+                                                                                                      "USA": 0.998,
+                                                                                                      "Russia": 0.00171
+                                                                                                    },
+                                                                                                    "entropy": 0.0153
+                                                                                                  }
+                                                                                                },
+                                                                                                "branch_attrs": {
+                                                                                                  "mutations": {}
+                                                                                                },
+                                                                                                "children": [
+                                                                                                  {
+                                                                                                    "name": "PenB-1_HHT8968483-DBJWXR010000191-59",
+                                                                                                    "node_attrs": {
+                                                                                                      "div": 0.0889,
+                                                                                                      "num_date": {
+                                                                                                        "value": 2024.408,
+                                                                                                        "confidence": [
+                                                                                                          2024.408,
+                                                                                                          2024.408
+                                                                                                        ]
+                                                                                                      },
+                                                                                                      "dateAccuracy": {
+                                                                                                        "value": "Collection date from metadata"
+                                                                                                      },
+                                                                                                      "country": {
+                                                                                                        "value": "USA",
+                                                                                                        "confidence": {
+                                                                                                          "USA": 1.0
+                                                                                                        },
+                                                                                                        "entropy": -1e-12
+                                                                                                      },
+                                                                                                      "countryAccuracy": {
+                                                                                                        "value": "Geographic location of submitter"
+                                                                                                      },
+                                                                                                      "allele": {
+                                                                                                        "value": "PenB-1"
+                                                                                                      },
+                                                                                                      "organism": {
+                                                                                                        "value": "Burkholderia_cenocepacia"
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "branch_attrs": {
+                                                                                                      "mutations": {}
+                                                                                                    }
+                                                                                                  },
+                                                                                                  {
+                                                                                                    "name": "NODE_0000037",
+                                                                                                    "node_attrs": {
+                                                                                                      "div": 0.0889,
+                                                                                                      "num_date": {
+                                                                                                        "value": 2024.359,
+                                                                                                        "confidence": [
+                                                                                                          2024.077,
+                                                                                                          2024.401
+                                                                                                        ]
+                                                                                                      },
+                                                                                                      "country": {
+                                                                                                        "value": "USA",
+                                                                                                        "confidence": {
+                                                                                                          "USA": 1.0
+                                                                                                        },
+                                                                                                        "entropy": 0.000705
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "branch_attrs": {
+                                                                                                      "mutations": {}
+                                                                                                    },
+                                                                                                    "children": [
+                                                                                                      {
+                                                                                                        "name": "NODE_0000038",
+                                                                                                        "node_attrs": {
+                                                                                                          "div": 0.0889,
+                                                                                                          "num_date": {
+                                                                                                            "value": 2024.397,
+                                                                                                            "confidence": [
+                                                                                                              2024.333,
+                                                                                                              2024.408
+                                                                                                            ]
+                                                                                                          },
+                                                                                                          "country": {
+                                                                                                            "value": "USA",
+                                                                                                            "confidence": {
+                                                                                                              "USA": 1.0
+                                                                                                            },
+                                                                                                            "entropy": 0.000341
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "branch_attrs": {
+                                                                                                          "mutations": {}
+                                                                                                        },
+                                                                                                        "children": [
+                                                                                                          {
+                                                                                                            "name": "PenB-1_HHT8904766-DBJWXD010000193-195",
+                                                                                                            "node_attrs": {
+                                                                                                              "div": 0.0889,
+                                                                                                              "num_date": {
+                                                                                                                "value": 2024.408,
+                                                                                                                "confidence": [
+                                                                                                                  2024.408,
+                                                                                                                  2024.408
+                                                                                                                ]
+                                                                                                              },
+                                                                                                              "dateAccuracy": {
+                                                                                                                "value": "Collection date from metadata"
+                                                                                                              },
+                                                                                                              "country": {
+                                                                                                                "value": "USA",
+                                                                                                                "confidence": {
+                                                                                                                  "USA": 1.0
+                                                                                                                },
+                                                                                                                "entropy": -1e-12
+                                                                                                              },
+                                                                                                              "countryAccuracy": {
+                                                                                                                "value": "Geographic location of submitter"
+                                                                                                              },
+                                                                                                              "allele": {
+                                                                                                                "value": "PenB-1"
+                                                                                                              },
+                                                                                                              "organism": {
+                                                                                                                "value": "Burkholderia_cenocepacia"
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "branch_attrs": {
+                                                                                                              "mutations": {}
+                                                                                                            }
+                                                                                                          },
+                                                                                                          {
+                                                                                                            "name": "PenB-1_HHT8900857-DBJWXD010000020-113237",
+                                                                                                            "node_attrs": {
+                                                                                                              "div": 0.0889,
+                                                                                                              "num_date": {
+                                                                                                                "value": 2024.408,
+                                                                                                                "confidence": [
+                                                                                                                  2024.408,
+                                                                                                                  2024.408
+                                                                                                                ]
+                                                                                                              },
+                                                                                                              "dateAccuracy": {
+                                                                                                                "value": "Collection date from metadata"
+                                                                                                              },
+                                                                                                              "country": {
+                                                                                                                "value": "USA",
+                                                                                                                "confidence": {
+                                                                                                                  "USA": 1.0
+                                                                                                                },
+                                                                                                                "entropy": -1e-12
+                                                                                                              },
+                                                                                                              "countryAccuracy": {
+                                                                                                                "value": "Geographic location of submitter"
+                                                                                                              },
+                                                                                                              "allele": {
+                                                                                                                "value": "PenB-1"
+                                                                                                              },
+                                                                                                              "organism": {
+                                                                                                                "value": "Burkholderia_cenocepacia"
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "branch_attrs": {
+                                                                                                              "mutations": {}
+                                                                                                            }
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      },
+                                                                                                      {
+                                                                                                        "name": "NODE_0000039",
+                                                                                                        "node_attrs": {
+                                                                                                          "div": 0.0889,
+                                                                                                          "num_date": {
+                                                                                                            "value": 2024.379,
+                                                                                                            "confidence": [
+                                                                                                              2024.313,
+                                                                                                              2024.408
+                                                                                                            ]
+                                                                                                          },
+                                                                                                          "country": {
+                                                                                                            "value": "USA",
+                                                                                                            "confidence": {
+                                                                                                              "USA": 1.0
+                                                                                                            },
+                                                                                                            "entropy": 0.000346
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "branch_attrs": {
+                                                                                                          "mutations": {}
+                                                                                                        },
+                                                                                                        "children": [
+                                                                                                          {
+                                                                                                            "name": "PenB-1_HHT8964968-DBJWXR010000023-113237",
+                                                                                                            "node_attrs": {
+                                                                                                              "div": 0.0889,
+                                                                                                              "num_date": {
+                                                                                                                "value": 2024.408,
+                                                                                                                "confidence": [
+                                                                                                                  2024.408,
+                                                                                                                  2024.408
+                                                                                                                ]
+                                                                                                              },
+                                                                                                              "dateAccuracy": {
+                                                                                                                "value": "Collection date from metadata"
+                                                                                                              },
+                                                                                                              "country": {
+                                                                                                                "value": "USA",
+                                                                                                                "confidence": {
+                                                                                                                  "USA": 1.0
+                                                                                                                },
+                                                                                                                "entropy": -1e-12
+                                                                                                              },
+                                                                                                              "countryAccuracy": {
+                                                                                                                "value": "Geographic location of submitter"
+                                                                                                              },
+                                                                                                              "allele": {
+                                                                                                                "value": "PenB-1"
+                                                                                                              },
+                                                                                                              "organism": {
+                                                                                                                "value": "Burkholderia_cenocepacia"
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "branch_attrs": {
+                                                                                                              "mutations": {}
+                                                                                                            }
+                                                                                                          },
+                                                                                                          {
+                                                                                                            "name": "NODE_0000040",
+                                                                                                            "node_attrs": {
+                                                                                                              "div": 0.0889,
+                                                                                                              "num_date": {
+                                                                                                                "value": 2024.391,
+                                                                                                                "confidence": [
+                                                                                                                  2024.362,
+                                                                                                                  2024.411
+                                                                                                                ]
+                                                                                                              },
+                                                                                                              "country": {
+                                                                                                                "value": "USA",
+                                                                                                                "confidence": {
+                                                                                                                  "USA": 1.0
+                                                                                                                },
+                                                                                                                "entropy": 0.000335
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "branch_attrs": {
+                                                                                                              "mutations": {}
+                                                                                                            },
+                                                                                                            "children": [
+                                                                                                              {
+                                                                                                                "name": "PenB-1_HHT8976044-DBJWXO010000180-2847",
+                                                                                                                "node_attrs": {
+                                                                                                                  "div": 0.0889,
+                                                                                                                  "num_date": {
+                                                                                                                    "value": 2024.43,
+                                                                                                                    "confidence": [
+                                                                                                                      2024.43,
+                                                                                                                      2024.43
+                                                                                                                    ]
+                                                                                                                  },
+                                                                                                                  "dateAccuracy": {
+                                                                                                                    "value": "Collection date from metadata"
+                                                                                                                  },
+                                                                                                                  "country": {
+                                                                                                                    "value": "USA",
+                                                                                                                    "confidence": {
+                                                                                                                      "USA": 1.0
+                                                                                                                    },
+                                                                                                                    "entropy": -1e-12
+                                                                                                                  },
+                                                                                                                  "countryAccuracy": {
+                                                                                                                    "value": "Geographic location of submitter"
+                                                                                                                  },
+                                                                                                                  "allele": {
+                                                                                                                    "value": "PenB-1"
+                                                                                                                  },
+                                                                                                                  "organism": {
+                                                                                                                    "value": "Burkholderia_cenocepacia"
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                "branch_attrs": {
+                                                                                                                  "mutations": {}
+                                                                                                                }
+                                                                                                              },
+                                                                                                              {
+                                                                                                                "name": "PenB-1_HHT8968814-DBJWXO010000002-44698",
+                                                                                                                "node_attrs": {
+                                                                                                                  "div": 0.0889,
+                                                                                                                  "num_date": {
+                                                                                                                    "value": 2024.43,
+                                                                                                                    "confidence": [
+                                                                                                                      2024.43,
+                                                                                                                      2024.43
+                                                                                                                    ]
+                                                                                                                  },
+                                                                                                                  "dateAccuracy": {
+                                                                                                                    "value": "Collection date from metadata"
+                                                                                                                  },
+                                                                                                                  "country": {
+                                                                                                                    "value": "USA",
+                                                                                                                    "confidence": {
+                                                                                                                      "USA": 1.0
+                                                                                                                    },
+                                                                                                                    "entropy": -1e-12
+                                                                                                                  },
+                                                                                                                  "countryAccuracy": {
+                                                                                                                    "value": "Geographic location of submitter"
+                                                                                                                  },
+                                                                                                                  "allele": {
+                                                                                                                    "value": "PenB-1"
+                                                                                                                  },
+                                                                                                                  "organism": {
+                                                                                                                    "value": "Burkholderia_cenocepacia"
+                                                                                                                  }
+                                                                                                                },
+                                                                                                                "branch_attrs": {
+                                                                                                                  "mutations": {}
+                                                                                                                }
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          }
+                                                                                                        ]
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ]
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

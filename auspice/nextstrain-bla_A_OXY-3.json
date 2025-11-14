@@ -1,0 +1,664 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A OXY-3-like beta-lactamases",
+    "updated": "2025-11-09",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 867,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "bla": {
+        "end": 867,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Poland": {
+            "latitude": 52.0977181,
+            "longitude": 19.0258159
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1971.575,
+        "confidence": [
+          1966.606,
+          1977.482
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.981,
+          "USA": 0.0122,
+          "Poland": 0.00711
+        },
+        "entropy": 0.108
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "OXY-3-2_QCY59224-MN030559-1",
+        "node_attrs": {
+          "div": 0.0949,
+          "num_date": {
+            "value": 2019.423,
+            "confidence": [
+              2019.423,
+              2019.423
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "organism": {
+            "value": "Klebsiella_spallanzanii"
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "allele": {
+            "value": "OXY-3-2"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T12C",
+              "T13A",
+              "C14G",
+              "G15C",
+              "T21C",
+              "C30G",
+              "C39G",
+              "C42G",
+              "C45G",
+              "T51G",
+              "T52C",
+              "A54G",
+              "T55C",
+              "C60G",
+              "T63C",
+              "T69C",
+              "T70A",
+              "C71G",
+              "A72C",
+              "T73C",
+              "A75G",
+              "C81G",
+              "T84C",
+              "T87G",
+              "G99A",
+              "C105G",
+              "T109C",
+              "T120C",
+              "G129C",
+              "A132C",
+              "C141G",
+              "C153T",
+              "A159C",
+              "T166A",
+              "C167G",
+              "T168C",
+              "A171G",
+              "A177G",
+              "T186C",
+              "C189T",
+              "G192A",
+              "T195C",
+              "T201G",
+              "T210C",
+              "T216C",
+              "T228G",
+              "C231G",
+              "C234G",
+              "T241C",
+              "A243G",
+              "T261C",
+              "T276C",
+              "G288A",
+              "A297G",
+              "T298A",
+              "C299G",
+              "G300C",
+              "C312G",
+              "T327C",
+              "A348C",
+              "G354C",
+              "T355C",
+              "T364C",
+              "A366G",
+              "C372G",
+              "C375G",
+              "A384G",
+              "C393T",
+              "T396C",
+              "T408C",
+              "G411A",
+              "T420C",
+              "T426G",
+              "A432C",
+              "C450G",
+              "C453T",
+              "C456G",
+              "T462C",
+              "C465T",
+              "C474G",
+              "T477C",
+              "T483C",
+              "C486G",
+              "T492C",
+              "G495C",
+              "G498A",
+              "T501G",
+              "A504G",
+              "A507G",
+              "C519T",
+              "T525C",
+              "C528T",
+              "G546C",
+              "C561G",
+              "C573T",
+              "G576A",
+              "G582C",
+              "T588C",
+              "T591C",
+              "T600C",
+              "A606G",
+              "A615G",
+              "T619C",
+              "A621G",
+              "A627C",
+              "T631C",
+              "G654C",
+              "T660C",
+              "T666C",
+              "G672C",
+              "T678G",
+              "A681G",
+              "C690G",
+              "A696C",
+              "A708C",
+              "T711G",
+              "T714C",
+              "C720T",
+              "T732C",
+              "C738T",
+              "C741G",
+              "T744G",
+              "C747T",
+              "T759C",
+              "T765G",
+              "A774G",
+              "T775C",
+              "A777G",
+              "C780G",
+              "T783C",
+              "C789T",
+              "A795G",
+              "A831G",
+              "C834G",
+              "A837G",
+              "A843G",
+              "C849T",
+              "G861C",
+              "T864G"
+            ]
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.0888,
+          "num_date": {
+            "value": 2001.001,
+            "confidence": [
+              1999.772,
+              2001.559
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 1.0
+            },
+            "entropy": 0.00433
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "OXY-3-2_VUT06406-CABGHF010000056-139523",
+            "node_attrs": {
+              "div": 0.0909,
+              "num_date": {
+                "value": 2019.505,
+                "confidence": [
+                  2019.505,
+                  2019.505
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "organism": {
+                "value": "Klebsiella_spallanzanii"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "OXY-3-2"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C45T",
+                  "G129T",
+                  "C165T",
+                  "C252T",
+                  "G300A",
+                  "C849T"
+                ]
+              }
+            }
+          },
+          {
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.0936,
+              "num_date": {
+                "value": 2001.902,
+                "confidence": [
+                  2001.307,
+                  2002.093
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 1.0
+                },
+                "entropy": 0.00445
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T281G"
+                ],
+                "bla": [
+                  "M94R"
+                ]
+              },
+              "labels": {
+                "aa": "bla: M94R"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.0959,
+                  "num_date": {
+                    "value": 2002.193,
+                    "confidence": [
+                      2001.954,
+                      2002.193
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": 0.00242
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G6T"
+                    ],
+                    "bla": [
+                      "M2I"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "bla: M2I"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "AF491278.1",
+                    "node_attrs": {
+                      "div": 0.0959,
+                      "num_date": {
+                        "value": 2002.193,
+                        "confidence": [
+                          2000.244,
+                          2009.991
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.998,
+                          "USA": 0.00104
+                        },
+                        "entropy": 0.0155
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "OXY-3-1_AAN28732-AF491278-184",
+                    "node_attrs": {
+                      "div": 0.0959,
+                      "num_date": {
+                        "value": 2002.193,
+                        "confidence": [
+                          2002.193,
+                          2002.193
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Klebsiella_spallanzanii"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "allele": {
+                        "value": "OXY-3-1"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000003",
+                "node_attrs": {
+                  "div": 0.0959,
+                  "num_date": {
+                    "value": 2018.755,
+                    "confidence": [
+                      2017.742,
+                      2018.755
+                    ]
+                  },
+                  "country": {
+                    "value": "Poland",
+                    "confidence": {
+                      "Poland": 0.582,
+                      "France": 0.389,
+                      "USA": 0.029
+                    },
+                    "entropy": 0.785
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C165T",
+                      "T864G",
+                      "A867G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "OXY-3-3_MDM4210690-JATAUH010000015-71518",
+                    "node_attrs": {
+                      "div": 0.0959,
+                      "num_date": {
+                        "value": 2018.755,
+                        "confidence": [
+                          2018.755,
+                          2018.755
+                        ]
+                      },
+                      "country": {
+                        "value": "Poland",
+                        "confidence": {
+                          "Poland": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "organism": {
+                        "value": "Klebsiella_spallanzanii"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "allele": {
+                        "value": "OXY-3-3"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.0959,
+                      "num_date": {
+                        "value": 2024.543,
+                        "confidence": [
+                          2023.566,
+                          2024.616
+                        ]
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 0.634,
+                          "USA": 0.349,
+                          "Poland": 0.0173
+                        },
+                        "entropy": 0.727
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "OXY-3-3_CAM3111138-CBCSAQ010000002-294445",
+                        "node_attrs": {
+                          "div": 0.0959,
+                          "num_date": {
+                            "value": 2025.105,
+                            "confidence": [
+                              2025.105,
+                              2025.105
+                            ]
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_spallanzanii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "allele": {
+                            "value": "OXY-3-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "OXY-3-3_MEZ7214525-JBGLYG010000002-721056",
+                        "node_attrs": {
+                          "div": 0.0959,
+                          "num_date": {
+                            "value": 2024.616,
+                            "confidence": [
+                              2024.616,
+                              2024.616
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "organism": {
+                            "value": "Klebsiella_spallanzanii"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "allele": {
+                            "value": "OXY-3-3"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

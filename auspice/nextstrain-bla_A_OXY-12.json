@@ -1,0 +1,301 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A OXY-12-like beta-lactamases",
+    "updated": "2025-11-09",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 873,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "HV205_15895": {
+        "end": 873,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2016.144,
+        "confidence": [
+          2015.352,
+          2016.741
+        ]
+      },
+      "country": {
+        "value": "United Kingdom"
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "OXY-12-2_MBA7932644-JABXQS010000001-3280379",
+        "node_attrs": {
+          "div": 0.0162,
+          "num_date": {
+            "value": 2017.999,
+            "confidence": [
+              2017.169,
+              2017.999
+            ]
+          },
+          "country": {
+            "value": "United Kingdom"
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "allele": {
+            "value": "OXY-12-2"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          },
+          "organism": {
+            "value": "Klebsiella_sp._RHBSTW-00215"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T10A",
+              "G11C",
+              "C26G",
+              "G37A",
+              "T46C",
+              "C86T",
+              "C164G",
+              "T351C",
+              "T385C",
+              "C402T",
+              "C474T",
+              "A510G",
+              "T573C",
+              "T600G",
+              "G612A",
+              "T654C",
+              "G678C",
+              "T714A",
+              "T717C",
+              "C786G"
+            ],
+            "HV205_15895": [
+              "C4T",
+              "T9S",
+              "A13T",
+              "A29V",
+              "T55R"
+            ]
+          },
+          "labels": {
+            "aa": "HV205_15895: C4T, T9S, A13T, A29V, T55R"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00691,
+          "num_date": {
+            "value": 2017.389,
+            "confidence": [
+              2016.984,
+              2017.764
+            ]
+          },
+          "country": {
+            "value": "United Kingdom"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "JABXPX010000001.1",
+            "node_attrs": {
+              "div": 0.00691,
+              "num_date": {
+                "value": 2017.508,
+                "confidence": [
+                  2017.046,
+                  2017.958
+                ]
+              },
+              "country": {
+                "value": "United Kingdom"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "OXY-12-1_QLT77668-CP056483-4480743",
+            "node_attrs": {
+              "div": 0.00691,
+              "num_date": {
+                "value": 2017.537,
+                "confidence": [
+                  2017.001,
+                  2017.999
+                ]
+              },
+              "country": {
+                "value": "United Kingdom"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "OXY-12-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Klebsiella_sp._RHBSTW-00464"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "OXY-12-1_MBA7845918-JABXPX010000001-3358812",
+            "node_attrs": {
+              "div": 0.00691,
+              "num_date": {
+                "value": 2017.537,
+                "confidence": [
+                  2017.001,
+                  2017.999
+                ]
+              },
+              "country": {
+                "value": "United Kingdom"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "OXY-12-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Klebsiella_sp._RHBSTW-00465"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "OXY-12-1_QLO38148-CP055481-4480297",
+            "node_attrs": {
+              "div": 0.00691,
+              "num_date": {
+                "value": 2017.537,
+                "confidence": [
+                  2017.001,
+                  2017.999
+                ]
+              },
+              "country": {
+                "value": "United Kingdom"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "allele": {
+                "value": "OXY-12-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "organism": {
+                "value": "Klebsiella_sp._RHBSTW-00484"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

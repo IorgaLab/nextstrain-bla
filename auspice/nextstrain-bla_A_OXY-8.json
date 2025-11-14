@@ -1,0 +1,681 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A OXY-8-like beta-lactamases",
+    "updated": "2025-11-09",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 873,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "DA718_20995": {
+        "end": 873,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Colombia",
+            "#6BB18E"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Colombia": {
+            "latitude": 2.893108,
+            "longitude": -73.7845142
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2009.026,
+        "confidence": [
+          2007.515,
+          2010.397
+        ]
+      },
+      "country": {
+        "value": "France",
+        "confidence": {
+          "France": 0.971,
+          "Colombia": 0.0185,
+          "China": 0.0105
+        },
+        "entropy": 0.15
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "OXY-8-3_QCY59231-MN030566-1",
+        "node_attrs": {
+          "div": 0.108,
+          "num_date": {
+            "value": 2019.423,
+            "confidence": [
+              2019.423,
+              2019.423
+            ]
+          },
+          "allele": {
+            "value": "OXY-8-3"
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "dateAccuracy": {
+            "value": "Submission date"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          },
+          "organism": {
+            "value": "Klebsiella_huaxiensis"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "T12C",
+              "T13A",
+              "C14G",
+              "G15C",
+              "T21C",
+              "C27T",
+              "C30G",
+              "C39G",
+              "C42G",
+              "T51G",
+              "T52C",
+              "A54G",
+              "T55C",
+              "C60G",
+              "T63C",
+              "T69C",
+              "T70A",
+              "C71G",
+              "A72C",
+              "T73C",
+              "A75G",
+              "C81G",
+              "T84C",
+              "C87G",
+              "T93G",
+              "G102C",
+              "G105A",
+              "T111C",
+              "T115C",
+              "A117G",
+              "T127A",
+              "C128G",
+              "A136C",
+              "G138C",
+              "T139C",
+              "T162C",
+              "A165C",
+              "T171C",
+              "T172A",
+              "C173G",
+              "T174C",
+              "A177G",
+              "C180T",
+              "T181C",
+              "A183G",
+              "A192C",
+              "T201C",
+              "C207G",
+              "T222C",
+              "C234G",
+              "T237G",
+              "C240G",
+              "T247C",
+              "A249G",
+              "G252A",
+              "A255G",
+              "T263C",
+              "C264G",
+              "T270C",
+              "A273G",
+              "A276G",
+              "T277C",
+              "T282C",
+              "A286C",
+              "G288C",
+              "G294A",
+              "G300A",
+              "T304A",
+              "C305G",
+              "A306C",
+              "T310C",
+              "C318G",
+              "T324C",
+              "A354C",
+              "G360C",
+              "T370C",
+              "A372G",
+              "C378G",
+              "A381G",
+              "A390G",
+              "C399T",
+              "T414C",
+              "G417A",
+              "T426C",
+              "T432G",
+              "A438C",
+              "A441G",
+              "C444T",
+              "A456G",
+              "C459T",
+              "C462G",
+              "G473A",
+              "C474T",
+              "C480G",
+              "T483C",
+              "T489C",
+              "T492G",
+              "T498C",
+              "G501C",
+              "G504A",
+              "T507G",
+              "A513G",
+              "C525T",
+              "T531C",
+              "G552C",
+              "C567G",
+              "C579T",
+              "G582A",
+              "G588C",
+              "T594C",
+              "T597C",
+              "T600G",
+              "T606C",
+              "C621G",
+              "T625C",
+              "A627G",
+              "A633C",
+              "T637C",
+              "G660C",
+              "T684G",
+              "A687G",
+              "C696G",
+              "A702C",
+              "C717G",
+              "T720C",
+              "C726T",
+              "G732C",
+              "T738C",
+              "C744T",
+              "C747G",
+              "T750G",
+              "C753T",
+              "T765C",
+              "C771G",
+              "T781C",
+              "A783G",
+              "C786G",
+              "T789C",
+              "C795T",
+              "A801G",
+              "A804G",
+              "G831A",
+              "A834G",
+              "T835C",
+              "A837G",
+              "C840G",
+              "A843G",
+              "A849G",
+              "C855T",
+              "G867C",
+              "G873A"
+            ],
+            "DA718_20995": [
+              "V88A",
+              "G158D"
+            ]
+          },
+          "labels": {
+            "aa": "DA718_20995: V88A, G158D"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.0915,
+          "num_date": {
+            "value": 2018.91,
+            "confidence": [
+              2018.381,
+              2019.032
+            ]
+          },
+          "country": {
+            "value": "France",
+            "confidence": {
+              "France": 0.981,
+              "China": 0.0111,
+              "Colombia": 0.00785
+            },
+            "entropy": 0.107
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.0939,
+              "num_date": {
+                "value": 2023.158,
+                "confidence": [
+                  2020.666,
+                  2023.237
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.976,
+                  "France": 0.0232,
+                  "Colombia": 0.00125
+                },
+                "entropy": 0.12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C180T",
+                  "G288A",
+                  "C399T",
+                  "A513G",
+                  "G572T",
+                  "C666T",
+                  "A670C",
+                  "C672T"
+                ],
+                "DA718_20995": [
+                  "S191I",
+                  "S224R"
+                ]
+              },
+              "labels": {
+                "aa": "DA718_20995: S191I, S224R"
+              }
+            },
+            "children": [
+              {
+                "name": "CP036175.1",
+                "node_attrs": {
+                  "div": 0.0939,
+                  "num_date": {
+                    "value": 2023.197,
+                    "confidence": [
+                      2020.036,
+                      2023.556
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.974,
+                      "France": 0.0241,
+                      "Colombia": 0.00202
+                    },
+                    "entropy": 0.128
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "OXY-8-1_MDG1641911-JAPQEX020000001-1847229",
+                "node_attrs": {
+                  "div": 0.0939,
+                  "num_date": {
+                    "value": 2023.237,
+                    "confidence": [
+                      2023.237,
+                      2023.237
+                    ]
+                  },
+                  "allele": {
+                    "value": "OXY-8-1"
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "organism": {
+                    "value": "Klebsiella_huaxiensis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.0959,
+              "num_date": {
+                "value": 2019.086,
+                "confidence": [
+                  2018.758,
+                  2019.205
+                ]
+              },
+              "country": {
+                "value": "France",
+                "confidence": {
+                  "France": 0.989,
+                  "Colombia": 0.00765,
+                  "China": 0.00348
+                },
+                "entropy": 0.068
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "OXY-8-7_WEJ89812-CP119320-407619",
+                "node_attrs": {
+                  "div": 0.114,
+                  "num_date": {
+                    "value": 2023.163,
+                    "confidence": [
+                      2023.163,
+                      2023.163
+                    ]
+                  },
+                  "allele": {
+                    "value": "OXY-8-7"
+                  },
+                  "country": {
+                    "value": "Colombia",
+                    "confidence": {
+                      "Colombia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "organism": {
+                    "value": "Klebsiella_huaxiensis"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A10T",
+                      "C11G",
+                      "T26C",
+                      "A43G",
+                      "C46T",
+                      "G101A",
+                      "C159T",
+                      "T181C",
+                      "C216T",
+                      "G243A",
+                      "A670C",
+                      "C672T",
+                      "G688A",
+                      "C714A",
+                      "G732C",
+                      "C786G",
+                      "C855T"
+                    ],
+                    "DA718_20995": [
+                      "T4C",
+                      "I9T",
+                      "T15A",
+                      "R34Q",
+                      "S224R",
+                      "G230S"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "DA718_20995: T4C, I9T, T15A, R34Q, S224R, G230S"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "div": 0.1,
+                  "num_date": {
+                    "value": 2019.205,
+                    "confidence": [
+                      2019.027,
+                      2019.329
+                    ]
+                  },
+                  "country": {
+                    "value": "France",
+                    "confidence": {
+                      "France": 1.0
+                    },
+                    "entropy": 0.00104
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G510A",
+                      "C678G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "OXY-8-3_VUS23187-CABGGW010000001-393714",
+                    "node_attrs": {
+                      "div": 0.106,
+                      "num_date": {
+                        "value": 2019.505,
+                        "confidence": [
+                          2019.505,
+                          2019.505
+                        ]
+                      },
+                      "allele": {
+                        "value": "OXY-8-3"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Klebsiella_huaxiensis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T263C",
+                          "A336G",
+                          "C375T",
+                          "G473A"
+                        ],
+                        "DA718_20995": [
+                          "V88A",
+                          "G158D"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "DA718_20995: V88A, G158D"
+                      }
+                    }
+                  },
+                  {
+                    "name": "OXY-8-2_VUT22948-CABGGQ010000064-86929",
+                    "node_attrs": {
+                      "div": 0.108,
+                      "num_date": {
+                        "value": 2019.505,
+                        "confidence": [
+                          2019.505,
+                          2019.505
+                        ]
+                      },
+                      "allele": {
+                        "value": "OXY-8-2"
+                      },
+                      "country": {
+                        "value": "France",
+                        "confidence": {
+                          "France": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "organism": {
+                        "value": "Klebsiella_huaxiensis"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A10T",
+                          "C11G",
+                          "T26C",
+                          "G288A",
+                          "T600G",
+                          "C621A",
+                          "C648T",
+                          "C657T"
+                        ],
+                        "DA718_20995": [
+                          "T4C",
+                          "I9T"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "DA718_20995: T4C, I9T"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

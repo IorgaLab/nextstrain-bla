@@ -1,0 +1,1358 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A OKP-D-like beta-lactamases",
+    "updated": "2025-11-06",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 861,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "ACKLKD_07470": {
+        "end": 861,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ACKLKD_07475": {
+        "end": 861,
+        "seqid": "config/ref.gb",
+        "start": 858,
+        "strand": "-",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Thailand",
+            "#511EA8"
+          ],
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "Italy",
+            "#5098B9"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Israel": {
+            "latitude": 31.217736,
+            "longitude": 34.903129
+          },
+          "Nigeria": {
+            "latitude": 10.0,
+            "longitude": 8.0
+          },
+          "Tanzania": {
+            "latitude": -6.5247123,
+            "longitude": 35.7878438
+          },
+          "France": {
+            "latitude": 46.2276,
+            "longitude": 2.2137
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          },
+          "Senegal": {
+            "latitude": 14.5,
+            "longitude": -14.25
+          },
+          "Germany": {
+            "latitude": 51.1657,
+            "longitude": 10.4515
+          },
+          "Italy": {
+            "latitude": 43.382775,
+            "longitude": 12.183629
+          },
+          "Thailand": {
+            "latitude": 14.8971921,
+            "longitude": 100.83273
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 691.94,
+        "confidence": [
+          176.818,
+          1240.859
+        ]
+      },
+      "country": {
+        "value": "Nigeria",
+        "confidence": {
+          "Nigeria": 0.546,
+          "Italy": 0.427,
+          "United Kingdom": 0.00691,
+          "China": 0.00475,
+          "Senegal": 0.00317,
+          "Israel": 0.00271,
+          "Germany": 0.00255,
+          "France": 0.00242,
+          "Thailand": 0.00237,
+          "Tanzania": 0.00236
+        },
+        "entropy": 0.846
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "OKP-D-2_SXD86777-UJZG01000001-376932",
+        "node_attrs": {
+          "div": 0.0105,
+          "num_date": {
+            "value": 2013.001,
+            "confidence": [
+              2013.001,
+              2013.899
+            ]
+          },
+          "organism": {
+            "value": "Klebsiella_quasivariicola"
+          },
+          "allele": {
+            "value": "OKP-D-2"
+          },
+          "countryAccuracy": {
+            "value": "Geographic location from metadata"
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "country": {
+            "value": "Italy",
+            "confidence": {
+              "Italy": 1.0
+            },
+            "entropy": -1e-12
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C299A",
+              "G300C",
+              "T303C",
+              "G328A",
+              "G343A",
+              "C390T",
+              "A407C",
+              "C412G",
+              "T420C",
+              "G423C",
+              "G435C",
+              "T438C",
+              "A448C",
+              "C449A",
+              "T450G",
+              "T453C",
+              "C561T"
+            ],
+            "ACKLKD_07470": [
+              "A100D",
+              "A110T",
+              "V115I",
+              "D136A",
+              "L138V",
+              "T150Q"
+            ]
+          },
+          "labels": {
+            "aa": "ACKLKD_07470: A100D, A110T, V115I, D136A, L138V, T150Q"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00935,
+          "num_date": {
+            "value": 1715.559,
+            "confidence": [
+              1664.468,
+              1764.114
+            ]
+          },
+          "country": {
+            "value": "Nigeria",
+            "confidence": {
+              "Nigeria": 0.989,
+              "United Kingdom": 0.0083,
+              "China": 0.00144
+            },
+            "entropy": 0.069
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "OKP-D-4_TTN49993-VLPG01000011-113268",
+            "node_attrs": {
+              "div": 0.0164,
+              "num_date": {
+                "value": 2016.171,
+                "confidence": [
+                  2016.171,
+                  2016.171
+                ]
+              },
+              "organism": {
+                "value": "Klebsiella_quasivariicola"
+              },
+              "allele": {
+                "value": "OKP-D-4"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location of submitter"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G189C",
+                  "C190A",
+                  "C192G",
+                  "A193G",
+                  "C194T",
+                  "C195G"
+                ],
+                "ACKLKD_07470": [
+                  "L64M",
+                  "T65V"
+                ]
+              },
+              "labels": {
+                "aa": "ACKLKD_07470: L64M, T65V"
+              }
+            }
+          },
+          {
+            "name": "JBMAXV010000006.1",
+            "node_attrs": {
+              "div": 0.00935,
+              "num_date": {
+                "value": 1763.939,
+                "confidence": [
+                  391.336,
+                  4359.772
+                ]
+              },
+              "country": {
+                "value": "Nigeria",
+                "confidence": {
+                  "Nigeria": 0.983,
+                  "United Kingdom": 0.00887,
+                  "China": 0.0025,
+                  "Senegal": 0.0013
+                },
+                "entropy": 0.115
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "OKP-D-1_MFW4193380-JBMAXV010000006-111514",
+            "node_attrs": {
+              "div": 0.00935,
+              "num_date": {
+                "value": 1763.939,
+                "confidence": [
+                  391.336,
+                  4359.772
+                ]
+              },
+              "organism": {
+                "value": "Klebsiella_sp._10982"
+              },
+              "allele": {
+                "value": "OKP-D-1"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "country": {
+                "value": "Nigeria",
+                "confidence": {
+                  "Nigeria": 1.0
+                },
+                "entropy": -1e-12
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.0105,
+              "num_date": {
+                "value": 1748.161,
+                "confidence": [
+                  1719.388,
+                  1818.545
+                ]
+              },
+              "country": {
+                "value": "Nigeria",
+                "confidence": {
+                  "Nigeria": 0.524,
+                  "Senegal": 0.265,
+                  "Germany": 0.123,
+                  "United Kingdom": 0.0483,
+                  "France": 0.037,
+                  "China": 0.0013
+                },
+                "entropy": 1.235
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C387T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "OKP-D-8_MBZ9579765-JAHREM010000003-249893",
+                "node_attrs": {
+                  "div": 0.0258,
+                  "num_date": {
+                    "value": 2019.664,
+                    "confidence": [
+                      2019.59,
+                      2019.664
+                    ]
+                  },
+                  "organism": {
+                    "value": "Klebsiella_quasivariicola"
+                  },
+                  "allele": {
+                    "value": "OKP-D-8"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Senegal",
+                    "confidence": {
+                      "Senegal": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "A14G",
+                      "C369A",
+                      "T453C",
+                      "C481T",
+                      "G560A",
+                      "A577C",
+                      "G610C",
+                      "G624A",
+                      "C672T",
+                      "T687C",
+                      "C723T",
+                      "A775C",
+                      "A861G"
+                    ],
+                    "ACKLKD_07470": [
+                      "H5R",
+                      "R161W",
+                      "R187H",
+                      "K193Q",
+                      "V204L",
+                      "M259L"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "ACKLKD_07470: H5R, R161W, R187H, K193Q, V204L, M259L"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000002",
+                "node_attrs": {
+                  "div": 0.014,
+                  "num_date": {
+                    "value": 1978.29,
+                    "confidence": [
+                      1900.632,
+                      1997.462
+                    ]
+                  },
+                  "country": {
+                    "value": "Germany",
+                    "confidence": {
+                      "Germany": 0.483,
+                      "United Kingdom": 0.17,
+                      "France": 0.151,
+                      "Nigeria": 0.128,
+                      "Senegal": 0.0659
+                    },
+                    "entropy": 1.396
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C66T",
+                      "G69A",
+                      "A72G"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "name": "OKP-D-1_UDC41546-CP084768-2742320",
+                    "node_attrs": {
+                      "div": 0.014,
+                      "num_date": {
+                        "value": 1997.001,
+                        "confidence": [
+                          1997.001,
+                          1997.899
+                        ]
+                      },
+                      "organism": {
+                        "value": "Klebsiella_quasivariicola"
+                      },
+                      "allele": {
+                        "value": "OKP-D-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Germany",
+                        "confidence": {
+                          "Germany": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000004",
+                    "node_attrs": {
+                      "div": 0.014,
+                      "num_date": {
+                        "value": 2000.354,
+                        "confidence": [
+                          1944.128,
+                          2011.935
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.405,
+                          "France": 0.376,
+                          "Germany": 0.156,
+                          "Nigeria": 0.0398,
+                          "Senegal": 0.0207
+                        },
+                        "entropy": 1.245
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "OKP-D-1_VAN47473-UNYS01000009-113490",
+                        "node_attrs": {
+                          "div": 0.014,
+                          "num_date": {
+                            "value": 2018.695,
+                            "confidence": [
+                              2018.695,
+                              2018.695
+                            ]
+                          },
+                          "organism": {
+                            "value": "Klebsiella_quasivariicola"
+                          },
+                          "allele": {
+                            "value": "OKP-D-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000005",
+                        "node_attrs": {
+                          "div": 0.014,
+                          "num_date": {
+                            "value": 2000.639,
+                            "confidence": [
+                              1978.604,
+                              2014.24
+                            ]
+                          },
+                          "country": {
+                            "value": "France",
+                            "confidence": {
+                              "France": 0.999
+                            },
+                            "entropy": 0.0109
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "OKP-D-1_AZA07960-MK161463-1",
+                            "node_attrs": {
+                              "div": 0.014,
+                              "num_date": {
+                                "value": 2018.856,
+                                "confidence": [
+                                  2018.856,
+                                  2018.856
+                                ]
+                              },
+                              "organism": {
+                                "value": "Klebsiella_quasivariicola"
+                              },
+                              "allele": {
+                                "value": "OKP-D-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location of submitter"
+                              },
+                              "dateAccuracy": {
+                                "value": "Submission date"
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000006",
+                            "node_attrs": {
+                              "div": 0.014,
+                              "num_date": {
+                                "value": 2010.342,
+                                "confidence": [
+                                  1999.473,
+                                  2015.337
+                                ]
+                              },
+                              "country": {
+                                "value": "France",
+                                "confidence": {
+                                  "France": 0.999,
+                                  "China": 0.00106
+                                },
+                                "entropy": 0.00994
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "OKP-D-1_VGP27883-CAAHGB010000003-3092622",
+                                "node_attrs": {
+                                  "div": 0.014,
+                                  "num_date": {
+                                    "value": 2019.251,
+                                    "confidence": [
+                                      2019.251,
+                                      2019.251
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Klebsiella_quasivariicola"
+                                  },
+                                  "allele": {
+                                    "value": "OKP-D-1"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Submission date"
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000007",
+                                "node_attrs": {
+                                  "div": 0.014,
+                                  "num_date": {
+                                    "value": 2011.799,
+                                    "confidence": [
+                                      2003.001,
+                                      2017.47
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 0.532,
+                                      "China": 0.468
+                                    },
+                                    "entropy": 0.691
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "OKP-D-1_MFP0490001-JBKFXN010000007-113485",
+                                    "node_attrs": {
+                                      "div": 0.014,
+                                      "num_date": {
+                                        "value": 2020.668,
+                                        "confidence": [
+                                          2020.668,
+                                          2020.739
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Klebsiella_pneumoniae"
+                                      },
+                                      "allele": {
+                                        "value": "OKP-D-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Collection date from metadata"
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000008",
+                                    "node_attrs": {
+                                      "div": 0.014,
+                                      "num_date": {
+                                        "value": 2012.999,
+                                        "confidence": [
+                                          2009.107,
+                                          2019.445
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 0.532,
+                                          "China": 0.468
+                                        },
+                                        "entropy": 0.691
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "OKP-D-1_CAM4064650-CBCSCP010000008-117571",
+                                        "node_attrs": {
+                                          "div": 0.014,
+                                          "num_date": {
+                                            "value": 2025.105,
+                                            "confidence": [
+                                              2025.105,
+                                              2025.105
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Klebsiella_quasivariicola"
+                                          },
+                                          "allele": {
+                                            "value": "OKP-D-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "country": {
+                                            "value": "France",
+                                            "confidence": {
+                                              "France": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "OKP-D-1_MFG6481209-JBIGHP010000007-113485",
+                                        "node_attrs": {
+                                          "div": 0.014,
+                                          "num_date": {
+                                            "value": 2021.163,
+                                            "confidence": [
+                                              2021.163,
+                                              2021.237
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Klebsiella_pneumoniae"
+                                          },
+                                          "allele": {
+                                            "value": "OKP-D-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000009",
+            "node_attrs": {
+              "div": 0.00935,
+              "num_date": {
+                "value": 1999.079,
+                "confidence": [
+                  1776.853,
+                  2006.911
+                ]
+              },
+              "country": {
+                "value": "Nigeria",
+                "confidence": {
+                  "Nigeria": 0.989,
+                  "United Kingdom": 0.00901,
+                  "Israel": 0.00103
+                },
+                "entropy": 0.0649
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "OKP-D-1_QBL49583-CP037441-2866385",
+                "node_attrs": {
+                  "div": 0.00935,
+                  "num_date": {
+                    "value": 2009.423,
+                    "confidence": [
+                      2009.423,
+                      2009.423
+                    ]
+                  },
+                  "organism": {
+                    "value": "Klebsiella_sp._PO552"
+                  },
+                  "allele": {
+                    "value": "OKP-D-1"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "country": {
+                    "value": "Nigeria",
+                    "confidence": {
+                      "Nigeria": 1.0
+                    },
+                    "entropy": -1e-12
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000010",
+                "node_attrs": {
+                  "div": 0.00935,
+                  "num_date": {
+                    "value": 1999.079,
+                    "confidence": [
+                      1892.1,
+                      2011.247
+                    ]
+                  },
+                  "country": {
+                    "value": "Israel",
+                    "confidence": {
+                      "Israel": 0.353,
+                      "United Kingdom": 0.327,
+                      "Nigeria": 0.318
+                    },
+                    "entropy": 1.112
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "OKP-D-1_VVJ58346-UJYZ02000004-214952",
+                    "node_attrs": {
+                      "div": 0.00935,
+                      "num_date": {
+                        "value": 2013.001,
+                        "confidence": [
+                          2013.001,
+                          2013.899
+                        ]
+                      },
+                      "organism": {
+                        "value": "Klebsiella_quasivariicola"
+                      },
+                      "allele": {
+                        "value": "OKP-D-1"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "country": {
+                        "value": "Israel",
+                        "confidence": {
+                          "Israel": 1.0
+                        },
+                        "entropy": -1e-12
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "NODE_0000011",
+                    "node_attrs": {
+                      "div": 0.00935,
+                      "num_date": {
+                        "value": 2001.51,
+                        "confidence": [
+                          1943.565,
+                          2013.035
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 0.998
+                        },
+                        "entropy": 0.0135
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "OKP-D-1_SLO22893-FWGJ01000008-121604",
+                        "node_attrs": {
+                          "div": 0.00935,
+                          "num_date": {
+                            "value": 2014.001,
+                            "confidence": [
+                              2014.001,
+                              2014.899
+                            ]
+                          },
+                          "organism": {
+                            "value": "Klebsiella_quasivariicola"
+                          },
+                          "allele": {
+                            "value": "OKP-D-1"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000012",
+                        "node_attrs": {
+                          "div": 0.00935,
+                          "num_date": {
+                            "value": 2009.915,
+                            "confidence": [
+                              1980.148,
+                              2014.216
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.998
+                            },
+                            "entropy": 0.0136
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "OKP-D-1_SLY37547-FWNZ01000009-66314",
+                            "node_attrs": {
+                              "div": 0.00935,
+                              "num_date": {
+                                "value": 2015.999,
+                                "confidence": [
+                                  2015.101,
+                                  2015.999
+                                ]
+                              },
+                              "organism": {
+                                "value": "Klebsiella_quasivariicola"
+                              },
+                              "allele": {
+                                "value": "OKP-D-1"
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 1.0
+                                },
+                                "entropy": -1e-12
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "NODE_0000013",
+                            "node_attrs": {
+                              "div": 0.00935,
+                              "num_date": {
+                                "value": 2010.083,
+                                "confidence": [
+                                  1999.139,
+                                  2014.12
+                                ]
+                              },
+                              "country": {
+                                "value": "United Kingdom",
+                                "confidence": {
+                                  "United Kingdom": 0.38,
+                                  "Tanzania": 0.375,
+                                  "France": 0.155,
+                                  "China": 0.0501,
+                                  "Thailand": 0.0381
+                                },
+                                "entropy": 1.309
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "OKP-D-1_NBZ76143-WHZK01000079-443696",
+                                "node_attrs": {
+                                  "div": 0.00935,
+                                  "num_date": {
+                                    "value": 2018.497,
+                                    "confidence": [
+                                      2018.497,
+                                      2018.571
+                                    ]
+                                  },
+                                  "organism": {
+                                    "value": "Klebsiella_quasivariicola"
+                                  },
+                                  "allele": {
+                                    "value": "OKP-D-1"
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  },
+                                  "country": {
+                                    "value": "Tanzania",
+                                    "confidence": {
+                                      "Tanzania": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000014",
+                                "node_attrs": {
+                                  "div": 0.00935,
+                                  "num_date": {
+                                    "value": 2011.554,
+                                    "confidence": [
+                                      2002.633,
+                                      2016.321
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "France",
+                                    "confidence": {
+                                      "France": 0.473,
+                                      "China": 0.161,
+                                      "Thailand": 0.123,
+                                      "United Kingdom": 0.121,
+                                      "Tanzania": 0.12
+                                    },
+                                    "entropy": 1.426
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "OKP-D-1_VGP72160-CAAHGR010000001-498213",
+                                    "node_attrs": {
+                                      "div": 0.00935,
+                                      "num_date": {
+                                        "value": 2019.251,
+                                        "confidence": [
+                                          2019.251,
+                                          2019.251
+                                        ]
+                                      },
+                                      "organism": {
+                                        "value": "Klebsiella_quasivariicola"
+                                      },
+                                      "allele": {
+                                        "value": "OKP-D-1"
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      },
+                                      "country": {
+                                        "value": "France",
+                                        "confidence": {
+                                          "France": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000015",
+                                    "node_attrs": {
+                                      "div": 0.00935,
+                                      "num_date": {
+                                        "value": 2012.861,
+                                        "confidence": [
+                                          2008.243,
+                                          2019.475
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "China",
+                                        "confidence": {
+                                          "China": 0.427,
+                                          "Thailand": 0.347,
+                                          "France": 0.156,
+                                          "United Kingdom": 0.0349,
+                                          "Tanzania": 0.0345
+                                        },
+                                        "entropy": 1.262
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "OKP-D-1_MGP0191010-JBQKMN010000014-4097002",
+                                        "node_attrs": {
+                                          "div": 0.00935,
+                                          "num_date": {
+                                            "value": 2024.627,
+                                            "confidence": [
+                                              2024.627,
+                                              2024.627
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Klebsiella_quasivariicola"
+                                          },
+                                          "allele": {
+                                            "value": "OKP-D-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          },
+                                          "country": {
+                                            "value": "Thailand",
+                                            "confidence": {
+                                              "Thailand": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "OKP-D-1_MBK2370822-VHZO01000001-529427",
+                                        "node_attrs": {
+                                          "div": 0.00935,
+                                          "num_date": {
+                                            "value": 2019.475,
+                                            "confidence": [
+                                              2019.475,
+                                              2019.475
+                                            ]
+                                          },
+                                          "organism": {
+                                            "value": "Klebsiella_quasivariicola"
+                                          },
+                                          "allele": {
+                                            "value": "OKP-D-1"
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

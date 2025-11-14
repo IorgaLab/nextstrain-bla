@@ -1,0 +1,650 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A PAD beta-lactamases",
+    "updated": "2025-11-09",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 894,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "ATN84_21655": {
+        "end": 894,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000002",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2000.658,
+        "confidence": [
+          1999.131,
+          2002.175
+        ]
+      },
+      "country": {
+        "value": "China",
+        "confidence": {
+          "China": 0.935,
+          "USA": 0.0647
+        },
+        "entropy": 0.24
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "PAD-2_PRD40908-PVBR01000028-37546",
+        "node_attrs": {
+          "div": 0.116,
+          "num_date": {
+            "value": 2013.999,
+            "confidence": [
+              2013.126,
+              2013.999
+            ]
+          },
+          "organism": {
+            "value": "Phyllobacterium_phragmitis"
+          },
+          "dateAccuracy": {
+            "value": "Collection date from metadata"
+          },
+          "allele": {
+            "value": "PAD-2"
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 1.0
+            },
+            "entropy": -1e-12
+          },
+          "countryAccuracy": {
+            "value": "Geographic location of submitter"
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G24T",
+              "T33C",
+              "C43T",
+              "G72C",
+              "G77T",
+              "G82A",
+              "G93A",
+              "A94G",
+              "G95C",
+              "G98A",
+              "G100C",
+              "G101A",
+              "C102G",
+              "G105C",
+              "A110G",
+              "G115C",
+              "A116G",
+              "A117G",
+              "A124G",
+              "G126A",
+              "T129C",
+              "A132G",
+              "A134G",
+              "A163G",
+              "C165G",
+              "G202T",
+              "A210G",
+              "C216T",
+              "C217T",
+              "C220A",
+              "C231G",
+              "A244G",
+              "A249G",
+              "G251C",
+              "C252A",
+              "A254T",
+              "T255C",
+              "C258T",
+              "C264A",
+              "C273T",
+              "A274C",
+              "C279A",
+              "G282A",
+              "C291T",
+              "A293G",
+              "G310T",
+              "G336A",
+              "G345A",
+              "G351T",
+              "C363T",
+              "A370C",
+              "C387T",
+              "C417T",
+              "G432T",
+              "A439G",
+              "A440C",
+              "T441C",
+              "G456A",
+              "G461C",
+              "G469A",
+              "A471T",
+              "G477A",
+              "C480A",
+              "C486T",
+              "C492T",
+              "C502A",
+              "T513C",
+              "T514A",
+              "T515C",
+              "A519G",
+              "A520C",
+              "T531C",
+              "G532C",
+              "T533A",
+              "T537C",
+              "A540T",
+              "G570A",
+              "C573T",
+              "G576T",
+              "A587G",
+              "G588A",
+              "T603G",
+              "C604G",
+              "C606T",
+              "C615T",
+              "G618A",
+              "C627A",
+              "T628C",
+              "G633A",
+              "C643T",
+              "T645G",
+              "C648T",
+              "G658A",
+              "G672A",
+              "C678T",
+              "A680C",
+              "A681G",
+              "C704G",
+              "T705G",
+              "G706A",
+              "T713C",
+              "G714T",
+              "A715G",
+              "G726A",
+              "C729G",
+              "A732G",
+              "A747G",
+              "A749T",
+              "C762T",
+              "G766A",
+              "C768T",
+              "G772A",
+              "C774T",
+              "T808G",
+              "A841G",
+              "G843A",
+              "C851G",
+              "C852T",
+              "C855G",
+              "C864T",
+              "A868G",
+              "C870G",
+              "G873A",
+              "T882C",
+              "T883G",
+              "A893G"
+            ],
+            "ATN84_21655": [
+              "G26V",
+              "A28T",
+              "S32A",
+              "G33D",
+              "G34Q",
+              "K35N",
+              "E37G",
+              "E39R",
+              "K42E",
+              "D45G",
+              "I55V",
+              "A68S",
+              "L74M",
+              "T82A",
+              "G84A",
+              "Y85F",
+              "D98G",
+              "A104S",
+              "K117N",
+              "M124L",
+              "N147A",
+              "G154A",
+              "A157T",
+              "F172T",
+              "T174P",
+              "V178Q",
+              "E180D",
+              "E196G",
+              "L202V",
+              "S210P",
+              "V220I",
+              "E227A",
+              "A235G",
+              "D236N",
+              "M238T",
+              "I239V",
+              "Y250F",
+              "V256I",
+              "V258I",
+              "S270A",
+              "K281E",
+              "A284G",
+              "I290V",
+              "S295A"
+            ]
+          },
+          "labels": {
+            "aa": "ATN84_21655: G26V, A28T, S32A, G33D, G34Q, K35N, E37G, E39R, K42E, D45G, I55V, A68S, L74M, T82A, G84A, Y85F, D98G, A104S, K117N, M124L, N147A, G154A, A157T, F172T, T174P, V178Q, E180D, E196G, L202V, S210P, V220I, E227A, A235G, D236N, M238T, I239V, Y250F, V256I, V258I, S270A, K281E, A284G, I290V, S295A"
+          }
+        }
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.047,
+          "num_date": {
+            "value": 2006.406,
+            "confidence": [
+              2005.542,
+              2007.823
+            ]
+          },
+          "country": {
+            "value": "China",
+            "confidence": {
+              "China": 0.924,
+              "USA": 0.0762
+            },
+            "entropy": 0.269
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "PAD-3_MBB2972910-JACHWN010000006-261403",
+            "node_attrs": {
+              "div": 0.125,
+              "num_date": {
+                "value": 2020.589,
+                "confidence": [
+                  2020.589,
+                  2020.589
+                ]
+              },
+              "organism": {
+                "value": "Mesorhizobium_sp._RMAD-H1"
+              },
+              "dateAccuracy": {
+                "value": "Submission date"
+              },
+              "allele": {
+                "value": "PAD-3"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C66A",
+                  "T67A",
+                  "G77C",
+                  "C81T",
+                  "G86C",
+                  "A92G",
+                  "C120T",
+                  "C166A",
+                  "C174G",
+                  "G184C",
+                  "A185G",
+                  "A190C",
+                  "G193A",
+                  "G194C",
+                  "T201C",
+                  "C204T",
+                  "G219C",
+                  "C220T",
+                  "C240A",
+                  "C241T",
+                  "A249C",
+                  "T253C",
+                  "C261T",
+                  "G275A",
+                  "G288A",
+                  "G310A",
+                  "G318T",
+                  "C329A",
+                  "G336C",
+                  "G339C",
+                  "G345C",
+                  "G351A",
+                  "C360A",
+                  "G364A",
+                  "C390T",
+                  "C399G",
+                  "A418G",
+                  "T441G",
+                  "G468C",
+                  "A471G",
+                  "T474C",
+                  "T475C",
+                  "A484C",
+                  "G525A",
+                  "C526T",
+                  "G534C",
+                  "G546C",
+                  "T549C",
+                  "G574A",
+                  "G576A",
+                  "T603C",
+                  "C606G",
+                  "T621G",
+                  "G633C",
+                  "A669G",
+                  "G690C",
+                  "C704A",
+                  "A707G",
+                  "T748C",
+                  "G786C",
+                  "C789T",
+                  "G792C",
+                  "T808A",
+                  "A825C",
+                  "G828C",
+                  "T835C",
+                  "G844A",
+                  "A867C",
+                  "A894G"
+                ],
+                "ATN84_21655": [
+                  "S23T",
+                  "G26A",
+                  "R29P",
+                  "Q31R",
+                  "L56I",
+                  "E62R",
+                  "I64L",
+                  "G65T",
+                  "Y85H",
+                  "R92K",
+                  "A104T",
+                  "K106N",
+                  "T110N",
+                  "A122T",
+                  "T140A",
+                  "N147K",
+                  "I162L",
+                  "A192T",
+                  "A235D",
+                  "D236G",
+                  "Y250H",
+                  "S270T",
+                  "S279P",
+                  "E282K",
+                  "E289D"
+                ]
+              },
+              "labels": {
+                "aa": "ATN84_21655: S23T, G26A, R29P, Q31R, L56I, E62R, I64L, G65T, Y85H, R92K, A104T, K106N, T110N, A122T, T140A, N147K, I162L, A192T, A235D, D236G, Y250H, S270T, S279P, E282K, E289D"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000001",
+            "node_attrs": {
+              "div": 0.112,
+              "num_date": {
+                "value": 2010.667,
+                "confidence": [
+                  2010.49,
+                  2010.739
+                ]
+              },
+              "country": {
+                "value": "China",
+                "confidence": {
+                  "China": 0.998,
+                  "USA": 0.0022
+                },
+                "entropy": 0.0157
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G12C",
+                  "A13C",
+                  "A18C",
+                  "C39A",
+                  "C42T",
+                  "G51C",
+                  "A52G",
+                  "C57G",
+                  "C61T",
+                  "T63G",
+                  "G76A",
+                  "G113A",
+                  "C123A",
+                  "A138G",
+                  "C150T",
+                  "C162G",
+                  "G186C",
+                  "C187A",
+                  "G188A",
+                  "C228T",
+                  "G276A",
+                  "G285A",
+                  "C286G",
+                  "T307C",
+                  "C324G",
+                  "A327C",
+                  "T354C",
+                  "G375C",
+                  "G381C",
+                  "A392T",
+                  "A453G",
+                  "C459G",
+                  "C489T",
+                  "T497C",
+                  "C612T",
+                  "C693G",
+                  "C759T",
+                  "T765C",
+                  "C771G",
+                  "G783A",
+                  "C807G",
+                  "C810A",
+                  "G840A",
+                  "G856A",
+                  "A887G",
+                  "A891C"
+                ],
+                "ATN84_21655": [
+                  "I5L",
+                  "I18V",
+                  "G26S",
+                  "S38N",
+                  "E62D",
+                  "R63K",
+                  "Q96E",
+                  "Y103H",
+                  "Q131L",
+                  "I166T",
+                  "V286I",
+                  "Q296R"
+                ]
+              },
+              "labels": {
+                "aa": "ATN84_21655: I5L, I18V, G26S, S38N, E62D, R63K, Q96E, Y103H, Q131L, I166T, V286I, Q296R"
+              }
+            },
+            "children": [
+              {
+                "name": "LNTU01000040.1",
+                "node_attrs": {
+                  "div": 0.112,
+                  "num_date": {
+                    "value": 2010.712,
+                    "confidence": [
+                      2010.453,
+                      2011.086
+                    ]
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 0.996,
+                      "USA": 0.00367
+                    },
+                    "entropy": 0.0242
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "PAD-1_KXF74838-LNTU01000040-32462",
+                "node_attrs": {
+                  "div": 0.112,
+                  "num_date": {
+                    "value": 2010.746,
+                    "confidence": [
+                      2010.667,
+                      2010.747
+                    ]
+                  },
+                  "organism": {
+                    "value": "Paramesorhizobium_deserti"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "allele": {
+                    "value": "PAD-1"
+                  },
+                  "country": {
+                    "value": "China",
+                    "confidence": {
+                      "China": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1070 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A PLES beta-lactamases",
+    "updated": "2025-11-12",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 900,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "NCTC10363_01512": {
+        "end": 900,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Japan",
+            "#4B8FC1"
+          ],
+          [
+            "Brazil",
+            "#56A0AF"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Japan": {
+            "latitude": 35.68536,
+            "longitude": 139.75309
+          },
+          "Brazil": {
+            "latitude": -10.3333332,
+            "longitude": -53.1999999
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "United Kingdom": {
+            "latitude": 54.242833,
+            "longitude": -2.088739
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000010",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1938.48,
+        "confidence": [
+          1930.311,
+          1941.065
+        ]
+      },
+      "country": {
+        "value": "United Kingdom",
+        "confidence": {
+          "United Kingdom": 0.951,
+          "USA": 0.028,
+          "Brazil": 0.0189
+        },
+        "entropy": 0.24
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.00334,
+          "num_date": {
+            "value": 1971.294,
+            "confidence": [
+              1958.517,
+              1981.817
+            ]
+          },
+          "country": {
+            "value": "United Kingdom",
+            "confidence": {
+              "United Kingdom": 0.389,
+              "USA": 0.334,
+              "Brazil": 0.266,
+              "": 0.00428,
+              "Malaysia": 0.00423,
+              "Japan": 0.0027
+            },
+            "entropy": 1.148
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "G180C",
+              "T285C",
+              "T685C",
+              "G709T",
+              "G735T",
+              "C747T",
+              "C750T",
+              "A816G"
+            ],
+            "NCTC10363_01512": [
+              "V237F"
+            ]
+          },
+          "labels": {
+            "aa": "NCTC10363_01512: V237F"
+          }
+        },
+        "children": [
+          {
+            "name": "PLES-8_AVQ86431-CP027852-723483",
+            "node_attrs": {
+              "div": 0.01,
+              "num_date": {
+                "value": 2017.366,
+                "confidence": [
+                  2017.366,
+                  2017.366
+                ]
+              },
+              "organism": {
+                "value": "Plesiomonas_shigelloides"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "country": {
+                "value": "USA",
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "allele": {
+                "value": "PLES-8"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T61C",
+                  "T82A",
+                  "G132T",
+                  "G195A",
+                  "A574G",
+                  "G645A",
+                  "C717A"
+                ],
+                "NCTC10363_01512": [
+                  "F21L",
+                  "S28T",
+                  "N192D"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC10363_01512: F21L, S28T, N192D"
+              }
+            }
+          },
+          {
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.0259,
+              "num_date": {
+                "value": 2015.497,
+                "confidence": [
+                  2011.92,
+                  2015.497
+                ]
+              },
+              "country": {
+                "value": "Brazil",
+                "confidence": {
+                  "Brazil": 1.0
+                },
+                "entropy": 0.000611
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "C81T",
+                  "G150C",
+                  "T156A",
+                  "G162A",
+                  "T183C",
+                  "G292A",
+                  "G369T",
+                  "C457T",
+                  "C542T",
+                  "G555T",
+                  "C556A",
+                  "C588T",
+                  "G606T",
+                  "C693G",
+                  "A783G",
+                  "C801T",
+                  "A858G",
+                  "A874G",
+                  "C897T"
+                ],
+                "NCTC10363_01512": [
+                  "A98T",
+                  "P153S",
+                  "A181V",
+                  "I292V"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC10363_01512: A98T, P153S, A181V, I292V"
+              }
+            },
+            "children": [
+              {
+                "name": "PLES-6_WP_116546356-NZ_JARFTN010000006-18010",
+                "node_attrs": {
+                  "div": 0.0259,
+                  "num_date": {
+                    "value": 2020.663,
+                    "confidence": [
+                      2020.663,
+                      2020.663
+                    ]
+                  },
+                  "organism": {
+                    "value": "Plesiomonas_shigelloides"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "PLES-6"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "PLES-6_PVU66582-PYSI01000007-147441",
+                "node_attrs": {
+                  "div": 0.0259,
+                  "num_date": {
+                    "value": 2015.497,
+                    "confidence": [
+                      2015.497,
+                      2015.497
+                    ]
+                  },
+                  "organism": {
+                    "value": "Plesiomonas_shigelloides"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "country": {
+                    "value": "Brazil",
+                    "confidence": {
+                      "Brazil": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "PLES-6"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.00445,
+          "num_date": {
+            "value": 1939.766,
+            "confidence": [
+              1932.995,
+              1941.824
+            ]
+          },
+          "country": {
+            "value": "United Kingdom",
+            "confidence": {
+              "United Kingdom": 0.995,
+              "USA": 0.00446
+            },
+            "entropy": 0.0323
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.00556,
+              "num_date": {
+                "value": 1942.011,
+                "confidence": [
+                  1937.386,
+                  1943.701
+                ]
+              },
+              "country": {
+                "value": "United Kingdom",
+                "confidence": {
+                  "United Kingdom": 1.0
+                },
+                "entropy": 0.00349
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G681A",
+                  "C717A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "name": "PLES-2_SBT60981-LT575468-1641893",
+                "node_attrs": {
+                  "div": 0.0111,
+                  "num_date": {
+                    "value": 2016.365,
+                    "confidence": [
+                      2016.365,
+                      2016.365
+                    ]
+                  },
+                  "organism": {
+                    "value": "Plesiomonas_shigelloides"
+                  },
+                  "dateAccuracy": {
+                    "value": "Submission date"
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location of submitter"
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "allele": {
+                    "value": "PLES-2"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C81T",
+                      "G180C",
+                      "T268A",
+                      "C300A",
+                      "C429T",
+                      "A816G"
+                    ],
+                    "NCTC10363_01512": [
+                      "S90T",
+                      "N100K"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10363_01512: S90T, N100K"
+                  }
+                }
+              },
+              {
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.01,
+                  "num_date": {
+                    "value": 1943.999,
+                    "confidence": [
+                      1941.62,
+                      1945.799
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 1.0
+                    },
+                    "entropy": 0.00333
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T61C",
+                      "T156A",
+                      "G789T"
+                    ],
+                    "NCTC10363_01512": [
+                      "F21L",
+                      "E263D"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10363_01512: F21L, E263D"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PLES-4_WP_072038573-NZ_JWHQ01000003-30511",
+                    "node_attrs": {
+                      "div": 0.0201,
+                      "num_date": {
+                        "value": 2014.36,
+                        "confidence": [
+                          2014.36,
+                          2014.36
+                        ]
+                      },
+                      "organism": {
+                        "value": "Plesiomonas_shigelloides"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "country": {
+                        "value": "Malaysia",
+                        "confidence": {
+                          "Malaysia": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "PLES-4"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G66A",
+                          "T82A",
+                          "G93T",
+                          "G150C",
+                          "T194C",
+                          "T268G",
+                          "C429T",
+                          "G780C",
+                          "A892C"
+                        ],
+                        "NCTC10363_01512": [
+                          "S28T",
+                          "K31N",
+                          "V65A",
+                          "S90A",
+                          "T298P"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10363_01512: S28T, K31N, V65A, S90A, T298P"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000005",
+                    "node_attrs": {
+                      "div": 0.0167,
+                      "num_date": {
+                        "value": 1947.503,
+                        "confidence": [
+                          1946.494,
+                          1947.943
+                        ]
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": 0.00158
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G78A",
+                          "C95A",
+                          "G96A",
+                          "G132T",
+                          "T213C",
+                          "A547C"
+                        ],
+                        "NCTC10363_01512": [
+                          "A32E",
+                          "N183H"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10363_01512: A32E, N183H"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "UGTC01000001.1",
+                        "node_attrs": {
+                          "div": 0.0167,
+                          "num_date": {
+                            "value": 1947.888,
+                            "confidence": [
+                              1942.187,
+                              1980.988
+                            ]
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 0.996,
+                              "Malaysia": 0.00104
+                            },
+                            "entropy": 0.0333
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PLES-9_SUB63626-UGTC01000001-1661946",
+                        "node_attrs": {
+                          "div": 0.0167,
+                          "num_date": {
+                            "value": 1947.989,
+                            "confidence": [
+                              1947.001,
+                              1947.999
+                            ]
+                          },
+                          "organism": {
+                            "value": "Plesiomonas_shigelloides"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "country": {
+                            "value": "United Kingdom",
+                            "confidence": {
+                              "United Kingdom": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "PLES-9"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NODE_0000006",
+            "node_attrs": {
+              "div": 0.00668,
+              "num_date": {
+                "value": 1942.048,
+                "confidence": [
+                  1938.551,
+                  1946.35
+                ]
+              },
+              "country": {
+                "value": "United Kingdom",
+                "confidence": {
+                  "United Kingdom": 0.995,
+                  "USA": 0.00459
+                },
+                "entropy": 0.0352
+              }
+            },
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G80A"
+                ],
+                "NCTC10363_01512": [
+                  "S27N"
+                ]
+              },
+              "labels": {
+                "aa": "NCTC10363_01512: S27N"
+              }
+            },
+            "children": [
+              {
+                "name": "NODE_0000007",
+                "node_attrs": {
+                  "div": 0.0122,
+                  "num_date": {
+                    "value": 1946.787,
+                    "confidence": [
+                      1942.906,
+                      1950.311
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.996,
+                      "USA": 0.00294
+                    },
+                    "entropy": 0.0299
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T82G",
+                      "G150T",
+                      "G555T",
+                      "C556A",
+                      "G735T"
+                    ],
+                    "NCTC10363_01512": [
+                      "S28A"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10363_01512: S28A"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PLES-7_WP_084978130-NZ_MUNJ01000017-12603",
+                    "node_attrs": {
+                      "div": 0.0189,
+                      "num_date": {
+                        "value": 2016.627,
+                        "confidence": [
+                          2016.627,
+                          2016.627
+                        ]
+                      },
+                      "organism": {
+                        "value": "Plesiomonas_shigelloides"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PLES-7"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G118A",
+                          "G345T",
+                          "A547C",
+                          "C554T",
+                          "C588T",
+                          "G606T",
+                          "A816G"
+                        ],
+                        "NCTC10363_01512": [
+                          "A40T",
+                          "N183H",
+                          "P185L"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10363_01512: A40T, N183H, P185L"
+                      }
+                    }
+                  },
+                  {
+                    "name": "PLES-5_SPZ37458-UATR01000001-276633",
+                    "node_attrs": {
+                      "div": 0.0336,
+                      "num_date": {
+                        "value": 1960.999,
+                        "confidence": [
+                          1960.123,
+                          1960.999
+                        ]
+                      },
+                      "organism": {
+                        "value": "Plesiomonas_shigelloides"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "country": {
+                        "value": "United Kingdom",
+                        "confidence": {
+                          "United Kingdom": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "PLES-5"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G17T",
+                          "T252C",
+                          "A331G",
+                          "G369T",
+                          "C378G",
+                          "C426T",
+                          "C429A",
+                          "A443C",
+                          "C542T",
+                          "T624G",
+                          "C627T",
+                          "A628G",
+                          "G672A",
+                          "G681A",
+                          "G778A",
+                          "C801T",
+                          "C830G",
+                          "C831T"
+                        ],
+                        "NCTC10363_01512": [
+                          "R6L",
+                          "M111V",
+                          "E148A",
+                          "A181V",
+                          "T210A",
+                          "A260T",
+                          "T277S"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10363_01512: R6L, M111V, E148A, A181V, T210A, A260T, T277S"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.01,
+                  "num_date": {
+                    "value": 1973.817,
+                    "confidence": [
+                      1963.068,
+                      1985.488
+                    ]
+                  },
+                  "country": {
+                    "value": "United Kingdom",
+                    "confidence": {
+                      "United Kingdom": 0.377,
+                      "USA": 0.351,
+                      "Japan": 0.262,
+                      "": 0.00378,
+                      "Malaysia": 0.00367,
+                      "Brazil": 0.00235
+                    },
+                    "entropy": 1.142
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C95A",
+                      "G96A",
+                      "C378G"
+                    ],
+                    "NCTC10363_01512": [
+                      "A32E"
+                    ]
+                  },
+                  "labels": {
+                    "aa": "NCTC10363_01512: A32E"
+                  }
+                },
+                "children": [
+                  {
+                    "name": "PLES-3_WP_047708601-NZ_JRKB01000061-158935",
+                    "node_attrs": {
+                      "div": 0.0212,
+                      "num_date": {
+                        "value": 2011.889,
+                        "confidence": [
+                          2011.889,
+                          2011.889
+                        ]
+                      },
+                      "organism": {
+                        "value": "Plesiomonas_sp._ZOR0011"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "allele": {
+                        "value": "PLES-3"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G124A",
+                          "T156A",
+                          "T213C",
+                          "A342G",
+                          "T432C",
+                          "C498T",
+                          "C556A",
+                          "A558G",
+                          "C627T",
+                          "A628G",
+                          "A816G"
+                        ],
+                        "NCTC10363_01512": [
+                          "V42M",
+                          "T210A"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10363_01512: V42M, T210A"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NODE_0000009",
+                    "node_attrs": {
+                      "div": 0.0212,
+                      "num_date": {
+                        "value": 2012.831,
+                        "confidence": [
+                          2009.761,
+                          2013.292
+                        ]
+                      },
+                      "country": {
+                        "value": "Japan",
+                        "confidence": {
+                          "Japan": 1.0
+                        },
+                        "entropy": 0.000356
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G132T",
+                          "G264A",
+                          "T285C",
+                          "T366C",
+                          "G369T",
+                          "G387T",
+                          "A471C",
+                          "T685C",
+                          "G709T"
+                        ],
+                        "NCTC10363_01512": [
+                          "M88I",
+                          "V237F"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "NCTC10363_01512: M88I, V237F"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PLES-1_EON88678-AQQO01000333-16293",
+                        "node_attrs": {
+                          "div": 0.0212,
+                          "num_date": {
+                            "value": 2013.292,
+                            "confidence": [
+                              2013.292,
+                              2013.292
+                            ]
+                          },
+                          "organism": {
+                            "value": "Plesiomonas_shigelloides_302-73"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "PLES-1"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "PLES-1_EON88678-KB944511-45957",
+                        "node_attrs": {
+                          "div": 0.0212,
+                          "num_date": {
+                            "value": 2013.292,
+                            "confidence": [
+                              2013.292,
+                              2013.292
+                            ]
+                          },
+                          "organism": {
+                            "value": "Plesiomonas_shigelloides_302-73"
+                          },
+                          "dateAccuracy": {
+                            "value": "Submission date"
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location from metadata"
+                          },
+                          "country": {
+                            "value": "Japan",
+                            "confidence": {
+                              "Japan": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "allele": {
+                            "value": "PLES-1"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

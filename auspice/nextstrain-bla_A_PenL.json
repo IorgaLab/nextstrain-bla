@@ -1,0 +1,2796 @@
+{
+  "version": "v2",
+  "meta": {
+    "title": "Genomic epidemiology of class A PenL beta-lactamases",
+    "updated": "2025-11-11",
+    "build_url": "https://github.com/IorgaLab/nextstrain-bla",
+    "maintainers": [
+      {
+        "name": "Bogdan I. Iorga",
+        "url": "https://icsn.cnrs.fr/en/cv/cv-bogdan-i-iorga-en"
+      }
+    ],
+    "display_defaults": {
+      "map_triplicate": true
+    },
+    "genome_annotations": {
+      "nuc": {
+        "end": 885,
+        "start": 1,
+        "strand": "+",
+        "type": "source",
+        "seqid": "config/ref.gb"
+      },
+      "BTN_3473": {
+        "end": 885,
+        "seqid": "config/ref.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "CDS"
+      }
+    },
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "organism",
+        "title": "Organism",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical",
+        "scale": [
+          [
+            "Thailand",
+            "#511EA8"
+          ],
+          [
+            "Singapore",
+            "#4334BF"
+          ],
+          [
+            "China",
+            "#4379CD"
+          ],
+          [
+            "USA",
+            "#DC2F24"
+          ]
+        ]
+      },
+      {
+        "key": "allele",
+        "title": "Allele",
+        "type": "categorical"
+      }
+    ],
+    "filters": [
+      "country",
+      "dateAccuracy",
+      "countryAccuracy",
+      "allele",
+      "organism"
+    ],
+    "geo_resolutions": [
+      {
+        "key": "country",
+        "demes": {
+          "Russia": {
+            "latitude": 64.6863136,
+            "longitude": 97.7453061
+          },
+          "Singapore": {
+            "latitude": 1.2904527,
+            "longitude": 103.852038
+          },
+          "Malaysia": {
+            "latitude": 4.264153,
+            "longitude": 102.222436
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Thailand": {
+            "latitude": 14.8971921,
+            "longitude": 100.83273
+          },
+          "Australia": {
+            "latitude": -24.7761085,
+            "longitude": 134.755
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        }
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ]
+  },
+  "tree": {
+    "name": "NODE_0000003",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 1953.338,
+        "confidence": [
+          1940.77,
+          1962.282
+        ]
+      },
+      "country": {
+        "value": "Thailand",
+        "confidence": {
+          "Thailand": 0.447,
+          "Australia": 0.423,
+          "USA": 0.0511,
+          "China": 0.0203,
+          "Russia": 0.0166,
+          "Malaysia": 0.0158,
+          "Singapore": 0.0132,
+          "Russian Federation": 0.0131
+        },
+        "entropy": 1.202
+      }
+    },
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0362,
+          "num_date": {
+            "value": 1995.063,
+            "confidence": [
+              1994.01,
+              1995.916
+            ]
+          },
+          "country": {
+            "value": "Australia",
+            "confidence": {
+              "Australia": 1.0
+            },
+            "entropy": 0.00276
+          }
+        },
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "C12T",
+              "G18A",
+              "T24C",
+              "A34G",
+              "C36T",
+              "T59C",
+              "G81C",
+              "A83G",
+              "G88T",
+              "C90G",
+              "G92A",
+              "A110G",
+              "G129A",
+              "C135G",
+              "C204T",
+              "C213T",
+              "T225C",
+              "C236T",
+              "G243C",
+              "C249T",
+              "T255A",
+              "G272A",
+              "T286C",
+              "T306C",
+              "C330T",
+              "A346C",
+              "A347G",
+              "C354G",
+              "T372C",
+              "T423C",
+              "C434A",
+              "G435T",
+              "T436C",
+              "A492G",
+              "A519G",
+              "T564C",
+              "T599C",
+              "C600G",
+              "C606T",
+              "C615G",
+              "A616G",
+              "T630G",
+              "T639C",
+              "A675G",
+              "A676C",
+              "T708C",
+              "C732T",
+              "C738G",
+              "C771G",
+              "T801C",
+              "G818A",
+              "A827C",
+              "C830T",
+              "T850G",
+              "C873G",
+              "T876A",
+              "T881C"
+            ],
+            "BTN_3473": [
+              "I12V",
+              "V20A",
+              "D28G",
+              "A30S",
+              "R31K",
+              "Q37R",
+              "T79M",
+              "G91D",
+              "K116R",
+              "A145D",
+              "V200A",
+              "T206A",
+              "I226L",
+              "R273Q",
+              "Q276P",
+              "A277V",
+              "S284A",
+              "V294A"
+            ]
+          },
+          "labels": {
+            "aa": "BTN_3473: I12V, V20A, D28G, A30S, R31K, Q37R, T79M, G91D, K116R, A145D, V200A, T206A, I226L, R273Q, Q276P, A277V, S284A, V294A"
+          }
+        },
+        "children": [
+          {
+            "name": "PenL-2_ALX45865-CP013382-1569847",
+            "node_attrs": {
+              "div": 0.0362,
+              "num_date": {
+                "value": 1995.993,
+                "confidence": [
+                  1995.001,
+                  1995.999
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "PenL-2"
+              },
+              "organism": {
+                "value": "Burkholderia_humptydooensis"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "div": 0.0362,
+              "num_date": {
+                "value": 2007.607,
+                "confidence": [
+                  2005.012,
+                  2007.607
+                ]
+              },
+              "country": {
+                "value": "Australia",
+                "confidence": {
+                  "Australia": 1.0
+                },
+                "entropy": 5.82e-05
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "PenL-2_EIP86853-JH692064-447555",
+                "node_attrs": {
+                  "div": 0.0362,
+                  "num_date": {
+                    "value": 2007.607,
+                    "confidence": [
+                      2007.607,
+                      2007.607
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PenL-2"
+                  },
+                  "organism": {
+                    "value": "Burkholderia_humptydooensis_MSMB43"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.0362,
+                  "num_date": {
+                    "value": 2008.001,
+                    "confidence": [
+                      2007.017,
+                      2008.914
+                    ]
+                  },
+                  "country": {
+                    "value": "Australia",
+                    "confidence": {
+                      "Australia": 1.0
+                    },
+                    "entropy": 0.00199
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "PenL-2_QPS47354-CP065687-715890",
+                    "node_attrs": {
+                      "div": 0.0362,
+                      "num_date": {
+                        "value": 2020.919,
+                        "confidence": [
+                          2020.919,
+                          2020.919
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location of submitter"
+                      },
+                      "allele": {
+                        "value": "PenL-2"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_humptydooensis"
+                      },
+                      "dateAccuracy": {
+                        "value": "Submission date"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  },
+                  {
+                    "name": "PenL-2_AJY38930-CP009548-2141078",
+                    "node_attrs": {
+                      "div": 0.0362,
+                      "num_date": {
+                        "value": 2008.993,
+                        "confidence": [
+                          2008.001,
+                          2008.999
+                        ]
+                      },
+                      "country": {
+                        "value": "Australia",
+                        "confidence": {
+                          "Australia": 1.0
+                        },
+                        "entropy": -1e-12
+                      },
+                      "countryAccuracy": {
+                        "value": "Geographic location from metadata"
+                      },
+                      "allele": {
+                        "value": "PenL-2"
+                      },
+                      "organism": {
+                        "value": "Burkholderia_sp._2002721687"
+                      },
+                      "dateAccuracy": {
+                        "value": "Collection date from metadata"
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 0.0313,
+          "num_date": {
+            "value": 1992.124,
+            "confidence": [
+              1990.995,
+              1992.929
+            ]
+          },
+          "country": {
+            "value": "Thailand",
+            "confidence": {
+              "Thailand": 1.0
+            },
+            "entropy": 0.00433
+          }
+        },
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "name": "CP004382.1",
+            "node_attrs": {
+              "div": 0.0313,
+              "num_date": {
+                "value": 1992.795,
+                "confidence": [
+                  1990.414,
+                  1997.999
+                ]
+              },
+              "country": {
+                "value": "Thailand",
+                "confidence": {
+                  "Thailand": 0.99,
+                  "USA": 0.00319,
+                  "China": 0.00145,
+                  "Australia": 0.0012,
+                  "Russia": 0.00117,
+                  "Malaysia": 0.00117
+                },
+                "entropy": 0.0751
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "PenL-1_AIT22774-CP004382-114970",
+            "node_attrs": {
+              "div": 0.0313,
+              "num_date": {
+                "value": 1992.993,
+                "confidence": [
+                  1992.001,
+                  1992.999
+                ]
+              },
+              "country": {
+                "value": "Thailand",
+                "confidence": {
+                  "Thailand": 1.0
+                },
+                "entropy": -1e-12
+              },
+              "countryAccuracy": {
+                "value": "Geographic location from metadata"
+              },
+              "allele": {
+                "value": "PenL-1"
+              },
+              "organism": {
+                "value": "Burkholderia_thailandensis_E254"
+              },
+              "dateAccuracy": {
+                "value": "Collection date from metadata"
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            }
+          },
+          {
+            "name": "NODE_0000007",
+            "node_attrs": {
+              "div": 0.0313,
+              "num_date": {
+                "value": 1994.001,
+                "confidence": [
+                  1992.967,
+                  1994.792
+                ]
+              },
+              "country": {
+                "value": "Thailand",
+                "confidence": {
+                  "Thailand": 0.999
+                },
+                "entropy": 0.00682
+              }
+            },
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "name": "PenL-1_NBC90112-JAAAQG010000004-180769",
+                "node_attrs": {
+                  "div": 0.0313,
+                  "num_date": {
+                    "value": 1994.993,
+                    "confidence": [
+                      1994.001,
+                      1994.999
+                    ]
+                  },
+                  "country": {
+                    "value": "Thailand",
+                    "confidence": {
+                      "Thailand": 1.0
+                    },
+                    "entropy": -1e-12
+                  },
+                  "countryAccuracy": {
+                    "value": "Geographic location from metadata"
+                  },
+                  "allele": {
+                    "value": "PenL-1"
+                  },
+                  "organism": {
+                    "value": "Burkholderia_thailandensis"
+                  },
+                  "dateAccuracy": {
+                    "value": "Collection date from metadata"
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                }
+              },
+              {
+                "name": "NODE_0000008",
+                "node_attrs": {
+                  "div": 0.0313,
+                  "num_date": {
+                    "value": 2000.998,
+                    "confidence": [
+                      1996.463,
+                      2001.18
+                    ]
+                  },
+                  "country": {
+                    "value": "Thailand",
+                    "confidence": {
+                      "Thailand": 0.51,
+                      "USA": 0.49
+                    },
+                    "entropy": 0.693
+                  }
+                },
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "name": "NODE_0000002",
+                    "node_attrs": {
+                      "div": 0.0324,
+                      "num_date": {
+                        "value": 2002.001,
+                        "confidence": [
+                          2001.11,
+                          2002.859
+                        ]
+                      },
+                      "country": {
+                        "value": "USA",
+                        "confidence": {
+                          "USA": 0.99,
+                          "Thailand": 0.00948
+                        },
+                        "entropy": 0.0617
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C89T"
+                        ],
+                        "BTN_3473": [
+                          "A30V"
+                        ]
+                      },
+                      "labels": {
+                        "aa": "BTN_3473: A30V"
+                      }
+                    },
+                    "children": [
+                      {
+                        "name": "PenL-3_KIS53438-AQQJ01000003-128700",
+                        "node_attrs": {
+                          "div": 0.0324,
+                          "num_date": {
+                            "value": 2002.989,
+                            "confidence": [
+                              2002.001,
+                              2002.999
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1e-12
+                          },
+                          "countryAccuracy": {
+                            "value": "Geographic location of submitter"
+                          },
+                          "allele": {
+                            "value": "PenL-3"
+                          },
+                          "organism": {
+                            "value": "Burkholderia_thailandensis_Phuket_4W-1"
+                          },
+                          "dateAccuracy": {
+                            "value": "Collection date from metadata"
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        }
+                      },
+                      {
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "div": 0.0324,
+                          "num_date": {
+                            "value": 2005.603,
+                            "confidence": [
+                              2003.379,
+                              2006.394
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.981,
+                              "Australia": 0.0168,
+                              "Thailand": 0.00211
+                            },
+                            "entropy": 0.101
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.0324,
+                              "num_date": {
+                                "value": 2006.001,
+                                "confidence": [
+                                  2005.054,
+                                  2006.712
+                                ]
+                              },
+                              "country": {
+                                "value": "Australia",
+                                "confidence": {
+                                  "Australia": 0.998,
+                                  "USA": 0.00179
+                                },
+                                "entropy": 0.0133
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PenL-3_KVG17809-LOXG01000088-114201",
+                                "node_attrs": {
+                                  "div": 0.0324,
+                                  "num_date": {
+                                    "value": 2006.455,
+                                    "confidence": [
+                                      2006.001,
+                                      2006.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Australia",
+                                    "confidence": {
+                                      "Australia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "PenL-3"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_thailandensis"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "PenL-3_AOJ48326-CP013408-1644385",
+                                "node_attrs": {
+                                  "div": 0.0324,
+                                  "num_date": {
+                                    "value": 2006.455,
+                                    "confidence": [
+                                      2006.001,
+                                      2006.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Australia",
+                                    "confidence": {
+                                      "Australia": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "PenL-3"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_thailandensis"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.0324,
+                              "num_date": {
+                                "value": 2008.915,
+                                "confidence": [
+                                  2007.242,
+                                  2009.875
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.998,
+                                  "Australia": 0.00186
+                                },
+                                "entropy": 0.0138
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PenL-3_AVR06383-CP020389-367978",
+                                "node_attrs": {
+                                  "div": 0.0324,
+                                  "num_date": {
+                                    "value": 2009.07,
+                                    "confidence": [
+                                      2009.001,
+                                      2009.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "PenL-3"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_thailandensis"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000013",
+                                "node_attrs": {
+                                  "div": 0.0324,
+                                  "num_date": {
+                                    "value": 2013.193,
+                                    "confidence": [
+                                      2010.9,
+                                      2013.193
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.996,
+                                      "Australia": 0.00341
+                                    },
+                                    "entropy": 0.0261
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "PenL-3_AIS97483-CP004386-212303",
+                                    "node_attrs": {
+                                      "div": 0.0324,
+                                      "num_date": {
+                                        "value": 2013.193,
+                                        "confidence": [
+                                          2013.193,
+                                          2013.193
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 1.0
+                                        },
+                                        "entropy": -1e-12
+                                      },
+                                      "countryAccuracy": {
+                                        "value": "Geographic location of submitter"
+                                      },
+                                      "allele": {
+                                        "value": "PenL-3"
+                                      },
+                                      "organism": {
+                                        "value": "Burkholderia_thailandensis_MSMB59"
+                                      },
+                                      "dateAccuracy": {
+                                        "value": "Submission date"
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    }
+                                  },
+                                  {
+                                    "name": "NODE_0000014",
+                                    "node_attrs": {
+                                      "div": 0.0324,
+                                      "num_date": {
+                                        "value": 2015.884,
+                                        "confidence": [
+                                          2013.818,
+                                          2015.884
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "Australia",
+                                        "confidence": {
+                                          "Australia": 0.546,
+                                          "USA": 0.31,
+                                          "China": 0.0853,
+                                          "Russia": 0.0571,
+                                          "Thailand": 0.00114
+                                        },
+                                        "entropy": 1.084
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "PenL-3_KVG11191-LOXF01000086-128646",
+                                        "node_attrs": {
+                                          "div": 0.0324,
+                                          "num_date": {
+                                            "value": 2015.884,
+                                            "confidence": [
+                                              2015.884,
+                                              2015.884
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Australia",
+                                            "confidence": {
+                                              "Australia": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PenL-3"
+                                          },
+                                          "organism": {
+                                            "value": "Burkholderia_thailandensis"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Submission date"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000015",
+                                        "node_attrs": {
+                                          "div": 0.0324,
+                                          "num_date": {
+                                            "value": 2019.268,
+                                            "confidence": [
+                                              2017.688,
+                                              2019.393
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "China",
+                                            "confidence": {
+                                              "China": 0.514,
+                                              "Russia": 0.383,
+                                              "Australia": 0.064,
+                                              "USA": 0.038
+                                            },
+                                            "entropy": 1.022
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PenL-3_XQH53938-CP166682-1932604",
+                                            "node_attrs": {
+                                              "div": 0.0324,
+                                              "num_date": {
+                                                "value": 2019.393,
+                                                "confidence": [
+                                                  2019.393,
+                                                  2019.393
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "China",
+                                                "confidence": {
+                                                  "China": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "allele": {
+                                                "value": "PenL-3"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_thailandensis"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "PenL-3_MCS6477717-JANURD010000018-80377",
+                                            "node_attrs": {
+                                              "div": 0.0324,
+                                              "num_date": {
+                                                "value": 2021.001,
+                                                "confidence": [
+                                                  2021.001,
+                                                  2021.857
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Russia",
+                                                "confidence": {
+                                                  "Russia": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "allele": {
+                                                "value": "PenL-3"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_thailandensis"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NODE_0000016",
+                    "node_attrs": {
+                      "div": 0.0313,
+                      "num_date": {
+                        "value": 2000.965,
+                        "confidence": [
+                          1999.134,
+                          2001.537
+                        ]
+                      },
+                      "country": {
+                        "value": "Thailand",
+                        "confidence": {
+                          "Thailand": 0.517,
+                          "USA": 0.483
+                        },
+                        "entropy": 0.693
+                      }
+                    },
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "name": "NODE_0000017",
+                        "node_attrs": {
+                          "div": 0.0313,
+                          "num_date": {
+                            "value": 2001.001,
+                            "confidence": [
+                              2000.427,
+                              2001.773
+                            ]
+                          },
+                          "country": {
+                            "value": "Thailand",
+                            "confidence": {
+                              "Thailand": 0.999,
+                              "USA": 0.00149
+                            },
+                            "entropy": 0.0112
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "PenL-1_NBJ18364-JAAAWT010000005-77483",
+                            "node_attrs": {
+                              "div": 0.0313,
+                              "num_date": {
+                                "value": 2001.64,
+                                "confidence": [
+                                  2001.001,
+                                  2001.999
+                                ]
+                              },
+                              "country": {
+                                "value": "Thailand",
+                                "confidence": {
+                                  "Thailand": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PenL-1"
+                              },
+                              "organism": {
+                                "value": "Burkholderia_thailandensis"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          },
+                          {
+                            "name": "PenL-1_NBD05979-JAAAQH010000027-77860",
+                            "node_attrs": {
+                              "div": 0.0313,
+                              "num_date": {
+                                "value": 2001.64,
+                                "confidence": [
+                                  2001.001,
+                                  2001.999
+                                ]
+                              },
+                              "country": {
+                                "value": "Thailand",
+                                "confidence": {
+                                  "Thailand": 1.0
+                                },
+                                "entropy": -1e-12
+                              },
+                              "countryAccuracy": {
+                                "value": "Geographic location from metadata"
+                              },
+                              "allele": {
+                                "value": "PenL-1"
+                              },
+                              "organism": {
+                                "value": "Burkholderia_thailandensis"
+                              },
+                              "dateAccuracy": {
+                                "value": "Collection date from metadata"
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NODE_0000018",
+                        "node_attrs": {
+                          "div": 0.0313,
+                          "num_date": {
+                            "value": 2001.842,
+                            "confidence": [
+                              2000.788,
+                              2002.449
+                            ]
+                          },
+                          "country": {
+                            "value": "USA",
+                            "confidence": {
+                              "USA": 0.573,
+                              "Thailand": 0.427
+                            },
+                            "entropy": 0.682
+                          }
+                        },
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "name": "NODE_0000019",
+                            "node_attrs": {
+                              "div": 0.0313,
+                              "num_date": {
+                                "value": 2002.001,
+                                "confidence": [
+                                  2001.461,
+                                  2002.695
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.573,
+                                  "Thailand": 0.427
+                                },
+                                "entropy": 0.682
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PenL-1_AJY01305-CP009602-1010228",
+                                "node_attrs": {
+                                  "div": 0.0313,
+                                  "num_date": {
+                                    "value": 2002.678,
+                                    "confidence": [
+                                      2002.001,
+                                      2002.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "PenL-1"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_thailandensis_2002721643"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "PenL-1_AHI80829-CP004118-2837680",
+                                "node_attrs": {
+                                  "div": 0.0313,
+                                  "num_date": {
+                                    "value": 2002.678,
+                                    "confidence": [
+                                      2002.001,
+                                      2002.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "Thailand",
+                                    "confidence": {
+                                      "Thailand": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location from metadata"
+                                  },
+                                  "allele": {
+                                    "value": "PenL-1"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_thailandensis_E444"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "name": "NODE_0000020",
+                            "node_attrs": {
+                              "div": 0.0313,
+                              "num_date": {
+                                "value": 2008.931,
+                                "confidence": [
+                                  2006.853,
+                                  2009.815
+                                ]
+                              },
+                              "country": {
+                                "value": "USA",
+                                "confidence": {
+                                  "USA": 0.987,
+                                  "Thailand": 0.0133
+                                },
+                                "entropy": 0.0707
+                              }
+                            },
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "name": "PenL-1_PNE90560-NBSS01000001-2346343",
+                                "node_attrs": {
+                                  "div": 0.0313,
+                                  "num_date": {
+                                    "value": 2009.07,
+                                    "confidence": [
+                                      2009.001,
+                                      2009.999
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 1.0
+                                    },
+                                    "entropy": -1e-12
+                                  },
+                                  "countryAccuracy": {
+                                    "value": "Geographic location of submitter"
+                                  },
+                                  "allele": {
+                                    "value": "PenL-1"
+                                  },
+                                  "organism": {
+                                    "value": "Burkholderia_thailandensis"
+                                  },
+                                  "dateAccuracy": {
+                                    "value": "Collection date from metadata"
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                }
+                              },
+                              {
+                                "name": "NODE_0000021",
+                                "node_attrs": {
+                                  "div": 0.0313,
+                                  "num_date": {
+                                    "value": 2010.892,
+                                    "confidence": [
+                                      2008.843,
+                                      2011.002
+                                    ]
+                                  },
+                                  "country": {
+                                    "value": "USA",
+                                    "confidence": {
+                                      "USA": 0.986,
+                                      "Thailand": 0.0136
+                                    },
+                                    "entropy": 0.0722
+                                  }
+                                },
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "name": "NODE_0000022",
+                                    "node_attrs": {
+                                      "div": 0.0313,
+                                      "num_date": {
+                                        "value": 2010.892,
+                                        "confidence": [
+                                          2009.86,
+                                          2011.338
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.994,
+                                          "Thailand": 0.00648
+                                        },
+                                        "entropy": 0.0391
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "PenL-1_PNE84274-NBSR01000001-1937057",
+                                        "node_attrs": {
+                                          "div": 0.0313,
+                                          "num_date": {
+                                            "value": 2011.078,
+                                            "confidence": [
+                                              2011.001,
+                                              2011.999
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location of submitter"
+                                          },
+                                          "allele": {
+                                            "value": "PenL-1"
+                                          },
+                                          "organism": {
+                                            "value": "Burkholderia_thailandensis"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000023",
+                                        "node_attrs": {
+                                          "div": 0.0313,
+                                          "num_date": {
+                                            "value": 2010.915,
+                                            "confidence": [
+                                              2010.626,
+                                              2011.686
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.991,
+                                              "Thailand": 0.00923
+                                            },
+                                            "entropy": 0.0525
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PenL-1_AWY64507-CP022216-861331",
+                                            "node_attrs": {
+                                              "div": 0.0313,
+                                              "num_date": {
+                                                "value": 2011.44,
+                                                "confidence": [
+                                                  2011.001,
+                                                  2011.999
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "Thailand",
+                                                "confidence": {
+                                                  "Thailand": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location from metadata"
+                                              },
+                                              "allele": {
+                                                "value": "PenL-1"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_thailandensis"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "PenL-1_AWY62462-CP022215-2730572",
+                                            "node_attrs": {
+                                              "div": 0.0313,
+                                              "num_date": {
+                                                "value": 2011.44,
+                                                "confidence": [
+                                                  2011.001,
+                                                  2011.999
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "allele": {
+                                                "value": "PenL-1"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_thailandensis"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Collection date from metadata"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "NODE_0000024",
+                                    "node_attrs": {
+                                      "div": 0.0313,
+                                      "num_date": {
+                                        "value": 2012.001,
+                                        "confidence": [
+                                          2010.3,
+                                          2012.551
+                                        ]
+                                      },
+                                      "country": {
+                                        "value": "USA",
+                                        "confidence": {
+                                          "USA": 0.896,
+                                          "Thailand": 0.104
+                                        },
+                                        "entropy": 0.335
+                                      }
+                                    },
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "name": "PenL-1_PNE71942-NBSP01000001-1512030",
+                                        "node_attrs": {
+                                          "div": 0.0313,
+                                          "num_date": {
+                                            "value": 2012.001,
+                                            "confidence": [
+                                              2012.001,
+                                              2012.87
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "Thailand",
+                                            "confidence": {
+                                              "Thailand": 1.0
+                                            },
+                                            "entropy": -1e-12
+                                          },
+                                          "countryAccuracy": {
+                                            "value": "Geographic location from metadata"
+                                          },
+                                          "allele": {
+                                            "value": "PenL-1"
+                                          },
+                                          "organism": {
+                                            "value": "Burkholderia_thailandensis"
+                                          },
+                                          "dateAccuracy": {
+                                            "value": "Collection date from metadata"
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        }
+                                      },
+                                      {
+                                        "name": "NODE_0000025",
+                                        "node_attrs": {
+                                          "div": 0.0313,
+                                          "num_date": {
+                                            "value": 2013.091,
+                                            "confidence": [
+                                              2011.46,
+                                              2013.095
+                                            ]
+                                          },
+                                          "country": {
+                                            "value": "USA",
+                                            "confidence": {
+                                              "USA": 0.898,
+                                              "Thailand": 0.101
+                                            },
+                                            "entropy": 0.334
+                                          }
+                                        },
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "name": "PenL-1_AHI75361-CP004098-1746663",
+                                            "node_attrs": {
+                                              "div": 0.0313,
+                                              "num_date": {
+                                                "value": 2013.095,
+                                                "confidence": [
+                                                  2013.095,
+                                                  2013.095
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 1.0
+                                                },
+                                                "entropy": -1e-12
+                                              },
+                                              "countryAccuracy": {
+                                                "value": "Geographic location of submitter"
+                                              },
+                                              "allele": {
+                                                "value": "PenL-1"
+                                              },
+                                              "organism": {
+                                                "value": "Burkholderia_thailandensis_2002721723"
+                                              },
+                                              "dateAccuracy": {
+                                                "value": "Submission date"
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            }
+                                          },
+                                          {
+                                            "name": "NODE_0000026",
+                                            "node_attrs": {
+                                              "div": 0.0313,
+                                              "num_date": {
+                                                "value": 2013.177,
+                                                "confidence": [
+                                                  2012.296,
+                                                  2013.193
+                                                ]
+                                              },
+                                              "country": {
+                                                "value": "USA",
+                                                "confidence": {
+                                                  "USA": 0.609,
+                                                  "Thailand": 0.197,
+                                                  "Malaysia": 0.147,
+                                                  "China": 0.0461
+                                                },
+                                                "entropy": 1.051
+                                              }
+                                            },
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "name": "PenL-1_AIC90556-CP004384-969957",
+                                                "node_attrs": {
+                                                  "div": 0.0313,
+                                                  "num_date": {
+                                                    "value": 2013.193,
+                                                    "confidence": [
+                                                      2013.193,
+                                                      2013.193
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "Malaysia",
+                                                    "confidence": {
+                                                      "Malaysia": 1.0
+                                                    },
+                                                    "entropy": -1e-12
+                                                  },
+                                                  "countryAccuracy": {
+                                                    "value": "Geographic location from metadata"
+                                                  },
+                                                  "allele": {
+                                                    "value": "PenL-1"
+                                                  },
+                                                  "organism": {
+                                                    "value": "Burkholderia_thailandensis_USAMRU_Malaysia_#20"
+                                                  },
+                                                  "dateAccuracy": {
+                                                    "value": "Submission date"
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                }
+                                              },
+                                              {
+                                                "name": "NODE_0000027",
+                                                "node_attrs": {
+                                                  "div": 0.0313,
+                                                  "num_date": {
+                                                    "value": 2013.747,
+                                                    "confidence": [
+                                                      2012.871,
+                                                      2013.806
+                                                    ]
+                                                  },
+                                                  "country": {
+                                                    "value": "USA",
+                                                    "confidence": {
+                                                      "USA": 0.437,
+                                                      "Thailand": 0.363,
+                                                      "China": 0.154,
+                                                      "Malaysia": 0.0455
+                                                    },
+                                                    "entropy": 1.164
+                                                  }
+                                                },
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "name": "PenL-1_QIO14168-CP050021-635103",
+                                                    "node_attrs": {
+                                                      "div": 0.0313,
+                                                      "num_date": {
+                                                        "value": 2013.812,
+                                                        "confidence": [
+                                                          2013.749,
+                                                          2013.832
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "China",
+                                                        "confidence": {
+                                                          "China": 1.0
+                                                        },
+                                                        "entropy": -1e-12
+                                                      },
+                                                      "countryAccuracy": {
+                                                        "value": "Geographic location of submitter"
+                                                      },
+                                                      "allele": {
+                                                        "value": "PenL-1"
+                                                      },
+                                                      "organism": {
+                                                        "value": "Burkholderia_thailandensis"
+                                                      },
+                                                      "dateAccuracy": {
+                                                        "value": "Collection date from metadata"
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    }
+                                                  },
+                                                  {
+                                                    "name": "NODE_0000028",
+                                                    "node_attrs": {
+                                                      "div": 0.0313,
+                                                      "num_date": {
+                                                        "value": 2014.464,
+                                                        "confidence": [
+                                                          2013.449,
+                                                          2014.464
+                                                        ]
+                                                      },
+                                                      "country": {
+                                                        "value": "Thailand",
+                                                        "confidence": {
+                                                          "Thailand": 0.679,
+                                                          "USA": 0.319,
+                                                          "China": 0.00173
+                                                        },
+                                                        "entropy": 0.644
+                                                      }
+                                                    },
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "name": "PenL-1_AIP28679-CP008786-1077598",
+                                                        "node_attrs": {
+                                                          "div": 0.0313,
+                                                          "num_date": {
+                                                            "value": 2014.464,
+                                                            "confidence": [
+                                                              2014.464,
+                                                              2014.464
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "Thailand",
+                                                            "confidence": {
+                                                              "Thailand": 1.0
+                                                            },
+                                                            "entropy": -1e-12
+                                                          },
+                                                          "countryAccuracy": {
+                                                            "value": "Geographic location from metadata"
+                                                          },
+                                                          "allele": {
+                                                            "value": "PenL-1"
+                                                          },
+                                                          "organism": {
+                                                            "value": "Burkholderia_thailandensis_E264"
+                                                          },
+                                                          "dateAccuracy": {
+                                                            "value": "Submission date"
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        }
+                                                      },
+                                                      {
+                                                        "name": "NODE_0000029",
+                                                        "node_attrs": {
+                                                          "div": 0.0313,
+                                                          "num_date": {
+                                                            "value": 2016.79,
+                                                            "confidence": [
+                                                              2014.973,
+                                                              2017.705
+                                                            ]
+                                                          },
+                                                          "country": {
+                                                            "value": "Thailand",
+                                                            "confidence": {
+                                                              "Thailand": 0.671,
+                                                              "USA": 0.327,
+                                                              "Russian Federation": 0.001
+                                                            },
+                                                            "entropy": 0.644
+                                                          }
+                                                        },
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "name": "PenL-1_PHH33802-PDLI01000002-1324405",
+                                                            "node_attrs": {
+                                                              "div": 0.0313,
+                                                              "num_date": {
+                                                                "value": 2017.705,
+                                                                "confidence": [
+                                                                  2017.705,
+                                                                  2017.705
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "USA",
+                                                                "confidence": {
+                                                                  "USA": 1.0
+                                                                },
+                                                                "entropy": -1e-12
+                                                              },
+                                                              "countryAccuracy": {
+                                                                "value": "Geographic location of submitter"
+                                                              },
+                                                              "allele": {
+                                                                "value": "PenL-1"
+                                                              },
+                                                              "organism": {
+                                                                "value": "Burkholderia_thailandensis"
+                                                              },
+                                                              "dateAccuracy": {
+                                                                "value": "Submission date"
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            }
+                                                          },
+                                                          {
+                                                            "name": "NODE_0000030",
+                                                            "node_attrs": {
+                                                              "div": 0.0313,
+                                                              "num_date": {
+                                                                "value": 2017.872,
+                                                                "confidence": [
+                                                                  2016.249,
+                                                                  2018.0
+                                                                ]
+                                                              },
+                                                              "country": {
+                                                                "value": "Thailand",
+                                                                "confidence": {
+                                                                  "Thailand": 0.805,
+                                                                  "USA": 0.136,
+                                                                  "Russian Federation": 0.0574
+                                                                },
+                                                                "entropy": 0.619
+                                                              }
+                                                            },
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "name": "NODE_0000031",
+                                                                "node_attrs": {
+                                                                  "div": 0.0313,
+                                                                  "num_date": {
+                                                                    "value": 2017.977,
+                                                                    "confidence": [
+                                                                      2017.174,
+                                                                      2018.233
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Russian Federation",
+                                                                    "confidence": {
+                                                                      "Russian Federation": 0.996,
+                                                                      "Thailand": 0.00209,
+                                                                      "Russia": 0.00152
+                                                                    },
+                                                                    "entropy": 0.0298
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "PenL-1_MUV23246-WOXA01000002-87576",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0313,
+                                                                      "num_date": {
+                                                                        "value": 2018.144,
+                                                                        "confidence": [
+                                                                          2018.001,
+                                                                          2018.999
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "Russian Federation",
+                                                                        "confidence": {
+                                                                          "Russian Federation": 1.0
+                                                                        },
+                                                                        "entropy": -1e-12
+                                                                      },
+                                                                      "countryAccuracy": {
+                                                                        "value": "Geographic location of submitter"
+                                                                      },
+                                                                      "allele": {
+                                                                        "value": "PenL-1"
+                                                                      },
+                                                                      "organism": {
+                                                                        "value": "Burkholderia_thailandensis"
+                                                                      },
+                                                                      "dateAccuracy": {
+                                                                        "value": "Collection date from metadata"
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000032",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0313,
+                                                                      "num_date": {
+                                                                        "value": 2018.121,
+                                                                        "confidence": [
+                                                                          2017.833,
+                                                                          2018.595
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "Russian Federation",
+                                                                        "confidence": {
+                                                                          "Russian Federation": 0.996,
+                                                                          "Russia": 0.00385
+                                                                        },
+                                                                        "entropy": 0.0309
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "PenL-1_MCS3399288-JANUQO010000024-77526",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0313,
+                                                                          "num_date": {
+                                                                            "value": 2018.477,
+                                                                            "confidence": [
+                                                                              2018.001,
+                                                                              2018.999
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "Russia",
+                                                                            "confidence": {
+                                                                              "Russia": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location of submitter"
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "PenL-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Burkholderia_thailandensis"
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Collection date from metadata"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "PenL-1_MUV31119-WOWZ01000002-2539963",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0313,
+                                                                          "num_date": {
+                                                                            "value": 2018.477,
+                                                                            "confidence": [
+                                                                              2018.001,
+                                                                              2018.999
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "Russian Federation",
+                                                                            "confidence": {
+                                                                              "Russian Federation": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location of submitter"
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "PenL-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Burkholderia_thailandensis"
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Collection date from metadata"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              },
+                                                              {
+                                                                "name": "NODE_0000033",
+                                                                "node_attrs": {
+                                                                  "div": 0.0313,
+                                                                  "num_date": {
+                                                                    "value": 2017.96,
+                                                                    "confidence": [
+                                                                      2017.208,
+                                                                      2018.173
+                                                                    ]
+                                                                  },
+                                                                  "country": {
+                                                                    "value": "Thailand",
+                                                                    "confidence": {
+                                                                      "Thailand": 0.996,
+                                                                      "USA": 0.00207
+                                                                    },
+                                                                    "entropy": 0.029
+                                                                  }
+                                                                },
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "name": "NODE_0000034",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0313,
+                                                                      "num_date": {
+                                                                        "value": 2018.035,
+                                                                        "confidence": [
+                                                                          2017.882,
+                                                                          2018.218
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "Thailand",
+                                                                        "confidence": {
+                                                                          "Thailand": 1.0
+                                                                        },
+                                                                        "entropy": 0.000116
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "PenL-1_NOK53810-PYIS01000017-77484",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0313,
+                                                                          "num_date": {
+                                                                            "value": 2018.218,
+                                                                            "confidence": [
+                                                                              2018.218,
+                                                                              2018.218
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "Thailand",
+                                                                            "confidence": {
+                                                                              "Thailand": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location from metadata"
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "PenL-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Burkholderia_thailandensis"
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Submission date"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "name": "PenL-1_NOK42209-PYIT01000014-60680",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0313,
+                                                                          "num_date": {
+                                                                            "value": 2018.223,
+                                                                            "confidence": [
+                                                                              2018.223,
+                                                                              2018.223
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "Thailand",
+                                                                            "confidence": {
+                                                                              "Thailand": 1.0
+                                                                            },
+                                                                            "entropy": -1e-12
+                                                                          },
+                                                                          "countryAccuracy": {
+                                                                            "value": "Geographic location from metadata"
+                                                                          },
+                                                                          "allele": {
+                                                                            "value": "PenL-1"
+                                                                          },
+                                                                          "organism": {
+                                                                            "value": "Burkholderia_thailandensis"
+                                                                          },
+                                                                          "dateAccuracy": {
+                                                                            "value": "Submission date"
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  },
+                                                                  {
+                                                                    "name": "NODE_0000035",
+                                                                    "node_attrs": {
+                                                                      "div": 0.0313,
+                                                                      "num_date": {
+                                                                        "value": 2018.143,
+                                                                        "confidence": [
+                                                                          2017.867,
+                                                                          2019.344
+                                                                        ]
+                                                                      },
+                                                                      "country": {
+                                                                        "value": "Thailand",
+                                                                        "confidence": {
+                                                                          "Thailand": 0.992,
+                                                                          "Singapore": 0.00505,
+                                                                          "Russia": 0.00187,
+                                                                          "USA": 0.00101
+                                                                        },
+                                                                        "entropy": 0.0563
+                                                                      }
+                                                                    },
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "name": "NODE_0000036",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0313,
+                                                                          "num_date": {
+                                                                            "value": 2019.5,
+                                                                            "confidence": [
+                                                                              2018.617,
+                                                                              2019.5
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "Singapore",
+                                                                            "confidence": {
+                                                                              "Singapore": 0.999
+                                                                            },
+                                                                            "entropy": 0.0078
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "name": "PenL-1_MBS2130919-JAGUUE010000002-2170659",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0313,
+                                                                              "num_date": {
+                                                                                "value": 2019.5,
+                                                                                "confidence": [
+                                                                                  2019.5,
+                                                                                  2019.5
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "Singapore",
+                                                                                "confidence": {
+                                                                                  "Singapore": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location from metadata"
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "PenL-1"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Burkholderia_thailandensis"
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Collection date from metadata"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "name": "PenL-1_QRA13614-CP068710-2513446",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0313,
+                                                                              "num_date": {
+                                                                                "value": 2019.5,
+                                                                                "confidence": [
+                                                                                  2019.5,
+                                                                                  2019.5
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "Singapore",
+                                                                                "confidence": {
+                                                                                  "Singapore": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location from metadata"
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "PenL-1"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Burkholderia_thailandensis"
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Collection date from metadata"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          }
+                                                                        ]
+                                                                      },
+                                                                      {
+                                                                        "name": "NODE_0000037",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0313,
+                                                                          "num_date": {
+                                                                            "value": 2019.487,
+                                                                            "confidence": [
+                                                                              2018.915,
+                                                                              2020.012
+                                                                            ]
+                                                                          },
+                                                                          "country": {
+                                                                            "value": "Thailand",
+                                                                            "confidence": {
+                                                                              "Thailand": 0.993,
+                                                                              "Russia": 0.00507,
+                                                                              "Singapore": 0.00166
+                                                                            },
+                                                                            "entropy": 0.0495
+                                                                          }
+                                                                        },
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "children": [
+                                                                          {
+                                                                            "name": "PenL-1_NOK47014-WVUL01000007-112387",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0313,
+                                                                              "num_date": {
+                                                                                "value": 2020.012,
+                                                                                "confidence": [
+                                                                                  2020.012,
+                                                                                  2020.012
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "Thailand",
+                                                                                "confidence": {
+                                                                                  "Thailand": 1.0
+                                                                                },
+                                                                                "entropy": -1e-12
+                                                                              },
+                                                                              "countryAccuracy": {
+                                                                                "value": "Geographic location from metadata"
+                                                                              },
+                                                                              "allele": {
+                                                                                "value": "PenL-1"
+                                                                              },
+                                                                              "organism": {
+                                                                                "value": "Burkholderia_thailandensis"
+                                                                              },
+                                                                              "dateAccuracy": {
+                                                                                "value": "Submission date"
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            }
+                                                                          },
+                                                                          {
+                                                                            "name": "NODE_0000038",
+                                                                            "node_attrs": {
+                                                                              "div": 0.0313,
+                                                                              "num_date": {
+                                                                                "value": 2020.806,
+                                                                                "confidence": [
+                                                                                  2019.605,
+                                                                                  2021.389
+                                                                                ]
+                                                                              },
+                                                                              "country": {
+                                                                                "value": "Russia",
+                                                                                "confidence": {
+                                                                                  "Russia": 0.995,
+                                                                                  "Thailand": 0.00318,
+                                                                                  "China": 0.00226
+                                                                                },
+                                                                                "entropy": 0.0379
+                                                                              }
+                                                                            },
+                                                                            "branch_attrs": {
+                                                                              "mutations": {}
+                                                                            },
+                                                                            "children": [
+                                                                              {
+                                                                                "name": "PenL-1_MCS6470617-JANURE010000012-78091",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.0313,
+                                                                                  "num_date": {
+                                                                                    "value": 2021.034,
+                                                                                    "confidence": [
+                                                                                      2021.001,
+                                                                                      2021.999
+                                                                                    ]
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "Russia",
+                                                                                    "confidence": {
+                                                                                      "Russia": 1.0
+                                                                                    },
+                                                                                    "entropy": -1e-12
+                                                                                  },
+                                                                                  "countryAccuracy": {
+                                                                                    "value": "Geographic location of submitter"
+                                                                                  },
+                                                                                  "allele": {
+                                                                                    "value": "PenL-1"
+                                                                                  },
+                                                                                  "organism": {
+                                                                                    "value": "Burkholderia_thailandensis"
+                                                                                  },
+                                                                                  "dateAccuracy": {
+                                                                                    "value": "Collection date from metadata"
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                }
+                                                                              },
+                                                                              {
+                                                                                "name": "NODE_0000039",
+                                                                                "node_attrs": {
+                                                                                  "div": 0.0313,
+                                                                                  "num_date": {
+                                                                                    "value": 2021.382,
+                                                                                    "confidence": [
+                                                                                      2020.647,
+                                                                                      2021.768
+                                                                                    ]
+                                                                                  },
+                                                                                  "country": {
+                                                                                    "value": "Russia",
+                                                                                    "confidence": {
+                                                                                      "Russia": 0.994,
+                                                                                      "China": 0.00544
+                                                                                    },
+                                                                                    "entropy": 0.0402
+                                                                                  }
+                                                                                },
+                                                                                "branch_attrs": {
+                                                                                  "mutations": {}
+                                                                                },
+                                                                                "children": [
+                                                                                  {
+                                                                                    "name": "PenL-1_WRS68780-CP141810-279639",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.0313,
+                                                                                      "num_date": {
+                                                                                        "value": 2022.93,
+                                                                                        "confidence": [
+                                                                                          2022.93,
+                                                                                          2022.93
+                                                                                        ]
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "China",
+                                                                                        "confidence": {
+                                                                                          "China": 1.0
+                                                                                        },
+                                                                                        "entropy": -1e-12
+                                                                                      },
+                                                                                      "countryAccuracy": {
+                                                                                        "value": "Geographic location of submitter"
+                                                                                      },
+                                                                                      "allele": {
+                                                                                        "value": "PenL-1"
+                                                                                      },
+                                                                                      "organism": {
+                                                                                        "value": "Burkholderia_thailandensis"
+                                                                                      },
+                                                                                      "dateAccuracy": {
+                                                                                        "value": "Collection date from metadata"
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    }
+                                                                                  },
+                                                                                  {
+                                                                                    "name": "NODE_0000040",
+                                                                                    "node_attrs": {
+                                                                                      "div": 0.0313,
+                                                                                      "num_date": {
+                                                                                        "value": 2021.595,
+                                                                                        "confidence": [
+                                                                                          2021.053,
+                                                                                          2021.904
+                                                                                        ]
+                                                                                      },
+                                                                                      "country": {
+                                                                                        "value": "Russia",
+                                                                                        "confidence": {
+                                                                                          "Russia": 1.0
+                                                                                        },
+                                                                                        "entropy": 0.000158
+                                                                                      }
+                                                                                    },
+                                                                                    "branch_attrs": {
+                                                                                      "mutations": {}
+                                                                                    },
+                                                                                    "children": [
+                                                                                      {
+                                                                                        "name": "NODE_0000041",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.0313,
+                                                                                          "num_date": {
+                                                                                            "value": 2021.893,
+                                                                                            "confidence": [
+                                                                                              2021.392,
+                                                                                              2022.076
+                                                                                            ]
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "Russia",
+                                                                                            "confidence": {
+                                                                                              "Russia": 1.0
+                                                                                            },
+                                                                                            "entropy": 9.03e-07
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        },
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "name": "PenL-1_MCS6494160-JANURH010000007-79241",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0313,
+                                                                                              "num_date": {
+                                                                                                "value": 2022.128,
+                                                                                                "confidence": [
+                                                                                                  2022.001,
+                                                                                                  2022.999
+                                                                                                ]
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "Russia",
+                                                                                                "confidence": {
+                                                                                                  "Russia": 1.0
+                                                                                                },
+                                                                                                "entropy": -1e-12
+                                                                                              },
+                                                                                              "countryAccuracy": {
+                                                                                                "value": "Geographic location of submitter"
+                                                                                              },
+                                                                                              "allele": {
+                                                                                                "value": "PenL-1"
+                                                                                              },
+                                                                                              "organism": {
+                                                                                                "value": "Burkholderia_thailandensis"
+                                                                                              },
+                                                                                              "dateAccuracy": {
+                                                                                                "value": "Collection date from metadata"
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "name": "PenL-1_MCS6499751-JANURK010000005-95170",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0313,
+                                                                                              "num_date": {
+                                                                                                "value": 2022.128,
+                                                                                                "confidence": [
+                                                                                                  2022.001,
+                                                                                                  2022.999
+                                                                                                ]
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "Russia",
+                                                                                                "confidence": {
+                                                                                                  "Russia": 1.0
+                                                                                                },
+                                                                                                "entropy": -1e-12
+                                                                                              },
+                                                                                              "countryAccuracy": {
+                                                                                                "value": "Geographic location of submitter"
+                                                                                              },
+                                                                                              "allele": {
+                                                                                                "value": "PenL-1"
+                                                                                              },
+                                                                                              "organism": {
+                                                                                                "value": "Burkholderia_thailandensis"
+                                                                                              },
+                                                                                              "dateAccuracy": {
+                                                                                                "value": "Collection date from metadata"
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      },
+                                                                                      {
+                                                                                        "name": "NODE_0000042",
+                                                                                        "node_attrs": {
+                                                                                          "div": 0.0313,
+                                                                                          "num_date": {
+                                                                                            "value": 2021.893,
+                                                                                            "confidence": [
+                                                                                              2021.392,
+                                                                                              2022.076
+                                                                                            ]
+                                                                                          },
+                                                                                          "country": {
+                                                                                            "value": "Russia",
+                                                                                            "confidence": {
+                                                                                              "Russia": 1.0
+                                                                                            },
+                                                                                            "entropy": 9.03e-07
+                                                                                          }
+                                                                                        },
+                                                                                        "branch_attrs": {
+                                                                                          "mutations": {}
+                                                                                        },
+                                                                                        "children": [
+                                                                                          {
+                                                                                            "name": "PenL-1_MCS6516158-JANURJ010000004-77594",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0313,
+                                                                                              "num_date": {
+                                                                                                "value": 2022.128,
+                                                                                                "confidence": [
+                                                                                                  2022.001,
+                                                                                                  2022.999
+                                                                                                ]
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "Russia",
+                                                                                                "confidence": {
+                                                                                                  "Russia": 1.0
+                                                                                                },
+                                                                                                "entropy": -1e-12
+                                                                                              },
+                                                                                              "countryAccuracy": {
+                                                                                                "value": "Geographic location of submitter"
+                                                                                              },
+                                                                                              "allele": {
+                                                                                                "value": "PenL-1"
+                                                                                              },
+                                                                                              "organism": {
+                                                                                                "value": "Burkholderia_thailandensis"
+                                                                                              },
+                                                                                              "dateAccuracy": {
+                                                                                                "value": "Collection date from metadata"
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            }
+                                                                                          },
+                                                                                          {
+                                                                                            "name": "PenL-1_MCS6510460-JANURG010000004-146031",
+                                                                                            "node_attrs": {
+                                                                                              "div": 0.0313,
+                                                                                              "num_date": {
+                                                                                                "value": 2022.128,
+                                                                                                "confidence": [
+                                                                                                  2022.001,
+                                                                                                  2022.999
+                                                                                                ]
+                                                                                              },
+                                                                                              "country": {
+                                                                                                "value": "Russia",
+                                                                                                "confidence": {
+                                                                                                  "Russia": 1.0
+                                                                                                },
+                                                                                                "entropy": -1e-12
+                                                                                              },
+                                                                                              "countryAccuracy": {
+                                                                                                "value": "Geographic location of submitter"
+                                                                                              },
+                                                                                              "allele": {
+                                                                                                "value": "PenL-1"
+                                                                                              },
+                                                                                              "organism": {
+                                                                                                "value": "Burkholderia_thailandensis"
+                                                                                              },
+                                                                                              "dateAccuracy": {
+                                                                                                "value": "Collection date from metadata"
+                                                                                              }
+                                                                                            },
+                                                                                            "branch_attrs": {
+                                                                                              "mutations": {}
+                                                                                            }
+                                                                                          }
+                                                                                        ]
+                                                                                      }
+                                                                                    ]
+                                                                                  }
+                                                                                ]
+                                                                              }
+                                                                            ]
+                                                                          }
+                                                                        ]
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                ]
+                                                              }
+                                                            ]
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
